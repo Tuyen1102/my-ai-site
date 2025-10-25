@@ -1,11 +1,11 @@
 {
   "items": [
-    {
-      "name": "TienIch-A.exe",
-      "version": "v1.2.0",
-      "url": "https://github.com/<user>/<repo>/releases/download/v1.2.0/TienIch-A.exe",
-      "sha256": "điền-checksum",
-      "note": "Công cụ đổi tên file hàng loạt (ví dụ)."
-    }
+   {
+  "name": "ExcelXls2Xlsx.exe",
+  "version": "v1.0.0",
+  "url": "https://github.com/Tuyen1102/my-ai-site/releases/download/v1.0.0/ExcelXls2Xlsx.exe",
+  "sha256": "36702C601AAB1B2F64C599C67D64BD2CADAEBAFC0DC1A73EEACEB047BA5ABA02",
+  "note": "Đổi đuôi Excel .xls → .xlsx (Windows)."
+  }
   ]
 }
