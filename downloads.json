@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "name": "TienIch-A.exe",
+      "version": "v1.2.0",
+      "url": "https://github.com/<user>/<repo>/releases/download/v1.2.0/TienIch-A.exe",
+      "sha256": "điền-checksum",
+      "note": "Công cụ đổi tên file hàng loạt (ví dụ)."
+    }
+  ]
+}

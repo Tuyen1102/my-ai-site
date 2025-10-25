@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiện ích của Tuyên • AI Trợ lý</title>
+  <style>
+    :root{--bg:#0b0b0c;--panel:#141416;--line:#222;--txt:#eaeaea;--muted:#a3a3a3;--accent:#8ab4ff}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,Arial;margin:0;background:var(--bg);color:var(--txt)}
+    header{padding:24px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    header h1{font-size:20px;margin:0}
+    header .pill{border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px}
+    main{display:grid;grid-template-columns:minmax(320px,1.2fr) minmax(280px,.8fr);gap:16px;padding:16px}
+    @media (max-width: 900px){ main{grid-template-columns:1fr} }
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+    .row{display:flex;gap:8px}
+    .input{flex:1;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0f0f10;color:#fff}
+    button{padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:#1e1f22;color:#fff;cursor:pointer}
+    .msg{white-space:pre-wrap;margin:8px 0}
+    a{color:var(--accent);text-decoration:none}
+    .badge{font-size:12px;opacity:.8}
+    .muted{color:var(--muted)}
+    .list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+    .item{padding:10px;border:1px solid var(--line);border-radius:12px;background:#111113}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0e0e10;border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+    .result{padding:8px;border-left:3px solid var(--line);margin:8px 0}
+  </style>
+  <!-- WebLLM -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2.62/dist/webllm.min.js"></script>
+  <!-- lunr.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
+</head>
+<body>
+<header>
+  <h1>Tiện ích của Tuyên • AI Trợ lý</h1>
+  <span class="pill">Miễn phí • AI WebGPU</span>
+  <span class="pill">Tìm kiếm nội bộ (lunr)</span>
+</header>
+
+<main>
+  <!-- Chat AI -->
+  <section class="card">
+    <h2>Chat AI</h2>
+    <div id="gpu-warning" class="result muted" style="display:none">Trình duyệt của bạn có thể không hỗ trợ <b>WebGPU</b>. Hãy dùng Chrome/Edge mới để trải nghiệm tốt nhất.</div>
+    <div id="chat"></div>
+    <div class="row" style="margin-top:8px">
+      <input id="q" class="input" placeholder="Hỏi: Cách cài tiện ích A? Lỗi B sửa thế nào?"/>
+      <button id="send">Gửi</button>
+    </div>
+    <div class="badge" id="status">Đang tải model…</div>
+    <details style="margin-top:8px">
+      <summary class="muted">Nguồn nội bộ đã nạp (context + articles)</summary>
+      <div id="sources" class="muted" style="font-size:13px"></div>
+    </details>
+  </section>
+
+  <!-- Panel phải -->
+  <aside class="card">
+    <h2>Tải tiện ích</h2>
+    <ul id="dl" class="list"></ul>
+    <hr style="border-color:#222;opacity:.4;margin:12px 0" />
+    <h3>Tìm kiếm tài liệu</h3>
+    <input id="search" class="input" placeholder="Nhập từ khóa… (VD: .NET 6, lỗi Office)" />
+    <div id="searchRes"></div>
+    <div class="badge">File lưu trên GitHub Releases • Có thể kiểm tra checksum</div>
+  </aside>
+</main>
+
+<script>
+(async () => {
+  // ===== 0) GPU check =====
+  const gpuOK = !!navigator.gpu;
+  if(!gpuOK) document.getElementById('gpu-warning').style.display = 'block';
+
+  // ===== 1) Load data (downloads + context + articles) =====
+  const [downloads, context, articlesManifest] = await Promise.all([
+    fetch('downloads.json').then(r=>r.json()).catch(()=>({items:[]})),
+    fetch('docs/context.json').then(r=>r.json()).catch(()=>({chunks:[]})),
+    listArticles()
+  ]);
+
+  // render downloads
+  const dlEl = document.getElementById('dl');
+  (downloads.items||[]).forEach(it=>{
+    const li = document.createElement('li');
+    li.className = 'item';
+    li.innerHTML = `
+      <div><a href="${it.url}" target="_blank">${it.name}</a></div>
+      <div class="badge">Phiên bản: ${it.version} • SHA256: ${it.sha256||'n/a'}</div>
+      <div class="badge">${it.note||''}</div>`;
+    dlEl.appendChild(li);
+  });
+
+  // collect article texts
+  const articles = [];
+  for (const a of articlesManifest) {
+    try {
+      const txt = await fetch(a.path).then(r=>r.text());
+      const clean = stripFrontMatter(txt);
+      articles.push({title:a.title, slug:a.slug, text:clean});
+    } catch {}
+  }
+
+  // show source list
+  const srcEl = document.getElementById('sources');
+  const lines = [];
+  (context.chunks||[]).forEach((c,i)=>lines.push(`[CTX ${i+1}] ${c.src||'n/a'}`));
+  articles.forEach((a,i)=>lines.push(`[DOC ${i+1}] ${a.slug}`));
+  srcEl.textContent = lines.join('\n');
+
+  // ===== 2) lunr index =====
+  const idx = lunr(function () {
+    this.ref('id');
+    this.field('title');
+    this.field('text');
+    let id = 0;
+    (articles||[]).forEach(a=>this.add({id:`doc-${a.slug}`, title:a.title, text:a.text}));
+    (context.chunks||[]).forEach((c, i)=>this.add({id:`ctx-${i}`, title:c.src||'context', text:c.text}));
+  });
+
+  const searchEl = document.getElementById('search');
+  const searchRes = document.getElementById('searchRes');
+  searchEl.addEventListener('input', () => {
+    const q = searchEl.value.trim();
+    searchRes.innerHTML = '';
+    if(!q) return;
+    const res = idx.search(q).slice(0,6);
+    res.forEach(r=>{
+      const div = document.createElement('div');
+      div.className='result';
+      div.textContent = r.ref;
+      searchRes.appendChild(div);
+    });
+  });
+
+  // ===== 3) WebLLM chat =====
+  const chatEl = document.getElementById('chat');
+  const qEl = document.getElementById('q');
+  const sendEl = document.getElementById('send');
+  const statusEl = document.getElementById('status');
+
+  function add(role, text){
+    const div = document.createElement('div');
+    div.className='msg';
+    div.innerHTML = `<b>${role==='user'?'Bạn':'AI'}:</b> ${text}`;
+    chatEl.appendChild(div);
+    chatEl.scrollTop = chatEl.scrollHeight;
+  }
+
+  // simple retrieval: pick top N docs via lunr for each question
+  function topKContext(query, k=5){
+    try{
+      const res = idx.search(query).slice(0,k);
+      const toTxt = (ref)=>{
+        if(ref.startsWith('doc-')){
+          const slug = ref.replace('doc-','');
+          const a = articles.find(x=>x.slug===slug);
+          return a ? `# ${a.title}\n${a.text}` : '';
+        } else if(ref.startsWith('ctx-')){
+          const i = parseInt(ref.replace('ctx-',''),10);
+          return context.chunks?.[i]?.text || '';
+        }
+        return '';
+      };
+      return res.map(r=>toTxt(r.ref)).filter(Boolean).join('\n---\n');
+    }catch(e){ return ''; }
+  }
+
+  let history = [];
+  const engine = new window.webllm.MLCEngine();
+  try {
+    await engine.reload('Qwen2.5-0.5B-Instruct-q4f16_1', {temperature:0.2, top_p:0.9});
+    statusEl.textContent = 'Model sẵn sàng.';
+  } catch(e){
+    statusEl.textContent = 'Không tải được model. Hãy thử làm mới trang hoặc dùng Chrome/Edge mới.';
+  }
+
+  async function ask(){
+    const q = qEl.value.trim();
+    if(!q) return;
+    add('user', q); qEl.value = '';
+    statusEl.textContent = 'Đang suy nghĩ…';
+
+    const ctx = topKContext(q, 6);
+    const sys = `Bạn là trợ lý AI cho website tiện ích của Tuyên. Trả lời ngắn gọn, tiếng Việt. Nếu thông tin có trong CONTEXT thì ưu tiên sử dụng; nếu không, hãy nói "chưa có dữ liệu nội bộ" và đưa bước khắc phục an toàn.
+CONTEXT:\n${ctx}`;
+    const messages = [{role:'system', content: sys}, ...history, {role:'user', content: q}];
+
+    let answer = '';
+    try {
+      await engine.chat.completions.create({
+        messages, stream:true,
+        onChunk: (c) => {
+          const delta = c.choices?.[0]?.delta?.content || '';
+          if(delta){ answer += delta; statusEl.textContent = ''; }
+        }
+      });
+      add('assistant', answer.trim());
+      history.push({role:'user', content:q}, {role:'assistant', content:answer.trim()});
+      statusEl.textContent = 'Sẵn sàng.';
+    } catch(e){
+      add('assistant', 'Xin lỗi, mình không thể phản hồi lúc này. Hãy thử lại hoặc kiểm tra hỗ trợ WebGPU.');
+      statusEl.textContent = 'Lỗi suy luận.';
+    }
+  }
+
+  sendEl.onclick = ask;
+  qEl.addEventListener('keydown', e => (e.key === 'Enter') && ask());
+
+  // ===== helpers =====
+  function stripFrontMatter(md){
+    // remove YAML front matter if present
+    if(md.startsWith('---')){
+      const end = md.indexOf('\n---',3);
+      if(end !== -1) return md.slice(end+4).trim();
+    }
+    return md;
+  }
+
+  async function listArticles(){
+    // In a static site we cannot list files dynamically; so maintain a manifest here:
+    // You can add more entries pointing to docs/articles/*.md
+    return [
+      { title: "Hướng dẫn cài đặt Tiện ích A", slug: "huong-dan-cai-dat-tien-ich-a", path: "docs/articles/huong-dan-cai-dat-tien-ich-a.md" },
+      { title: "Khắc phục lỗi Office phổ biến", slug: "khac-phuc-loi-office", path: "docs/articles/khac-phuc-loi-office.md" }
+    ];
+  }
+})();
+</script>
+</body>
+</html>
