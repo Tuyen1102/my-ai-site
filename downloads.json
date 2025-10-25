@@ -3,7 +3,7 @@
    {
   "name": "ExcelXls2Xlsx.exe",
   "version": "v1.0.0",
-  "url": "https://github.com/Tuyen1102/my-ai-site/releases/download/v1.0.0/ExcelXls2Xlsx.exe",
+  "url": "https://github.com/Tuyen1102/my-ai-site/releases/download/V1.0/xls2xlsx_gui.exe",
   "sha256": "36702C601AAB1B2F64C599C67D64BD2CADAEBAFC0DC1A73EEACEB047BA5ABA02",
   "note": "Đổi đuôi Excel .xls → .xlsx (Windows)."
   }
