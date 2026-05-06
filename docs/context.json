@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "text": "Tiện ích A yêu cầu .NET 6.0; nếu thiếu, hãy cài .NET 6 Runtime trước khi chạy.",
+      "src": "README-TienIch-A.md"
+    },
+    {
+      "text": "Nếu gặp lỗi 'missing dll', chạy Windows Update và cài Visual C++ Redistributable 2015-2022.",
+      "src": "FAQ.md"
+    }
+  ]
+}
