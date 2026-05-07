@@ -2,286 +2,876 @@
   "meta": {
     "source": "TTCOAPP",
     "database": "TTCO_THONGKE",
-    "sourceTable": "CDOTHAN",
-    "version": "1.0.0",
-    "updatedAt": "2026-05-07 21:27:50",
+    "sourceTable": "TTCO_THONGKE.dbo.CDOTHAN",
+    "khoDictionary": "TTCO_QTHT.dbo.DMKHO",
+    "coalDictionary": "TTCO_QTHT.dbo.DMTHAN",
+    "coalGroupMethod": "Group selected coal types by normalized base name from TTCO_QTHT.dbo.DMTHAN.TenThan",
+    "version": "1.2.0",
+    "updatedAt": "2026-05-07 22:28:43",
     "NamHT": 2026,
     "ThangHT": 5,
-    "recordCount": 80
+    "rawRecordCount": 80,
+    "recordCount": 67,
+    "groupedRecordCount": 3,
+    "coalBaseNamesToGroup": [
+      "Cám 5a.10",
+      "Cám 5a.14",
+      "Cám 6a.10",
+      "Cám 6a.14"
+    ],
+    "note": "Các mã than chi tiết theo tàu của Cám 5a.10, Cám 5a.14, Cám 6a.10, Cám 6a.14 được cộng tổng theo tên chủng loại gốc trong DMTHAN.TenThan."
   },
   "khoList": [
-    "01",
-    "02",
-    "03",
-    "04",
-    "05",
-    "06",
-    "07",
-    "08",
-    "09",
-    "10",
-    "11",
-    "12",
-    "13",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
-    "20",
-    "21",
-    "23",
-    "24",
-    "25",
-    "26",
-    "27",
-    "28",
-    "29",
-    "30b",
-    "31B",
-    "31D",
-    "31c",
-    "34A",
-    "36",
-    "39",
-    "43",
-    "44",
-    "45",
-    "46a",
-    "60",
-    "71",
-    "72",
-    "73",
-    "74",
-    "K04",
-    "K60",
-    "k59"
+    {
+      "MaKho": "01",
+      "TenKho": "Kho 1",
+      "Label": "Kho 1"
+    },
+    {
+      "MaKho": "02",
+      "TenKho": "Kho 2",
+      "Label": "Kho 2"
+    },
+    {
+      "MaKho": "03",
+      "TenKho": "Kho 3",
+      "Label": "Kho 3"
+    },
+    {
+      "MaKho": "04",
+      "TenKho": "Kho 4",
+      "Label": "Kho 4"
+    },
+    {
+      "MaKho": "05",
+      "TenKho": "Kho 5",
+      "Label": "Kho 5"
+    },
+    {
+      "MaKho": "06",
+      "TenKho": "Kho 6",
+      "Label": "Kho 6"
+    },
+    {
+      "MaKho": "07",
+      "TenKho": "Kho 7",
+      "Label": "Kho 7"
+    },
+    {
+      "MaKho": "08",
+      "TenKho": "Kho 8",
+      "Label": "Kho 8"
+    },
+    {
+      "MaKho": "09",
+      "TenKho": "Kho 9",
+      "Label": "Kho 9"
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "Label": "Kho 10"
+    },
+    {
+      "MaKho": "11",
+      "TenKho": "Kho 11",
+      "Label": "Kho 11"
+    },
+    {
+      "MaKho": "12",
+      "TenKho": "Kho 12",
+      "Label": "Kho 12"
+    },
+    {
+      "MaKho": "13",
+      "TenKho": "Kho 13",
+      "Label": "Kho 13"
+    },
+    {
+      "MaKho": "15",
+      "TenKho": "Kho 15",
+      "Label": "Kho 15"
+    },
+    {
+      "MaKho": "16",
+      "TenKho": "Kho 16",
+      "Label": "Kho 16"
+    },
+    {
+      "MaKho": "17",
+      "TenKho": "Kho 17",
+      "Label": "Kho 17"
+    },
+    {
+      "MaKho": "18",
+      "TenKho": "Kho 18",
+      "Label": "Kho 18"
+    },
+    {
+      "MaKho": "19",
+      "TenKho": "Kho 19",
+      "Label": "Kho 19"
+    },
+    {
+      "MaKho": "20",
+      "TenKho": "Kho 20",
+      "Label": "Kho 20"
+    },
+    {
+      "MaKho": "21",
+      "TenKho": "Kho 21",
+      "Label": "Kho 21"
+    },
+    {
+      "MaKho": "23",
+      "TenKho": "Kho 23",
+      "Label": "Kho 23"
+    },
+    {
+      "MaKho": "24",
+      "TenKho": "Kho 24",
+      "Label": "Kho 24"
+    },
+    {
+      "MaKho": "25",
+      "TenKho": "Kho 25",
+      "Label": "Kho 25"
+    },
+    {
+      "MaKho": "26",
+      "TenKho": "Kho than số 29",
+      "Label": "Kho than số 29"
+    },
+    {
+      "MaKho": "27",
+      "TenKho": "Kho than số 30",
+      "Label": "Kho than số 30"
+    },
+    {
+      "MaKho": "28",
+      "TenKho": "Kho nội địa 3",
+      "Label": "Kho nội địa 3"
+    },
+    {
+      "MaKho": "29",
+      "TenKho": "Kho than số 26",
+      "Label": "Kho than số 26"
+    },
+    {
+      "MaKho": "30b",
+      "TenKho": "Kho than số 27",
+      "Label": "Kho than số 27"
+    },
+    {
+      "MaKho": "31B",
+      "TenKho": "Nhà máy sấy",
+      "Label": "Nhà máy sấy"
+    },
+    {
+      "MaKho": "31c",
+      "TenKho": "Kho số 28 (Tuyển 3)",
+      "Label": "Kho số 28 (Tuyển 3)"
+    },
+    {
+      "MaKho": "31D",
+      "TenKho": "Kho than số 28-1 (T3)",
+      "Label": "Kho than số 28-1 (T3)"
+    },
+    {
+      "MaKho": "34A",
+      "TenKho": "Kho 34",
+      "Label": "Kho 34"
+    },
+    {
+      "MaKho": "36",
+      "TenKho": "Kho bùn số 7",
+      "Label": "Kho bùn số 7"
+    },
+    {
+      "MaKho": "39",
+      "TenKho": "Hồ bùn số 9",
+      "Label": "Hồ bùn số 9"
+    },
+    {
+      "MaKho": "43",
+      "TenKho": "Kho than số 31",
+      "Label": "Kho than số 31"
+    },
+    {
+      "MaKho": "44",
+      "TenKho": "Kho than số 32",
+      "Label": "Kho than số 32"
+    },
+    {
+      "MaKho": "45",
+      "TenKho": "Kho than số 33",
+      "Label": "Kho than số 33"
+    },
+    {
+      "MaKho": "46a",
+      "TenKho": "Kho 38",
+      "Label": "Kho 38"
+    },
+    {
+      "MaKho": "60",
+      "TenKho": "Kho hồ Gap",
+      "Label": "Kho hồ Gap"
+    },
+    {
+      "MaKho": "71",
+      "TenKho": "Kho 1-T4",
+      "Label": "Kho 1-T4"
+    },
+    {
+      "MaKho": "72",
+      "TenKho": "Kho 2-T4",
+      "Label": "Kho 2-T4"
+    },
+    {
+      "MaKho": "73",
+      "TenKho": "Kho 3-T4",
+      "Label": "Kho 3-T4"
+    },
+    {
+      "MaKho": "74",
+      "TenKho": "Kho 4-T4",
+      "Label": "Kho 4-T4"
+    },
+    {
+      "MaKho": "K04",
+      "TenKho": "Tuyển 1",
+      "Label": "Tuyển 1"
+    },
+    {
+      "MaKho": "k59",
+      "TenKho": "NM Nhiệt điện",
+      "Label": "NM Nhiệt điện"
+    },
+    {
+      "MaKho": "K60",
+      "TenKho": "Ẩm nhiệt điện",
+      "Label": "Ẩm nhiệt điện"
+    }
   ],
   "loaiThanList": [
-    "00",
-    "10A.1",
-    "10B.1",
-    "10a.1",
-    "10a.101",
-    "10a.259",
-    "10a.262",
-    "10a.263",
-    "10a.72",
-    "11.250",
-    "11A.1",
-    "11B.1",
-    "11a.1",
-    "11a.241",
-    "11a.243",
-    "11a.245",
-    "11a.246",
-    "11a.247",
-    "11a.248",
-    "11a.249",
-    "11a.251",
-    "11a.253",
-    "11a.254",
-    "11b.1",
-    "4A.1",
-    "4a.2",
-    "5A.1",
-    "6A.1",
-    "6a.1",
-    "7a.1",
-    "8A.1",
-    "8B.1",
-    "8b.1",
-    "9A.1",
-    "9B.1",
-    "B11C",
-    "B2796",
-    "B29A",
-    "B29a",
-    "B32d",
-    "B5.01",
-    "NHK.16",
-    "NHK.295",
-    "NHK.296",
-    "NHK.297",
-    "b11c",
-    "b16.09",
-    "b2902",
-    "b29a",
-    "b32d",
-    "b32e"
+    {
+      "MaThan": "b32d",
+      "TenThan": "Bùn tuyển 3A",
+      "Label": "Bùn tuyển 3A"
+    },
+    {
+      "MaThan": "B32d",
+      "TenThan": "Bùn tuyển 3A",
+      "Label": "Bùn tuyển 3A"
+    },
+    {
+      "MaThan": "b32e",
+      "TenThan": "Bùn tuyển 3B",
+      "Label": "Bùn tuyển 3B"
+    },
+    {
+      "MaThan": "6A.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+    },
+    {
+      "MaThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+    },
+    {
+      "MaThan": "7a.1",
+      "TenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "Label": "Cám 2a.1 (Ak 8,01 - 10,00%)"
+    },
+    {
+      "MaThan": "8A.1",
+      "TenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "Label": "Cám 3a.1 (Ak 10,01 - 13,00%)"
+    },
+    {
+      "MaThan": "8B.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "Label": "Cám 3b.1 (Ak 13,01 - 16,00%)"
+    },
+    {
+      "MaThan": "8b.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "Label": "Cám 3b.1 (Ak 13,01 - 16,00%)"
+    },
+    {
+      "MaThan": "9A.1",
+      "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "Label": "Cám 4a.1 (Ak 19,01 - 23,00%)"
+    },
+    {
+      "MaThan": "9B.1",
+      "TenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "Label": "Cám 4b.1 (Ak 23,01 - 27%)"
+    },
+    {
+      "MaThan": "10a.1",
+      "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "Label": "Cám 5a.1 (Ak27,01 - 31%)"
+    },
+    {
+      "MaThan": "10A.1",
+      "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "Label": "Cám 5a.1 (Ak27,01 - 31%)"
+    },
+    {
+      "MaThan": "GROUP_CAM_5A_14",
+      "TenThan": "Cám 5a.14",
+      "Label": "Cám 5a.14"
+    },
+    {
+      "MaThan": "10B.1",
+      "TenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "Label": "Cám 5b.1 (Ak 31,01 - 35%)"
+    },
+    {
+      "MaThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+    },
+    {
+      "MaThan": "11A.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+    },
+    {
+      "MaThan": "b2902",
+      "TenThan": "Cám 6A.1 (sấy)",
+      "Label": "Cám 6A.1 (sấy)"
+    },
+    {
+      "MaThan": "GROUP_CAM_6A_10",
+      "TenThan": "Cám 6a.10",
+      "Label": "Cám 6a.10"
+    },
+    {
+      "MaThan": "GROUP_CAM_6A_14",
+      "TenThan": "Cám 6a.14",
+      "Label": "Cám 6a.14"
+    },
+    {
+      "MaThan": "11B.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+    },
+    {
+      "MaThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+    },
+    {
+      "MaThan": "B2796",
+      "TenThan": "Cám 8C",
+      "Label": "Cám 8C"
+    },
+    {
+      "MaThan": "B29A",
+      "TenThan": "Cám đá",
+      "Label": "Cám đá"
+    },
+    {
+      "MaThan": "b29a",
+      "TenThan": "Cám đá",
+      "Label": "Cám đá"
+    },
+    {
+      "MaThan": "B29a",
+      "TenThan": "Cám đá",
+      "Label": "Cám đá"
+    },
+    {
+      "MaThan": "4A.1",
+      "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+      "Label": "Cục 4a.1 (Ak 4,00 - 7,00%)"
+    },
+    {
+      "MaThan": "4a.2",
+      "TenThan": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+      "Label": "Cục 4a.2 (Ak 7,01 - 12,00%)"
+    },
+    {
+      "MaThan": "5A.1",
+      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "Label": "Cục 5a.1 (Ak5,00 - 8,00%)"
+    },
+    {
+      "MaThan": "b16.09",
+      "TenThan": "Cục don 8C",
+      "Label": "Cục don 8C"
+    },
+    {
+      "MaThan": "B11C",
+      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "Label": "Cục xô 1c (Ak 17,01 - 22%)"
+    },
+    {
+      "MaThan": "b11c",
+      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "Label": "Cục xô 1c (Ak 17,01 - 22%)"
+    },
+    {
+      "MaThan": "NHK.295",
+      "TenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "Label": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
+    },
+    {
+      "MaThan": "00",
+      "TenThan": "Than nguyên khai",
+      "Label": "Than nguyên khai"
+    },
+    {
+      "MaThan": "NHK.296",
+      "TenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "Label": "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
+    },
+    {
+      "MaThan": "NHK.297",
+      "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "Label": "Than NK (Úc - Tầu MV BARDONNEX)"
+    },
+    {
+      "MaThan": "NHK.16",
+      "TenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "Label": "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
+    },
+    {
+      "MaThan": "B5.01",
+      "TenThan": "Đá thải",
+      "Label": "Đá thải"
+    }
   ],
   "loaiThanByKho": {
     "01": [
-      "B11C"
+      {
+        "MaThan": "B11C",
+        "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+        "Label": "Cục xô 1c (Ak 17,01 - 22%)"
+      }
     ],
     "02": [
-      "5A.1"
+      {
+        "MaThan": "5A.1",
+        "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+        "Label": "Cục 5a.1 (Ak5,00 - 8,00%)"
+      }
     ],
     "03": [
-      "4A.1"
+      {
+        "MaThan": "4A.1",
+        "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+        "Label": "Cục 4a.1 (Ak 4,00 - 7,00%)"
+      }
     ],
     "04": [
-      "4A.1"
+      {
+        "MaThan": "4A.1",
+        "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+        "Label": "Cục 4a.1 (Ak 4,00 - 7,00%)"
+      }
     ],
     "05": [
-      "4a.2"
+      {
+        "MaThan": "4a.2",
+        "TenThan": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+        "Label": "Cục 4a.2 (Ak 7,01 - 12,00%)"
+      }
     ],
     "06": [
-      "B11C"
+      {
+        "MaThan": "B11C",
+        "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+        "Label": "Cục xô 1c (Ak 17,01 - 22%)"
+      }
     ],
     "07": [
-      "11a.1"
+      {
+        "MaThan": "11a.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      }
     ],
     "08": [
-      "11A.1"
+      {
+        "MaThan": "11A.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      }
     ],
     "09": [
-      "11.250",
-      "11A.1",
-      "11B.1",
-      "11a.241",
-      "11a.243",
-      "11a.245",
-      "11a.246",
-      "11a.247",
-      "11a.248",
-      "11a.249",
-      "11a.251",
-      "11a.253",
-      "11a.254"
+      {
+        "MaThan": "11A.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      },
+      {
+        "MaThan": "GROUP_CAM_6A_10",
+        "TenThan": "Cám 6a.10",
+        "Label": "Cám 6a.10"
+      },
+      {
+        "MaThan": "GROUP_CAM_6A_14",
+        "TenThan": "Cám 6a.14",
+        "Label": "Cám 6a.14"
+      },
+      {
+        "MaThan": "11B.1",
+        "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+        "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+      }
     ],
     "10": [
-      "10B.1",
-      "10a.1",
-      "10a.101",
-      "10a.259",
-      "10a.262",
-      "10a.263",
-      "10a.72"
+      {
+        "MaThan": "10a.1",
+        "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+        "Label": "Cám 5a.1 (Ak27,01 - 31%)"
+      },
+      {
+        "MaThan": "GROUP_CAM_5A_14",
+        "TenThan": "Cám 5a.14",
+        "Label": "Cám 5a.14"
+      },
+      {
+        "MaThan": "10B.1",
+        "TenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+        "Label": "Cám 5b.1 (Ak 31,01 - 35%)"
+      }
     ],
     "11": [
-      "9A.1"
+      {
+        "MaThan": "9A.1",
+        "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+        "Label": "Cám 4a.1 (Ak 19,01 - 23,00%)"
+      }
     ],
     "12": [
-      "8B.1"
+      {
+        "MaThan": "8B.1",
+        "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+        "Label": "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      }
     ],
     "13": [
-      "8A.1"
+      {
+        "MaThan": "8A.1",
+        "TenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+        "Label": "Cám 3a.1 (Ak 10,01 - 13,00%)"
+      }
     ],
     "15": [
-      "5A.1"
+      {
+        "MaThan": "5A.1",
+        "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+        "Label": "Cục 5a.1 (Ak5,00 - 8,00%)"
+      }
     ],
     "16": [
-      "5A.1"
+      {
+        "MaThan": "5A.1",
+        "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+        "Label": "Cục 5a.1 (Ak5,00 - 8,00%)"
+      }
     ],
     "17": [
-      "6A.1",
-      "7a.1"
+      {
+        "MaThan": "6A.1",
+        "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+        "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+      },
+      {
+        "MaThan": "7a.1",
+        "TenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+        "Label": "Cám 2a.1 (Ak 8,01 - 10,00%)"
+      }
     ],
     "18": [
-      "8B.1"
+      {
+        "MaThan": "8B.1",
+        "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+        "Label": "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      }
     ],
     "19": [
-      "8B.1"
+      {
+        "MaThan": "8B.1",
+        "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+        "Label": "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      }
     ],
     "20": [
-      "9A.1",
-      "9B.1"
+      {
+        "MaThan": "9A.1",
+        "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+        "Label": "Cám 4a.1 (Ak 19,01 - 23,00%)"
+      },
+      {
+        "MaThan": "9B.1",
+        "TenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+        "Label": "Cám 4b.1 (Ak 23,01 - 27%)"
+      }
     ],
     "21": [
-      "10A.1",
-      "10B.1",
-      "11A.1"
+      {
+        "MaThan": "10A.1",
+        "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+        "Label": "Cám 5a.1 (Ak27,01 - 31%)"
+      },
+      {
+        "MaThan": "10B.1",
+        "TenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+        "Label": "Cám 5b.1 (Ak 31,01 - 35%)"
+      },
+      {
+        "MaThan": "11A.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      }
     ],
     "23": [
-      "8b.1"
+      {
+        "MaThan": "8b.1",
+        "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+        "Label": "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      }
     ],
     "24": [
-      "11a.1"
+      {
+        "MaThan": "11a.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      }
     ],
     "25": [
-      "6a.1"
+      {
+        "MaThan": "6a.1",
+        "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+        "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+      }
     ],
     "26": [
-      "6a.1"
+      {
+        "MaThan": "6a.1",
+        "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+        "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+      }
     ],
     "27": [
-      "6a.1"
+      {
+        "MaThan": "6a.1",
+        "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+        "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+      }
     ],
     "28": [
-      "NHK.16",
-      "NHK.295",
-      "NHK.296",
-      "NHK.297"
+      {
+        "MaThan": "NHK.295",
+        "TenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+        "Label": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
+      },
+      {
+        "MaThan": "NHK.296",
+        "TenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+        "Label": "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
+      },
+      {
+        "MaThan": "NHK.297",
+        "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+        "Label": "Than NK (Úc - Tầu MV BARDONNEX)"
+      },
+      {
+        "MaThan": "NHK.16",
+        "TenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+        "Label": "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
+      }
     ],
     "29": [
-      "b32d"
+      {
+        "MaThan": "b32d",
+        "TenThan": "Bùn tuyển 3A",
+        "Label": "Bùn tuyển 3A"
+      }
     ],
     "30b": [
-      "11b.1",
-      "b32d"
+      {
+        "MaThan": "b32d",
+        "TenThan": "Bùn tuyển 3A",
+        "Label": "Bùn tuyển 3A"
+      },
+      {
+        "MaThan": "11b.1",
+        "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+        "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+      }
     ],
     "31B": [
-      "B2796"
+      {
+        "MaThan": "B2796",
+        "TenThan": "Cám 8C",
+        "Label": "Cám 8C"
+      }
     ],
     "31c": [
-      "11b.1"
+      {
+        "MaThan": "11b.1",
+        "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+        "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+      }
     ],
     "31D": [
-      "11b.1"
+      {
+        "MaThan": "11b.1",
+        "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+        "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+      }
     ],
     "34A": [
-      "6a.1"
+      {
+        "MaThan": "6a.1",
+        "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+        "Label": "Cám 1 (Ak 5,00 - 8,00%)"
+      }
     ],
     "36": [
-      "B32d"
+      {
+        "MaThan": "B32d",
+        "TenThan": "Bùn tuyển 3A",
+        "Label": "Bùn tuyển 3A"
+      }
     ],
     "39": [
-      "b32e"
+      {
+        "MaThan": "b32e",
+        "TenThan": "Bùn tuyển 3B",
+        "Label": "Bùn tuyển 3B"
+      }
     ],
     "43": [
-      "00",
-      "B29A"
+      {
+        "MaThan": "B29A",
+        "TenThan": "Cám đá",
+        "Label": "Cám đá"
+      },
+      {
+        "MaThan": "00",
+        "TenThan": "Than nguyên khai",
+        "Label": "Than nguyên khai"
+      }
     ],
     "44": [
-      "00",
-      "b2902",
-      "b29a",
-      "b32d"
+      {
+        "MaThan": "b32d",
+        "TenThan": "Bùn tuyển 3A",
+        "Label": "Bùn tuyển 3A"
+      },
+      {
+        "MaThan": "b2902",
+        "TenThan": "Cám 6A.1 (sấy)",
+        "Label": "Cám 6A.1 (sấy)"
+      },
+      {
+        "MaThan": "b29a",
+        "TenThan": "Cám đá",
+        "Label": "Cám đá"
+      },
+      {
+        "MaThan": "00",
+        "TenThan": "Than nguyên khai",
+        "Label": "Than nguyên khai"
+      }
     ],
     "45": [
-      "B29a"
+      {
+        "MaThan": "B29a",
+        "TenThan": "Cám đá",
+        "Label": "Cám đá"
+      }
     ],
     "46a": [
-      "00"
+      {
+        "MaThan": "00",
+        "TenThan": "Than nguyên khai",
+        "Label": "Than nguyên khai"
+      }
     ],
     "60": [
-      "B5.01"
+      {
+        "MaThan": "B5.01",
+        "TenThan": "Đá thải",
+        "Label": "Đá thải"
+      }
     ],
     "71": [
-      "11a.1",
-      "b11c"
+      {
+        "MaThan": "11a.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      },
+      {
+        "MaThan": "b11c",
+        "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+        "Label": "Cục xô 1c (Ak 17,01 - 22%)"
+      }
     ],
     "72": [
-      "00",
-      "B5.01",
-      "b16.09"
+      {
+        "MaThan": "b16.09",
+        "TenThan": "Cục don 8C",
+        "Label": "Cục don 8C"
+      },
+      {
+        "MaThan": "00",
+        "TenThan": "Than nguyên khai",
+        "Label": "Than nguyên khai"
+      },
+      {
+        "MaThan": "B5.01",
+        "TenThan": "Đá thải",
+        "Label": "Đá thải"
+      }
     ],
     "73": [
-      "00"
+      {
+        "MaThan": "00",
+        "TenThan": "Than nguyên khai",
+        "Label": "Than nguyên khai"
+      }
     ],
     "74": [
-      "11a.1"
+      {
+        "MaThan": "11a.1",
+        "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+        "Label": "Cám 6a.1 (Ak 35,01 - 40%)"
+      }
     ],
     "K04": [
-      "00",
-      "NHK.297"
+      {
+        "MaThan": "00",
+        "TenThan": "Than nguyên khai",
+        "Label": "Than nguyên khai"
+      },
+      {
+        "MaThan": "NHK.297",
+        "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+        "Label": "Than NK (Úc - Tầu MV BARDONNEX)"
+      }
     ],
     "k59": [
-      "11b.1"
+      {
+        "MaThan": "11b.1",
+        "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+        "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+      }
     ],
     "K60": [
-      "11b.1"
+      {
+        "MaThan": "11b.1",
+        "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+        "Label": "Cám 6b.1 (Ak40,01 - 45%)"
+      }
     ]
   },
   "data": [
@@ -289,801 +879,1501 @@
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "01",
+      "TenKho": "Kho 1",
       "MaThan": "B11C",
+      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
       "TonDauKy": 509.95,
       "NhapTrongKy": 2146.0,
       "XuatTrongKy": 1984.2,
-      "TonCuoiKy": 671.75
+      "TonCuoiKy": 671.75,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B11",
+      "DanhSachMaThanGoc": [
+        "B11C"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục xô 1c (Ak 17,01 - 22%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "02",
+      "TenKho": "Kho 2",
       "MaThan": "5A.1",
+      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
       "TonDauKy": 7937.86,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 7937.86
+      "TonCuoiKy": 7937.86,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "05",
+      "DanhSachMaThanGoc": [
+        "5A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục 5a.1 (Ak5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "03",
+      "TenKho": "Kho 3",
       "MaThan": "4A.1",
+      "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
       "TonDauKy": 1507.63,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 1507.63
+      "TonCuoiKy": 1507.63,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "04",
+      "DanhSachMaThanGoc": [
+        "4A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục 4a.1 (Ak 4,00 - 7,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "04",
+      "TenKho": "Kho 4",
       "MaThan": "4A.1",
+      "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
       "TonDauKy": 11505.17,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 11505.17
+      "TonCuoiKy": 11505.17,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "04",
+      "DanhSachMaThanGoc": [
+        "4A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục 4a.1 (Ak 4,00 - 7,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "05",
+      "TenKho": "Kho 5",
       "MaThan": "4a.2",
+      "TenThan": "Cục 4a.2 (Ak 7,01 - 12,00%)",
       "TonDauKy": 12610.42,
       "NhapTrongKy": 2403.0,
       "XuatTrongKy": 6553.9,
-      "TonCuoiKy": 8459.52
+      "TonCuoiKy": 8459.52,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "04",
+      "DanhSachMaThanGoc": [
+        "4a.2"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục 4a.2 (Ak 7,01 - 12,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "06",
+      "TenKho": "Kho 6",
       "MaThan": "B11C",
+      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
       "TonDauKy": 3.52,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 3.52
+      "TonCuoiKy": 3.52,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B11",
+      "DanhSachMaThanGoc": [
+        "B11C"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục xô 1c (Ak 17,01 - 22%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "07",
+      "TenKho": "Kho 7",
       "MaThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 7792.84,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 7792.84
+      "TonCuoiKy": 7792.84,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "08",
+      "TenKho": "Kho 8",
       "MaThan": "11A.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 37044.41,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 4678.2,
-      "TonCuoiKy": 32366.21
+      "TonCuoiKy": 32366.21,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "09",
-      "MaThan": "11.250",
-      "TonDauKy": 3978.0,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 3640.0,
-      "TonCuoiKy": 338.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
+      "TenKho": "Kho 9",
       "MaThan": "11A.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 11423.71,
       "NhapTrongKy": 5082.0,
       "XuatTrongKy": 12999.0,
-      "TonCuoiKy": 3506.71
+      "TonCuoiKy": 3506.71,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "09",
-      "MaThan": "11a.241",
-      "TonDauKy": 0.3,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 0.3
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.243",
-      "TonDauKy": -0.01,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": -0.01
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.245",
-      "TonDauKy": -1.37,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": -1.37
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.246",
-      "TonDauKy": -0.37,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": -0.37
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.247",
-      "TonDauKy": 23.0,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 23.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.248",
-      "TonDauKy": 33.0,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 33.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.249",
-      "TonDauKy": 63.0,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 7.0,
-      "TonCuoiKy": 56.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
-      "MaThan": "11a.251",
-      "TonDauKy": 8302.0,
+      "TenKho": "Kho 9",
+      "MaThan": "GROUP_CAM_6A_10",
+      "TenThan": "Cám 6a.10",
+      "TonDauKy": 8358.0,
       "NhapTrongKy": 668.0,
       "XuatTrongKy": 4835.0,
-      "TonCuoiKy": 4135.0
+      "TonCuoiKy": 4191.0,
+      "IsNhomTongHop": true,
+      "NhomTongHopLoai": "Cám 6a.10",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11a.247",
+        "11a.248",
+        "11a.251"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.10 (Lào - Tàu Golden Star)",
+        "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
+        "Cám 6a.10 (Lào - Tàu VTA Poseidon)"
+      ],
+      "SoDongGop": 3
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "09",
-      "MaThan": "11a.253",
-      "TonDauKy": 0.0,
-      "NhapTrongKy": 25561.0,
-      "XuatTrongKy": 16694.0,
-      "TonCuoiKy": 8867.0
+      "TenKho": "Kho 9",
+      "MaThan": "GROUP_CAM_6A_14",
+      "TenThan": "Cám 6a.14",
+      "TonDauKy": 4039.55,
+      "NhapTrongKy": 32765.0,
+      "XuatTrongKy": 20341.0,
+      "TonCuoiKy": 16463.55,
+      "IsNhomTongHop": true,
+      "NhomTongHopLoai": "Cám 6a.14",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11.250",
+        "11a.241",
+        "11a.243",
+        "11a.245",
+        "11a.246",
+        "11a.249",
+        "11a.253",
+        "11a.254"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
+        "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+        "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+        "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+        "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+        "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+        "Cám 6a.14 (Úc - Tàu MV W - Star)",
+        "Cám 6a.14(Mozambique - Tầu MV Gleamstar)"
+      ],
+      "SoDongGop": 8
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "09",
-      "MaThan": "11a.254",
-      "TonDauKy": 0.0,
-      "NhapTrongKy": 7204.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 7204.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "09",
+      "TenKho": "Kho 9",
       "MaThan": "11B.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDauKy": 418.0,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 418.0
+      "TonCuoiKy": 418.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1 (Ak40,01 - 45%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "10",
+      "TenKho": "Kho 10",
       "MaThan": "10a.1",
+      "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
       "TonDauKy": 12796.21,
       "NhapTrongKy": 952.0,
       "XuatTrongKy": 12248.0,
-      "TonCuoiKy": 1500.21
+      "TonCuoiKy": 1500.21,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "10",
+      "DanhSachMaThanGoc": [
+        "10a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5a.1 (Ak27,01 - 31%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "10",
-      "MaThan": "10a.101",
-      "TonDauKy": 10.82,
+      "TenKho": "Kho 10",
+      "MaThan": "GROUP_CAM_5A_14",
+      "TenThan": "Cám 5a.14",
+      "TonDauKy": 291.0,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 10.82
+      "TonCuoiKy": 291.0,
+      "IsNhomTongHop": true,
+      "NhomTongHopLoai": "Cám 5a.14",
+      "MaThanCha": "10",
+      "DanhSachMaThanGoc": [
+        "10a.101",
+        "10a.259",
+        "10a.262",
+        "10a.263",
+        "10a.72"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
+        "Cám 5a.14 (Úc - Tàu MV Golden Future)",
+        "Cám 5a.14 (Úc - Tàu MV Krenom)",
+        "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
+        "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)"
+      ],
+      "SoDongGop": 5
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "10",
-      "MaThan": "10a.259",
-      "TonDauKy": -0.04,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": -0.04
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "10",
-      "MaThan": "10a.262",
-      "TonDauKy": -12.0,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": -12.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "10",
-      "MaThan": "10a.263",
-      "TonDauKy": 292.0,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 292.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "10",
-      "MaThan": "10a.72",
-      "TonDauKy": 0.22,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 0.22
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "10",
+      "TenKho": "Kho 10",
       "MaThan": "10B.1",
+      "TenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
       "TonDauKy": 2711.0,
       "NhapTrongKy": 541.0,
       "XuatTrongKy": 2810.0,
-      "TonCuoiKy": 442.0
+      "TonCuoiKy": 442.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "10",
+      "DanhSachMaThanGoc": [
+        "10B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5b.1 (Ak 31,01 - 35%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "11",
+      "TenKho": "Kho 11",
       "MaThan": "9A.1",
+      "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
       "TonDauKy": 38391.49,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 720.0,
-      "TonCuoiKy": 37671.49
+      "TonCuoiKy": 37671.49,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "09",
+      "DanhSachMaThanGoc": [
+        "9A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 4a.1 (Ak 19,01 - 23,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "12",
+      "TenKho": "Kho 12",
       "MaThan": "8B.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
       "TonDauKy": 25271.64,
       "NhapTrongKy": 745.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 26016.64
+      "TonCuoiKy": 26016.64,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "08",
+      "DanhSachMaThanGoc": [
+        "8B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "13",
+      "TenKho": "Kho 13",
       "MaThan": "8A.1",
+      "TenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
       "TonDauKy": 18297.95,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 18297.95
+      "TonCuoiKy": 18297.95,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "08",
+      "DanhSachMaThanGoc": [
+        "8A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 3a.1 (Ak 10,01 - 13,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "15",
+      "TenKho": "Kho 15",
       "MaThan": "5A.1",
+      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
       "TonDauKy": 32500.8,
       "NhapTrongKy": 1077.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 33577.8
+      "TonCuoiKy": 33577.8,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "05",
+      "DanhSachMaThanGoc": [
+        "5A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục 5a.1 (Ak5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "16",
+      "TenKho": "Kho 16",
       "MaThan": "5A.1",
+      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
       "TonDauKy": 13252.46,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 13252.46
+      "TonCuoiKy": 13252.46,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "05",
+      "DanhSachMaThanGoc": [
+        "5A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục 5a.1 (Ak5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "17",
+      "TenKho": "Kho 17",
       "MaThan": "6A.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDauKy": 46220.05,
       "NhapTrongKy": 2509.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 48729.05
+      "TonCuoiKy": 48729.05,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "06",
+      "DanhSachMaThanGoc": [
+        "6A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 1 (Ak 5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "17",
+      "TenKho": "Kho 17",
       "MaThan": "7a.1",
+      "TenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
       "TonDauKy": 22078.6,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 2868.0,
-      "TonCuoiKy": 19210.6
+      "TonCuoiKy": 19210.6,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "07",
+      "DanhSachMaThanGoc": [
+        "7a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 2a.1 (Ak 8,01 - 10,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "18",
+      "TenKho": "Kho 18",
       "MaThan": "8B.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
       "TonDauKy": 13807.58,
       "NhapTrongKy": 560.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 14367.58
+      "TonCuoiKy": 14367.58,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "08",
+      "DanhSachMaThanGoc": [
+        "8B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "19",
+      "TenKho": "Kho 19",
       "MaThan": "8B.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
       "TonDauKy": 14285.09,
       "NhapTrongKy": 957.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 15242.09
+      "TonCuoiKy": 15242.09,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "08",
+      "DanhSachMaThanGoc": [
+        "8B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "20",
+      "TenKho": "Kho 20",
       "MaThan": "9A.1",
+      "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
       "TonDauKy": 72912.93,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 3364.0,
-      "TonCuoiKy": 69548.93
+      "TonCuoiKy": 69548.93,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "09",
+      "DanhSachMaThanGoc": [
+        "9A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 4a.1 (Ak 19,01 - 23,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "20",
+      "TenKho": "Kho 20",
       "MaThan": "9B.1",
+      "TenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
       "TonDauKy": 0.0,
       "NhapTrongKy": 1549.0,
       "XuatTrongKy": 1494.0,
-      "TonCuoiKy": 55.0
+      "TonCuoiKy": 55.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "09",
+      "DanhSachMaThanGoc": [
+        "9B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 4b.1 (Ak 23,01 - 27%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "21",
+      "TenKho": "Kho 21",
       "MaThan": "10A.1",
+      "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
       "TonDauKy": 11014.32,
       "NhapTrongKy": 4526.0,
       "XuatTrongKy": 12447.0,
-      "TonCuoiKy": 3093.32
+      "TonCuoiKy": 3093.32,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "10",
+      "DanhSachMaThanGoc": [
+        "10A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5a.1 (Ak27,01 - 31%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "21",
+      "TenKho": "Kho 21",
       "MaThan": "10B.1",
+      "TenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
       "TonDauKy": 3451.44,
       "NhapTrongKy": 7390.0,
       "XuatTrongKy": 11122.0,
-      "TonCuoiKy": -280.56
+      "TonCuoiKy": -280.56,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "10",
+      "DanhSachMaThanGoc": [
+        "10B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5b.1 (Ak 31,01 - 35%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "21",
+      "TenKho": "Kho 21",
       "MaThan": "11A.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 7291.49,
       "NhapTrongKy": 8314.0,
       "XuatTrongKy": 12519.0,
-      "TonCuoiKy": 3086.49
+      "TonCuoiKy": 3086.49,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "23",
+      "TenKho": "Kho 23",
       "MaThan": "8b.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
       "TonDauKy": 21824.66,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 21824.66
+      "TonCuoiKy": 21824.66,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "08",
+      "DanhSachMaThanGoc": [
+        "8b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 3b.1 (Ak 13,01 - 16,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "24",
+      "TenKho": "Kho 24",
       "MaThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 8507.0,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 3535.0,
-      "TonCuoiKy": 4972.0
+      "TonCuoiKy": 4972.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "25",
+      "TenKho": "Kho 25",
       "MaThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDauKy": 17171.72,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 17171.72
+      "TonCuoiKy": 17171.72,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "06",
+      "DanhSachMaThanGoc": [
+        "6a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 1 (Ak 5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "26",
+      "TenKho": "Kho than số 29",
       "MaThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDauKy": 18990.4,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 18990.4
+      "TonCuoiKy": 18990.4,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "06",
+      "DanhSachMaThanGoc": [
+        "6a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 1 (Ak 5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "27",
+      "TenKho": "Kho than số 30",
       "MaThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDauKy": 22274.7,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 22274.7
+      "TonCuoiKy": 22274.7,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "06",
+      "DanhSachMaThanGoc": [
+        "6a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 1 (Ak 5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "28",
-      "MaThan": "NHK.16",
-      "TonDauKy": 0.0,
-      "NhapTrongKy": 3025.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 3025.0
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "28",
+      "TenKho": "Kho nội địa 3",
       "MaThan": "NHK.295",
+      "TenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
       "TonDauKy": 643.13,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 634.0,
-      "TonCuoiKy": 9.13
+      "TonCuoiKy": 9.13,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NHK",
+      "DanhSachMaThanGoc": [
+        "NHK.295"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "28",
+      "TenKho": "Kho nội địa 3",
       "MaThan": "NHK.296",
+      "TenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
       "TonDauKy": 5243.59,
       "NhapTrongKy": 4975.84,
       "XuatTrongKy": 10232.31,
-      "TonCuoiKy": -12.88
+      "TonCuoiKy": -12.88,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NHK",
+      "DanhSachMaThanGoc": [
+        "NHK.296"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "28",
+      "TenKho": "Kho nội địa 3",
       "MaThan": "NHK.297",
+      "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
       "TonDauKy": 0.0,
       "NhapTrongKy": 10369.95,
       "XuatTrongKy": 3946.26,
-      "TonCuoiKy": 6423.69
+      "TonCuoiKy": 6423.69,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NHK",
+      "DanhSachMaThanGoc": [
+        "NHK.297"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than NK (Úc - Tầu MV BARDONNEX)"
+      ],
+      "SoDongGop": 1
+    },
+    {
+      "NamHT": 2026,
+      "ThangHT": 5,
+      "MaKho": "28",
+      "TenKho": "Kho nội địa 3",
+      "MaThan": "NHK.16",
+      "TenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "TonDauKy": 0.0,
+      "NhapTrongKy": 3025.0,
+      "XuatTrongKy": 0.0,
+      "TonCuoiKy": 3025.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NHK",
+      "DanhSachMaThanGoc": [
+        "NHK.16"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "29",
+      "TenKho": "Kho than số 26",
       "MaThan": "b32d",
+      "TenThan": "Bùn tuyển 3A",
       "TonDauKy": 17350.98,
       "NhapTrongKy": 1781.0,
       "XuatTrongKy": 177.0,
-      "TonCuoiKy": 18954.98
+      "TonCuoiKy": 18954.98,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B3",
+      "DanhSachMaThanGoc": [
+        "b32d"
+      ],
+      "DanhSachTenThanGoc": [
+        "Bùn tuyển 3A"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "30b",
-      "MaThan": "11b.1",
-      "TonDauKy": 707.72,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 0.0,
-      "TonCuoiKy": 707.72
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "30b",
+      "TenKho": "Kho than số 27",
       "MaThan": "b32d",
+      "TenThan": "Bùn tuyển 3A",
       "TonDauKy": 360.09,
       "NhapTrongKy": 198.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 558.09
+      "TonCuoiKy": 558.09,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B3",
+      "DanhSachMaThanGoc": [
+        "b32d"
+      ],
+      "DanhSachTenThanGoc": [
+        "Bùn tuyển 3A"
+      ],
+      "SoDongGop": 1
+    },
+    {
+      "NamHT": 2026,
+      "ThangHT": 5,
+      "MaKho": "30b",
+      "TenKho": "Kho than số 27",
+      "MaThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TonDauKy": 707.72,
+      "NhapTrongKy": 0.0,
+      "XuatTrongKy": 0.0,
+      "TonCuoiKy": 707.72,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1 (Ak40,01 - 45%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "31B",
+      "TenKho": "Nhà máy sấy",
       "MaThan": "B2796",
+      "TenThan": "Cám 8C",
       "TonDauKy": 40.0,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 40.0
+      "TonCuoiKy": 40.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B27",
+      "DanhSachMaThanGoc": [
+        "B2796"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 8C"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "31c",
+      "TenKho": "Kho số 28 (Tuyển 3)",
       "MaThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDauKy": 26021.24,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 6205.0,
-      "TonCuoiKy": 19816.24
+      "TonCuoiKy": 19816.24,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1 (Ak40,01 - 45%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "31D",
+      "TenKho": "Kho than số 28-1 (T3)",
       "MaThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDauKy": 17959.94,
       "NhapTrongKy": 1156.0,
       "XuatTrongKy": 1078.0,
-      "TonCuoiKy": 18037.94
+      "TonCuoiKy": 18037.94,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1 (Ak40,01 - 45%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "34A",
+      "TenKho": "Kho 34",
       "MaThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDauKy": 43197.29,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 43197.29
+      "TonCuoiKy": 43197.29,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "06",
+      "DanhSachMaThanGoc": [
+        "6a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 1 (Ak 5,00 - 8,00%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "36",
+      "TenKho": "Kho bùn số 7",
       "MaThan": "B32d",
+      "TenThan": "Bùn tuyển 3A",
       "TonDauKy": 52191.58,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 4815.0,
-      "TonCuoiKy": 47376.58
+      "TonCuoiKy": 47376.58,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B3",
+      "DanhSachMaThanGoc": [
+        "B32d"
+      ],
+      "DanhSachTenThanGoc": [
+        "Bùn tuyển 3A"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "39",
+      "TenKho": "Hồ bùn số 9",
       "MaThan": "b32e",
+      "TenThan": "Bùn tuyển 3B",
       "TonDauKy": 21566.8,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 21566.8
+      "TonCuoiKy": 21566.8,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B3",
+      "DanhSachMaThanGoc": [
+        "b32e"
+      ],
+      "DanhSachTenThanGoc": [
+        "Bùn tuyển 3B"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "43",
-      "MaThan": "00",
-      "TonDauKy": 25854.98,
-      "NhapTrongKy": 0.0,
-      "XuatTrongKy": 5600.0,
-      "TonCuoiKy": 20254.98
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "43",
+      "TenKho": "Kho than số 31",
       "MaThan": "B29A",
+      "TenThan": "Cám đá",
       "TonDauKy": 4332.0,
       "NhapTrongKy": 400.0,
       "XuatTrongKy": 1020.0,
-      "TonCuoiKy": 3712.0
+      "TonCuoiKy": 3712.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B29",
+      "DanhSachMaThanGoc": [
+        "B29A"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám đá"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
-      "MaKho": "44",
+      "MaKho": "43",
+      "TenKho": "Kho than số 31",
       "MaThan": "00",
-      "TonDauKy": 17679.25,
-      "NhapTrongKy": 9807.0,
-      "XuatTrongKy": 17206.61,
-      "TonCuoiKy": 10279.64
+      "TenThan": "Than nguyên khai",
+      "TonDauKy": 25854.98,
+      "NhapTrongKy": 0.0,
+      "XuatTrongKy": 5600.0,
+      "TonCuoiKy": 20254.98,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NK",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "44",
-      "MaThan": "b2902",
-      "TonDauKy": 3440.39,
-      "NhapTrongKy": 2033.0,
-      "XuatTrongKy": 4741.0,
-      "TonCuoiKy": 732.39
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "44",
-      "MaThan": "b29a",
-      "TonDauKy": 4229.39,
-      "NhapTrongKy": 700.0,
-      "XuatTrongKy": 2304.0,
-      "TonCuoiKy": 2625.39
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "44",
+      "TenKho": "Kho than số 32",
       "MaThan": "b32d",
+      "TenThan": "Bùn tuyển 3A",
       "TonDauKy": 648.9,
       "NhapTrongKy": 4815.0,
       "XuatTrongKy": 953.0,
-      "TonCuoiKy": 4510.9
+      "TonCuoiKy": 4510.9,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B3",
+      "DanhSachMaThanGoc": [
+        "b32d"
+      ],
+      "DanhSachTenThanGoc": [
+        "Bùn tuyển 3A"
+      ],
+      "SoDongGop": 1
+    },
+    {
+      "NamHT": 2026,
+      "ThangHT": 5,
+      "MaKho": "44",
+      "TenKho": "Kho than số 32",
+      "MaThan": "b2902",
+      "TenThan": "Cám 6A.1 (sấy)",
+      "TonDauKy": 3440.39,
+      "NhapTrongKy": 2033.0,
+      "XuatTrongKy": 4741.0,
+      "TonCuoiKy": 732.39,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "12",
+      "DanhSachMaThanGoc": [
+        "b2902"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6A.1 (sấy)"
+      ],
+      "SoDongGop": 1
+    },
+    {
+      "NamHT": 2026,
+      "ThangHT": 5,
+      "MaKho": "44",
+      "TenKho": "Kho than số 32",
+      "MaThan": "b29a",
+      "TenThan": "Cám đá",
+      "TonDauKy": 4229.39,
+      "NhapTrongKy": 700.0,
+      "XuatTrongKy": 2304.0,
+      "TonCuoiKy": 2625.39,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B29",
+      "DanhSachMaThanGoc": [
+        "b29a"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám đá"
+      ],
+      "SoDongGop": 1
+    },
+    {
+      "NamHT": 2026,
+      "ThangHT": 5,
+      "MaKho": "44",
+      "TenKho": "Kho than số 32",
+      "MaThan": "00",
+      "TenThan": "Than nguyên khai",
+      "TonDauKy": 17679.25,
+      "NhapTrongKy": 9807.0,
+      "XuatTrongKy": 17206.61,
+      "TonCuoiKy": 10279.64,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NK",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "45",
+      "TenKho": "Kho than số 33",
       "MaThan": "B29a",
+      "TenThan": "Cám đá",
       "TonDauKy": 2381.78,
       "NhapTrongKy": 4775.0,
       "XuatTrongKy": 2936.2,
-      "TonCuoiKy": 4220.58
+      "TonCuoiKy": 4220.58,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B29",
+      "DanhSachMaThanGoc": [
+        "B29a"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám đá"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "46a",
+      "TenKho": "Kho 38",
       "MaThan": "00",
+      "TenThan": "Than nguyên khai",
       "TonDauKy": 386629.53,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 16064.0,
-      "TonCuoiKy": 370565.53
+      "TonCuoiKy": 370565.53,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NK",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "60",
+      "TenKho": "Kho hồ Gap",
       "MaThan": "B5.01",
+      "TenThan": "Đá thải",
       "TonDauKy": 10273.19,
       "NhapTrongKy": 9462.0,
       "XuatTrongKy": 15742.17,
-      "TonCuoiKy": 3993.02
+      "TonCuoiKy": 3993.02,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B5",
+      "DanhSachMaThanGoc": [
+        "B5.01"
+      ],
+      "DanhSachTenThanGoc": [
+        "Đá thải"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "71",
+      "TenKho": "Kho 1-T4",
       "MaThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 83251.99,
       "NhapTrongKy": 66728.0,
       "XuatTrongKy": 76337.0,
-      "TonCuoiKy": 73642.99
+      "TonCuoiKy": 73642.99,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "71",
+      "TenKho": "Kho 1-T4",
       "MaThan": "b11c",
+      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
       "TonDauKy": 1209.0,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 1209.0
+      "TonCuoiKy": 1209.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B11",
+      "DanhSachMaThanGoc": [
+        "b11c"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục xô 1c (Ak 17,01 - 22%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "72",
-      "MaThan": "00",
-      "TonDauKy": 6241.77,
-      "NhapTrongKy": 12568.2,
-      "XuatTrongKy": 18259.0,
-      "TonCuoiKy": 550.97
-    },
-    {
-      "NamHT": 2026,
-      "ThangHT": 5,
-      "MaKho": "72",
+      "TenKho": "Kho 2-T4",
       "MaThan": "b16.09",
+      "TenThan": "Cục don 8C",
       "TonDauKy": 5027.1,
       "NhapTrongKy": 350.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 5377.1
+      "TonCuoiKy": 5377.1,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B16",
+      "DanhSachMaThanGoc": [
+        "b16.09"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cục don 8C"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "72",
+      "TenKho": "Kho 2-T4",
+      "MaThan": "00",
+      "TenThan": "Than nguyên khai",
+      "TonDauKy": 6241.77,
+      "NhapTrongKy": 12568.2,
+      "XuatTrongKy": 18259.0,
+      "TonCuoiKy": 550.97,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NK",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SoDongGop": 1
+    },
+    {
+      "NamHT": 2026,
+      "ThangHT": 5,
+      "MaKho": "72",
+      "TenKho": "Kho 2-T4",
       "MaThan": "B5.01",
+      "TenThan": "Đá thải",
       "TonDauKy": 4447.39,
       "NhapTrongKy": 591.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 5038.39
+      "TonCuoiKy": 5038.39,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "B5",
+      "DanhSachMaThanGoc": [
+        "B5.01"
+      ],
+      "DanhSachTenThanGoc": [
+        "Đá thải"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "73",
+      "TenKho": "Kho 3-T4",
       "MaThan": "00",
+      "TenThan": "Than nguyên khai",
       "TonDauKy": 11629.16,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 5608.0,
-      "TonCuoiKy": 6021.16
+      "TonCuoiKy": 6021.16,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NK",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "74",
+      "TenKho": "Kho 4-T4",
       "MaThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDauKy": 27914.54,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 27914.54
+      "TonCuoiKy": 27914.54,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "K04",
+      "TenKho": "Tuyển 1",
       "MaThan": "00",
+      "TenThan": "Than nguyên khai",
       "TonDauKy": 0.0,
       "NhapTrongKy": 19940.29,
       "XuatTrongKy": 19526.69,
-      "TonCuoiKy": 413.6
+      "TonCuoiKy": 413.6,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NK",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "K04",
+      "TenKho": "Tuyển 1",
       "MaThan": "NHK.297",
+      "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
       "TonDauKy": 0.0,
       "NhapTrongKy": 3946.26,
       "XuatTrongKy": 3601.0,
-      "TonCuoiKy": 345.26
+      "TonCuoiKy": 345.26,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "NHK",
+      "DanhSachMaThanGoc": [
+        "NHK.297"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than NK (Úc - Tầu MV BARDONNEX)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "k59",
+      "TenKho": "NM Nhiệt điện",
       "MaThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDauKy": 1746.0,
       "NhapTrongKy": 43506.0,
       "XuatTrongKy": 40959.0,
-      "TonCuoiKy": 4293.0
+      "TonCuoiKy": 4293.0,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1 (Ak40,01 - 45%)"
+      ],
+      "SoDongGop": 1
     },
     {
       "NamHT": 2026,
       "ThangHT": 5,
       "MaKho": "K60",
+      "TenKho": "Ẩm nhiệt điện",
       "MaThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDauKy": 1079.14,
       "NhapTrongKy": 0.0,
       "XuatTrongKy": 0.0,
-      "TonCuoiKy": 1079.14
+      "TonCuoiKy": 1079.14,
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "MaThanCha": "11",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1 (Ak40,01 - 45%)"
+      ],
+      "SoDongGop": 1
     }
   ]
 }
