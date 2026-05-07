@@ -28,6 +28,7 @@ import * as XLSX from "xlsx";
 // Fix v1.3.4: Danh sách chủng loại và khối lượng TTCO_APP lấy theo JSON; kích thước/tỷ khối vẫn lấy từ Excel.
 // Fix v1.3.3: TTCO JSON chỉ cập nhật tồn kho, không ghi đè danh mục Excel; tự tải JSON sau khi Excel sẵn sàng.
 // Fix v1.3.9: Nút Mặc định chỉ tải lại Excel public/data; nếu lỗi thì giữ dữ liệu hiện tại, không quay về hard-code.
+// Fix v1.4.1: Bổ sung tên kho chuẩn TTCO_APP: Kho 1-T4, Kho 2-T4, Kho 3-T4, Kho 4-T4, Kho 28-1, Kho 32, Kho 33, Kho 37, Kho 40...; map mã phụ từ JSON về tên kho báo cáo.
 // Fix v1.3.7: chuẩn hóa Kho 1/KHO01/01 cùng về mã 01 để tham số Excel khớp TTCO JSON
 // Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
@@ -287,8 +288,31 @@ function normalizeKhoCode(value) {
   const text = normalizeText(value);
   if (!text) return "";
 
-  // Chuẩn hóa đồng nhất các dạng: "01", "1", "Kho 1", "KHO01", "Kho 31B".
-  // Bản cũ xử lý "Kho 1" thành " 1" nên không khớp với MaKho "01" từ TTCO JSON.
+  // Chuẩn hóa đồng nhất các dạng:
+  // "01", "1", "Kho 1", "KHO01"        -> "01"
+  // "Kho 1-T4", "1-T4", "01T4"         -> "01-T4"
+  // "Kho 28-1", "28-1"                 -> "28-1"
+  // "Kho 31B", "31B"                   -> "31B"
+  const khoT4Match = text.match(/^kho\s*0*(\d+)\s*[-–]?\s*t\s*0*(\d+)$/i);
+  if (khoT4Match) {
+    return `${khoT4Match[1].padStart(2, "0")}-T${Number(khoT4Match[2])}`;
+  }
+
+  const bareT4Match = text.match(/^0*(\d+)\s*[-–]?\s*t\s*0*(\d+)$/i);
+  if (bareT4Match) {
+    return `${bareT4Match[1].padStart(2, "0")}-T${Number(bareT4Match[2])}`;
+  }
+
+  const khoSubMatch = text.match(/^kho\s*0*(\d+)\s*[-–]\s*0*(\d+)$/i);
+  if (khoSubMatch) {
+    return `${khoSubMatch[1].padStart(2, "0")}-${Number(khoSubMatch[2])}`;
+  }
+
+  const bareSubMatch = text.match(/^0*(\d+)\s*[-–]\s*0*(\d+)$/i);
+  if (bareSubMatch) {
+    return `${bareSubMatch[1].padStart(2, "0")}-${Number(bareSubMatch[2])}`;
+  }
+
   const khoMatch = text.match(/^kho\s*0*(\d+)([a-zA-Z]*)$/i);
   if (khoMatch) {
     const numberPart = khoMatch[1].padStart(2, "0");
@@ -307,7 +331,98 @@ function normalizeKhoCode(value) {
   return withoutPrefix.toUpperCase();
 }
 
+// Map các mã kho phụ trong DB/JSON về tên kho đúng như báo cáo TTCO_APP G3_BC05.
+// Ví dụ: 71 -> Kho 1-T4, 31D -> Kho 28-1, 44 -> Kho 32.
+const TTCO_KHO_CODE_OVERRIDES = {
+  "30B": { code: "27", number: 27, suffix: "", name: "Kho 27" },
+  "31C": { code: "28", number: 28, suffix: "", name: "Kho 28" },
+  "31D": { code: "28-1", number: 28, suffix: "1", name: "Kho 28-1" },
+  "31B": { code: "32", number: 32, suffix: "", name: "Kho 32" },
+  "34A": { code: "34", number: 34, suffix: "", name: "Kho 34" },
+
+  "43": { code: "31", number: 31, suffix: "", name: "Kho 31" },
+  "44": { code: "32", number: 32, suffix: "", name: "Kho 32" },
+  "45": { code: "33", number: 33, suffix: "", name: "Kho 33" },
+  "36": { code: "37", number: 37, suffix: "", name: "Kho 37" },
+  "46A": { code: "38", number: 38, suffix: "", name: "Kho 38" },
+  "60": { code: "40", number: 40, suffix: "", name: "Kho 40" },
+
+  "71": { code: "01-T4", number: 1, suffix: "T4", name: "Kho 1-T4" },
+  "72": { code: "02-T4", number: 2, suffix: "T4", name: "Kho 2-T4" },
+  "73": { code: "03-T4", number: 3, suffix: "T4", name: "Kho 3-T4" },
+  "74": { code: "04-T4", number: 4, suffix: "T4", name: "Kho 4-T4" },
+};
+
+function getStandardKhoInfo(value) {
+  const original = normalizeText(value);
+  if (!original) return null;
+
+  // Loại các kho kỹ thuật/ngoài báo cáo tồn kho chuẩn như K04, K60, k59.
+  // Các mã 71-74 được giữ lại qua bảng override vì tương ứng Kho 1-T4...Kho 4-T4.
+  if (/^k(?!ho)/i.test(original)) {
+    return null;
+  }
+
+  const normalized = normalizeKhoCode(original);
+  const override = TTCO_KHO_CODE_OVERRIDES[normalized.toUpperCase()];
+  if (override) {
+    return override;
+  }
+
+  const t4Match = normalized.match(/^(\d{2})-T(\d+)$/i);
+  if (t4Match) {
+    const number = Number(t4Match[1]);
+    const tNumber = Number(t4Match[2]);
+    if (Number.isFinite(number) && number >= 1 && number <= 40) {
+      return {
+        code: `${String(number).padStart(2, "0")}-T${tNumber}`,
+        number,
+        suffix: `T${tNumber}`,
+        name: `Kho ${number}-T${tNumber}`,
+      };
+    }
+  }
+
+  const subMatch = normalized.match(/^(\d{2})-(\d+)$/i);
+  if (subMatch) {
+    const number = Number(subMatch[1]);
+    const subNumber = Number(subMatch[2]);
+    if (Number.isFinite(number) && number >= 1 && number <= 40) {
+      return {
+        code: `${String(number).padStart(2, "0")}-${subNumber}`,
+        number,
+        suffix: String(subNumber),
+        name: `Kho ${number}-${subNumber}`,
+      };
+    }
+  }
+
+  const match = normalized.match(/^(\d{1,3})([A-Z]*)$/i);
+  if (!match) return null;
+
+  const number = Number(match[1]);
+  if (!Number.isFinite(number) || number < 1 || number > 40) {
+    return null;
+  }
+
+  const suffix = normalizeText(match[2]).toUpperCase();
+  return {
+    code: suffix ? `${String(number).padStart(2, "0")}${suffix}` : String(number).padStart(2, "0"),
+    number,
+    suffix,
+    name: suffix ? `Kho ${number}${suffix}` : `Kho ${number}`,
+  };
+}
+
+function getKhoCompareCode(value) {
+  const standard = getStandardKhoInfo(value);
+  return standard?.code || normalizeKhoCode(value);
+}
+
 function displayKhoName(maKho) {
+  const standard = getStandardKhoInfo(maKho);
+  if (standard) return standard.name;
+
   const code = normalizeKhoCode(maKho);
   return code ? `Kho ${Number.isFinite(Number(code)) ? Number(code) : code}` : "";
 }
@@ -315,18 +430,19 @@ function displayKhoName(maKho) {
 const getWarehouseSortInfo = (warehouse) => {
   const id = normalizeText(warehouse?.id ?? warehouse?.ma_kho ?? warehouse?.MaKho);
   const name = normalizeText(warehouse?.name ?? warehouse?.ten_kho ?? warehouse?.TenKho);
-  const code = normalizeKhoCode(id || name);
+  const standard = getStandardKhoInfo(id) || getStandardKhoInfo(name);
 
-  const codeMatch = code.match(/^(\d+)([A-Za-z]*)$/);
-  const nameMatch = name.match(/kho\s*(\d+)\s*([A-Za-z]*)/i);
-  const match = codeMatch || nameMatch;
-
-  if (match) {
+  if (standard) {
+    const suffixRank = standard.suffix
+      ? standard.suffix.toUpperCase().startsWith("T")
+        ? `T${standard.suffix.replace(/[^0-9]/g, "").padStart(2, "0")}`
+        : `Z${standard.suffix.padStart(2, "0")}`
+      : "";
     return {
       group: 0,
-      number: Number(match[1]),
-      suffix: normalizeText(match[2]).toUpperCase(),
-      name,
+      number: standard.number,
+      suffix: suffixRank,
+      name: standard.name,
     };
   }
 
@@ -370,24 +486,27 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
 
   if (Array.isArray(payload?.khoList)) {
     for (const item of payload.khoList) {
-      if (typeof item === "string") {
-        const code = normalizeKhoCode(item);
-        if (code) tenKhoByCode.set(code, displayKhoName(code));
-      } else {
-        const code = normalizeKhoCode(item?.MaKho ?? item?.ma_kho ?? item?.code);
-        const name = normalizeText(item?.TenKho ?? item?.ten_kho ?? item?.Label ?? item?.label);
-        if (code && name) tenKhoByCode.set(code, name);
+      const sourceCode =
+        typeof item === "string"
+          ? item
+          : item?.MaKho ?? item?.ma_kho ?? item?.code ?? item?.TenKho ?? item?.ten_kho;
+      const standard = getStandardKhoInfo(sourceCode);
+      if (standard) {
+        tenKhoByCode.set(standard.code, standard.name);
       }
     }
   }
 
-  const records = rows
+  const rawRecords = rows
     .map((item) => {
-      const maKho = normalizeKhoCode(item.MaKho ?? item.ma_kho ?? item.khoCode);
-      const tenKho =
-        normalizeText(item.TenKho ?? item.ten_kho ?? item.kho) ||
-        tenKhoByCode.get(maKho) ||
-        displayKhoName(maKho);
+      const standardKho = getStandardKhoInfo(
+        item.MaKho ?? item.ma_kho ?? item.khoCode ?? item.TenKho ?? item.ten_kho ?? item.kho
+      );
+
+      if (!standardKho) return null;
+
+      const maKho = standardKho.code;
+      const tenKho = tenKhoByCode.get(maKho) || standardKho.name;
       const maThan = normalizeText(item.MaThan ?? item.ma_than ?? item.coalCode);
       const tenThan =
         normalizeText(item.TenThan ?? item.ten_than ?? item.coal ?? item.LoaiThan) || maThan;
@@ -414,7 +533,32 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
           : [],
       };
     })
-    .filter((item) => item.khoCode && item.coal);
+    .filter((item) => item?.khoCode && item.coal);
+
+  const recordMap = new Map();
+
+  for (const record of rawRecords) {
+    const key = `${record.khoCode}__${normalizeKey(record.coal)}`;
+    const oldRecord = recordMap.get(key);
+
+    if (!oldRecord) {
+      recordMap.set(key, { ...record });
+      continue;
+    }
+
+    recordMap.set(key, {
+      ...oldRecord,
+      ton: toNumber(oldRecord.ton) + toNumber(record.ton),
+      danhSachMaThanGoc: Array.from(
+        new Set([...(oldRecord.danhSachMaThanGoc || []), ...(record.danhSachMaThanGoc || [])])
+      ),
+      danhSachTenThanGoc: Array.from(
+        new Set([...(oldRecord.danhSachTenThanGoc || []), ...(record.danhSachTenThanGoc || [])])
+      ),
+    });
+  }
+
+  const records = Array.from(recordMap.values());
 
   if (records.length === 0) {
     throw new Error("Không tìm thấy dòng tồn kho hợp lệ trong GitHub JSON.");
@@ -588,13 +732,14 @@ const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
     return [];
   }
 
-  const warehouseCode = normalizeKhoCode(warehouse.id);
+  const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
   const warehouseNameKey = normalizeKey(warehouse.name);
   const map = new Map();
 
   for (const item of ttcoRecords) {
+    const itemCode = getKhoCompareCode(item.khoCode || item.kho);
     const sameKho =
-      normalizeKhoCode(item.khoCode) === warehouseCode ||
+      itemCode === warehouseCode ||
       normalizeKey(item.kho) === warehouseNameKey;
 
     if (!sameKho) continue;
@@ -625,7 +770,7 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
   const excelByName = new Map();
 
   for (const warehouse of excelWarehouses || []) {
-    const code = normalizeKhoCode(warehouse.id);
+    const code = getKhoCompareCode(warehouse.id || warehouse.name);
     const nameKey = normalizeKey(warehouse.name);
 
     if (code && !excelByCode.has(code)) {
@@ -640,9 +785,12 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
   const map = new Map();
 
   for (const record of ttcoRecords) {
-    const code = normalizeKhoCode(record.khoCode);
-    const name = normalizeText(record.kho) || displayKhoName(code);
-    const key = code || normalizeKey(name);
+    const standardKho = getStandardKhoInfo(record.khoCode) || getStandardKhoInfo(record.kho);
+    if (!standardKho) continue;
+
+    const code = standardKho.code;
+    const name = standardKho.name;
+    const key = code;
     const coal = normalizeText(record.coal);
 
     if (!key || !name) continue;
@@ -1433,12 +1581,13 @@ export default function TTCOCoalStockpileApp() {
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
 
-    const warehouseCode = normalizeKhoCode(warehouse.id);
+    const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
     const warehouseNameKey = normalizeKey(warehouse.name);
 
     const matched = ttcoRecords.filter((item) => {
+      const itemCode = getKhoCompareCode(item.khoCode || item.kho);
       const sameKho =
-        normalizeKhoCode(item.khoCode) === warehouseCode ||
+        itemCode === warehouseCode ||
         normalizeKey(item.kho) === warehouseNameKey;
 
       return sameKho && coalMatches(coalName, item.coal);
