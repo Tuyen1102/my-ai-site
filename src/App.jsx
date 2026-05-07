@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Plus,
@@ -24,7 +24,10 @@ import * as XLSX from "xlsx";
 
 // ======================================================
 // TTCO - APP TÍNH KHỐI LƯỢNG THAN TỒN KHO
-// v1.3.0: Đọc DS_kho_than_va_ty_khoi.xlsx từ public/data trên GitHub Pages
+// Fix v1.3.6: Sắp xếp tên kho theo thứ tự tự nhiên: Kho 1, Kho 2, Kho 3...; kho ngoài chuẩn đưa xuống cuối.
+// Fix v1.3.4: Danh sách chủng loại và khối lượng TTCO_APP lấy theo JSON; kích thước/tỷ khối vẫn lấy từ Excel.
+// Fix v1.3.3: TTCO JSON chỉ cập nhật tồn kho, không ghi đè danh mục Excel; tự tải JSON sau khi Excel sẵn sàng.
+// Fix v1.3.2: chỉ đọc duy nhất file Excel tại public/data/DS_kho_than_va_ty_khoi.xlsx; hỗ trợ file Excel không có cột ma_kho
 // Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
 // Bản này hỗ trợ:
@@ -283,15 +286,7 @@ function normalizeKhoCode(value) {
   const text = normalizeText(value);
   if (!text) return "";
 
-  // Hỗ trợ cả mã kho dạng "01", "KHO01" và tên kho dạng "Kho 1".
-  const khoNameMatch = text.match(/^kho\s*0*(\d+)([a-zA-Z]*)$/i);
-  if (khoNameMatch) {
-    const numberPart = khoNameMatch[1].padStart(2, "0");
-    const suffix = khoNameMatch[2] || "";
-    return `${numberPart}${suffix}`;
-  }
-
-  const withoutPrefix = text.replace(/^KHO/i, "").trim();
+  const withoutPrefix = text.replace(/^KHO/i, "");
 
   if (/^\d+$/.test(withoutPrefix)) {
     return withoutPrefix.padStart(2, "0");
@@ -302,8 +297,47 @@ function normalizeKhoCode(value) {
 
 function displayKhoName(maKho) {
   const code = normalizeKhoCode(maKho);
-  return code ? `Kho ${code}` : "";
+  return code ? `Kho ${Number.isFinite(Number(code)) ? Number(code) : code}` : "";
 }
+
+const getWarehouseSortInfo = (warehouse) => {
+  const id = normalizeText(warehouse?.id ?? warehouse?.ma_kho ?? warehouse?.MaKho);
+  const name = normalizeText(warehouse?.name ?? warehouse?.ten_kho ?? warehouse?.TenKho);
+  const code = normalizeKhoCode(id || name);
+
+  const codeMatch = code.match(/^(\d+)([A-Za-z]*)$/);
+  const nameMatch = name.match(/kho\s*(\d+)\s*([A-Za-z]*)/i);
+  const match = codeMatch || nameMatch;
+
+  if (match) {
+    return {
+      group: 0,
+      number: Number(match[1]),
+      suffix: normalizeText(match[2]).toUpperCase(),
+      name,
+    };
+  }
+
+  return {
+    group: 1,
+    number: Number.MAX_SAFE_INTEGER,
+    suffix: "",
+    name: name || id,
+  };
+};
+
+const compareWarehousesNatural = (a, b) => {
+  const x = getWarehouseSortInfo(a);
+  const y = getWarehouseSortInfo(b);
+
+  if (x.group !== y.group) return x.group - y.group;
+  if (x.number !== y.number) return x.number - y.number;
+
+  const suffixCompare = x.suffix.localeCompare(y.suffix, "vi", { numeric: true });
+  if (suffixCompare !== 0) return suffixCompare;
+
+  return x.name.localeCompare(y.name, "vi", { numeric: true });
+};
 
 function parseTTCOGitHubJson(payload, currentKhoRows) {
   const rows = Array.isArray(payload?.data) ? payload.data : [];
@@ -481,7 +515,7 @@ const buildDataModel = (khoRows, tyKhoiRows) => {
   }
 
   return {
-    warehouses: Array.from(warehouseMap.values()),
+    warehouses: Array.from(warehouseMap.values()).sort(compareWarehousesNatural),
     coalTypes: Array.from(coalMap.values()).sort((a, b) =>
       a.name.localeCompare(b.name, "vi")
     ),
@@ -493,6 +527,153 @@ const getWarehouseCoalArea = (warehouse, coalName) => {
   return warehouse?.areas?.find((area) =>
     area.coalNames.some((name) => normalizeKey(name) === key)
   );
+};
+
+const getDensityFromCatalog = (coalTypes, coalName) => {
+  const exact = coalTypes.find(
+    (item) => normalizeKey(item.name) === normalizeKey(coalName)
+  );
+
+  if (exact && toNumber(exact.density) > 0) return toNumber(exact.density);
+
+  const sameBase = coalTypes.find(
+    (item) => coalMatches(coalName, item.name) && toNumber(item.density) > 0
+  );
+
+  return sameBase ? toNumber(sameBase.density) : 0;
+};
+
+const mergeCoalTypeLists = (...lists) => {
+  const map = new Map();
+
+  for (const list of lists) {
+    for (const item of list || []) {
+      const name = normalizeText(item?.name);
+      if (!name) continue;
+
+      const key = normalizeKey(name);
+      const oldItem = map.get(key);
+      const nextDensity = toNumber(item?.density);
+
+      if (!oldItem) {
+        map.set(key, { name, density: nextDensity });
+        continue;
+      }
+
+      if (toNumber(oldItem.density) <= 0 && nextDensity > 0) {
+        map.set(key, { name: oldItem.name, density: nextDensity });
+      }
+    }
+  }
+
+  return Array.from(map.values()).sort((a, b) =>
+    a.name.localeCompare(b.name, "vi")
+  );
+};
+
+const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
+  if (!warehouse || !Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
+    return [];
+  }
+
+  const warehouseCode = normalizeKhoCode(warehouse.id);
+  const warehouseNameKey = normalizeKey(warehouse.name);
+  const map = new Map();
+
+  for (const item of ttcoRecords) {
+    const sameKho =
+      normalizeKhoCode(item.khoCode) === warehouseCode ||
+      normalizeKey(item.kho) === warehouseNameKey;
+
+    if (!sameKho) continue;
+
+    const name = normalizeText(item.coal);
+    if (!name) continue;
+
+    const key = normalizeKey(name);
+    if (!map.has(key)) {
+      map.set(key, {
+        name,
+        density: getDensityFromCatalog(coalTypes, name),
+      });
+    }
+  }
+
+  return Array.from(map.values()).sort((a, b) =>
+    a.name.localeCompare(b.name, "vi")
+  );
+};
+
+const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
+  if (!Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
+    return excelWarehouses;
+  }
+
+  const excelByCode = new Map();
+  const excelByName = new Map();
+
+  for (const warehouse of excelWarehouses || []) {
+    const code = normalizeKhoCode(warehouse.id);
+    const nameKey = normalizeKey(warehouse.name);
+
+    if (code && !excelByCode.has(code)) {
+      excelByCode.set(code, warehouse);
+    }
+
+    if (nameKey && !excelByName.has(nameKey)) {
+      excelByName.set(nameKey, warehouse);
+    }
+  }
+
+  const map = new Map();
+
+  for (const record of ttcoRecords) {
+    const code = normalizeKhoCode(record.khoCode);
+    const name = normalizeText(record.kho) || displayKhoName(code);
+    const key = code || normalizeKey(name);
+    const coal = normalizeText(record.coal);
+
+    if (!key || !name) continue;
+
+    const excelWarehouse =
+      excelByCode.get(code) || excelByName.get(normalizeKey(name)) || null;
+
+    if (!map.has(key)) {
+      map.set(key, {
+        id: code || name,
+        name,
+        unit: normalizeText(excelWarehouse?.unit) || "",
+        maxLength: toNumber(excelWarehouse?.maxLength),
+        maxWidth: toNumber(excelWarehouse?.maxWidth),
+        areas: Array.isArray(excelWarehouse?.areas) ? excelWarehouse.areas : [],
+        activeCoalNames: [],
+      });
+    }
+
+    const item = map.get(key);
+
+    if (!item.unit && excelWarehouse?.unit) {
+      item.unit = normalizeText(excelWarehouse.unit);
+    }
+
+    if (toNumber(item.maxLength) <= 0 && toNumber(excelWarehouse?.maxLength) > 0) {
+      item.maxLength = toNumber(excelWarehouse.maxLength);
+    }
+
+    if (toNumber(item.maxWidth) <= 0 && toNumber(excelWarehouse?.maxWidth) > 0) {
+      item.maxWidth = toNumber(excelWarehouse.maxWidth);
+    }
+
+    if ((!item.areas || item.areas.length === 0) && Array.isArray(excelWarehouse?.areas)) {
+      item.areas = excelWarehouse.areas;
+    }
+
+    if (coal && !item.activeCoalNames.some((name) => coalMatches(name, coal))) {
+      item.activeCoalNames.push(coal);
+    }
+  }
+
+  return Array.from(map.values()).sort(compareWarehousesNatural);
 };
 
 const emptyBlock = () => ({
@@ -677,7 +858,7 @@ function parseExcelWorkbook(workbook) {
 
   if ([iTenKho, iLength, iWidth].some((i) => i < 0)) {
     throw new Error(
-      "Sheet dm_kho thiếu cột bắt buộc: ten_kho, Chieu_dai_m, Chieu_rong_m. Cột ma_kho có thể có hoặc không; nếu không có app sẽ tự suy từ ten_kho."
+      "Sheet dm_kho thiếu cột bắt buộc: ten_kho, Chieu_dai_m, Chieu_rong_m. Cột ma_kho là tùy chọn; nếu thiếu app sẽ tự suy ra mã kho từ ten_kho."
     );
   }
 
@@ -690,7 +871,7 @@ function parseExcelWorkbook(workbook) {
   const khoRows = khoArray
     .slice(1)
     .map((row) => ({
-      ma_kho: iMaKho >= 0 ? row[iMaKho] : normalizeKhoCode(row[iTenKho]),
+      ma_kho: iMaKho >= 0 ? row[iMaKho] : row[iTenKho],
       ten_kho: row[iTenKho],
       don_vi_quan_ly: iUnit >= 0 ? row[iUnit] : "",
       chieu_dai_m: row[iLength],
@@ -708,20 +889,6 @@ function parseExcelWorkbook(workbook) {
     .filter((row) => normalizeText(row.chung_loai));
 
   return { khoRows, tyKhoiRows };
-}
-
-async function loadCatalogWorkbookFromUrl() {
-  const response = await fetch(`${DEFAULT_CATALOG_FILE}?_=${Date.now()}`, {
-    cache: "no-store",
-  });
-
-  if (!response.ok) {
-    throw new Error("Không đọc được file DS_kho_than_va_ty_khoi.xlsx trên GitHub Pages.");
-  }
-
-  const buffer = await response.arrayBuffer();
-  const workbook = XLSX.read(buffer, { type: "array" });
-  return parseExcelWorkbook(workbook);
 }
 
 function parseTTCOWorkbook(workbook) {
@@ -1118,6 +1285,17 @@ export default function TTCOCoalStockpileApp() {
   const [rawTyKhoiRows, setRawTyKhoiRows] = useState(DEFAULT_TY_KHOI_ROWS);
   const [uploadError, setUploadError] = useState("");
   const [catalogSourceName, setCatalogSourceName] = useState("Dữ liệu mặc định trong app");
+  const [catalogReady, setCatalogReady] = useState(false);
+  const rawKhoRowsRef = useRef(DEFAULT_KHO_ROWS);
+  const rawTyKhoiRowsRef = useRef(DEFAULT_TY_KHOI_ROWS);
+
+  useEffect(() => {
+    rawKhoRowsRef.current = rawKhoRows;
+  }, [rawKhoRows]);
+
+  useEffect(() => {
+    rawTyKhoiRowsRef.current = rawTyKhoiRows;
+  }, [rawTyKhoiRows]);
 
   const [ttcoRecords, setTtcoRecords] = useState([]);
   const [ttcoSourceName, setTtcoSourceName] = useState("");
@@ -1145,7 +1323,12 @@ export default function TTCOCoalStockpileApp() {
     [rawKhoRows, rawTyKhoiRows]
   );
 
-  const { warehouses, coalTypes } = dataModel;
+  const { warehouses: excelWarehouses, coalTypes } = dataModel;
+
+  const warehouses = useMemo(
+    () => buildWarehouseListFromTTCO(ttcoRecords, excelWarehouses),
+    [ttcoRecords, excelWarehouses]
+  );
 
   const [warehouseId, setWarehouseId] = useState("KHO09");
   const [coalName, setCoalName] = useState("Cám 6a.14");
@@ -1160,6 +1343,20 @@ export default function TTCOCoalStockpileApp() {
     () => warehouses.find((item) => item.id === warehouseId) || warehouses[0],
     [warehouseId, warehouses]
   );
+
+  useEffect(() => {
+    if (warehouses.length === 0) return;
+
+    const currentWarehouseExists = warehouses.some((item) => item.id === warehouseId);
+
+    if (!currentWarehouseExists) {
+      const nextWarehouse = warehouses[0];
+      setWarehouseId(nextWarehouse.id);
+      setCoalName(nextWarehouse.activeCoalNames?.[0] || coalTypes[0]?.name || "");
+      setDensityOverride("");
+      setWarehouseLengthOverride("");
+    }
+  }, [warehouses, warehouseId, coalTypes]);
 
   const selectedCoalType = useMemo(() => {
     const exact = coalTypes.find(
@@ -1180,17 +1377,46 @@ export default function TTCOCoalStockpileApp() {
     [warehouse, coalName]
   );
 
+  const ttcoCoalTypesForWarehouse = useMemo(
+    () => getTtcoCoalTypesForWarehouse(warehouse, ttcoRecords, coalTypes),
+    [warehouse, ttcoRecords, coalTypes]
+  );
+
   const availableCoalTypes = useMemo(() => {
     if (!warehouse) return coalTypes;
 
-    if (allowAllCoalTypes || warehouse.activeCoalNames.length === 0) {
+    // Khi đã có dữ liệu TTCO_APP, danh sách chủng loại trong kho phải lấy theo TTCO_APP.
+    // Excel chỉ cung cấp kích thước kho và tỷ khối, không quyết định chủng loại đang tồn.
+    if (!allowAllCoalTypes && ttcoCoalTypesForWarehouse.length > 0) {
+      return ttcoCoalTypesForWarehouse;
+    }
+
+    if (allowAllCoalTypes) {
+      return mergeCoalTypeLists(ttcoCoalTypesForWarehouse, coalTypes);
+    }
+
+    if (warehouse.activeCoalNames.length === 0) {
       return coalTypes;
     }
 
     const activeKeys = new Set(warehouse.activeCoalNames.map(normalizeKey));
 
     return coalTypes.filter((item) => activeKeys.has(normalizeKey(item.name)));
-  }, [allowAllCoalTypes, warehouse, coalTypes]);
+  }, [allowAllCoalTypes, warehouse, coalTypes, ttcoCoalTypesForWarehouse]);
+
+  useEffect(() => {
+    if (!warehouse || ttcoCoalTypesForWarehouse.length === 0) return;
+
+    const currentStillExists = ttcoCoalTypesForWarehouse.some((item) =>
+      coalMatches(coalName, item.name)
+    );
+
+    if (!currentStillExists) {
+      setCoalName(ttcoCoalTypesForWarehouse[0].name);
+      setDensityOverride("");
+      setWarehouseLengthOverride("");
+    }
+  }, [warehouse, coalName, ttcoCoalTypesForWarehouse]);
 
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
@@ -1220,7 +1446,15 @@ export default function TTCOCoalStockpileApp() {
   useEffect(() => {
     const loadDefaultCatalog = async () => {
       try {
-        const { khoRows, tyKhoiRows } = await loadCatalogWorkbookFromUrl();
+        const response = await fetch(`${DEFAULT_CATALOG_FILE}?_=${Date.now()}`, { cache: "no-store" });
+
+        if (!response.ok) {
+          return;
+        }
+
+        const buffer = await response.arrayBuffer();
+        const workbook = XLSX.read(buffer, { type: "array" });
+        const { khoRows, tyKhoiRows } = parseExcelWorkbook(workbook);
         const nextModel = buildDataModel(khoRows, tyKhoiRows);
 
         if (
@@ -1230,11 +1464,15 @@ export default function TTCOCoalStockpileApp() {
           return;
         }
 
+        rawKhoRowsRef.current = khoRows;
+        rawTyKhoiRowsRef.current = tyKhoiRows;
         setRawKhoRows(khoRows);
         setRawTyKhoiRows(tyKhoiRows);
         setCatalogSourceName("GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx");
       } catch {
-        // Không có file danh mục trên GitHub thì dùng dữ liệu hard-code trong app.
+        // Không có file mặc định thì dùng dữ liệu hard-code trong app.
+      } finally {
+        setCatalogReady(true);
       }
     };
 
@@ -1361,9 +1599,12 @@ export default function TTCOCoalStockpileApp() {
         throw new Error("Không đọc được danh mục kho hoặc danh mục tỷ khối.");
       }
 
+      rawKhoRowsRef.current = khoRows;
+      rawTyKhoiRowsRef.current = tyKhoiRows;
       setRawKhoRows(khoRows);
       setRawTyKhoiRows(tyKhoiRows);
       setCatalogSourceName(file.name);
+      setCatalogReady(true);
       resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
     } catch (error) {
       setUploadError(
@@ -1536,34 +1777,16 @@ export default function TTCOCoalStockpileApp() {
       }
 
       const payload = await response.json();
+      const { records } = parseTTCOGitHubJson(payload, rawKhoRowsRef.current);
 
-      let khoRowsForReference = rawKhoRows;
-      let tyKhoiRowsForReference = rawTyKhoiRows;
-      let catalogSourceForReference = catalogSourceName;
-
-      try {
-        const catalog = await loadCatalogWorkbookFromUrl();
-        khoRowsForReference = catalog.khoRows;
-        tyKhoiRowsForReference = catalog.tyKhoiRows;
-        catalogSourceForReference = "GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx";
-      } catch {
-        // Nếu file Excel danh mục chưa có hoặc lỗi, app vẫn dùng dữ liệu đang có.
-      }
-
-      const { records, khoRows } = parseTTCOGitHubJson(payload, khoRowsForReference);
-      const nextModel = buildDataModel(khoRows, tyKhoiRowsForReference);
-
-      setRawKhoRows(khoRows);
-      setRawTyKhoiRows(tyKhoiRowsForReference);
+      // Quan trọng: TTCO JSON chỉ là nguồn tồn kho để so sánh.
+      // Không dùng JSON để ghi đè rawKhoRows, vì kích thước kho/tỷ khối phải luôn lấy từ Excel danh mục.
       setTtcoRecords(records);
-      setCatalogSourceName(catalogSourceForReference);
       setTtcoSourceName(
         `GitHub JSON CDOTHAN tháng ${payload?.meta?.ThangHT || ""}/${
           payload?.meta?.NamHT || ""
         } | Bản: ${payload?.meta?.version || ""} | Cập nhật: ${payload?.meta?.updatedAt || ""}`
       );
-
-      resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
 
       if (!silent) {
         alert(
@@ -1582,21 +1805,26 @@ export default function TTCOCoalStockpileApp() {
   };
 
   useEffect(() => {
+    if (!catalogReady) return undefined;
+
     const timer = window.setTimeout(() => {
       handleLoadTTCOFromGitHub({ silent: true });
-    }, 700);
+    }, 300);
 
     return () => window.clearTimeout(timer);
-    // Chỉ tự tải 1 lần khi mở app.
+    // Chỉ tự tải TTCO JSON sau khi danh mục Excel đã sẵn sàng.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [catalogReady]);
 
   const restoreDefaultData = () => {
     const nextModel = buildDataModel(DEFAULT_KHO_ROWS, DEFAULT_TY_KHOI_ROWS);
 
+    rawKhoRowsRef.current = DEFAULT_KHO_ROWS;
+    rawTyKhoiRowsRef.current = DEFAULT_TY_KHOI_ROWS;
     setRawKhoRows(DEFAULT_KHO_ROWS);
     setRawTyKhoiRows(DEFAULT_TY_KHOI_ROWS);
     setCatalogSourceName("Dữ liệu mặc định trong app");
+    setCatalogReady(true);
     setUploadError("");
     resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
   };
@@ -1621,9 +1849,17 @@ export default function TTCOCoalStockpileApp() {
     const nextWarehouse =
       warehouses.find((item) => item.id === nextWarehouseId) || warehouses[0];
 
+    const ttcoCoalTypes = getTtcoCoalTypesForWarehouse(
+      nextWarehouse,
+      ttcoRecords,
+      coalTypes
+    );
+
     setWarehouseId(nextWarehouseId);
     setAllowAllCoalTypes(false);
-    setCoalName(nextWarehouse?.activeCoalNames?.[0] || coalTypes[0]?.name || "");
+    setCoalName(
+      ttcoCoalTypes[0]?.name || nextWarehouse?.activeCoalNames?.[0] || coalTypes[0]?.name || ""
+    );
     setDensityOverride("");
     setWarehouseLengthOverride("");
   };
