@@ -24,6 +24,7 @@ import * as XLSX from "xlsx";
 
 // ======================================================
 // TTCO - APP TÍNH KHỐI LƯỢNG THAN TỒN KHO
+// Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
 // Bản này hỗ trợ:
 // - Máy tính/local: lấy trực tiếp TTCO_APP và đồng bộ JSON lên GitHub
@@ -832,7 +833,7 @@ function Select(props) {
 function Panel({ children, className = "" }) {
   return (
     <div
-      className={`rounded-3xl border border-slate-200 bg-white shadow-sm ${className}`}
+      className={`rounded-3xl border border-slate-200/80 bg-white shadow-[0_14px_35px_rgba(15,23,42,0.06)] ${className}`}
     >
       {children}
     </div>
@@ -880,49 +881,140 @@ function ResultBox({ label, value, dark = false }) {
   );
 }
 
+function ResultSummaryPanel({
+  totalVolume,
+  density,
+  blockCount,
+  actualMass,
+  appMass,
+  diff,
+  diffRate,
+  warning,
+  WarningIcon,
+  onSave,
+}) {
+  return (
+    <Panel className="overflow-hidden p-4 sm:p-5">
+      <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 className="flex items-center gap-2 text-xl font-black text-slate-950">
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-700 text-white shadow-sm">
+              <Calculator size={20} />
+            </span>
+            3. Kết quả tổng hợp
+          </h2>
+          <p className="mt-1 text-sm font-medium text-slate-500">
+            Theo dõi nhanh thể tích, khối lượng thực tế và chênh lệch với TTCO_APP.
+          </p>
+        </div>
+
+        <div className={`inline-flex w-fit items-center gap-2 rounded-2xl border px-3 py-2 text-sm font-black ${warning.color}`}>
+          <WarningIcon size={17} />
+          {warning.label}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3">
+        <ResultBox label="Tổng thể tích" value={`${formatNumber(totalVolume)} m³`} />
+        <ResultBox label="Tỷ khối" value={formatNumber(density, 4)} />
+        <ResultBox label="Số khối" value={String(blockCount)} />
+        <ResultBox label="TTCO_APP" value={`${formatNumber(appMass)} tấn`} />
+      </div>
+
+      <div className="mt-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
+        <ResultBox label="Khối lượng thực tế" value={`${formatNumber(actualMass)} tấn`} dark />
+
+        <div className={`rounded-2xl border p-4 ${warning.color}`}>
+          <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wide">
+            <WarningIcon size={17} />
+            Chênh lệch
+          </div>
+
+          <div className="mt-2 text-3xl font-black tracking-tight">
+            {diff >= 0 ? "+" : ""}
+            {formatNumber(diff)} tấn
+          </div>
+
+          <div className="mt-1 text-sm font-semibold">
+            {diff > 0
+              ? "Thực tế lớn hơn TTCO_APP"
+              : diff < 0
+              ? "Thực tế nhỏ hơn TTCO_APP"
+              : "Thực tế bằng TTCO_APP"}
+          </div>
+
+          {appMass > 0 ? (
+            <div className="mt-1 text-sm font-semibold">
+              Tỷ lệ chênh lệch: {diffRate >= 0 ? "+" : ""}
+              {formatNumber(diffRate, 2)}%
+            </div>
+          ) : null}
+        </div>
+      </div>
+
+      <button
+        type="button"
+        onClick={onSave}
+        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-4 py-3.5 text-sm font-black text-white shadow-sm transition hover:bg-slate-800"
+      >
+        <Save size={17} />
+        Lưu kết quả
+      </button>
+    </Panel>
+  );
+}
+
 function SavedResultsTable({ history, onDelete, onExport }) {
   const totalActualMass = history.reduce((sum, item) => sum + toNumber(item.actualMass), 0);
   const totalTtcoMass = history.reduce((sum, item) => sum + toNumber(item.ttcoMass), 0);
   const totalDiff = totalActualMass - totalTtcoMass;
 
   return (
-    <Panel className="p-4 sm:p-5">
-      <div className="mb-5 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+    <Panel className="overflow-hidden p-4 sm:p-5">
+      <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <h2 className="flex items-center gap-2 text-lg font-black">
-            <ListChecks size={19} />
+          <h2 className="flex items-center gap-2 text-xl font-black text-slate-950">
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-sm">
+              <ListChecks size={20} />
+            </span>
             4. Danh sách kho đã tính
           </h2>
 
-          <p className="mt-1 text-sm text-slate-500">
-            Tổng hợp các kết quả đã bấm “Lưu kết quả”, dùng để rà soát và xuất Excel.
+          <p className="mt-2 max-w-2xl text-sm font-medium leading-6 text-slate-500">
+            Tổng hợp các kết quả đã bấm “Lưu kết quả”, dùng để rà soát, so sánh và xuất Excel.
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          <div className="rounded-2xl bg-slate-50 px-4 py-2 text-sm">
-            <div className="text-xs font-bold uppercase text-slate-500">Số lượt lưu</div>
-            <div className="text-lg font-black text-slate-900">{history.length}</div>
-          </div>
+        <SmallButton onClick={onExport} variant="dark">
+          <Download size={16} />
+          Xuất Excel
+        </SmallButton>
+      </div>
 
-          <div className={`rounded-2xl border px-4 py-2 text-sm ${getDiffClassName(totalDiff)}`}>
-            <div className="text-xs font-bold uppercase">Tổng chênh lệch</div>
-            <div className="text-lg font-black">
-              {totalDiff >= 0 ? "+" : ""}
-              {formatNumber(totalDiff)} tấn
-            </div>
-          </div>
+      <div className="mb-5 grid gap-3 sm:grid-cols-2">
+        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div className="text-xs font-black uppercase tracking-wide text-slate-500">Số lượt lưu</div>
+          <div className="mt-2 text-3xl font-black text-slate-950">{history.length}</div>
+        </div>
 
-          <SmallButton onClick={onExport} variant="dark">
-            <Download size={16} />
-            Xuất Excel
-          </SmallButton>
+        <div className={`rounded-2xl border p-4 ${getDiffClassName(totalDiff)}`}>
+          <div className="text-xs font-black uppercase tracking-wide">Tổng chênh lệch</div>
+          <div className="mt-2 text-3xl font-black">
+            {totalDiff >= 0 ? "+" : ""}
+            {formatNumber(totalDiff)} tấn
+          </div>
         </div>
       </div>
 
       {history.length === 0 ? (
-        <div className="rounded-2xl bg-slate-50 p-4 text-sm font-medium text-slate-500">
-          Chưa có kho nào được lưu. Sau khi nhập số liệu, bấm “Lưu kết quả” để đưa vào danh sách này.
+        <div className="rounded-3xl border border-dashed border-slate-200 bg-slate-50 p-6 text-center">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-slate-400 shadow-sm">
+            <ListChecks size={26} />
+          </div>
+          <div className="mt-4 text-base font-black text-slate-800">Chưa có kho nào được lưu</div>
+          <div className="mt-1 text-sm font-medium leading-6 text-slate-500">
+            Sau khi nhập số liệu, bấm “Lưu kết quả” để đưa vào danh sách này.
+          </div>
         </div>
       ) : (
         <div className="overflow-x-auto rounded-2xl border border-slate-200">
@@ -981,34 +1073,16 @@ function SavedResultsTable({ history, onDelete, onExport }) {
                       <button
                         type="button"
                         onClick={() => onDelete(item.id)}
-                        className="inline-flex h-8 items-center justify-center rounded-lg border border-red-200 bg-white px-2 text-xs font-bold text-red-600 transition hover:bg-red-50"
+                        className="inline-flex items-center justify-center rounded-lg border border-red-200 bg-red-50 p-2 text-red-600 transition hover:bg-red-100"
+                        title="Xóa dòng này"
                       >
-                        Xóa
+                        <Trash2 size={16} />
                       </button>
                     </td>
                   </tr>
                 );
               })}
             </tbody>
-
-            <tfoot className="bg-slate-50">
-              <tr>
-                <td colSpan={6} className="px-3 py-3 text-right font-black text-slate-700">
-                  Tổng cộng
-                </td>
-                <td className="px-3 py-3 text-right font-black">
-                  {formatNumber(totalActualMass)}
-                </td>
-                <td className="px-3 py-3 text-right font-black">
-                  {formatNumber(totalTtcoMass)}
-                </td>
-                <td className="px-3 py-3 text-right font-black">
-                  {totalDiff >= 0 ? "+" : ""}
-                  {formatNumber(totalDiff)}
-                </td>
-                <td colSpan={2}></td>
-              </tr>
-            </tfoot>
           </table>
         </div>
       )}
@@ -1699,7 +1773,7 @@ export default function TTCOCoalStockpileApp() {
         <motion.header
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-4 overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-lg sm:p-7"
+          className="mb-4 overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 p-5 text-white shadow-xl sm:p-7"
         >
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
@@ -1736,7 +1810,7 @@ export default function TTCOCoalStockpileApp() {
           </div>
         ) : null}
 
-        <main className="grid gap-4 xl:grid-cols-[1.25fr_0.75fr]">
+        <main className="space-y-4">
           <section className="space-y-4">
             <Panel className="p-4 sm:p-5">
               <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -2139,164 +2213,26 @@ export default function TTCOCoalStockpileApp() {
                 })}
               </div>
             </Panel>
-
-            <SavedResultsTable
-              history={history}
-              onDelete={deleteHistoryItem}
-              onExport={exportHistoryToExcel}
-            />
           </section>
 
-          <aside className="space-y-4 xl:sticky xl:top-6 xl:self-start">
-            <Panel className="p-4 sm:p-5">
-              <div className="mb-5 flex items-center gap-2">
-                <Calculator size={20} />
-                <h2 className="text-lg font-black">3. Kết quả tổng hợp</h2>
-              </div>
+          <ResultSummaryPanel
+            totalVolume={totalVolume}
+            density={density}
+            blockCount={blocks.length}
+            actualMass={actualMass}
+            appMass={appMass}
+            diff={diff}
+            diffRate={diffRate}
+            warning={warning}
+            WarningIcon={WarningIcon}
+            onSave={saveCurrentResult}
+          />
 
-              <div className="space-y-3">
-                <ResultBox
-                  label="Tổng thể tích"
-                  value={`${formatNumber(totalVolume)} m³`}
-                />
-
-                <div className="grid grid-cols-2 gap-3">
-                  <ResultBox label="Tỷ khối" value={formatNumber(density, 4)} />
-                  <ResultBox label="Số khối" value={String(blocks.length)} />
-                </div>
-
-                <ResultBox
-                  label="Khối lượng thực tế"
-                  value={`${formatNumber(actualMass)} tấn`}
-                  dark
-                />
-
-                <ResultBox
-                  label="Khối lượng TTCO_APP"
-                  value={`${formatNumber(appMass)} tấn`}
-                />
-
-                <button
-                  type="button"
-                  onClick={saveCurrentResult}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white shadow-sm transition hover:bg-slate-800"
-                >
-                  <Save size={17} />
-                  Lưu kết quả
-                </button>
-
-                <div className={`rounded-2xl border p-4 ${warning.color}`}>
-                  <div className="flex items-center gap-2 text-sm font-black">
-                    <WarningIcon size={18} />
-                    {warning.label}
-                  </div>
-
-                  <div className="mt-2 text-3xl font-black tracking-tight">
-                    {diff >= 0 ? "+" : ""}
-                    {formatNumber(diff)} tấn
-                  </div>
-
-                  <div className="mt-1 text-sm font-medium">
-                    {diff > 0
-                      ? "Thực tế lớn hơn TTCO_APP"
-                      : diff < 0
-                      ? "Thực tế nhỏ hơn TTCO_APP"
-                      : "Thực tế bằng TTCO_APP"}
-                  </div>
-
-                  {appMass > 0 ? (
-                    <div className="mt-1 text-sm font-medium">
-                      Tỷ lệ chênh lệch: {diffRate >= 0 ? "+" : ""}
-                      {formatNumber(diffRate, 2)}%
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </Panel>
-
-            <Panel className="p-4 sm:p-5">
-              <div className="mb-3 flex items-center justify-between gap-3">
-                <h2 className="flex items-center gap-2 text-lg font-black">
-                  <History size={19} />
-                  Lịch sử gần đây
-                </h2>
-
-                <SmallButton onClick={exportHistoryToExcel} variant="dark">
-                  <Download size={16} />
-                  Xuất Excel
-                </SmallButton>
-              </div>
-
-              {history.length === 0 ? (
-                <div className="rounded-2xl bg-slate-50 p-3 text-sm font-medium text-slate-500">
-                  Chưa có kết quả nào được lưu.
-                </div>
-              ) : (
-                <div className="space-y-3">
-                  {history.slice(0, 3).map((item) => (
-                    <div
-                      key={item.id}
-                      className="rounded-2xl border border-slate-200 bg-slate-50 p-3"
-                    >
-                      <div className="flex items-start justify-between gap-3">
-                        <div>
-                          <div className="font-black text-slate-900">
-                            {item.warehouseName} - {item.coalName}
-                          </div>
-
-                          <div className="mt-1 text-xs font-medium text-slate-500">
-                            {new Date(item.savedAt).toLocaleString("vi-VN")}
-                          </div>
-
-                          <div className="mt-1 text-xs font-medium text-slate-500">
-                            {item.blocks?.length || 0} khối | {item.warningLabel}
-                          </div>
-                        </div>
-
-                        <button
-                          type="button"
-                          onClick={() => deleteHistoryItem(item.id)}
-                          className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-xs font-bold text-red-600 transition hover:bg-red-50"
-                        >
-                          Xóa
-                        </button>
-                      </div>
-
-                      <div className="mt-3 grid grid-cols-2 gap-2 text-sm">
-                        <div className="rounded-xl bg-white p-2">
-                          <div className="text-xs text-slate-500">Thể tích</div>
-                          <div className="font-black">
-                            {formatNumber(item.totalVolume)} m³
-                          </div>
-                        </div>
-
-                        <div className="rounded-xl bg-white p-2">
-                          <div className="text-xs text-slate-500">Khối lượng</div>
-                          <div className="font-black">
-                            {formatNumber(item.actualMass)} tấn
-                          </div>
-                        </div>
-
-                        <div className="rounded-xl bg-white p-2">
-                          <div className="text-xs text-slate-500">TTCO_APP</div>
-                          <div className="font-black">
-                            {formatNumber(item.ttcoMass)} tấn
-                          </div>
-                        </div>
-
-                        <div className="rounded-xl bg-white p-2">
-                          <div className="text-xs text-slate-500">Chênh lệch</div>
-                          <div className="font-black">
-                            {item.diff >= 0 ? "+" : ""}
-                            {formatNumber(item.diff)} tấn
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </Panel>
+          <SavedResultsTable
+            history={history}
+            onDelete={deleteHistoryItem}
+            onExport={exportHistoryToExcel}
+          />
 
             <Panel className="p-4 sm:p-5">
               <h2 className="mb-3 flex items-center gap-2 text-lg font-black">
@@ -2321,7 +2257,7 @@ export default function TTCOCoalStockpileApp() {
                 </div>
               )}
             </Panel>
-          </aside>
+
         </main>
       </div>
     </div>
