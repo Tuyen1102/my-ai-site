@@ -27,7 +27,7 @@ import * as XLSX from "xlsx";
 // Fix v1.3.6: Sắp xếp tên kho theo thứ tự tự nhiên: Kho 1, Kho 2, Kho 3...; kho ngoài chuẩn đưa xuống cuối.
 // Fix v1.3.4: Danh sách chủng loại và khối lượng TTCO_APP lấy theo JSON; kích thước/tỷ khối vẫn lấy từ Excel.
 // Fix v1.3.3: TTCO JSON chỉ cập nhật tồn kho, không ghi đè danh mục Excel; tự tải JSON sau khi Excel sẵn sàng.
-// Fix v1.3.2: chỉ đọc duy nhất file Excel tại public/data/DS_kho_than_va_ty_khoi.xlsx; hỗ trợ file Excel không có cột ma_kho
+// Fix v1.3.7: chuẩn hóa Kho 1/KHO01/01 cùng về mã 01 để tham số Excel khớp TTCO JSON
 // Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
 // Bản này hỗ trợ:
@@ -286,13 +286,24 @@ function normalizeKhoCode(value) {
   const text = normalizeText(value);
   if (!text) return "";
 
-  const withoutPrefix = text.replace(/^KHO/i, "");
-
-  if (/^\d+$/.test(withoutPrefix)) {
-    return withoutPrefix.padStart(2, "0");
+  // Chuẩn hóa đồng nhất các dạng: "01", "1", "Kho 1", "KHO01", "Kho 31B".
+  // Bản cũ xử lý "Kho 1" thành " 1" nên không khớp với MaKho "01" từ TTCO JSON.
+  const khoMatch = text.match(/^kho\s*0*(\d+)([a-zA-Z]*)$/i);
+  if (khoMatch) {
+    const numberPart = khoMatch[1].padStart(2, "0");
+    const suffix = normalizeText(khoMatch[2]).toUpperCase();
+    return `${numberPart}${suffix}`;
   }
 
-  return withoutPrefix;
+  const withoutPrefix = text.replace(/^KHO\s*/i, "").trim();
+  const codeMatch = withoutPrefix.match(/^0*(\d+)([a-zA-Z]*)$/);
+  if (codeMatch) {
+    const numberPart = codeMatch[1].padStart(2, "0");
+    const suffix = normalizeText(codeMatch[2]).toUpperCase();
+    return `${numberPart}${suffix}`;
+  }
+
+  return withoutPrefix.toUpperCase();
 }
 
 function displayKhoName(maKho) {
@@ -871,7 +882,7 @@ function parseExcelWorkbook(workbook) {
   const khoRows = khoArray
     .slice(1)
     .map((row) => ({
-      ma_kho: iMaKho >= 0 ? row[iMaKho] : row[iTenKho],
+      ma_kho: iMaKho >= 0 ? normalizeKhoCode(row[iMaKho]) : normalizeKhoCode(row[iTenKho]),
       ten_kho: row[iTenKho],
       don_vi_quan_ly: iUnit >= 0 ? row[iUnit] : "",
       chieu_dai_m: row[iLength],
