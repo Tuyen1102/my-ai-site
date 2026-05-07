@@ -24,6 +24,7 @@ import * as XLSX from "xlsx";
 
 // ======================================================
 // TTCO - APP TÍNH KHỐI LƯỢNG THAN TỒN KHO
+// v1.3.0: Đọc DS_kho_than_va_ty_khoi.xlsx từ public/data trên GitHub Pages
 // Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
 // Bản này hỗ trợ:
@@ -42,7 +43,7 @@ const BACKEND_JSON_URL = `${BACKEND_BASE_URL}/api/ttco-g3-bc05-json`;
 const BACKEND_EXPORT_GOOGLE_SHEET_URL = `${BACKEND_BASE_URL}/api/export-ttco-to-google-sheet`;
 
 const HISTORY_KEY = "ttco_stockpile_history";
-const DEFAULT_CATALOG_FILE = "/DS_kho_than_va_ty_khoi.xlsx";
+const DEFAULT_CATALOG_FILE = `${import.meta.env.BASE_URL}data/DS_kho_than_va_ty_khoi.xlsx`;
 const GITHUB_TON_KHO_JSON_URL = "https://tuyen1102.github.io/my-ai-site/data/ton_kho_latest.json";
 
 const DEFAULT_KHO_ROWS = [
@@ -282,7 +283,15 @@ function normalizeKhoCode(value) {
   const text = normalizeText(value);
   if (!text) return "";
 
-  const withoutPrefix = text.replace(/^KHO/i, "");
+  // Hỗ trợ cả mã kho dạng "01", "KHO01" và tên kho dạng "Kho 1".
+  const khoNameMatch = text.match(/^kho\s*0*(\d+)([a-zA-Z]*)$/i);
+  if (khoNameMatch) {
+    const numberPart = khoNameMatch[1].padStart(2, "0");
+    const suffix = khoNameMatch[2] || "";
+    return `${numberPart}${suffix}`;
+  }
+
+  const withoutPrefix = text.replace(/^KHO/i, "").trim();
 
   if (/^\d+$/.test(withoutPrefix)) {
     return withoutPrefix.padStart(2, "0");
@@ -666,9 +675,9 @@ function parseExcelWorkbook(workbook) {
     "ty khoi tan m3",
   ]);
 
-  if ([iMaKho, iTenKho, iLength, iWidth].some((i) => i < 0)) {
+  if ([iTenKho, iLength, iWidth].some((i) => i < 0)) {
     throw new Error(
-      "Sheet dm_kho thiếu cột bắt buộc: ma_kho, ten_kho, Chieu_dai_m, Chieu_rong_m."
+      "Sheet dm_kho thiếu cột bắt buộc: ten_kho, Chieu_dai_m, Chieu_rong_m. Cột ma_kho có thể có hoặc không; nếu không có app sẽ tự suy từ ten_kho."
     );
   }
 
@@ -681,7 +690,7 @@ function parseExcelWorkbook(workbook) {
   const khoRows = khoArray
     .slice(1)
     .map((row) => ({
-      ma_kho: row[iMaKho],
+      ma_kho: iMaKho >= 0 ? row[iMaKho] : normalizeKhoCode(row[iTenKho]),
       ten_kho: row[iTenKho],
       don_vi_quan_ly: iUnit >= 0 ? row[iUnit] : "",
       chieu_dai_m: row[iLength],
@@ -699,6 +708,20 @@ function parseExcelWorkbook(workbook) {
     .filter((row) => normalizeText(row.chung_loai));
 
   return { khoRows, tyKhoiRows };
+}
+
+async function loadCatalogWorkbookFromUrl() {
+  const response = await fetch(`${DEFAULT_CATALOG_FILE}?_=${Date.now()}`, {
+    cache: "no-store",
+  });
+
+  if (!response.ok) {
+    throw new Error("Không đọc được file DS_kho_than_va_ty_khoi.xlsx trên GitHub Pages.");
+  }
+
+  const buffer = await response.arrayBuffer();
+  const workbook = XLSX.read(buffer, { type: "array" });
+  return parseExcelWorkbook(workbook);
 }
 
 function parseTTCOWorkbook(workbook) {
@@ -1197,13 +1220,7 @@ export default function TTCOCoalStockpileApp() {
   useEffect(() => {
     const loadDefaultCatalog = async () => {
       try {
-        const response = await fetch(DEFAULT_CATALOG_FILE, { cache: "no-store" });
-
-        if (!response.ok) return;
-
-        const buffer = await response.arrayBuffer();
-        const workbook = XLSX.read(buffer, { type: "array" });
-        const { khoRows, tyKhoiRows } = parseExcelWorkbook(workbook);
+        const { khoRows, tyKhoiRows } = await loadCatalogWorkbookFromUrl();
         const nextModel = buildDataModel(khoRows, tyKhoiRows);
 
         if (
@@ -1215,9 +1232,9 @@ export default function TTCOCoalStockpileApp() {
 
         setRawKhoRows(khoRows);
         setRawTyKhoiRows(tyKhoiRows);
-        setCatalogSourceName("public/DS_kho_than_va_ty_khoi.xlsx");
+        setCatalogSourceName("GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx");
       } catch {
-        // Không có file mặc định thì dùng dữ liệu hard-code trong app.
+        // Không có file danh mục trên GitHub thì dùng dữ liệu hard-code trong app.
       }
     };
 
@@ -1519,12 +1536,27 @@ export default function TTCOCoalStockpileApp() {
       }
 
       const payload = await response.json();
-      const { records, khoRows } = parseTTCOGitHubJson(payload, rawKhoRows);
-      const nextModel = buildDataModel(khoRows, rawTyKhoiRows);
+
+      let khoRowsForReference = rawKhoRows;
+      let tyKhoiRowsForReference = rawTyKhoiRows;
+      let catalogSourceForReference = catalogSourceName;
+
+      try {
+        const catalog = await loadCatalogWorkbookFromUrl();
+        khoRowsForReference = catalog.khoRows;
+        tyKhoiRowsForReference = catalog.tyKhoiRows;
+        catalogSourceForReference = "GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx";
+      } catch {
+        // Nếu file Excel danh mục chưa có hoặc lỗi, app vẫn dùng dữ liệu đang có.
+      }
+
+      const { records, khoRows } = parseTTCOGitHubJson(payload, khoRowsForReference);
+      const nextModel = buildDataModel(khoRows, tyKhoiRowsForReference);
 
       setRawKhoRows(khoRows);
+      setRawTyKhoiRows(tyKhoiRowsForReference);
       setTtcoRecords(records);
-      setCatalogSourceName("GitHub JSON: public/data/ton_kho_latest.json");
+      setCatalogSourceName(catalogSourceForReference);
       setTtcoSourceName(
         `GitHub JSON CDOTHAN tháng ${payload?.meta?.ThangHT || ""}/${
           payload?.meta?.NamHT || ""
