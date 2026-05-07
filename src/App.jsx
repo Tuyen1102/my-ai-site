@@ -27,6 +27,7 @@ import * as XLSX from "xlsx";
 // Fix v1.3.6: Sắp xếp tên kho theo thứ tự tự nhiên: Kho 1, Kho 2, Kho 3...; kho ngoài chuẩn đưa xuống cuối.
 // Fix v1.3.4: Danh sách chủng loại và khối lượng TTCO_APP lấy theo JSON; kích thước/tỷ khối vẫn lấy từ Excel.
 // Fix v1.3.3: TTCO JSON chỉ cập nhật tồn kho, không ghi đè danh mục Excel; tự tải JSON sau khi Excel sẵn sàng.
+// Fix v1.3.8: Nút Mặc định tải lại Excel public/data, không quay về dữ liệu hard-code 36.5.
 // Fix v1.3.7: chuẩn hóa Kho 1/KHO01/01 cùng về mã 01 để tham số Excel khớp TTCO JSON
 // Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
@@ -1827,17 +1828,53 @@ export default function TTCOCoalStockpileApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [catalogReady]);
 
-  const restoreDefaultData = () => {
-    const nextModel = buildDataModel(DEFAULT_KHO_ROWS, DEFAULT_TY_KHOI_ROWS);
-
-    rawKhoRowsRef.current = DEFAULT_KHO_ROWS;
-    rawTyKhoiRowsRef.current = DEFAULT_TY_KHOI_ROWS;
-    setRawKhoRows(DEFAULT_KHO_ROWS);
-    setRawTyKhoiRows(DEFAULT_TY_KHOI_ROWS);
-    setCatalogSourceName("Dữ liệu mặc định trong app");
-    setCatalogReady(true);
+  const restoreDefaultData = async () => {
     setUploadError("");
-    resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
+
+    try {
+      const response = await fetch(`${DEFAULT_CATALOG_FILE}?_=${Date.now()}`, {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error("Không tải được file Excel danh mục từ GitHub Pages.");
+      }
+
+      const buffer = await response.arrayBuffer();
+      const workbook = XLSX.read(buffer, { type: "array" });
+      const { khoRows, tyKhoiRows } = parseExcelWorkbook(workbook);
+      const nextModel = buildDataModel(khoRows, tyKhoiRows);
+
+      if (
+        nextModel.warehouses.length === 0 ||
+        nextModel.coalTypes.length === 0
+      ) {
+        throw new Error("File Excel danh mục không có đủ dữ liệu kho hoặc tỷ khối.");
+      }
+
+      rawKhoRowsRef.current = khoRows;
+      rawTyKhoiRowsRef.current = tyKhoiRows;
+      setRawKhoRows(khoRows);
+      setRawTyKhoiRows(tyKhoiRows);
+      setCatalogSourceName("GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx");
+      setCatalogReady(true);
+      resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
+    } catch (error) {
+      const nextModel = buildDataModel(DEFAULT_KHO_ROWS, DEFAULT_TY_KHOI_ROWS);
+
+      rawKhoRowsRef.current = DEFAULT_KHO_ROWS;
+      rawTyKhoiRowsRef.current = DEFAULT_TY_KHOI_ROWS;
+      setRawKhoRows(DEFAULT_KHO_ROWS);
+      setRawTyKhoiRows(DEFAULT_TY_KHOI_ROWS);
+      setCatalogSourceName("Dữ liệu mặc định trong app");
+      setCatalogReady(true);
+      resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
+      setUploadError(
+        error instanceof Error
+          ? error.message
+          : "Không tải được file Excel danh mục mặc định."
+      );
+    }
   };
 
   const updateBlock = (id, patch) => {
