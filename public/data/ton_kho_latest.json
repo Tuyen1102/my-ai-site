@@ -7,7 +7,7 @@
     "coalDictionary": "TTCO_QTHT.dbo.DMTHAN",
     "coalGroupMethod": "Group selected coal types by normalized base name from TTCO_QTHT.dbo.DMTHAN.TenThan",
     "version": "1.2.0",
-    "updatedAt": "2026-05-07 22:28:43",
+    "updatedAt": "2026-05-07 22:30:30",
     "NamHT": 2026,
     "ThangHT": 5,
     "rawRecordCount": 80,
