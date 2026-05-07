@@ -24,9 +24,10 @@ import * as XLSX from "xlsx";
 
 // ======================================================
 // TTCO - APP TÍNH KHỐI LƯỢNG THAN TỒN KHO
+// Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
 // Bản này hỗ trợ:
-// - Máy tính/local: lấy trực tiếp TTCO_APP + xuất dữ liệu lên Google Sheet
-// - Điện thoại/GitHub Pages: tải tồn kho từ Google Sheet
+// - Máy tính/local: lấy trực tiếp TTCO_APP và đồng bộ JSON lên GitHub
+// - Điện thoại/GitHub Pages: tự tải tồn kho từ file JSON trên GitHub
 // ======================================================
 
 const GOOGLE_SHEET_ID = "17RcfVPQFa8haXEAuHQb7Cwl7Bi8VWJpeh4l_7xG6sX8";
@@ -41,6 +42,7 @@ const BACKEND_EXPORT_GOOGLE_SHEET_URL = `${BACKEND_BASE_URL}/api/export-ttco-to-
 
 const HISTORY_KEY = "ttco_stockpile_history";
 const DEFAULT_CATALOG_FILE = "/DS_kho_than_va_ty_khoi.xlsx";
+const GITHUB_TON_KHO_JSON_URL = "https://tuyen1102.github.io/my-ai-site/data/ton_kho_latest.json";
 
 const DEFAULT_KHO_ROWS = [
   { ma_kho: "KHO01", ten_kho: "Kho 1", don_vi_quan_ly: "PX Kho Bến", chieu_dai_m: 48.3, chieu_rong_m: 36.5, chung_loai: "" },
@@ -137,7 +139,7 @@ const coalMatches = (selectedCoal, ttcoCoal) => {
 
 const splitCoalNames = (value) =>
   normalizeText(value)
-    .split(/\s*\/\s*|\s*,\s*|\s*;\s*/)
+    .split(/\s*\/\s*|\s*;\s*/)
     .map((x) => x.trim())
     .filter(Boolean);
 
@@ -274,6 +276,138 @@ function parseGoogleSheetCSV(csvText) {
   return records;
 }
 
+
+function normalizeKhoCode(value) {
+  const text = normalizeText(value);
+  if (!text) return "";
+
+  const withoutPrefix = text.replace(/^KHO/i, "");
+
+  if (/^\d+$/.test(withoutPrefix)) {
+    return withoutPrefix.padStart(2, "0");
+  }
+
+  return withoutPrefix;
+}
+
+function displayKhoName(maKho) {
+  const code = normalizeKhoCode(maKho);
+  return code ? `Kho ${code}` : "";
+}
+
+function parseTTCOGitHubJson(payload, currentKhoRows) {
+  const rows = Array.isArray(payload?.data) ? payload.data : [];
+
+  if (rows.length === 0) {
+    throw new Error("File GitHub JSON chưa có dữ liệu tồn kho.");
+  }
+
+  const dimensionByKhoCode = new Map();
+
+  for (const row of currentKhoRows || []) {
+    const code = normalizeKhoCode(row.ma_kho);
+    if (!code || dimensionByKhoCode.has(code)) continue;
+    dimensionByKhoCode.set(code, row);
+  }
+
+  const tenKhoByCode = new Map();
+
+  if (Array.isArray(payload?.khoList)) {
+    for (const item of payload.khoList) {
+      if (typeof item === "string") {
+        const code = normalizeKhoCode(item);
+        if (code) tenKhoByCode.set(code, displayKhoName(code));
+      } else {
+        const code = normalizeKhoCode(item?.MaKho ?? item?.ma_kho ?? item?.code);
+        const name = normalizeText(item?.TenKho ?? item?.ten_kho ?? item?.Label ?? item?.label);
+        if (code && name) tenKhoByCode.set(code, name);
+      }
+    }
+  }
+
+  const records = rows
+    .map((item) => {
+      const maKho = normalizeKhoCode(item.MaKho ?? item.ma_kho ?? item.khoCode);
+      const tenKho =
+        normalizeText(item.TenKho ?? item.ten_kho ?? item.kho) ||
+        tenKhoByCode.get(maKho) ||
+        displayKhoName(maKho);
+      const maThan = normalizeText(item.MaThan ?? item.ma_than ?? item.coalCode);
+      const tenThan =
+        normalizeText(item.TenThan ?? item.ten_than ?? item.coal ?? item.LoaiThan) || maThan;
+      const ton = toNumber(item.TonCuoiKy ?? item.TonCK ?? item.ton ?? item.ton_cuoi_ky);
+
+      return {
+        kho: tenKho,
+        khoCode: maKho,
+        coal: tenThan,
+        coalCode: maThan,
+        ton,
+        nam: normalizeText(item.NamHT ?? payload?.meta?.NamHT),
+        thang: normalizeText(item.ThangHT ?? payload?.meta?.ThangHT),
+        updatedAt: normalizeText(payload?.meta?.updatedAt),
+        sheetName: "GitHub JSON CDOTHAN",
+        rowNumber: "",
+        isNhomTongHop: Boolean(item.IsNhomTongHop),
+        nhomTongHopLoai: normalizeText(item.NhomTongHopLoai),
+        danhSachMaThanGoc: Array.isArray(item.DanhSachMaThanGoc)
+          ? item.DanhSachMaThanGoc
+          : [],
+        danhSachTenThanGoc: Array.isArray(item.DanhSachTenThanGoc)
+          ? item.DanhSachTenThanGoc
+          : [],
+      };
+    })
+    .filter((item) => item.khoCode && item.coal);
+
+  if (records.length === 0) {
+    throw new Error("Không tìm thấy dòng tồn kho hợp lệ trong GitHub JSON.");
+  }
+
+  const khoCoalMap = new Map();
+  const khoNameMap = new Map();
+
+  for (const record of records) {
+    if (!khoCoalMap.has(record.khoCode)) {
+      khoCoalMap.set(record.khoCode, new Set());
+    }
+
+    khoCoalMap.get(record.khoCode).add(record.coal);
+    khoNameMap.set(record.khoCode, record.kho);
+  }
+
+  const khoRows = [];
+
+  for (const [maKho, coalSet] of khoCoalMap.entries()) {
+    const dimension = dimensionByKhoCode.get(maKho) || {};
+    const coalNames = Array.from(coalSet).sort((a, b) => a.localeCompare(b, "vi"));
+
+    for (const coalName of coalNames) {
+      khoRows.push({
+        ma_kho: maKho,
+        ten_kho: khoNameMap.get(maKho) || displayKhoName(maKho),
+        don_vi_quan_ly: normalizeText(dimension.don_vi_quan_ly) || "TTCO_APP",
+        chieu_dai_m: dimension.chieu_dai_m || 0,
+        chieu_rong_m: dimension.chieu_rong_m || 0,
+        chung_loai: coalName,
+      });
+    }
+  }
+
+  return { records, khoRows };
+}
+
+const findCatalogCoalType = (coalMap, coalName) => {
+  const exact = coalMap.get(normalizeKey(coalName));
+  if (exact) return exact;
+
+  for (const item of coalMap.values()) {
+    if (coalMatches(coalName, item.name)) return item;
+  }
+
+  return null;
+};
+
 const buildDataModel = (khoRows, tyKhoiRows) => {
   const coalMap = new Map();
 
@@ -326,9 +460,11 @@ const buildDataModel = (khoRows, tyKhoiRows) => {
       }
 
       if (!coalMap.has(normalizeKey(coalName))) {
+        const catalogCoalType = findCatalogCoalType(coalMap, coalName);
+
         coalMap.set(normalizeKey(coalName), {
           name: coalName,
-          density: 0,
+          density: catalogCoalType?.density ?? 0,
         });
       }
     }
@@ -892,6 +1028,7 @@ export default function TTCOCoalStockpileApp() {
   const [isLoadingTTCO, setIsLoadingTTCO] = useState(false);
   const [isExportingSheet, setIsExportingSheet] = useState(false);
   const [isLoadingSheet, setIsLoadingSheet] = useState(false);
+  const [isLoadingGitHub, setIsLoadingGitHub] = useState(false);
 
   const [history, setHistory] = useState(() => {
     try {
@@ -927,13 +1064,19 @@ export default function TTCOCoalStockpileApp() {
     [warehouseId, warehouses]
   );
 
-  const selectedCoalType = useMemo(
-    () =>
-      coalTypes.find(
-        (item) => normalizeKey(item.name) === normalizeKey(coalName)
-      ) || coalTypes[0],
-    [coalName, coalTypes]
-  );
+  const selectedCoalType = useMemo(() => {
+    const exact = coalTypes.find(
+      (item) => normalizeKey(item.name) === normalizeKey(coalName)
+    );
+
+    if (exact && toNumber(exact.density) > 0) return exact;
+
+    const sameBase = coalTypes.find(
+      (item) => coalMatches(coalName, item.name) && toNumber(item.density) > 0
+    );
+
+    return sameBase || exact || coalTypes[0];
+  }, [coalName, coalTypes]);
 
   const selectedArea = useMemo(
     () => getWarehouseCoalArea(warehouse, coalName),
@@ -955,11 +1098,16 @@ export default function TTCOCoalStockpileApp() {
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
 
-    const khoKey = normalizeKey(warehouse.name);
+    const warehouseCode = normalizeKhoCode(warehouse.id);
+    const warehouseNameKey = normalizeKey(warehouse.name);
 
-    const matched = ttcoRecords.filter(
-      (item) => normalizeKey(item.kho) === khoKey && coalMatches(coalName, item.coal)
-    );
+    const matched = ttcoRecords.filter((item) => {
+      const sameKho =
+        normalizeKhoCode(item.khoCode) === warehouseCode ||
+        normalizeKey(item.kho) === warehouseNameKey;
+
+      return sameKho && coalMatches(coalName, item.coal);
+    });
 
     if (matched.length === 0) return null;
 
@@ -1232,7 +1380,7 @@ export default function TTCOCoalStockpileApp() {
         `Đã xuất dữ liệu TTCO_APP lên Google Sheet.\nKỳ dữ liệu: tháng ${data.thang}/${data.nam}\nSố dòng: ${data.count}`
       );
 
-      await handleLoadTTCOFromGoogleSheet();
+      await handleLoadTTCOFromGitHub();
     } catch (error) {
       setTtcoError(
         error instanceof Error
@@ -1281,6 +1429,61 @@ export default function TTCOCoalStockpileApp() {
       setIsLoadingSheet(false);
     }
   };
+
+
+  const handleLoadTTCOFromGitHub = async ({ silent = false } = {}) => {
+    setTtcoError("");
+    setIsLoadingGitHub(true);
+
+    try {
+      const response = await fetch(`${GITHUB_TON_KHO_JSON_URL}?_=${Date.now()}`, {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error("Không đọc được file ton_kho_latest.json trên GitHub Pages.");
+      }
+
+      const payload = await response.json();
+      const { records, khoRows } = parseTTCOGitHubJson(payload, rawKhoRows);
+      const nextModel = buildDataModel(khoRows, rawTyKhoiRows);
+
+      setRawKhoRows(khoRows);
+      setTtcoRecords(records);
+      setCatalogSourceName("GitHub JSON: public/data/ton_kho_latest.json");
+      setTtcoSourceName(
+        `GitHub JSON CDOTHAN tháng ${payload?.meta?.ThangHT || ""}/${
+          payload?.meta?.NamHT || ""
+        } | Bản: ${payload?.meta?.version || ""} | Cập nhật: ${payload?.meta?.updatedAt || ""}`
+      );
+
+      resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
+
+      if (!silent) {
+        alert(
+          `Đã tải ${records.length} dòng tồn kho từ GitHub.\nKỳ dữ liệu: tháng ${
+            payload?.meta?.ThangHT || ""
+          }/${payload?.meta?.NamHT || ""}`
+        );
+      }
+    } catch (error) {
+      setTtcoError(
+        error instanceof Error ? error.message : "Không tải được dữ liệu tồn kho từ GitHub."
+      );
+    } finally {
+      setIsLoadingGitHub(false);
+    }
+  };
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      handleLoadTTCOFromGitHub({ silent: true });
+    }, 700);
+
+    return () => window.clearTimeout(timer);
+    // Chỉ tự tải 1 lần khi mở app.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const restoreDefaultData = () => {
     const nextModel = buildDataModel(DEFAULT_KHO_ROWS, DEFAULT_TY_KHOI_ROWS);
@@ -1529,7 +1732,7 @@ export default function TTCOCoalStockpileApp() {
 
         {isMobileOrPublicMode ? (
           <div className="mb-4 rounded-3xl border border-blue-200 bg-blue-50 p-4 text-sm font-semibold text-blue-800">
-            Chế độ điện thoại/GitHub Pages: app không lấy trực tiếp database TTCO_APP. Hãy bấm “Tải tồn kho từ Google Sheet” để lấy số liệu đã đồng bộ.
+            Chế độ điện thoại/GitHub Pages: app tự tải tồn kho từ file JSON trên GitHub. Bấm “Tải dữ liệu từ GitHub” để cập nhật lại số liệu mới nhất.
           </div>
         ) : null}
 
@@ -1572,12 +1775,12 @@ export default function TTCOCoalStockpileApp() {
                   </label>
 
                   <SmallButton
-                    onClick={handleLoadTTCOFromGoogleSheet}
+                    onClick={handleLoadTTCOFromGitHub}
                     variant="blue"
-                    disabled={isLoadingSheet}
+                    disabled={isLoadingGitHub}
                   >
                     <Sheet size={16} />
-                    {isLoadingSheet ? "Đang tải Sheet..." : "Tải tồn kho từ Google Sheet"}
+                    {isLoadingGitHub ? "Đang tải GitHub..." : "Tải dữ liệu từ GitHub"}
                   </SmallButton>
 
                   {!isMobileOrPublicMode ? (
@@ -1721,7 +1924,7 @@ export default function TTCOCoalStockpileApp() {
                   note={
                     ttcoSourceName
                       ? "Tự động lấy từ nguồn TTCO_APP. Vẫn có thể sửa tay nếu cần."
-                      : "Có thể nhập tay, tải file Excel tồn kho xuất từ TTCO_APP hoặc tải từ Google Sheet."
+                      : "Có thể nhập tay, tải file Excel tồn kho xuất từ TTCO_APP hoặc tải dữ liệu JSON từ GitHub."
                   }
                 >
                   <Input
