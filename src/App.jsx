@@ -454,17 +454,56 @@ const getWarehouseSortInfo = (warehouse) => {
   };
 };
 
+const getWarehouseSortInfo = (warehouse) => {
+  const name = normalizeText(warehouse?.name || warehouse?.label || warehouse?.id || "");
+  const code = normalizeText(warehouse?.id || warehouse?.code || "");
+
+  const t4Match = name.match(/^Kho\s*(\d+)\s*-\s*T4$/i) || code.match(/^T4[-_]?(\d+)$/i);
+  if (t4Match) {
+    return {
+      group: 2,
+      number: Number(t4Match[1]),
+      suffix: "T4",
+      text: name,
+    };
+  }
+
+  const normalMatch =
+    name.match(/^Kho\s*(\d+)(?:\s*-\s*(\d+))?$/i) ||
+    code.match(/^(\d+)(?:[-_](\d+))?$/i);
+
+  if (normalMatch) {
+    return {
+      group: 1,
+      number: Number(normalMatch[1]),
+      suffix: normalMatch[2] ? Number(normalMatch[2]) : 0,
+      text: name,
+    };
+  }
+
+  return {
+    group: 9,
+    number: 9999,
+    suffix: 9999,
+    text: name,
+  };
+};
+
 const compareWarehousesNatural = (a, b) => {
-  const x = getWarehouseSortInfo(a);
-  const y = getWarehouseSortInfo(b);
+  const sa = getWarehouseSortInfo(a);
+  const sb = getWarehouseSortInfo(b);
 
-  if (x.group !== y.group) return x.group - y.group;
-  if (x.number !== y.number) return x.number - y.number;
+  if (sa.group !== sb.group) return sa.group - sb.group;
+  if (sa.number !== sb.number) return sa.number - sb.number;
 
-  const suffixCompare = x.suffix.localeCompare(y.suffix, "vi", { numeric: true });
-  if (suffixCompare !== 0) return suffixCompare;
+  const suffixA = typeof sa.suffix === "number" ? sa.suffix : 9999;
+  const suffixB = typeof sb.suffix === "number" ? sb.suffix : 9999;
+  if (suffixA !== suffixB) return suffixA - suffixB;
 
-  return x.name.localeCompare(y.name, "vi", { numeric: true });
+  return sa.text.localeCompare(sb.text, "vi", {
+    numeric: true,
+    sensitivity: "base",
+  });
 };
 
 function parseTTCOGitHubJson(payload, currentKhoRows) {
@@ -831,6 +870,31 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
     if (coal && !item.activeCoalNames.some((name) => coalMatches(name, coal))) {
       item.activeCoalNames.push(coal);
     }
+  }
+
+  // Bổ sung các kho chuẩn có trong Excel nhưng chưa có dòng tồn kho trong JSON.
+  // Trường hợp thực tế: Kho 30, Kho 35 có trong danh mục/báo cáo TTCO_APP nhưng tháng hiện tại có thể chưa có tồn,
+  // nếu chỉ dựng danh sách từ JSON thì sẽ bị mất khỏi combobox.
+  for (const excelWarehouse of excelWarehouses || []) {
+    const standardKho =
+      getStandardKhoInfo(excelWarehouse.id) || getStandardKhoInfo(excelWarehouse.name);
+
+    if (!standardKho) continue;
+
+    const key = standardKho.code;
+    if (!key || map.has(key)) continue;
+
+    map.set(key, {
+      id: key,
+      name: standardKho.name,
+      unit: normalizeText(excelWarehouse.unit) || "",
+      maxLength: toNumber(excelWarehouse.maxLength),
+      maxWidth: toNumber(excelWarehouse.maxWidth),
+      areas: Array.isArray(excelWarehouse.areas) ? excelWarehouse.areas : [],
+      activeCoalNames: Array.isArray(excelWarehouse.activeCoalNames)
+        ? excelWarehouse.activeCoalNames
+        : [],
+    });
   }
 
   return Array.from(map.values()).sort(compareWarehousesNatural);
