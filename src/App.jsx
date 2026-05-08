@@ -427,32 +427,7 @@ function displayKhoName(maKho) {
   return code ? `Kho ${Number.isFinite(Number(code)) ? Number(code) : code}` : "";
 }
 
-const getWarehouseSortInfo = (warehouse) => {
-  const id = normalizeText(warehouse?.id ?? warehouse?.ma_kho ?? warehouse?.MaKho);
-  const name = normalizeText(warehouse?.name ?? warehouse?.ten_kho ?? warehouse?.TenKho);
-  const standard = getStandardKhoInfo(id) || getStandardKhoInfo(name);
 
-  if (standard) {
-    const suffixRank = standard.suffix
-      ? standard.suffix.toUpperCase().startsWith("T")
-        ? `T${standard.suffix.replace(/[^0-9]/g, "").padStart(2, "0")}`
-        : `Z${standard.suffix.padStart(2, "0")}`
-      : "";
-    return {
-      group: 0,
-      number: standard.number,
-      suffix: suffixRank,
-      name: standard.name,
-    };
-  }
-
-  return {
-    group: 1,
-    number: Number.MAX_SAFE_INTEGER,
-    suffix: "",
-    name: name || id,
-  };
-};
 
 const getWarehouseSortInfo = (warehouse) => {
   const name = normalizeText(warehouse?.name || warehouse?.label || warehouse?.id || "");
