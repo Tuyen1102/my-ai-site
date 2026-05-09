@@ -1,419 +1,419 @@
-﻿{
-    "ok":  true,
-    "meta":  {
-                 "source":  "TTCO_APP",
-                 "endpoint":  "http://127.0.0.1:8000/api/ttco-g3-bc05-json",
-                 "version":  "bat-v5",
-                 "updatedAt":  "2026-05-10 00:09:13",
-                 "rowCount":  81,
-                 "nam":  2026,
-                 "thang":  5
-             },
-    "data":  [
-                 {
-                     "kho":  "Kho 1",
-                     "coal":  "Cá»¥c xÃ´ 1C",
-                     "ton":  671.75
-                 },
-                 {
-                     "kho":  "Kho 10",
-                     "coal":  "CÃ¡m 5a.1",
-                     "ton":  1500.21
-                 },
-                 {
-                     "kho":  "Kho 10",
-                     "coal":  "CÃ¡m 5a.14",
-                     "ton":  291.0
-                 },
-                 {
-                     "kho":  "Kho 10",
-                     "coal":  "CÃ¡m 5b.1",
-                     "ton":  442.0
-                 },
-                 {
-                     "kho":  "Kho 11",
-                     "coal":  "CÃ¡m 4a.1",
-                     "ton":  37671.49
-                 },
-                 {
-                     "kho":  "Kho 12",
-                     "coal":  "CÃ¡m 3b.1",
-                     "ton":  26016.64
-                 },
-                 {
-                     "kho":  "Kho 13",
-                     "coal":  "CÃ¡m 3a.1",
-                     "ton":  18297.95
-                 },
-                 {
-                     "kho":  "Kho 15",
-                     "coal":  "Cá»¥c 5a.1",
-                     "ton":  33577.8
-                 },
-                 {
-                     "kho":  "Kho 16",
-                     "coal":  "Cá»¥c 5a.1",
-                     "ton":  13252.46
-                 },
-                 {
-                     "kho":  "Kho 17",
-                     "coal":  "CÃ¡m 1",
-                     "ton":  48729.05
-                 },
-                 {
-                     "kho":  "Kho 17",
-                     "coal":  "CÃ¡m 2a.1",
-                     "ton":  19210.6
-                 },
-                 {
-                     "kho":  "Kho 18",
-                     "coal":  "CÃ¡m 3b.1",
-                     "ton":  14367.58
-                 },
-                 {
-                     "kho":  "Kho 19",
-                     "coal":  "CÃ¡m 3b.1",
-                     "ton":  15242.09
-                 },
-                 {
-                     "kho":  "Kho 2",
-                     "coal":  "Cá»¥c 5a.1",
-                     "ton":  7937.86
-                 },
-                 {
-                     "kho":  "Kho 20",
-                     "coal":  "CÃ¡m 4a.1",
-                     "ton":  69548.93
-                 },
-                 {
-                     "kho":  "Kho 20",
-                     "coal":  "CÃ¡m 4b.1",
-                     "ton":  55.0
-                 },
-                 {
-                     "kho":  "Kho 21",
-                     "coal":  "CÃ¡m 5a.1",
-                     "ton":  3093.32
-                 },
-                 {
-                     "kho":  "Kho 21",
-                     "coal":  "CÃ¡m 5b.1",
-                     "ton":  -280.56
-                 },
-                 {
-                     "kho":  "Kho 21",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  3086.49
-                 },
-                 {
-                     "kho":  "Kho 23",
-                     "coal":  "CÃ¡m 3b.1",
-                     "ton":  21824.66
-                 },
-                 {
-                     "kho":  "Kho 24",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  4972.0
-                 },
-                 {
-                     "kho":  "Kho 25",
-                     "coal":  "CÃ¡m 1",
-                     "ton":  17171.72
-                 },
-                 {
-                     "kho":  "Kho 26",
-                     "coal":  "CÃ¡m 1",
-                     "ton":  18990.4
-                 },
-                 {
-                     "kho":  "Kho 27",
-                     "coal":  "CÃ¡m 1",
-                     "ton":  22274.7
-                 },
-                 {
-                     "kho":  "Kho 28",
-                     "coal":  "NHK.16",
-                     "ton":  3025.0
-                 },
-                 {
-                     "kho":  "Kho 28",
-                     "coal":  "NHK.295",
-                     "ton":  9.13
-                 },
-                 {
-                     "kho":  "Kho 28",
-                     "coal":  "NHK.296",
-                     "ton":  -12.88
-                 },
-                 {
-                     "kho":  "Kho 28",
-                     "coal":  "NHK.297",
-                     "ton":  6423.69
-                 },
-                 {
-                     "kho":  "Kho 29",
-                     "coal":  "B32D",
-                     "ton":  18954.98
-                 },
-                 {
-                     "kho":  "Kho 3",
-                     "coal":  "Cá»¥c 4a.1",
-                     "ton":  1507.63
-                 },
-                 {
-                     "kho":  "Kho 30b",
-                     "coal":  "B32D",
-                     "ton":  558.09
-                 },
-                 {
-                     "kho":  "Kho 30b",
-                     "coal":  "CÃ¡m 6b.1",
-                     "ton":  707.72
-                 },
-                 {
-                     "kho":  "Kho 31B",
-                     "coal":  "B2796",
-                     "ton":  40.0
-                 },
-                 {
-                     "kho":  "Kho 31B",
-                     "coal":  "B32D",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho 31D",
-                     "coal":  "CÃ¡m 6b.1",
-                     "ton":  18037.94
-                 },
-                 {
-                     "kho":  "Kho 31c",
-                     "coal":  "CÃ¡m 6b.1",
-                     "ton":  19816.24
-                 },
-                 {
-                     "kho":  "Kho 34",
-                     "coal":  "00",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho 34A",
-                     "coal":  "CÃ¡m 1",
-                     "ton":  43197.29
-                 },
-                 {
-                     "kho":  "Kho 36",
-                     "coal":  "B32D",
-                     "ton":  47376.58
-                 },
-                 {
-                     "kho":  "Kho 39",
-                     "coal":  "B32E",
-                     "ton":  21566.8
-                 },
-                 {
-                     "kho":  "Kho 4",
-                     "coal":  "Cá»¥c 4a.1",
-                     "ton":  11505.17
-                 },
-                 {
-                     "kho":  "Kho 43",
-                     "coal":  "00",
-                     "ton":  20254.98
-                 },
-                 {
-                     "kho":  "Kho 43",
-                     "coal":  "B29A",
-                     "ton":  3712.0
-                 },
-                 {
-                     "kho":  "Kho 44",
-                     "coal":  "00",
-                     "ton":  10279.64
-                 },
-                 {
-                     "kho":  "Kho 44",
-                     "coal":  "B2902",
-                     "ton":  732.39
-                 },
-                 {
-                     "kho":  "Kho 44",
-                     "coal":  "B29A",
-                     "ton":  2625.39
-                 },
-                 {
-                     "kho":  "Kho 44",
-                     "coal":  "B32D",
-                     "ton":  4510.9
-                 },
-                 {
-                     "kho":  "Kho 44",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho 45",
-                     "coal":  "B29A",
-                     "ton":  4220.58
-                 },
-                 {
-                     "kho":  "Kho 46a",
-                     "coal":  "00",
-                     "ton":  370565.53
-                 },
-                 {
-                     "kho":  "Kho 5",
-                     "coal":  "Cá»¥c 4a.2",
-                     "ton":  8459.52
-                 },
-                 {
-                     "kho":  "Kho 6",
-                     "coal":  "Cá»¥c xÃ´ 1C",
-                     "ton":  3.52
-                 },
-                 {
-                     "kho":  "Kho 60",
-                     "coal":  "B5.01",
-                     "ton":  3993.02
-                 },
-                 {
-                     "kho":  "Kho 7",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  7792.84
-                 },
-                 {
-                     "kho":  "Kho 71",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  73642.99
-                 },
-                 {
-                     "kho":  "Kho 71",
-                     "coal":  "Cá»¥c xÃ´ 1C",
-                     "ton":  1209.0
-                 },
-                 {
-                     "kho":  "Kho 72",
-                     "coal":  "00",
-                     "ton":  550.97
-                 },
-                 {
-                     "kho":  "Kho 72",
-                     "coal":  "B16.09",
-                     "ton":  5377.1
-                 },
-                 {
-                     "kho":  "Kho 72",
-                     "coal":  "B5.01",
-                     "ton":  5038.39
-                 },
-                 {
-                     "kho":  "Kho 73",
-                     "coal":  "00",
-                     "ton":  6021.16
-                 },
-                 {
-                     "kho":  "Kho 74",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  27914.54
-                 },
-                 {
-                     "kho":  "Kho 8",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  32366.21
-                 },
-                 {
-                     "kho":  "Kho 9",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  3506.71
-                 },
-                 {
-                     "kho":  "Kho 9",
-                     "coal":  "CÃ¡m 6a.10",
-                     "ton":  4191.0
-                 },
-                 {
-                     "kho":  "Kho 9",
-                     "coal":  "CÃ¡m 6a.14",
-                     "ton":  16463.55
-                 },
-                 {
-                     "kho":  "Kho 9",
-                     "coal":  "CÃ¡m 6b.1",
-                     "ton":  418.0
-                 },
-                 {
-                     "kho":  "Kho K04",
-                     "coal":  "00",
-                     "ton":  413.6
-                 },
-                 {
-                     "kho":  "Kho K04",
-                     "coal":  "B29A",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K04",
-                     "coal":  "NHK.295",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K04",
-                     "coal":  "NHK.296",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K04",
-                     "coal":  "NHK.297",
-                     "ton":  345.26
-                 },
-                 {
-                     "kho":  "Kho K05",
-                     "coal":  "00",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K05",
-                     "coal":  "B29B",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K06",
-                     "coal":  "00",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K06",
-                     "coal":  "B2902",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K06",
-                     "coal":  "B29A",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K06",
-                     "coal":  "B32D",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K06",
-                     "coal":  "CÃ¡m 6a.1",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho K60",
-                     "coal":  "CÃ¡m 6b.1",
-                     "ton":  1079.14
-                 },
-                 {
-                     "kho":  "Kho k17",
-                     "coal":  "00",
-                     "ton":  0.0
-                 },
-                 {
-                     "kho":  "Kho k59",
-                     "coal":  "CÃ¡m 6b.1",
-                     "ton":  4293.0
-                 }
-             ]
+{
+  "ok": true,
+  "meta": {
+    "source": "TTCO_APP",
+    "endpoint": "http://127.0.0.1:8000/api/ttco-g3-bc05-json",
+    "version": "bat-v9",
+    "updatedAt": "2026-05-10 00:21:39",
+    "NamHT": "2026",
+    "ThangHT": "5",
+    "rowCount": 81
+  },
+  "data": [
+    {
+      "kho": "Kho 1",
+      "coal": "Cục xô 1C",
+      "ton": 671.75
+    },
+    {
+      "kho": "Kho 10",
+      "coal": "Cám 5a.1",
+      "ton": 1500.21
+    },
+    {
+      "kho": "Kho 10",
+      "coal": "Cám 5a.14",
+      "ton": 291.0
+    },
+    {
+      "kho": "Kho 10",
+      "coal": "Cám 5b.1",
+      "ton": 442.0
+    },
+    {
+      "kho": "Kho 11",
+      "coal": "Cám 4a.1",
+      "ton": 37671.49
+    },
+    {
+      "kho": "Kho 12",
+      "coal": "Cám 3b.1",
+      "ton": 26016.64
+    },
+    {
+      "kho": "Kho 13",
+      "coal": "Cám 3a.1",
+      "ton": 18297.95
+    },
+    {
+      "kho": "Kho 15",
+      "coal": "Cục 5a.1",
+      "ton": 33577.8
+    },
+    {
+      "kho": "Kho 16",
+      "coal": "Cục 5a.1",
+      "ton": 13252.46
+    },
+    {
+      "kho": "Kho 17",
+      "coal": "Cám 1",
+      "ton": 48729.05
+    },
+    {
+      "kho": "Kho 17",
+      "coal": "Cám 2a.1",
+      "ton": 19210.6
+    },
+    {
+      "kho": "Kho 18",
+      "coal": "Cám 3b.1",
+      "ton": 14367.58
+    },
+    {
+      "kho": "Kho 19",
+      "coal": "Cám 3b.1",
+      "ton": 15242.09
+    },
+    {
+      "kho": "Kho 2",
+      "coal": "Cục 5a.1",
+      "ton": 7937.86
+    },
+    {
+      "kho": "Kho 20",
+      "coal": "Cám 4a.1",
+      "ton": 69548.93
+    },
+    {
+      "kho": "Kho 20",
+      "coal": "Cám 4b.1",
+      "ton": 55.0
+    },
+    {
+      "kho": "Kho 21",
+      "coal": "Cám 5a.1",
+      "ton": 3093.32
+    },
+    {
+      "kho": "Kho 21",
+      "coal": "Cám 5b.1",
+      "ton": -280.56
+    },
+    {
+      "kho": "Kho 21",
+      "coal": "Cám 6a.1",
+      "ton": 3086.49
+    },
+    {
+      "kho": "Kho 23",
+      "coal": "Cám 3b.1",
+      "ton": 21824.66
+    },
+    {
+      "kho": "Kho 24",
+      "coal": "Cám 6a.1",
+      "ton": 4972.0
+    },
+    {
+      "kho": "Kho 25",
+      "coal": "Cám 1",
+      "ton": 17171.72
+    },
+    {
+      "kho": "Kho 26",
+      "coal": "Cám 1",
+      "ton": 18990.4
+    },
+    {
+      "kho": "Kho 27",
+      "coal": "Cám 1",
+      "ton": 22274.7
+    },
+    {
+      "kho": "Kho 28",
+      "coal": "NHK.16",
+      "ton": 3025.0
+    },
+    {
+      "kho": "Kho 28",
+      "coal": "NHK.295",
+      "ton": 9.13
+    },
+    {
+      "kho": "Kho 28",
+      "coal": "NHK.296",
+      "ton": -12.88
+    },
+    {
+      "kho": "Kho 28",
+      "coal": "NHK.297",
+      "ton": 6423.69
+    },
+    {
+      "kho": "Kho 29",
+      "coal": "B32D",
+      "ton": 18954.98
+    },
+    {
+      "kho": "Kho 3",
+      "coal": "Cục 4a.1",
+      "ton": 1507.63
+    },
+    {
+      "kho": "Kho 30b",
+      "coal": "B32D",
+      "ton": 558.09
+    },
+    {
+      "kho": "Kho 30b",
+      "coal": "Cám 6b.1",
+      "ton": 707.72
+    },
+    {
+      "kho": "Kho 31B",
+      "coal": "B2796",
+      "ton": 40.0
+    },
+    {
+      "kho": "Kho 31B",
+      "coal": "B32D",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho 31D",
+      "coal": "Cám 6b.1",
+      "ton": 18037.94
+    },
+    {
+      "kho": "Kho 31c",
+      "coal": "Cám 6b.1",
+      "ton": 19816.24
+    },
+    {
+      "kho": "Kho 34",
+      "coal": "00",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho 34A",
+      "coal": "Cám 1",
+      "ton": 43197.29
+    },
+    {
+      "kho": "Kho 36",
+      "coal": "B32D",
+      "ton": 47376.58
+    },
+    {
+      "kho": "Kho 39",
+      "coal": "B32E",
+      "ton": 21566.8
+    },
+    {
+      "kho": "Kho 4",
+      "coal": "Cục 4a.1",
+      "ton": 11505.17
+    },
+    {
+      "kho": "Kho 43",
+      "coal": "00",
+      "ton": 20254.98
+    },
+    {
+      "kho": "Kho 43",
+      "coal": "B29A",
+      "ton": 3712.0
+    },
+    {
+      "kho": "Kho 44",
+      "coal": "00",
+      "ton": 10279.64
+    },
+    {
+      "kho": "Kho 44",
+      "coal": "B2902",
+      "ton": 732.39
+    },
+    {
+      "kho": "Kho 44",
+      "coal": "B29A",
+      "ton": 2625.39
+    },
+    {
+      "kho": "Kho 44",
+      "coal": "B32D",
+      "ton": 4510.9
+    },
+    {
+      "kho": "Kho 44",
+      "coal": "Cám 6a.1",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho 45",
+      "coal": "B29A",
+      "ton": 4220.58
+    },
+    {
+      "kho": "Kho 46a",
+      "coal": "00",
+      "ton": 370565.53
+    },
+    {
+      "kho": "Kho 5",
+      "coal": "Cục 4a.2",
+      "ton": 8459.52
+    },
+    {
+      "kho": "Kho 6",
+      "coal": "Cục xô 1C",
+      "ton": 3.52
+    },
+    {
+      "kho": "Kho 60",
+      "coal": "B5.01",
+      "ton": 3993.02
+    },
+    {
+      "kho": "Kho 7",
+      "coal": "Cám 6a.1",
+      "ton": 7792.84
+    },
+    {
+      "kho": "Kho 71",
+      "coal": "Cám 6a.1",
+      "ton": 73642.99
+    },
+    {
+      "kho": "Kho 71",
+      "coal": "Cục xô 1C",
+      "ton": 1209.0
+    },
+    {
+      "kho": "Kho 72",
+      "coal": "00",
+      "ton": 550.97
+    },
+    {
+      "kho": "Kho 72",
+      "coal": "B16.09",
+      "ton": 5377.1
+    },
+    {
+      "kho": "Kho 72",
+      "coal": "B5.01",
+      "ton": 5038.39
+    },
+    {
+      "kho": "Kho 73",
+      "coal": "00",
+      "ton": 6021.16
+    },
+    {
+      "kho": "Kho 74",
+      "coal": "Cám 6a.1",
+      "ton": 27914.54
+    },
+    {
+      "kho": "Kho 8",
+      "coal": "Cám 6a.1",
+      "ton": 32366.21
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6a.1",
+      "ton": 3506.71
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6a.10",
+      "ton": 4191.0
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6a.14",
+      "ton": 16463.55
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6b.1",
+      "ton": 418.0
+    },
+    {
+      "kho": "Kho K04",
+      "coal": "00",
+      "ton": 413.6
+    },
+    {
+      "kho": "Kho K04",
+      "coal": "B29A",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K04",
+      "coal": "NHK.295",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K04",
+      "coal": "NHK.296",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K04",
+      "coal": "NHK.297",
+      "ton": 345.26
+    },
+    {
+      "kho": "Kho K05",
+      "coal": "00",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K05",
+      "coal": "B29B",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K06",
+      "coal": "00",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K06",
+      "coal": "B2902",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K06",
+      "coal": "B29A",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K06",
+      "coal": "B32D",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K06",
+      "coal": "Cám 6a.1",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho K60",
+      "coal": "Cám 6b.1",
+      "ton": 1079.14
+    },
+    {
+      "kho": "Kho k17",
+      "coal": "00",
+      "ton": 0.0
+    },
+    {
+      "kho": "Kho k59",
+      "coal": "Cám 6b.1",
+      "ton": 4293.0
+    }
+  ]
 }
