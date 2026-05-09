@@ -3,11 +3,11 @@
     "meta":  {
                  "source":  "TTCO_APP",
                  "endpoint":  "http://127.0.0.1:8000/api/ttco-g3-bc05-json",
-                 "version":  "bat-v3",
-                 "updatedAt":  "2026-05-10 00:03:01",
-                 "NamHT":  "",
-                 "ThangHT":  "",
-                 "rowCount":  81
+                 "version":  "bat-v5",
+                 "updatedAt":  "2026-05-10 00:09:13",
+                 "rowCount":  81,
+                 "nam":  2026,
+                 "thang":  5
              },
     "data":  [
                  {
