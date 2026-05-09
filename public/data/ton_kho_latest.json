@@ -1,1 +1,419 @@
-﻿{"ok":true,"nam":2026,"thang":5,"count":81,"rawCount":94,"rows":[{"kho":"Kho 1","coal":"Cá»¥c xÃ´ 1C","ton":671.75},{"kho":"Kho 10","coal":"CÃ¡m 5a.1","ton":1500.21},{"kho":"Kho 10","coal":"CÃ¡m 5a.14","ton":291.0},{"kho":"Kho 10","coal":"CÃ¡m 5b.1","ton":442.0},{"kho":"Kho 11","coal":"CÃ¡m 4a.1","ton":37671.49},{"kho":"Kho 12","coal":"CÃ¡m 3b.1","ton":26016.64},{"kho":"Kho 13","coal":"CÃ¡m 3a.1","ton":18297.95},{"kho":"Kho 15","coal":"Cá»¥c 5a.1","ton":33577.8},{"kho":"Kho 16","coal":"Cá»¥c 5a.1","ton":13252.46},{"kho":"Kho 17","coal":"CÃ¡m 1","ton":48729.05},{"kho":"Kho 17","coal":"CÃ¡m 2a.1","ton":19210.6},{"kho":"Kho 18","coal":"CÃ¡m 3b.1","ton":14367.58},{"kho":"Kho 19","coal":"CÃ¡m 3b.1","ton":15242.09},{"kho":"Kho 2","coal":"Cá»¥c 5a.1","ton":7937.86},{"kho":"Kho 20","coal":"CÃ¡m 4a.1","ton":69548.93},{"kho":"Kho 20","coal":"CÃ¡m 4b.1","ton":55.0},{"kho":"Kho 21","coal":"CÃ¡m 5a.1","ton":3093.32},{"kho":"Kho 21","coal":"CÃ¡m 5b.1","ton":-280.56},{"kho":"Kho 21","coal":"CÃ¡m 6a.1","ton":3086.49},{"kho":"Kho 23","coal":"CÃ¡m 3b.1","ton":21824.66},{"kho":"Kho 24","coal":"CÃ¡m 6a.1","ton":4972.0},{"kho":"Kho 25","coal":"CÃ¡m 1","ton":17171.72},{"kho":"Kho 26","coal":"CÃ¡m 1","ton":18990.4},{"kho":"Kho 27","coal":"CÃ¡m 1","ton":22274.7},{"kho":"Kho 28","coal":"NHK.16","ton":3025.0},{"kho":"Kho 28","coal":"NHK.295","ton":9.13},{"kho":"Kho 28","coal":"NHK.296","ton":-12.88},{"kho":"Kho 28","coal":"NHK.297","ton":6423.69},{"kho":"Kho 29","coal":"B32D","ton":18954.98},{"kho":"Kho 3","coal":"Cá»¥c 4a.1","ton":1507.63},{"kho":"Kho 30b","coal":"B32D","ton":558.09},{"kho":"Kho 30b","coal":"CÃ¡m 6b.1","ton":707.72},{"kho":"Kho 31B","coal":"B2796","ton":40.0},{"kho":"Kho 31B","coal":"B32D","ton":0.0},{"kho":"Kho 31D","coal":"CÃ¡m 6b.1","ton":18037.94},{"kho":"Kho 31c","coal":"CÃ¡m 6b.1","ton":19816.24},{"kho":"Kho 34","coal":"00","ton":0.0},{"kho":"Kho 34A","coal":"CÃ¡m 1","ton":43197.29},{"kho":"Kho 36","coal":"B32D","ton":47376.58},{"kho":"Kho 39","coal":"B32E","ton":21566.8},{"kho":"Kho 4","coal":"Cá»¥c 4a.1","ton":11505.17},{"kho":"Kho 43","coal":"00","ton":20254.98},{"kho":"Kho 43","coal":"B29A","ton":3712.0},{"kho":"Kho 44","coal":"00","ton":10279.64},{"kho":"Kho 44","coal":"B2902","ton":732.39},{"kho":"Kho 44","coal":"B29A","ton":2625.39},{"kho":"Kho 44","coal":"B32D","ton":4510.9},{"kho":"Kho 44","coal":"CÃ¡m 6a.1","ton":0.0},{"kho":"Kho 45","coal":"B29A","ton":4220.58},{"kho":"Kho 46a","coal":"00","ton":370565.53},{"kho":"Kho 5","coal":"Cá»¥c 4a.2","ton":8459.52},{"kho":"Kho 6","coal":"Cá»¥c xÃ´ 1C","ton":3.52},{"kho":"Kho 60","coal":"B5.01","ton":3993.02},{"kho":"Kho 7","coal":"CÃ¡m 6a.1","ton":7792.84},{"kho":"Kho 71","coal":"CÃ¡m 6a.1","ton":73642.99},{"kho":"Kho 71","coal":"Cá»¥c xÃ´ 1C","ton":1209.0},{"kho":"Kho 72","coal":"00","ton":550.97},{"kho":"Kho 72","coal":"B16.09","ton":5377.1},{"kho":"Kho 72","coal":"B5.01","ton":5038.39},{"kho":"Kho 73","coal":"00","ton":6021.16},{"kho":"Kho 74","coal":"CÃ¡m 6a.1","ton":27914.54},{"kho":"Kho 8","coal":"CÃ¡m 6a.1","ton":32366.21},{"kho":"Kho 9","coal":"CÃ¡m 6a.1","ton":3506.71},{"kho":"Kho 9","coal":"CÃ¡m 6a.10","ton":4191.0},{"kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":16463.55},{"kho":"Kho 9","coal":"CÃ¡m 6b.1","ton":418.0},{"kho":"Kho K04","coal":"00","ton":413.6},{"kho":"Kho K04","coal":"B29A","ton":0.0},{"kho":"Kho K04","coal":"NHK.295","ton":0.0},{"kho":"Kho K04","coal":"NHK.296","ton":0.0},{"kho":"Kho K04","coal":"NHK.297","ton":345.26},{"kho":"Kho K05","coal":"00","ton":0.0},{"kho":"Kho K05","coal":"B29B","ton":0.0},{"kho":"Kho K06","coal":"00","ton":0.0},{"kho":"Kho K06","coal":"B2902","ton":0.0},{"kho":"Kho K06","coal":"B29A","ton":0.0},{"kho":"Kho K06","coal":"B32D","ton":0.0},{"kho":"Kho K06","coal":"CÃ¡m 6a.1","ton":0.0},{"kho":"Kho K60","coal":"CÃ¡m 6b.1","ton":1079.14},{"kho":"Kho k17","coal":"00","ton":0.0},{"kho":"Kho k59","coal":"CÃ¡m 6b.1","ton":4293.0}],"rawRows":[{"nam":2026,"thang":5,"maKho":"01","maThan":"B11C","kho":"Kho 1","coal":"Cá»¥c xÃ´ 1C","ton":671.75},{"nam":2026,"thang":5,"maKho":"02","maThan":"5A.1","kho":"Kho 2","coal":"Cá»¥c 5a.1","ton":7937.86},{"nam":2026,"thang":5,"maKho":"03","maThan":"4A.1","kho":"Kho 3","coal":"Cá»¥c 4a.1","ton":1507.63},{"nam":2026,"thang":5,"maKho":"04","maThan":"4A.1","kho":"Kho 4","coal":"Cá»¥c 4a.1","ton":11505.17},{"nam":2026,"thang":5,"maKho":"05","maThan":"4a.2","kho":"Kho 5","coal":"Cá»¥c 4a.2","ton":8459.52},{"nam":2026,"thang":5,"maKho":"06","maThan":"B11C","kho":"Kho 6","coal":"Cá»¥c xÃ´ 1C","ton":3.52},{"nam":2026,"thang":5,"maKho":"07","maThan":"11a.1","kho":"Kho 7","coal":"CÃ¡m 6a.1","ton":7792.84},{"nam":2026,"thang":5,"maKho":"08","maThan":"11A.1","kho":"Kho 8","coal":"CÃ¡m 6a.1","ton":32366.21},{"nam":2026,"thang":5,"maKho":"09","maThan":"11.250","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":338.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11A.1","kho":"Kho 9","coal":"CÃ¡m 6a.1","ton":3506.71},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.241","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":0.3},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.243","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":-0.01},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.245","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":-1.37},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.246","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":-0.37},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.247","kho":"Kho 9","coal":"CÃ¡m 6a.10","ton":23.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.248","kho":"Kho 9","coal":"CÃ¡m 6a.10","ton":33.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.249","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":56.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.251","kho":"Kho 9","coal":"CÃ¡m 6a.10","ton":4135.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.253","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":8867.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11a.254","kho":"Kho 9","coal":"CÃ¡m 6a.14","ton":7204.0},{"nam":2026,"thang":5,"maKho":"09","maThan":"11B.1","kho":"Kho 9","coal":"CÃ¡m 6b.1","ton":418.0},{"nam":2026,"thang":5,"maKho":"10","maThan":"10a.1","kho":"Kho 10","coal":"CÃ¡m 5a.1","ton":1500.21},{"nam":2026,"thang":5,"maKho":"10","maThan":"10a.101","kho":"Kho 10","coal":"CÃ¡m 5a.14","ton":10.82},{"nam":2026,"thang":5,"maKho":"10","maThan":"10a.259","kho":"Kho 10","coal":"CÃ¡m 5a.14","ton":-0.04},{"nam":2026,"thang":5,"maKho":"10","maThan":"10a.262","kho":"Kho 10","coal":"CÃ¡m 5a.14","ton":-12.0},{"nam":2026,"thang":5,"maKho":"10","maThan":"10a.263","kho":"Kho 10","coal":"CÃ¡m 5a.14","ton":292.0},{"nam":2026,"thang":5,"maKho":"10","maThan":"10a.72","kho":"Kho 10","coal":"CÃ¡m 5a.14","ton":0.22},{"nam":2026,"thang":5,"maKho":"10","maThan":"10B.1","kho":"Kho 10","coal":"CÃ¡m 5b.1","ton":442.0},{"nam":2026,"thang":5,"maKho":"11","maThan":"9A.1","kho":"Kho 11","coal":"CÃ¡m 4a.1","ton":37671.49},{"nam":2026,"thang":5,"maKho":"12","maThan":"8B.1","kho":"Kho 12","coal":"CÃ¡m 3b.1","ton":26016.64},{"nam":2026,"thang":5,"maKho":"13","maThan":"8A.1","kho":"Kho 13","coal":"CÃ¡m 3a.1","ton":18297.95},{"nam":2026,"thang":5,"maKho":"15","maThan":"5A.1","kho":"Kho 15","coal":"Cá»¥c 5a.1","ton":33577.8},{"nam":2026,"thang":5,"maKho":"16","maThan":"5A.1","kho":"Kho 16","coal":"Cá»¥c 5a.1","ton":13252.46},{"nam":2026,"thang":5,"maKho":"17","maThan":"6A.1","kho":"Kho 17","coal":"CÃ¡m 1","ton":48729.05},{"nam":2026,"thang":5,"maKho":"17","maThan":"7a.1","kho":"Kho 17","coal":"CÃ¡m 2a.1","ton":19210.6},{"nam":2026,"thang":5,"maKho":"18","maThan":"8B.1","kho":"Kho 18","coal":"CÃ¡m 3b.1","ton":14367.58},{"nam":2026,"thang":5,"maKho":"19","maThan":"8B.1","kho":"Kho 19","coal":"CÃ¡m 3b.1","ton":15242.09},{"nam":2026,"thang":5,"maKho":"20","maThan":"9A.1","kho":"Kho 20","coal":"CÃ¡m 4a.1","ton":69548.93},{"nam":2026,"thang":5,"maKho":"20","maThan":"9B.1","kho":"Kho 20","coal":"CÃ¡m 4b.1","ton":55.0},{"nam":2026,"thang":5,"maKho":"21","maThan":"10A.1","kho":"Kho 21","coal":"CÃ¡m 5a.1","ton":3093.32},{"nam":2026,"thang":5,"maKho":"21","maThan":"10B.1","kho":"Kho 21","coal":"CÃ¡m 5b.1","ton":-280.56},{"nam":2026,"thang":5,"maKho":"21","maThan":"11A.1","kho":"Kho 21","coal":"CÃ¡m 6a.1","ton":3086.49},{"nam":2026,"thang":5,"maKho":"23","maThan":"8b.1","kho":"Kho 23","coal":"CÃ¡m 3b.1","ton":21824.66},{"nam":2026,"thang":5,"maKho":"24","maThan":"11a.1","kho":"Kho 24","coal":"CÃ¡m 6a.1","ton":4972.0},{"nam":2026,"thang":5,"maKho":"25","maThan":"6a.1","kho":"Kho 25","coal":"CÃ¡m 1","ton":17171.72},{"nam":2026,"thang":5,"maKho":"26","maThan":"6a.1","kho":"Kho 26","coal":"CÃ¡m 1","ton":18990.4},{"nam":2026,"thang":5,"maKho":"27","maThan":"6a.1","kho":"Kho 27","coal":"CÃ¡m 1","ton":22274.7},{"nam":2026,"thang":5,"maKho":"28","maThan":"NHK.16","kho":"Kho 28","coal":"NHK.16","ton":3025.0},{"nam":2026,"thang":5,"maKho":"28","maThan":"NHK.295","kho":"Kho 28","coal":"NHK.295","ton":9.13},{"nam":2026,"thang":5,"maKho":"28","maThan":"NHK.296","kho":"Kho 28","coal":"NHK.296","ton":-12.88},{"nam":2026,"thang":5,"maKho":"28","maThan":"NHK.297","kho":"Kho 28","coal":"NHK.297","ton":6423.69},{"nam":2026,"thang":5,"maKho":"29","maThan":"b32d","kho":"Kho 29","coal":"B32D","ton":18954.98},{"nam":2026,"thang":5,"maKho":"30b","maThan":"11b.1","kho":"Kho 30b","coal":"CÃ¡m 6b.1","ton":707.72},{"nam":2026,"thang":5,"maKho":"30b","maThan":"b32d","kho":"Kho 30b","coal":"B32D","ton":558.09},{"nam":2026,"thang":5,"maKho":"31B","maThan":"B2796","kho":"Kho 31B","coal":"B2796","ton":40.0},{"nam":2026,"thang":5,"maKho":"31B","maThan":"B32d","kho":"Kho 31B","coal":"B32D","ton":0.0},{"nam":2026,"thang":5,"maKho":"31c","maThan":"11b.1","kho":"Kho 31c","coal":"CÃ¡m 6b.1","ton":19816.24},{"nam":2026,"thang":5,"maKho":"31D","maThan":"11b.1","kho":"Kho 31D","coal":"CÃ¡m 6b.1","ton":18037.94},{"nam":2026,"thang":5,"maKho":"34","maThan":"00","kho":"Kho 34","coal":"00","ton":0.0},{"nam":2026,"thang":5,"maKho":"34A","maThan":"6a.1","kho":"Kho 34A","coal":"CÃ¡m 1","ton":43197.29},{"nam":2026,"thang":5,"maKho":"36","maThan":"B32d","kho":"Kho 36","coal":"B32D","ton":47376.58},{"nam":2026,"thang":5,"maKho":"39","maThan":"b32e","kho":"Kho 39","coal":"B32E","ton":21566.8},{"nam":2026,"thang":5,"maKho":"43","maThan":"00","kho":"Kho 43","coal":"00","ton":20254.98},{"nam":2026,"thang":5,"maKho":"43","maThan":"B29A","kho":"Kho 43","coal":"B29A","ton":3712.0},{"nam":2026,"thang":5,"maKho":"44","maThan":"00","kho":"Kho 44","coal":"00","ton":10279.64},{"nam":2026,"thang":5,"maKho":"44","maThan":"11a.1","kho":"Kho 44","coal":"CÃ¡m 6a.1","ton":0.0},{"nam":2026,"thang":5,"maKho":"44","maThan":"b2902","kho":"Kho 44","coal":"B2902","ton":732.39},{"nam":2026,"thang":5,"maKho":"44","maThan":"b29a","kho":"Kho 44","coal":"B29A","ton":2625.39},{"nam":2026,"thang":5,"maKho":"44","maThan":"b32d","kho":"Kho 44","coal":"B32D","ton":4510.9},{"nam":2026,"thang":5,"maKho":"45","maThan":"B29a","kho":"Kho 45","coal":"B29A","ton":4220.58},{"nam":2026,"thang":5,"maKho":"46a","maThan":"00","kho":"Kho 46a","coal":"00","ton":370565.53},{"nam":2026,"thang":5,"maKho":"60","maThan":"B5.01","kho":"Kho 60","coal":"B5.01","ton":3993.02},{"nam":2026,"thang":5,"maKho":"71","maThan":"11a.1","kho":"Kho 71","coal":"CÃ¡m 6a.1","ton":73642.99},{"nam":2026,"thang":5,"maKho":"71","maThan":"b11c","kho":"Kho 71","coal":"Cá»¥c xÃ´ 1C","ton":1209.0},{"nam":2026,"thang":5,"maKho":"72","maThan":"00","kho":"Kho 72","coal":"00","ton":550.97},{"nam":2026,"thang":5,"maKho":"72","maThan":"b16.09","kho":"Kho 72","coal":"B16.09","ton":5377.1},{"nam":2026,"thang":5,"maKho":"72","maThan":"B5.01","kho":"Kho 72","coal":"B5.01","ton":5038.39},{"nam":2026,"thang":5,"maKho":"73","maThan":"00","kho":"Kho 73","coal":"00","ton":6021.16},{"nam":2026,"thang":5,"maKho":"74","maThan":"11a.1","kho":"Kho 74","coal":"CÃ¡m 6a.1","ton":27914.54},{"nam":2026,"thang":5,"maKho":"K04","maThan":"00","kho":"Kho K04","coal":"00","ton":413.6},{"nam":2026,"thang":5,"maKho":"K04","maThan":"b29a","kho":"Kho K04","coal":"B29A","ton":0.0},{"nam":2026,"thang":5,"maKho":"K04","maThan":"NHK.295","kho":"Kho K04","coal":"NHK.295","ton":0.0},{"nam":2026,"thang":5,"maKho":"K04","maThan":"NHK.296","kho":"Kho K04","coal":"NHK.296","ton":0.0},{"nam":2026,"thang":5,"maKho":"K04","maThan":"NHK.297","kho":"Kho K04","coal":"NHK.297","ton":345.26},{"nam":2026,"thang":5,"maKho":"K05","maThan":"00","kho":"Kho K05","coal":"00","ton":0.0},{"nam":2026,"thang":5,"maKho":"K05","maThan":"b29b","kho":"Kho K05","coal":"B29B","ton":0.0},{"nam":2026,"thang":5,"maKho":"K06","maThan":"00","kho":"Kho K06","coal":"00","ton":0.0},{"nam":2026,"thang":5,"maKho":"K06","maThan":"11a.1","kho":"Kho K06","coal":"CÃ¡m 6a.1","ton":0.0},{"nam":2026,"thang":5,"maKho":"K06","maThan":"b2902","kho":"Kho K06","coal":"B2902","ton":0.0},{"nam":2026,"thang":5,"maKho":"K06","maThan":"b29a","kho":"Kho K06","coal":"B29A","ton":0.0},{"nam":2026,"thang":5,"maKho":"K06","maThan":"b32d","kho":"Kho K06","coal":"B32D","ton":0.0},{"nam":2026,"thang":5,"maKho":"k17","maThan":"00","kho":"Kho k17","coal":"00","ton":0.0},{"nam":2026,"thang":5,"maKho":"k59","maThan":"11b.1","kho":"Kho k59","coal":"CÃ¡m 6b.1","ton":4293.0},{"nam":2026,"thang":5,"maKho":"K60","maThan":"11b.1","kho":"Kho K60","coal":"CÃ¡m 6b.1","ton":1079.14}]}
+﻿{
+    "ok":  true,
+    "meta":  {
+                 "source":  "TTCO_APP",
+                 "endpoint":  "http://127.0.0.1:8000/api/ttco-g3-bc05-json",
+                 "version":  "bat-v3",
+                 "updatedAt":  "2026-05-10 00:03:01",
+                 "NamHT":  "",
+                 "ThangHT":  "",
+                 "rowCount":  81
+             },
+    "data":  [
+                 {
+                     "kho":  "Kho 1",
+                     "coal":  "Cá»¥c xÃ´ 1C",
+                     "ton":  671.75
+                 },
+                 {
+                     "kho":  "Kho 10",
+                     "coal":  "CÃ¡m 5a.1",
+                     "ton":  1500.21
+                 },
+                 {
+                     "kho":  "Kho 10",
+                     "coal":  "CÃ¡m 5a.14",
+                     "ton":  291.0
+                 },
+                 {
+                     "kho":  "Kho 10",
+                     "coal":  "CÃ¡m 5b.1",
+                     "ton":  442.0
+                 },
+                 {
+                     "kho":  "Kho 11",
+                     "coal":  "CÃ¡m 4a.1",
+                     "ton":  37671.49
+                 },
+                 {
+                     "kho":  "Kho 12",
+                     "coal":  "CÃ¡m 3b.1",
+                     "ton":  26016.64
+                 },
+                 {
+                     "kho":  "Kho 13",
+                     "coal":  "CÃ¡m 3a.1",
+                     "ton":  18297.95
+                 },
+                 {
+                     "kho":  "Kho 15",
+                     "coal":  "Cá»¥c 5a.1",
+                     "ton":  33577.8
+                 },
+                 {
+                     "kho":  "Kho 16",
+                     "coal":  "Cá»¥c 5a.1",
+                     "ton":  13252.46
+                 },
+                 {
+                     "kho":  "Kho 17",
+                     "coal":  "CÃ¡m 1",
+                     "ton":  48729.05
+                 },
+                 {
+                     "kho":  "Kho 17",
+                     "coal":  "CÃ¡m 2a.1",
+                     "ton":  19210.6
+                 },
+                 {
+                     "kho":  "Kho 18",
+                     "coal":  "CÃ¡m 3b.1",
+                     "ton":  14367.58
+                 },
+                 {
+                     "kho":  "Kho 19",
+                     "coal":  "CÃ¡m 3b.1",
+                     "ton":  15242.09
+                 },
+                 {
+                     "kho":  "Kho 2",
+                     "coal":  "Cá»¥c 5a.1",
+                     "ton":  7937.86
+                 },
+                 {
+                     "kho":  "Kho 20",
+                     "coal":  "CÃ¡m 4a.1",
+                     "ton":  69548.93
+                 },
+                 {
+                     "kho":  "Kho 20",
+                     "coal":  "CÃ¡m 4b.1",
+                     "ton":  55.0
+                 },
+                 {
+                     "kho":  "Kho 21",
+                     "coal":  "CÃ¡m 5a.1",
+                     "ton":  3093.32
+                 },
+                 {
+                     "kho":  "Kho 21",
+                     "coal":  "CÃ¡m 5b.1",
+                     "ton":  -280.56
+                 },
+                 {
+                     "kho":  "Kho 21",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  3086.49
+                 },
+                 {
+                     "kho":  "Kho 23",
+                     "coal":  "CÃ¡m 3b.1",
+                     "ton":  21824.66
+                 },
+                 {
+                     "kho":  "Kho 24",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  4972.0
+                 },
+                 {
+                     "kho":  "Kho 25",
+                     "coal":  "CÃ¡m 1",
+                     "ton":  17171.72
+                 },
+                 {
+                     "kho":  "Kho 26",
+                     "coal":  "CÃ¡m 1",
+                     "ton":  18990.4
+                 },
+                 {
+                     "kho":  "Kho 27",
+                     "coal":  "CÃ¡m 1",
+                     "ton":  22274.7
+                 },
+                 {
+                     "kho":  "Kho 28",
+                     "coal":  "NHK.16",
+                     "ton":  3025.0
+                 },
+                 {
+                     "kho":  "Kho 28",
+                     "coal":  "NHK.295",
+                     "ton":  9.13
+                 },
+                 {
+                     "kho":  "Kho 28",
+                     "coal":  "NHK.296",
+                     "ton":  -12.88
+                 },
+                 {
+                     "kho":  "Kho 28",
+                     "coal":  "NHK.297",
+                     "ton":  6423.69
+                 },
+                 {
+                     "kho":  "Kho 29",
+                     "coal":  "B32D",
+                     "ton":  18954.98
+                 },
+                 {
+                     "kho":  "Kho 3",
+                     "coal":  "Cá»¥c 4a.1",
+                     "ton":  1507.63
+                 },
+                 {
+                     "kho":  "Kho 30b",
+                     "coal":  "B32D",
+                     "ton":  558.09
+                 },
+                 {
+                     "kho":  "Kho 30b",
+                     "coal":  "CÃ¡m 6b.1",
+                     "ton":  707.72
+                 },
+                 {
+                     "kho":  "Kho 31B",
+                     "coal":  "B2796",
+                     "ton":  40.0
+                 },
+                 {
+                     "kho":  "Kho 31B",
+                     "coal":  "B32D",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho 31D",
+                     "coal":  "CÃ¡m 6b.1",
+                     "ton":  18037.94
+                 },
+                 {
+                     "kho":  "Kho 31c",
+                     "coal":  "CÃ¡m 6b.1",
+                     "ton":  19816.24
+                 },
+                 {
+                     "kho":  "Kho 34",
+                     "coal":  "00",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho 34A",
+                     "coal":  "CÃ¡m 1",
+                     "ton":  43197.29
+                 },
+                 {
+                     "kho":  "Kho 36",
+                     "coal":  "B32D",
+                     "ton":  47376.58
+                 },
+                 {
+                     "kho":  "Kho 39",
+                     "coal":  "B32E",
+                     "ton":  21566.8
+                 },
+                 {
+                     "kho":  "Kho 4",
+                     "coal":  "Cá»¥c 4a.1",
+                     "ton":  11505.17
+                 },
+                 {
+                     "kho":  "Kho 43",
+                     "coal":  "00",
+                     "ton":  20254.98
+                 },
+                 {
+                     "kho":  "Kho 43",
+                     "coal":  "B29A",
+                     "ton":  3712.0
+                 },
+                 {
+                     "kho":  "Kho 44",
+                     "coal":  "00",
+                     "ton":  10279.64
+                 },
+                 {
+                     "kho":  "Kho 44",
+                     "coal":  "B2902",
+                     "ton":  732.39
+                 },
+                 {
+                     "kho":  "Kho 44",
+                     "coal":  "B29A",
+                     "ton":  2625.39
+                 },
+                 {
+                     "kho":  "Kho 44",
+                     "coal":  "B32D",
+                     "ton":  4510.9
+                 },
+                 {
+                     "kho":  "Kho 44",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho 45",
+                     "coal":  "B29A",
+                     "ton":  4220.58
+                 },
+                 {
+                     "kho":  "Kho 46a",
+                     "coal":  "00",
+                     "ton":  370565.53
+                 },
+                 {
+                     "kho":  "Kho 5",
+                     "coal":  "Cá»¥c 4a.2",
+                     "ton":  8459.52
+                 },
+                 {
+                     "kho":  "Kho 6",
+                     "coal":  "Cá»¥c xÃ´ 1C",
+                     "ton":  3.52
+                 },
+                 {
+                     "kho":  "Kho 60",
+                     "coal":  "B5.01",
+                     "ton":  3993.02
+                 },
+                 {
+                     "kho":  "Kho 7",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  7792.84
+                 },
+                 {
+                     "kho":  "Kho 71",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  73642.99
+                 },
+                 {
+                     "kho":  "Kho 71",
+                     "coal":  "Cá»¥c xÃ´ 1C",
+                     "ton":  1209.0
+                 },
+                 {
+                     "kho":  "Kho 72",
+                     "coal":  "00",
+                     "ton":  550.97
+                 },
+                 {
+                     "kho":  "Kho 72",
+                     "coal":  "B16.09",
+                     "ton":  5377.1
+                 },
+                 {
+                     "kho":  "Kho 72",
+                     "coal":  "B5.01",
+                     "ton":  5038.39
+                 },
+                 {
+                     "kho":  "Kho 73",
+                     "coal":  "00",
+                     "ton":  6021.16
+                 },
+                 {
+                     "kho":  "Kho 74",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  27914.54
+                 },
+                 {
+                     "kho":  "Kho 8",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  32366.21
+                 },
+                 {
+                     "kho":  "Kho 9",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  3506.71
+                 },
+                 {
+                     "kho":  "Kho 9",
+                     "coal":  "CÃ¡m 6a.10",
+                     "ton":  4191.0
+                 },
+                 {
+                     "kho":  "Kho 9",
+                     "coal":  "CÃ¡m 6a.14",
+                     "ton":  16463.55
+                 },
+                 {
+                     "kho":  "Kho 9",
+                     "coal":  "CÃ¡m 6b.1",
+                     "ton":  418.0
+                 },
+                 {
+                     "kho":  "Kho K04",
+                     "coal":  "00",
+                     "ton":  413.6
+                 },
+                 {
+                     "kho":  "Kho K04",
+                     "coal":  "B29A",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K04",
+                     "coal":  "NHK.295",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K04",
+                     "coal":  "NHK.296",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K04",
+                     "coal":  "NHK.297",
+                     "ton":  345.26
+                 },
+                 {
+                     "kho":  "Kho K05",
+                     "coal":  "00",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K05",
+                     "coal":  "B29B",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K06",
+                     "coal":  "00",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K06",
+                     "coal":  "B2902",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K06",
+                     "coal":  "B29A",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K06",
+                     "coal":  "B32D",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K06",
+                     "coal":  "CÃ¡m 6a.1",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho K60",
+                     "coal":  "CÃ¡m 6b.1",
+                     "ton":  1079.14
+                 },
+                 {
+                     "kho":  "Kho k17",
+                     "coal":  "00",
+                     "ton":  0.0
+                 },
+                 {
+                     "kho":  "Kho k59",
+                     "coal":  "CÃ¡m 6b.1",
+                     "ton":  4293.0
+                 }
+             ]
+}
