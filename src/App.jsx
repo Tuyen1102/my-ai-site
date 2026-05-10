@@ -175,26 +175,7 @@ const getTtcoKhoSourcePriority = (record) => {
   return 100;
 };
 
-const isTtcoDisplayStockRecord = (record) => {
-  if (!record) return false;
-  if (!normalizeText(record.khoCode || record.kho)) return false;
-  if (!normalizeText(record.coal)) return false;
-  if (toNumber(record.ton) <= 0) return false; if (!isRecordKhoNameConsistent(record)) return false;
-
-  const coalBase = normalizeCoalBase(record.coal);
-  const genericCoalNames = new Set([
-    "than nk",
-    "than nhập khẩu",
-    "than nhap khau",
-    "than anthracite",
-  ]);
-  if (genericCoalNames.has(coalBase)) return false;
-  if (coalBase.startsWith("than anthracite")) return false;
-
-  return true;
-};
-
-const toMaybeNumber = (value) => {
+const isTtcoDisplayStockRecord = (record) => isValidCurrentTtcoStockRecord(record); const toMaybeNumber = (value) => {
   if (value === null || value === undefined || String(value).trim() === "") {
     return null;
   }
@@ -779,6 +760,19 @@ const stripVietnameseMarks = (value) =>
     .replace(/đ/g, "d")
     .replace(/Đ/g, "d");
 
+
+const isRawTtcoKhoNameAllowed = (value) => {
+  const raw = normalizeText(value);
+  if (!raw) return true;
+  const key = stripVietnameseMarks(raw);
+  // Chỉ cho phép tên kho chuẩn. Không cho fallback MaKho khi TenKho là Hồ/Bãi/khu kỹ thuật.
+  // Lỗi Kho 39 trước đây: MaKho=39 nhưng TenKho=Hồ 1, bị hiểu nhầm thành Kho 39.
+  if (/^kho\s*\d+/i.test(key)) return true;
+  if (/^\d{1,3}[a-z]?$/i.test(key)) return true;
+  if (/^\d{1,3}\s*[-–]\s*\d+$/i.test(key)) return true;
+  if (/^\d{1,3}\s*[-–]?\s*t\s*\d+$/i.test(key)) return true;
+  return false;
+};
 const looksLikeSpecificCoalProductName = (value) => {
   const key = stripVietnameseMarks(normalizeCoalBase(value));
   if (!key) return false;
@@ -806,13 +800,23 @@ const isGenericTtcoCoalGroupName = (value) => {
 
 const isRecordKhoNameConsistent = (record) => {
   const rawName = normalizeText(record?.rawKhoName);
-  if (!rawName) return true;
-  const rawStandard = getStandardKhoInfo(rawName);
-  const finalStandard = getStandardKhoInfo(record?.kho);
-  if (!rawStandard || !finalStandard) return true;
-  return rawStandard.code === finalStandard.code;
-};
-const isValidCurrentTtcoStockRecord = (record) => {
+  const rawCode = normalizeText(record?.rawKhoCode || record?.khoCode);
+  const finalStandard = getStandardKhoInfo(record?.kho) || getStandardKhoInfo(record?.khoCode);
+
+  // Nếu JSON có TenKho nhưng TenKho không phải dạng kho chuẩn thì loại luôn.
+  // Không được dùng MaKho để bẻ "Hồ 1" thành "Kho 39".
+  if (rawName && !isRawTtcoKhoNameAllowed(rawName)) return false;
+
+  const rawNameStandard = rawName ? getStandardKhoInfo(rawName) : null;
+  const rawCodeStandard = rawCode ? getStandardKhoInfo(rawCode) : null;
+
+  if (rawNameStandard && finalStandard && rawNameStandard.code !== finalStandard.code) return false;
+
+  // Nếu cả TenKho và MaKho đều có chuẩn, chúng phải cùng chỉ một kho sau chuẩn hóa.
+  if (rawNameStandard && rawCodeStandard && rawNameStandard.code !== rawCodeStandard.code) return false;
+
+  return true;
+}; const isValidCurrentTtcoStockRecord = (record) => {
   if (!record) return false;
   if (!getStandardKhoInfo(record.kho) && !getStandardKhoInfo(record.khoCode)) return false;
   const coalName = normalizeText(record.coal);
@@ -1724,11 +1728,7 @@ export default function TTCOCoalStockpileApp() {
     return matched.reduce((sum, item) => sum + item.ton, 0);
   }, [warehouse, coalName, ttcoRecords]);
 
-  useEffect(() => {
-    if (matchedTtcoMass !== null) {
-      setTtcoMass(String(Math.round(matchedTtcoMass * 100) / 100));
-    }
-  }, [matchedTtcoMass]);
+  useEffect(() => { if (matchedTtcoMass !== null) { setTtcoMass(String(Math.round(matchedTtcoMass * 100) / 100)); } else { setTtcoMass(""); } }, [matchedTtcoMass, warehouseId, coalName]);
 
   useEffect(() => {
     const loadDefaultCatalog = async () => {
