@@ -127,19 +127,35 @@ const normalizeCoalBase = (value) => {
     .replace(/\s*\)\s*/g, ")")
     .replace(/\s+/g, " ")
     .trim();
-
   if (!text) return "";
-
   const beforeParentheses = text.split("(")[0].trim();
-
   if (text.includes("sấy")) {
     return `${beforeParentheses} (sấy)`;
   }
-
   return beforeParentheses;
 };
 
+const normalizeCoalFull = (value) => normalizeKey(value)
+  .replace(/\s*\(\s*/g, " (")
+  .replace(/\s*\)\s*/g, ")")
+  .replace(/\s+/g, " ")
+  .trim();
+
+const isDetailedCoalName = (value) => {
+  const text = normalizeCoalFull(value);
+  return text.includes("(") || /^nhk\./i.test(text);
+};
+
 const coalMatches = (selectedCoal, ttcoCoal) => {
+  const fullA = normalizeCoalFull(selectedCoal);
+  const fullB = normalizeCoalFull(ttcoCoal);
+  if (!fullA || !fullB) return false;
+
+  // Than nhập khẩu có dạng "Than NK (... - Tàu ...)" phải khớp nguyên tên.
+  // Nếu không, các tàu khác nhau đều bị rút gọn thành "Than NK" và cộng nhầm tồn kho.
+  if (fullA === fullB) return true;
+  if (isDetailedCoalName(fullA) || isDetailedCoalName(fullB)) return false;
+
   const a = normalizeCoalBase(selectedCoal);
   const b = normalizeCoalBase(ttcoCoal);
   if (!a || !b) return false;

@@ -6,7 +6,7 @@
     "sourceTable": "G3_BC05A_2_613181",
     "masterDatabase": "TTCO_QTHT",
     "version": "direct-db-v26-group-coal-country-ship",
-    "updatedAt": "2026-05-10 15:20:05",
+    "updatedAt": "2026-05-10 15:31:07",
     "NamHT": "2026",
     "ThangHT": "5",
     "rowCount": 70,
@@ -14,7 +14,7 @@
     "kho1Total": 1052.65,
     "formula": "TonCK = sum by Kho + base coal name; remove suffix (Quốc gia - Tàu...) before display",
     "note": "Không mở TTCO_APP, không dùng Excel. V26 gộp các chủng loại có hậu tố (Quốc gia - Tàu...) về tên gốc, ví dụ Cám 6a.14, Cám 6a.10.",
-    "kho39Fix": "V162: display Kho 39 lấy từ DB MaKho=28, MaDV=19; App đọc payload.data"
+    "kho39Fix": "V164: robust exact coal matching for Kho 39 imported coal lines"
   },
   "data": [
     {
@@ -1463,7 +1463,7 @@
       "DanhSachTenThanGoc": [
         "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
       ],
-      "SourceFix": "V162_KHO39_DB_TTCOAPP_LOGIC"
+      "SourceFix": "V164_KHO39_DB_TTCOAPP_LOGIC"
     },
     {
       "MaKho": "39",
@@ -1502,7 +1502,7 @@
       "DanhSachTenThanGoc": [
         "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
       ],
-      "SourceFix": "V162_KHO39_DB_TTCOAPP_LOGIC"
+      "SourceFix": "V164_KHO39_DB_TTCOAPP_LOGIC"
     },
     {
       "MaKho": "39",
@@ -1541,7 +1541,7 @@
       "DanhSachTenThanGoc": [
         "Than NK (Úc - Tầu MV BARDONNEX)"
       ],
-      "SourceFix": "V162_KHO39_DB_TTCOAPP_LOGIC"
+      "SourceFix": "V164_KHO39_DB_TTCOAPP_LOGIC"
     },
     {
       "MaKho": "39",
@@ -1580,7 +1580,7 @@
       "DanhSachTenThanGoc": [
         "Than NK (Úc - Tầu MV GENERA QUEEN)"
       ],
-      "SourceFix": "V162_KHO39_DB_TTCOAPP_LOGIC"
+      "SourceFix": "V164_KHO39_DB_TTCOAPP_LOGIC"
     }
   ],
   "rows": [

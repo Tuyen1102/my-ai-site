@@ -48,3 +48,10 @@ HUONG_DAN_FIX_KHO39*
 *.backup_kho39_*
 *.backup_allow_negative_*
 src/*.backup_*
+
+mapping_output/
+ttco_find_*
+ttco_reconcile_*
+ttco_fix_*
+*.zip
+*.b64
