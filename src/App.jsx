@@ -1689,7 +1689,7 @@ export default function TTCOCoalStockpileApp() {
     const activeKeys = new Set(warehouse.activeCoalNames.map(normalizeKey));
 
     return coalTypes.filter((item) => activeKeys.has(normalizeKey(item.name)));
-  }, [allowAllCoalTypes, warehouse, coalTypes, ttcoCoalTypesForWarehouse]);
+  }, [allowAllCoalTypes, warehouse, coalTypes, ttcoCoalTypesForWarehouse, ttcoRecords.length]);
 
   useEffect(() => {
     if (!warehouse || ttcoCoalTypesForWarehouse.length === 0) return;
@@ -1703,7 +1703,7 @@ export default function TTCOCoalStockpileApp() {
       setDensityOverride("");
       setWarehouseLengthOverride("");
     }
-  }, [warehouse, coalName, ttcoCoalTypesForWarehouse]);
+  }, [warehouse, coalName, ttcoCoalTypesForWarehouse, ttcoRecords.length]);
 
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
