@@ -1,0 +1,19 @@
+HUONG DAN - TTCO DB MAPPING CHECK
+
+Muc tieu:
+- Khong dung file Excel G3_BC05.xlsx de mapping.
+- Doc truc tiep database TTCO_THONGKE de tim bang danh muc kho va danh muc chung loai than.
+- Xuat Excel de nguoi dung kiem tra TenKho/TenThan da dung chua.
+
+Cach dung:
+1. Copy 2 file nay vao thu muc repo app:
+   - export_db_mapping_kho_than.py
+   - run_export_db_mapping_kho_than.bat
+2. Dam bao trong cung thu muc da co file .env dung:
+   DB_SERVER=tuyenthancuaong.com.vn,52376
+   DB_NAME=TTCO_THONGKE
+   DB_DRIVER=ODBC Driver 18 for SQL Server
+   DB_AUTH=windows
+3. Bam dup run_export_db_mapping_kho_than.bat
+4. Mo file ket qua trong thu muc mapping_output.
+5. Gui lai file Excel ket qua de ChatGPT kiem tra va chot bang danh muc dung.

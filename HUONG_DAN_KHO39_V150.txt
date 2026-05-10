@@ -1,0 +1,21 @@
+GOI SUA KHO 39 V150 - STRICT NO FALLBACK
+
+Muc dich:
+- Chan loi MaKho=39 nhung TenKho=Ho 1 bi hien nham thanh Kho 39.
+- Khong dung du lieu Ho/Bai/khu ky thuat de tu dong dien chung loai va ton kho cua Kho 39.
+- Xoa khoi luong TTCO_APP cu neu khong con dong TTCO hop le.
+- Khi TTCO JSON da tai, neu kho khong co dong hop le thi dropdown khong fallback ve chung loai trong danh muc Excel.
+
+Cach dung:
+1. Giai nen file ZIP.
+2. Copy 2 file vao thu muc goc repo:
+   - FIX_KHO39_V150_STRICT_NO_FALLBACK.bat
+   - fix_kho39_strict_no_fallback_v150.cjs
+3. Bam dup FIX_KHO39_V150_STRICT_NO_FALLBACK.bat.
+4. Cho den khi bao HOAN TAT.
+5. Mo app va bam Ctrl + F5.
+
+Luu y:
+- Ban nay KHONG hard-code chung loai va ton kho Kho 39.
+- Neu sau khi sua, Kho 39 khong hien du lieu TTCO_APP thi nghia la file public/data/ton_kho_latest.json hien chua co dong Kho 39 dung. Khi do can sua script lay/xuat ton kho TTCO_APP len JSON.
+- File audit duoc tao: TTCO_AUDIT_KHO39_V150.csv.

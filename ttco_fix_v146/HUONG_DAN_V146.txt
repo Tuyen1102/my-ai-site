@@ -1,0 +1,25 @@
+GOI SUA V146 - KHO 39 VA RA SOAT TRUONG JSON TTCO
+
+Muc tieu:
+- Khong sua tung kho rieng le.
+- Doc dung truong TenKho/TenThan/TonCK trong ton_kho_latest.json.
+- Uu tien TonCK, TenKho hien hanh cua TTCO_APP de tranh lay nham TonCuoiKy/Klg_Tan hoac MaKho phu.
+- Tao file audit rieng cho Kho 39 de kiem tra neu van sai.
+
+Cach dung:
+1. Giai nen goi zip.
+2. Copy 2 file vao thu muc goc repo:
+   - FIX_KHO39_RASOAT_TOAN_BO_V146.bat
+   - fix_strict_ttco_fields_v146_and_push.cjs
+3. Bam dup FIX_KHO39_RASOAT_TOAN_BO_V146.bat
+4. Cho chay xong build va push GitHub.
+5. Mo web app, bam Ctrl + F5.
+6. Kiem tra lai Kho 39.
+
+Sau khi chay, repo se co them:
+- TTCO_AUDIT_TON_KHO_V146.csv
+- TTCO_AUDIT_KHO39_V146.csv
+
+Neu Kho 39 van sai:
+- Mo TTCO_AUDIT_KHO39_V146.csv.
+- Neu file audit da sai so voi TTCO_APP thi loi nam o script xuat JSON tu DB/TTCO_APP, khong nam o giao dien React.

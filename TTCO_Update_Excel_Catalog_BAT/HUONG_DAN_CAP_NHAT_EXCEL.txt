@@ -1,0 +1,39 @@
+HUONG DAN SU DUNG FILE BAT CAP NHAT EXCEL LEN GITHUB
+
+Ten file:
+- update_excel_catalog_to_github.bat
+
+Muc dich:
+- Khi can thay doi du lieu chieu dai kho, chieu rong kho, ty khoi trong file Excel,
+  anh chi can bam file BAT nay.
+- File BAT se cho chon file Excel moi.
+- Sau do tu dong copy de thanh:
+  D:\TTCO_TonKho_App_Repo\public\data\DS_kho_than_va_ty_khoi.xlsx
+- Tu dong chay:
+  git add
+  git commit
+  git push
+  npm run deploy
+
+Cach dung:
+1. Tai file update_excel_catalog_to_github.bat.
+2. De file nay o Desktop hoac trong D:\TTCO_TonKho_App_Repo deu duoc.
+3. Bam dup file BAT.
+4. Chon file Excel danh muc moi.
+5. Doi den khi hien HOAN THANH.
+6. Doi 1-3 phut roi mo app:
+   https://tuyen1102.github.io/my-ai-site/?v=excel1
+
+Dieu kien:
+- May tinh da co Git.
+- May tinh da co Node.js/npm.
+- Thu muc repo dung:
+  D:\TTCO_TonKho_App_Repo
+- package.json da co lenh:
+  "deploy": "gh-pages -d dist"
+
+Luu y:
+- File app chi doc dung ten:
+  DS_kho_than_va_ty_khoi.xlsx
+- Anh co the chon file Excel ten bat ky, BAT se tu copy de ve dung ten tren.
+- Khong can sua App.jsx khi chi thay doi du lieu trong Excel.

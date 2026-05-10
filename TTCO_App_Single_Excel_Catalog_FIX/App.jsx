@@ -1,6 +1,4 @@
-
-// TTCO_DEBUG_KHO39_V148: mapping 46B -> Kho 39 da duoc bo sung de lay dung chu loai/ton kho TTCO_APP.
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Plus,
@@ -26,12 +24,7 @@ import * as XLSX from "xlsx";
 
 // ======================================================
 // TTCO - APP TÍNH KHỐI LƯỢNG THAN TỒN KHO
-// Fix v1.3.6: Sắp xếp tên kho theo thứ tự tự nhiên: Kho 1, Kho 2, Kho 3...; kho ngoài chuẩn đưa xuống cuối.
-// Fix v1.3.4: Danh sách chủng loại và khối lượng TTCO_APP lấy theo JSON; kích thước/tỷ khối vẫn lấy từ Excel.
-// Fix v1.3.3: TTCO JSON chỉ cập nhật tồn kho, không ghi đè danh mục Excel; tự tải JSON sau khi Excel sẵn sàng.
-// Fix v1.3.9: Nút Mặc định chỉ tải lại Excel public/data; nếu lỗi thì giữ dữ liệu hiện tại, không quay về hard-code.
-// Fix v1.4.1: Bổ sung tên kho chuẩn TTCO_APP: Kho 1-T4, Kho 2-T4, Kho 3-T4, Kho 4-T4, Kho 28-1, Kho 32, Kho 33, Kho 37, Kho 40...; map mã phụ từ JSON về tên kho báo cáo.
-// Fix v1.3.7: chuẩn hóa Kho 1/KHO01/01 cùng về mã 01 để tham số Excel khớp TTCO JSON
+// Fix: chỉ đọc duy nhất file Excel tại public/data/DS_kho_than_va_ty_khoi.xlsx
 // Fix v1.2.3: Ép thứ tự hiển thị tuyến tính trên điện thoại: 1 -> 2 -> 3 -> 4; tối ưu giao diện dashboard gọn, chuyên nghiệp.
 // Fix v1.2.1: Không tách tên chủng loại theo dấu phẩy trong AK, ví dụ Ak 35,01 - 40%.
 // Bản này hỗ trợ:
@@ -168,35 +161,7 @@ const toNumber = (value) => {
   return Number.isFinite(n) ? n : 0;
 };
 
-const getTtcoKhoSourcePriority = (record) => {
-  const sourceFix = normalizeText(record?.sourceFix || record?.SourceFix).toUpperCase();
-  if (sourceFix.includes("KHO39")) return 2000;
-  const raw = normalizeKhoCode(record?.rawKhoCode || record?.sourceKhoCode || record?.maKho || record?.khoCodeRaw || record?.khoCode || record?.kho || "");
-  if (raw === "46B") return 1000;
-  if (raw === "39") return 10;
-  return 100;
-};
-
-const isTtcoDisplayStockRecord = (record) => {
-  if (!record) return false;
-  if (!normalizeText(record.khoCode || record.kho)) return false;
-  if (!normalizeText(record.coal)) return false;
-  const mass = toNumber(record.ton);
-  if (Math.abs(mass) < 0.000001) return false;
-  if (!isRecordKhoNameConsistent(record)) return false;
-
-  const coalName = normalizeText(record.coal);
-  const coalCode = normalizeText(record.coalCode || record.MaThan || record.ma_than);
-  const isImportCoalLine =
-    /^nhk\./i.test(coalCode) ||
-    /\(.+\)/.test(coalName) ||
-    normalizeText(record.sourceFix || record.SourceFix).toUpperCase().includes("KHO39");
-
-  if (isGenericTtcoCoalGroupName(coalName) && !looksLikeSpecificCoalProductName(coalName) && !isImportCoalLine) {
-    return false;
-  }
-  return true;
-}; const toMaybeNumber = (value) => {
+const toMaybeNumber = (value) => {
   if (value === null || value === undefined || String(value).trim() === "") {
     return null;
   }
@@ -318,199 +283,19 @@ function normalizeKhoCode(value) {
   const text = normalizeText(value);
   if (!text) return "";
 
-  // Chuẩn hóa đồng nhất các dạng:
-  // "01", "1", "Kho 1", "KHO01"        -> "01"
-  // "Kho 1-T4", "1-T4", "01T4"         -> "01-T4"
-  // "Kho 28-1", "28-1"                 -> "28-1"
-  // "Kho 31B", "31B"                   -> "31B"
-  const khoT4Match = text.match(/^kho\s*0*(\d+)\s*[-–]?\s*t\s*0*(\d+)$/i);
-  if (khoT4Match) {
-    return `${khoT4Match[1].padStart(2, "0")}-T${Number(khoT4Match[2])}`;
+  const withoutPrefix = text.replace(/^KHO/i, "");
+
+  if (/^\d+$/.test(withoutPrefix)) {
+    return withoutPrefix.padStart(2, "0");
   }
 
-  const bareT4Match = text.match(/^0*(\d+)\s*[-–]?\s*t\s*0*(\d+)$/i);
-  if (bareT4Match) {
-    return `${bareT4Match[1].padStart(2, "0")}-T${Number(bareT4Match[2])}`;
-  }
-
-  const khoSubMatch = text.match(/^kho\s*0*(\d+)\s*[-–]\s*0*(\d+)$/i);
-  if (khoSubMatch) {
-    return `${khoSubMatch[1].padStart(2, "0")}-${Number(khoSubMatch[2])}`;
-  }
-
-  const bareSubMatch = text.match(/^0*(\d+)\s*[-–]\s*0*(\d+)$/i);
-  if (bareSubMatch) {
-    return `${bareSubMatch[1].padStart(2, "0")}-${Number(bareSubMatch[2])}`;
-  }
-
-  const khoMatch = text.match(/^kho\s*0*(\d+)([a-zA-Z]*)$/i);
-  if (khoMatch) {
-    const numberPart = khoMatch[1].padStart(2, "0");
-    const suffix = normalizeText(khoMatch[2]).toUpperCase();
-    return `${numberPart}${suffix}`;
-  }
-
-  const withoutPrefix = text.replace(/^KHO\s*/i, "").trim();
-  const codeMatch = withoutPrefix.match(/^0*(\d+)([a-zA-Z]*)$/);
-  if (codeMatch) {
-    const numberPart = codeMatch[1].padStart(2, "0");
-    const suffix = normalizeText(codeMatch[2]).toUpperCase();
-    return `${numberPart}${suffix}`;
-  }
-
-  return withoutPrefix.toUpperCase();
-}
-
-// Map các mã kho phụ trong DB/JSON về tên kho đúng như báo cáo TTCO_APP G3_BC05.
-// Ví dụ: 71 -> Kho 1-T4, 31D -> Kho 28-1, 44 -> Kho 32.
-const TTCO_KHO_CODE_OVERRIDES = {
-  "46B": { code: "39", number: 39, suffix: "", name: "Kho 39" },
-  "30B": { code: "27", number: 27, suffix: "", name: "Kho 27" },
-  "31C": { code: "28", number: 28, suffix: "", name: "Kho 28" },
-  "31D": { code: "28-1", number: 28, suffix: "1", name: "Kho 28-1" },
-  "31B": { code: "32", number: 32, suffix: "", name: "Kho 32" },
-  "34A": { code: "34", number: 34, suffix: "", name: "Kho 34" },
-
-  "43": { code: "31", number: 31, suffix: "", name: "Kho 31" },
-  "44": { code: "32", number: 32, suffix: "", name: "Kho 32" },
-  "45": { code: "33", number: 33, suffix: "", name: "Kho 33" },
-  "36": { code: "37", number: 37, suffix: "", name: "Kho 37" },
-  "46A": { code: "38", number: 38, suffix: "", name: "Kho 38" },
-  "60": { code: "40", number: 40, suffix: "", name: "Kho 40" },
-
-  "71": { code: "01-T4", number: 1, suffix: "T4", name: "Kho 1-T4" },
-  "72": { code: "02-T4", number: 2, suffix: "T4", name: "Kho 2-T4" },
-  "73": { code: "03-T4", number: 3, suffix: "T4", name: "Kho 3-T4" },
-  "74": { code: "04-T4", number: 4, suffix: "T4", name: "Kho 4-T4" },
-};
-
-function getStandardKhoInfo(value) {
-  const original = normalizeText(value);
-  if (!original) return null;
-
-  // Loại các kho kỹ thuật/ngoài báo cáo tồn kho chuẩn như K04, K60, k59.
-  // Các mã 71-74 được giữ lại qua bảng override vì tương ứng Kho 1-T4...Kho 4-T4.
-  if (/^k(?!ho)/i.test(original)) {
-    return null;
-  }
-
-  const normalized = normalizeKhoCode(original);
-  const override = TTCO_KHO_CODE_OVERRIDES[normalized.toUpperCase()];
-  if (override) {
-    return override;
-  }
-
-  const t4Match = normalized.match(/^(\d{2})-T(\d+)$/i);
-  if (t4Match) {
-    const number = Number(t4Match[1]);
-    const tNumber = Number(t4Match[2]);
-    if (Number.isFinite(number) && number >= 1 && number <= 40) {
-      return {
-        code: `${String(number).padStart(2, "0")}-T${tNumber}`,
-        number,
-        suffix: `T${tNumber}`,
-        name: `Kho ${number}-T${tNumber}`,
-      };
-    }
-  }
-
-  const subMatch = normalized.match(/^(\d{2})-(\d+)$/i);
-  if (subMatch) {
-    const number = Number(subMatch[1]);
-    const subNumber = Number(subMatch[2]);
-    if (Number.isFinite(number) && number >= 1 && number <= 40) {
-      return {
-        code: `${String(number).padStart(2, "0")}-${subNumber}`,
-        number,
-        suffix: String(subNumber),
-        name: `Kho ${number}-${subNumber}`,
-      };
-    }
-  }
-
-  const match = normalized.match(/^(\d{1,3})([A-Z]*)$/i);
-  if (!match) return null;
-
-  const number = Number(match[1]);
-  if (!Number.isFinite(number) || number < 1 || number > 40) {
-    return null;
-  }
-
-  const suffix = normalizeText(match[2]).toUpperCase();
-  return {
-    code: suffix ? `${String(number).padStart(2, "0")}${suffix}` : String(number).padStart(2, "0"),
-    number,
-    suffix,
-    name: suffix ? `Kho ${number}${suffix}` : `Kho ${number}`,
-  };
-}
-
-function getKhoCompareCode(value) {
-  const standard = getStandardKhoInfo(value);
-  return standard?.code || normalizeKhoCode(value);
+  return withoutPrefix;
 }
 
 function displayKhoName(maKho) {
-  const standard = getStandardKhoInfo(maKho);
-  if (standard) return standard.name;
-
   const code = normalizeKhoCode(maKho);
-  return code ? `Kho ${Number.isFinite(Number(code)) ? Number(code) : code}` : "";
+  return code ? `Kho ${code}` : "";
 }
-
-
-
-const getWarehouseSortInfo = (warehouse) => {
-  const name = normalizeText(warehouse?.name || warehouse?.label || warehouse?.id || "");
-  const code = normalizeText(warehouse?.id || warehouse?.code || "");
-
-  const t4Match = name.match(/^Kho\s*(\d+)\s*-\s*T4$/i) || code.match(/^T4[-_]?(\d+)$/i);
-  if (t4Match) {
-    return {
-      group: 2,
-      number: Number(t4Match[1]),
-      suffix: "T4",
-      text: name,
-    };
-  }
-
-  const normalMatch =
-    name.match(/^Kho\s*(\d+)(?:\s*-\s*(\d+))?$/i) ||
-    code.match(/^(\d+)(?:[-_](\d+))?$/i);
-
-  if (normalMatch) {
-    return {
-      group: 1,
-      number: Number(normalMatch[1]),
-      suffix: normalMatch[2] ? Number(normalMatch[2]) : 0,
-      text: name,
-    };
-  }
-
-  return {
-    group: 9,
-    number: 9999,
-    suffix: 9999,
-    text: name,
-  };
-};
-
-const compareWarehousesNatural = (a, b) => {
-  const sa = getWarehouseSortInfo(a);
-  const sb = getWarehouseSortInfo(b);
-
-  if (sa.group !== sb.group) return sa.group - sb.group;
-  if (sa.number !== sb.number) return sa.number - sb.number;
-
-  const suffixA = typeof sa.suffix === "number" ? sa.suffix : 9999;
-  const suffixB = typeof sb.suffix === "number" ? sb.suffix : 9999;
-  if (suffixA !== suffixB) return suffixA - suffixB;
-
-  return sa.text.localeCompare(sb.text, "vi", {
-    numeric: true,
-    sensitivity: "base",
-  });
-};
 
 function parseTTCOGitHubJson(payload, currentKhoRows) {
   const rows = Array.isArray(payload?.data) ? payload.data : [];
@@ -531,27 +316,24 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
 
   if (Array.isArray(payload?.khoList)) {
     for (const item of payload.khoList) {
-      const sourceCode =
-        typeof item === "string"
-          ? item
-          : item?.MaKho ?? item?.ma_kho ?? item?.code ?? item?.TenKho ?? item?.ten_kho;
-      const standard = getStandardKhoInfo(sourceCode);
-      if (standard) {
-        tenKhoByCode.set(standard.code, standard.name);
+      if (typeof item === "string") {
+        const code = normalizeKhoCode(item);
+        if (code) tenKhoByCode.set(code, displayKhoName(code));
+      } else {
+        const code = normalizeKhoCode(item?.MaKho ?? item?.ma_kho ?? item?.code);
+        const name = normalizeText(item?.TenKho ?? item?.ten_kho ?? item?.Label ?? item?.label);
+        if (code && name) tenKhoByCode.set(code, name);
       }
     }
   }
 
-  const rawRecords = rows
+  const records = rows
     .map((item) => {
-      const rawKhoName = item.TenKho ?? item.ten_kho ?? item.kho ?? item.Kho ?? "";
-      const rawKhoCode = item.MaKho ?? item.ma_kho ?? item.khoCode ?? item.code ?? "";
-      // Ưu tiên TenKho/kho đã xuất ra từ nguồn TTCO_APP/JSON. MaKho chỉ dùng làm dự phòng.
-      // Việc ưu tiên MaKho trước có thể làm các kho 26-30 bị map nhầm chủng loại/tồn kho.
-      const standardKho = getStandardKhoInfo(rawKhoName) || getStandardKhoInfo(rawKhoCode);
-      if (!standardKho) return null;
-      const maKho = standardKho.code;
-      const tenKho = standardKho.name;
+      const maKho = normalizeKhoCode(item.MaKho ?? item.ma_kho ?? item.khoCode);
+      const tenKho =
+        normalizeText(item.TenKho ?? item.ten_kho ?? item.kho) ||
+        tenKhoByCode.get(maKho) ||
+        displayKhoName(maKho);
       const maThan = normalizeText(item.MaThan ?? item.ma_than ?? item.coalCode);
       const tenThan =
         normalizeText(item.TenThan ?? item.ten_than ?? item.coal ?? item.LoaiThan) || maThan;
@@ -567,7 +349,8 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
         thang: normalizeText(item.ThangHT ?? payload?.meta?.ThangHT),
         updatedAt: normalizeText(payload?.meta?.updatedAt),
         sheetName: "GitHub JSON CDOTHAN",
-        rowNumber: "", rawKhoCode: normalizeKhoCode(rawKhoCode), rawKhoName: normalizeText(rawKhoName), isNhomTongHop: Boolean(item.IsNhomTongHop),
+        rowNumber: "",
+        isNhomTongHop: Boolean(item.IsNhomTongHop),
         nhomTongHopLoai: normalizeText(item.NhomTongHopLoai),
         danhSachMaThanGoc: Array.isArray(item.DanhSachMaThanGoc)
           ? item.DanhSachMaThanGoc
@@ -577,32 +360,7 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
           : [],
       };
     })
-    .filter((item) => item?.khoCode && item.coal && isTtcoDisplayStockRecord(item));
-
-  const recordMap = new Map();
-
-  for (const record of rawRecords) {
-    const key = `${record.khoCode}__${normalizeKey(record.coal)}`;
-    const oldRecord = recordMap.get(key);
-
-    if (!oldRecord) {
-      recordMap.set(key, { ...record });
-      continue;
-    }
-
-    recordMap.set(key, {
-      ...oldRecord,
-      ton: toNumber(oldRecord.ton) + toNumber(record.ton),
-      danhSachMaThanGoc: Array.from(
-        new Set([...(oldRecord.danhSachMaThanGoc || []), ...(record.danhSachMaThanGoc || [])])
-      ),
-      danhSachTenThanGoc: Array.from(
-        new Set([...(oldRecord.danhSachTenThanGoc || []), ...(record.danhSachTenThanGoc || [])])
-      ),
-    });
-  }
-
-  const records = Array.from(recordMap.values());
+    .filter((item) => item.khoCode && item.coal);
 
   if (records.length === 0) {
     throw new Error("Không tìm thấy dòng tồn kho hợp lệ trong GitHub JSON.");
@@ -715,7 +473,7 @@ const buildDataModel = (khoRows, tyKhoiRows) => {
   }
 
   return {
-    warehouses: Array.from(warehouseMap.values()).sort(compareWarehousesNatural),
+    warehouses: Array.from(warehouseMap.values()),
     coalTypes: Array.from(coalMap.values()).sort((a, b) =>
       a.name.localeCompare(b.name, "vi")
     ),
@@ -727,269 +485,6 @@ const getWarehouseCoalArea = (warehouse, coalName) => {
   return warehouse?.areas?.find((area) =>
     area.coalNames.some((name) => normalizeKey(name) === key)
   );
-};
-
-const getDensityFromCatalog = (coalTypes, coalName) => {
-  const exact = coalTypes.find(
-    (item) => normalizeKey(item.name) === normalizeKey(coalName)
-  );
-
-  if (exact && toNumber(exact.density) > 0) return toNumber(exact.density);
-
-  const sameBase = coalTypes.find(
-    (item) => coalMatches(coalName, item.name) && toNumber(item.density) > 0
-  );
-
-  return sameBase ? toNumber(sameBase.density) : 0;
-};
-
-const mergeCoalTypeLists = (...lists) => {
-  const map = new Map();
-
-  for (const list of lists) {
-    for (const item of list || []) {
-      const name = normalizeText(item?.name);
-      if (!name) continue;
-
-      const key = normalizeKey(name);
-      const oldItem = map.get(key);
-      const nextDensity = toNumber(item?.density);
-
-      if (!oldItem) {
-        map.set(key, { name, density: nextDensity });
-        continue;
-      }
-
-      if (toNumber(oldItem.density) <= 0 && nextDensity > 0) {
-        map.set(key, { name: oldItem.name, density: nextDensity });
-      }
-    }
-  }
-
-  return Array.from(map.values()).sort((a, b) =>
-    a.name.localeCompare(b.name, "vi")
-  );
-};
-
-
-// Fix v1.4.2: Lọc dữ liệu tồn kho hiện hành trước khi dựng danh sách chủng loại.
-// Không hard-code Kho 26/Kho 28; kho nào có chủng loại tồn thực tế > 0 thì tự hiện.
-const stripVietnameseMarks = (value) =>
-  normalizeKey(value)
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/đ/g, "d")
-    .replace(/Đ/g, "d");
-
-
-const isRawTtcoKhoNameAllowed = (value) => {
-  const raw = normalizeText(value);
-  if (!raw) return true;
-  const key = stripVietnameseMarks(raw);
-  // Chỉ cho phép tên kho chuẩn. Không cho fallback MaKho khi TenKho là Hồ/Bãi/khu kỹ thuật.
-  // Lỗi Kho 39 trước đây: MaKho=39 nhưng TenKho=Hồ 1, bị hiểu nhầm thành Kho 39.
-  if (/^kho\s*\d+/i.test(key)) return true;
-  if (/^\d{1,3}[a-z]?$/i.test(key)) return true;
-  if (/^\d{1,3}\s*[-–]\s*\d+$/i.test(key)) return true;
-  if (/^\d{1,3}\s*[-–]?\s*t\s*\d+$/i.test(key)) return true;
-  return false;
-};
-const looksLikeSpecificCoalProductName = (value) => {
-  const key = stripVietnameseMarks(normalizeCoalBase(value));
-  if (!key) return false;
-  return (
-    key.startsWith("cam ") ||
-    key.startsWith("cuc ") ||
-    key.startsWith("bun ") ||
-    key.startsWith("da ") ||
-    key.startsWith("nguyen khai") ||
-    key.startsWith("ba ") ||
-    key.includes(" ntc")
-  );
-};
-
-const isGenericTtcoCoalGroupName = (value) => {
-  const key = stripVietnameseMarks(normalizeCoalBase(value));
-  if (!key) return true;
-  return (
-    key === "than nk" ||
-    key === "than nhk" ||
-    key === "than nhap khau" ||
-    key.startsWith("than anthracite")
-  );
-};
-
-const isRecordKhoNameConsistent = (record) => {
-  const rawName = normalizeText(record?.rawKhoName);
-  const rawCode = normalizeText(record?.rawKhoCode || record?.khoCode);
-  const finalStandard = getStandardKhoInfo(record?.kho) || getStandardKhoInfo(record?.khoCode);
-
-  // Nếu JSON có TenKho nhưng TenKho không phải dạng kho chuẩn thì loại luôn.
-  // Không được dùng MaKho để bẻ "Hồ 1" thành "Kho 39".
-  if (rawName && !isRawTtcoKhoNameAllowed(rawName)) return false;
-
-  const rawNameStandard = rawName ? getStandardKhoInfo(rawName) : null;
-  const rawCodeStandard = rawCode ? getStandardKhoInfo(rawCode) : null;
-
-  if (rawNameStandard && finalStandard && rawNameStandard.code !== finalStandard.code) return false;
-
-  // Nếu cả TenKho và MaKho đều có chuẩn, chúng phải cùng chỉ một kho sau chuẩn hóa.
-  if (rawNameStandard && rawCodeStandard && rawNameStandard.code !== rawCodeStandard.code) return false;
-
-  return true;
-}; const isValidCurrentTtcoStockRecord = (record) => {
-  if (!record) return false;
-  if (!getStandardKhoInfo(record.kho) && !getStandardKhoInfo(record.khoCode)) return false;
-  const coalName = normalizeText(record.coal);
-  if (!coalName) return false;
-  const mass = toNumber(record.ton);
-  if (Math.abs(mass) < 0.000001) return false;
-  if (!isRecordKhoNameConsistent(record)) return false;
-
-  const coalCode = normalizeText(record.coalCode || record.MaThan || record.ma_than);
-  const isImportCoalLine =
-    /^nhk\./i.test(coalCode) ||
-    /\(.+\)/.test(coalName) ||
-    normalizeText(record.sourceFix || record.SourceFix).toUpperCase().includes("KHO39");
-
-  if (isGenericTtcoCoalGroupName(coalName) && !looksLikeSpecificCoalProductName(coalName) && !isImportCoalLine) {
-    return false;
-  }
-  return true;
-}; const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
-  if (!warehouse || !Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
-    return [];
-  }
-
-  const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
-  const warehouseNameKey = normalizeKey(warehouse.name);
-  const map = new Map();
-
-  for (const item of ttcoRecords) {
-    if (!isValidCurrentTtcoStockRecord(item)) continue;
-    const itemCode = getKhoCompareCode(item.khoCode || item.kho);
-    const sameKho =
-      itemCode === warehouseCode ||
-      normalizeKey(item.kho) === warehouseNameKey;
-
-    if (!sameKho) continue;
-
-    const name = normalizeText(item.coal);
-    if (!name) continue;
-
-    const key = normalizeKey(name);
-    if (!map.has(key)) {
-      map.set(key, {
-        name,
-        density: getDensityFromCatalog(coalTypes, name),
-      });
-    }
-  }
-
-  return Array.from(map.values()).sort((a, b) =>
-    a.name.localeCompare(b.name, "vi")
-  );
-};
-
-const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
-  if (!Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
-    return excelWarehouses;
-  }
-
-  const excelByCode = new Map();
-  const excelByName = new Map();
-
-  for (const warehouse of excelWarehouses || []) {
-    const code = getKhoCompareCode(warehouse.id || warehouse.name);
-    const nameKey = normalizeKey(warehouse.name);
-
-    if (code && !excelByCode.has(code)) {
-      excelByCode.set(code, warehouse);
-    }
-
-    if (nameKey && !excelByName.has(nameKey)) {
-      excelByName.set(nameKey, warehouse);
-    }
-  }
-
-  const map = new Map();
-
-  for (const record of ttcoRecords) {
-    if (!isValidCurrentTtcoStockRecord(record)) continue;
-    const standardKho = getStandardKhoInfo(record.kho) || getStandardKhoInfo(record.khoCode);
-    if (!standardKho) continue;
-
-    const code = standardKho.code;
-    const name = standardKho.name;
-    const key = code;
-    const coal = normalizeText(record.coal);
-
-    if (!key || !name) continue;
-
-    const excelWarehouse =
-      excelByCode.get(code) || excelByName.get(normalizeKey(name)) || null;
-
-    if (!map.has(key)) {
-      map.set(key, {
-        id: code || name,
-        name,
-        unit: normalizeText(excelWarehouse?.unit) || "",
-        maxLength: toNumber(excelWarehouse?.maxLength),
-        maxWidth: toNumber(excelWarehouse?.maxWidth),
-        areas: Array.isArray(excelWarehouse?.areas) ? excelWarehouse.areas : [],
-        activeCoalNames: [],
-      });
-    }
-
-    const item = map.get(key);
-
-    if (!item.unit && excelWarehouse?.unit) {
-      item.unit = normalizeText(excelWarehouse.unit);
-    }
-
-    if (toNumber(item.maxLength) <= 0 && toNumber(excelWarehouse?.maxLength) > 0) {
-      item.maxLength = toNumber(excelWarehouse.maxLength);
-    }
-
-    if (toNumber(item.maxWidth) <= 0 && toNumber(excelWarehouse?.maxWidth) > 0) {
-      item.maxWidth = toNumber(excelWarehouse.maxWidth);
-    }
-
-    if ((!item.areas || item.areas.length === 0) && Array.isArray(excelWarehouse?.areas)) {
-      item.areas = excelWarehouse.areas;
-    }
-
-    if (coal && !item.activeCoalNames.some((name) => coalMatches(name, coal))) {
-      item.activeCoalNames.push(coal);
-    }
-  }
-
-  // Bổ sung các kho chuẩn có trong Excel nhưng chưa có dòng tồn kho trong JSON.
-  // Trường hợp thực tế: Kho 30, Kho 35 có trong danh mục/báo cáo TTCO_APP nhưng tháng hiện tại có thể chưa có tồn,
-  // nếu chỉ dựng danh sách từ JSON thì sẽ bị mất khỏi combobox.
-  for (const excelWarehouse of excelWarehouses || []) {
-    const standardKho =
-      getStandardKhoInfo(excelWarehouse.id) || getStandardKhoInfo(excelWarehouse.name);
-
-    if (!standardKho) continue;
-
-    const key = standardKho.code;
-    if (!key || map.has(key)) continue;
-
-    map.set(key, {
-      id: key,
-      name: standardKho.name,
-      unit: normalizeText(excelWarehouse.unit) || "",
-      maxLength: toNumber(excelWarehouse.maxLength),
-      maxWidth: toNumber(excelWarehouse.maxWidth),
-      areas: Array.isArray(excelWarehouse.areas) ? excelWarehouse.areas : [],
-      activeCoalNames: Array.isArray(excelWarehouse.activeCoalNames)
-        ? excelWarehouse.activeCoalNames
-        : [],
-    });
-  }
-
-  return Array.from(map.values()).sort(compareWarehousesNatural);
 };
 
 const emptyBlock = () => ({
@@ -1172,9 +667,9 @@ function parseExcelWorkbook(workbook) {
     "ty khoi tan m3",
   ]);
 
-  if ([iTenKho, iLength, iWidth].some((i) => i < 0)) {
+  if ([iMaKho, iTenKho, iLength, iWidth].some((i) => i < 0)) {
     throw new Error(
-      "Sheet dm_kho thiếu cột bắt buộc: ten_kho, Chieu_dai_m, Chieu_rong_m. Cột ma_kho là tùy chọn; nếu thiếu app sẽ tự suy ra mã kho từ ten_kho."
+      "Sheet dm_kho thiếu cột bắt buộc: ma_kho, ten_kho, Chieu_dai_m, Chieu_rong_m."
     );
   }
 
@@ -1187,7 +682,7 @@ function parseExcelWorkbook(workbook) {
   const khoRows = khoArray
     .slice(1)
     .map((row) => ({
-      ma_kho: iMaKho >= 0 ? normalizeKhoCode(row[iMaKho]) : normalizeKhoCode(row[iTenKho]),
+      ma_kho: row[iMaKho],
       ten_kho: row[iTenKho],
       don_vi_quan_ly: iUnit >= 0 ? row[iUnit] : "",
       chieu_dai_m: row[iLength],
@@ -1600,18 +1095,7 @@ export default function TTCOCoalStockpileApp() {
   const [rawKhoRows, setRawKhoRows] = useState(DEFAULT_KHO_ROWS);
   const [rawTyKhoiRows, setRawTyKhoiRows] = useState(DEFAULT_TY_KHOI_ROWS);
   const [uploadError, setUploadError] = useState("");
-  const [catalogSourceName, setCatalogSourceName] = useState("Đang tải Excel danh mục từ public/data...");
-  const [catalogReady, setCatalogReady] = useState(false);
-  const rawKhoRowsRef = useRef(DEFAULT_KHO_ROWS);
-  const rawTyKhoiRowsRef = useRef(DEFAULT_TY_KHOI_ROWS);
-
-  useEffect(() => {
-    rawKhoRowsRef.current = rawKhoRows;
-  }, [rawKhoRows]);
-
-  useEffect(() => {
-    rawTyKhoiRowsRef.current = rawTyKhoiRows;
-  }, [rawTyKhoiRows]);
+  const [catalogSourceName, setCatalogSourceName] = useState("Dữ liệu mặc định trong app");
 
   const [ttcoRecords, setTtcoRecords] = useState([]);
   const [ttcoSourceName, setTtcoSourceName] = useState("");
@@ -1639,12 +1123,7 @@ export default function TTCOCoalStockpileApp() {
     [rawKhoRows, rawTyKhoiRows]
   );
 
-  const { warehouses: excelWarehouses, coalTypes } = dataModel;
-
-  const warehouses = useMemo(
-    () => buildWarehouseListFromTTCO(ttcoRecords, excelWarehouses),
-    [ttcoRecords, excelWarehouses]
-  );
+  const { warehouses, coalTypes } = dataModel;
 
   const [warehouseId, setWarehouseId] = useState("KHO09");
   const [coalName, setCoalName] = useState("Cám 6a.14");
@@ -1659,20 +1138,6 @@ export default function TTCOCoalStockpileApp() {
     () => warehouses.find((item) => item.id === warehouseId) || warehouses[0],
     [warehouseId, warehouses]
   );
-
-  useEffect(() => {
-    if (warehouses.length === 0) return;
-
-    const currentWarehouseExists = warehouses.some((item) => item.id === warehouseId);
-
-    if (!currentWarehouseExists) {
-      const nextWarehouse = warehouses[0];
-      setWarehouseId(nextWarehouse.id);
-      setCoalName(nextWarehouse.activeCoalNames?.[0] || coalTypes[0]?.name || "");
-      setDensityOverride("");
-      setWarehouseLengthOverride("");
-    }
-  }, [warehouses, warehouseId, coalTypes]);
 
   const selectedCoalType = useMemo(() => {
     const exact = coalTypes.find(
@@ -1693,56 +1158,27 @@ export default function TTCOCoalStockpileApp() {
     [warehouse, coalName]
   );
 
-  const ttcoCoalTypesForWarehouse = useMemo(
-    () => getTtcoCoalTypesForWarehouse(warehouse, ttcoRecords, coalTypes),
-    [warehouse, ttcoRecords, coalTypes]
-  );
-
   const availableCoalTypes = useMemo(() => {
     if (!warehouse) return coalTypes;
 
-    // Khi đã có dữ liệu TTCO_APP, danh sách chủng loại trong kho phải lấy theo TTCO_APP.
-    // Excel chỉ cung cấp kích thước kho và tỷ khối, không quyết định chủng loại đang tồn.
-    if (!allowAllCoalTypes && ttcoCoalTypesForWarehouse.length > 0) {
-      return ttcoCoalTypesForWarehouse;
-    }
-
-    if (allowAllCoalTypes) {
-      return mergeCoalTypeLists(ttcoCoalTypesForWarehouse, coalTypes);
-    }
-
-    if (warehouse.activeCoalNames.length === 0) {
+    if (allowAllCoalTypes || warehouse.activeCoalNames.length === 0) {
       return coalTypes;
     }
 
     const activeKeys = new Set(warehouse.activeCoalNames.map(normalizeKey));
 
     return coalTypes.filter((item) => activeKeys.has(normalizeKey(item.name)));
-  }, [allowAllCoalTypes, warehouse, coalTypes, ttcoCoalTypesForWarehouse, ttcoRecords.length]);
-
-  useEffect(() => {
-    if (!warehouse || ttcoCoalTypesForWarehouse.length === 0) return;
-
-    const currentStillExists = ttcoCoalTypesForWarehouse.some((item) =>
-      coalMatches(coalName, item.name)
-    );
-
-    if (!currentStillExists) {
-      setCoalName(ttcoCoalTypesForWarehouse[0].name);
-      setDensityOverride("");
-      setWarehouseLengthOverride("");
-    }
-  }, [warehouse, coalName, ttcoCoalTypesForWarehouse, ttcoRecords.length]);
+  }, [allowAllCoalTypes, warehouse, coalTypes]);
 
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
 
-    const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
+    const warehouseCode = normalizeKhoCode(warehouse.id);
     const warehouseNameKey = normalizeKey(warehouse.name);
 
-    const matched = ttcoRecords.filter((item) => { if (!isTtcoDisplayStockRecord(item)) return false; const itemCode = getKhoCompareCode(item.khoCode || item.kho);
+    const matched = ttcoRecords.filter((item) => {
       const sameKho =
-        itemCode === warehouseCode ||
+        normalizeKhoCode(item.khoCode) === warehouseCode ||
         normalizeKey(item.kho) === warehouseNameKey;
 
       return sameKho && coalMatches(coalName, item.coal);
@@ -1753,16 +1189,18 @@ export default function TTCOCoalStockpileApp() {
     return matched.reduce((sum, item) => sum + item.ton, 0);
   }, [warehouse, coalName, ttcoRecords]);
 
-  useEffect(() => { if (matchedTtcoMass !== null) { setTtcoMass(String(Math.round(matchedTtcoMass * 100) / 100)); } else { setTtcoMass(""); } }, [matchedTtcoMass, warehouseId, coalName]);
+  useEffect(() => {
+    if (matchedTtcoMass !== null) {
+      setTtcoMass(String(Math.round(matchedTtcoMass * 100) / 100));
+    }
+  }, [matchedTtcoMass]);
 
   useEffect(() => {
     const loadDefaultCatalog = async () => {
       try {
         const response = await fetch(`${DEFAULT_CATALOG_FILE}?_=${Date.now()}`, { cache: "no-store" });
 
-        if (!response.ok) {
-          return;
-        }
+        if (!response.ok) return;
 
         const buffer = await response.arrayBuffer();
         const workbook = XLSX.read(buffer, { type: "array" });
@@ -1776,15 +1214,11 @@ export default function TTCOCoalStockpileApp() {
           return;
         }
 
-        rawKhoRowsRef.current = khoRows;
-        rawTyKhoiRowsRef.current = tyKhoiRows;
         setRawKhoRows(khoRows);
         setRawTyKhoiRows(tyKhoiRows);
         setCatalogSourceName("GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx");
       } catch {
-        // Không tải được file Excel thì giữ trạng thái hiện tại và báo sẵn sàng để app không treo.
-      } finally {
-        setCatalogReady(true);
+        // Không có file mặc định thì dùng dữ liệu hard-code trong app.
       }
     };
 
@@ -1911,12 +1345,9 @@ export default function TTCOCoalStockpileApp() {
         throw new Error("Không đọc được danh mục kho hoặc danh mục tỷ khối.");
       }
 
-      rawKhoRowsRef.current = khoRows;
-      rawTyKhoiRowsRef.current = tyKhoiRows;
       setRawKhoRows(khoRows);
       setRawTyKhoiRows(tyKhoiRows);
       setCatalogSourceName(file.name);
-      setCatalogReady(true);
       resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
     } catch (error) {
       setUploadError(
@@ -2089,16 +1520,19 @@ export default function TTCOCoalStockpileApp() {
       }
 
       const payload = await response.json();
-      const { records } = parseTTCOGitHubJson(payload, rawKhoRowsRef.current);
+      const { records, khoRows } = parseTTCOGitHubJson(payload, rawKhoRows);
+      const nextModel = buildDataModel(khoRows, rawTyKhoiRows);
 
-      // Quan trọng: TTCO JSON chỉ là nguồn tồn kho để so sánh.
-      // Không dùng JSON để ghi đè rawKhoRows, vì kích thước kho/tỷ khối phải luôn lấy từ Excel danh mục.
+      setRawKhoRows(khoRows);
       setTtcoRecords(records);
+      setCatalogSourceName("GitHub JSON: public/data/ton_kho_latest.json");
       setTtcoSourceName(
         `GitHub JSON CDOTHAN tháng ${payload?.meta?.ThangHT || ""}/${
           payload?.meta?.NamHT || ""
         } | Bản: ${payload?.meta?.version || ""} | Cập nhật: ${payload?.meta?.updatedAt || ""}`
       );
+
+      resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
 
       if (!silent) {
         alert(
@@ -2117,59 +1551,23 @@ export default function TTCOCoalStockpileApp() {
   };
 
   useEffect(() => {
-    if (!catalogReady) return undefined;
-
     const timer = window.setTimeout(() => {
       handleLoadTTCOFromGitHub({ silent: true });
-    }, 300);
+    }, 700);
 
     return () => window.clearTimeout(timer);
-    // Chỉ tự tải TTCO JSON sau khi danh mục Excel đã sẵn sàng.
+    // Chỉ tự tải 1 lần khi mở app.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [catalogReady]);
+  }, []);
 
-  const restoreDefaultData = async () => {
+  const restoreDefaultData = () => {
+    const nextModel = buildDataModel(DEFAULT_KHO_ROWS, DEFAULT_TY_KHOI_ROWS);
+
+    setRawKhoRows(DEFAULT_KHO_ROWS);
+    setRawTyKhoiRows(DEFAULT_TY_KHOI_ROWS);
+    setCatalogSourceName("Dữ liệu mặc định trong app");
     setUploadError("");
-
-    try {
-      const response = await fetch(`${DEFAULT_CATALOG_FILE}?_=${Date.now()}`, {
-        cache: "no-store",
-      });
-
-      if (!response.ok) {
-        throw new Error("Không tải được file Excel danh mục từ GitHub Pages.");
-      }
-
-      const buffer = await response.arrayBuffer();
-      const workbook = XLSX.read(buffer, { type: "array" });
-      const { khoRows, tyKhoiRows } = parseExcelWorkbook(workbook);
-      const nextModel = buildDataModel(khoRows, tyKhoiRows);
-
-      if (
-        nextModel.warehouses.length === 0 ||
-        nextModel.coalTypes.length === 0
-      ) {
-        throw new Error("File Excel danh mục không có đủ dữ liệu kho hoặc tỷ khối.");
-      }
-
-      rawKhoRowsRef.current = khoRows;
-      rawTyKhoiRowsRef.current = tyKhoiRows;
-      setRawKhoRows(khoRows);
-      setRawTyKhoiRows(tyKhoiRows);
-      setCatalogSourceName("GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx");
-      setCatalogReady(true);
-      resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
-    } catch (error) {
-      // Không quay về dữ liệu hard-code nữa.
-      // Nếu file Excel tải lỗi, giữ nguyên danh mục hiện tại để tránh làm Kho 1 quay về 36.5.
-      setCatalogSourceName("Giữ nguyên danh mục hiện tại - lỗi tải Excel public/data");
-      setCatalogReady(true);
-      setUploadError(
-        error instanceof Error
-          ? error.message
-          : "Không tải được file Excel danh mục từ public/data."
-      );
-    }
+    resetSelectionAfterDataChange(nextModel.warehouses, nextModel.coalTypes);
   };
 
   const updateBlock = (id, patch) => {
@@ -2192,17 +1590,9 @@ export default function TTCOCoalStockpileApp() {
     const nextWarehouse =
       warehouses.find((item) => item.id === nextWarehouseId) || warehouses[0];
 
-    const ttcoCoalTypes = getTtcoCoalTypesForWarehouse(
-      nextWarehouse,
-      ttcoRecords,
-      coalTypes
-    );
-
     setWarehouseId(nextWarehouseId);
     setAllowAllCoalTypes(false);
-    setCoalName(
-      ttcoCoalTypes[0]?.name || nextWarehouse?.activeCoalNames?.[0] || coalTypes[0]?.name || ""
-    );
+    setCoalName(nextWarehouse?.activeCoalNames?.[0] || coalTypes[0]?.name || "");
     setDensityOverride("");
     setWarehouseLengthOverride("");
   };

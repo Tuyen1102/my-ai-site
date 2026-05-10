@@ -1,0 +1,25 @@
+HUONG DAN - KIEM TRA CO CHE TONG HOP CHUNG LOAI THAN TTCOAPP
+
+Muc tieu:
+- Kiem tra truc tiep database de tim co che tong hop cac chủng loai:
+  + Cam 5a.10
+  + Cam 5a.14
+  + Cam 6a.10
+  + Cam 6a.14
+- Khong mapping tu Excel bao cao.
+
+Cach chay:
+1. Copy 2 file vao D:\TTCO_TonKho_App_Repo:
+   - check_co_che_tong_hop_than.py
+   - run_check_co_che_tong_hop_than.bat
+2. Dam bao file .env trong D:\TTCO_TonKho_App_Repo dang dung.
+3. Bam dup run_check_co_che_tong_hop_than.bat.
+4. Gui lai file Excel trong thu muc mapping_output.
+
+Sheet can xem:
+- DMTHAN_COLUMNS
+- DMTHAN_TARGET_ROWS
+- CDOTHAN_TARGET_DETAIL
+- CDOTHAN_TARGET_GROUPED_BASE
+- CANDIDATE_GROUP_TABLES
+- OBJECTS_SEARCH

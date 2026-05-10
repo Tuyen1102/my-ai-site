@@ -1,0 +1,201 @@
+HƯỚNG DẪN SỬ DỤNG GÓI 2 FILE BAT
+Dự án: TTCO - App tính khối lượng than tồn kho
+
+============================================================
+I. THÀNH PHẦN TRONG GÓI
+============================================================
+
+1. 01_update_excel_catalog_to_github.bat
+   Dùng để thay/cập nhật file Excel danh mục:
+   DS_kho_than_va_ty_khoi.xlsx
+
+2. 02_install_auto_sync_ttco_json_on_startup.bat
+   Dùng để cài tự động đồng bộ dữ liệu tồn kho TTCO từ database lên GitHub khi bật/dăng nhập máy tính.
+
+3. HUONG_DAN_SU_DUNG.txt
+   File hướng dẫn này.
+
+============================================================
+II. ĐIỀU KIỆN TRƯỚC KHI DÙNG
+============================================================
+
+Máy tính cần có:
+
+1. Thư mục repo đúng:
+   D:\TTCO_TonKho_App_Repo
+
+2. Git đã cài và đã đăng nhập/quyền push GitHub.
+
+3. Node.js/npm đã cài.
+
+4. package.json trong repo đã có lệnh deploy:
+   "deploy": "gh-pages -d dist"
+
+5. Đối với file tự động đồng bộ TTCO:
+   Trong repo cần có:
+   - run_sync_now.bat
+   - sync_ton_kho_to_github.py
+   - .env
+
+6. File .env phải cấu hình đúng DB TTCO, ví dụ:
+   DB_SERVER=tuyenthancuaong.com.vn,52376
+   DB_NAME=TTCO_THONGKE
+   DB_DRIVER=ODBC Driver 18 for SQL Server
+   DB_AUTH=windows
+
+============================================================
+III. CÁCH DÙNG FILE 01 - CẬP NHẬT EXCEL DANH MỤC
+============================================================
+
+Dùng khi anh muốn sửa dữ liệu:
+
+- Chiều dài kho
+- Chiều rộng chân tối đa
+- Đơn vị quản lý
+- Tỷ khối loại than
+
+Các bước:
+
+1. Mở file Excel danh mục cần sửa.
+
+2. Sửa dữ liệu.
+
+3. Bấm Save.
+
+4. Đóng Excel hoàn toàn.
+
+5. Bấm đúp file:
+   01_update_excel_catalog_to_github.bat
+
+6. Cửa sổ chọn file hiện ra.
+   Chọn file Excel danh mục mới.
+
+7. Nếu BAT hiển thị kiểm tra nhanh:
+   Kho 1 => Chieu_rong_m = ...
+   thì kiểm tra đúng số mong muốn rồi bấm Y.
+
+8. Chờ BAT chạy xong đến khi hiện:
+   HOAN THANH CAP NHAT EXCEL
+
+9. Đợi 1-3 phút rồi mở app:
+   https://tuyen1102.github.io/my-ai-site/
+
+Lưu ý:
+
+- App chỉ dùng duy nhất file:
+  public/data/DS_kho_than_va_ty_khoi.xlsx
+
+- Nếu còn file sai vị trí:
+  public/DS_kho_than_va_ty_khoi.xlsx
+  BAT sẽ tự xóa.
+
+- Không cần sửa App.jsx khi chỉ thay đổi dữ liệu Excel.
+
+============================================================
+IV. CÁCH DÙNG FILE 02 - CÀI TỰ ĐỘNG ĐỒNG BỘ TTCO
+============================================================
+
+Dùng khi muốn máy tính tự lấy tồn kho TTCO và đẩy lên GitHub khi bật/dăng nhập Windows.
+
+Các bước:
+
+1. Bấm chuột phải file:
+   02_install_auto_sync_ttco_json_on_startup.bat
+
+2. Chọn:
+   Run as administrator
+
+3. Nếu Windows hỏi quyền, bấm:
+   Yes
+
+4. BAT sẽ tạo Task Scheduler tên:
+   TTCO_TonKho_GitHub_Sync_OnLogon
+
+5. Khi hỏi có muốn chạy thử ngay không, có thể bấm:
+   Y
+
+6. Nếu chạy thành công, từ lần đăng nhập Windows sau, máy sẽ tự chạy:
+   D:\TTCO_TonKho_App_Repo\run_sync_now.bat
+
+File JSON app đọc là:
+   public/data/ton_kho_latest.json
+
+Link kiểm tra online:
+   https://tuyen1102.github.io/my-ai-site/data/ton_kho_latest.json
+
+============================================================
+V. QUY TRÌNH VẬN HÀNH ĐỀ XUẤT
+============================================================
+
+1. Khi thay đổi thông số kho/tỷ khối:
+   Chạy file 01.
+
+2. Khi muốn máy tự cập nhật tồn kho từ TTCO:
+   Chạy file 02 một lần để cài task.
+
+3. Hàng ngày/mỗi lần bật máy:
+   Task tự chạy, không cần thao tác.
+
+4. Nếu muốn đồng bộ TTCO thủ công:
+   Chạy trực tiếp:
+   D:\TTCO_TonKho_App_Repo\run_sync_now.bat
+
+============================================================
+VI. CÁCH KIỂM TRA SAU KHI CẬP NHẬT
+============================================================
+
+1. Kiểm tra Excel danh mục:
+   https://tuyen1102.github.io/my-ai-site/data/DS_kho_than_va_ty_khoi.xlsx
+
+2. Kiểm tra JSON tồn kho:
+   https://tuyen1102.github.io/my-ai-site/data/ton_kho_latest.json
+
+3. Kiểm tra app:
+   https://tuyen1102.github.io/my-ai-site/
+
+Nếu app chưa nhận dữ liệu mới, mở lại bằng link có thêm đuôi chống cache, ví dụ:
+   https://tuyen1102.github.io/my-ai-site/?v=1
+
+Lần sau đổi thành:
+   ?v=2
+   ?v=3
+
+============================================================
+VII. LỖI THƯỜNG GẶP
+============================================================
+
+1. Git push bị lỗi:
+   failed to push some refs
+
+Cách xử lý:
+   D:
+   cd \TTCO_TonKho_App_Repo
+   git pull --rebase origin main
+   git push
+   npm run deploy
+
+2. App vẫn đọc số cũ:
+   - Kiểm tra file Excel online đã đúng chưa.
+   - Bấm Ctrl + F5.
+   - Mở bằng link có ?v=số_mới.
+   - Kiểm tra app đang hiện nguồn:
+     GitHub Excel: public/data/DS_kho_than_va_ty_khoi.xlsx
+
+3. File BAT số 02 không tạo được task:
+   - Chạy bằng quyền Administrator.
+   - Kiểm tra Run as administrator.
+
+4. Không kết nối được DB TTCO:
+   - Kiểm tra máy có quyền vào mạng/DB TTCO.
+   - Kiểm tra file .env.
+   - Kiểm tra ODBC Driver 18 for SQL Server.
+
+============================================================
+VIII. GHI NHỚ QUAN TRỌNG
+============================================================
+
+- Không dùng git add . trong repo này.
+- App chỉ dùng 1 file Excel danh mục:
+  public/data/DS_kho_than_va_ty_khoi.xlsx
+- TTCO JSON lấy chủng loại than và khối lượng TTCO_APP.
+- Excel lấy chiều dài, chiều rộng, đơn vị quản lý, tỷ khối.

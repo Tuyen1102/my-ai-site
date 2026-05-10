@@ -35,3 +35,16 @@ backend/output
 # Windows
 Thumbs.db
 desktop.ini
+
+# TTCO temporary/debug files
+TTCO_TRACE_KHO39*
+TTCO_FIX_KHO39*
+fix_kho39*
+fix_ttco*
+FIX_KHO39*
+RUN_TRACE_KHO39*
+HUONG_DAN_TRACE_KHO39*
+HUONG_DAN_FIX_KHO39*
+*.backup_kho39_*
+*.backup_allow_negative_*
+src/*.backup_*

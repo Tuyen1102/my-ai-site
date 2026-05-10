@@ -1,0 +1,28 @@
+MUC TIEU
+- Sua loi Kho 28/Kho 26 hien sai chu chung loai than.
+- Khong hard-code rieng Kho 28 = Cam 6b.1.
+- App se hien dung cac chu chung loai dang co ton thuc te > 0 tren TTCO_APP.
+
+CACH DUNG
+1. Giai nen/copy 2 file sau vao thu muc goc repo my-ai-site:
+   - fix_ttco_coal_filter.js
+   - RUN_FIX_TTCO_COAL_FILTER.bat
+
+2. Bam dup RUN_FIX_TTCO_COAL_FILTER.bat
+
+3. Neu build thanh cong, chay lenh deploy/push GitHub Pages nhu anh van lam.
+
+NOI DUNG SUA
+- Them ham loc isValidCurrentTtcoStockRecord.
+- Chi giu dong ton kho co ton > 0, kho hop le, ten than hop le.
+- Loai cac dong nhom/nguon nhap khau chung nhu Than NK, Than nhap khau, Than Anthracite...
+- Ap dung bo loc cho:
+  + danh sach loai than theo kho
+  + khoi luong TTCO_APP tu dien
+  + danh sach kho/activeCoalNames
+  + JSON ton_kho_latest sau khi parse
+
+KIEM TRA SAU KHI SUA
+- Chon Kho 28.
+- Neu TTCO_APP hien tai chi co Cam 6b.1 thi app chi hien Cam 6b.1.
+- Sau nay neu TTCO_APP co them loai khac co ton > 0 thi app se tu hien them, khong bi khoa cung.
