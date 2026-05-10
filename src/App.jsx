@@ -169,7 +169,7 @@ const isTtcoDisplayStockRecord = (record) => {
   if (!record) return false;
   if (!normalizeText(record.khoCode || record.kho)) return false;
   if (!normalizeText(record.coal)) return false;
-  if (toNumber(record.ton) <= 0) return false;
+  if (toNumber(record.ton) <= 0) return false; if (!isRecordKhoNameConsistent(record)) return false;
 
   const coalBase = normalizeCoalBase(record.coal);
   const genericCoalNames = new Set([
@@ -793,12 +793,20 @@ const isGenericTtcoCoalGroupName = (value) => {
   );
 };
 
+const isRecordKhoNameConsistent = (record) => {
+  const rawName = normalizeText(record?.rawKhoName);
+  if (!rawName) return true;
+  const rawStandard = getStandardKhoInfo(rawName);
+  const finalStandard = getStandardKhoInfo(record?.kho);
+  if (!rawStandard || !finalStandard) return true;
+  return rawStandard.code === finalStandard.code;
+};
 const isValidCurrentTtcoStockRecord = (record) => {
   if (!record) return false;
-  if (!getStandardKhoInfo(record.khoCode || record.kho)) return false;
+  if (!getStandardKhoInfo(record.kho) && !getStandardKhoInfo(record.khoCode)) return false;
   const coalName = normalizeText(record.coal);
   if (!coalName) return false;
-  if (toNumber(record.ton) <= 0) return false;
+  if (toNumber(record.ton) <= 0) return false; if (!isRecordKhoNameConsistent(record)) return false;
 
   // Loại dòng nhóm/tên nguồn nhập khẩu chung; vẫn giữ các chủng loại cụ thể như Cám 6b.1, Cám 6a.14...
   if (isGenericTtcoCoalGroupName(coalName) && !looksLikeSpecificCoalProductName(coalName)) {
@@ -868,7 +876,7 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
 
   for (const record of ttcoRecords) {
     if (!isValidCurrentTtcoStockRecord(record)) continue;
-    const standardKho = getStandardKhoInfo(record.khoCode) || getStandardKhoInfo(record.kho);
+    const standardKho = getStandardKhoInfo(record.kho) || getStandardKhoInfo(record.khoCode);
     if (!standardKho) continue;
 
     const code = standardKho.code;
