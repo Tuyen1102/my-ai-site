@@ -151,8 +151,6 @@ const coalMatches = (selectedCoal, ttcoCoal) => {
   const fullB = normalizeCoalFull(ttcoCoal);
   if (!fullA || !fullB) return false;
 
-  // Than nhập khẩu có dạng "Than NK (... - Tàu ...)" phải khớp nguyên tên.
-  // Nếu không, các tàu khác nhau đều bị rút gọn thành "Than NK" và cộng nhầm tồn kho.
   if (fullA === fullB) return true;
   if (isDetailedCoalName(fullA) || isDetailedCoalName(fullB)) return false;
 
