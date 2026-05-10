@@ -741,6 +741,56 @@ const mergeCoalTypeLists = (...lists) => {
   );
 };
 
+
+// Fix v1.4.2: Lọc dữ liệu tồn kho hiện hành trước khi dựng danh sách chủng loại.
+// Không hard-code Kho 26/Kho 28; kho nào có chủng loại tồn thực tế > 0 thì tự hiện.
+const stripVietnameseMarks = (value) =>
+  normalizeKey(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "d");
+
+const looksLikeSpecificCoalProductName = (value) => {
+  const key = stripVietnameseMarks(normalizeCoalBase(value));
+  if (!key) return false;
+  return (
+    key.startsWith("cam ") ||
+    key.startsWith("cuc ") ||
+    key.startsWith("bun ") ||
+    key.startsWith("da ") ||
+    key.startsWith("nguyen khai") ||
+    key.startsWith("ba ") ||
+    key.includes(" ntc")
+  );
+};
+
+const isGenericTtcoCoalGroupName = (value) => {
+  const key = stripVietnameseMarks(normalizeCoalBase(value));
+  if (!key) return true;
+  return (
+    key === "than nk" ||
+    key === "than nhk" ||
+    key === "than nhap khau" ||
+    key.startsWith("than anthracite")
+  );
+};
+
+const isValidCurrentTtcoStockRecord = (record) => {
+  if (!record) return false;
+  if (!getStandardKhoInfo(record.khoCode || record.kho)) return false;
+  const coalName = normalizeText(record.coal);
+  if (!coalName) return false;
+  if (toNumber(record.ton) <= 0) return false;
+
+  // Loại dòng nhóm/tên nguồn nhập khẩu chung; vẫn giữ các chủng loại cụ thể như Cám 6b.1, Cám 6a.14...
+  if (isGenericTtcoCoalGroupName(coalName) && !looksLikeSpecificCoalProductName(coalName)) {
+    return false;
+  }
+
+  return true;
+};
+
 const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
   if (!warehouse || !Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
     return [];
@@ -751,6 +801,7 @@ const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
   const map = new Map();
 
   for (const item of ttcoRecords) {
+    if (!isValidCurrentTtcoStockRecord(item)) continue;
     const itemCode = getKhoCompareCode(item.khoCode || item.kho);
     const sameKho =
       itemCode === warehouseCode ||
@@ -799,6 +850,7 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
   const map = new Map();
 
   for (const record of ttcoRecords) {
+    if (!isValidCurrentTtcoStockRecord(record)) continue;
     const standardKho = getStandardKhoInfo(record.khoCode) || getStandardKhoInfo(record.kho);
     if (!standardKho) continue;
 
