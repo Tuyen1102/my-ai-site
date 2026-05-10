@@ -165,6 +165,24 @@ const toNumber = (value) => {
   const n = Number(normalized);
   return Number.isFinite(n) ? n : 0;
 };
+const isTtcoDisplayStockRecord = (record) => {
+  if (!record) return false;
+  if (!normalizeText(record.khoCode || record.kho)) return false;
+  if (!normalizeText(record.coal)) return false;
+  if (toNumber(record.ton) <= 0) return false;
+
+  const coalBase = normalizeCoalBase(record.coal);
+  const genericCoalNames = new Set([
+    "than nk",
+    "than nhập khẩu",
+    "than nhap khau",
+    "than anthracite",
+  ]);
+  if (genericCoalNames.has(coalBase)) return false;
+  if (coalBase.startsWith("than anthracite")) return false;
+
+  return true;
+};
 
 const toMaybeNumber = (value) => {
   if (value === null || value === undefined || String(value).trim() === "") {
@@ -513,14 +531,14 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
 
   const rawRecords = rows
     .map((item) => {
-      const standardKho = getStandardKhoInfo(
-        item.MaKho ?? item.ma_kho ?? item.khoCode ?? item.TenKho ?? item.ten_kho ?? item.kho
-      );
-
+      const rawKhoName = item.TenKho ?? item.ten_kho ?? item.kho ?? item.Kho ?? "";
+      const rawKhoCode = item.MaKho ?? item.ma_kho ?? item.khoCode ?? item.code ?? "";
+      // Ưu tiên TenKho/kho đã xuất ra từ nguồn TTCO_APP/JSON. MaKho chỉ dùng làm dự phòng.
+      // Việc ưu tiên MaKho trước có thể làm các kho 26-30 bị map nhầm chủng loại/tồn kho.
+      const standardKho = getStandardKhoInfo(rawKhoName) || getStandardKhoInfo(rawKhoCode);
       if (!standardKho) return null;
-
       const maKho = standardKho.code;
-      const tenKho = tenKhoByCode.get(maKho) || standardKho.name;
+      const tenKho = standardKho.name;
       const maThan = normalizeText(item.MaThan ?? item.ma_than ?? item.coalCode);
       const tenThan =
         normalizeText(item.TenThan ?? item.ten_than ?? item.coal ?? item.LoaiThan) || maThan;
@@ -536,8 +554,7 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
         thang: normalizeText(item.ThangHT ?? payload?.meta?.ThangHT),
         updatedAt: normalizeText(payload?.meta?.updatedAt),
         sheetName: "GitHub JSON CDOTHAN",
-        rowNumber: "",
-        isNhomTongHop: Boolean(item.IsNhomTongHop),
+        rowNumber: "", rawKhoCode: normalizeKhoCode(rawKhoCode), rawKhoName: normalizeText(rawKhoName), isNhomTongHop: Boolean(item.IsNhomTongHop),
         nhomTongHopLoai: normalizeText(item.NhomTongHopLoai),
         danhSachMaThanGoc: Array.isArray(item.DanhSachMaThanGoc)
           ? item.DanhSachMaThanGoc
@@ -547,7 +564,7 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
           : [],
       };
     })
-    .filter((item) => item?.khoCode && item.coal);
+    .filter((item) => item?.khoCode && item.coal && isTtcoDisplayStockRecord(item));
 
   const recordMap = new Map();
 
@@ -1675,8 +1692,7 @@ export default function TTCOCoalStockpileApp() {
     const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
     const warehouseNameKey = normalizeKey(warehouse.name);
 
-    const matched = ttcoRecords.filter((item) => {
-      const itemCode = getKhoCompareCode(item.khoCode || item.kho);
+    const matched = ttcoRecords.filter((item) => { if (!isTtcoDisplayStockRecord(item)) return false; const itemCode = getKhoCompareCode(item.khoCode || item.kho);
       const sameKho =
         itemCode === warehouseCode ||
         normalizeKey(item.kho) === warehouseNameKey;
