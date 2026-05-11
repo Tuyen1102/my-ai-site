@@ -1,19 +1,19 @@
 {
   "ok": true,
   "meta": {
-    "source": "G3_BC05A_2_SOURCE_PLUS_NAME_MAP_AND_KHO39_FIX",
+    "source": "G3_BC05A_2_SOURCE_PLUS_TTCO_QTHT_NAME_MAP_AND_KHO39_FIX",
     "database": "TTCO_THONGKE",
     "sourceTable": "G3_BC05A_2_613181",
     "masterDatabase": "TTCO_QTHT",
     "version": "direct-db-v26-group-coal-country-ship",
-    "updatedAt": "2026-05-11 16:00:43",
+    "updatedAt": "2026-05-11 16:07:07",
     "NamHT": "2026",
     "ThangHT": "5",
     "rowCount": 88,
     "totalTon": 1682556.51,
     "kho1Total": 1052.65,
     "formula": "G3 source for normal kho; Kho39 override TonCK = TonDK + NhapTK - XuatTK",
-    "note": "V7 accepts G3_BC05A_2 tables with MaKho/MaThan/TonCK, then maps MaThan to display names via DB danh mục.",
+    "note": "V8 accepts G3_BC05A_2 tables with MaKho/MaThan/TonCK, then maps MaThan via TTCO_QTHT + TTCO_THONGKE danh mục tables.",
     "kho39Fix": "V167: XuatTK uses MaKho_X only, no MaDV filter"
   },
   "data": [
@@ -31,11 +31,11 @@
       "MaThan": "B11C",
       "ma_than": "B11C",
       "coalCode": "B11C",
-      "TenThan": "B11C",
+      "TenThan": "Upd: ben1, date: 23/04/2019",
       "TenXK": "",
-      "ChungLoai": "B11C",
-      "LoaiThan": "B11C",
-      "coal": "B11C",
+      "ChungLoai": "Upd: ben1, date: 23/04/2019",
+      "LoaiThan": "Upd: ben1, date: 23/04/2019",
+      "coal": "Upd: ben1, date: 23/04/2019",
       "TonDK": 509.95,
       "NhapTK": 3660.0,
       "XuatTK": 3117.3,
@@ -52,7 +52,7 @@
         "B11C"
       ],
       "DanhSachTenThanGoc": [
-        "B11C"
+        "Upd: ben1, date: 23/04/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -70,11 +70,11 @@
       "MaThan": "5A.1",
       "ma_than": "5A.1",
       "coalCode": "5A.1",
-      "TenThan": "5A.1",
+      "TenThan": "Upd: ben2, date: 20/07/2019",
       "TenXK": "",
-      "ChungLoai": "5A.1",
-      "LoaiThan": "5A.1",
-      "coal": "5A.1",
+      "ChungLoai": "Upd: ben2, date: 20/07/2019",
+      "LoaiThan": "Upd: ben2, date: 20/07/2019",
+      "coal": "Upd: ben2, date: 20/07/2019",
       "TonDK": 7937.86,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -91,7 +91,7 @@
         "5A.1"
       ],
       "DanhSachTenThanGoc": [
-        "5A.1"
+        "Upd: ben2, date: 20/07/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -109,11 +109,11 @@
       "MaThan": "4A.1",
       "ma_than": "4A.1",
       "coalCode": "4A.1",
-      "TenThan": "4A.1",
+      "TenThan": "Upd: ben1, date: 19/07/2019",
       "TenXK": "",
-      "ChungLoai": "4A.1",
-      "LoaiThan": "4A.1",
-      "coal": "4A.1",
+      "ChungLoai": "Upd: ben1, date: 19/07/2019",
+      "LoaiThan": "Upd: ben1, date: 19/07/2019",
+      "coal": "Upd: ben1, date: 19/07/2019",
       "TonDK": 1507.63,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -130,7 +130,7 @@
         "4A.1"
       ],
       "DanhSachTenThanGoc": [
-        "4A.1"
+        "Upd: ben1, date: 19/07/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -148,11 +148,11 @@
       "MaThan": "4A.1",
       "ma_than": "4A.1",
       "coalCode": "4A.1",
-      "TenThan": "4A.1",
+      "TenThan": "Upd: ben1, date: 19/07/2019",
       "TenXK": "",
-      "ChungLoai": "4A.1",
-      "LoaiThan": "4A.1",
-      "coal": "4A.1",
+      "ChungLoai": "Upd: ben1, date: 19/07/2019",
+      "LoaiThan": "Upd: ben1, date: 19/07/2019",
+      "coal": "Upd: ben1, date: 19/07/2019",
       "TonDK": 11505.17,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -169,7 +169,7 @@
         "4A.1"
       ],
       "DanhSachTenThanGoc": [
-        "4A.1"
+        "Upd: ben1, date: 19/07/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -187,11 +187,11 @@
       "MaThan": "4A.2",
       "ma_than": "4A.2",
       "coalCode": "4A.2",
-      "TenThan": "4A.2",
+      "TenThan": "Upd: ben1, date: 18/11/2019",
       "TenXK": "",
-      "ChungLoai": "4A.2",
-      "LoaiThan": "4A.2",
-      "coal": "4A.2",
+      "ChungLoai": "Upd: ben1, date: 18/11/2019",
+      "LoaiThan": "Upd: ben1, date: 18/11/2019",
+      "coal": "Upd: ben1, date: 18/11/2019",
       "TonDK": 12610.42,
       "NhapTK": 3877.0,
       "XuatTK": 6553.9,
@@ -208,7 +208,7 @@
         "4A.2"
       ],
       "DanhSachTenThanGoc": [
-        "4A.2"
+        "Upd: ben1, date: 18/11/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -226,11 +226,11 @@
       "MaThan": "B11C",
       "ma_than": "B11C",
       "coalCode": "B11C",
-      "TenThan": "B11C",
+      "TenThan": "Upd: ben1, date: 23/04/2019",
       "TenXK": "",
-      "ChungLoai": "B11C",
-      "LoaiThan": "B11C",
-      "coal": "B11C",
+      "ChungLoai": "Upd: ben1, date: 23/04/2019",
+      "LoaiThan": "Upd: ben1, date: 23/04/2019",
+      "coal": "Upd: ben1, date: 23/04/2019",
       "TonDK": 3.52,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -247,7 +247,7 @@
         "B11C"
       ],
       "DanhSachTenThanGoc": [
-        "B11C"
+        "Upd: ben1, date: 23/04/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -265,11 +265,11 @@
       "MaThan": "11a.1",
       "ma_than": "11a.1",
       "coalCode": "11a.1",
-      "TenThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TenXK": "",
-      "ChungLoai": "11a.1",
-      "LoaiThan": "11a.1",
-      "coal": "11a.1",
+      "ChungLoai": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "LoaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDK": 7792.84,
       "NhapTK": 0.0,
       "XuatTK": 5545.2,
@@ -286,7 +286,7 @@
         "11a.1"
       ],
       "DanhSachTenThanGoc": [
-        "11a.1"
+        "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -304,11 +304,11 @@
       "MaThan": "11A.1",
       "ma_than": "11A.1",
       "coalCode": "11A.1",
-      "TenThan": "11A.1",
+      "TenThan": "Upd: tuyen3, date: 18/10/2025",
       "TenXK": "",
-      "ChungLoai": "11A.1",
-      "LoaiThan": "11A.1",
-      "coal": "11A.1",
+      "ChungLoai": "Upd: tuyen3, date: 18/10/2025",
+      "LoaiThan": "Upd: tuyen3, date: 18/10/2025",
+      "coal": "Upd: tuyen3, date: 18/10/2025",
       "TonDK": 37044.41,
       "NhapTK": 0.0,
       "XuatTK": 4672.1,
@@ -325,280 +325,7 @@
         "11A.1"
       ],
       "DanhSachTenThanGoc": [
-        "11A.1"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11.250",
-      "ma_than": "11.250",
-      "coalCode": "11.250",
-      "TenThan": "11.250",
-      "TenXK": "",
-      "ChungLoai": "11.250",
-      "LoaiThan": "11.250",
-      "coal": "11.250",
-      "TonDK": 3978.0,
-      "NhapTK": 0.0,
-      "XuatTK": 3674.0,
-      "TonCK": 304.0,
-      "TonCuoiKy": 304.0,
-      "ton": 304.0,
-      "Klg_Tan": 304.0,
-      "KhoiLuong": 304.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11.250"
-      ],
-      "DanhSachTenThanGoc": [
-        "11.250"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11A.1",
-      "ma_than": "11A.1",
-      "coalCode": "11A.1",
-      "TenThan": "11A.1",
-      "TenXK": "",
-      "ChungLoai": "11A.1",
-      "LoaiThan": "11A.1",
-      "coal": "11A.1",
-      "TonDK": 11423.71,
-      "NhapTK": 8710.0,
-      "XuatTK": 15350.0,
-      "TonCK": 4783.71,
-      "TonCuoiKy": 4783.71,
-      "ton": 4783.71,
-      "Klg_Tan": 4783.71,
-      "KhoiLuong": 4783.71,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11A.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "11A.1"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11B.1",
-      "ma_than": "11B.1",
-      "coalCode": "11B.1",
-      "TenThan": "11B.1",
-      "TenXK": "",
-      "ChungLoai": "11B.1",
-      "LoaiThan": "11B.1",
-      "coal": "11B.1",
-      "TonDK": 418.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 418.0,
-      "TonCuoiKy": 418.0,
-      "ton": 418.0,
-      "Klg_Tan": 418.0,
-      "KhoiLuong": 418.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11B.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "11B.1"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.241",
-      "ma_than": "11a.241",
-      "coalCode": "11a.241",
-      "TenThan": "11a.241",
-      "TenXK": "",
-      "ChungLoai": "11a.241",
-      "LoaiThan": "11a.241",
-      "coal": "11a.241",
-      "TonDK": 0.3,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 0.3,
-      "TonCuoiKy": 0.3,
-      "ton": 0.3,
-      "Klg_Tan": 0.3,
-      "KhoiLuong": 0.3,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.241"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.241"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.243",
-      "ma_than": "11a.243",
-      "coalCode": "11a.243",
-      "TenThan": "11a.243",
-      "TenXK": "",
-      "ChungLoai": "11a.243",
-      "LoaiThan": "11a.243",
-      "coal": "11a.243",
-      "TonDK": -0.01,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": -0.01,
-      "TonCuoiKy": -0.01,
-      "ton": -0.01,
-      "Klg_Tan": -0.01,
-      "KhoiLuong": -0.01,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.243"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.243"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.245",
-      "ma_than": "11a.245",
-      "coalCode": "11a.245",
-      "TenThan": "11a.245",
-      "TenXK": "",
-      "ChungLoai": "11a.245",
-      "LoaiThan": "11a.245",
-      "coal": "11a.245",
-      "TonDK": -1.37,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": -1.37,
-      "TonCuoiKy": -1.37,
-      "ton": -1.37,
-      "Klg_Tan": -1.37,
-      "KhoiLuong": -1.37,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.245"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.245"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.246",
-      "ma_than": "11a.246",
-      "coalCode": "11a.246",
-      "TenThan": "11a.246",
-      "TenXK": "",
-      "ChungLoai": "11a.246",
-      "LoaiThan": "11a.246",
-      "coal": "11a.246",
-      "TonDK": -0.37,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": -0.37,
-      "TonCuoiKy": -0.37,
-      "ton": -0.37,
-      "Klg_Tan": -0.37,
-      "KhoiLuong": -0.37,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.246"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.246"
+        "Upd: tuyen3, date: 18/10/2025"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -616,11 +343,11 @@
       "MaThan": "11a.247",
       "ma_than": "11a.247",
       "coalCode": "11a.247",
-      "TenThan": "11a.247",
+      "TenThan": "Cám 6a.10 (Lào - Tàu Golden Star)",
       "TenXK": "",
-      "ChungLoai": "11a.247",
-      "LoaiThan": "11a.247",
-      "coal": "11a.247",
+      "ChungLoai": "Cám 6a.10 (Lào - Tàu Golden Star)",
+      "LoaiThan": "Cám 6a.10 (Lào - Tàu Golden Star)",
+      "coal": "Cám 6a.10 (Lào - Tàu Golden Star)",
       "TonDK": 23.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -637,85 +364,7 @@
         "11a.247"
       ],
       "DanhSachTenThanGoc": [
-        "11a.247"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.248",
-      "ma_than": "11a.248",
-      "coalCode": "11a.248",
-      "TenThan": "11a.248",
-      "TenXK": "",
-      "ChungLoai": "11a.248",
-      "LoaiThan": "11a.248",
-      "coal": "11a.248",
-      "TonDK": 33.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 33.0,
-      "TonCuoiKy": 33.0,
-      "ton": 33.0,
-      "Klg_Tan": 33.0,
-      "KhoiLuong": 33.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.248"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.248"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.249",
-      "ma_than": "11a.249",
-      "coalCode": "11a.249",
-      "TenThan": "11a.249",
-      "TenXK": "",
-      "ChungLoai": "11a.249",
-      "LoaiThan": "11a.249",
-      "coal": "11a.249",
-      "TonDK": 63.0,
-      "NhapTK": 0.0,
-      "XuatTK": 7.0,
-      "TonCK": 56.0,
-      "TonCuoiKy": 56.0,
-      "ton": 56.0,
-      "Klg_Tan": 56.0,
-      "KhoiLuong": 56.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.249"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.249"
+        "Cám 6a.10 (Lào - Tàu Golden Star)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -733,11 +382,11 @@
       "MaThan": "11a.251",
       "ma_than": "11a.251",
       "coalCode": "11a.251",
-      "TenThan": "11a.251",
+      "TenThan": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
       "TenXK": "",
-      "ChungLoai": "11a.251",
-      "LoaiThan": "11a.251",
-      "coal": "11a.251",
+      "ChungLoai": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
+      "LoaiThan": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
+      "coal": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
       "TonDK": 8302.0,
       "NhapTK": 668.0,
       "XuatTK": 8293.0,
@@ -754,7 +403,7 @@
         "11a.251"
       ],
       "DanhSachTenThanGoc": [
-        "11a.251"
+        "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -769,70 +418,31 @@
       "kho": "Kho 9",
       "DonViQuanLy": "",
       "MaDV": "",
-      "MaThan": "11a.253",
-      "ma_than": "11a.253",
-      "coalCode": "11a.253",
-      "TenThan": "11a.253",
+      "MaThan": "11a.248",
+      "ma_than": "11a.248",
+      "coalCode": "11a.248",
+      "TenThan": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
       "TenXK": "",
-      "ChungLoai": "11a.253",
-      "LoaiThan": "11a.253",
-      "coal": "11a.253",
-      "TonDK": 0.0,
-      "NhapTK": 25561.0,
-      "XuatTK": 25514.0,
-      "TonCK": 47.0,
-      "TonCuoiKy": 47.0,
-      "ton": 47.0,
-      "Klg_Tan": 47.0,
-      "KhoiLuong": 47.0,
+      "ChungLoai": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
+      "LoaiThan": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
+      "coal": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
+      "TonDK": 33.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 33.0,
+      "TonCuoiKy": 33.0,
+      "ton": 33.0,
+      "Klg_Tan": 33.0,
+      "KhoiLuong": 33.0,
       "NamHT": "2026",
       "ThangHT": "5",
       "IsNhomTongHop": false,
       "NhomTongHopLoai": "",
       "DanhSachMaThanGoc": [
-        "11a.253"
+        "11a.248"
       ],
       "DanhSachTenThanGoc": [
-        "11a.253"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "09",
-      "ma_kho": "09",
-      "khoCode": "09",
-      "MaKhoTTCO": "09",
-      "RawMaKho": "09",
-      "TenKho": "Kho 9",
-      "Kho": "Kho 9",
-      "kho": "Kho 9",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11a.254",
-      "ma_than": "11a.254",
-      "coalCode": "11a.254",
-      "TenThan": "11a.254",
-      "TenXK": "",
-      "ChungLoai": "11a.254",
-      "LoaiThan": "11a.254",
-      "coal": "11a.254",
-      "TonDK": 0.0,
-      "NhapTK": 19887.0,
-      "XuatTK": 6747.0,
-      "TonCK": 13140.0,
-      "TonCuoiKy": 13140.0,
-      "ton": 13140.0,
-      "Klg_Tan": 13140.0,
-      "KhoiLuong": 13140.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11a.254"
-      ],
-      "DanhSachTenThanGoc": [
-        "11a.254"
+        "Cám 6a.10 (Lào - Tàu VTA Poseidon)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -850,11 +460,11 @@
       "MaThan": "11a.44a",
       "ma_than": "11a.44a",
       "coalCode": "11a.44a",
-      "TenThan": "11a.44a",
+      "TenThan": "Cám 6a.14",
       "TenXK": "",
-      "ChungLoai": "11a.44a",
-      "LoaiThan": "11a.44a",
-      "coal": "11a.44a",
+      "ChungLoai": "Cám 6a.14",
+      "LoaiThan": "Cám 6a.14",
+      "coal": "Cám 6a.14",
       "TonDK": 0.0,
       "NhapTK": 2324.0,
       "XuatTK": 0.0,
@@ -871,124 +481,397 @@
         "11a.44a"
       ],
       "DanhSachTenThanGoc": [
-        "11a.44a"
+        "Cám 6a.14"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
     {
-      "MaKho": "10",
-      "ma_kho": "10",
-      "khoCode": "10",
-      "MaKhoTTCO": "10",
-      "RawMaKho": "10",
-      "TenKho": "Kho 10",
-      "Kho": "Kho 10",
-      "kho": "Kho 10",
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
       "DonViQuanLy": "",
       "MaDV": "",
-      "MaThan": "10A.1",
-      "ma_than": "10A.1",
-      "coalCode": "10A.1",
-      "TenThan": "10A.1",
+      "MaThan": "11a.245",
+      "ma_than": "11a.245",
+      "coalCode": "11a.245",
+      "TenThan": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
       "TenXK": "",
-      "ChungLoai": "10A.1",
-      "LoaiThan": "10A.1",
-      "coal": "10A.1",
-      "TonDK": 12796.21,
-      "NhapTK": 2585.0,
-      "XuatTK": 13946.0,
-      "TonCK": 1435.21,
-      "TonCuoiKy": 1435.21,
-      "ton": 1435.21,
-      "Klg_Tan": 1435.21,
-      "KhoiLuong": 1435.21,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "10A.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "10A.1"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "10",
-      "ma_kho": "10",
-      "khoCode": "10",
-      "MaKhoTTCO": "10",
-      "RawMaKho": "10",
-      "TenKho": "Kho 10",
-      "Kho": "Kho 10",
-      "kho": "Kho 10",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "10B.1",
-      "ma_than": "10B.1",
-      "coalCode": "10B.1",
-      "TenThan": "10B.1",
-      "TenXK": "",
-      "ChungLoai": "10B.1",
-      "LoaiThan": "10B.1",
-      "coal": "10B.1",
-      "TonDK": 2711.0,
-      "NhapTK": 541.0,
-      "XuatTK": 2810.0,
-      "TonCK": 442.0,
-      "TonCuoiKy": 442.0,
-      "ton": 442.0,
-      "Klg_Tan": 442.0,
-      "KhoiLuong": 442.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "10B.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "10B.1"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "10",
-      "ma_kho": "10",
-      "khoCode": "10",
-      "MaKhoTTCO": "10",
-      "RawMaKho": "10",
-      "TenKho": "Kho 10",
-      "Kho": "Kho 10",
-      "kho": "Kho 10",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "10a.101",
-      "ma_than": "10a.101",
-      "coalCode": "10a.101",
-      "TenThan": "10a.101",
-      "TenXK": "",
-      "ChungLoai": "10a.101",
-      "LoaiThan": "10a.101",
-      "coal": "10a.101",
-      "TonDK": 10.82,
+      "ChungLoai": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
+      "LoaiThan": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
+      "coal": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
+      "TonDK": -1.37,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 10.82,
-      "TonCuoiKy": 10.82,
-      "ton": 10.82,
-      "Klg_Tan": 10.82,
-      "KhoiLuong": 10.82,
+      "TonCK": -1.37,
+      "TonCuoiKy": -1.37,
+      "ton": -1.37,
+      "Klg_Tan": -1.37,
+      "KhoiLuong": -1.37,
       "NamHT": "2026",
       "ThangHT": "5",
       "IsNhomTongHop": false,
       "NhomTongHopLoai": "",
       "DanhSachMaThanGoc": [
-        "10a.101"
+        "11a.245"
       ],
       "DanhSachTenThanGoc": [
-        "10a.101"
+        "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11a.246",
+      "ma_than": "11a.246",
+      "coalCode": "11a.246",
+      "TenThan": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+      "LoaiThan": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+      "coal": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+      "TonDK": -0.37,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -0.37,
+      "TonCuoiKy": -0.37,
+      "ton": -0.37,
+      "Klg_Tan": -0.37,
+      "KhoiLuong": -0.37,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11a.246"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11a.241",
+      "ma_than": "11a.241",
+      "coalCode": "11a.241",
+      "TenThan": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+      "LoaiThan": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+      "coal": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+      "TonDK": 0.3,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.3,
+      "TonCuoiKy": 0.3,
+      "ton": 0.3,
+      "Klg_Tan": 0.3,
+      "KhoiLuong": 0.3,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11a.241"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11a.249",
+      "ma_than": "11a.249",
+      "coalCode": "11a.249",
+      "TenThan": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+      "LoaiThan": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+      "coal": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+      "TonDK": 63.0,
+      "NhapTK": 0.0,
+      "XuatTK": 7.0,
+      "TonCK": 56.0,
+      "TonCuoiKy": 56.0,
+      "ton": 56.0,
+      "Klg_Tan": 56.0,
+      "KhoiLuong": 56.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11a.249"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11a.254",
+      "ma_than": "11a.254",
+      "coalCode": "11a.254",
+      "TenThan": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+      "LoaiThan": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+      "coal": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+      "TonDK": 0.0,
+      "NhapTK": 19887.0,
+      "XuatTK": 6747.0,
+      "TonCK": 13140.0,
+      "TonCuoiKy": 13140.0,
+      "ton": 13140.0,
+      "Klg_Tan": 13140.0,
+      "KhoiLuong": 13140.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11a.254"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Úc - Tàu MV Bardonnex)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11.250",
+      "ma_than": "11.250",
+      "coalCode": "11.250",
+      "TenThan": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+      "LoaiThan": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+      "coal": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+      "TonDK": 3978.0,
+      "NhapTK": 0.0,
+      "XuatTK": 3674.0,
+      "TonCK": 304.0,
+      "TonCuoiKy": 304.0,
+      "ton": 304.0,
+      "Klg_Tan": 304.0,
+      "KhoiLuong": 304.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11.250"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Úc - Tàu MV Golden Future)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11a.243",
+      "ma_than": "11a.243",
+      "coalCode": "11a.243",
+      "TenThan": "Cám 6a.14 (Úc - Tàu MV W - Star)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14 (Úc - Tàu MV W - Star)",
+      "LoaiThan": "Cám 6a.14 (Úc - Tàu MV W - Star)",
+      "coal": "Cám 6a.14 (Úc - Tàu MV W - Star)",
+      "TonDK": -0.01,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -0.01,
+      "TonCuoiKy": -0.01,
+      "ton": -0.01,
+      "Klg_Tan": -0.01,
+      "KhoiLuong": -0.01,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11a.243"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14 (Úc - Tàu MV W - Star)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11a.253",
+      "ma_than": "11a.253",
+      "coalCode": "11a.253",
+      "TenThan": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
+      "TenXK": "",
+      "ChungLoai": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
+      "LoaiThan": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
+      "coal": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
+      "TonDK": 0.0,
+      "NhapTK": 25561.0,
+      "XuatTK": 25514.0,
+      "TonCK": 47.0,
+      "TonCuoiKy": 47.0,
+      "ton": 47.0,
+      "Klg_Tan": 47.0,
+      "KhoiLuong": 47.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11a.253"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14(Mozambique - Tầu MV Gleamstar)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11B.1",
+      "ma_than": "11B.1",
+      "coalCode": "11B.1",
+      "TenThan": "Upd: Tuyen3, date: 15/08/2018",
+      "TenXK": "",
+      "ChungLoai": "Upd: Tuyen3, date: 15/08/2018",
+      "LoaiThan": "Upd: Tuyen3, date: 15/08/2018",
+      "coal": "Upd: Tuyen3, date: 15/08/2018",
+      "TonDK": 418.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 418.0,
+      "TonCuoiKy": 418.0,
+      "ton": 418.0,
+      "Klg_Tan": 418.0,
+      "KhoiLuong": 418.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Upd: Tuyen3, date: 15/08/2018"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "09",
+      "ma_kho": "09",
+      "khoCode": "09",
+      "MaKhoTTCO": "09",
+      "RawMaKho": "09",
+      "TenKho": "Kho 9",
+      "Kho": "Kho 9",
+      "kho": "Kho 9",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11A.1",
+      "ma_than": "11A.1",
+      "coalCode": "11A.1",
+      "TenThan": "Upd: tuyen3, date: 18/10/2025",
+      "TenXK": "",
+      "ChungLoai": "Upd: tuyen3, date: 18/10/2025",
+      "LoaiThan": "Upd: tuyen3, date: 18/10/2025",
+      "coal": "Upd: tuyen3, date: 18/10/2025",
+      "TonDK": 11423.71,
+      "NhapTK": 8710.0,
+      "XuatTK": 15350.0,
+      "TonCK": 4783.71,
+      "TonCuoiKy": 4783.71,
+      "ton": 4783.71,
+      "Klg_Tan": 4783.71,
+      "KhoiLuong": 4783.71,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Upd: tuyen3, date: 18/10/2025"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1006,11 +889,11 @@
       "MaThan": "10a.259",
       "ma_than": "10a.259",
       "coalCode": "10a.259",
-      "TenThan": "10a.259",
+      "TenThan": "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
       "TenXK": "",
-      "ChungLoai": "10a.259",
-      "LoaiThan": "10a.259",
-      "coal": "10a.259",
+      "ChungLoai": "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
+      "LoaiThan": "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
+      "coal": "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
       "TonDK": -0.04,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1027,46 +910,7 @@
         "10a.259"
       ],
       "DanhSachTenThanGoc": [
-        "10a.259"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "10",
-      "ma_kho": "10",
-      "khoCode": "10",
-      "MaKhoTTCO": "10",
-      "RawMaKho": "10",
-      "TenKho": "Kho 10",
-      "Kho": "Kho 10",
-      "kho": "Kho 10",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "10a.262",
-      "ma_than": "10a.262",
-      "coalCode": "10a.262",
-      "TenThan": "10a.262",
-      "TenXK": "",
-      "ChungLoai": "10a.262",
-      "LoaiThan": "10a.262",
-      "coal": "10a.262",
-      "TonDK": -12.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": -12.0,
-      "TonCuoiKy": -12.0,
-      "ton": -12.0,
-      "Klg_Tan": -12.0,
-      "KhoiLuong": -12.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "10a.262"
-      ],
-      "DanhSachTenThanGoc": [
-        "10a.262"
+        "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1084,11 +928,11 @@
       "MaThan": "10a.263",
       "ma_than": "10a.263",
       "coalCode": "10a.263",
-      "TenThan": "10a.263",
+      "TenThan": "Cám 5a.14 (Úc - Tàu MV Golden Future)",
       "TenXK": "",
-      "ChungLoai": "10a.263",
-      "LoaiThan": "10a.263",
-      "coal": "10a.263",
+      "ChungLoai": "Cám 5a.14 (Úc - Tàu MV Golden Future)",
+      "LoaiThan": "Cám 5a.14 (Úc - Tàu MV Golden Future)",
+      "coal": "Cám 5a.14 (Úc - Tàu MV Golden Future)",
       "TonDK": 292.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1105,7 +949,85 @@
         "10a.263"
       ],
       "DanhSachTenThanGoc": [
-        "10a.263"
+        "Cám 5a.14 (Úc - Tàu MV Golden Future)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "10",
+      "ma_kho": "10",
+      "khoCode": "10",
+      "MaKhoTTCO": "10",
+      "RawMaKho": "10",
+      "TenKho": "Kho 10",
+      "Kho": "Kho 10",
+      "kho": "Kho 10",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "10a.262",
+      "ma_than": "10a.262",
+      "coalCode": "10a.262",
+      "TenThan": "Cám 5a.14 (Úc - Tàu MV Krenom)",
+      "TenXK": "",
+      "ChungLoai": "Cám 5a.14 (Úc - Tàu MV Krenom)",
+      "LoaiThan": "Cám 5a.14 (Úc - Tàu MV Krenom)",
+      "coal": "Cám 5a.14 (Úc - Tàu MV Krenom)",
+      "TonDK": -12.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -12.0,
+      "TonCuoiKy": -12.0,
+      "ton": -12.0,
+      "Klg_Tan": -12.0,
+      "KhoiLuong": -12.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "10a.262"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5a.14 (Úc - Tàu MV Krenom)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "10",
+      "ma_kho": "10",
+      "khoCode": "10",
+      "MaKhoTTCO": "10",
+      "RawMaKho": "10",
+      "TenKho": "Kho 10",
+      "Kho": "Kho 10",
+      "kho": "Kho 10",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "10a.101",
+      "ma_than": "10a.101",
+      "coalCode": "10a.101",
+      "TenThan": "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
+      "TenXK": "",
+      "ChungLoai": "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
+      "LoaiThan": "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
+      "coal": "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
+      "TonDK": 10.82,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 10.82,
+      "TonCuoiKy": 10.82,
+      "ton": 10.82,
+      "Klg_Tan": 10.82,
+      "KhoiLuong": 10.82,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "10a.101"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1123,11 +1045,11 @@
       "MaThan": "10a.72",
       "ma_than": "10a.72",
       "coalCode": "10a.72",
-      "TenThan": "10a.72",
+      "TenThan": "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)",
       "TenXK": "",
-      "ChungLoai": "10a.72",
-      "LoaiThan": "10a.72",
-      "coal": "10a.72",
+      "ChungLoai": "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)",
+      "LoaiThan": "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)",
+      "coal": "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)",
       "TonDK": 0.22,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1144,7 +1066,85 @@
         "10a.72"
       ],
       "DanhSachTenThanGoc": [
-        "10a.72"
+        "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "10",
+      "ma_kho": "10",
+      "khoCode": "10",
+      "MaKhoTTCO": "10",
+      "RawMaKho": "10",
+      "TenKho": "Kho 10",
+      "Kho": "Kho 10",
+      "kho": "Kho 10",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "10A.1",
+      "ma_than": "10A.1",
+      "coalCode": "10A.1",
+      "TenThan": "Upd: ben2, date: 25/06/2019",
+      "TenXK": "",
+      "ChungLoai": "Upd: ben2, date: 25/06/2019",
+      "LoaiThan": "Upd: ben2, date: 25/06/2019",
+      "coal": "Upd: ben2, date: 25/06/2019",
+      "TonDK": 12796.21,
+      "NhapTK": 2585.0,
+      "XuatTK": 13946.0,
+      "TonCK": 1435.21,
+      "TonCuoiKy": 1435.21,
+      "ton": 1435.21,
+      "Klg_Tan": 1435.21,
+      "KhoiLuong": 1435.21,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "10A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Upd: ben2, date: 25/06/2019"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "10",
+      "ma_kho": "10",
+      "khoCode": "10",
+      "MaKhoTTCO": "10",
+      "RawMaKho": "10",
+      "TenKho": "Kho 10",
+      "Kho": "Kho 10",
+      "kho": "Kho 10",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "10B.1",
+      "ma_than": "10B.1",
+      "coalCode": "10B.1",
+      "TenThan": "Đã chốt",
+      "TenXK": "",
+      "ChungLoai": "Đã chốt",
+      "LoaiThan": "Đã chốt",
+      "coal": "Đã chốt",
+      "TonDK": 2711.0,
+      "NhapTK": 541.0,
+      "XuatTK": 2810.0,
+      "TonCK": 442.0,
+      "TonCuoiKy": 442.0,
+      "ton": 442.0,
+      "Klg_Tan": 442.0,
+      "KhoiLuong": 442.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "10B.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Đã chốt"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1162,11 +1162,11 @@
       "MaThan": "9A.1",
       "ma_than": "9A.1",
       "coalCode": "9A.1",
-      "TenThan": "9A.1",
+      "TenThan": "Upd: ben2, date: 24/02/2020",
       "TenXK": "",
-      "ChungLoai": "9A.1",
-      "LoaiThan": "9A.1",
-      "coal": "9A.1",
+      "ChungLoai": "Upd: ben2, date: 24/02/2020",
+      "LoaiThan": "Upd: ben2, date: 24/02/2020",
+      "coal": "Upd: ben2, date: 24/02/2020",
       "TonDK": 38391.49,
       "NhapTK": 0.0,
       "XuatTK": 720.0,
@@ -1183,7 +1183,7 @@
         "9A.1"
       ],
       "DanhSachTenThanGoc": [
-        "9A.1"
+        "Upd: ben2, date: 24/02/2020"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1201,11 +1201,11 @@
       "MaThan": "8B.1",
       "ma_than": "8B.1",
       "coalCode": "8B.1",
-      "TenThan": "8B.1",
+      "TenThan": "Upd: ben2, date: 07/12/2020",
       "TenXK": "",
-      "ChungLoai": "8B.1",
-      "LoaiThan": "8B.1",
-      "coal": "8B.1",
+      "ChungLoai": "Upd: ben2, date: 07/12/2020",
+      "LoaiThan": "Upd: ben2, date: 07/12/2020",
+      "coal": "Upd: ben2, date: 07/12/2020",
       "TonDK": 25271.64,
       "NhapTK": 1439.0,
       "XuatTK": 0.0,
@@ -1222,7 +1222,7 @@
         "8B.1"
       ],
       "DanhSachTenThanGoc": [
-        "8B.1"
+        "Upd: ben2, date: 07/12/2020"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1240,11 +1240,11 @@
       "MaThan": "8A.1",
       "ma_than": "8A.1",
       "coalCode": "8A.1",
-      "TenThan": "8A.1",
+      "TenThan": "AUTO",
       "TenXK": "",
-      "ChungLoai": "8A.1",
-      "LoaiThan": "8A.1",
-      "coal": "8A.1",
+      "ChungLoai": "AUTO",
+      "LoaiThan": "AUTO",
+      "coal": "AUTO",
       "TonDK": 18297.95,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1261,7 +1261,7 @@
         "8A.1"
       ],
       "DanhSachTenThanGoc": [
-        "8A.1"
+        "AUTO"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1279,11 +1279,11 @@
       "MaThan": "5a.1",
       "ma_than": "5a.1",
       "coalCode": "5a.1",
-      "TenThan": "5a.1",
+      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
       "TenXK": "",
-      "ChungLoai": "5a.1",
-      "LoaiThan": "5a.1",
-      "coal": "5a.1",
+      "ChungLoai": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "LoaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "coal": "Cục 5a.1 (Ak5,00 - 8,00%)",
       "TonDK": 32500.8,
       "NhapTK": 1760.0,
       "XuatTK": 0.0,
@@ -1300,7 +1300,7 @@
         "5a.1"
       ],
       "DanhSachTenThanGoc": [
-        "5a.1"
+        "Cục 5a.1 (Ak5,00 - 8,00%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1318,11 +1318,11 @@
       "MaThan": "5A.1",
       "ma_than": "5A.1",
       "coalCode": "5A.1",
-      "TenThan": "5A.1",
+      "TenThan": "Upd: ben2, date: 20/07/2019",
       "TenXK": "",
-      "ChungLoai": "5A.1",
-      "LoaiThan": "5A.1",
-      "coal": "5A.1",
+      "ChungLoai": "Upd: ben2, date: 20/07/2019",
+      "LoaiThan": "Upd: ben2, date: 20/07/2019",
+      "coal": "Upd: ben2, date: 20/07/2019",
       "TonDK": 13252.46,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1339,7 +1339,7 @@
         "5A.1"
       ],
       "DanhSachTenThanGoc": [
-        "5A.1"
+        "Upd: ben2, date: 20/07/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1357,11 +1357,11 @@
       "MaThan": "6A.1",
       "ma_than": "6A.1",
       "coalCode": "6A.1",
-      "TenThan": "6A.1",
+      "TenThan": "Upd: ben2, date: 11/07/2020",
       "TenXK": "",
-      "ChungLoai": "6A.1",
-      "LoaiThan": "6A.1",
-      "coal": "6A.1",
+      "ChungLoai": "Upd: ben2, date: 11/07/2020",
+      "LoaiThan": "Upd: ben2, date: 11/07/2020",
+      "coal": "Upd: ben2, date: 11/07/2020",
       "TonDK": 46220.05,
       "NhapTK": 3997.0,
       "XuatTK": 0.0,
@@ -1378,7 +1378,7 @@
         "6A.1"
       ],
       "DanhSachTenThanGoc": [
-        "6A.1"
+        "Upd: ben2, date: 11/07/2020"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1396,11 +1396,11 @@
       "MaThan": "7A.1",
       "ma_than": "7A.1",
       "coalCode": "7A.1",
-      "TenThan": "7A.1",
+      "TenThan": "Đã chốt",
       "TenXK": "",
-      "ChungLoai": "7A.1",
-      "LoaiThan": "7A.1",
-      "coal": "7A.1",
+      "ChungLoai": "Đã chốt",
+      "LoaiThan": "Đã chốt",
+      "coal": "Đã chốt",
       "TonDK": 22078.6,
       "NhapTK": 0.0,
       "XuatTK": 2868.0,
@@ -1417,7 +1417,7 @@
         "7A.1"
       ],
       "DanhSachTenThanGoc": [
-        "7A.1"
+        "Đã chốt"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1435,11 +1435,11 @@
       "MaThan": "8B.1",
       "ma_than": "8B.1",
       "coalCode": "8B.1",
-      "TenThan": "8B.1",
+      "TenThan": "Upd: ben2, date: 07/12/2020",
       "TenXK": "",
-      "ChungLoai": "8B.1",
-      "LoaiThan": "8B.1",
-      "coal": "8B.1",
+      "ChungLoai": "Upd: ben2, date: 07/12/2020",
+      "LoaiThan": "Upd: ben2, date: 07/12/2020",
+      "coal": "Upd: ben2, date: 07/12/2020",
       "TonDK": 13807.58,
       "NhapTK": 1176.0,
       "XuatTK": 0.0,
@@ -1456,7 +1456,7 @@
         "8B.1"
       ],
       "DanhSachTenThanGoc": [
-        "8B.1"
+        "Upd: ben2, date: 07/12/2020"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1474,11 +1474,11 @@
       "MaThan": "8B.1",
       "ma_than": "8B.1",
       "coalCode": "8B.1",
-      "TenThan": "8B.1",
+      "TenThan": "Upd: ben2, date: 07/12/2020",
       "TenXK": "",
-      "ChungLoai": "8B.1",
-      "LoaiThan": "8B.1",
-      "coal": "8B.1",
+      "ChungLoai": "Upd: ben2, date: 07/12/2020",
+      "LoaiThan": "Upd: ben2, date: 07/12/2020",
+      "coal": "Upd: ben2, date: 07/12/2020",
       "TonDK": 14285.09,
       "NhapTK": 957.0,
       "XuatTK": 0.0,
@@ -1495,7 +1495,7 @@
         "8B.1"
       ],
       "DanhSachTenThanGoc": [
-        "8B.1"
+        "Upd: ben2, date: 07/12/2020"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1513,11 +1513,11 @@
       "MaThan": "9A.1",
       "ma_than": "9A.1",
       "coalCode": "9A.1",
-      "TenThan": "9A.1",
+      "TenThan": "Upd: ben2, date: 24/02/2020",
       "TenXK": "",
-      "ChungLoai": "9A.1",
-      "LoaiThan": "9A.1",
-      "coal": "9A.1",
+      "ChungLoai": "Upd: ben2, date: 24/02/2020",
+      "LoaiThan": "Upd: ben2, date: 24/02/2020",
+      "coal": "Upd: ben2, date: 24/02/2020",
       "TonDK": 72912.93,
       "NhapTK": 0.0,
       "XuatTK": 3364.0,
@@ -1534,7 +1534,7 @@
         "9A.1"
       ],
       "DanhSachTenThanGoc": [
-        "9A.1"
+        "Upd: ben2, date: 24/02/2020"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1552,11 +1552,11 @@
       "MaThan": "9B.1",
       "ma_than": "9B.1",
       "coalCode": "9B.1",
-      "TenThan": "9B.1",
+      "TenThan": "Upd: tuyen3, date: 30/05/2023",
       "TenXK": "",
-      "ChungLoai": "9B.1",
-      "LoaiThan": "9B.1",
-      "coal": "9B.1",
+      "ChungLoai": "Upd: tuyen3, date: 30/05/2023",
+      "LoaiThan": "Upd: tuyen3, date: 30/05/2023",
+      "coal": "Upd: tuyen3, date: 30/05/2023",
       "TonDK": 0.0,
       "NhapTK": 2904.0,
       "XuatTK": 1494.0,
@@ -1573,7 +1573,7 @@
         "9B.1"
       ],
       "DanhSachTenThanGoc": [
-        "9B.1"
+        "Upd: tuyen3, date: 30/05/2023"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1591,11 +1591,11 @@
       "MaThan": "10A.1",
       "ma_than": "10A.1",
       "coalCode": "10A.1",
-      "TenThan": "10A.1",
+      "TenThan": "Upd: ben2, date: 25/06/2019",
       "TenXK": "",
-      "ChungLoai": "10A.1",
-      "LoaiThan": "10A.1",
-      "coal": "10A.1",
+      "ChungLoai": "Upd: ben2, date: 25/06/2019",
+      "LoaiThan": "Upd: ben2, date: 25/06/2019",
+      "coal": "Upd: ben2, date: 25/06/2019",
       "TonDK": 11014.32,
       "NhapTK": 11708.0,
       "XuatTK": 19854.0,
@@ -1612,7 +1612,46 @@
         "10A.1"
       ],
       "DanhSachTenThanGoc": [
-        "10A.1"
+        "Upd: ben2, date: 25/06/2019"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "21",
+      "ma_kho": "21",
+      "khoCode": "21",
+      "MaKhoTTCO": "21",
+      "RawMaKho": "21",
+      "TenKho": "Kho 21",
+      "Kho": "Kho 21",
+      "kho": "Kho 21",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11A.1",
+      "ma_than": "11A.1",
+      "coalCode": "11A.1",
+      "TenThan": "Upd: tuyen3, date: 18/10/2025",
+      "TenXK": "",
+      "ChungLoai": "Upd: tuyen3, date: 18/10/2025",
+      "LoaiThan": "Upd: tuyen3, date: 18/10/2025",
+      "coal": "Upd: tuyen3, date: 18/10/2025",
+      "TonDK": 7291.49,
+      "NhapTK": 15180.0,
+      "XuatTK": 14629.0,
+      "TonCK": 7842.49,
+      "TonCuoiKy": 7842.49,
+      "ton": 7842.49,
+      "Klg_Tan": 7842.49,
+      "KhoiLuong": 7842.49,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11A.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Upd: tuyen3, date: 18/10/2025"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1630,11 +1669,11 @@
       "MaThan": "10B.1",
       "ma_than": "10B.1",
       "coalCode": "10B.1",
-      "TenThan": "10B.1",
+      "TenThan": "Đã chốt",
       "TenXK": "",
-      "ChungLoai": "10B.1",
-      "LoaiThan": "10B.1",
-      "coal": "10B.1",
+      "ChungLoai": "Đã chốt",
+      "LoaiThan": "Đã chốt",
+      "coal": "Đã chốt",
       "TonDK": 3451.44,
       "NhapTK": 7412.0,
       "XuatTK": 11122.0,
@@ -1651,46 +1690,7 @@
         "10B.1"
       ],
       "DanhSachTenThanGoc": [
-        "10B.1"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "21",
-      "ma_kho": "21",
-      "khoCode": "21",
-      "MaKhoTTCO": "21",
-      "RawMaKho": "21",
-      "TenKho": "Kho 21",
-      "Kho": "Kho 21",
-      "kho": "Kho 21",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11A.1",
-      "ma_than": "11A.1",
-      "coalCode": "11A.1",
-      "TenThan": "11A.1",
-      "TenXK": "",
-      "ChungLoai": "11A.1",
-      "LoaiThan": "11A.1",
-      "coal": "11A.1",
-      "TonDK": 7291.49,
-      "NhapTK": 15180.0,
-      "XuatTK": 14629.0,
-      "TonCK": 7842.49,
-      "TonCuoiKy": 7842.49,
-      "ton": 7842.49,
-      "Klg_Tan": 7842.49,
-      "KhoiLuong": 7842.49,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11A.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "11A.1"
+        "Đã chốt"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1708,11 +1708,11 @@
       "MaThan": "8b.1",
       "ma_than": "8b.1",
       "coalCode": "8b.1",
-      "TenThan": "8b.1",
+      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
       "TenXK": "",
-      "ChungLoai": "8b.1",
-      "LoaiThan": "8b.1",
-      "coal": "8b.1",
+      "ChungLoai": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "LoaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "coal": "Cám 3b.1 (Ak 13,01 - 16,00%)",
       "TonDK": 21824.66,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1729,7 +1729,7 @@
         "8b.1"
       ],
       "DanhSachTenThanGoc": [
-        "8b.1"
+        "Cám 3b.1 (Ak 13,01 - 16,00%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1747,11 +1747,11 @@
       "MaThan": "11A.1",
       "ma_than": "11A.1",
       "coalCode": "11A.1",
-      "TenThan": "11A.1",
+      "TenThan": "Upd: tuyen3, date: 18/10/2025",
       "TenXK": "",
-      "ChungLoai": "11A.1",
-      "LoaiThan": "11A.1",
-      "coal": "11A.1",
+      "ChungLoai": "Upd: tuyen3, date: 18/10/2025",
+      "LoaiThan": "Upd: tuyen3, date: 18/10/2025",
+      "coal": "Upd: tuyen3, date: 18/10/2025",
       "TonDK": 8507.0,
       "NhapTK": 0.0,
       "XuatTK": 3535.0,
@@ -1768,7 +1768,7 @@
         "11A.1"
       ],
       "DanhSachTenThanGoc": [
-        "11A.1"
+        "Upd: tuyen3, date: 18/10/2025"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1786,11 +1786,11 @@
       "MaThan": "6a.1",
       "ma_than": "6a.1",
       "coalCode": "6a.1",
-      "TenThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TenXK": "",
-      "ChungLoai": "6a.1",
-      "LoaiThan": "6a.1",
-      "coal": "6a.1",
+      "ChungLoai": "Cám 1 (Ak 5,00 - 8,00%)",
+      "LoaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDK": 17171.72,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1807,7 +1807,7 @@
         "6a.1"
       ],
       "DanhSachTenThanGoc": [
-        "6a.1"
+        "Cám 1 (Ak 5,00 - 8,00%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1825,11 +1825,11 @@
       "MaThan": "6a.1",
       "ma_than": "6a.1",
       "coalCode": "6a.1",
-      "TenThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TenXK": "",
-      "ChungLoai": "6a.1",
-      "LoaiThan": "6a.1",
-      "coal": "6a.1",
+      "ChungLoai": "Cám 1 (Ak 5,00 - 8,00%)",
+      "LoaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDK": 18990.4,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1846,7 +1846,7 @@
         "6a.1"
       ],
       "DanhSachTenThanGoc": [
-        "6a.1"
+        "Cám 1 (Ak 5,00 - 8,00%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1864,11 +1864,11 @@
       "MaThan": "6a.1",
       "ma_than": "6a.1",
       "coalCode": "6a.1",
-      "TenThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TenXK": "",
-      "ChungLoai": "6a.1",
-      "LoaiThan": "6a.1",
-      "coal": "6a.1",
+      "ChungLoai": "Cám 1 (Ak 5,00 - 8,00%)",
+      "LoaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDK": 22274.7,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1885,7 +1885,7 @@
         "6a.1"
       ],
       "DanhSachTenThanGoc": [
-        "6a.1"
+        "Cám 1 (Ak 5,00 - 8,00%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1903,11 +1903,11 @@
       "MaThan": "NHK.295",
       "ma_than": "NHK.295",
       "coalCode": "NHK.295",
-      "TenThan": "NHK.295",
+      "TenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
       "TenXK": "",
-      "ChungLoai": "NHK.295",
-      "LoaiThan": "NHK.295",
-      "coal": "NHK.295",
+      "ChungLoai": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "LoaiThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "coal": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
       "TonDK": 643.13,
       "NhapTK": 0.0,
       "XuatTK": 634.0,
@@ -1924,7 +1924,7 @@
         "NHK.295"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.295"
+        "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1942,11 +1942,11 @@
       "MaThan": "NHK.296",
       "ma_than": "NHK.296",
       "coalCode": "NHK.296",
-      "TenThan": "NHK.296",
+      "TenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
       "TenXK": "",
-      "ChungLoai": "NHK.296",
-      "LoaiThan": "NHK.296",
-      "coal": "NHK.296",
+      "ChungLoai": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "LoaiThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "coal": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
       "TonDK": 5243.59,
       "NhapTK": 4975.84,
       "XuatTK": 10232.31,
@@ -1963,7 +1963,7 @@
         "NHK.296"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.296"
+        "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -1981,11 +1981,11 @@
       "MaThan": "NHK.297",
       "ma_than": "NHK.297",
       "coalCode": "NHK.297",
-      "TenThan": "NHK.297",
+      "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
       "TenXK": "",
-      "ChungLoai": "NHK.297",
-      "LoaiThan": "NHK.297",
-      "coal": "NHK.297",
+      "ChungLoai": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "LoaiThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "coal": "Than NK (Úc - Tầu MV BARDONNEX)",
       "TonDK": 0.0,
       "NhapTK": 10369.95,
       "XuatTK": 9943.05,
@@ -2002,7 +2002,7 @@
         "NHK.297"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.297"
+        "Than NK (Úc - Tầu MV BARDONNEX)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2020,11 +2020,11 @@
       "MaThan": "NHK.298",
       "ma_than": "NHK.298",
       "coalCode": "NHK.298",
-      "TenThan": "NHK.298",
+      "TenThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TenXK": "",
-      "ChungLoai": "NHK.298",
-      "LoaiThan": "NHK.298",
-      "coal": "NHK.298",
+      "ChungLoai": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "LoaiThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "coal": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TonDK": 0.0,
       "NhapTK": 11058.8,
       "XuatTK": 1343.91,
@@ -2041,7 +2041,7 @@
         "NHK.298"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.298"
+        "Than NK (Úc - Tầu MV GENERA QUEEN)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2059,11 +2059,11 @@
       "MaThan": "b32d",
       "ma_than": "b32d",
       "coalCode": "b32d",
-      "TenThan": "b32d",
+      "TenThan": "Upd: tuyen3, date: 17/05/2024",
       "TenXK": "",
-      "ChungLoai": "b32d",
-      "LoaiThan": "b32d",
-      "coal": "b32d",
+      "ChungLoai": "Upd: tuyen3, date: 17/05/2024",
+      "LoaiThan": "Upd: tuyen3, date: 17/05/2024",
+      "coal": "Upd: tuyen3, date: 17/05/2024",
       "TonDK": 17350.98,
       "NhapTK": 1948.0,
       "XuatTK": 267.0,
@@ -2080,7 +2080,7 @@
         "b32d"
       ],
       "DanhSachTenThanGoc": [
-        "b32d"
+        "Upd: tuyen3, date: 17/05/2024"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2098,11 +2098,11 @@
       "MaThan": "B32d",
       "ma_than": "B32d",
       "coalCode": "B32d",
-      "TenThan": "B32d",
+      "TenThan": "Bùn tuyển 3A",
       "TenXK": "",
-      "ChungLoai": "B32d",
-      "LoaiThan": "B32d",
-      "coal": "B32d",
+      "ChungLoai": "Bùn tuyển 3A",
+      "LoaiThan": "Bùn tuyển 3A",
+      "coal": "Bùn tuyển 3A",
       "TonDK": 52191.58,
       "NhapTK": 0.0,
       "XuatTK": 4815.0,
@@ -2119,7 +2119,7 @@
         "B32d"
       ],
       "DanhSachTenThanGoc": [
-        "B32d"
+        "Bùn tuyển 3A"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2137,11 +2137,11 @@
       "MaThan": "NHK.295",
       "ma_than": "NHK.295",
       "coalCode": "NHK.295",
-      "TenThan": "NHK.295",
+      "TenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
       "TenXK": "",
-      "ChungLoai": "NHK.295",
-      "LoaiThan": "NHK.295",
-      "coal": "NHK.295",
+      "ChungLoai": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "LoaiThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "coal": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
       "TonDK": 643.13,
       "NhapTK": 0.0,
       "XuatTK": 634.0,
@@ -2158,7 +2158,7 @@
         "NHK.295"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.295"
+        "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
       ],
       "SourceFix": "KHO39_FIXED_TONDK_NHAP_XUAT"
     },
@@ -2176,11 +2176,11 @@
       "MaThan": "NHK.296",
       "ma_than": "NHK.296",
       "coalCode": "NHK.296",
-      "TenThan": "NHK.296",
+      "TenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
       "TenXK": "",
-      "ChungLoai": "NHK.296",
-      "LoaiThan": "NHK.296",
-      "coal": "NHK.296",
+      "ChungLoai": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "LoaiThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "coal": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
       "TonDK": 5243.59,
       "NhapTK": 4975.84,
       "XuatTK": 10232.31,
@@ -2197,7 +2197,7 @@
         "NHK.296"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.296"
+        "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
       ],
       "SourceFix": "KHO39_FIXED_TONDK_NHAP_XUAT"
     },
@@ -2215,11 +2215,11 @@
       "MaThan": "NHK.297",
       "ma_than": "NHK.297",
       "coalCode": "NHK.297",
-      "TenThan": "NHK.297",
+      "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
       "TenXK": "",
-      "ChungLoai": "NHK.297",
-      "LoaiThan": "NHK.297",
-      "coal": "NHK.297",
+      "ChungLoai": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "LoaiThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "coal": "Than NK (Úc - Tầu MV BARDONNEX)",
       "TonDK": 0.0,
       "NhapTK": 10369.95,
       "XuatTK": 10272.83,
@@ -2236,7 +2236,7 @@
         "NHK.297"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.297"
+        "Than NK (Úc - Tầu MV BARDONNEX)"
       ],
       "SourceFix": "KHO39_FIXED_TONDK_NHAP_XUAT"
     },
@@ -2254,11 +2254,11 @@
       "MaThan": "NHK.298",
       "ma_than": "NHK.298",
       "coalCode": "NHK.298",
-      "TenThan": "NHK.298",
+      "TenThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TenXK": "",
-      "ChungLoai": "NHK.298",
-      "LoaiThan": "NHK.298",
-      "coal": "NHK.298",
+      "ChungLoai": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "LoaiThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "coal": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TonDK": 0.0,
       "NhapTK": 13882.47,
       "XuatTK": 7987.06,
@@ -2275,7 +2275,7 @@
         "NHK.298"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.298"
+        "Than NK (Úc - Tầu MV GENERA QUEEN)"
       ],
       "SourceFix": "KHO39_FIXED_TONDK_NHAP_XUAT"
     },
@@ -2293,11 +2293,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 25854.98,
       "NhapTK": 0.0,
       "XuatTK": 9000.0,
@@ -2314,7 +2314,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2332,11 +2332,11 @@
       "MaThan": "B29A",
       "ma_than": "B29A",
       "coalCode": "B29A",
-      "TenThan": "B29A",
+      "TenThan": "Upd: tuyen3, date: 15/04/2018",
       "TenXK": "",
-      "ChungLoai": "B29A",
-      "LoaiThan": "B29A",
-      "coal": "B29A",
+      "ChungLoai": "Upd: tuyen3, date: 15/04/2018",
+      "LoaiThan": "Upd: tuyen3, date: 15/04/2018",
+      "coal": "Upd: tuyen3, date: 15/04/2018",
       "TonDK": 4332.0,
       "NhapTK": 400.0,
       "XuatTK": 1470.0,
@@ -2353,46 +2353,7 @@
         "B29A"
       ],
       "DanhSachTenThanGoc": [
-        "B29A"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "44",
-      "ma_kho": "44",
-      "khoCode": "44",
-      "MaKhoTTCO": "44",
-      "RawMaKho": "44",
-      "TenKho": "Kho 32",
-      "Kho": "Kho 32",
-      "kho": "Kho 32",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "00",
-      "ma_than": "00",
-      "coalCode": "00",
-      "TenThan": "00",
-      "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
-      "TonDK": 17679.25,
-      "NhapTK": 13859.0,
-      "XuatTK": 25866.91,
-      "TonCK": 5671.34,
-      "TonCuoiKy": 5671.34,
-      "ton": 5671.34,
-      "Klg_Tan": 5671.34,
-      "KhoiLuong": 5671.34,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "00"
-      ],
-      "DanhSachTenThanGoc": [
-        "00"
+        "Upd: tuyen3, date: 15/04/2018"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2410,11 +2371,11 @@
       "MaThan": "B32d",
       "ma_than": "B32d",
       "coalCode": "B32d",
-      "TenThan": "B32d",
+      "TenThan": "Bùn tuyển 3A",
       "TenXK": "",
-      "ChungLoai": "B32d",
-      "LoaiThan": "B32d",
-      "coal": "B32d",
+      "ChungLoai": "Bùn tuyển 3A",
+      "LoaiThan": "Bùn tuyển 3A",
+      "coal": "Bùn tuyển 3A",
       "TonDK": 648.9,
       "NhapTK": 4815.0,
       "XuatTK": 1971.0,
@@ -2431,7 +2392,46 @@
         "B32d"
       ],
       "DanhSachTenThanGoc": [
-        "B32d"
+        "Bùn tuyển 3A"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "44",
+      "ma_kho": "44",
+      "khoCode": "44",
+      "MaKhoTTCO": "44",
+      "RawMaKho": "44",
+      "TenKho": "Kho 32",
+      "Kho": "Kho 32",
+      "kho": "Kho 32",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "00",
+      "ma_than": "00",
+      "coalCode": "00",
+      "TenThan": "Than nguyên khai",
+      "TenXK": "",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
+      "TonDK": 17679.25,
+      "NhapTK": 13859.0,
+      "XuatTK": 25866.91,
+      "TonCK": 5671.34,
+      "TonCuoiKy": 5671.34,
+      "ton": 5671.34,
+      "Klg_Tan": 5671.34,
+      "KhoiLuong": 5671.34,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2449,11 +2449,11 @@
       "MaThan": "b2902",
       "ma_than": "b2902",
       "coalCode": "b2902",
-      "TenThan": "b2902",
+      "TenThan": "Upd: tuyen3, date: 01/09/2019",
       "TenXK": "",
-      "ChungLoai": "b2902",
-      "LoaiThan": "b2902",
-      "coal": "b2902",
+      "ChungLoai": "Upd: tuyen3, date: 01/09/2019",
+      "LoaiThan": "Upd: tuyen3, date: 01/09/2019",
+      "coal": "Upd: tuyen3, date: 01/09/2019",
       "TonDK": 3440.39,
       "NhapTK": 3630.0,
       "XuatTK": 6482.33,
@@ -2470,7 +2470,7 @@
         "b2902"
       ],
       "DanhSachTenThanGoc": [
-        "b2902"
+        "Upd: tuyen3, date: 01/09/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2488,11 +2488,11 @@
       "MaThan": "b29a",
       "ma_than": "b29a",
       "coalCode": "b29a",
-      "TenThan": "b29a",
+      "TenThan": "Upd: tuyen3, date: 26/09/2023",
       "TenXK": "",
-      "ChungLoai": "b29a",
-      "LoaiThan": "b29a",
-      "coal": "b29a",
+      "ChungLoai": "Upd: tuyen3, date: 26/09/2023",
+      "LoaiThan": "Upd: tuyen3, date: 26/09/2023",
+      "coal": "Upd: tuyen3, date: 26/09/2023",
       "TonDK": 4229.39,
       "NhapTK": 2526.0,
       "XuatTK": 3350.0,
@@ -2509,7 +2509,7 @@
         "b29a"
       ],
       "DanhSachTenThanGoc": [
-        "b29a"
+        "Upd: tuyen3, date: 26/09/2023"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2527,11 +2527,11 @@
       "MaThan": "B29a",
       "ma_than": "B29a",
       "coalCode": "B29a",
-      "TenThan": "B29a",
+      "TenThan": "Cám đá",
       "TenXK": "",
-      "ChungLoai": "B29a",
-      "LoaiThan": "B29a",
-      "coal": "B29a",
+      "ChungLoai": "Cám đá",
+      "LoaiThan": "Cám đá",
+      "coal": "Cám đá",
       "TonDK": 2381.78,
       "NhapTK": 6066.0,
       "XuatTK": 4762.2,
@@ -2548,7 +2548,7 @@
         "B29a"
       ],
       "DanhSachTenThanGoc": [
-        "B29a"
+        "Cám đá"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2566,11 +2566,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 225926.39,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -2587,7 +2587,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2605,11 +2605,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 259460.55,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -2626,7 +2626,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2644,11 +2644,11 @@
       "MaThan": "B5.01",
       "ma_than": "B5.01",
       "coalCode": "B5.01",
-      "TenThan": "B5.01",
+      "TenThan": "Đá thải",
       "TenXK": "",
-      "ChungLoai": "B5.01",
-      "LoaiThan": "B5.01",
-      "coal": "B5.01",
+      "ChungLoai": "Đá thải",
+      "LoaiThan": "Đá thải",
+      "coal": "Đá thải",
       "TonDK": 10273.19,
       "NhapTK": 15443.0,
       "XuatTK": 20021.09,
@@ -2665,7 +2665,7 @@
         "B5.01"
       ],
       "DanhSachTenThanGoc": [
-        "B5.01"
+        "Đá thải"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2683,11 +2683,11 @@
       "MaThan": "11a.1",
       "ma_than": "11a.1",
       "coalCode": "11a.1",
-      "TenThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TenXK": "",
-      "ChungLoai": "11a.1",
-      "LoaiThan": "11a.1",
-      "coal": "11a.1",
+      "ChungLoai": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "LoaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDK": 83251.99,
       "NhapTK": 97901.0,
       "XuatTK": 95251.0,
@@ -2704,7 +2704,7 @@
         "11a.1"
       ],
       "DanhSachTenThanGoc": [
-        "11a.1"
+        "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2722,11 +2722,11 @@
       "MaThan": "b11c",
       "ma_than": "b11c",
       "coalCode": "b11c",
-      "TenThan": "b11c",
+      "TenThan": "Upd: ben1, date: 11/09/2019",
       "TenXK": "",
-      "ChungLoai": "b11c",
-      "LoaiThan": "b11c",
-      "coal": "b11c",
+      "ChungLoai": "Upd: ben1, date: 11/09/2019",
+      "LoaiThan": "Upd: ben1, date: 11/09/2019",
+      "coal": "Upd: ben1, date: 11/09/2019",
       "TonDK": 1209.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -2743,7 +2743,7 @@
         "b11c"
       ],
       "DanhSachTenThanGoc": [
-        "b11c"
+        "Upd: ben1, date: 11/09/2019"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2761,11 +2761,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 6241.77,
       "NhapTK": 20620.26,
       "XuatTK": 26108.0,
@@ -2782,46 +2782,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "72",
-      "ma_kho": "72",
-      "khoCode": "72",
-      "MaKhoTTCO": "72",
-      "RawMaKho": "72",
-      "TenKho": "Kho 2-T4",
-      "Kho": "Kho 2-T4",
-      "kho": "Kho 2-T4",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "B5.01",
-      "ma_than": "B5.01",
-      "coalCode": "B5.01",
-      "TenThan": "B5.01",
-      "TenXK": "",
-      "ChungLoai": "B5.01",
-      "LoaiThan": "B5.01",
-      "coal": "B5.01",
-      "TonDK": 4447.39,
-      "NhapTK": 976.0,
-      "XuatTK": 368.54,
-      "TonCK": 5054.85,
-      "TonCuoiKy": 5054.85,
-      "ton": 5054.85,
-      "Klg_Tan": 5054.85,
-      "KhoiLuong": 5054.85,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "B5.01"
-      ],
-      "DanhSachTenThanGoc": [
-        "B5.01"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2839,11 +2800,11 @@
       "MaThan": "b16.09",
       "ma_than": "b16.09",
       "coalCode": "b16.09",
-      "TenThan": "b16.09",
+      "TenThan": "Upd: 123, date: 09/08/2022",
       "TenXK": "",
-      "ChungLoai": "b16.09",
-      "LoaiThan": "b16.09",
-      "coal": "b16.09",
+      "ChungLoai": "Upd: 123, date: 09/08/2022",
+      "LoaiThan": "Upd: 123, date: 09/08/2022",
+      "coal": "Upd: 123, date: 09/08/2022",
       "TonDK": 5027.1,
       "NhapTK": 850.0,
       "XuatTK": 0.0,
@@ -2860,7 +2821,46 @@
         "b16.09"
       ],
       "DanhSachTenThanGoc": [
-        "b16.09"
+        "Upd: 123, date: 09/08/2022"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "72",
+      "ma_kho": "72",
+      "khoCode": "72",
+      "MaKhoTTCO": "72",
+      "RawMaKho": "72",
+      "TenKho": "Kho 2-T4",
+      "Kho": "Kho 2-T4",
+      "kho": "Kho 2-T4",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "B5.01",
+      "ma_than": "B5.01",
+      "coalCode": "B5.01",
+      "TenThan": "Đá thải",
+      "TenXK": "",
+      "ChungLoai": "Đá thải",
+      "LoaiThan": "Đá thải",
+      "coal": "Đá thải",
+      "TonDK": 4447.39,
+      "NhapTK": 976.0,
+      "XuatTK": 368.54,
+      "TonCK": 5054.85,
+      "TonCuoiKy": 5054.85,
+      "ton": 5054.85,
+      "Klg_Tan": 5054.85,
+      "KhoiLuong": 5054.85,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "B5.01"
+      ],
+      "DanhSachTenThanGoc": [
+        "Đá thải"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2878,11 +2878,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 11629.16,
       "NhapTK": 0.0,
       "XuatTK": 7849.0,
@@ -2899,7 +2899,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2917,11 +2917,11 @@
       "MaThan": "11a.1",
       "ma_than": "11a.1",
       "coalCode": "11a.1",
-      "TenThan": "11a.1",
+      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TenXK": "",
-      "ChungLoai": "11a.1",
-      "LoaiThan": "11a.1",
-      "coal": "11a.1",
+      "ChungLoai": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "LoaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
       "TonDK": 27914.54,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -2938,7 +2938,7 @@
         "11a.1"
       ],
       "DanhSachTenThanGoc": [
-        "11a.1"
+        "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2956,11 +2956,11 @@
       "MaThan": "b32d",
       "ma_than": "b32d",
       "coalCode": "b32d",
-      "TenThan": "b32d",
+      "TenThan": "Upd: tuyen3, date: 17/05/2024",
       "TenXK": "",
-      "ChungLoai": "b32d",
-      "LoaiThan": "b32d",
-      "coal": "b32d",
+      "ChungLoai": "Upd: tuyen3, date: 17/05/2024",
+      "LoaiThan": "Upd: tuyen3, date: 17/05/2024",
+      "coal": "Upd: tuyen3, date: 17/05/2024",
       "TonDK": 360.09,
       "NhapTK": 740.0,
       "XuatTK": 0.0,
@@ -2977,7 +2977,7 @@
         "b32d"
       ],
       "DanhSachTenThanGoc": [
-        "b32d"
+        "Upd: tuyen3, date: 17/05/2024"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -2995,11 +2995,11 @@
       "MaThan": "11b.1",
       "ma_than": "11b.1",
       "coalCode": "11b.1",
-      "TenThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TenXK": "",
-      "ChungLoai": "11b.1",
-      "LoaiThan": "11b.1",
-      "coal": "11b.1",
+      "ChungLoai": "Cám 6b.1 (Ak40,01 - 45%)",
+      "LoaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDK": 707.72,
       "NhapTK": 0.0,
       "XuatTK": 40.0,
@@ -3016,7 +3016,7 @@
         "11b.1"
       ],
       "DanhSachTenThanGoc": [
-        "11b.1"
+        "Cám 6b.1 (Ak40,01 - 45%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3073,11 +3073,11 @@
       "MaThan": "11b.1",
       "ma_than": "11b.1",
       "coalCode": "11b.1",
-      "TenThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TenXK": "",
-      "ChungLoai": "11b.1",
-      "LoaiThan": "11b.1",
-      "coal": "11b.1",
+      "ChungLoai": "Cám 6b.1 (Ak40,01 - 45%)",
+      "LoaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDK": 17959.94,
       "NhapTK": 2912.0,
       "XuatTK": 2009.0,
@@ -3094,7 +3094,7 @@
         "11b.1"
       ],
       "DanhSachTenThanGoc": [
-        "11b.1"
+        "Cám 6b.1 (Ak40,01 - 45%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3112,11 +3112,11 @@
       "MaThan": "11b.1",
       "ma_than": "11b.1",
       "coalCode": "11b.1",
-      "TenThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TenXK": "",
-      "ChungLoai": "11b.1",
-      "LoaiThan": "11b.1",
-      "coal": "11b.1",
+      "ChungLoai": "Cám 6b.1 (Ak40,01 - 45%)",
+      "LoaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDK": 26021.24,
       "NhapTK": 134.0,
       "XuatTK": 6802.0,
@@ -3133,7 +3133,7 @@
         "11b.1"
       ],
       "DanhSachTenThanGoc": [
-        "11b.1"
+        "Cám 6b.1 (Ak40,01 - 45%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3151,11 +3151,11 @@
       "MaThan": "6a.1",
       "ma_than": "6a.1",
       "coalCode": "6a.1",
-      "TenThan": "6a.1",
+      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
       "TenXK": "",
-      "ChungLoai": "6a.1",
-      "LoaiThan": "6a.1",
-      "coal": "6a.1",
+      "ChungLoai": "Cám 1 (Ak 5,00 - 8,00%)",
+      "LoaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
       "TonDK": 43197.29,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -3172,7 +3172,7 @@
         "6a.1"
       ],
       "DanhSachTenThanGoc": [
-        "6a.1"
+        "Cám 1 (Ak 5,00 - 8,00%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3190,11 +3190,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 386629.53,
       "NhapTK": 0.0,
       "XuatTK": 20056.0,
@@ -3211,85 +3211,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K04",
-      "ma_kho": "K04",
-      "khoCode": "K04",
-      "MaKhoTTCO": "K04",
-      "RawMaKho": "K04",
-      "TenKho": "Tuyển 1",
-      "Kho": "Tuyển 1",
-      "kho": "Tuyển 1",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "00",
-      "ma_than": "00",
-      "coalCode": "00",
-      "TenThan": "00",
-      "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
-      "TonDK": 0.0,
-      "NhapTK": 27031.24,
-      "XuatTK": 26212.71,
-      "TonCK": 818.53,
-      "TonCuoiKy": 818.53,
-      "ton": 818.53,
-      "Klg_Tan": 818.53,
-      "KhoiLuong": 818.53,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "00"
-      ],
-      "DanhSachTenThanGoc": [
-        "00"
-      ],
-      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K04",
-      "ma_kho": "K04",
-      "khoCode": "K04",
-      "MaKhoTTCO": "K04",
-      "RawMaKho": "K04",
-      "TenKho": "Tuyển 1",
-      "Kho": "Tuyển 1",
-      "kho": "Tuyển 1",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "B29A",
-      "ma_than": "B29A",
-      "coalCode": "B29A",
-      "TenThan": "B29A",
-      "TenXK": "",
-      "ChungLoai": "B29A",
-      "LoaiThan": "B29A",
-      "coal": "B29A",
-      "TonDK": 20.0,
-      "NhapTK": 5400.0,
-      "XuatTK": 5400.0,
-      "TonCK": 20.0,
-      "TonCuoiKy": 20.0,
-      "ton": 20.0,
-      "Klg_Tan": 20.0,
-      "KhoiLuong": 20.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "B29A"
-      ],
-      "DanhSachTenThanGoc": [
-        "B29A"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3307,11 +3229,11 @@
       "MaThan": "NHK.298",
       "ma_than": "NHK.298",
       "coalCode": "NHK.298",
-      "TenThan": "NHK.298",
+      "TenThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TenXK": "",
-      "ChungLoai": "NHK.298",
-      "LoaiThan": "NHK.298",
-      "coal": "NHK.298",
+      "ChungLoai": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "LoaiThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "coal": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TonDK": 0.0,
       "NhapTK": 1343.91,
       "XuatTK": 929.93,
@@ -3328,7 +3250,85 @@
         "NHK.298"
       ],
       "DanhSachTenThanGoc": [
-        "NHK.298"
+        "Than NK (Úc - Tầu MV GENERA QUEEN)"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K04",
+      "ma_kho": "K04",
+      "khoCode": "K04",
+      "MaKhoTTCO": "K04",
+      "RawMaKho": "K04",
+      "TenKho": "Tuyển 1",
+      "Kho": "Tuyển 1",
+      "kho": "Tuyển 1",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "00",
+      "ma_than": "00",
+      "coalCode": "00",
+      "TenThan": "Than nguyên khai",
+      "TenXK": "",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
+      "TonDK": 0.0,
+      "NhapTK": 27031.24,
+      "XuatTK": 26212.71,
+      "TonCK": 818.53,
+      "TonCuoiKy": 818.53,
+      "ton": 818.53,
+      "Klg_Tan": 818.53,
+      "KhoiLuong": 818.53,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K04",
+      "ma_kho": "K04",
+      "khoCode": "K04",
+      "MaKhoTTCO": "K04",
+      "RawMaKho": "K04",
+      "TenKho": "Tuyển 1",
+      "Kho": "Tuyển 1",
+      "kho": "Tuyển 1",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "B29A",
+      "ma_than": "B29A",
+      "coalCode": "B29A",
+      "TenThan": "Upd: tuyen3, date: 15/04/2018",
+      "TenXK": "",
+      "ChungLoai": "Upd: tuyen3, date: 15/04/2018",
+      "LoaiThan": "Upd: tuyen3, date: 15/04/2018",
+      "coal": "Upd: tuyen3, date: 15/04/2018",
+      "TonDK": 20.0,
+      "NhapTK": 5400.0,
+      "XuatTK": 5400.0,
+      "TonCK": 20.0,
+      "TonCuoiKy": 20.0,
+      "ton": 20.0,
+      "Klg_Tan": 20.0,
+      "KhoiLuong": 20.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "B29A"
+      ],
+      "DanhSachTenThanGoc": [
+        "Upd: tuyen3, date: 15/04/2018"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3346,11 +3346,11 @@
       "MaThan": "00",
       "ma_than": "00",
       "coalCode": "00",
-      "TenThan": "00",
+      "TenThan": "Than nguyên khai",
       "TenXK": "",
-      "ChungLoai": "00",
-      "LoaiThan": "00",
-      "coal": "00",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
       "TonDK": 0.0,
       "NhapTK": 46252.29,
       "XuatTK": 46152.29,
@@ -3367,7 +3367,7 @@
         "00"
       ],
       "DanhSachTenThanGoc": [
-        "00"
+        "Than nguyên khai"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3385,11 +3385,11 @@
       "MaThan": "11b.1",
       "ma_than": "11b.1",
       "coalCode": "11b.1",
-      "TenThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TenXK": "",
-      "ChungLoai": "11b.1",
-      "LoaiThan": "11b.1",
-      "coal": "11b.1",
+      "ChungLoai": "Cám 6b.1 (Ak40,01 - 45%)",
+      "LoaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDK": 1079.14,
       "NhapTK": 103.62,
       "XuatTK": 0.0,
@@ -3406,7 +3406,7 @@
         "11b.1"
       ],
       "DanhSachTenThanGoc": [
-        "11b.1"
+        "Cám 6b.1 (Ak40,01 - 45%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     },
@@ -3424,11 +3424,11 @@
       "MaThan": "11b.1",
       "ma_than": "11b.1",
       "coalCode": "11b.1",
-      "TenThan": "11b.1",
+      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
       "TenXK": "",
-      "ChungLoai": "11b.1",
-      "LoaiThan": "11b.1",
-      "coal": "11b.1",
+      "ChungLoai": "Cám 6b.1 (Ak40,01 - 45%)",
+      "LoaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
       "TonDK": 1746.0,
       "NhapTK": 62914.0,
       "XuatTK": 62527.0,
@@ -3445,7 +3445,7 @@
         "11b.1"
       ],
       "DanhSachTenThanGoc": [
-        "11b.1"
+        "Cám 6b.1 (Ak40,01 - 45%)"
       ],
       "SourceFix": "G3_SOURCE_dbo.G3_BC05A_2_613181"
     }
