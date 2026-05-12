@@ -1,19 +1,19 @@
 {
   "ok": true,
   "meta": {
-    "source": "V12_STABLE_RULES_RESTORE_KHO26_GROUP_SHIP_CUT_AK",
+    "source": "V13_FORCE_KHO26_AND_STRICT_GROUP_KHO9_10",
     "database": "TTCO_THONGKE",
     "sourceTable": "G3_BC05A_2_613181",
     "masterDatabase": "TTCO_QTHT",
     "version": "direct-db-v26-group-coal-country-ship",
-    "updatedAt": "2026-05-12 08:00:10",
+    "updatedAt": "2026-05-12 08:03:46",
     "NamHT": "2026",
     "ThangHT": "5",
     "rowCount": 79,
     "totalTon": 1683337.47,
     "kho1Total": 1052.65,
     "formula": "Kho9/Kho10/Kho26 restored from last good JSON; other kho from G3_BC05A_2; Kho39 fixed TonDK+NhapTK-XuatTK; Ak suffix removed; ship names grouped for specified coal bases.",
-    "note": "V12 fixes Kho 26 missing, restores Kho 9/Kho10 from last known-good JSON, groups Cam 6a.14/6a.10 and Cam 5a.14/5a.10 ship rows, and cuts Ak suffix.",
+    "note": "V13 forces Kho 26 fallback if missing, restores Kho 9/Kho10 from last known-good JSON, strictly groups Cam 6a.14/6a.10 and Cam 5a.14/5a.10 ship rows, and cuts Ak suffix.",
     "kho39Fix": "V167: XuatTK uses MaKho_X only, no MaDV filter"
   },
   "data": [
@@ -54,7 +54,7 @@
       "DanhSachTenThanGoc": [
         "Cục xô 1C"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "02",
@@ -93,7 +93,7 @@
       "DanhSachTenThanGoc": [
         "Cục 5a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "03",
@@ -132,7 +132,46 @@
       "DanhSachTenThanGoc": [
         "Cục 4a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K04",
+      "ma_kho": "K04",
+      "khoCode": "K04",
+      "MaKhoTTCO": "K04",
+      "RawMaKho": "K04",
+      "TenKho": "Kho K04",
+      "Kho": "Kho K04",
+      "kho": "Kho K04",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "B29A",
+      "ma_than": "B29A",
+      "coalCode": "B29A",
+      "TenThan": "Cám đá",
+      "TenXK": "",
+      "ChungLoai": "Cám đá",
+      "LoaiThan": "Cám đá",
+      "coal": "Cám đá",
+      "TonDK": 20.0,
+      "NhapTK": 5400.0,
+      "XuatTK": 5400.0,
+      "TonCK": 20.0,
+      "TonCuoiKy": 20.0,
+      "ton": 20.0,
+      "Klg_Tan": 20.0,
+      "KhoiLuong": 20.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "B29A"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám đá"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "04",
@@ -171,7 +210,85 @@
       "DanhSachTenThanGoc": [
         "Cục 4a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K04",
+      "ma_kho": "K04",
+      "khoCode": "K04",
+      "MaKhoTTCO": "K04",
+      "RawMaKho": "K04",
+      "TenKho": "Kho K04",
+      "Kho": "Kho K04",
+      "kho": "Kho K04",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "NHK.298",
+      "ma_than": "NHK.298",
+      "coalCode": "NHK.298",
+      "TenThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "TenXK": "",
+      "ChungLoai": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "LoaiThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "coal": "Than NK (Úc - Tầu MV GENERA QUEEN)",
+      "TonDK": 0.0,
+      "NhapTK": 1343.91,
+      "XuatTK": 929.93,
+      "TonCK": 413.98,
+      "TonCuoiKy": 413.98,
+      "ton": 413.98,
+      "Klg_Tan": 413.98,
+      "KhoiLuong": 413.98,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "NHK.298"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than NK (Úc - Tầu MV GENERA QUEEN)"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K04",
+      "ma_kho": "K04",
+      "khoCode": "K04",
+      "MaKhoTTCO": "K04",
+      "RawMaKho": "K04",
+      "TenKho": "Kho K04",
+      "Kho": "Kho K04",
+      "kho": "Kho K04",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "00",
+      "ma_than": "00",
+      "coalCode": "00",
+      "TenThan": "Than nguyên khai",
+      "TenXK": "",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
+      "TonDK": 0.0,
+      "NhapTK": 27031.24,
+      "XuatTK": 26212.71,
+      "TonCK": 818.53,
+      "TonCuoiKy": 818.53,
+      "ton": 818.53,
+      "Klg_Tan": 818.53,
+      "KhoiLuong": 818.53,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "05",
@@ -210,7 +327,7 @@
       "DanhSachTenThanGoc": [
         "Cục 4a.2"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "06",
@@ -249,7 +366,46 @@
       "DanhSachTenThanGoc": [
         "Cục xô 1C"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K06",
+      "ma_kho": "K06",
+      "khoCode": "K06",
+      "MaKhoTTCO": "K06",
+      "RawMaKho": "K06",
+      "TenKho": "Kho K06",
+      "Kho": "Kho K06",
+      "kho": "Kho K06",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "00",
+      "ma_than": "00",
+      "coalCode": "00",
+      "TenThan": "Than nguyên khai",
+      "TenXK": "",
+      "ChungLoai": "Than nguyên khai",
+      "LoaiThan": "Than nguyên khai",
+      "coal": "Than nguyên khai",
+      "TonDK": 0.0,
+      "NhapTK": 46252.29,
+      "XuatTK": 46152.29,
+      "TonCK": 100.0,
+      "TonCuoiKy": 100.0,
+      "ton": 100.0,
+      "Klg_Tan": 100.0,
+      "KhoiLuong": 100.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "00"
+      ],
+      "DanhSachTenThanGoc": [
+        "Than nguyên khai"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "07",
@@ -288,7 +444,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "08",
@@ -327,7 +483,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -366,7 +522,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -405,7 +561,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.10 (Lào - Tàu Golden Star)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -444,7 +600,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -483,7 +639,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.10 (Lào - Tàu VTA Poseidon)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -522,7 +678,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -561,7 +717,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -600,7 +756,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -639,7 +795,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -678,7 +834,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -717,7 +873,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Úc - Tàu MV Bardonnex)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -756,7 +912,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Úc - Tàu MV Golden Future)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -795,7 +951,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14 (Úc - Tàu MV W - Star)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -834,7 +990,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.14(Mozambique - Tầu MV Gleamstar)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "09",
@@ -873,7 +1029,67 @@
       "DanhSachTenThanGoc": [
         "Cám 6b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6a.10",
+      "ton": 4191.0,
+      "TenThan": "Cám 6a.10",
+      "ChungLoai": "Cám 6a.10",
+      "LoaiThan": "Cám 6a.10",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCuoiKy": 0.0,
+      "Klg_Tan": 0.0,
+      "KhoiLuong": 0.0,
+      "DanhSachMaThanGoc": [],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.10"
+      ],
+      "SourceFix": "V13_RESTORED_KHO_9_FROM_LAST_GOOD_JSON"
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6a.14",
+      "ton": 19970.26,
+      "TenThan": "Cám 6a.14",
+      "ChungLoai": "Cám 6a.14",
+      "LoaiThan": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCuoiKy": 0.0,
+      "Klg_Tan": 0.0,
+      "KhoiLuong": 0.0,
+      "DanhSachMaThanGoc": [],
+      "DanhSachTenThanGoc": [
+        "Cám 6a.14"
+      ],
+      "SourceFix": "V13_RESTORED_KHO_9_FROM_LAST_GOOD_JSON"
+    },
+    {
+      "kho": "Kho 9",
+      "coal": "Cám 6b.1",
+      "ton": 418.0,
+      "TenThan": "Cám 6b.1",
+      "ChungLoai": "Cám 6b.1",
+      "LoaiThan": "Cám 6b.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCuoiKy": 0.0,
+      "Klg_Tan": 0.0,
+      "KhoiLuong": 0.0,
+      "DanhSachMaThanGoc": [],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1"
+      ],
+      "SourceFix": "V13_RESTORED_KHO_9_FROM_LAST_GOOD_JSON"
     },
     {
       "MaKho": "10",
@@ -889,19 +1105,19 @@
       "MaThan": "10a.1",
       "ma_than": "10a.1",
       "coalCode": "10a.1",
-      "TenThan": "Cám 5a.1",
+      "TenThan": "Cám 5a.14",
       "TenXK": "Cám 5a.1",
-      "ChungLoai": "Cám 5a.1",
-      "LoaiThan": "Cám 5a.1",
-      "coal": "Cám 5a.1",
-      "TonDK": 12796.21,
+      "ChungLoai": "Cám 5a.14",
+      "LoaiThan": "Cám 5a.14",
+      "coal": "Cám 5a.14",
+      "TonDK": 13087.21,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 12796.21,
-      "TonCuoiKy": 12796.21,
-      "ton": 12796.21,
-      "Klg_Tan": 12796.21,
-      "KhoiLuong": 12796.21,
+      "TonCK": 13087.21,
+      "TonCuoiKy": 13087.21,
+      "ton": 13087.21,
+      "Klg_Tan": 13087.21,
+      "KhoiLuong": 13087.21,
       "NamHT": "2026",
       "ThangHT": "5",
       "IsNhomTongHop": false,
@@ -910,48 +1126,9 @@
         "10a.1"
       ],
       "DanhSachTenThanGoc": [
-        "Cám 5a.1"
-      ],
-      "SourceFix": "V12_RESTORED_KHO_10_FROM_LAST_GOOD_JSON"
-    },
-    {
-      "MaKho": "10",
-      "ma_kho": "10",
-      "khoCode": "10",
-      "MaKhoTTCO": "10",
-      "RawMaKho": "10",
-      "TenKho": "Kho 10",
-      "Kho": "Kho 10",
-      "kho": "Kho 10",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "10a.101",
-      "ma_than": "10a.101",
-      "coalCode": "10a.101",
-      "TenThan": "Cám 5a.14",
-      "TenXK": "Cám 5a.14",
-      "ChungLoai": "Cám 5a.14",
-      "LoaiThan": "Cám 5a.14",
-      "coal": "Cám 5a.14",
-      "TonDK": 291.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 291.0,
-      "TonCuoiKy": 291.0,
-      "ton": 291.0,
-      "Klg_Tan": 291.0,
-      "KhoiLuong": 291.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "10a.101"
-      ],
-      "DanhSachTenThanGoc": [
         "Cám 5a.14"
       ],
-      "SourceFix": "V12_RESTORED_KHO_10_FROM_LAST_GOOD_JSON"
+      "SourceFix": "V13_RESTORED_KHO_10_FROM_LAST_GOOD_JSON"
     },
     {
       "MaKho": "11",
@@ -990,7 +1167,7 @@
       "DanhSachTenThanGoc": [
         "Cám 4a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "12",
@@ -1029,7 +1206,7 @@
       "DanhSachTenThanGoc": [
         "Cám 3b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "13",
@@ -1068,7 +1245,7 @@
       "DanhSachTenThanGoc": [
         "Cám 3a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "15",
@@ -1107,7 +1284,7 @@
       "DanhSachTenThanGoc": [
         "Cục 5a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "16",
@@ -1146,7 +1323,7 @@
       "DanhSachTenThanGoc": [
         "Cục 5a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "17",
@@ -1185,7 +1362,7 @@
       "DanhSachTenThanGoc": [
         "Cám 1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "17",
@@ -1224,7 +1401,7 @@
       "DanhSachTenThanGoc": [
         "Cám 2a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "18",
@@ -1263,7 +1440,7 @@
       "DanhSachTenThanGoc": [
         "Cám 3b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "19",
@@ -1302,7 +1479,7 @@
       "DanhSachTenThanGoc": [
         "Cám 3b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "20",
@@ -1341,7 +1518,7 @@
       "DanhSachTenThanGoc": [
         "Cám 4a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "20",
@@ -1380,7 +1557,7 @@
       "DanhSachTenThanGoc": [
         "Cám 4b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "21",
@@ -1419,7 +1596,7 @@
       "DanhSachTenThanGoc": [
         "Cám 5a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "21",
@@ -1458,7 +1635,7 @@
       "DanhSachTenThanGoc": [
         "Cám 5b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "21",
@@ -1497,7 +1674,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "23",
@@ -1536,7 +1713,7 @@
       "DanhSachTenThanGoc": [
         "Cám 3b.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "24",
@@ -1575,7 +1752,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "25",
@@ -1614,7 +1791,7 @@
       "DanhSachTenThanGoc": [
         "Cám 1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "26",
@@ -1653,7 +1830,7 @@
       "DanhSachTenThanGoc": [
         "Cám 1"
       ],
-      "SourceFix": "V12_RESTORED_KHO_26_FROM_LAST_GOOD_JSON"
+      "SourceFix": "V13_RESTORED_KHO_26_FROM_LAST_GOOD_JSON"
     },
     {
       "MaKho": "27",
@@ -1692,7 +1869,7 @@
       "DanhSachTenThanGoc": [
         "Cám 1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "29",
@@ -1731,7 +1908,202 @@
       "DanhSachTenThanGoc": [
         "Bùn tuyển 3A"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "30B",
+      "ma_kho": "30B",
+      "khoCode": "30B",
+      "MaKhoTTCO": "30B",
+      "RawMaKho": "30B",
+      "TenKho": "Kho 30B",
+      "Kho": "Kho 30B",
+      "kho": "Kho 30B",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "b32d",
+      "ma_than": "b32d",
+      "coalCode": "b32d",
+      "TenThan": "Bùn tuyển 3A",
+      "TenXK": "",
+      "ChungLoai": "Bùn tuyển 3A",
+      "LoaiThan": "Bùn tuyển 3A",
+      "coal": "Bùn tuyển 3A",
+      "TonDK": 360.09,
+      "NhapTK": 740.0,
+      "XuatTK": 0.0,
+      "TonCK": 1100.09,
+      "TonCuoiKy": 1100.09,
+      "ton": 1100.09,
+      "Klg_Tan": 1100.09,
+      "KhoiLuong": 1100.09,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "b32d"
+      ],
+      "DanhSachTenThanGoc": [
+        "Bùn tuyển 3A"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "30b",
+      "ma_kho": "30b",
+      "khoCode": "30b",
+      "MaKhoTTCO": "30b",
+      "RawMaKho": "30b",
+      "TenKho": "Kho 30b",
+      "Kho": "Kho 30b",
+      "kho": "Kho 30b",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11b.1",
+      "ma_than": "11b.1",
+      "coalCode": "11b.1",
+      "TenThan": "Cám 6b.1",
+      "TenXK": "",
+      "ChungLoai": "Cám 6b.1",
+      "LoaiThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
+      "TonDK": 707.72,
+      "NhapTK": 0.0,
+      "XuatTK": 40.0,
+      "TonCK": 667.72,
+      "TonCuoiKy": 667.72,
+      "ton": 667.72,
+      "Klg_Tan": 667.72,
+      "KhoiLuong": 667.72,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "31c",
+      "ma_kho": "31c",
+      "khoCode": "31c",
+      "MaKhoTTCO": "31c",
+      "RawMaKho": "31c",
+      "TenKho": "Kho 31c",
+      "Kho": "Kho 31c",
+      "kho": "Kho 31c",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11b.1",
+      "ma_than": "11b.1",
+      "coalCode": "11b.1",
+      "TenThan": "Cám 6b.1",
+      "TenXK": "",
+      "ChungLoai": "Cám 6b.1",
+      "LoaiThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
+      "TonDK": 43981.18,
+      "NhapTK": 3046.0,
+      "XuatTK": 8811.0,
+      "TonCK": 38216.18,
+      "TonCuoiKy": 38216.18,
+      "ton": 38216.18,
+      "Klg_Tan": 38216.18,
+      "KhoiLuong": 38216.18,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "31B",
+      "ma_kho": "31B",
+      "khoCode": "31B",
+      "MaKhoTTCO": "31B",
+      "RawMaKho": "31B",
+      "TenKho": "Kho 31B",
+      "Kho": "Kho 31B",
+      "kho": "Kho 31B",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "B2796",
+      "ma_than": "B2796",
+      "coalCode": "B2796",
+      "TenThan": "Cám 8C",
+      "TenXK": "",
+      "ChungLoai": "Cám 8C",
+      "LoaiThan": "Cám 8C",
+      "coal": "Cám 8C",
+      "TonDK": 40.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 40.0,
+      "TonCuoiKy": 40.0,
+      "ton": 40.0,
+      "Klg_Tan": 40.0,
+      "KhoiLuong": 40.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "B2796"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 8C"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "34A",
+      "ma_kho": "34A",
+      "khoCode": "34A",
+      "MaKhoTTCO": "34A",
+      "RawMaKho": "34A",
+      "TenKho": "Kho 34A",
+      "Kho": "Kho 34A",
+      "kho": "Kho 34A",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "6a.1",
+      "ma_than": "6a.1",
+      "coalCode": "6a.1",
+      "TenThan": "Cám 1",
+      "TenXK": "",
+      "ChungLoai": "Cám 1",
+      "LoaiThan": "Cám 1",
+      "coal": "Cám 1",
+      "TonDK": 43197.29,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 43197.29,
+      "TonCuoiKy": 43197.29,
+      "ton": 43197.29,
+      "Klg_Tan": 43197.29,
+      "KhoiLuong": 43197.29,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "6a.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 1"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "36",
@@ -1770,7 +2142,7 @@
       "DanhSachTenThanGoc": [
         "Bùn tuyển 3A"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "39",
@@ -1809,7 +2181,7 @@
       "DanhSachTenThanGoc": [
         "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
       ],
-      "SourceFix": "V12_KHO39_FIXED_TONDK_NHAP_XUAT"
+      "SourceFix": "V13_KHO39_FIXED_TONDK_NHAP_XUAT"
     },
     {
       "MaKho": "39",
@@ -1848,7 +2220,7 @@
       "DanhSachTenThanGoc": [
         "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
       ],
-      "SourceFix": "V12_KHO39_FIXED_TONDK_NHAP_XUAT"
+      "SourceFix": "V13_KHO39_FIXED_TONDK_NHAP_XUAT"
     },
     {
       "MaKho": "39",
@@ -1887,7 +2259,7 @@
       "DanhSachTenThanGoc": [
         "Than NK (Úc - Tầu MV BARDONNEX)"
       ],
-      "SourceFix": "V12_KHO39_FIXED_TONDK_NHAP_XUAT"
+      "SourceFix": "V13_KHO39_FIXED_TONDK_NHAP_XUAT"
     },
     {
       "MaKho": "39",
@@ -1926,7 +2298,7 @@
       "DanhSachTenThanGoc": [
         "Than NK (Úc - Tầu MV GENERA QUEEN)"
       ],
-      "SourceFix": "V12_KHO39_FIXED_TONDK_NHAP_XUAT"
+      "SourceFix": "V13_KHO39_FIXED_TONDK_NHAP_XUAT"
     },
     {
       "MaKho": "43",
@@ -1965,7 +2337,7 @@
       "DanhSachTenThanGoc": [
         "Cám đá"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "43",
@@ -2004,7 +2376,7 @@
       "DanhSachTenThanGoc": [
         "Than nguyên khai"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "44",
@@ -2043,7 +2415,7 @@
       "DanhSachTenThanGoc": [
         "Bùn tuyển 3A"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "44",
@@ -2082,7 +2454,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6A.1 (sấy)"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "44",
@@ -2121,7 +2493,7 @@
       "DanhSachTenThanGoc": [
         "Cám đá"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "44",
@@ -2160,7 +2532,7 @@
       "DanhSachTenThanGoc": [
         "Than nguyên khai"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "45",
@@ -2199,17 +2571,17 @@
       "DanhSachTenThanGoc": [
         "Cám đá"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
-      "MaKho": "46",
-      "ma_kho": "46",
-      "khoCode": "46",
-      "MaKhoTTCO": "46",
-      "RawMaKho": "46",
-      "TenKho": "Kho than bùn số 4",
-      "Kho": "Kho than bùn số 4",
-      "kho": "Kho than bùn số 4",
+      "MaKho": "46a",
+      "ma_kho": "46a",
+      "khoCode": "46a",
+      "MaKhoTTCO": "46a",
+      "RawMaKho": "46a",
+      "TenKho": "Kho 46a",
+      "Kho": "Kho 46a",
+      "kho": "Kho 46a",
       "DonViQuanLy": "",
       "MaDV": "",
       "MaThan": "00",
@@ -2220,14 +2592,14 @@
       "ChungLoai": "Than nguyên khai",
       "LoaiThan": "Than nguyên khai",
       "coal": "Than nguyên khai",
-      "TonDK": 225926.39,
+      "TonDK": 612555.92,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 225926.39,
-      "TonCuoiKy": 225926.39,
-      "ton": 225926.39,
-      "Klg_Tan": 225926.39,
-      "KhoiLuong": 225926.39,
+      "XuatTK": 20056.0,
+      "TonCK": 592499.92,
+      "TonCuoiKy": 592499.92,
+      "ton": 592499.92,
+      "Klg_Tan": 592499.92,
+      "KhoiLuong": 592499.92,
       "NamHT": "2026",
       "ThangHT": "5",
       "IsNhomTongHop": false,
@@ -2238,7 +2610,7 @@
       "DanhSachTenThanGoc": [
         "Than nguyên khai"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "47",
@@ -2277,7 +2649,85 @@
       "DanhSachTenThanGoc": [
         "Than nguyên khai"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "k59",
+      "ma_kho": "k59",
+      "khoCode": "k59",
+      "MaKhoTTCO": "k59",
+      "RawMaKho": "k59",
+      "TenKho": "Kho k59",
+      "Kho": "Kho k59",
+      "kho": "Kho k59",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11b.1",
+      "ma_than": "11b.1",
+      "coalCode": "11b.1",
+      "TenThan": "Cám 6b.1",
+      "TenXK": "",
+      "ChungLoai": "Cám 6b.1",
+      "LoaiThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
+      "TonDK": 1746.0,
+      "NhapTK": 62914.0,
+      "XuatTK": 62527.0,
+      "TonCK": 2133.0,
+      "TonCuoiKy": 2133.0,
+      "ton": 2133.0,
+      "Klg_Tan": 2133.0,
+      "KhoiLuong": 2133.0,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+    },
+    {
+      "MaKho": "K60",
+      "ma_kho": "K60",
+      "khoCode": "K60",
+      "MaKhoTTCO": "K60",
+      "RawMaKho": "K60",
+      "TenKho": "Kho K60",
+      "Kho": "Kho K60",
+      "kho": "Kho K60",
+      "DonViQuanLy": "",
+      "MaDV": "",
+      "MaThan": "11b.1",
+      "ma_than": "11b.1",
+      "coalCode": "11b.1",
+      "TenThan": "Cám 6b.1",
+      "TenXK": "",
+      "ChungLoai": "Cám 6b.1",
+      "LoaiThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
+      "TonDK": 1079.14,
+      "NhapTK": 103.62,
+      "XuatTK": 0.0,
+      "TonCK": 1182.76,
+      "TonCuoiKy": 1182.76,
+      "ton": 1182.76,
+      "Klg_Tan": 1182.76,
+      "KhoiLuong": 1182.76,
+      "NamHT": "2026",
+      "ThangHT": "5",
+      "IsNhomTongHop": false,
+      "NhomTongHopLoai": "",
+      "DanhSachMaThanGoc": [
+        "11b.1"
+      ],
+      "DanhSachTenThanGoc": [
+        "Cám 6b.1"
+      ],
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "60",
@@ -2316,7 +2766,7 @@
       "DanhSachTenThanGoc": [
         "Đá thải"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "71",
@@ -2355,7 +2805,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "71",
@@ -2394,7 +2844,7 @@
       "DanhSachTenThanGoc": [
         "Cục xô 1C"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "72",
@@ -2433,7 +2883,7 @@
       "DanhSachTenThanGoc": [
         "Cục don 8C"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "72",
@@ -2472,7 +2922,7 @@
       "DanhSachTenThanGoc": [
         "Than nguyên khai"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "72",
@@ -2511,7 +2961,7 @@
       "DanhSachTenThanGoc": [
         "Đá thải"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "73",
@@ -2550,7 +3000,7 @@
       "DanhSachTenThanGoc": [
         "Than nguyên khai"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     },
     {
       "MaKho": "74",
@@ -2589,514 +3039,7 @@
       "DanhSachTenThanGoc": [
         "Cám 6a.1"
       ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "30B",
-      "ma_kho": "30B",
-      "khoCode": "30B",
-      "MaKhoTTCO": "30B",
-      "RawMaKho": "30B",
-      "TenKho": "Kho 27",
-      "Kho": "Kho 27",
-      "kho": "Kho 27",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "b32d",
-      "ma_than": "b32d",
-      "coalCode": "b32d",
-      "TenThan": "Bùn tuyển 3A",
-      "TenXK": "",
-      "ChungLoai": "Bùn tuyển 3A",
-      "LoaiThan": "Bùn tuyển 3A",
-      "coal": "Bùn tuyển 3A",
-      "TonDK": 360.09,
-      "NhapTK": 740.0,
-      "XuatTK": 0.0,
-      "TonCK": 1100.09,
-      "TonCuoiKy": 1100.09,
-      "ton": 1100.09,
-      "Klg_Tan": 1100.09,
-      "KhoiLuong": 1100.09,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "b32d"
-      ],
-      "DanhSachTenThanGoc": [
-        "Bùn tuyển 3A"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "30b",
-      "ma_kho": "30b",
-      "khoCode": "30b",
-      "MaKhoTTCO": "30b",
-      "RawMaKho": "30b",
-      "TenKho": "Kho 27",
-      "Kho": "Kho 27",
-      "kho": "Kho 27",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11b.1",
-      "ma_than": "11b.1",
-      "coalCode": "11b.1",
-      "TenThan": "Cám 6b.1",
-      "TenXK": "",
-      "ChungLoai": "Cám 6b.1",
-      "LoaiThan": "Cám 6b.1",
-      "coal": "Cám 6b.1",
-      "TonDK": 707.72,
-      "NhapTK": 0.0,
-      "XuatTK": 40.0,
-      "TonCK": 667.72,
-      "TonCuoiKy": 667.72,
-      "ton": 667.72,
-      "Klg_Tan": 667.72,
-      "KhoiLuong": 667.72,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11b.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 6b.1"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "31B",
-      "ma_kho": "31B",
-      "khoCode": "31B",
-      "MaKhoTTCO": "31B",
-      "RawMaKho": "31B",
-      "TenKho": "Nhà máy sấy",
-      "Kho": "Nhà máy sấy",
-      "kho": "Nhà máy sấy",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "B2796",
-      "ma_than": "B2796",
-      "coalCode": "B2796",
-      "TenThan": "Cám 8C",
-      "TenXK": "",
-      "ChungLoai": "Cám 8C",
-      "LoaiThan": "Cám 8C",
-      "coal": "Cám 8C",
-      "TonDK": 40.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 40.0,
-      "TonCuoiKy": 40.0,
-      "ton": 40.0,
-      "Klg_Tan": 40.0,
-      "KhoiLuong": 40.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "B2796"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 8C"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "31D",
-      "ma_kho": "31D",
-      "khoCode": "31D",
-      "MaKhoTTCO": "31D",
-      "RawMaKho": "31D",
-      "TenKho": "Kho 28-1",
-      "Kho": "Kho 28-1",
-      "kho": "Kho 28-1",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11b.1",
-      "ma_than": "11b.1",
-      "coalCode": "11b.1",
-      "TenThan": "Cám 6b.1",
-      "TenXK": "",
-      "ChungLoai": "Cám 6b.1",
-      "LoaiThan": "Cám 6b.1",
-      "coal": "Cám 6b.1",
-      "TonDK": 17959.94,
-      "NhapTK": 2912.0,
-      "XuatTK": 2009.0,
-      "TonCK": 18862.94,
-      "TonCuoiKy": 18862.94,
-      "ton": 18862.94,
-      "Klg_Tan": 18862.94,
-      "KhoiLuong": 18862.94,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11b.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 6b.1"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "31c",
-      "ma_kho": "31c",
-      "khoCode": "31c",
-      "MaKhoTTCO": "31c",
-      "RawMaKho": "31c",
-      "TenKho": "Kho 28",
-      "Kho": "Kho 28",
-      "kho": "Kho 28",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11b.1",
-      "ma_than": "11b.1",
-      "coalCode": "11b.1",
-      "TenThan": "Cám 6b.1",
-      "TenXK": "",
-      "ChungLoai": "Cám 6b.1",
-      "LoaiThan": "Cám 6b.1",
-      "coal": "Cám 6b.1",
-      "TonDK": 26021.24,
-      "NhapTK": 134.0,
-      "XuatTK": 6802.0,
-      "TonCK": 19353.24,
-      "TonCuoiKy": 19353.24,
-      "ton": 19353.24,
-      "Klg_Tan": 19353.24,
-      "KhoiLuong": 19353.24,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11b.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 6b.1"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "34A",
-      "ma_kho": "34A",
-      "khoCode": "34A",
-      "MaKhoTTCO": "34A",
-      "RawMaKho": "34A",
-      "TenKho": "Kho 34",
-      "Kho": "Kho 34",
-      "kho": "Kho 34",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "6a.1",
-      "ma_than": "6a.1",
-      "coalCode": "6a.1",
-      "TenThan": "Cám 1",
-      "TenXK": "",
-      "ChungLoai": "Cám 1",
-      "LoaiThan": "Cám 1",
-      "coal": "Cám 1",
-      "TonDK": 43197.29,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 43197.29,
-      "TonCuoiKy": 43197.29,
-      "ton": 43197.29,
-      "Klg_Tan": 43197.29,
-      "KhoiLuong": 43197.29,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "6a.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 1"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "46a",
-      "ma_kho": "46a",
-      "khoCode": "46a",
-      "MaKhoTTCO": "46a",
-      "RawMaKho": "46a",
-      "TenKho": "Kho 38",
-      "Kho": "Kho 38",
-      "kho": "Kho 38",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "00",
-      "ma_than": "00",
-      "coalCode": "00",
-      "TenThan": "Than nguyên khai",
-      "TenXK": "",
-      "ChungLoai": "Than nguyên khai",
-      "LoaiThan": "Than nguyên khai",
-      "coal": "Than nguyên khai",
-      "TonDK": 386629.53,
-      "NhapTK": 0.0,
-      "XuatTK": 20056.0,
-      "TonCK": 366573.53,
-      "TonCuoiKy": 366573.53,
-      "ton": 366573.53,
-      "Klg_Tan": 366573.53,
-      "KhoiLuong": 366573.53,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "00"
-      ],
-      "DanhSachTenThanGoc": [
-        "Than nguyên khai"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K04",
-      "ma_kho": "K04",
-      "khoCode": "K04",
-      "MaKhoTTCO": "K04",
-      "RawMaKho": "K04",
-      "TenKho": "Tuyển 1",
-      "Kho": "Tuyển 1",
-      "kho": "Tuyển 1",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "B29A",
-      "ma_than": "B29A",
-      "coalCode": "B29A",
-      "TenThan": "Cám đá",
-      "TenXK": "",
-      "ChungLoai": "Cám đá",
-      "LoaiThan": "Cám đá",
-      "coal": "Cám đá",
-      "TonDK": 20.0,
-      "NhapTK": 5400.0,
-      "XuatTK": 5400.0,
-      "TonCK": 20.0,
-      "TonCuoiKy": 20.0,
-      "ton": 20.0,
-      "Klg_Tan": 20.0,
-      "KhoiLuong": 20.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "B29A"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám đá"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K04",
-      "ma_kho": "K04",
-      "khoCode": "K04",
-      "MaKhoTTCO": "K04",
-      "RawMaKho": "K04",
-      "TenKho": "Tuyển 1",
-      "Kho": "Tuyển 1",
-      "kho": "Tuyển 1",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "NHK.298",
-      "ma_than": "NHK.298",
-      "coalCode": "NHK.298",
-      "TenThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
-      "TenXK": "",
-      "ChungLoai": "Than NK (Úc - Tầu MV GENERA QUEEN)",
-      "LoaiThan": "Than NK (Úc - Tầu MV GENERA QUEEN)",
-      "coal": "Than NK (Úc - Tầu MV GENERA QUEEN)",
-      "TonDK": 0.0,
-      "NhapTK": 1343.91,
-      "XuatTK": 929.93,
-      "TonCK": 413.98,
-      "TonCuoiKy": 413.98,
-      "ton": 413.98,
-      "Klg_Tan": 413.98,
-      "KhoiLuong": 413.98,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "NHK.298"
-      ],
-      "DanhSachTenThanGoc": [
-        "Than NK (Úc - Tầu MV GENERA QUEEN)"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K04",
-      "ma_kho": "K04",
-      "khoCode": "K04",
-      "MaKhoTTCO": "K04",
-      "RawMaKho": "K04",
-      "TenKho": "Tuyển 1",
-      "Kho": "Tuyển 1",
-      "kho": "Tuyển 1",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "00",
-      "ma_than": "00",
-      "coalCode": "00",
-      "TenThan": "Than nguyên khai",
-      "TenXK": "",
-      "ChungLoai": "Than nguyên khai",
-      "LoaiThan": "Than nguyên khai",
-      "coal": "Than nguyên khai",
-      "TonDK": 0.0,
-      "NhapTK": 27031.24,
-      "XuatTK": 26212.71,
-      "TonCK": 818.53,
-      "TonCuoiKy": 818.53,
-      "ton": 818.53,
-      "Klg_Tan": 818.53,
-      "KhoiLuong": 818.53,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "00"
-      ],
-      "DanhSachTenThanGoc": [
-        "Than nguyên khai"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K06",
-      "ma_kho": "K06",
-      "khoCode": "K06",
-      "MaKhoTTCO": "K06",
-      "RawMaKho": "K06",
-      "TenKho": "Tuyển 3",
-      "Kho": "Tuyển 3",
-      "kho": "Tuyển 3",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "00",
-      "ma_than": "00",
-      "coalCode": "00",
-      "TenThan": "Than nguyên khai",
-      "TenXK": "",
-      "ChungLoai": "Than nguyên khai",
-      "LoaiThan": "Than nguyên khai",
-      "coal": "Than nguyên khai",
-      "TonDK": 0.0,
-      "NhapTK": 46252.29,
-      "XuatTK": 46152.29,
-      "TonCK": 100.0,
-      "TonCuoiKy": 100.0,
-      "ton": 100.0,
-      "Klg_Tan": 100.0,
-      "KhoiLuong": 100.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "00"
-      ],
-      "DanhSachTenThanGoc": [
-        "Than nguyên khai"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "K60",
-      "ma_kho": "K60",
-      "khoCode": "K60",
-      "MaKhoTTCO": "K60",
-      "RawMaKho": "K60",
-      "TenKho": "Ẩm nhiệt điện",
-      "Kho": "Ẩm nhiệt điện",
-      "kho": "Ẩm nhiệt điện",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11b.1",
-      "ma_than": "11b.1",
-      "coalCode": "11b.1",
-      "TenThan": "Cám 6b.1",
-      "TenXK": "",
-      "ChungLoai": "Cám 6b.1",
-      "LoaiThan": "Cám 6b.1",
-      "coal": "Cám 6b.1",
-      "TonDK": 1079.14,
-      "NhapTK": 103.62,
-      "XuatTK": 0.0,
-      "TonCK": 1182.76,
-      "TonCuoiKy": 1182.76,
-      "ton": 1182.76,
-      "Klg_Tan": 1182.76,
-      "KhoiLuong": 1182.76,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11b.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 6b.1"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
-    },
-    {
-      "MaKho": "k59",
-      "ma_kho": "k59",
-      "khoCode": "k59",
-      "MaKhoTTCO": "k59",
-      "RawMaKho": "k59",
-      "TenKho": "NM Nhiệt điện",
-      "Kho": "NM Nhiệt điện",
-      "kho": "NM Nhiệt điện",
-      "DonViQuanLy": "",
-      "MaDV": "",
-      "MaThan": "11b.1",
-      "ma_than": "11b.1",
-      "coalCode": "11b.1",
-      "TenThan": "Cám 6b.1",
-      "TenXK": "",
-      "ChungLoai": "Cám 6b.1",
-      "LoaiThan": "Cám 6b.1",
-      "coal": "Cám 6b.1",
-      "TonDK": 1746.0,
-      "NhapTK": 62914.0,
-      "XuatTK": 62527.0,
-      "TonCK": 2133.0,
-      "TonCuoiKy": 2133.0,
-      "ton": 2133.0,
-      "Klg_Tan": 2133.0,
-      "KhoiLuong": 2133.0,
-      "NamHT": "2026",
-      "ThangHT": "5",
-      "IsNhomTongHop": false,
-      "NhomTongHopLoai": "",
-      "DanhSachMaThanGoc": [
-        "11b.1"
-      ],
-      "DanhSachTenThanGoc": [
-        "Cám 6b.1"
-      ],
-      "SourceFix": "V12_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
+      "SourceFix": "V13_G3_STOCK_PRESERVE_GOOD_NAME_dbo.G3_BC05A_2_613181"
     }
   ],
   "rows": [
