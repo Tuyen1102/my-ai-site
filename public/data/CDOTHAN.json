@@ -1,0 +1,4099 @@
+{
+  "ok": true,
+  "meta": {
+    "source": "TTCO_DIRECT_DB_ENGINE",
+    "database": "TTCO_THONGKE",
+    "sourceTable": "G3_BC05A_2_341659",
+    "masterDatabase": "TTCO_QTHT",
+    "version": "direct-db-v9-fix-token-and-latest-json",
+    "updatedAt": "2026-05-14 00:12:04",
+    "NamHT": "",
+    "ThangHT": "",
+    "rowCount": 83,
+    "realRowCount": 80,
+    "sourceRawRowCount": 106,
+    "totalTon": 1152057.83,
+    "formula": "standardize DB MaKho -> exact app kho; app reads public/data/ton_kho_latest.json",
+    "note": "V9 sửa đúng nguyên nhân thiếu kho: app đang đọc public/data/ton_kho_latest.json. Bản này tự lấy lại GitHub token cũ từ ProgramData nếu config cùng thư mục BAT chưa có token."
+  },
+  "data": [
+    {
+      "MaKho": "1",
+      "TenKho": "Kho 1",
+      "kho": "Kho 1",
+      "MaThan": "B11C",
+      "TenThan": "B11C",
+      "coal": "B11C",
+      "TonDK": 509.95,
+      "NhapTK": 5971.0,
+      "XuatTK": 5224.7,
+      "TonCK": 1256.25,
+      "ton": 1256.25,
+      "ttcoApp": 1256.25,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "01"
+      ],
+      "maThanList": [
+        "B11C"
+      ],
+      "TenThanGoc": "B11C",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B11C"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "2",
+      "TenKho": "Kho 2",
+      "kho": "Kho 2",
+      "MaThan": "5A.1",
+      "TenThan": "5A.1",
+      "coal": "5A.1",
+      "TonDK": 7937.86,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 7937.86,
+      "ton": 7937.86,
+      "ttcoApp": 7937.86,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "02"
+      ],
+      "maThanList": [
+        "5A.1"
+      ],
+      "TenThanGoc": "5A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "5A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "3",
+      "TenKho": "Kho 3",
+      "kho": "Kho 3",
+      "MaThan": "4A.1",
+      "TenThan": "4A.1",
+      "coal": "4A.1",
+      "TonDK": 1507.63,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 1507.63,
+      "ton": 1507.63,
+      "ttcoApp": 1507.63,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "03"
+      ],
+      "maThanList": [
+        "4A.1"
+      ],
+      "TenThanGoc": "4A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "4A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "4",
+      "TenKho": "Kho 4",
+      "kho": "Kho 4",
+      "MaThan": "4A.1",
+      "TenThan": "4A.1",
+      "coal": "4A.1",
+      "TonDK": 11505.17,
+      "NhapTK": 1685.0,
+      "XuatTK": 0.0,
+      "TonCK": 13190.17,
+      "ton": 13190.17,
+      "ttcoApp": 13190.17,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "04"
+      ],
+      "maThanList": [
+        "4A.1"
+      ],
+      "TenThanGoc": "4A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "4A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "5",
+      "TenKho": "Kho 5",
+      "kho": "Kho 5",
+      "MaThan": "4A.2",
+      "TenThan": "4A.2",
+      "coal": "4A.2",
+      "TonDK": 12610.42,
+      "NhapTK": 3877.0,
+      "XuatTK": 6553.9,
+      "TonCK": 9933.52,
+      "ton": 9933.52,
+      "ttcoApp": 9933.52,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "05"
+      ],
+      "maThanList": [
+        "4A.2"
+      ],
+      "TenThanGoc": "4A.2",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "4A.2"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "6",
+      "TenKho": "Kho 6",
+      "kho": "Kho 6",
+      "MaThan": "B11C",
+      "TenThan": "B11C",
+      "coal": "B11C",
+      "TonDK": 3.52,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 3.52,
+      "ton": 3.52,
+      "ttcoApp": 3.52,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "06"
+      ],
+      "maThanList": [
+        "B11C"
+      ],
+      "TenThanGoc": "B11C",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B11C"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "7",
+      "TenKho": "Kho 7",
+      "kho": "Kho 7",
+      "MaThan": "11A.1",
+      "TenThan": "11A.1",
+      "coal": "11A.1",
+      "TonDK": 7792.84,
+      "NhapTK": 0.0,
+      "XuatTK": 7689.5,
+      "TonCK": 103.34,
+      "ton": 103.34,
+      "ttcoApp": 103.34,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "07"
+      ],
+      "maThanList": [
+        "11A.1"
+      ],
+      "TenThanGoc": "11A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "8",
+      "TenKho": "Kho 8",
+      "kho": "Kho 8",
+      "MaThan": "11A.1",
+      "TenThan": "11A.1",
+      "coal": "11A.1",
+      "TonDK": 37044.41,
+      "NhapTK": 0.0,
+      "XuatTK": 9194.4,
+      "TonCK": 27850.01,
+      "ton": 27850.01,
+      "ttcoApp": 27850.01,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "08"
+      ],
+      "maThanList": [
+        "11A.1"
+      ],
+      "TenThanGoc": "11A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11.250",
+      "TenThan": "11.250",
+      "coal": "11.250",
+      "TonDK": 3978.0,
+      "NhapTK": 0.0,
+      "XuatTK": 3605.0,
+      "TonCK": 373.0,
+      "ton": 373.0,
+      "ttcoApp": 373.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11.250"
+      ],
+      "TenThanGoc": "11.250",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11.250"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11B.1",
+      "TenThan": "11B.1",
+      "coal": "11B.1",
+      "TonDK": 418.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 418.0,
+      "ton": 418.0,
+      "ttcoApp": 418.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11B.1"
+      ],
+      "TenThanGoc": "11B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.1",
+      "TenThan": "11a.1",
+      "coal": "11a.1",
+      "TonDK": 11423.71,
+      "NhapTK": 23080.0,
+      "XuatTK": 29859.0,
+      "TonCK": 4644.71,
+      "ton": 4644.71,
+      "ttcoApp": 4644.71,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.1"
+      ],
+      "TenThanGoc": "11a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.241",
+      "TenThan": "11a.241",
+      "coal": "11a.241",
+      "TonDK": 0.3,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.3,
+      "ton": 0.3,
+      "ttcoApp": 0.3,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.241"
+      ],
+      "TenThanGoc": "11a.241",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.241"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.243",
+      "TenThan": "11a.243",
+      "coal": "11a.243",
+      "TonDK": -0.01,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -0.01,
+      "ton": -0.01,
+      "ttcoApp": -0.01,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.243"
+      ],
+      "TenThanGoc": "11a.243",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.243"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.245",
+      "TenThan": "11a.245",
+      "coal": "11a.245",
+      "TonDK": -1.37,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -1.37,
+      "ton": -1.37,
+      "ttcoApp": -1.37,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.245"
+      ],
+      "TenThanGoc": "11a.245",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.245"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.246",
+      "TenThan": "11a.246",
+      "coal": "11a.246",
+      "TonDK": -0.37,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -0.37,
+      "ton": -0.37,
+      "ttcoApp": -0.37,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.246"
+      ],
+      "TenThanGoc": "11a.246",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.246"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.247",
+      "TenThan": "11a.247",
+      "coal": "11a.247",
+      "TonDK": 23.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 23.0,
+      "ton": 23.0,
+      "ttcoApp": 23.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.247"
+      ],
+      "TenThanGoc": "11a.247",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.247"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.248",
+      "TenThan": "11a.248",
+      "coal": "11a.248",
+      "TonDK": 33.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 33.0,
+      "ton": 33.0,
+      "ttcoApp": 33.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.248"
+      ],
+      "TenThanGoc": "11a.248",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.248"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.249",
+      "TenThan": "11a.249",
+      "coal": "11a.249",
+      "TonDK": 63.0,
+      "NhapTK": 0.0,
+      "XuatTK": 7.0,
+      "TonCK": 56.0,
+      "ton": 56.0,
+      "ttcoApp": 56.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.249"
+      ],
+      "TenThanGoc": "11a.249",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.249"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.251",
+      "TenThan": "11a.251",
+      "coal": "11a.251",
+      "TonDK": 8302.0,
+      "NhapTK": 668.0,
+      "XuatTK": 8875.0,
+      "TonCK": 95.0,
+      "ton": 95.0,
+      "ttcoApp": 95.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.251"
+      ],
+      "TenThanGoc": "11a.251",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.251"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.253",
+      "TenThan": "11a.253",
+      "coal": "11a.253",
+      "TonDK": 0.0,
+      "NhapTK": 25561.0,
+      "XuatTK": 25100.0,
+      "TonCK": 461.0,
+      "ton": 461.0,
+      "ttcoApp": 461.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.253"
+      ],
+      "TenThanGoc": "11a.253",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.253"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.254",
+      "TenThan": "11a.254",
+      "coal": "11a.254",
+      "TonDK": 0.0,
+      "NhapTK": 20547.0,
+      "XuatTK": 13847.0,
+      "TonCK": 6700.0,
+      "ton": 6700.0,
+      "ttcoApp": 6700.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.254"
+      ],
+      "TenThanGoc": "11a.254",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.254"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "9",
+      "TenKho": "Kho 9",
+      "kho": "Kho 9",
+      "MaThan": "11a.255",
+      "TenThan": "11a.255",
+      "coal": "11a.255",
+      "TonDK": 0.0,
+      "NhapTK": 18157.0,
+      "XuatTK": 0.0,
+      "TonCK": 18157.0,
+      "ton": 18157.0,
+      "ttcoApp": 18157.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "09"
+      ],
+      "maThanList": [
+        "11a.255"
+      ],
+      "TenThanGoc": "11a.255",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.255"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10A.1",
+      "TenThan": "10A.1",
+      "coal": "10A.1",
+      "TonDK": 12796.21,
+      "NhapTK": 2585.0,
+      "XuatTK": 14012.0,
+      "TonCK": 1369.21,
+      "ton": 1369.21,
+      "ttcoApp": 1369.21,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10A.1"
+      ],
+      "TenThanGoc": "10A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10B.1",
+      "TenThan": "10B.1",
+      "coal": "10B.1",
+      "TonDK": 2711.0,
+      "NhapTK": 541.0,
+      "XuatTK": 2810.0,
+      "TonCK": 442.0,
+      "ton": 442.0,
+      "ttcoApp": 442.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10B.1"
+      ],
+      "TenThanGoc": "10B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10a.101",
+      "TenThan": "10a.101",
+      "coal": "10a.101",
+      "TonDK": 10.82,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 10.82,
+      "ton": 10.82,
+      "ttcoApp": 10.82,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10a.101"
+      ],
+      "TenThanGoc": "10a.101",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10a.101"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10a.259",
+      "TenThan": "10a.259",
+      "coal": "10a.259",
+      "TonDK": -0.04,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -0.04,
+      "ton": -0.04,
+      "ttcoApp": -0.04,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10a.259"
+      ],
+      "TenThanGoc": "10a.259",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10a.259"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10a.262",
+      "TenThan": "10a.262",
+      "coal": "10a.262",
+      "TonDK": -12.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": -12.0,
+      "ton": -12.0,
+      "ttcoApp": -12.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10a.262"
+      ],
+      "TenThanGoc": "10a.262",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10a.262"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10a.263",
+      "TenThan": "10a.263",
+      "coal": "10a.263",
+      "TonDK": 292.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 292.0,
+      "ton": 292.0,
+      "ttcoApp": 292.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10a.263"
+      ],
+      "TenThanGoc": "10a.263",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10a.263"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10a.264",
+      "TenThan": "10a.264",
+      "coal": "10a.264",
+      "TonDK": 0.0,
+      "NhapTK": 5087.0,
+      "XuatTK": 0.0,
+      "TonCK": 5087.0,
+      "ton": 5087.0,
+      "ttcoApp": 5087.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10a.264"
+      ],
+      "TenThanGoc": "10a.264",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10a.264"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "10a.72",
+      "TenThan": "10a.72",
+      "coal": "10a.72",
+      "TonDK": 0.22,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.22,
+      "ton": 0.22,
+      "ttcoApp": 0.22,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "10a.72"
+      ],
+      "TenThanGoc": "10a.72",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10a.72"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "10",
+      "TenKho": "Kho 10",
+      "kho": "Kho 10",
+      "MaThan": "9b.1",
+      "TenThan": "9b.1",
+      "coal": "9b.1",
+      "TonDK": 0.0,
+      "NhapTK": 448.0,
+      "XuatTK": 256.0,
+      "TonCK": 192.0,
+      "ton": 192.0,
+      "ttcoApp": 192.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "10"
+      ],
+      "maThanList": [
+        "9b.1"
+      ],
+      "TenThanGoc": "9b.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "9b.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "11",
+      "TenKho": "Kho 11",
+      "kho": "Kho 11",
+      "MaThan": "9A.1",
+      "TenThan": "9A.1",
+      "coal": "9A.1",
+      "TonDK": 38391.49,
+      "NhapTK": 0.0,
+      "XuatTK": 1201.0,
+      "TonCK": 37190.49,
+      "ton": 37190.49,
+      "ttcoApp": 37190.49,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "11"
+      ],
+      "maThanList": [
+        "9A.1"
+      ],
+      "TenThanGoc": "9A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "9A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "12",
+      "TenKho": "Kho 12",
+      "kho": "Kho 12",
+      "MaThan": "8B.1",
+      "TenThan": "8B.1",
+      "coal": "8B.1",
+      "TonDK": 25271.64,
+      "NhapTK": 1439.0,
+      "XuatTK": 0.0,
+      "TonCK": 26710.64,
+      "ton": 26710.64,
+      "ttcoApp": 26710.64,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "12"
+      ],
+      "maThanList": [
+        "8B.1"
+      ],
+      "TenThanGoc": "8B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "8B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "13",
+      "TenKho": "Kho 13",
+      "kho": "Kho 13",
+      "MaThan": "8A.1",
+      "TenThan": "8A.1",
+      "coal": "8A.1",
+      "TonDK": 18297.95,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 18297.95,
+      "ton": 18297.95,
+      "ttcoApp": 18297.95,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "13"
+      ],
+      "maThanList": [
+        "8A.1"
+      ],
+      "TenThanGoc": "8A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "8A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "14",
+      "TenKho": "Kho 14",
+      "kho": "Kho 14",
+      "MaThan": "EMPTY",
+      "TenThan": "Chưa có tồn kho",
+      "coal": "Chưa có tồn kho",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0001,
+      "ton": 0.0001,
+      "ttcoApp": 0.0001,
+      "sourceFormula": "V9 placeholder de app hien thi day du danh muc kho; khong phai ton kho thuc te",
+      "rawMaKhoList": [],
+      "maThanList": [],
+      "TenThanGoc": "Chưa có tồn kho",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [],
+      "groupedCoalCount": 0,
+      "isEmptyKhoPlaceholder": true
+    },
+    {
+      "MaKho": "15",
+      "TenKho": "Kho 15",
+      "kho": "Kho 15",
+      "MaThan": "5a.1",
+      "TenThan": "5a.1",
+      "coal": "5a.1",
+      "TonDK": 32500.8,
+      "NhapTK": 2970.0,
+      "XuatTK": 0.0,
+      "TonCK": 35470.8,
+      "ton": 35470.8,
+      "ttcoApp": 35470.8,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "15"
+      ],
+      "maThanList": [
+        "5a.1"
+      ],
+      "TenThanGoc": "5a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "5a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "16",
+      "TenKho": "Kho 16",
+      "kho": "Kho 16",
+      "MaThan": "5A.1",
+      "TenThan": "5A.1",
+      "coal": "5A.1",
+      "TonDK": 13252.46,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 13252.46,
+      "ton": 13252.46,
+      "ttcoApp": 13252.46,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "16"
+      ],
+      "maThanList": [
+        "5A.1"
+      ],
+      "TenThanGoc": "5A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "5A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "17",
+      "TenKho": "Kho 17",
+      "kho": "Kho 17",
+      "MaThan": "6A.1",
+      "TenThan": "6A.1",
+      "coal": "6A.1",
+      "TonDK": 46220.05,
+      "NhapTK": 6664.0,
+      "XuatTK": 0.0,
+      "TonCK": 52884.05,
+      "ton": 52884.05,
+      "ttcoApp": 52884.05,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "17"
+      ],
+      "maThanList": [
+        "6A.1"
+      ],
+      "TenThanGoc": "6A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "6A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "17",
+      "TenKho": "Kho 17",
+      "kho": "Kho 17",
+      "MaThan": "7A.1",
+      "TenThan": "7A.1",
+      "coal": "7A.1",
+      "TonDK": 22078.6,
+      "NhapTK": 0.0,
+      "XuatTK": 2868.0,
+      "TonCK": 19210.6,
+      "ton": 19210.6,
+      "ttcoApp": 19210.6,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "17"
+      ],
+      "maThanList": [
+        "7A.1"
+      ],
+      "TenThanGoc": "7A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "7A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "18",
+      "TenKho": "Kho 18",
+      "kho": "Kho 18",
+      "MaThan": "8B.1",
+      "TenThan": "8B.1",
+      "coal": "8B.1",
+      "TonDK": 13807.58,
+      "NhapTK": 1176.0,
+      "XuatTK": 0.0,
+      "TonCK": 14983.58,
+      "ton": 14983.58,
+      "ttcoApp": 14983.58,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "18"
+      ],
+      "maThanList": [
+        "8B.1"
+      ],
+      "TenThanGoc": "8B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "8B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "19",
+      "TenKho": "Kho 19",
+      "kho": "Kho 19",
+      "MaThan": "8B.1",
+      "TenThan": "8B.1",
+      "coal": "8B.1",
+      "TonDK": 14285.09,
+      "NhapTK": 957.0,
+      "XuatTK": 0.0,
+      "TonCK": 15242.09,
+      "ton": 15242.09,
+      "ttcoApp": 15242.09,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "19"
+      ],
+      "maThanList": [
+        "8B.1"
+      ],
+      "TenThanGoc": "8B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "8B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "20",
+      "TenKho": "Kho 20",
+      "kho": "Kho 20",
+      "MaThan": "9A.1",
+      "TenThan": "9A.1",
+      "coal": "9A.1",
+      "TonDK": 72912.93,
+      "NhapTK": 0.0,
+      "XuatTK": 6356.0,
+      "TonCK": 66556.93,
+      "ton": 66556.93,
+      "ttcoApp": 66556.93,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "20"
+      ],
+      "maThanList": [
+        "9A.1"
+      ],
+      "TenThanGoc": "9A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "9A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "20",
+      "TenKho": "Kho 20",
+      "kho": "Kho 20",
+      "MaThan": "9B.1",
+      "TenThan": "9B.1",
+      "coal": "9B.1",
+      "TonDK": 0.0,
+      "NhapTK": 7154.0,
+      "XuatTK": 5214.0,
+      "TonCK": 1940.0,
+      "ton": 1940.0,
+      "ttcoApp": 1940.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "20"
+      ],
+      "maThanList": [
+        "9B.1"
+      ],
+      "TenThanGoc": "9B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "9B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "21",
+      "TenKho": "Kho 21",
+      "kho": "Kho 21",
+      "MaThan": "10A.1",
+      "TenThan": "10A.1",
+      "coal": "10A.1",
+      "TonDK": 11014.32,
+      "NhapTK": 21532.0,
+      "XuatTK": 31942.0,
+      "TonCK": 604.32,
+      "ton": 604.32,
+      "ttcoApp": 604.32,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "21"
+      ],
+      "maThanList": [
+        "10A.1"
+      ],
+      "TenThanGoc": "10A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "21",
+      "TenKho": "Kho 21",
+      "kho": "Kho 21",
+      "MaThan": "10B.1",
+      "TenThan": "10B.1",
+      "coal": "10B.1",
+      "TonDK": 3451.44,
+      "NhapTK": 7412.0,
+      "XuatTK": 11122.0,
+      "TonCK": -258.56,
+      "ton": -258.56,
+      "ttcoApp": -258.56,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "21"
+      ],
+      "maThanList": [
+        "10B.1"
+      ],
+      "TenThanGoc": "10B.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "10B.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "21",
+      "TenKho": "Kho 21",
+      "kho": "Kho 21",
+      "MaThan": "11A.1",
+      "TenThan": "11A.1",
+      "coal": "11A.1",
+      "TonDK": 7291.49,
+      "NhapTK": 16816.0,
+      "XuatTK": 18437.0,
+      "TonCK": 5670.49,
+      "ton": 5670.49,
+      "ttcoApp": 5670.49,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "21"
+      ],
+      "maThanList": [
+        "11A.1"
+      ],
+      "TenThanGoc": "11A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "22",
+      "TenKho": "Kho 22",
+      "kho": "Kho 22",
+      "MaThan": "EMPTY",
+      "TenThan": "Chưa có tồn kho",
+      "coal": "Chưa có tồn kho",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0001,
+      "ton": 0.0001,
+      "ttcoApp": 0.0001,
+      "sourceFormula": "V9 placeholder de app hien thi day du danh muc kho; khong phai ton kho thuc te",
+      "rawMaKhoList": [],
+      "maThanList": [],
+      "TenThanGoc": "Chưa có tồn kho",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [],
+      "groupedCoalCount": 0,
+      "isEmptyKhoPlaceholder": true
+    },
+    {
+      "MaKho": "23",
+      "TenKho": "Kho 23",
+      "kho": "Kho 23",
+      "MaThan": "8b.1",
+      "TenThan": "8b.1",
+      "coal": "8b.1",
+      "TonDK": 21824.66,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 21824.66,
+      "ton": 21824.66,
+      "ttcoApp": 21824.66,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "23"
+      ],
+      "maThanList": [
+        "8b.1"
+      ],
+      "TenThanGoc": "8b.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "8b.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "24",
+      "TenKho": "Kho 24",
+      "kho": "Kho 24",
+      "MaThan": "11A.1",
+      "TenThan": "11A.1",
+      "coal": "11A.1",
+      "TonDK": 8507.0,
+      "NhapTK": 0.0,
+      "XuatTK": 4310.0,
+      "TonCK": 4197.0,
+      "ton": 4197.0,
+      "ttcoApp": 4197.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "24"
+      ],
+      "maThanList": [
+        "11A.1"
+      ],
+      "TenThanGoc": "11A.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11A.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "25",
+      "TenKho": "Kho 25",
+      "kho": "Kho 25",
+      "MaThan": "6a.1",
+      "TenThan": "6a.1",
+      "coal": "6a.1",
+      "TonDK": 17171.72,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 17171.72,
+      "ton": 17171.72,
+      "ttcoApp": 17171.72,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "25"
+      ],
+      "maThanList": [
+        "6a.1"
+      ],
+      "TenThanGoc": "6a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "6a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "26",
+      "TenKho": "Kho 26",
+      "kho": "Kho 26",
+      "MaThan": "b32d",
+      "TenThan": "b32d",
+      "coal": "b32d",
+      "TonDK": 17350.98,
+      "NhapTK": 1948.0,
+      "XuatTK": 604.0,
+      "TonCK": 18694.98,
+      "ton": 18694.98,
+      "ttcoApp": 18694.98,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "29"
+      ],
+      "maThanList": [
+        "b32d"
+      ],
+      "TenThanGoc": "b32d",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b32d"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "27",
+      "TenKho": "Kho 27",
+      "kho": "Kho 27",
+      "MaThan": "11b.1",
+      "TenThan": "11b.1",
+      "coal": "11b.1",
+      "TonDK": 707.72,
+      "NhapTK": 0.0,
+      "XuatTK": 105.0,
+      "TonCK": 602.72,
+      "ton": 602.72,
+      "ttcoApp": 602.72,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "30b"
+      ],
+      "maThanList": [
+        "11b.1"
+      ],
+      "TenThanGoc": "11b.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11b.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "27",
+      "TenKho": "Kho 27",
+      "kho": "Kho 27",
+      "MaThan": "B32d",
+      "TenThan": "B32d",
+      "coal": "B32d",
+      "TonDK": 360.09,
+      "NhapTK": 13075.0,
+      "XuatTK": 0.0,
+      "TonCK": 13435.09,
+      "ton": 13435.09,
+      "ttcoApp": 13435.09,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "30B"
+      ],
+      "maThanList": [
+        "B32d"
+      ],
+      "TenThanGoc": "B32d",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B32d"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "28",
+      "TenKho": "Kho 28",
+      "kho": "Kho 28",
+      "MaThan": "11b.1",
+      "TenThan": "11b.1",
+      "coal": "11b.1",
+      "TonDK": 26021.24,
+      "NhapTK": 134.0,
+      "XuatTK": 6802.0,
+      "TonCK": 19353.24,
+      "ton": 19353.24,
+      "ttcoApp": 19353.24,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "31c"
+      ],
+      "maThanList": [
+        "11b.1"
+      ],
+      "TenThanGoc": "11b.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11b.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "28-1",
+      "TenKho": "Kho 28-1",
+      "kho": "Kho 28-1",
+      "MaThan": "11b.1",
+      "TenThan": "11b.1",
+      "coal": "11b.1",
+      "TonDK": 17959.94,
+      "NhapTK": 2912.0,
+      "XuatTK": 2009.0,
+      "TonCK": 18862.94,
+      "ton": 18862.94,
+      "ttcoApp": 18862.94,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "31D"
+      ],
+      "maThanList": [
+        "11b.1"
+      ],
+      "TenThanGoc": "11b.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11b.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "29",
+      "TenKho": "Kho 29",
+      "kho": "Kho 29",
+      "MaThan": "6a.1",
+      "TenThan": "6a.1",
+      "coal": "6a.1",
+      "TonDK": 18990.4,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 18990.4,
+      "ton": 18990.4,
+      "ttcoApp": 18990.4,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "26"
+      ],
+      "maThanList": [
+        "6a.1"
+      ],
+      "TenThanGoc": "6a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "6a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "30",
+      "TenKho": "Kho 30",
+      "kho": "Kho 30",
+      "MaThan": "6a.1",
+      "TenThan": "6a.1",
+      "coal": "6a.1",
+      "TonDK": 22274.7,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 22274.7,
+      "ton": 22274.7,
+      "ttcoApp": 22274.7,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "27"
+      ],
+      "maThanList": [
+        "6a.1"
+      ],
+      "TenThanGoc": "6a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "6a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "31",
+      "TenKho": "Kho 31",
+      "kho": "Kho 31",
+      "MaThan": "00",
+      "TenThan": "00",
+      "coal": "00",
+      "TonDK": 25854.98,
+      "NhapTK": 0.0,
+      "XuatTK": 16000.0,
+      "TonCK": 9854.98,
+      "ton": 9854.98,
+      "ttcoApp": 9854.98,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "43"
+      ],
+      "maThanList": [
+        "00"
+      ],
+      "TenThanGoc": "00",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "00"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "31",
+      "TenKho": "Kho 31",
+      "kho": "Kho 31",
+      "MaThan": "B29A",
+      "TenThan": "B29A",
+      "coal": "B29A",
+      "TonDK": 4332.0,
+      "NhapTK": 1000.0,
+      "XuatTK": 3560.0,
+      "TonCK": 1772.0,
+      "ton": 1772.0,
+      "ttcoApp": 1772.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "43"
+      ],
+      "maThanList": [
+        "B29A"
+      ],
+      "TenThanGoc": "B29A",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B29A"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "32",
+      "TenKho": "Kho 32",
+      "kho": "Kho 32",
+      "MaThan": "00",
+      "TenThan": "00",
+      "coal": "00",
+      "TonDK": 17679.25,
+      "NhapTK": 32182.0,
+      "XuatTK": 40523.74,
+      "TonCK": 9337.51,
+      "ton": 9337.51,
+      "ttcoApp": 9337.51,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "44"
+      ],
+      "maThanList": [
+        "00"
+      ],
+      "TenThanGoc": "00",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "00"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "32",
+      "TenKho": "Kho 32",
+      "kho": "Kho 32",
+      "MaThan": "B28C",
+      "TenThan": "B28C",
+      "coal": "B28C",
+      "TonDK": 40.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 40.0,
+      "ton": 40.0,
+      "ttcoApp": 40.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "31B"
+      ],
+      "maThanList": [
+        "B28C"
+      ],
+      "TenThanGoc": "B28C",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B28C"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "32",
+      "TenKho": "Kho 32",
+      "kho": "Kho 32",
+      "MaThan": "b2902",
+      "TenThan": "b2902",
+      "coal": "b2902",
+      "TonDK": 3440.39,
+      "NhapTK": 6015.0,
+      "XuatTK": 8872.33,
+      "TonCK": 583.06,
+      "ton": 583.06,
+      "ttcoApp": 583.06,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "44"
+      ],
+      "maThanList": [
+        "b2902"
+      ],
+      "TenThanGoc": "b2902",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b2902"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "32",
+      "TenKho": "Kho 32",
+      "kho": "Kho 32",
+      "MaThan": "b29a",
+      "TenThan": "b29a",
+      "coal": "b29a",
+      "TonDK": 4229.39,
+      "NhapTK": 3232.0,
+      "XuatTK": 4694.0,
+      "TonCK": 2767.39,
+      "ton": 2767.39,
+      "ttcoApp": 2767.39,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "44"
+      ],
+      "maThanList": [
+        "b29a"
+      ],
+      "TenThanGoc": "b29a",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b29a"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "32",
+      "TenKho": "Kho 32",
+      "kho": "Kho 32",
+      "MaThan": "b32d",
+      "TenThan": "b32d",
+      "coal": "b32d",
+      "TonDK": 648.9,
+      "NhapTK": 4815.0,
+      "XuatTK": 3966.0,
+      "TonCK": 1497.9,
+      "ton": 1497.9,
+      "ttcoApp": 1497.9,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "44"
+      ],
+      "maThanList": [
+        "b32d"
+      ],
+      "TenThanGoc": "b32d",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b32d"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "33",
+      "TenKho": "Kho 33",
+      "kho": "Kho 33",
+      "MaThan": "B29a",
+      "TenThan": "B29a",
+      "coal": "B29a",
+      "TonDK": 2381.78,
+      "NhapTK": 8464.0,
+      "XuatTK": 8345.7,
+      "TonCK": 2500.08,
+      "ton": 2500.08,
+      "ttcoApp": 2500.08,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "45"
+      ],
+      "maThanList": [
+        "B29a"
+      ],
+      "TenThanGoc": "B29a",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B29a"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "34",
+      "TenKho": "Kho 34",
+      "kho": "Kho 34",
+      "MaThan": "6a.1",
+      "TenThan": "6a.1",
+      "coal": "6a.1",
+      "TonDK": 43197.29,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 43197.29,
+      "ton": 43197.29,
+      "ttcoApp": 43197.29,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "34A"
+      ],
+      "maThanList": [
+        "6a.1"
+      ],
+      "TenThanGoc": "6a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "6a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "35",
+      "TenKho": "Kho 35",
+      "kho": "Kho 35",
+      "MaThan": "EMPTY",
+      "TenThan": "Chưa có tồn kho",
+      "coal": "Chưa có tồn kho",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0001,
+      "ton": 0.0001,
+      "ttcoApp": 0.0001,
+      "sourceFormula": "V9 placeholder de app hien thi day du danh muc kho; khong phai ton kho thuc te",
+      "rawMaKhoList": [],
+      "maThanList": [],
+      "TenThanGoc": "Chưa có tồn kho",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [],
+      "groupedCoalCount": 0,
+      "isEmptyKhoPlaceholder": true
+    },
+    {
+      "MaKho": "37",
+      "TenKho": "Kho 37",
+      "kho": "Kho 37",
+      "MaThan": "B32d",
+      "TenThan": "B32d",
+      "coal": "B32d",
+      "TonDK": 52191.58,
+      "NhapTK": 0.0,
+      "XuatTK": 15505.0,
+      "TonCK": 36686.58,
+      "ton": 36686.58,
+      "ttcoApp": 36686.58,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "36"
+      ],
+      "maThanList": [
+        "B32d"
+      ],
+      "TenThanGoc": "B32d",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B32d"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "38",
+      "TenKho": "Kho 38",
+      "kho": "Kho 38",
+      "MaThan": "00",
+      "TenThan": "00",
+      "coal": "00",
+      "TonDK": 386629.53,
+      "NhapTK": 0.0,
+      "XuatTK": 38192.0,
+      "TonCK": 348437.53,
+      "ton": 348437.53,
+      "ttcoApp": 348437.53,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "46a"
+      ],
+      "maThanList": [
+        "00"
+      ],
+      "TenThanGoc": "00",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "00"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "39",
+      "TenKho": "Kho 39",
+      "kho": "Kho 39",
+      "MaThan": "NHK.295",
+      "TenThan": "NHK.295",
+      "coal": "NHK.295",
+      "TonDK": 643.13,
+      "NhapTK": 0.0,
+      "XuatTK": 634.0,
+      "TonCK": 9.13,
+      "ton": 9.13,
+      "ttcoApp": 9.13,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "28"
+      ],
+      "maThanList": [
+        "NHK.295"
+      ],
+      "TenThanGoc": "NHK.295",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "NHK.295"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "39",
+      "TenKho": "Kho 39",
+      "kho": "Kho 39",
+      "MaThan": "NHK.296",
+      "TenThan": "NHK.296",
+      "coal": "NHK.296",
+      "TonDK": 5243.59,
+      "NhapTK": 4975.84,
+      "XuatTK": 10232.31,
+      "TonCK": -12.88,
+      "ton": -12.88,
+      "ttcoApp": -12.88,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "28"
+      ],
+      "maThanList": [
+        "NHK.296"
+      ],
+      "TenThanGoc": "NHK.296",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "NHK.296"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "39",
+      "TenKho": "Kho 39",
+      "kho": "Kho 39",
+      "MaThan": "NHK.297",
+      "TenThan": "NHK.297",
+      "coal": "NHK.297",
+      "TonDK": 0.0,
+      "NhapTK": 10369.95,
+      "XuatTK": 10272.83,
+      "TonCK": 97.12,
+      "ton": 97.12,
+      "ttcoApp": 97.12,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "28"
+      ],
+      "maThanList": [
+        "NHK.297"
+      ],
+      "TenThanGoc": "NHK.297",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "NHK.297"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "39",
+      "TenKho": "Kho 39",
+      "kho": "Kho 39",
+      "MaThan": "NHK.298",
+      "TenThan": "NHK.298",
+      "coal": "NHK.298",
+      "TonDK": 0.0,
+      "NhapTK": 14158.71,
+      "XuatTK": 10408.75,
+      "TonCK": 3749.96,
+      "ton": 3749.96,
+      "ttcoApp": 3749.96,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "28"
+      ],
+      "maThanList": [
+        "NHK.298"
+      ],
+      "TenThanGoc": "NHK.298",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "NHK.298"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "39",
+      "TenKho": "Kho 39",
+      "kho": "Kho 39",
+      "MaThan": "NHK.299",
+      "TenThan": "NHK.299",
+      "coal": "NHK.299",
+      "TonDK": 0.0,
+      "NhapTK": 2056.0,
+      "XuatTK": 0.0,
+      "TonCK": 2056.0,
+      "ton": 2056.0,
+      "ttcoApp": 2056.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "28"
+      ],
+      "maThanList": [
+        "NHK.299"
+      ],
+      "TenThanGoc": "NHK.299",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "NHK.299"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "40",
+      "TenKho": "Kho 40",
+      "kho": "Kho 40",
+      "MaThan": "B5.01",
+      "TenThan": "B5.01",
+      "coal": "B5.01",
+      "TonDK": 10273.19,
+      "NhapTK": 23186.0,
+      "XuatTK": 26777.75,
+      "TonCK": 6681.44,
+      "ton": 6681.44,
+      "ttcoApp": 6681.44,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "60"
+      ],
+      "maThanList": [
+        "B5.01"
+      ],
+      "TenThanGoc": "B5.01",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B5.01"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "1-T4",
+      "TenKho": "Kho 1-T4",
+      "kho": "Kho 1-T4",
+      "MaThan": "11a.1",
+      "TenThan": "11a.1",
+      "coal": "11a.1",
+      "TonDK": 83251.99,
+      "NhapTK": 136437.0,
+      "XuatTK": 141937.0,
+      "TonCK": 77751.99,
+      "ton": 77751.99,
+      "ttcoApp": 77751.99,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "71"
+      ],
+      "maThanList": [
+        "11a.1"
+      ],
+      "TenThanGoc": "11a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.1"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "1-T4",
+      "TenKho": "Kho 1-T4",
+      "kho": "Kho 1-T4",
+      "MaThan": "b11c",
+      "TenThan": "b11c",
+      "coal": "b11c",
+      "TonDK": 1209.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 1209.0,
+      "ton": 1209.0,
+      "ttcoApp": 1209.0,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "71"
+      ],
+      "maThanList": [
+        "b11c"
+      ],
+      "TenThanGoc": "b11c",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b11c"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "2-T4",
+      "TenKho": "Kho 2-T4",
+      "kho": "Kho 2-T4",
+      "MaThan": "00",
+      "TenThan": "00",
+      "coal": "00",
+      "TonDK": 6241.77,
+      "NhapTK": 28035.33,
+      "XuatTK": 33758.0,
+      "TonCK": 519.1,
+      "ton": 519.1,
+      "ttcoApp": 519.1,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "72"
+      ],
+      "maThanList": [
+        "00"
+      ],
+      "TenThanGoc": "00",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "00"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "2-T4",
+      "TenKho": "Kho 2-T4",
+      "kho": "Kho 2-T4",
+      "MaThan": "B5.01",
+      "TenThan": "B5.01",
+      "coal": "B5.01",
+      "TonDK": 4447.39,
+      "NhapTK": 1499.0,
+      "XuatTK": 1048.01,
+      "TonCK": 4898.38,
+      "ton": 4898.38,
+      "ttcoApp": 4898.38,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "72"
+      ],
+      "maThanList": [
+        "B5.01"
+      ],
+      "TenThanGoc": "B5.01",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "B5.01"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "2-T4",
+      "TenKho": "Kho 2-T4",
+      "kho": "Kho 2-T4",
+      "MaThan": "b16.09",
+      "TenThan": "b16.09",
+      "coal": "b16.09",
+      "TonDK": 5027.1,
+      "NhapTK": 2160.0,
+      "XuatTK": 0.0,
+      "TonCK": 7187.1,
+      "ton": 7187.1,
+      "ttcoApp": 7187.1,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "72"
+      ],
+      "maThanList": [
+        "b16.09"
+      ],
+      "TenThanGoc": "b16.09",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b16.09"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "3-T4",
+      "TenKho": "Kho 3-T4",
+      "kho": "Kho 3-T4",
+      "MaThan": "00",
+      "TenThan": "00",
+      "coal": "00",
+      "TonDK": 11629.16,
+      "NhapTK": 0.0,
+      "XuatTK": 11279.0,
+      "TonCK": 350.16,
+      "ton": 350.16,
+      "ttcoApp": 350.16,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "73"
+      ],
+      "maThanList": [
+        "00"
+      ],
+      "TenThanGoc": "00",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "00"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "3-T4",
+      "TenKho": "Kho 3-T4",
+      "kho": "Kho 3-T4",
+      "MaThan": "b5.01",
+      "TenThan": "b5.01",
+      "coal": "b5.01",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 313.59,
+      "TonCK": -313.59,
+      "ton": -313.59,
+      "ttcoApp": -313.59,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "73"
+      ],
+      "maThanList": [
+        "b5.01"
+      ],
+      "TenThanGoc": "b5.01",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "b5.01"
+      ],
+      "groupedCoalCount": 1
+    },
+    {
+      "MaKho": "4-T4",
+      "TenKho": "Kho 4-T4",
+      "kho": "Kho 4-T4",
+      "MaThan": "11a.1",
+      "TenThan": "11a.1",
+      "coal": "11a.1",
+      "TonDK": 27914.54,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 27914.54,
+      "ton": 27914.54,
+      "ttcoApp": 27914.54,
+      "sourceFormula": "V9 DB raw -> standard MaKho mapping -> app kho name; Kho 9/10 group dynamic Cam; Kho 39 keep NK detail",
+      "rawMaKhoList": [
+        "74"
+      ],
+      "maThanList": [
+        "11a.1"
+      ],
+      "TenThanGoc": "11a.1",
+      "isGroupedCoal": false,
+      "groupedCoalNames": [
+        "11a.1"
+      ],
+      "groupedCoalCount": 1
+    }
+  ],
+  "khoList": [
+    {
+      "khoCode": "1",
+      "tenKhoApp": "Kho 1",
+      "items": [
+        {
+          "tenThanHienThi": "B11C",
+          "tonKho": 1256.25,
+          "maThanList": [
+            "B11C"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "01",
+          "rawTenKho": "",
+          "maThan": "B11C",
+          "tenThanDb": "B11C",
+          "tenThanHienThi": "B11C",
+          "TonDK": 509.95,
+          "NhapTK": 5971.0,
+          "XuatTK": 5224.7,
+          "TonCK": 1256.25
+        }
+      ]
+    },
+    {
+      "khoCode": "2",
+      "tenKhoApp": "Kho 2",
+      "items": [
+        {
+          "tenThanHienThi": "5A.1",
+          "tonKho": 7937.86,
+          "maThanList": [
+            "5A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "02",
+          "rawTenKho": "",
+          "maThan": "5A.1",
+          "tenThanDb": "5A.1",
+          "tenThanHienThi": "5A.1",
+          "TonDK": 7937.86,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 7937.86
+        }
+      ]
+    },
+    {
+      "khoCode": "3",
+      "tenKhoApp": "Kho 3",
+      "items": [
+        {
+          "tenThanHienThi": "4A.1",
+          "tonKho": 1507.63,
+          "maThanList": [
+            "4A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "03",
+          "rawTenKho": "",
+          "maThan": "4A.1",
+          "tenThanDb": "4A.1",
+          "tenThanHienThi": "4A.1",
+          "TonDK": 1507.63,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 1507.63
+        }
+      ]
+    },
+    {
+      "khoCode": "4",
+      "tenKhoApp": "Kho 4",
+      "items": [
+        {
+          "tenThanHienThi": "4A.1",
+          "tonKho": 13190.17,
+          "maThanList": [
+            "4A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "04",
+          "rawTenKho": "",
+          "maThan": "4A.1",
+          "tenThanDb": "4A.1",
+          "tenThanHienThi": "4A.1",
+          "TonDK": 11505.17,
+          "NhapTK": 1685.0,
+          "XuatTK": 0.0,
+          "TonCK": 13190.17
+        }
+      ]
+    },
+    {
+      "khoCode": "5",
+      "tenKhoApp": "Kho 5",
+      "items": [
+        {
+          "tenThanHienThi": "4A.2",
+          "tonKho": 9933.52,
+          "maThanList": [
+            "4A.2"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "05",
+          "rawTenKho": "",
+          "maThan": "4A.2",
+          "tenThanDb": "4A.2",
+          "tenThanHienThi": "4A.2",
+          "TonDK": 12610.42,
+          "NhapTK": 3877.0,
+          "XuatTK": 6553.9,
+          "TonCK": 9933.52
+        }
+      ]
+    },
+    {
+      "khoCode": "6",
+      "tenKhoApp": "Kho 6",
+      "items": [
+        {
+          "tenThanHienThi": "B11C",
+          "tonKho": 3.52,
+          "maThanList": [
+            "B11C"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "06",
+          "rawTenKho": "",
+          "maThan": "B11C",
+          "tenThanDb": "B11C",
+          "tenThanHienThi": "B11C",
+          "TonDK": 3.52,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 3.52
+        }
+      ]
+    },
+    {
+      "khoCode": "7",
+      "tenKhoApp": "Kho 7",
+      "items": [
+        {
+          "tenThanHienThi": "11A.1",
+          "tonKho": 103.34,
+          "maThanList": [
+            "11A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "07",
+          "rawTenKho": "",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 7792.84,
+          "NhapTK": 0.0,
+          "XuatTK": 7689.5,
+          "TonCK": 103.34
+        }
+      ]
+    },
+    {
+      "khoCode": "8",
+      "tenKhoApp": "Kho 8",
+      "items": [
+        {
+          "tenThanHienThi": "11A.1",
+          "tonKho": 27850.01,
+          "maThanList": [
+            "11A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "08",
+          "rawTenKho": "",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 37044.41,
+          "NhapTK": 0.0,
+          "XuatTK": 9194.4,
+          "TonCK": 27850.01
+        }
+      ]
+    },
+    {
+      "khoCode": "9",
+      "tenKhoApp": "Kho 9",
+      "items": [
+        {
+          "tenThanHienThi": "11.250",
+          "tonKho": 373.0,
+          "maThanList": [
+            "11.250"
+          ]
+        },
+        {
+          "tenThanHienThi": "11B.1",
+          "tonKho": 418.0,
+          "maThanList": [
+            "11B.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.1",
+          "tonKho": 4644.71,
+          "maThanList": [
+            "11a.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.241",
+          "tonKho": 0.3,
+          "maThanList": [
+            "11a.241"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.243",
+          "tonKho": -0.01,
+          "maThanList": [
+            "11a.243"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.245",
+          "tonKho": -1.37,
+          "maThanList": [
+            "11a.245"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.246",
+          "tonKho": -0.37,
+          "maThanList": [
+            "11a.246"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.247",
+          "tonKho": 23.0,
+          "maThanList": [
+            "11a.247"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.248",
+          "tonKho": 33.0,
+          "maThanList": [
+            "11a.248"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.249",
+          "tonKho": 56.0,
+          "maThanList": [
+            "11a.249"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.251",
+          "tonKho": 95.0,
+          "maThanList": [
+            "11a.251"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.253",
+          "tonKho": 461.0,
+          "maThanList": [
+            "11a.253"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.254",
+          "tonKho": 6700.0,
+          "maThanList": [
+            "11a.254"
+          ]
+        },
+        {
+          "tenThanHienThi": "11a.255",
+          "tonKho": 18157.0,
+          "maThanList": [
+            "11a.255"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11.250",
+          "tenThanDb": "11.250",
+          "tenThanHienThi": "11.250",
+          "TonDK": 3978.0,
+          "NhapTK": 0.0,
+          "XuatTK": 3605.0,
+          "TonCK": 373.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.1",
+          "tenThanDb": "11a.1",
+          "tenThanHienThi": "11a.1",
+          "TonDK": 11423.71,
+          "NhapTK": 23080.0,
+          "XuatTK": 29859.0,
+          "TonCK": 4644.71
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.249",
+          "tenThanDb": "11a.249",
+          "tenThanHienThi": "11a.249",
+          "TonDK": 63.0,
+          "NhapTK": 0.0,
+          "XuatTK": 7.0,
+          "TonCK": 56.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.251",
+          "tenThanDb": "11a.251",
+          "tenThanHienThi": "11a.251",
+          "TonDK": 8302.0,
+          "NhapTK": 668.0,
+          "XuatTK": 8875.0,
+          "TonCK": 95.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.253",
+          "tenThanDb": "11a.253",
+          "tenThanHienThi": "11a.253",
+          "TonDK": 0.0,
+          "NhapTK": 25561.0,
+          "XuatTK": 25100.0,
+          "TonCK": 461.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.254",
+          "tenThanDb": "11a.254",
+          "tenThanHienThi": "11a.254",
+          "TonDK": 0.0,
+          "NhapTK": 20547.0,
+          "XuatTK": 13847.0,
+          "TonCK": 6700.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.255",
+          "tenThanDb": "11a.255",
+          "tenThanHienThi": "11a.255",
+          "TonDK": 0.0,
+          "NhapTK": 18157.0,
+          "XuatTK": 0.0,
+          "TonCK": 18157.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.241",
+          "tenThanDb": "11a.241",
+          "tenThanHienThi": "11a.241",
+          "TonDK": 0.3,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 0.3
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.243",
+          "tenThanDb": "11a.243",
+          "tenThanHienThi": "11a.243",
+          "TonDK": -0.01,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -0.01
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.245",
+          "tenThanDb": "11a.245",
+          "tenThanHienThi": "11a.245",
+          "TonDK": -1.37,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -1.37
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.246",
+          "tenThanDb": "11a.246",
+          "tenThanHienThi": "11a.246",
+          "TonDK": -0.37,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -0.37
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.247",
+          "tenThanDb": "11a.247",
+          "tenThanHienThi": "11a.247",
+          "TonDK": 23.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 23.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11a.248",
+          "tenThanDb": "11a.248",
+          "tenThanHienThi": "11a.248",
+          "TonDK": 33.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 33.0
+        },
+        {
+          "rawMaKho": "09",
+          "rawTenKho": "",
+          "maThan": "11B.1",
+          "tenThanDb": "11B.1",
+          "tenThanHienThi": "11B.1",
+          "TonDK": 418.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 418.0
+        }
+      ]
+    },
+    {
+      "khoCode": "10",
+      "tenKhoApp": "Kho 10",
+      "items": [
+        {
+          "tenThanHienThi": "10A.1",
+          "tonKho": 1369.21,
+          "maThanList": [
+            "10A.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "10B.1",
+          "tonKho": 442.0,
+          "maThanList": [
+            "10B.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "10a.101",
+          "tonKho": 10.82,
+          "maThanList": [
+            "10a.101"
+          ]
+        },
+        {
+          "tenThanHienThi": "10a.259",
+          "tonKho": -0.04,
+          "maThanList": [
+            "10a.259"
+          ]
+        },
+        {
+          "tenThanHienThi": "10a.262",
+          "tonKho": -12.0,
+          "maThanList": [
+            "10a.262"
+          ]
+        },
+        {
+          "tenThanHienThi": "10a.263",
+          "tonKho": 292.0,
+          "maThanList": [
+            "10a.263"
+          ]
+        },
+        {
+          "tenThanHienThi": "10a.264",
+          "tonKho": 5087.0,
+          "maThanList": [
+            "10a.264"
+          ]
+        },
+        {
+          "tenThanHienThi": "10a.72",
+          "tonKho": 0.22,
+          "maThanList": [
+            "10a.72"
+          ]
+        },
+        {
+          "tenThanHienThi": "9b.1",
+          "tonKho": 192.0,
+          "maThanList": [
+            "9b.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10A.1",
+          "tenThanDb": "10A.1",
+          "tenThanHienThi": "10A.1",
+          "TonDK": 12796.21,
+          "NhapTK": 2585.0,
+          "XuatTK": 14012.0,
+          "TonCK": 1369.21
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10a.264",
+          "tenThanDb": "10a.264",
+          "tenThanHienThi": "10a.264",
+          "TonDK": 0.0,
+          "NhapTK": 5087.0,
+          "XuatTK": 0.0,
+          "TonCK": 5087.0
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10B.1",
+          "tenThanDb": "10B.1",
+          "tenThanHienThi": "10B.1",
+          "TonDK": 2711.0,
+          "NhapTK": 541.0,
+          "XuatTK": 2810.0,
+          "TonCK": 442.0
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "9b.1",
+          "tenThanDb": "9b.1",
+          "tenThanHienThi": "9b.1",
+          "TonDK": 0.0,
+          "NhapTK": 448.0,
+          "XuatTK": 256.0,
+          "TonCK": 192.0
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10a.101",
+          "tenThanDb": "10a.101",
+          "tenThanHienThi": "10a.101",
+          "TonDK": 10.82,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 10.82
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10a.259",
+          "tenThanDb": "10a.259",
+          "tenThanHienThi": "10a.259",
+          "TonDK": -0.04,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -0.04
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10a.262",
+          "tenThanDb": "10a.262",
+          "tenThanHienThi": "10a.262",
+          "TonDK": -12.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -12.0
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10a.263",
+          "tenThanDb": "10a.263",
+          "tenThanHienThi": "10a.263",
+          "TonDK": 292.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 292.0
+        },
+        {
+          "rawMaKho": "10",
+          "rawTenKho": "",
+          "maThan": "10a.72",
+          "tenThanDb": "10a.72",
+          "tenThanHienThi": "10a.72",
+          "TonDK": 0.22,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 0.22
+        }
+      ]
+    },
+    {
+      "khoCode": "11",
+      "tenKhoApp": "Kho 11",
+      "items": [
+        {
+          "tenThanHienThi": "9A.1",
+          "tonKho": 37190.49,
+          "maThanList": [
+            "9A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "11",
+          "rawTenKho": "",
+          "maThan": "9A.1",
+          "tenThanDb": "9A.1",
+          "tenThanHienThi": "9A.1",
+          "TonDK": 38391.49,
+          "NhapTK": 0.0,
+          "XuatTK": 1201.0,
+          "TonCK": 37190.49
+        }
+      ]
+    },
+    {
+      "khoCode": "12",
+      "tenKhoApp": "Kho 12",
+      "items": [
+        {
+          "tenThanHienThi": "8B.1",
+          "tonKho": 26710.64,
+          "maThanList": [
+            "8B.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "12",
+          "rawTenKho": "",
+          "maThan": "8B.1",
+          "tenThanDb": "8B.1",
+          "tenThanHienThi": "8B.1",
+          "TonDK": 25271.64,
+          "NhapTK": 1439.0,
+          "XuatTK": 0.0,
+          "TonCK": 26710.64
+        }
+      ]
+    },
+    {
+      "khoCode": "13",
+      "tenKhoApp": "Kho 13",
+      "items": [
+        {
+          "tenThanHienThi": "8A.1",
+          "tonKho": 18297.95,
+          "maThanList": [
+            "8A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "13",
+          "rawTenKho": "",
+          "maThan": "8A.1",
+          "tenThanDb": "8A.1",
+          "tenThanHienThi": "8A.1",
+          "TonDK": 18297.95,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 18297.95
+        }
+      ]
+    },
+    {
+      "khoCode": "14",
+      "tenKhoApp": "Kho 14",
+      "items": [
+        {
+          "tenThanHienThi": "Chưa có tồn kho",
+          "tonKho": 0.0001,
+          "maThanList": []
+        }
+      ],
+      "traceItems": []
+    },
+    {
+      "khoCode": "15",
+      "tenKhoApp": "Kho 15",
+      "items": [
+        {
+          "tenThanHienThi": "5a.1",
+          "tonKho": 35470.8,
+          "maThanList": [
+            "5a.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "15",
+          "rawTenKho": "",
+          "maThan": "5a.1",
+          "tenThanDb": "5a.1",
+          "tenThanHienThi": "5a.1",
+          "TonDK": 32500.8,
+          "NhapTK": 2970.0,
+          "XuatTK": 0.0,
+          "TonCK": 35470.8
+        }
+      ]
+    },
+    {
+      "khoCode": "16",
+      "tenKhoApp": "Kho 16",
+      "items": [
+        {
+          "tenThanHienThi": "5A.1",
+          "tonKho": 13252.46,
+          "maThanList": [
+            "5A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "16",
+          "rawTenKho": "",
+          "maThan": "5A.1",
+          "tenThanDb": "5A.1",
+          "tenThanHienThi": "5A.1",
+          "TonDK": 13252.46,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 13252.46
+        }
+      ]
+    },
+    {
+      "khoCode": "17",
+      "tenKhoApp": "Kho 17",
+      "items": [
+        {
+          "tenThanHienThi": "6A.1",
+          "tonKho": 52884.05,
+          "maThanList": [
+            "6A.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "7A.1",
+          "tonKho": 19210.6,
+          "maThanList": [
+            "7A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "17",
+          "rawTenKho": "",
+          "maThan": "6A.1",
+          "tenThanDb": "6A.1",
+          "tenThanHienThi": "6A.1",
+          "TonDK": 46220.05,
+          "NhapTK": 6664.0,
+          "XuatTK": 0.0,
+          "TonCK": 52884.05
+        },
+        {
+          "rawMaKho": "17",
+          "rawTenKho": "",
+          "maThan": "7A.1",
+          "tenThanDb": "7A.1",
+          "tenThanHienThi": "7A.1",
+          "TonDK": 22078.6,
+          "NhapTK": 0.0,
+          "XuatTK": 2868.0,
+          "TonCK": 19210.6
+        }
+      ]
+    },
+    {
+      "khoCode": "18",
+      "tenKhoApp": "Kho 18",
+      "items": [
+        {
+          "tenThanHienThi": "8B.1",
+          "tonKho": 14983.58,
+          "maThanList": [
+            "8B.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "18",
+          "rawTenKho": "",
+          "maThan": "8B.1",
+          "tenThanDb": "8B.1",
+          "tenThanHienThi": "8B.1",
+          "TonDK": 13807.58,
+          "NhapTK": 1176.0,
+          "XuatTK": 0.0,
+          "TonCK": 14983.58
+        }
+      ]
+    },
+    {
+      "khoCode": "19",
+      "tenKhoApp": "Kho 19",
+      "items": [
+        {
+          "tenThanHienThi": "8B.1",
+          "tonKho": 15242.09,
+          "maThanList": [
+            "8B.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "19",
+          "rawTenKho": "",
+          "maThan": "8B.1",
+          "tenThanDb": "8B.1",
+          "tenThanHienThi": "8B.1",
+          "TonDK": 14285.09,
+          "NhapTK": 957.0,
+          "XuatTK": 0.0,
+          "TonCK": 15242.09
+        }
+      ]
+    },
+    {
+      "khoCode": "20",
+      "tenKhoApp": "Kho 20",
+      "items": [
+        {
+          "tenThanHienThi": "9A.1",
+          "tonKho": 66556.93,
+          "maThanList": [
+            "9A.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "9B.1",
+          "tonKho": 1940.0,
+          "maThanList": [
+            "9B.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "20",
+          "rawTenKho": "",
+          "maThan": "9A.1",
+          "tenThanDb": "9A.1",
+          "tenThanHienThi": "9A.1",
+          "TonDK": 72912.93,
+          "NhapTK": 0.0,
+          "XuatTK": 6356.0,
+          "TonCK": 66556.93
+        },
+        {
+          "rawMaKho": "20",
+          "rawTenKho": "",
+          "maThan": "9B.1",
+          "tenThanDb": "9B.1",
+          "tenThanHienThi": "9B.1",
+          "TonDK": 0.0,
+          "NhapTK": 7154.0,
+          "XuatTK": 5214.0,
+          "TonCK": 1940.0
+        }
+      ]
+    },
+    {
+      "khoCode": "21",
+      "tenKhoApp": "Kho 21",
+      "items": [
+        {
+          "tenThanHienThi": "10A.1",
+          "tonKho": 604.32,
+          "maThanList": [
+            "10A.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "10B.1",
+          "tonKho": -258.56,
+          "maThanList": [
+            "10B.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "11A.1",
+          "tonKho": 5670.49,
+          "maThanList": [
+            "11A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "21",
+          "rawTenKho": "",
+          "maThan": "10A.1",
+          "tenThanDb": "10A.1",
+          "tenThanHienThi": "10A.1",
+          "TonDK": 11014.32,
+          "NhapTK": 21532.0,
+          "XuatTK": 31942.0,
+          "TonCK": 604.32
+        },
+        {
+          "rawMaKho": "21",
+          "rawTenKho": "",
+          "maThan": "10B.1",
+          "tenThanDb": "10B.1",
+          "tenThanHienThi": "10B.1",
+          "TonDK": 3451.44,
+          "NhapTK": 7412.0,
+          "XuatTK": 11122.0,
+          "TonCK": -258.56
+        },
+        {
+          "rawMaKho": "21",
+          "rawTenKho": "",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 7291.49,
+          "NhapTK": 16816.0,
+          "XuatTK": 18437.0,
+          "TonCK": 5670.49
+        }
+      ]
+    },
+    {
+      "khoCode": "22",
+      "tenKhoApp": "Kho 22",
+      "items": [
+        {
+          "tenThanHienThi": "Chưa có tồn kho",
+          "tonKho": 0.0001,
+          "maThanList": []
+        }
+      ],
+      "traceItems": []
+    },
+    {
+      "khoCode": "23",
+      "tenKhoApp": "Kho 23",
+      "items": [
+        {
+          "tenThanHienThi": "8b.1",
+          "tonKho": 21824.66,
+          "maThanList": [
+            "8b.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "23",
+          "rawTenKho": "",
+          "maThan": "8b.1",
+          "tenThanDb": "8b.1",
+          "tenThanHienThi": "8b.1",
+          "TonDK": 21824.66,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 21824.66
+        }
+      ]
+    },
+    {
+      "khoCode": "24",
+      "tenKhoApp": "Kho 24",
+      "items": [
+        {
+          "tenThanHienThi": "11A.1",
+          "tonKho": 4197.0,
+          "maThanList": [
+            "11A.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "24",
+          "rawTenKho": "",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 8507.0,
+          "NhapTK": 0.0,
+          "XuatTK": 4310.0,
+          "TonCK": 4197.0
+        }
+      ]
+    },
+    {
+      "khoCode": "25",
+      "tenKhoApp": "Kho 25",
+      "items": [
+        {
+          "tenThanHienThi": "6a.1",
+          "tonKho": 17171.72,
+          "maThanList": [
+            "6a.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "25",
+          "rawTenKho": "",
+          "maThan": "6a.1",
+          "tenThanDb": "6a.1",
+          "tenThanHienThi": "6a.1",
+          "TonDK": 17171.72,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 17171.72
+        }
+      ]
+    },
+    {
+      "khoCode": "26",
+      "tenKhoApp": "Kho 26",
+      "items": [
+        {
+          "tenThanHienThi": "b32d",
+          "tonKho": 18694.98,
+          "maThanList": [
+            "b32d"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "29",
+          "rawTenKho": "",
+          "maThan": "b32d",
+          "tenThanDb": "b32d",
+          "tenThanHienThi": "b32d",
+          "TonDK": 17350.98,
+          "NhapTK": 1948.0,
+          "XuatTK": 604.0,
+          "TonCK": 18694.98
+        }
+      ]
+    },
+    {
+      "khoCode": "27",
+      "tenKhoApp": "Kho 27",
+      "items": [
+        {
+          "tenThanHienThi": "11b.1",
+          "tonKho": 602.72,
+          "maThanList": [
+            "11b.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "B32d",
+          "tonKho": 13435.09,
+          "maThanList": [
+            "B32d"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "30b",
+          "rawTenKho": "",
+          "maThan": "11b.1",
+          "tenThanDb": "11b.1",
+          "tenThanHienThi": "11b.1",
+          "TonDK": 707.72,
+          "NhapTK": 0.0,
+          "XuatTK": 105.0,
+          "TonCK": 602.72
+        },
+        {
+          "rawMaKho": "30B",
+          "rawTenKho": "",
+          "maThan": "B32d",
+          "tenThanDb": "B32d",
+          "tenThanHienThi": "B32d",
+          "TonDK": 360.09,
+          "NhapTK": 13075.0,
+          "XuatTK": 0.0,
+          "TonCK": 13435.09
+        }
+      ]
+    },
+    {
+      "khoCode": "28",
+      "tenKhoApp": "Kho 28",
+      "items": [
+        {
+          "tenThanHienThi": "11b.1",
+          "tonKho": 19353.24,
+          "maThanList": [
+            "11b.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "31c",
+          "rawTenKho": "",
+          "maThan": "11b.1",
+          "tenThanDb": "11b.1",
+          "tenThanHienThi": "11b.1",
+          "TonDK": 26021.24,
+          "NhapTK": 134.0,
+          "XuatTK": 6802.0,
+          "TonCK": 19353.24
+        }
+      ]
+    },
+    {
+      "khoCode": "28-1",
+      "tenKhoApp": "Kho 28-1",
+      "items": [
+        {
+          "tenThanHienThi": "11b.1",
+          "tonKho": 18862.94,
+          "maThanList": [
+            "11b.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "31D",
+          "rawTenKho": "",
+          "maThan": "11b.1",
+          "tenThanDb": "11b.1",
+          "tenThanHienThi": "11b.1",
+          "TonDK": 17959.94,
+          "NhapTK": 2912.0,
+          "XuatTK": 2009.0,
+          "TonCK": 18862.94
+        }
+      ]
+    },
+    {
+      "khoCode": "29",
+      "tenKhoApp": "Kho 29",
+      "items": [
+        {
+          "tenThanHienThi": "6a.1",
+          "tonKho": 18990.4,
+          "maThanList": [
+            "6a.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "26",
+          "rawTenKho": "",
+          "maThan": "6a.1",
+          "tenThanDb": "6a.1",
+          "tenThanHienThi": "6a.1",
+          "TonDK": 18990.4,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 18990.4
+        }
+      ]
+    },
+    {
+      "khoCode": "30",
+      "tenKhoApp": "Kho 30",
+      "items": [
+        {
+          "tenThanHienThi": "6a.1",
+          "tonKho": 22274.7,
+          "maThanList": [
+            "6a.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "27",
+          "rawTenKho": "",
+          "maThan": "6a.1",
+          "tenThanDb": "6a.1",
+          "tenThanHienThi": "6a.1",
+          "TonDK": 22274.7,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 22274.7
+        }
+      ]
+    },
+    {
+      "khoCode": "31",
+      "tenKhoApp": "Kho 31",
+      "items": [
+        {
+          "tenThanHienThi": "00",
+          "tonKho": 9854.98,
+          "maThanList": [
+            "00"
+          ]
+        },
+        {
+          "tenThanHienThi": "B29A",
+          "tonKho": 1772.0,
+          "maThanList": [
+            "B29A"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "43",
+          "rawTenKho": "",
+          "maThan": "00",
+          "tenThanDb": "00",
+          "tenThanHienThi": "00",
+          "TonDK": 25854.98,
+          "NhapTK": 0.0,
+          "XuatTK": 16000.0,
+          "TonCK": 9854.98
+        },
+        {
+          "rawMaKho": "43",
+          "rawTenKho": "",
+          "maThan": "B29A",
+          "tenThanDb": "B29A",
+          "tenThanHienThi": "B29A",
+          "TonDK": 4332.0,
+          "NhapTK": 1000.0,
+          "XuatTK": 3560.0,
+          "TonCK": 1772.0
+        }
+      ]
+    },
+    {
+      "khoCode": "32",
+      "tenKhoApp": "Kho 32",
+      "items": [
+        {
+          "tenThanHienThi": "00",
+          "tonKho": 9337.51,
+          "maThanList": [
+            "00"
+          ]
+        },
+        {
+          "tenThanHienThi": "B28C",
+          "tonKho": 40.0,
+          "maThanList": [
+            "B28C"
+          ]
+        },
+        {
+          "tenThanHienThi": "b2902",
+          "tonKho": 583.06,
+          "maThanList": [
+            "b2902"
+          ]
+        },
+        {
+          "tenThanHienThi": "b29a",
+          "tonKho": 2767.39,
+          "maThanList": [
+            "b29a"
+          ]
+        },
+        {
+          "tenThanHienThi": "b32d",
+          "tonKho": 1497.9,
+          "maThanList": [
+            "b32d"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "44",
+          "rawTenKho": "",
+          "maThan": "00",
+          "tenThanDb": "00",
+          "tenThanHienThi": "00",
+          "TonDK": 17679.25,
+          "NhapTK": 32182.0,
+          "XuatTK": 40523.74,
+          "TonCK": 9337.51
+        },
+        {
+          "rawMaKho": "44",
+          "rawTenKho": "",
+          "maThan": "b2902",
+          "tenThanDb": "b2902",
+          "tenThanHienThi": "b2902",
+          "TonDK": 3440.39,
+          "NhapTK": 6015.0,
+          "XuatTK": 8872.33,
+          "TonCK": 583.06
+        },
+        {
+          "rawMaKho": "44",
+          "rawTenKho": "",
+          "maThan": "b29a",
+          "tenThanDb": "b29a",
+          "tenThanHienThi": "b29a",
+          "TonDK": 4229.39,
+          "NhapTK": 3232.0,
+          "XuatTK": 4694.0,
+          "TonCK": 2767.39
+        },
+        {
+          "rawMaKho": "44",
+          "rawTenKho": "",
+          "maThan": "b32d",
+          "tenThanDb": "b32d",
+          "tenThanHienThi": "b32d",
+          "TonDK": 648.9,
+          "NhapTK": 4815.0,
+          "XuatTK": 3966.0,
+          "TonCK": 1497.9
+        },
+        {
+          "rawMaKho": "31B",
+          "rawTenKho": "",
+          "maThan": "B28C",
+          "tenThanDb": "B28C",
+          "tenThanHienThi": "B28C",
+          "TonDK": 40.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 40.0
+        }
+      ]
+    },
+    {
+      "khoCode": "33",
+      "tenKhoApp": "Kho 33",
+      "items": [
+        {
+          "tenThanHienThi": "B29a",
+          "tonKho": 2500.08,
+          "maThanList": [
+            "B29a"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "45",
+          "rawTenKho": "",
+          "maThan": "B29a",
+          "tenThanDb": "B29a",
+          "tenThanHienThi": "B29a",
+          "TonDK": 2381.78,
+          "NhapTK": 8464.0,
+          "XuatTK": 8345.7,
+          "TonCK": 2500.08
+        }
+      ]
+    },
+    {
+      "khoCode": "34",
+      "tenKhoApp": "Kho 34",
+      "items": [
+        {
+          "tenThanHienThi": "6a.1",
+          "tonKho": 43197.29,
+          "maThanList": [
+            "6a.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "34A",
+          "rawTenKho": "",
+          "maThan": "6a.1",
+          "tenThanDb": "6a.1",
+          "tenThanHienThi": "6a.1",
+          "TonDK": 43197.29,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 43197.29
+        }
+      ]
+    },
+    {
+      "khoCode": "35",
+      "tenKhoApp": "Kho 35",
+      "items": [
+        {
+          "tenThanHienThi": "Chưa có tồn kho",
+          "tonKho": 0.0001,
+          "maThanList": []
+        }
+      ],
+      "traceItems": []
+    },
+    {
+      "khoCode": "37",
+      "tenKhoApp": "Kho 37",
+      "items": [
+        {
+          "tenThanHienThi": "B32d",
+          "tonKho": 36686.58,
+          "maThanList": [
+            "B32d"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "36",
+          "rawTenKho": "",
+          "maThan": "B32d",
+          "tenThanDb": "B32d",
+          "tenThanHienThi": "B32d",
+          "TonDK": 52191.58,
+          "NhapTK": 0.0,
+          "XuatTK": 15505.0,
+          "TonCK": 36686.58
+        }
+      ]
+    },
+    {
+      "khoCode": "38",
+      "tenKhoApp": "Kho 38",
+      "items": [
+        {
+          "tenThanHienThi": "00",
+          "tonKho": 348437.53,
+          "maThanList": [
+            "00"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "46a",
+          "rawTenKho": "",
+          "maThan": "00",
+          "tenThanDb": "00",
+          "tenThanHienThi": "00",
+          "TonDK": 386629.53,
+          "NhapTK": 0.0,
+          "XuatTK": 38192.0,
+          "TonCK": 348437.53
+        }
+      ]
+    },
+    {
+      "khoCode": "39",
+      "tenKhoApp": "Kho 39",
+      "items": [
+        {
+          "tenThanHienThi": "NHK.295",
+          "tonKho": 9.13,
+          "maThanList": [
+            "NHK.295"
+          ]
+        },
+        {
+          "tenThanHienThi": "NHK.296",
+          "tonKho": -12.88,
+          "maThanList": [
+            "NHK.296"
+          ]
+        },
+        {
+          "tenThanHienThi": "NHK.297",
+          "tonKho": 97.12,
+          "maThanList": [
+            "NHK.297"
+          ]
+        },
+        {
+          "tenThanHienThi": "NHK.298",
+          "tonKho": 3749.96,
+          "maThanList": [
+            "NHK.298"
+          ]
+        },
+        {
+          "tenThanHienThi": "NHK.299",
+          "tonKho": 2056.0,
+          "maThanList": [
+            "NHK.299"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "28",
+          "rawTenKho": "",
+          "maThan": "NHK.295",
+          "tenThanDb": "NHK.295",
+          "tenThanHienThi": "NHK.295",
+          "TonDK": 643.13,
+          "NhapTK": 0.0,
+          "XuatTK": 634.0,
+          "TonCK": 9.13
+        },
+        {
+          "rawMaKho": "28",
+          "rawTenKho": "",
+          "maThan": "NHK.296",
+          "tenThanDb": "NHK.296",
+          "tenThanHienThi": "NHK.296",
+          "TonDK": 5243.59,
+          "NhapTK": 4975.84,
+          "XuatTK": 10232.31,
+          "TonCK": -12.88
+        },
+        {
+          "rawMaKho": "28",
+          "rawTenKho": "",
+          "maThan": "NHK.297",
+          "tenThanDb": "NHK.297",
+          "tenThanHienThi": "NHK.297",
+          "TonDK": 0.0,
+          "NhapTK": 10369.95,
+          "XuatTK": 10272.83,
+          "TonCK": 97.12
+        },
+        {
+          "rawMaKho": "28",
+          "rawTenKho": "",
+          "maThan": "NHK.298",
+          "tenThanDb": "NHK.298",
+          "tenThanHienThi": "NHK.298",
+          "TonDK": 0.0,
+          "NhapTK": 14158.71,
+          "XuatTK": 10408.75,
+          "TonCK": 3749.96
+        },
+        {
+          "rawMaKho": "28",
+          "rawTenKho": "",
+          "maThan": "NHK.299",
+          "tenThanDb": "NHK.299",
+          "tenThanHienThi": "NHK.299",
+          "TonDK": 0.0,
+          "NhapTK": 2056.0,
+          "XuatTK": 0.0,
+          "TonCK": 2056.0
+        }
+      ]
+    },
+    {
+      "khoCode": "40",
+      "tenKhoApp": "Kho 40",
+      "items": [
+        {
+          "tenThanHienThi": "B5.01",
+          "tonKho": 6681.44,
+          "maThanList": [
+            "B5.01"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "60",
+          "rawTenKho": "",
+          "maThan": "B5.01",
+          "tenThanDb": "B5.01",
+          "tenThanHienThi": "B5.01",
+          "TonDK": 10273.19,
+          "NhapTK": 23186.0,
+          "XuatTK": 26777.75,
+          "TonCK": 6681.44
+        }
+      ]
+    },
+    {
+      "khoCode": "1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "items": [
+        {
+          "tenThanHienThi": "11a.1",
+          "tonKho": 77751.99,
+          "maThanList": [
+            "11a.1"
+          ]
+        },
+        {
+          "tenThanHienThi": "b11c",
+          "tonKho": 1209.0,
+          "maThanList": [
+            "b11c"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "71",
+          "rawTenKho": "",
+          "maThan": "11a.1",
+          "tenThanDb": "11a.1",
+          "tenThanHienThi": "11a.1",
+          "TonDK": 83251.99,
+          "NhapTK": 136437.0,
+          "XuatTK": 141937.0,
+          "TonCK": 77751.99
+        },
+        {
+          "rawMaKho": "71",
+          "rawTenKho": "",
+          "maThan": "b11c",
+          "tenThanDb": "b11c",
+          "tenThanHienThi": "b11c",
+          "TonDK": 1209.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 1209.0
+        }
+      ]
+    },
+    {
+      "khoCode": "2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "items": [
+        {
+          "tenThanHienThi": "00",
+          "tonKho": 519.1,
+          "maThanList": [
+            "00"
+          ]
+        },
+        {
+          "tenThanHienThi": "B5.01",
+          "tonKho": 4898.38,
+          "maThanList": [
+            "B5.01"
+          ]
+        },
+        {
+          "tenThanHienThi": "b16.09",
+          "tonKho": 7187.1,
+          "maThanList": [
+            "b16.09"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "72",
+          "rawTenKho": "",
+          "maThan": "00",
+          "tenThanDb": "00",
+          "tenThanHienThi": "00",
+          "TonDK": 6241.77,
+          "NhapTK": 28035.33,
+          "XuatTK": 33758.0,
+          "TonCK": 519.1
+        },
+        {
+          "rawMaKho": "72",
+          "rawTenKho": "",
+          "maThan": "b16.09",
+          "tenThanDb": "b16.09",
+          "tenThanHienThi": "b16.09",
+          "TonDK": 5027.1,
+          "NhapTK": 2160.0,
+          "XuatTK": 0.0,
+          "TonCK": 7187.1
+        },
+        {
+          "rawMaKho": "72",
+          "rawTenKho": "",
+          "maThan": "B5.01",
+          "tenThanDb": "B5.01",
+          "tenThanHienThi": "B5.01",
+          "TonDK": 4447.39,
+          "NhapTK": 1499.0,
+          "XuatTK": 1048.01,
+          "TonCK": 4898.38
+        }
+      ]
+    },
+    {
+      "khoCode": "3-T4",
+      "tenKhoApp": "Kho 3-T4",
+      "items": [
+        {
+          "tenThanHienThi": "00",
+          "tonKho": 350.16,
+          "maThanList": [
+            "00"
+          ]
+        },
+        {
+          "tenThanHienThi": "b5.01",
+          "tonKho": -313.59,
+          "maThanList": [
+            "b5.01"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "73",
+          "rawTenKho": "",
+          "maThan": "00",
+          "tenThanDb": "00",
+          "tenThanHienThi": "00",
+          "TonDK": 11629.16,
+          "NhapTK": 0.0,
+          "XuatTK": 11279.0,
+          "TonCK": 350.16
+        },
+        {
+          "rawMaKho": "73",
+          "rawTenKho": "",
+          "maThan": "b5.01",
+          "tenThanDb": "b5.01",
+          "tenThanHienThi": "b5.01",
+          "TonDK": 0.0,
+          "NhapTK": 0.0,
+          "XuatTK": 313.59,
+          "TonCK": -313.59
+        }
+      ]
+    },
+    {
+      "khoCode": "4-T4",
+      "tenKhoApp": "Kho 4-T4",
+      "items": [
+        {
+          "tenThanHienThi": "11a.1",
+          "tonKho": 27914.54,
+          "maThanList": [
+            "11a.1"
+          ]
+        }
+      ],
+      "traceItems": [
+        {
+          "rawMaKho": "74",
+          "rawTenKho": "",
+          "maThan": "11a.1",
+          "tenThanDb": "11a.1",
+          "tenThanHienThi": "11a.1",
+          "TonDK": 27914.54,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 27914.54
+        }
+      ]
+    }
+  ],
+  "standardKhoList": [
+    "Kho 1",
+    "Kho 2",
+    "Kho 3",
+    "Kho 4",
+    "Kho 5",
+    "Kho 6",
+    "Kho 7",
+    "Kho 8",
+    "Kho 9",
+    "Kho 10",
+    "Kho 11",
+    "Kho 12",
+    "Kho 13",
+    "Kho 14",
+    "Kho 15",
+    "Kho 16",
+    "Kho 17",
+    "Kho 18",
+    "Kho 19",
+    "Kho 20",
+    "Kho 21",
+    "Kho 22",
+    "Kho 23",
+    "Kho 24",
+    "Kho 25",
+    "Kho 26",
+    "Kho 27",
+    "Kho 28",
+    "Kho 28-1",
+    "Kho 29",
+    "Kho 30",
+    "Kho 31",
+    "Kho 32",
+    "Kho 33",
+    "Kho 34",
+    "Kho 35",
+    "Kho 37",
+    "Kho 38",
+    "Kho 39",
+    "Kho 40",
+    "Kho 1-T4",
+    "Kho 2-T4",
+    "Kho 3-T4",
+    "Kho 4-T4"
+  ]
+}
