@@ -1,0 +1,2048 @@
+{
+  "updatedAt": "2026-05-13 23:37:33",
+  "source": "TTCO_DB",
+  "server": "tuyenthancuaong.com.vn,52376",
+  "stockPeriod": {
+    "NamHT": 2026,
+    "ThangHT": 5
+  },
+  "dbColumnsUsed": {
+    "stockWarehouseCode": "MaKho",
+    "stockCoalCode": "MaThan",
+    "warehouseCode": "MaKho",
+    "warehouseName": "TenKho",
+    "coalCode": "MaThan",
+    "coalName": "TenThan",
+    "TonDK": "TonDK",
+    "NhapTK": "NhapTK",
+    "XuatTK": "XuatTK",
+    "TonCK": "TonCK",
+    "TonCK_TToan": "TonCK_TToan",
+    "NamHT": "NamHT",
+    "ThangHT": "ThangHT"
+  },
+  "khoList": [
+    {
+      "maKhoDb": "01",
+      "khoCode": "1",
+      "tenKhoApp": "Kho 1",
+      "tenKhoDb": "Kho 1",
+      "items": [
+        {
+          "maThanList": [
+            "B11C"
+          ],
+          "tenThanHienThi": "B11C",
+          "tonKho": 576.88
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "01",
+          "maThan": "B11C",
+          "tenThanDb": "B11C",
+          "tenThanHienThi": "B11C",
+          "TonDK": 509.95,
+          "NhapTK": 2146.0,
+          "XuatTK": 1984.2,
+          "TonCK": 671.75,
+          "TonCK_TToan": 576.88,
+          "TonCuoi_TinhLai": 671.75,
+          "TonKho_App": 576.88
+        }
+      ]
+    },
+    {
+      "maKhoDb": "71",
+      "khoCode": "1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "tenKhoDb": "Kho 1-T4",
+      "items": [
+        {
+          "maThanList": [
+            "11a.1"
+          ],
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tonKho": 63831.79
+        },
+        {
+          "maThanList": [
+            "b11c"
+          ],
+          "tenThanHienThi": "b11c",
+          "tonKho": 1209.0
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "71",
+          "maThan": "11a.1",
+          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "TonDK": 83251.99,
+          "NhapTK": 66728.0,
+          "XuatTK": 76337.0,
+          "TonCK": 73642.99,
+          "TonCK_TToan": 63831.79,
+          "TonCuoi_TinhLai": 73642.99,
+          "TonKho_App": 63831.79
+        },
+        {
+          "maKhoDb": "71",
+          "maThan": "b11c",
+          "tenThanDb": "b11c",
+          "tenThanHienThi": "b11c",
+          "TonDK": 1209.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 1209.0,
+          "TonCK_TToan": 1209.0,
+          "TonCuoi_TinhLai": 1209.0,
+          "TonKho_App": 1209.0
+        }
+      ]
+    },
+    {
+      "maKhoDb": "02",
+      "khoCode": "2",
+      "tenKhoApp": "Kho 2",
+      "tenKhoDb": "Kho 2",
+      "items": [
+        {
+          "maThanList": [
+            "5A.1"
+          ],
+          "tenThanHienThi": "5A.1",
+          "tonKho": 7937.86
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "02",
+          "maThan": "5A.1",
+          "tenThanDb": "5A.1",
+          "tenThanHienThi": "5A.1",
+          "TonDK": 7937.86,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 7937.86,
+          "TonCK_TToan": 7937.86,
+          "TonCuoi_TinhLai": 7937.86,
+          "TonKho_App": 7937.86
+        }
+      ]
+    },
+    {
+      "maKhoDb": "72",
+      "khoCode": "2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "tenKhoDb": "Kho 2-T4",
+      "items": [
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": -6111.74
+        },
+        {
+          "maThanList": [
+            "b16.09"
+          ],
+          "tenThanHienThi": "b16.09",
+          "tonKho": 5377.1
+        },
+        {
+          "maThanList": [
+            "B5.01"
+          ],
+          "tenThanHienThi": "Đá thải",
+          "tonKho": 5038.39
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "72",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 6241.77,
+          "NhapTK": 12568.2,
+          "XuatTK": 18259.0,
+          "TonCK": 550.97,
+          "TonCK_TToan": -6111.74,
+          "TonCuoi_TinhLai": 550.97,
+          "TonKho_App": -6111.74
+        },
+        {
+          "maKhoDb": "72",
+          "maThan": "b16.09",
+          "tenThanDb": "b16.09",
+          "tenThanHienThi": "b16.09",
+          "TonDK": 5027.1,
+          "NhapTK": 350.0,
+          "XuatTK": 0.0,
+          "TonCK": 5377.1,
+          "TonCK_TToan": 5377.1,
+          "TonCuoi_TinhLai": 5377.1,
+          "TonKho_App": 5377.1
+        },
+        {
+          "maKhoDb": "72",
+          "maThan": "B5.01",
+          "tenThanDb": "Đá thải",
+          "tenThanHienThi": "Đá thải",
+          "TonDK": 4447.39,
+          "NhapTK": 591.0,
+          "XuatTK": 0.0,
+          "TonCK": 5038.39,
+          "TonCK_TToan": 5038.39,
+          "TonCuoi_TinhLai": 5038.39,
+          "TonKho_App": 5038.39
+        }
+      ]
+    },
+    {
+      "maKhoDb": "03",
+      "khoCode": "3",
+      "tenKhoApp": "Kho 3",
+      "tenKhoDb": "Kho 3",
+      "items": [
+        {
+          "maThanList": [
+            "4A.1"
+          ],
+          "tenThanHienThi": "4A.1",
+          "tonKho": 1350.76
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "03",
+          "maThan": "4A.1",
+          "tenThanDb": "4A.1",
+          "tenThanHienThi": "4A.1",
+          "TonDK": 1507.63,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 1507.63,
+          "TonCK_TToan": 1350.76,
+          "TonCuoi_TinhLai": 1507.63,
+          "TonKho_App": 1350.76
+        }
+      ]
+    },
+    {
+      "maKhoDb": "73",
+      "khoCode": "3-T4",
+      "tenKhoApp": "Kho 3-T4",
+      "tenKhoDb": "Kho 3-T4",
+      "items": [
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": 6021.16
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "73",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 11629.16,
+          "NhapTK": 0.0,
+          "XuatTK": 5608.0,
+          "TonCK": 6021.16,
+          "TonCK_TToan": 6021.16,
+          "TonCuoi_TinhLai": 6021.16,
+          "TonKho_App": 6021.16
+        }
+      ]
+    },
+    {
+      "maKhoDb": "04",
+      "khoCode": "4",
+      "tenKhoApp": "Kho 4",
+      "tenKhoDb": "Kho 4",
+      "items": [
+        {
+          "maThanList": [
+            "4A.1"
+          ],
+          "tenThanHienThi": "4A.1",
+          "tonKho": 11465.42
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "04",
+          "maThan": "4A.1",
+          "tenThanDb": "4A.1",
+          "tenThanHienThi": "4A.1",
+          "TonDK": 11505.17,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 11505.17,
+          "TonCK_TToan": 11465.42,
+          "TonCuoi_TinhLai": 11505.17,
+          "TonKho_App": 11465.42
+        }
+      ]
+    },
+    {
+      "maKhoDb": "74",
+      "khoCode": "4-T4",
+      "tenKhoApp": "Kho 4-T4",
+      "tenKhoDb": "Kho 4-T4",
+      "items": [
+        {
+          "maThanList": [
+            "11a.1"
+          ],
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tonKho": 27914.54
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "74",
+          "maThan": "11a.1",
+          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "TonDK": 27914.54,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 27914.54,
+          "TonCK_TToan": 27914.54,
+          "TonCuoi_TinhLai": 27914.54,
+          "TonKho_App": 27914.54
+        }
+      ]
+    },
+    {
+      "maKhoDb": "05",
+      "khoCode": "5",
+      "tenKhoApp": "Kho 5",
+      "tenKhoDb": "Kho 5",
+      "items": [
+        {
+          "maThanList": [
+            "4a.2"
+          ],
+          "tenThanHienThi": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+          "tonKho": 8394.56
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "05",
+          "maThan": "4a.2",
+          "tenThanDb": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+          "tenThanHienThi": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+          "TonDK": 12610.42,
+          "NhapTK": 2403.0,
+          "XuatTK": 6553.9,
+          "TonCK": 8459.52,
+          "TonCK_TToan": 8394.56,
+          "TonCuoi_TinhLai": 8459.52,
+          "TonKho_App": 8394.56
+        }
+      ]
+    },
+    {
+      "maKhoDb": "06",
+      "khoCode": "6",
+      "tenKhoApp": "Kho 6",
+      "tenKhoDb": "Kho 6",
+      "items": [
+        {
+          "maThanList": [
+            "B11C"
+          ],
+          "tenThanHienThi": "B11C",
+          "tonKho": 1.54
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "06",
+          "maThan": "B11C",
+          "tenThanDb": "B11C",
+          "tenThanHienThi": "B11C",
+          "TonDK": 3.52,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 3.52,
+          "TonCK_TToan": 1.54,
+          "TonCuoi_TinhLai": 3.52,
+          "TonKho_App": 1.54
+        }
+      ]
+    },
+    {
+      "maKhoDb": "07",
+      "khoCode": "7",
+      "tenKhoApp": "Kho 7",
+      "tenKhoDb": "Kho 7",
+      "items": [
+        {
+          "maThanList": [
+            "11a.1"
+          ],
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tonKho": 7792.84
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "07",
+          "maThan": "11a.1",
+          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "TonDK": 7792.84,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 7792.84,
+          "TonCK_TToan": 7792.84,
+          "TonCuoi_TinhLai": 7792.84,
+          "TonKho_App": 7792.84
+        }
+      ]
+    },
+    {
+      "maKhoDb": "08",
+      "khoCode": "8",
+      "tenKhoApp": "Kho 8",
+      "tenKhoDb": "Kho 8",
+      "items": [
+        {
+          "maThanList": [
+            "11A.1"
+          ],
+          "tenThanHienThi": "11A.1",
+          "tonKho": 32366.21
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "08",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 37044.41,
+          "NhapTK": 0.0,
+          "XuatTK": 4678.2,
+          "TonCK": 32366.21,
+          "TonCK_TToan": 32366.21,
+          "TonCuoi_TinhLai": 32366.21,
+          "TonKho_App": 32366.21
+        }
+      ]
+    },
+    {
+      "maKhoDb": "09",
+      "khoCode": "9",
+      "tenKhoApp": "Kho 9",
+      "tenKhoDb": "Kho 9",
+      "items": [
+        {
+          "maThanList": [
+            "11A.1"
+          ],
+          "tenThanHienThi": "11A.1",
+          "tonKho": 2405.38
+        },
+        {
+          "maThanList": [
+            "11B.1"
+          ],
+          "tenThanHienThi": "11B.1",
+          "tonKho": 193.48
+        },
+        {
+          "maThanList": [
+            "11a.247",
+            "11a.248",
+            "11a.251"
+          ],
+          "tenThanHienThi": "Cám 6a.10",
+          "tonKho": 4134.17
+        },
+        {
+          "maThanList": [
+            "11.250",
+            "11a.241",
+            "11a.243",
+            "11a.245",
+            "11a.246",
+            "11a.249",
+            "11a.253",
+            "11a.254"
+          ],
+          "tenThanHienThi": "Cám 6a.14",
+          "tonKho": 16103.57
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "09",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 11423.71,
+          "NhapTK": 5082.0,
+          "XuatTK": 12999.0,
+          "TonCK": 3506.71,
+          "TonCK_TToan": 2405.38,
+          "TonCuoi_TinhLai": 3506.71,
+          "TonKho_App": 2405.38
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11B.1",
+          "tenThanDb": "11B.1",
+          "tenThanHienThi": "11B.1",
+          "TonDK": 418.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 418.0,
+          "TonCK_TToan": 193.48,
+          "TonCuoi_TinhLai": 418.0,
+          "TonKho_App": 193.48
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.247",
+          "tenThanDb": "Cám 6a.10 (Lào - Tàu Golden Star)",
+          "tenThanHienThi": "Cám 6a.10",
+          "TonDK": 23.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 23.0,
+          "TonCK_TToan": -0.98,
+          "TonCuoi_TinhLai": 23.0,
+          "TonKho_App": -0.98
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.248",
+          "tenThanDb": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
+          "tenThanHienThi": "Cám 6a.10",
+          "TonDK": 33.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 33.0,
+          "TonCK_TToan": 0.15,
+          "TonCuoi_TinhLai": 33.0,
+          "TonKho_App": 0.15
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.251",
+          "tenThanDb": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
+          "tenThanHienThi": "Cám 6a.10",
+          "TonDK": 8302.0,
+          "NhapTK": 668.0,
+          "XuatTK": 4835.0,
+          "TonCK": 4135.0,
+          "TonCK_TToan": 4135.0,
+          "TonCuoi_TinhLai": 4135.0,
+          "TonKho_App": 4135.0
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11.250",
+          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": 3978.0,
+          "NhapTK": 0.0,
+          "XuatTK": 3640.0,
+          "TonCK": 338.0,
+          "TonCK_TToan": 33.82,
+          "TonCuoi_TinhLai": 338.0,
+          "TonKho_App": 33.82
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.241",
+          "tenThanDb": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": 0.3,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 0.3,
+          "TonCK_TToan": -0.53,
+          "TonCuoi_TinhLai": 0.3,
+          "TonKho_App": -0.53
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.243",
+          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV W - Star)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": -0.01,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -0.01,
+          "TonCK_TToan": -0.37,
+          "TonCuoi_TinhLai": -0.01,
+          "TonKho_App": -0.37
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.245",
+          "tenThanDb": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": -1.37,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -1.37,
+          "TonCK_TToan": 0.16,
+          "TonCuoi_TinhLai": -1.37,
+          "TonKho_App": 0.16
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.246",
+          "tenThanDb": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": -0.37,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -0.37,
+          "TonCK_TToan": -0.35,
+          "TonCuoi_TinhLai": -0.37,
+          "TonKho_App": -0.35
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.249",
+          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": 63.0,
+          "NhapTK": 0.0,
+          "XuatTK": 7.0,
+          "TonCK": 56.0,
+          "TonCK_TToan": -0.16,
+          "TonCuoi_TinhLai": 56.0,
+          "TonKho_App": -0.16
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.253",
+          "tenThanDb": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": 0.0,
+          "NhapTK": 25561.0,
+          "XuatTK": 16694.0,
+          "TonCK": 8867.0,
+          "TonCK_TToan": 8867.0,
+          "TonCuoi_TinhLai": 8867.0,
+          "TonKho_App": 8867.0
+        },
+        {
+          "maKhoDb": "09",
+          "maThan": "11a.254",
+          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+          "tenThanHienThi": "Cám 6a.14",
+          "TonDK": 0.0,
+          "NhapTK": 7204.0,
+          "XuatTK": 0.0,
+          "TonCK": 7204.0,
+          "TonCK_TToan": 7204.0,
+          "TonCuoi_TinhLai": 7204.0,
+          "TonKho_App": 7204.0
+        }
+      ]
+    },
+    {
+      "maKhoDb": "10",
+      "khoCode": "10",
+      "tenKhoApp": "Kho 10",
+      "tenKhoDb": "Kho 10",
+      "items": [
+        {
+          "maThanList": [
+            "10B.1"
+          ],
+          "tenThanHienThi": "10B.1",
+          "tonKho": 499.59
+        },
+        {
+          "maThanList": [
+            "10a.1"
+          ],
+          "tenThanHienThi": "Cám 5a.1",
+          "tonKho": 2297.12
+        },
+        {
+          "maThanList": [
+            "10a.101",
+            "10a.259",
+            "10a.262",
+            "10a.263",
+            "10a.72"
+          ],
+          "tenThanHienThi": "Cám 5a.14",
+          "tonKho": 390.64
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "10",
+          "maThan": "10B.1",
+          "tenThanDb": "10B.1",
+          "tenThanHienThi": "10B.1",
+          "TonDK": 2711.0,
+          "NhapTK": 541.0,
+          "XuatTK": 2810.0,
+          "TonCK": 442.0,
+          "TonCK_TToan": 499.59,
+          "TonCuoi_TinhLai": 442.0,
+          "TonKho_App": 499.59
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10a.1",
+          "tenThanDb": "Cám 5a.1 (Ak27,01 - 31%)",
+          "tenThanHienThi": "Cám 5a.1",
+          "TonDK": 12796.21,
+          "NhapTK": 952.0,
+          "XuatTK": 12248.0,
+          "TonCK": 1500.21,
+          "TonCK_TToan": 2297.12,
+          "TonCuoi_TinhLai": 1500.21,
+          "TonKho_App": 2297.12
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10a.101",
+          "tenThanDb": "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
+          "tenThanHienThi": "Cám 5a.14",
+          "TonDK": 10.82,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 10.82,
+          "TonCK_TToan": 0.16,
+          "TonCuoi_TinhLai": 10.82,
+          "TonKho_App": 0.16
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10a.259",
+          "tenThanDb": "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
+          "tenThanHienThi": "Cám 5a.14",
+          "TonDK": -0.04,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -0.04,
+          "TonCK_TToan": 0.02,
+          "TonCuoi_TinhLai": -0.04,
+          "TonKho_App": 0.02
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10a.262",
+          "tenThanDb": "Cám 5a.14 (Úc - Tàu MV Krenom)",
+          "tenThanHienThi": "Cám 5a.14",
+          "TonDK": -12.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": -12.0,
+          "TonCK_TToan": -0.03,
+          "TonCuoi_TinhLai": -12.0,
+          "TonKho_App": -0.03
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10a.263",
+          "tenThanDb": "Cám 5a.14 (Úc - Tàu MV Golden Future)",
+          "tenThanHienThi": "Cám 5a.14",
+          "TonDK": 292.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 292.0,
+          "TonCK_TToan": 390.05,
+          "TonCuoi_TinhLai": 292.0,
+          "TonKho_App": 390.05
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10a.72",
+          "tenThanDb": "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)",
+          "tenThanHienThi": "Cám 5a.14",
+          "TonDK": 0.22,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 0.22,
+          "TonCK_TToan": 0.44,
+          "TonCuoi_TinhLai": 0.22,
+          "TonKho_App": 0.44
+        }
+      ]
+    },
+    {
+      "maKhoDb": "11",
+      "khoCode": "11",
+      "tenKhoApp": "Kho 11",
+      "tenKhoDb": "Kho 11",
+      "items": [
+        {
+          "maThanList": [
+            "9A.1"
+          ],
+          "tenThanHienThi": "9A.1",
+          "tonKho": 37723.14
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "11",
+          "maThan": "9A.1",
+          "tenThanDb": "9A.1",
+          "tenThanHienThi": "9A.1",
+          "TonDK": 38391.49,
+          "NhapTK": 0.0,
+          "XuatTK": 720.0,
+          "TonCK": 37671.49,
+          "TonCK_TToan": 37723.14,
+          "TonCuoi_TinhLai": 37671.49,
+          "TonKho_App": 37723.14
+        }
+      ]
+    },
+    {
+      "maKhoDb": "12",
+      "khoCode": "12",
+      "tenKhoApp": "Kho 12",
+      "tenKhoDb": "Kho 12",
+      "items": [
+        {
+          "maThanList": [
+            "8B.1"
+          ],
+          "tenThanHienThi": "8B.1",
+          "tonKho": 25644.35
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "12",
+          "maThan": "8B.1",
+          "tenThanDb": "8B.1",
+          "tenThanHienThi": "8B.1",
+          "TonDK": 25271.64,
+          "NhapTK": 745.0,
+          "XuatTK": 0.0,
+          "TonCK": 26016.64,
+          "TonCK_TToan": 25644.35,
+          "TonCuoi_TinhLai": 26016.64,
+          "TonKho_App": 25644.35
+        }
+      ]
+    },
+    {
+      "maKhoDb": "13",
+      "khoCode": "13",
+      "tenKhoApp": "Kho 13",
+      "tenKhoDb": "Kho 13",
+      "items": [
+        {
+          "maThanList": [
+            "8A.1"
+          ],
+          "tenThanHienThi": "8A.1",
+          "tonKho": 18297.95
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "13",
+          "maThan": "8A.1",
+          "tenThanDb": "8A.1",
+          "tenThanHienThi": "8A.1",
+          "TonDK": 18297.95,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 18297.95,
+          "TonCK_TToan": 18297.95,
+          "TonCuoi_TinhLai": 18297.95,
+          "TonKho_App": 18297.95
+        }
+      ]
+    },
+    {
+      "maKhoDb": "15",
+      "khoCode": "15",
+      "tenKhoApp": "Kho 15",
+      "tenKhoDb": "Kho 15",
+      "items": [
+        {
+          "maThanList": [
+            "5A.1"
+          ],
+          "tenThanHienThi": "5A.1",
+          "tonKho": 33573.94
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "15",
+          "maThan": "5A.1",
+          "tenThanDb": "5A.1",
+          "tenThanHienThi": "5A.1",
+          "TonDK": 32500.8,
+          "NhapTK": 1077.0,
+          "XuatTK": 0.0,
+          "TonCK": 33577.8,
+          "TonCK_TToan": 33573.94,
+          "TonCuoi_TinhLai": 33577.8,
+          "TonKho_App": 33573.94
+        }
+      ]
+    },
+    {
+      "maKhoDb": "16",
+      "khoCode": "16",
+      "tenKhoApp": "Kho 16",
+      "tenKhoDb": "Kho 16",
+      "items": [
+        {
+          "maThanList": [
+            "5A.1"
+          ],
+          "tenThanHienThi": "5A.1",
+          "tonKho": 13195.87
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "16",
+          "maThan": "5A.1",
+          "tenThanDb": "5A.1",
+          "tenThanHienThi": "5A.1",
+          "TonDK": 13252.46,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 13252.46,
+          "TonCK_TToan": 13195.87,
+          "TonCuoi_TinhLai": 13252.46,
+          "TonKho_App": 13195.87
+        }
+      ]
+    },
+    {
+      "maKhoDb": "17",
+      "khoCode": "17",
+      "tenKhoApp": "Kho 17",
+      "tenKhoDb": "Kho 17",
+      "items": [
+        {
+          "maThanList": [
+            "6A.1"
+          ],
+          "tenThanHienThi": "6A.1",
+          "tonKho": 48193.03
+        },
+        {
+          "maThanList": [
+            "7a.1"
+          ],
+          "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+          "tonKho": 19021.18
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "17",
+          "maThan": "6A.1",
+          "tenThanDb": "6A.1",
+          "tenThanHienThi": "6A.1",
+          "TonDK": 46220.05,
+          "NhapTK": 2509.0,
+          "XuatTK": 0.0,
+          "TonCK": 48729.05,
+          "TonCK_TToan": 48193.03,
+          "TonCuoi_TinhLai": 48729.05,
+          "TonKho_App": 48193.03
+        },
+        {
+          "maKhoDb": "17",
+          "maThan": "7a.1",
+          "tenThanDb": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+          "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+          "TonDK": 22078.6,
+          "NhapTK": 0.0,
+          "XuatTK": 2868.0,
+          "TonCK": 19210.6,
+          "TonCK_TToan": 19021.18,
+          "TonCuoi_TinhLai": 19210.6,
+          "TonKho_App": 19021.18
+        }
+      ]
+    },
+    {
+      "maKhoDb": "18",
+      "khoCode": "18",
+      "tenKhoApp": "Kho 18",
+      "tenKhoDb": "Kho 18",
+      "items": [
+        {
+          "maThanList": [
+            "8B.1"
+          ],
+          "tenThanHienThi": "8B.1",
+          "tonKho": 14158.06
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "18",
+          "maThan": "8B.1",
+          "tenThanDb": "8B.1",
+          "tenThanHienThi": "8B.1",
+          "TonDK": 13807.58,
+          "NhapTK": 560.0,
+          "XuatTK": 0.0,
+          "TonCK": 14367.58,
+          "TonCK_TToan": 14158.06,
+          "TonCuoi_TinhLai": 14367.58,
+          "TonKho_App": 14158.06
+        }
+      ]
+    },
+    {
+      "maKhoDb": "19",
+      "khoCode": "19",
+      "tenKhoApp": "Kho 19",
+      "tenKhoDb": "Kho 19",
+      "items": [
+        {
+          "maThanList": [
+            "8B.1"
+          ],
+          "tenThanHienThi": "8B.1",
+          "tonKho": 15242.09
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "19",
+          "maThan": "8B.1",
+          "tenThanDb": "8B.1",
+          "tenThanHienThi": "8B.1",
+          "TonDK": 14285.09,
+          "NhapTK": 957.0,
+          "XuatTK": 0.0,
+          "TonCK": 15242.09,
+          "TonCK_TToan": 15242.09,
+          "TonCuoi_TinhLai": 15242.09,
+          "TonKho_App": 15242.09
+        }
+      ]
+    },
+    {
+      "maKhoDb": "20",
+      "khoCode": "20",
+      "tenKhoApp": "Kho 20",
+      "tenKhoDb": "Kho 20",
+      "items": [
+        {
+          "maThanList": [
+            "9A.1"
+          ],
+          "tenThanHienThi": "9A.1",
+          "tonKho": 69615.47
+        },
+        {
+          "maThanList": [
+            "9B.1"
+          ],
+          "tenThanHienThi": "9B.1",
+          "tonKho": 66.38
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "20",
+          "maThan": "9A.1",
+          "tenThanDb": "9A.1",
+          "tenThanHienThi": "9A.1",
+          "TonDK": 72912.93,
+          "NhapTK": 0.0,
+          "XuatTK": 3364.0,
+          "TonCK": 69548.93,
+          "TonCK_TToan": 69615.47,
+          "TonCuoi_TinhLai": 69548.93,
+          "TonKho_App": 69615.47
+        },
+        {
+          "maKhoDb": "20",
+          "maThan": "9B.1",
+          "tenThanDb": "9B.1",
+          "tenThanHienThi": "9B.1",
+          "TonDK": 0.0,
+          "NhapTK": 1549.0,
+          "XuatTK": 1494.0,
+          "TonCK": 55.0,
+          "TonCK_TToan": 66.38,
+          "TonCuoi_TinhLai": 55.0,
+          "TonKho_App": 66.38
+        }
+      ]
+    },
+    {
+      "maKhoDb": "21",
+      "khoCode": "21",
+      "tenKhoApp": "Kho 21",
+      "tenKhoDb": "Kho 21",
+      "items": [
+        {
+          "maThanList": [
+            "10A.1"
+          ],
+          "tenThanHienThi": "10A.1",
+          "tonKho": 4138.03
+        },
+        {
+          "maThanList": [
+            "10B.1"
+          ],
+          "tenThanHienThi": "10B.1",
+          "tonKho": 262.85
+        },
+        {
+          "maThanList": [
+            "11A.1"
+          ],
+          "tenThanHienThi": "11A.1",
+          "tonKho": 2708.86
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "21",
+          "maThan": "10A.1",
+          "tenThanDb": "10A.1",
+          "tenThanHienThi": "10A.1",
+          "TonDK": 11014.32,
+          "NhapTK": 4526.0,
+          "XuatTK": 12447.0,
+          "TonCK": 3093.32,
+          "TonCK_TToan": 4138.03,
+          "TonCuoi_TinhLai": 3093.32,
+          "TonKho_App": 4138.03
+        },
+        {
+          "maKhoDb": "21",
+          "maThan": "10B.1",
+          "tenThanDb": "10B.1",
+          "tenThanHienThi": "10B.1",
+          "TonDK": 3451.44,
+          "NhapTK": 7390.0,
+          "XuatTK": 11122.0,
+          "TonCK": -280.56,
+          "TonCK_TToan": 262.85,
+          "TonCuoi_TinhLai": -280.56,
+          "TonKho_App": 262.85
+        },
+        {
+          "maKhoDb": "21",
+          "maThan": "11A.1",
+          "tenThanDb": "11A.1",
+          "tenThanHienThi": "11A.1",
+          "TonDK": 7291.49,
+          "NhapTK": 8314.0,
+          "XuatTK": 12519.0,
+          "TonCK": 3086.49,
+          "TonCK_TToan": 2708.86,
+          "TonCuoi_TinhLai": 3086.49,
+          "TonKho_App": 2708.86
+        }
+      ]
+    },
+    {
+      "maKhoDb": "23",
+      "khoCode": "23",
+      "tenKhoApp": "Kho 23",
+      "tenKhoDb": "Kho 23",
+      "items": [
+        {
+          "maThanList": [
+            "8b.1"
+          ],
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tonKho": 21824.66
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "23",
+          "maThan": "8b.1",
+          "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "TonDK": 21824.66,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 21824.66,
+          "TonCK_TToan": 21824.66,
+          "TonCuoi_TinhLai": 21824.66,
+          "TonKho_App": 21824.66
+        }
+      ]
+    },
+    {
+      "maKhoDb": "24",
+      "khoCode": "24",
+      "tenKhoApp": "Kho 24",
+      "tenKhoDb": "Kho 24",
+      "items": [
+        {
+          "maThanList": [
+            "11a.1"
+          ],
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tonKho": 4972.0
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "24",
+          "maThan": "11a.1",
+          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "TonDK": 8507.0,
+          "NhapTK": 0.0,
+          "XuatTK": 3535.0,
+          "TonCK": 4972.0,
+          "TonCK_TToan": 4972.0,
+          "TonCuoi_TinhLai": 4972.0,
+          "TonKho_App": 4972.0
+        }
+      ]
+    },
+    {
+      "maKhoDb": "25",
+      "khoCode": "25",
+      "tenKhoApp": "Kho 25",
+      "tenKhoDb": "Kho 25",
+      "items": [
+        {
+          "maThanList": [
+            "6a.1"
+          ],
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tonKho": 17171.72
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "25",
+          "maThan": "6a.1",
+          "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "TonDK": 17171.72,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 17171.72,
+          "TonCK_TToan": 17171.72,
+          "TonCuoi_TinhLai": 17171.72,
+          "TonKho_App": 17171.72
+        }
+      ]
+    },
+    {
+      "maKhoDb": "29",
+      "khoCode": "26",
+      "tenKhoApp": "Kho 26",
+      "tenKhoDb": "Kho than số 26",
+      "items": [
+        {
+          "maThanList": [
+            "b32d"
+          ],
+          "tenThanHienThi": "b32d",
+          "tonKho": 18954.98
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "29",
+          "maThan": "b32d",
+          "tenThanDb": "b32d",
+          "tenThanHienThi": "b32d",
+          "TonDK": 17350.98,
+          "NhapTK": 1781.0,
+          "XuatTK": 177.0,
+          "TonCK": 18954.98,
+          "TonCK_TToan": 18954.98,
+          "TonCuoi_TinhLai": 18954.98,
+          "TonKho_App": 18954.98
+        }
+      ]
+    },
+    {
+      "maKhoDb": "30b",
+      "khoCode": "27",
+      "tenKhoApp": "Kho 27",
+      "tenKhoDb": "Kho than số 27",
+      "items": [
+        {
+          "maThanList": [
+            "11b.1"
+          ],
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tonKho": 707.72
+        },
+        {
+          "maThanList": [
+            "b32d"
+          ],
+          "tenThanHienThi": "b32d",
+          "tonKho": 558.09
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "30b",
+          "maThan": "11b.1",
+          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "TonDK": 707.72,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 707.72,
+          "TonCK_TToan": 707.72,
+          "TonCuoi_TinhLai": 707.72,
+          "TonKho_App": 707.72
+        },
+        {
+          "maKhoDb": "30b",
+          "maThan": "b32d",
+          "tenThanDb": "b32d",
+          "tenThanHienThi": "b32d",
+          "TonDK": 360.09,
+          "NhapTK": 198.0,
+          "XuatTK": 0.0,
+          "TonCK": 558.09,
+          "TonCK_TToan": 558.09,
+          "TonCuoi_TinhLai": 558.09,
+          "TonKho_App": 558.09
+        }
+      ]
+    },
+    {
+      "maKhoDb": "31c",
+      "khoCode": "28",
+      "tenKhoApp": "Kho 28",
+      "tenKhoDb": "Kho số 28 (Tuyển 3)",
+      "items": [
+        {
+          "maThanList": [
+            "11b.1"
+          ],
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tonKho": 19816.24
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "31c",
+          "maThan": "11b.1",
+          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "TonDK": 26021.24,
+          "NhapTK": 0.0,
+          "XuatTK": 6205.0,
+          "TonCK": 19816.24,
+          "TonCK_TToan": 19816.24,
+          "TonCuoi_TinhLai": 19816.24,
+          "TonKho_App": 19816.24
+        }
+      ]
+    },
+    {
+      "maKhoDb": "31D",
+      "khoCode": "28-1",
+      "tenKhoApp": "Kho 28-1",
+      "tenKhoDb": "",
+      "items": [
+        {
+          "maThanList": [
+            "11b.1"
+          ],
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tonKho": 18037.94
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "31D",
+          "maThan": "11b.1",
+          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "TonDK": 17959.94,
+          "NhapTK": 1156.0,
+          "XuatTK": 1078.0,
+          "TonCK": 18037.94,
+          "TonCK_TToan": 18037.94,
+          "TonCuoi_TinhLai": 18037.94,
+          "TonKho_App": 18037.94
+        }
+      ]
+    },
+    {
+      "maKhoDb": "26",
+      "khoCode": "29",
+      "tenKhoApp": "Kho 29",
+      "tenKhoDb": "Kho than số 29",
+      "items": [
+        {
+          "maThanList": [
+            "6a.1"
+          ],
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tonKho": 18990.4
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "26",
+          "maThan": "6a.1",
+          "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "TonDK": 18990.4,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 18990.4,
+          "TonCK_TToan": 18990.4,
+          "TonCuoi_TinhLai": 18990.4,
+          "TonKho_App": 18990.4
+        }
+      ]
+    },
+    {
+      "maKhoDb": "27",
+      "khoCode": "30",
+      "tenKhoApp": "Kho 30",
+      "tenKhoDb": "Kho than số 30",
+      "items": [
+        {
+          "maThanList": [
+            "6a.1"
+          ],
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tonKho": 22274.7
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "27",
+          "maThan": "6a.1",
+          "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "TonDK": 22274.7,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 22274.7,
+          "TonCK_TToan": 22274.7,
+          "TonCuoi_TinhLai": 22274.7,
+          "TonKho_App": 22274.7
+        }
+      ]
+    },
+    {
+      "maKhoDb": "43",
+      "khoCode": "31",
+      "tenKhoApp": "Kho 31",
+      "tenKhoDb": "Kho than số 31",
+      "items": [
+        {
+          "maThanList": [
+            "B29A"
+          ],
+          "tenThanHienThi": "B29A",
+          "tonKho": 3712.0
+        },
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": 20254.98
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "43",
+          "maThan": "B29A",
+          "tenThanDb": "B29A",
+          "tenThanHienThi": "B29A",
+          "TonDK": 4332.0,
+          "NhapTK": 400.0,
+          "XuatTK": 1020.0,
+          "TonCK": 3712.0,
+          "TonCK_TToan": 3712.0,
+          "TonCuoi_TinhLai": 3712.0,
+          "TonKho_App": 3712.0
+        },
+        {
+          "maKhoDb": "43",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 25854.98,
+          "NhapTK": 0.0,
+          "XuatTK": 5600.0,
+          "TonCK": 20254.98,
+          "TonCK_TToan": 20254.98,
+          "TonCuoi_TinhLai": 20254.98,
+          "TonKho_App": 20254.98
+        }
+      ]
+    },
+    {
+      "maKhoDb": "31B",
+      "khoCode": "32",
+      "tenKhoApp": "Kho 32",
+      "tenKhoDb": "",
+      "items": [
+        {
+          "maThanList": [
+            "B28C"
+          ],
+          "tenThanHienThi": "Cám 8C",
+          "tonKho": 40.0
+        },
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": 10279.64
+        },
+        {
+          "maThanList": [
+            "b2902"
+          ],
+          "tenThanHienThi": "b2902",
+          "tonKho": 732.39
+        },
+        {
+          "maThanList": [
+            "b29a"
+          ],
+          "tenThanHienThi": "b29a",
+          "tonKho": 2625.39
+        },
+        {
+          "maThanList": [
+            "b32d"
+          ],
+          "tenThanHienThi": "b32d",
+          "tonKho": 4510.9
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "31B",
+          "maThan": "B28C",
+          "tenThanDb": "Cám 8C",
+          "tenThanHienThi": "Cám 8C",
+          "TonDK": 40.0,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 40.0,
+          "TonCK_TToan": 40.0,
+          "TonCuoi_TinhLai": 40.0,
+          "TonKho_App": 40.0
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 17679.25,
+          "NhapTK": 9807.0,
+          "XuatTK": 17206.61,
+          "TonCK": 10279.64,
+          "TonCK_TToan": 10279.64,
+          "TonCuoi_TinhLai": 10279.64,
+          "TonKho_App": 10279.64
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "b2902",
+          "tenThanDb": "b2902",
+          "tenThanHienThi": "b2902",
+          "TonDK": 3440.39,
+          "NhapTK": 2033.0,
+          "XuatTK": 4741.0,
+          "TonCK": 732.39,
+          "TonCK_TToan": 732.39,
+          "TonCuoi_TinhLai": 732.39,
+          "TonKho_App": 732.39
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "b29a",
+          "tenThanDb": "b29a",
+          "tenThanHienThi": "b29a",
+          "TonDK": 4229.39,
+          "NhapTK": 700.0,
+          "XuatTK": 2304.0,
+          "TonCK": 2625.39,
+          "TonCK_TToan": 2625.39,
+          "TonCuoi_TinhLai": 2625.39,
+          "TonKho_App": 2625.39
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "b32d",
+          "tenThanDb": "b32d",
+          "tenThanHienThi": "b32d",
+          "TonDK": 648.9,
+          "NhapTK": 4815.0,
+          "XuatTK": 953.0,
+          "TonCK": 4510.9,
+          "TonCK_TToan": 4510.9,
+          "TonCuoi_TinhLai": 4510.9,
+          "TonKho_App": 4510.9
+        }
+      ]
+    },
+    {
+      "maKhoDb": "45",
+      "khoCode": "33",
+      "tenKhoApp": "Kho 33",
+      "tenKhoDb": "Kho than số 33",
+      "items": [
+        {
+          "maThanList": [
+            "B29a"
+          ],
+          "tenThanHienThi": "Cám đá",
+          "tonKho": 4220.58
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "45",
+          "maThan": "B29a",
+          "tenThanDb": "Cám đá",
+          "tenThanHienThi": "Cám đá",
+          "TonDK": 2381.78,
+          "NhapTK": 4775.0,
+          "XuatTK": 2936.2,
+          "TonCK": 4220.58,
+          "TonCK_TToan": 4220.58,
+          "TonCuoi_TinhLai": 4220.58,
+          "TonKho_App": 4220.58
+        }
+      ]
+    },
+    {
+      "maKhoDb": "34A",
+      "khoCode": "34",
+      "tenKhoApp": "Kho 34",
+      "tenKhoDb": "",
+      "items": [
+        {
+          "maThanList": [
+            "6a.1"
+          ],
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tonKho": 43197.29
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "34A",
+          "maThan": "6a.1",
+          "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "TonDK": 43197.29,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 43197.29,
+          "TonCK_TToan": 43197.29,
+          "TonCuoi_TinhLai": 43197.29,
+          "TonKho_App": 43197.29
+        }
+      ]
+    },
+    {
+      "maKhoDb": "36",
+      "khoCode": "37",
+      "tenKhoApp": "Kho 37",
+      "tenKhoDb": "Kho bùn số 7",
+      "items": [
+        {
+          "maThanList": [
+            "B32d"
+          ],
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "tonKho": 47376.58
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "36",
+          "maThan": "B32d",
+          "tenThanDb": "Bùn tuyển 3A",
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "TonDK": 52191.58,
+          "NhapTK": 0.0,
+          "XuatTK": 4815.0,
+          "TonCK": 47376.58,
+          "TonCK_TToan": 47376.58,
+          "TonCuoi_TinhLai": 47376.58,
+          "TonKho_App": 47376.58
+        }
+      ]
+    },
+    {
+      "maKhoDb": "46a",
+      "khoCode": "38",
+      "tenKhoApp": "Kho 38",
+      "tenKhoDb": "Kho 38",
+      "items": [
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": 370565.53
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "46a",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 386629.53,
+          "NhapTK": 0.0,
+          "XuatTK": 16064.0,
+          "TonCK": 370565.53,
+          "TonCK_TToan": 370565.53,
+          "TonCuoi_TinhLai": 370565.53,
+          "TonKho_App": 370565.53
+        }
+      ]
+    },
+    {
+      "maKhoDb": "28",
+      "khoCode": "39",
+      "tenKhoApp": "Kho 39",
+      "tenKhoDb": "Kho nội địa 3",
+      "items": [
+        {
+          "maThanList": [
+            "NHK.295"
+          ],
+          "tenThanHienThi": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+          "tonKho": 9.13
+        },
+        {
+          "maThanList": [
+            "NHK.296"
+          ],
+          "tenThanHienThi": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+          "tonKho": -12.88
+        },
+        {
+          "maThanList": [
+            "NHK.297"
+          ],
+          "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+          "tonKho": 6423.69
+        },
+        {
+          "maThanList": [
+            "NHK.16"
+          ],
+          "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+          "tonKho": 3025.0
+        },
+        {
+          "maThanList": [
+            "b32e"
+          ],
+          "tenThanHienThi": "b32e",
+          "tonKho": 21566.8
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "28",
+          "maThan": "NHK.295",
+          "tenThanDb": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+          "tenThanHienThi": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+          "TonDK": 643.13,
+          "NhapTK": 0.0,
+          "XuatTK": 634.0,
+          "TonCK": 9.13,
+          "TonCK_TToan": 9.13,
+          "TonCuoi_TinhLai": 9.13,
+          "TonKho_App": 9.13
+        },
+        {
+          "maKhoDb": "28",
+          "maThan": "NHK.296",
+          "tenThanDb": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+          "tenThanHienThi": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+          "TonDK": 5243.59,
+          "NhapTK": 4975.84,
+          "XuatTK": 10232.31,
+          "TonCK": -12.88,
+          "TonCK_TToan": -12.88,
+          "TonCuoi_TinhLai": -12.88,
+          "TonKho_App": -12.88
+        },
+        {
+          "maKhoDb": "28",
+          "maThan": "NHK.297",
+          "tenThanDb": "Than NK (Úc - Tầu MV BARDONNEX)",
+          "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+          "TonDK": 0.0,
+          "NhapTK": 10369.95,
+          "XuatTK": 3946.26,
+          "TonCK": 6423.69,
+          "TonCK_TToan": 6423.69,
+          "TonCuoi_TinhLai": 6423.69,
+          "TonKho_App": 6423.69
+        },
+        {
+          "maKhoDb": "28",
+          "maThan": "NHK.16",
+          "tenThanDb": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+          "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+          "TonDK": 0.0,
+          "NhapTK": 3025.0,
+          "XuatTK": 0.0,
+          "TonCK": 3025.0,
+          "TonCK_TToan": 3025.0,
+          "TonCuoi_TinhLai": 3025.0,
+          "TonKho_App": 3025.0
+        },
+        {
+          "maKhoDb": "39",
+          "maThan": "b32e",
+          "tenThanDb": "b32e",
+          "tenThanHienThi": "b32e",
+          "TonDK": 21566.8,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 21566.8,
+          "TonCK_TToan": 21566.8,
+          "TonCuoi_TinhLai": 21566.8,
+          "TonKho_App": 21566.8
+        }
+      ]
+    },
+    {
+      "maKhoDb": "60",
+      "khoCode": "40",
+      "tenKhoApp": "Kho 40",
+      "tenKhoDb": "Kho hồ Gap",
+      "items": [
+        {
+          "maThanList": [
+            "B5.01"
+          ],
+          "tenThanHienThi": "Đá thải",
+          "tonKho": 3993.02
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "60",
+          "maThan": "B5.01",
+          "tenThanDb": "Đá thải",
+          "tenThanHienThi": "Đá thải",
+          "TonDK": 10273.19,
+          "NhapTK": 9462.0,
+          "XuatTK": 15742.17,
+          "TonCK": 3993.02,
+          "TonCK_TToan": 3993.02,
+          "TonCuoi_TinhLai": 3993.02,
+          "TonKho_App": 3993.02
+        }
+      ]
+    },
+    {
+      "maKhoDb": "K04",
+      "khoCode": "Tuyển 1",
+      "tenKhoApp": "Tuyển 1",
+      "tenKhoDb": "Tuyển 1",
+      "items": [
+        {
+          "maThanList": [
+            "NHK.297"
+          ],
+          "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+          "tonKho": 345.26
+        },
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": 418.62
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "K04",
+          "maThan": "NHK.297",
+          "tenThanDb": "Than NK (Úc - Tầu MV BARDONNEX)",
+          "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+          "TonDK": 0.0,
+          "NhapTK": 3946.26,
+          "XuatTK": 3601.0,
+          "TonCK": 345.26,
+          "TonCK_TToan": 345.26,
+          "TonCuoi_TinhLai": 345.26,
+          "TonKho_App": 345.26
+        },
+        {
+          "maKhoDb": "K04",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 0.0,
+          "NhapTK": 19940.29,
+          "XuatTK": 19526.69,
+          "TonCK": 413.6,
+          "TonCK_TToan": 418.62,
+          "TonCuoi_TinhLai": 413.6,
+          "TonKho_App": 418.62
+        }
+      ]
+    },
+    {
+      "maKhoDb": "K05",
+      "khoCode": "Tuyển 2",
+      "tenKhoApp": "Tuyển 2",
+      "tenKhoDb": "Tuyển 2",
+      "items": [
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": -1003.29
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "K05",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 0.0,
+          "NhapTK": 52790.61,
+          "XuatTK": 52790.61,
+          "TonCK": 0.0,
+          "TonCK_TToan": -1003.29,
+          "TonCuoi_TinhLai": 0.0,
+          "TonKho_App": -1003.29
+        }
+      ]
+    },
+    {
+      "maKhoDb": "k17",
+      "khoCode": "k17",
+      "tenKhoApp": "k17",
+      "tenKhoDb": "",
+      "items": [
+        {
+          "maThanList": [
+            "00"
+          ],
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": -286.54
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "k17",
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 0.0,
+          "NhapTK": 73150.2,
+          "XuatTK": 73150.2,
+          "TonCK": 0.0,
+          "TonCK_TToan": -286.54,
+          "TonCuoi_TinhLai": 0.0,
+          "TonKho_App": -286.54
+        }
+      ]
+    },
+    {
+      "maKhoDb": "k59",
+      "khoCode": "k59",
+      "tenKhoApp": "k59",
+      "tenKhoDb": "",
+      "items": [
+        {
+          "maThanList": [
+            "11b.1"
+          ],
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tonKho": 1467.86
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "k59",
+          "maThan": "11b.1",
+          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "TonDK": 1746.0,
+          "NhapTK": 43506.0,
+          "XuatTK": 40959.0,
+          "TonCK": 4293.0,
+          "TonCK_TToan": 1467.86,
+          "TonCuoi_TinhLai": 4293.0,
+          "TonKho_App": 1467.86
+        }
+      ]
+    },
+    {
+      "maKhoDb": "K60",
+      "khoCode": "Ẩm nhiệt điện",
+      "tenKhoApp": "Ẩm nhiệt điện",
+      "tenKhoDb": "Ẩm nhiệt điện",
+      "items": [
+        {
+          "maThanList": [
+            "11b.1"
+          ],
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tonKho": 1079.14
+        }
+      ],
+      "traceItems": [
+        {
+          "maKhoDb": "K60",
+          "maThan": "11b.1",
+          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "TonDK": 1079.14,
+          "NhapTK": 0.0,
+          "XuatTK": 0.0,
+          "TonCK": 1079.14,
+          "TonCK_TToan": 1079.14,
+          "TonCuoi_TinhLai": 1079.14,
+          "TonKho_App": 1079.14
+        }
+      ]
+    }
+  ]
+}
