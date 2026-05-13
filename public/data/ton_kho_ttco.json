@@ -5,16 +5,16 @@
     "database": "TTCO_THONGKE",
     "sourceTable": "G3_BC05A_2_341659",
     "masterDatabase": "TTCO_QTHT",
-    "version": "direct-db-v10-fix-coal-name-dmthan-principle",
-    "updatedAt": "2026-05-14 00:21:03",
+    "version": "direct-db-v11-fix-ak-coal-name-principle",
+    "updatedAt": "2026-05-14 00:43:22",
     "NamHT": "",
     "ThangHT": "",
     "rowCount": 68,
     "realRowCount": 65,
     "sourceRawRowCount": 106,
     "totalTon": 1152057.83,
-    "formula": "standardize DB MaKho -> exact app kho; coal display uses dynamic MaThan + DMTHAN/TenThanGoc; Kho 9/10 grouped; Kho 39 keeps full import details; app reads public/data/ton_kho_latest.json",
-    "note": "V10 sửa chủng loại than theo nguyên tắc: ưu tiên tên DMTHAN/TenThanGoc động theo MaThan, Kho 9/10 gộp Cám động, Kho 39 giữ chi tiết từng dòng Than NK; vẫn upload đúng public/data/ton_kho_latest.json."
+    "formula": "standardize DB MaKho -> exact app kho; coal display uses dynamic MaThan + DMTHAN/TenThanGoc; strip (Ak...) globally; Kho 9/10 grouped; Kho 39 keeps full import details; app reads public/data/ton_kho_latest.json",
+    "note": "V11 sửa chủng loại than theo nguyên tắc mới: ưu tiên tên DMTHAN/TenThanGoc động theo MaThan, loại bỏ phần (Ak...) ở mọi chủng loại, Kho 9/10 gộp Cám động, Kho 39 giữ chi tiết từng dòng Than NK; vẫn upload đúng public/data/ton_kho_latest.json."
   },
   "data": [
     {
@@ -22,15 +22,15 @@
       "TenKho": "Kho 1",
       "kho": "Kho 1",
       "MaThan": "B11C",
-      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
-      "coal": "Cục xô 1c (Ak 17,01 - 22%)",
+      "TenThan": "Cục xô 1c",
+      "coal": "Cục xô 1c",
       "TonDK": 509.95,
       "NhapTK": 5971.0,
       "XuatTK": 5224.7,
       "TonCK": 1256.25,
       "ton": 1256.25,
       "ttcoApp": 1256.25,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "01"
       ],
@@ -49,15 +49,15 @@
       "TenKho": "Kho 2",
       "kho": "Kho 2",
       "MaThan": "5A.1",
-      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
-      "coal": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "TenThan": "Cục 5a.1",
+      "coal": "Cục 5a.1",
       "TonDK": 7937.86,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 7937.86,
       "ton": 7937.86,
       "ttcoApp": 7937.86,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "02"
       ],
@@ -76,15 +76,15 @@
       "TenKho": "Kho 3",
       "kho": "Kho 3",
       "MaThan": "4A.1",
-      "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
-      "coal": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+      "TenThan": "Cục 4a.1",
+      "coal": "Cục 4a.1",
       "TonDK": 1507.63,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 1507.63,
       "ton": 1507.63,
       "ttcoApp": 1507.63,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "03"
       ],
@@ -103,15 +103,15 @@
       "TenKho": "Kho 4",
       "kho": "Kho 4",
       "MaThan": "4A.1",
-      "TenThan": "Cục 4a.1 (Ak 4,00 - 7,00%)",
-      "coal": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+      "TenThan": "Cục 4a.1",
+      "coal": "Cục 4a.1",
       "TonDK": 11505.17,
       "NhapTK": 1685.0,
       "XuatTK": 0.0,
       "TonCK": 13190.17,
       "ton": 13190.17,
       "ttcoApp": 13190.17,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "04"
       ],
@@ -130,15 +130,15 @@
       "TenKho": "Kho 5",
       "kho": "Kho 5",
       "MaThan": "4A.2",
-      "TenThan": "Cục 4a.2 (Ak 7,01 - 12,00%)",
-      "coal": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+      "TenThan": "Cục 4a.2",
+      "coal": "Cục 4a.2",
       "TonDK": 12610.42,
       "NhapTK": 3877.0,
       "XuatTK": 6553.9,
       "TonCK": 9933.52,
       "ton": 9933.52,
       "ttcoApp": 9933.52,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "05"
       ],
@@ -157,15 +157,15 @@
       "TenKho": "Kho 6",
       "kho": "Kho 6",
       "MaThan": "B11C",
-      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
-      "coal": "Cục xô 1c (Ak 17,01 - 22%)",
+      "TenThan": "Cục xô 1c",
+      "coal": "Cục xô 1c",
       "TonDK": 3.52,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 3.52,
       "ton": 3.52,
       "ttcoApp": 3.52,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "06"
       ],
@@ -184,15 +184,15 @@
       "TenKho": "Kho 7",
       "kho": "Kho 7",
       "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TenThan": "Cám 6a.1",
+      "coal": "Cám 6a.1",
       "TonDK": 7792.84,
       "NhapTK": 0.0,
       "XuatTK": 7689.5,
       "TonCK": 103.34,
       "ton": 103.34,
       "ttcoApp": 103.34,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "07"
       ],
@@ -211,15 +211,15 @@
       "TenKho": "Kho 8",
       "kho": "Kho 8",
       "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TenThan": "Cám 6a.1",
+      "coal": "Cám 6a.1",
       "TonDK": 37044.41,
       "NhapTK": 0.0,
       "XuatTK": 9194.4,
       "TonCK": 27850.01,
       "ton": 27850.01,
       "ttcoApp": 27850.01,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "08"
       ],
@@ -246,7 +246,7 @@
       "TonCK": 4644.71,
       "ton": 4644.71,
       "ttcoApp": 4644.71,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "09"
       ],
@@ -273,7 +273,7 @@
       "TonCK": 151.0,
       "ton": 151.0,
       "ttcoApp": 151.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "09"
       ],
@@ -304,7 +304,7 @@
       "TonCK": 25745.55,
       "ton": 25745.55,
       "ttcoApp": 25745.55,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "09"
       ],
@@ -347,7 +347,7 @@
       "TonCK": 418.0,
       "ton": 418.0,
       "ttcoApp": 418.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "09"
       ],
@@ -374,7 +374,7 @@
       "TonCK": 192.0,
       "ton": 192.0,
       "ttcoApp": 192.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "10"
       ],
@@ -401,7 +401,7 @@
       "TonCK": 1369.21,
       "ton": 1369.21,
       "ttcoApp": 1369.21,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "10"
       ],
@@ -428,7 +428,7 @@
       "TonCK": 5378.0,
       "ton": 5378.0,
       "ttcoApp": 5378.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "10"
       ],
@@ -465,7 +465,7 @@
       "TonCK": 442.0,
       "ton": 442.0,
       "ttcoApp": 442.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "10"
       ],
@@ -484,15 +484,15 @@
       "TenKho": "Kho 11",
       "kho": "Kho 11",
       "MaThan": "9A.1",
-      "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
-      "coal": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "TenThan": "Cám 4a.1",
+      "coal": "Cám 4a.1",
       "TonDK": 38391.49,
       "NhapTK": 0.0,
       "XuatTK": 1201.0,
       "TonCK": 37190.49,
       "ton": 37190.49,
       "ttcoApp": 37190.49,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "11"
       ],
@@ -511,15 +511,15 @@
       "TenKho": "Kho 12",
       "kho": "Kho 12",
       "MaThan": "8B.1",
-      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "coal": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "TenThan": "Cám 3b.1",
+      "coal": "Cám 3b.1",
       "TonDK": 25271.64,
       "NhapTK": 1439.0,
       "XuatTK": 0.0,
       "TonCK": 26710.64,
       "ton": 26710.64,
       "ttcoApp": 26710.64,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "12"
       ],
@@ -538,15 +538,15 @@
       "TenKho": "Kho 13",
       "kho": "Kho 13",
       "MaThan": "8A.1",
-      "TenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
-      "coal": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "TenThan": "Cám 3a.1",
+      "coal": "Cám 3a.1",
       "TonDK": 18297.95,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 18297.95,
       "ton": 18297.95,
       "ttcoApp": 18297.95,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "13"
       ],
@@ -587,15 +587,15 @@
       "TenKho": "Kho 15",
       "kho": "Kho 15",
       "MaThan": "5a.1",
-      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
-      "coal": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "TenThan": "Cục 5a.1",
+      "coal": "Cục 5a.1",
       "TonDK": 32500.8,
       "NhapTK": 2970.0,
       "XuatTK": 0.0,
       "TonCK": 35470.8,
       "ton": 35470.8,
       "ttcoApp": 35470.8,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "15"
       ],
@@ -614,15 +614,15 @@
       "TenKho": "Kho 16",
       "kho": "Kho 16",
       "MaThan": "5A.1",
-      "TenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
-      "coal": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "TenThan": "Cục 5a.1",
+      "coal": "Cục 5a.1",
       "TonDK": 13252.46,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 13252.46,
       "ton": 13252.46,
       "ttcoApp": 13252.46,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "16"
       ],
@@ -641,15 +641,15 @@
       "TenKho": "Kho 17",
       "kho": "Kho 17",
       "MaThan": "6A.1",
-      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
-      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
+      "TenThan": "Cám 1",
+      "coal": "Cám 1",
       "TonDK": 46220.05,
       "NhapTK": 6664.0,
       "XuatTK": 0.0,
       "TonCK": 52884.05,
       "ton": 52884.05,
       "ttcoApp": 52884.05,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "17"
       ],
@@ -668,15 +668,15 @@
       "TenKho": "Kho 17",
       "kho": "Kho 17",
       "MaThan": "7A.1",
-      "TenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
-      "coal": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "TenThan": "Cám 2a.1",
+      "coal": "Cám 2a.1",
       "TonDK": 22078.6,
       "NhapTK": 0.0,
       "XuatTK": 2868.0,
       "TonCK": 19210.6,
       "ton": 19210.6,
       "ttcoApp": 19210.6,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "17"
       ],
@@ -695,15 +695,15 @@
       "TenKho": "Kho 18",
       "kho": "Kho 18",
       "MaThan": "8B.1",
-      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "coal": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "TenThan": "Cám 3b.1",
+      "coal": "Cám 3b.1",
       "TonDK": 13807.58,
       "NhapTK": 1176.0,
       "XuatTK": 0.0,
       "TonCK": 14983.58,
       "ton": 14983.58,
       "ttcoApp": 14983.58,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "18"
       ],
@@ -722,15 +722,15 @@
       "TenKho": "Kho 19",
       "kho": "Kho 19",
       "MaThan": "8B.1",
-      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "coal": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "TenThan": "Cám 3b.1",
+      "coal": "Cám 3b.1",
       "TonDK": 14285.09,
       "NhapTK": 957.0,
       "XuatTK": 0.0,
       "TonCK": 15242.09,
       "ton": 15242.09,
       "ttcoApp": 15242.09,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "19"
       ],
@@ -749,15 +749,15 @@
       "TenKho": "Kho 20",
       "kho": "Kho 20",
       "MaThan": "9A.1",
-      "TenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
-      "coal": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "TenThan": "Cám 4a.1",
+      "coal": "Cám 4a.1",
       "TonDK": 72912.93,
       "NhapTK": 0.0,
       "XuatTK": 6356.0,
       "TonCK": 66556.93,
       "ton": 66556.93,
       "ttcoApp": 66556.93,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "20"
       ],
@@ -776,15 +776,15 @@
       "TenKho": "Kho 20",
       "kho": "Kho 20",
       "MaThan": "9B.1",
-      "TenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
-      "coal": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "TenThan": "Cám 4b.1",
+      "coal": "Cám 4b.1",
       "TonDK": 0.0,
       "NhapTK": 7154.0,
       "XuatTK": 5214.0,
       "TonCK": 1940.0,
       "ton": 1940.0,
       "ttcoApp": 1940.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "20"
       ],
@@ -803,15 +803,15 @@
       "TenKho": "Kho 21",
       "kho": "Kho 21",
       "MaThan": "10A.1",
-      "TenThan": "Cám 5a.1 (Ak27,01 - 31%)",
-      "coal": "Cám 5a.1 (Ak27,01 - 31%)",
+      "TenThan": "Cám 5a.1",
+      "coal": "Cám 5a.1",
       "TonDK": 11014.32,
       "NhapTK": 21532.0,
       "XuatTK": 31942.0,
       "TonCK": 604.32,
       "ton": 604.32,
       "ttcoApp": 604.32,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "21"
       ],
@@ -830,15 +830,15 @@
       "TenKho": "Kho 21",
       "kho": "Kho 21",
       "MaThan": "10B.1",
-      "TenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
-      "coal": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "TenThan": "Cám 5b.1",
+      "coal": "Cám 5b.1",
       "TonDK": 3451.44,
       "NhapTK": 7412.0,
       "XuatTK": 11122.0,
       "TonCK": -258.56,
       "ton": -258.56,
       "ttcoApp": -258.56,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "21"
       ],
@@ -857,15 +857,15 @@
       "TenKho": "Kho 21",
       "kho": "Kho 21",
       "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TenThan": "Cám 6a.1",
+      "coal": "Cám 6a.1",
       "TonDK": 7291.49,
       "NhapTK": 16816.0,
       "XuatTK": 18437.0,
       "TonCK": 5670.49,
       "ton": 5670.49,
       "ttcoApp": 5670.49,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "21"
       ],
@@ -906,15 +906,15 @@
       "TenKho": "Kho 23",
       "kho": "Kho 23",
       "MaThan": "8b.1",
-      "TenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "coal": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "TenThan": "Cám 3b.1",
+      "coal": "Cám 3b.1",
       "TonDK": 21824.66,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 21824.66,
       "ton": 21824.66,
       "ttcoApp": 21824.66,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "23"
       ],
@@ -933,15 +933,15 @@
       "TenKho": "Kho 24",
       "kho": "Kho 24",
       "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TenThan": "Cám 6a.1",
+      "coal": "Cám 6a.1",
       "TonDK": 8507.0,
       "NhapTK": 0.0,
       "XuatTK": 4310.0,
       "TonCK": 4197.0,
       "ton": 4197.0,
       "ttcoApp": 4197.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "24"
       ],
@@ -960,15 +960,15 @@
       "TenKho": "Kho 25",
       "kho": "Kho 25",
       "MaThan": "6a.1",
-      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
-      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
+      "TenThan": "Cám 1",
+      "coal": "Cám 1",
       "TonDK": 17171.72,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 17171.72,
       "ton": 17171.72,
       "ttcoApp": 17171.72,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "25"
       ],
@@ -995,7 +995,7 @@
       "TonCK": 18694.98,
       "ton": 18694.98,
       "ttcoApp": 18694.98,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "29"
       ],
@@ -1022,7 +1022,7 @@
       "TonCK": 13435.09,
       "ton": 13435.09,
       "ttcoApp": 13435.09,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "30B"
       ],
@@ -1041,15 +1041,15 @@
       "TenKho": "Kho 27",
       "kho": "Kho 27",
       "MaThan": "11b.1",
-      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
-      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TenThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
       "TonDK": 707.72,
       "NhapTK": 0.0,
       "XuatTK": 105.0,
       "TonCK": 602.72,
       "ton": 602.72,
       "ttcoApp": 602.72,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "30b"
       ],
@@ -1068,15 +1068,15 @@
       "TenKho": "Kho 28",
       "kho": "Kho 28",
       "MaThan": "11b.1",
-      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
-      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TenThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
       "TonDK": 26021.24,
       "NhapTK": 134.0,
       "XuatTK": 6802.0,
       "TonCK": 19353.24,
       "ton": 19353.24,
       "ttcoApp": 19353.24,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "31c"
       ],
@@ -1095,15 +1095,15 @@
       "TenKho": "Kho 28-1",
       "kho": "Kho 28-1",
       "MaThan": "11b.1",
-      "TenThan": "Cám 6b.1 (Ak40,01 - 45%)",
-      "coal": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TenThan": "Cám 6b.1",
+      "coal": "Cám 6b.1",
       "TonDK": 17959.94,
       "NhapTK": 2912.0,
       "XuatTK": 2009.0,
       "TonCK": 18862.94,
       "ton": 18862.94,
       "ttcoApp": 18862.94,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "31D"
       ],
@@ -1122,15 +1122,15 @@
       "TenKho": "Kho 29",
       "kho": "Kho 29",
       "MaThan": "6a.1",
-      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
-      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
+      "TenThan": "Cám 1",
+      "coal": "Cám 1",
       "TonDK": 18990.4,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 18990.4,
       "ton": 18990.4,
       "ttcoApp": 18990.4,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "26"
       ],
@@ -1149,15 +1149,15 @@
       "TenKho": "Kho 30",
       "kho": "Kho 30",
       "MaThan": "6a.1",
-      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
-      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
+      "TenThan": "Cám 1",
+      "coal": "Cám 1",
       "TonDK": 22274.7,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 22274.7,
       "ton": 22274.7,
       "ttcoApp": 22274.7,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "27"
       ],
@@ -1184,7 +1184,7 @@
       "TonCK": 1772.0,
       "ton": 1772.0,
       "ttcoApp": 1772.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "43"
       ],
@@ -1211,7 +1211,7 @@
       "TonCK": 9854.98,
       "ton": 9854.98,
       "ttcoApp": 9854.98,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "43"
       ],
@@ -1238,7 +1238,7 @@
       "TonCK": 1497.9,
       "ton": 1497.9,
       "ttcoApp": 1497.9,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "44"
       ],
@@ -1265,7 +1265,7 @@
       "TonCK": 583.06,
       "ton": 583.06,
       "ttcoApp": 583.06,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "44"
       ],
@@ -1292,7 +1292,7 @@
       "TonCK": 40.0,
       "ton": 40.0,
       "ttcoApp": 40.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "31B"
       ],
@@ -1319,7 +1319,7 @@
       "TonCK": 2767.39,
       "ton": 2767.39,
       "ttcoApp": 2767.39,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "44"
       ],
@@ -1346,7 +1346,7 @@
       "TonCK": 9337.51,
       "ton": 9337.51,
       "ttcoApp": 9337.51,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "44"
       ],
@@ -1373,7 +1373,7 @@
       "TonCK": 2500.08,
       "ton": 2500.08,
       "ttcoApp": 2500.08,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "45"
       ],
@@ -1392,15 +1392,15 @@
       "TenKho": "Kho 34",
       "kho": "Kho 34",
       "MaThan": "6a.1",
-      "TenThan": "Cám 1 (Ak 5,00 - 8,00%)",
-      "coal": "Cám 1 (Ak 5,00 - 8,00%)",
+      "TenThan": "Cám 1",
+      "coal": "Cám 1",
       "TonDK": 43197.29,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 43197.29,
       "ton": 43197.29,
       "ttcoApp": 43197.29,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "34A"
       ],
@@ -1449,7 +1449,7 @@
       "TonCK": 36686.58,
       "ton": 36686.58,
       "ttcoApp": 36686.58,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "36"
       ],
@@ -1476,7 +1476,7 @@
       "TonCK": 348437.53,
       "ton": 348437.53,
       "ttcoApp": 348437.53,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "46a"
       ],
@@ -1503,7 +1503,7 @@
       "TonCK": 9.13,
       "ton": 9.13,
       "ttcoApp": 9.13,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "28"
       ],
@@ -1530,7 +1530,7 @@
       "TonCK": 97.12,
       "ton": 97.12,
       "ttcoApp": 97.12,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "28"
       ],
@@ -1557,7 +1557,7 @@
       "TonCK": 3749.96,
       "ton": 3749.96,
       "ttcoApp": 3749.96,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "28"
       ],
@@ -1584,7 +1584,7 @@
       "TonCK": -12.88,
       "ton": -12.88,
       "ttcoApp": -12.88,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "28"
       ],
@@ -1611,7 +1611,7 @@
       "TonCK": 2056.0,
       "ton": 2056.0,
       "ttcoApp": 2056.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "28"
       ],
@@ -1638,7 +1638,7 @@
       "TonCK": 6681.44,
       "ton": 6681.44,
       "ttcoApp": 6681.44,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "60"
       ],
@@ -1657,15 +1657,15 @@
       "TenKho": "Kho 1-T4",
       "kho": "Kho 1-T4",
       "MaThan": "11a.1",
-      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TenThan": "Cám 6a.1",
+      "coal": "Cám 6a.1",
       "TonDK": 83251.99,
       "NhapTK": 136437.0,
       "XuatTK": 141937.0,
       "TonCK": 77751.99,
       "ton": 77751.99,
       "ttcoApp": 77751.99,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "71"
       ],
@@ -1684,15 +1684,15 @@
       "TenKho": "Kho 1-T4",
       "kho": "Kho 1-T4",
       "MaThan": "b11c",
-      "TenThan": "Cục xô 1c (Ak 17,01 - 22%)",
-      "coal": "Cục xô 1c (Ak 17,01 - 22%)",
+      "TenThan": "Cục xô 1c",
+      "coal": "Cục xô 1c",
       "TonDK": 1209.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 1209.0,
       "ton": 1209.0,
       "ttcoApp": 1209.0,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "71"
       ],
@@ -1719,7 +1719,7 @@
       "TonCK": 7187.1,
       "ton": 7187.1,
       "ttcoApp": 7187.1,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "72"
       ],
@@ -1746,7 +1746,7 @@
       "TonCK": 519.1,
       "ton": 519.1,
       "ttcoApp": 519.1,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "72"
       ],
@@ -1773,7 +1773,7 @@
       "TonCK": 4898.38,
       "ton": 4898.38,
       "ttcoApp": 4898.38,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "72"
       ],
@@ -1800,7 +1800,7 @@
       "TonCK": 350.16,
       "ton": 350.16,
       "ttcoApp": 350.16,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "73"
       ],
@@ -1827,7 +1827,7 @@
       "TonCK": -313.59,
       "ton": -313.59,
       "ttcoApp": -313.59,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "73"
       ],
@@ -1846,15 +1846,15 @@
       "TenKho": "Kho 4-T4",
       "kho": "Kho 4-T4",
       "MaThan": "11a.1",
-      "TenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "coal": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TenThan": "Cám 6a.1",
+      "coal": "Cám 6a.1",
       "TonDK": 27914.54,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
       "TonCK": 27914.54,
       "ton": 27914.54,
       "ttcoApp": 27914.54,
-      "sourceFormula": "V10 DB raw + DMTHAN -> standard MaKho mapping; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
+      "sourceFormula": "V11 DB raw + DMTHAN -> standard MaKho mapping; strip AK parenthetical globally; Kho 9/10 group dynamic Cam; Kho 39 keep full import coal detail",
       "rawMaKhoList": [
         "74"
       ],
@@ -1875,7 +1875,7 @@
       "tenKhoApp": "Kho 1",
       "items": [
         {
-          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c",
           "tonKho": 1256.25,
           "maThanList": [
             "B11C"
@@ -1888,7 +1888,7 @@
           "rawTenKho": "",
           "maThan": "B11C",
           "tenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
-          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c",
           "TonDK": 509.95,
           "NhapTK": 5971.0,
           "XuatTK": 5224.7,
@@ -1901,7 +1901,7 @@
       "tenKhoApp": "Kho 2",
       "items": [
         {
-          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1",
           "tonKho": 7937.86,
           "maThanList": [
             "5A.1"
@@ -1914,7 +1914,7 @@
           "rawTenKho": "",
           "maThan": "5A.1",
           "tenThanDb": "Cục 5a.1 (Ak5,00 - 8,00%)",
-          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1",
           "TonDK": 7937.86,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -1927,7 +1927,7 @@
       "tenKhoApp": "Kho 3",
       "items": [
         {
-          "tenThanHienThi": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+          "tenThanHienThi": "Cục 4a.1",
           "tonKho": 1507.63,
           "maThanList": [
             "4A.1"
@@ -1940,7 +1940,7 @@
           "rawTenKho": "",
           "maThan": "4A.1",
           "tenThanDb": "Cục 4a.1 (Ak 4,00 - 7,00%)",
-          "tenThanHienThi": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+          "tenThanHienThi": "Cục 4a.1",
           "TonDK": 1507.63,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -1953,7 +1953,7 @@
       "tenKhoApp": "Kho 4",
       "items": [
         {
-          "tenThanHienThi": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+          "tenThanHienThi": "Cục 4a.1",
           "tonKho": 13190.17,
           "maThanList": [
             "4A.1"
@@ -1966,7 +1966,7 @@
           "rawTenKho": "",
           "maThan": "4A.1",
           "tenThanDb": "Cục 4a.1 (Ak 4,00 - 7,00%)",
-          "tenThanHienThi": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+          "tenThanHienThi": "Cục 4a.1",
           "TonDK": 11505.17,
           "NhapTK": 1685.0,
           "XuatTK": 0.0,
@@ -1979,7 +1979,7 @@
       "tenKhoApp": "Kho 5",
       "items": [
         {
-          "tenThanHienThi": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+          "tenThanHienThi": "Cục 4a.2",
           "tonKho": 9933.52,
           "maThanList": [
             "4A.2"
@@ -1992,7 +1992,7 @@
           "rawTenKho": "",
           "maThan": "4A.2",
           "tenThanDb": "Cục 4a.2 (Ak 7,01 - 12,00%)",
-          "tenThanHienThi": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+          "tenThanHienThi": "Cục 4a.2",
           "TonDK": 12610.42,
           "NhapTK": 3877.0,
           "XuatTK": 6553.9,
@@ -2005,7 +2005,7 @@
       "tenKhoApp": "Kho 6",
       "items": [
         {
-          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c",
           "tonKho": 3.52,
           "maThanList": [
             "B11C"
@@ -2018,7 +2018,7 @@
           "rawTenKho": "",
           "maThan": "B11C",
           "tenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
-          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c",
           "TonDK": 3.52,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -2031,7 +2031,7 @@
       "tenKhoApp": "Kho 7",
       "items": [
         {
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "tonKho": 103.34,
           "maThanList": [
             "11A.1"
@@ -2044,7 +2044,7 @@
           "rawTenKho": "",
           "maThan": "11A.1",
           "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "TonDK": 7792.84,
           "NhapTK": 0.0,
           "XuatTK": 7689.5,
@@ -2057,7 +2057,7 @@
       "tenKhoApp": "Kho 8",
       "items": [
         {
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "tonKho": 27850.01,
           "maThanList": [
             "11A.1"
@@ -2070,7 +2070,7 @@
           "rawTenKho": "",
           "maThan": "11A.1",
           "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "TonDK": 37044.41,
           "NhapTK": 0.0,
           "XuatTK": 9194.4,
@@ -2423,7 +2423,7 @@
       "tenKhoApp": "Kho 11",
       "items": [
         {
-          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+          "tenThanHienThi": "Cám 4a.1",
           "tonKho": 37190.49,
           "maThanList": [
             "9A.1"
@@ -2436,7 +2436,7 @@
           "rawTenKho": "",
           "maThan": "9A.1",
           "tenThanDb": "Cám 4a.1 (Ak 19,01 - 23,00%)",
-          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+          "tenThanHienThi": "Cám 4a.1",
           "TonDK": 38391.49,
           "NhapTK": 0.0,
           "XuatTK": 1201.0,
@@ -2449,7 +2449,7 @@
       "tenKhoApp": "Kho 12",
       "items": [
         {
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "tonKho": 26710.64,
           "maThanList": [
             "8B.1"
@@ -2462,7 +2462,7 @@
           "rawTenKho": "",
           "maThan": "8B.1",
           "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "TonDK": 25271.64,
           "NhapTK": 1439.0,
           "XuatTK": 0.0,
@@ -2475,7 +2475,7 @@
       "tenKhoApp": "Kho 13",
       "items": [
         {
-          "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+          "tenThanHienThi": "Cám 3a.1",
           "tonKho": 18297.95,
           "maThanList": [
             "8A.1"
@@ -2488,7 +2488,7 @@
           "rawTenKho": "",
           "maThan": "8A.1",
           "tenThanDb": "Cám 3a.1 (Ak 10,01 - 13,00%)",
-          "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+          "tenThanHienThi": "Cám 3a.1",
           "TonDK": 18297.95,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -2513,7 +2513,7 @@
       "tenKhoApp": "Kho 15",
       "items": [
         {
-          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1",
           "tonKho": 35470.8,
           "maThanList": [
             "5a.1"
@@ -2526,7 +2526,7 @@
           "rawTenKho": "",
           "maThan": "5a.1",
           "tenThanDb": "Cục 5a.1 (Ak5,00 - 8,00%)",
-          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1",
           "TonDK": 32500.8,
           "NhapTK": 2970.0,
           "XuatTK": 0.0,
@@ -2539,7 +2539,7 @@
       "tenKhoApp": "Kho 16",
       "items": [
         {
-          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1",
           "tonKho": 13252.46,
           "maThanList": [
             "5A.1"
@@ -2552,7 +2552,7 @@
           "rawTenKho": "",
           "maThan": "5A.1",
           "tenThanDb": "Cục 5a.1 (Ak5,00 - 8,00%)",
-          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1",
           "TonDK": 13252.46,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -2565,14 +2565,14 @@
       "tenKhoApp": "Kho 17",
       "items": [
         {
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "tonKho": 52884.05,
           "maThanList": [
             "6A.1"
           ]
         },
         {
-          "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+          "tenThanHienThi": "Cám 2a.1",
           "tonKho": 19210.6,
           "maThanList": [
             "7A.1"
@@ -2585,7 +2585,7 @@
           "rawTenKho": "",
           "maThan": "6A.1",
           "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "TonDK": 46220.05,
           "NhapTK": 6664.0,
           "XuatTK": 0.0,
@@ -2596,7 +2596,7 @@
           "rawTenKho": "",
           "maThan": "7A.1",
           "tenThanDb": "Cám 2a.1 (Ak 8,01 - 10,00%)",
-          "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+          "tenThanHienThi": "Cám 2a.1",
           "TonDK": 22078.6,
           "NhapTK": 0.0,
           "XuatTK": 2868.0,
@@ -2609,7 +2609,7 @@
       "tenKhoApp": "Kho 18",
       "items": [
         {
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "tonKho": 14983.58,
           "maThanList": [
             "8B.1"
@@ -2622,7 +2622,7 @@
           "rawTenKho": "",
           "maThan": "8B.1",
           "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "TonDK": 13807.58,
           "NhapTK": 1176.0,
           "XuatTK": 0.0,
@@ -2635,7 +2635,7 @@
       "tenKhoApp": "Kho 19",
       "items": [
         {
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "tonKho": 15242.09,
           "maThanList": [
             "8B.1"
@@ -2648,7 +2648,7 @@
           "rawTenKho": "",
           "maThan": "8B.1",
           "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "TonDK": 14285.09,
           "NhapTK": 957.0,
           "XuatTK": 0.0,
@@ -2661,14 +2661,14 @@
       "tenKhoApp": "Kho 20",
       "items": [
         {
-          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+          "tenThanHienThi": "Cám 4a.1",
           "tonKho": 66556.93,
           "maThanList": [
             "9A.1"
           ]
         },
         {
-          "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
+          "tenThanHienThi": "Cám 4b.1",
           "tonKho": 1940.0,
           "maThanList": [
             "9B.1"
@@ -2681,7 +2681,7 @@
           "rawTenKho": "",
           "maThan": "9A.1",
           "tenThanDb": "Cám 4a.1 (Ak 19,01 - 23,00%)",
-          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+          "tenThanHienThi": "Cám 4a.1",
           "TonDK": 72912.93,
           "NhapTK": 0.0,
           "XuatTK": 6356.0,
@@ -2692,7 +2692,7 @@
           "rawTenKho": "",
           "maThan": "9B.1",
           "tenThanDb": "Cám 4b.1 (Ak 23,01 - 27%)",
-          "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
+          "tenThanHienThi": "Cám 4b.1",
           "TonDK": 0.0,
           "NhapTK": 7154.0,
           "XuatTK": 5214.0,
@@ -2705,21 +2705,21 @@
       "tenKhoApp": "Kho 21",
       "items": [
         {
-          "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
+          "tenThanHienThi": "Cám 5a.1",
           "tonKho": 604.32,
           "maThanList": [
             "10A.1"
           ]
         },
         {
-          "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
+          "tenThanHienThi": "Cám 5b.1",
           "tonKho": -258.56,
           "maThanList": [
             "10B.1"
           ]
         },
         {
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "tonKho": 5670.49,
           "maThanList": [
             "11A.1"
@@ -2732,7 +2732,7 @@
           "rawTenKho": "",
           "maThan": "10A.1",
           "tenThanDb": "Cám 5a.1 (Ak27,01 - 31%)",
-          "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
+          "tenThanHienThi": "Cám 5a.1",
           "TonDK": 11014.32,
           "NhapTK": 21532.0,
           "XuatTK": 31942.0,
@@ -2743,7 +2743,7 @@
           "rawTenKho": "",
           "maThan": "10B.1",
           "tenThanDb": "Cám 5b.1 (Ak 31,01 - 35%)",
-          "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
+          "tenThanHienThi": "Cám 5b.1",
           "TonDK": 3451.44,
           "NhapTK": 7412.0,
           "XuatTK": 11122.0,
@@ -2754,7 +2754,7 @@
           "rawTenKho": "",
           "maThan": "11A.1",
           "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "TonDK": 7291.49,
           "NhapTK": 16816.0,
           "XuatTK": 18437.0,
@@ -2779,7 +2779,7 @@
       "tenKhoApp": "Kho 23",
       "items": [
         {
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "tonKho": 21824.66,
           "maThanList": [
             "8b.1"
@@ -2792,7 +2792,7 @@
           "rawTenKho": "",
           "maThan": "8b.1",
           "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1",
           "TonDK": 21824.66,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -2805,7 +2805,7 @@
       "tenKhoApp": "Kho 24",
       "items": [
         {
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "tonKho": 4197.0,
           "maThanList": [
             "11A.1"
@@ -2818,7 +2818,7 @@
           "rawTenKho": "",
           "maThan": "11A.1",
           "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "TonDK": 8507.0,
           "NhapTK": 0.0,
           "XuatTK": 4310.0,
@@ -2831,7 +2831,7 @@
       "tenKhoApp": "Kho 25",
       "items": [
         {
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "tonKho": 17171.72,
           "maThanList": [
             "6a.1"
@@ -2844,7 +2844,7 @@
           "rawTenKho": "",
           "maThan": "6a.1",
           "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "TonDK": 17171.72,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -2890,7 +2890,7 @@
           ]
         },
         {
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1",
           "tonKho": 602.72,
           "maThanList": [
             "11b.1"
@@ -2903,7 +2903,7 @@
           "rawTenKho": "",
           "maThan": "11b.1",
           "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1",
           "TonDK": 707.72,
           "NhapTK": 0.0,
           "XuatTK": 105.0,
@@ -2927,7 +2927,7 @@
       "tenKhoApp": "Kho 28",
       "items": [
         {
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1",
           "tonKho": 19353.24,
           "maThanList": [
             "11b.1"
@@ -2940,7 +2940,7 @@
           "rawTenKho": "",
           "maThan": "11b.1",
           "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1",
           "TonDK": 26021.24,
           "NhapTK": 134.0,
           "XuatTK": 6802.0,
@@ -2953,7 +2953,7 @@
       "tenKhoApp": "Kho 28-1",
       "items": [
         {
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1",
           "tonKho": 18862.94,
           "maThanList": [
             "11b.1"
@@ -2966,7 +2966,7 @@
           "rawTenKho": "",
           "maThan": "11b.1",
           "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+          "tenThanHienThi": "Cám 6b.1",
           "TonDK": 17959.94,
           "NhapTK": 2912.0,
           "XuatTK": 2009.0,
@@ -2979,7 +2979,7 @@
       "tenKhoApp": "Kho 29",
       "items": [
         {
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "tonKho": 18990.4,
           "maThanList": [
             "6a.1"
@@ -2992,7 +2992,7 @@
           "rawTenKho": "",
           "maThan": "6a.1",
           "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "TonDK": 18990.4,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -3005,7 +3005,7 @@
       "tenKhoApp": "Kho 30",
       "items": [
         {
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "tonKho": 22274.7,
           "maThanList": [
             "6a.1"
@@ -3018,7 +3018,7 @@
           "rawTenKho": "",
           "maThan": "6a.1",
           "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "TonDK": 22274.7,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -3199,7 +3199,7 @@
       "tenKhoApp": "Kho 34",
       "items": [
         {
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "tonKho": 43197.29,
           "maThanList": [
             "6a.1"
@@ -3212,7 +3212,7 @@
           "rawTenKho": "",
           "maThan": "6a.1",
           "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
-          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1",
           "TonDK": 43197.29,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -3413,14 +3413,14 @@
       "tenKhoApp": "Kho 1-T4",
       "items": [
         {
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "tonKho": 77751.99,
           "maThanList": [
             "11a.1"
           ]
         },
         {
-          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c",
           "tonKho": 1209.0,
           "maThanList": [
             "b11c"
@@ -3433,7 +3433,7 @@
           "rawTenKho": "",
           "maThan": "11a.1",
           "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "TonDK": 83251.99,
           "NhapTK": 136437.0,
           "XuatTK": 141937.0,
@@ -3444,7 +3444,7 @@
           "rawTenKho": "",
           "maThan": "b11c",
           "tenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
-          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c",
           "TonDK": 1209.0,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -3563,7 +3563,7 @@
       "tenKhoApp": "Kho 4-T4",
       "items": [
         {
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "tonKho": 27914.54,
           "maThanList": [
             "11a.1"
@@ -3576,7 +3576,7 @@
           "rawTenKho": "",
           "maThan": "11a.1",
           "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1",
           "TonDK": 27914.54,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
