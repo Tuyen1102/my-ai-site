@@ -1,10 +1,18 @@
 {
-  "updatedAt": "2026-05-13 23:37:33",
+  "version": "direct-db-v5-fix-missing-kho-two-menu",
+  "updatedAt": "2026-05-13 23:49:56",
   "source": "TTCO_DB",
   "server": "tuyenthancuaong.com.vn,52376",
   "stockPeriod": {
     "NamHT": 2026,
     "ThangHT": 5
+  },
+  "summary": {
+    "warehouseCount": 45,
+    "rowCount": 63,
+    "realStockRowCount": 50,
+    "placeholderRowCount": 13,
+    "needsConfirmationCount": 28
   },
   "dbColumnsUsed": {
     "stockWarehouseCode": "MaKho",
@@ -21,42 +29,71 @@
     "NamHT": "NamHT",
     "ThangHT": "ThangHT"
   },
+  "warehouseList": [
+    "Kho 1",
+    "Kho 1-T4",
+    "Kho 2",
+    "Kho 2-T4",
+    "Kho 3",
+    "Kho 3-T4",
+    "Kho 4",
+    "Kho 4-T4",
+    "Kho 5",
+    "Kho 6",
+    "Kho 7",
+    "Kho 8",
+    "Kho 9",
+    "Kho 10",
+    "Kho 11",
+    "Kho 12",
+    "Kho 13",
+    "Kho 14",
+    "Kho 15",
+    "Kho 16",
+    "Kho 17",
+    "Kho 18",
+    "Kho 19",
+    "Kho 20",
+    "Kho 21",
+    "Kho 22",
+    "Kho 23",
+    "Kho 24",
+    "Kho 25",
+    "Kho 26",
+    "Kho 27",
+    "Kho 28",
+    "Kho 28-1",
+    "Kho 29",
+    "Kho 30",
+    "Kho 31",
+    "Kho 32",
+    "Kho 33",
+    "Kho 34",
+    "Kho 35",
+    "Kho 36",
+    "Kho 37",
+    "Kho 38",
+    "Kho 39",
+    "Kho 40"
+  ],
   "khoList": [
     {
-      "maKhoDb": "01",
+      "maKhoDb": "",
       "khoCode": "1",
+      "kho": "Kho 1",
       "tenKhoApp": "Kho 1",
-      "tenKhoDb": "Kho 1",
-      "items": [
-        {
-          "maThanList": [
-            "B11C"
-          ],
-          "tenThanHienThi": "B11C",
-          "tonKho": 576.88
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "01",
-          "maThan": "B11C",
-          "tenThanDb": "B11C",
-          "tenThanHienThi": "B11C",
-          "TonDK": 509.95,
-          "NhapTK": 2146.0,
-          "XuatTK": 1984.2,
-          "TonCK": 671.75,
-          "TonCK_TToan": 576.88,
-          "TonCuoi_TinhLai": 671.75,
-          "TonKho_App": 576.88
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "71",
       "khoCode": "1-T4",
+      "kho": "Kho 1-T4",
       "tenKhoApp": "Kho 1-T4",
       "tenKhoDb": "Kho 1-T4",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -69,7 +106,7 @@
           "maThanList": [
             "b11c"
           ],
-          "tenThanHienThi": "b11c",
+          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
           "tonKho": 1209.0
         }
       ],
@@ -90,8 +127,8 @@
         {
           "maKhoDb": "71",
           "maThan": "b11c",
-          "tenThanDb": "b11c",
-          "tenThanHienThi": "b11c",
+          "tenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
+          "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
           "TonDK": 1209.0,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -100,57 +137,40 @@
           "TonCuoi_TinhLai": 1209.0,
           "TonKho_App": 1209.0
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
-      "maKhoDb": "02",
+      "maKhoDb": "",
       "khoCode": "2",
+      "kho": "Kho 2",
       "tenKhoApp": "Kho 2",
-      "tenKhoDb": "Kho 2",
-      "items": [
-        {
-          "maThanList": [
-            "5A.1"
-          ],
-          "tenThanHienThi": "5A.1",
-          "tonKho": 7937.86
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "02",
-          "maThan": "5A.1",
-          "tenThanDb": "5A.1",
-          "tenThanHienThi": "5A.1",
-          "TonDK": 7937.86,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 7937.86,
-          "TonCK_TToan": 7937.86,
-          "TonCuoi_TinhLai": 7937.86,
-          "TonKho_App": 7937.86
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "72",
       "khoCode": "2-T4",
+      "kho": "Kho 2-T4",
       "tenKhoApp": "Kho 2-T4",
       "tenKhoDb": "Kho 2-T4",
+      "hasStock": true,
       "items": [
+        {
+          "maThanList": [
+            "b16.09"
+          ],
+          "tenThanHienThi": "Cục don 8C",
+          "tonKho": 5377.1
+        },
         {
           "maThanList": [
             "00"
           ],
           "tenThanHienThi": "Than nguyên khai",
           "tonKho": -6111.74
-        },
-        {
-          "maThanList": [
-            "b16.09"
-          ],
-          "tenThanHienThi": "b16.09",
-          "tonKho": 5377.1
         },
         {
           "maThanList": [
@@ -161,6 +181,19 @@
         }
       ],
       "traceItems": [
+        {
+          "maKhoDb": "72",
+          "maThan": "b16.09",
+          "tenThanDb": "Cục don 8C",
+          "tenThanHienThi": "Cục don 8C",
+          "TonDK": 5027.1,
+          "NhapTK": 350.0,
+          "XuatTK": 0.0,
+          "TonCK": 5377.1,
+          "TonCK_TToan": 5377.1,
+          "TonCuoi_TinhLai": 5377.1,
+          "TonKho_App": 5377.1
+        },
         {
           "maKhoDb": "72",
           "maThan": "00",
@@ -176,19 +209,6 @@
         },
         {
           "maKhoDb": "72",
-          "maThan": "b16.09",
-          "tenThanDb": "b16.09",
-          "tenThanHienThi": "b16.09",
-          "TonDK": 5027.1,
-          "NhapTK": 350.0,
-          "XuatTK": 0.0,
-          "TonCK": 5377.1,
-          "TonCK_TToan": 5377.1,
-          "TonCuoi_TinhLai": 5377.1,
-          "TonKho_App": 5377.1
-        },
-        {
-          "maKhoDb": "72",
           "maThan": "B5.01",
           "tenThanDb": "Đá thải",
           "tenThanHienThi": "Đá thải",
@@ -200,43 +220,26 @@
           "TonCuoi_TinhLai": 5038.39,
           "TonKho_App": 5038.39
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
-      "maKhoDb": "03",
+      "maKhoDb": "",
       "khoCode": "3",
+      "kho": "Kho 3",
       "tenKhoApp": "Kho 3",
-      "tenKhoDb": "Kho 3",
-      "items": [
-        {
-          "maThanList": [
-            "4A.1"
-          ],
-          "tenThanHienThi": "4A.1",
-          "tonKho": 1350.76
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "03",
-          "maThan": "4A.1",
-          "tenThanDb": "4A.1",
-          "tenThanHienThi": "4A.1",
-          "TonDK": 1507.63,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 1507.63,
-          "TonCK_TToan": 1350.76,
-          "TonCuoi_TinhLai": 1507.63,
-          "TonKho_App": 1350.76
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "73",
       "khoCode": "3-T4",
+      "kho": "Kho 3-T4",
       "tenKhoApp": "Kho 3-T4",
       "tenKhoDb": "Kho 3-T4",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -260,43 +263,26 @@
           "TonCuoi_TinhLai": 6021.16,
           "TonKho_App": 6021.16
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
-      "maKhoDb": "04",
+      "maKhoDb": "",
       "khoCode": "4",
+      "kho": "Kho 4",
       "tenKhoApp": "Kho 4",
-      "tenKhoDb": "Kho 4",
-      "items": [
-        {
-          "maThanList": [
-            "4A.1"
-          ],
-          "tenThanHienThi": "4A.1",
-          "tonKho": 11465.42
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "04",
-          "maThan": "4A.1",
-          "tenThanDb": "4A.1",
-          "tenThanHienThi": "4A.1",
-          "TonDK": 11505.17,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 11505.17,
-          "TonCK_TToan": 11465.42,
-          "TonCuoi_TinhLai": 11505.17,
-          "TonKho_App": 11465.42
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "74",
       "khoCode": "4-T4",
+      "kho": "Kho 4-T4",
       "tenKhoApp": "Kho 4-T4",
       "tenKhoDb": "Kho 4-T4",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -320,357 +306,67 @@
           "TonCuoi_TinhLai": 27914.54,
           "TonKho_App": 27914.54
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
-      "maKhoDb": "05",
+      "maKhoDb": "",
       "khoCode": "5",
+      "kho": "Kho 5",
       "tenKhoApp": "Kho 5",
-      "tenKhoDb": "Kho 5",
-      "items": [
-        {
-          "maThanList": [
-            "4a.2"
-          ],
-          "tenThanHienThi": "Cục 4a.2 (Ak 7,01 - 12,00%)",
-          "tonKho": 8394.56
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "05",
-          "maThan": "4a.2",
-          "tenThanDb": "Cục 4a.2 (Ak 7,01 - 12,00%)",
-          "tenThanHienThi": "Cục 4a.2 (Ak 7,01 - 12,00%)",
-          "TonDK": 12610.42,
-          "NhapTK": 2403.0,
-          "XuatTK": 6553.9,
-          "TonCK": 8459.52,
-          "TonCK_TToan": 8394.56,
-          "TonCuoi_TinhLai": 8459.52,
-          "TonKho_App": 8394.56
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
-      "maKhoDb": "06",
+      "maKhoDb": "",
       "khoCode": "6",
+      "kho": "Kho 6",
       "tenKhoApp": "Kho 6",
-      "tenKhoDb": "Kho 6",
-      "items": [
-        {
-          "maThanList": [
-            "B11C"
-          ],
-          "tenThanHienThi": "B11C",
-          "tonKho": 1.54
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "06",
-          "maThan": "B11C",
-          "tenThanDb": "B11C",
-          "tenThanHienThi": "B11C",
-          "TonDK": 3.52,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 3.52,
-          "TonCK_TToan": 1.54,
-          "TonCuoi_TinhLai": 3.52,
-          "TonKho_App": 1.54
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
-      "maKhoDb": "07",
+      "maKhoDb": "",
       "khoCode": "7",
+      "kho": "Kho 7",
       "tenKhoApp": "Kho 7",
-      "tenKhoDb": "Kho 7",
-      "items": [
-        {
-          "maThanList": [
-            "11a.1"
-          ],
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tonKho": 7792.84
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "07",
-          "maThan": "11a.1",
-          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
-          "TonDK": 7792.84,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 7792.84,
-          "TonCK_TToan": 7792.84,
-          "TonCuoi_TinhLai": 7792.84,
-          "TonKho_App": 7792.84
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
-      "maKhoDb": "08",
+      "maKhoDb": "",
       "khoCode": "8",
+      "kho": "Kho 8",
       "tenKhoApp": "Kho 8",
-      "tenKhoDb": "Kho 8",
-      "items": [
-        {
-          "maThanList": [
-            "11A.1"
-          ],
-          "tenThanHienThi": "11A.1",
-          "tonKho": 32366.21
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "08",
-          "maThan": "11A.1",
-          "tenThanDb": "11A.1",
-          "tenThanHienThi": "11A.1",
-          "TonDK": 37044.41,
-          "NhapTK": 0.0,
-          "XuatTK": 4678.2,
-          "TonCK": 32366.21,
-          "TonCK_TToan": 32366.21,
-          "TonCuoi_TinhLai": 32366.21,
-          "TonKho_App": 32366.21
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
-      "maKhoDb": "09",
+      "maKhoDb": "",
       "khoCode": "9",
+      "kho": "Kho 9",
       "tenKhoApp": "Kho 9",
-      "tenKhoDb": "Kho 9",
-      "items": [
-        {
-          "maThanList": [
-            "11A.1"
-          ],
-          "tenThanHienThi": "11A.1",
-          "tonKho": 2405.38
-        },
-        {
-          "maThanList": [
-            "11B.1"
-          ],
-          "tenThanHienThi": "11B.1",
-          "tonKho": 193.48
-        },
-        {
-          "maThanList": [
-            "11a.247",
-            "11a.248",
-            "11a.251"
-          ],
-          "tenThanHienThi": "Cám 6a.10",
-          "tonKho": 4134.17
-        },
-        {
-          "maThanList": [
-            "11.250",
-            "11a.241",
-            "11a.243",
-            "11a.245",
-            "11a.246",
-            "11a.249",
-            "11a.253",
-            "11a.254"
-          ],
-          "tenThanHienThi": "Cám 6a.14",
-          "tonKho": 16103.57
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "09",
-          "maThan": "11A.1",
-          "tenThanDb": "11A.1",
-          "tenThanHienThi": "11A.1",
-          "TonDK": 11423.71,
-          "NhapTK": 5082.0,
-          "XuatTK": 12999.0,
-          "TonCK": 3506.71,
-          "TonCK_TToan": 2405.38,
-          "TonCuoi_TinhLai": 3506.71,
-          "TonKho_App": 2405.38
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11B.1",
-          "tenThanDb": "11B.1",
-          "tenThanHienThi": "11B.1",
-          "TonDK": 418.0,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 418.0,
-          "TonCK_TToan": 193.48,
-          "TonCuoi_TinhLai": 418.0,
-          "TonKho_App": 193.48
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.247",
-          "tenThanDb": "Cám 6a.10 (Lào - Tàu Golden Star)",
-          "tenThanHienThi": "Cám 6a.10",
-          "TonDK": 23.0,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 23.0,
-          "TonCK_TToan": -0.98,
-          "TonCuoi_TinhLai": 23.0,
-          "TonKho_App": -0.98
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.248",
-          "tenThanDb": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
-          "tenThanHienThi": "Cám 6a.10",
-          "TonDK": 33.0,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 33.0,
-          "TonCK_TToan": 0.15,
-          "TonCuoi_TinhLai": 33.0,
-          "TonKho_App": 0.15
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.251",
-          "tenThanDb": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
-          "tenThanHienThi": "Cám 6a.10",
-          "TonDK": 8302.0,
-          "NhapTK": 668.0,
-          "XuatTK": 4835.0,
-          "TonCK": 4135.0,
-          "TonCK_TToan": 4135.0,
-          "TonCuoi_TinhLai": 4135.0,
-          "TonKho_App": 4135.0
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11.250",
-          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": 3978.0,
-          "NhapTK": 0.0,
-          "XuatTK": 3640.0,
-          "TonCK": 338.0,
-          "TonCK_TToan": 33.82,
-          "TonCuoi_TinhLai": 338.0,
-          "TonKho_App": 33.82
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.241",
-          "tenThanDb": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": 0.3,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 0.3,
-          "TonCK_TToan": -0.53,
-          "TonCuoi_TinhLai": 0.3,
-          "TonKho_App": -0.53
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.243",
-          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV W - Star)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": -0.01,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": -0.01,
-          "TonCK_TToan": -0.37,
-          "TonCuoi_TinhLai": -0.01,
-          "TonKho_App": -0.37
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.245",
-          "tenThanDb": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": -1.37,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": -1.37,
-          "TonCK_TToan": 0.16,
-          "TonCuoi_TinhLai": -1.37,
-          "TonKho_App": 0.16
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.246",
-          "tenThanDb": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": -0.37,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": -0.37,
-          "TonCK_TToan": -0.35,
-          "TonCuoi_TinhLai": -0.37,
-          "TonKho_App": -0.35
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.249",
-          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": 63.0,
-          "NhapTK": 0.0,
-          "XuatTK": 7.0,
-          "TonCK": 56.0,
-          "TonCK_TToan": -0.16,
-          "TonCuoi_TinhLai": 56.0,
-          "TonKho_App": -0.16
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.253",
-          "tenThanDb": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": 0.0,
-          "NhapTK": 25561.0,
-          "XuatTK": 16694.0,
-          "TonCK": 8867.0,
-          "TonCK_TToan": 8867.0,
-          "TonCuoi_TinhLai": 8867.0,
-          "TonKho_App": 8867.0
-        },
-        {
-          "maKhoDb": "09",
-          "maThan": "11a.254",
-          "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
-          "tenThanHienThi": "Cám 6a.14",
-          "TonDK": 0.0,
-          "NhapTK": 7204.0,
-          "XuatTK": 0.0,
-          "TonCK": 7204.0,
-          "TonCK_TToan": 7204.0,
-          "TonCuoi_TinhLai": 7204.0,
-          "TonKho_App": 7204.0
-        }
-      ]
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "10",
       "khoCode": "10",
+      "kho": "Kho 10",
       "tenKhoApp": "Kho 10",
       "tenKhoDb": "Kho 10",
+      "hasStock": true,
       "items": [
-        {
-          "maThanList": [
-            "10B.1"
-          ],
-          "tenThanHienThi": "10B.1",
-          "tonKho": 499.59
-        },
         {
           "maThanList": [
             "10a.1"
@@ -688,22 +384,16 @@
           ],
           "tenThanHienThi": "Cám 5a.14",
           "tonKho": 390.64
+        },
+        {
+          "maThanList": [
+            "10B.1"
+          ],
+          "tenThanHienThi": "Cám 5b.1",
+          "tonKho": 499.59
         }
       ],
       "traceItems": [
-        {
-          "maKhoDb": "10",
-          "maThan": "10B.1",
-          "tenThanDb": "10B.1",
-          "tenThanHienThi": "10B.1",
-          "TonDK": 2711.0,
-          "NhapTK": 541.0,
-          "XuatTK": 2810.0,
-          "TonCK": 442.0,
-          "TonCK_TToan": 499.59,
-          "TonCuoi_TinhLai": 442.0,
-          "TonKho_App": 499.59
-        },
         {
           "maKhoDb": "10",
           "maThan": "10a.1",
@@ -781,20 +471,36 @@
           "TonCK_TToan": 0.44,
           "TonCuoi_TinhLai": 0.22,
           "TonKho_App": 0.44
+        },
+        {
+          "maKhoDb": "10",
+          "maThan": "10B.1",
+          "tenThanDb": "Cám 5b.1 (Ak 31,01 - 35%)",
+          "tenThanHienThi": "Cám 5b.1",
+          "TonDK": 2711.0,
+          "NhapTK": 541.0,
+          "XuatTK": 2810.0,
+          "TonCK": 442.0,
+          "TonCK_TToan": 499.59,
+          "TonCuoi_TinhLai": 442.0,
+          "TonKho_App": 499.59
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "11",
       "khoCode": "11",
+      "kho": "Kho 11",
       "tenKhoApp": "Kho 11",
       "tenKhoDb": "Kho 11",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "9A.1"
           ],
-          "tenThanHienThi": "9A.1",
+          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
           "tonKho": 37723.14
         }
       ],
@@ -802,8 +508,8 @@
         {
           "maKhoDb": "11",
           "maThan": "9A.1",
-          "tenThanDb": "9A.1",
-          "tenThanHienThi": "9A.1",
+          "tenThanDb": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
           "TonDK": 38391.49,
           "NhapTK": 0.0,
           "XuatTK": 720.0,
@@ -812,19 +518,22 @@
           "TonCuoi_TinhLai": 37671.49,
           "TonKho_App": 37723.14
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "12",
       "khoCode": "12",
+      "kho": "Kho 12",
       "tenKhoApp": "Kho 12",
       "tenKhoDb": "Kho 12",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "8B.1"
           ],
-          "tenThanHienThi": "8B.1",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
           "tonKho": 25644.35
         }
       ],
@@ -832,8 +541,8 @@
         {
           "maKhoDb": "12",
           "maThan": "8B.1",
-          "tenThanDb": "8B.1",
-          "tenThanHienThi": "8B.1",
+          "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
           "TonDK": 25271.64,
           "NhapTK": 745.0,
           "XuatTK": 0.0,
@@ -842,19 +551,22 @@
           "TonCuoi_TinhLai": 26016.64,
           "TonKho_App": 25644.35
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "13",
       "khoCode": "13",
+      "kho": "Kho 13",
       "tenKhoApp": "Kho 13",
       "tenKhoDb": "Kho 13",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "8A.1"
           ],
-          "tenThanHienThi": "8A.1",
+          "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
           "tonKho": 18297.95
         }
       ],
@@ -862,8 +574,8 @@
         {
           "maKhoDb": "13",
           "maThan": "8A.1",
-          "tenThanDb": "8A.1",
-          "tenThanHienThi": "8A.1",
+          "tenThanDb": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+          "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
           "TonDK": 18297.95,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -872,19 +584,32 @@
           "TonCuoi_TinhLai": 18297.95,
           "TonKho_App": 18297.95
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
+    },
+    {
+      "maKhoDb": "",
+      "khoCode": "14",
+      "kho": "Kho 14",
+      "tenKhoApp": "Kho 14",
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "15",
       "khoCode": "15",
+      "kho": "Kho 15",
       "tenKhoApp": "Kho 15",
       "tenKhoDb": "Kho 15",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "5A.1"
           ],
-          "tenThanHienThi": "5A.1",
+          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
           "tonKho": 33573.94
         }
       ],
@@ -892,8 +617,8 @@
         {
           "maKhoDb": "15",
           "maThan": "5A.1",
-          "tenThanDb": "5A.1",
-          "tenThanHienThi": "5A.1",
+          "tenThanDb": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
           "TonDK": 32500.8,
           "NhapTK": 1077.0,
           "XuatTK": 0.0,
@@ -902,19 +627,22 @@
           "TonCuoi_TinhLai": 33577.8,
           "TonKho_App": 33573.94
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "16",
       "khoCode": "16",
+      "kho": "Kho 16",
       "tenKhoApp": "Kho 16",
       "tenKhoDb": "Kho 16",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "5A.1"
           ],
-          "tenThanHienThi": "5A.1",
+          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
           "tonKho": 13195.87
         }
       ],
@@ -922,8 +650,8 @@
         {
           "maKhoDb": "16",
           "maThan": "5A.1",
-          "tenThanDb": "5A.1",
-          "tenThanHienThi": "5A.1",
+          "tenThanDb": "Cục 5a.1 (Ak5,00 - 8,00%)",
+          "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
           "TonDK": 13252.46,
           "NhapTK": 0.0,
           "XuatTK": 0.0,
@@ -932,19 +660,22 @@
           "TonCuoi_TinhLai": 13252.46,
           "TonKho_App": 13195.87
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "17",
       "khoCode": "17",
+      "kho": "Kho 17",
       "tenKhoApp": "Kho 17",
       "tenKhoDb": "Kho 17",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "6A.1"
           ],
-          "tenThanHienThi": "6A.1",
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
           "tonKho": 48193.03
         },
         {
@@ -959,8 +690,8 @@
         {
           "maKhoDb": "17",
           "maThan": "6A.1",
-          "tenThanDb": "6A.1",
-          "tenThanHienThi": "6A.1",
+          "tenThanDb": "Cám 1 (Ak 5,00 - 8,00%)",
+          "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
           "TonDK": 46220.05,
           "NhapTK": 2509.0,
           "XuatTK": 0.0,
@@ -982,19 +713,22 @@
           "TonCuoi_TinhLai": 19210.6,
           "TonKho_App": 19021.18
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "18",
       "khoCode": "18",
+      "kho": "Kho 18",
       "tenKhoApp": "Kho 18",
       "tenKhoDb": "Kho 18",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "8B.1"
           ],
-          "tenThanHienThi": "8B.1",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
           "tonKho": 14158.06
         }
       ],
@@ -1002,8 +736,8 @@
         {
           "maKhoDb": "18",
           "maThan": "8B.1",
-          "tenThanDb": "8B.1",
-          "tenThanHienThi": "8B.1",
+          "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
           "TonDK": 13807.58,
           "NhapTK": 560.0,
           "XuatTK": 0.0,
@@ -1012,19 +746,22 @@
           "TonCuoi_TinhLai": 14367.58,
           "TonKho_App": 14158.06
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "19",
       "khoCode": "19",
+      "kho": "Kho 19",
       "tenKhoApp": "Kho 19",
       "tenKhoDb": "Kho 19",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "8B.1"
           ],
-          "tenThanHienThi": "8B.1",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
           "tonKho": 15242.09
         }
       ],
@@ -1032,8 +769,8 @@
         {
           "maKhoDb": "19",
           "maThan": "8B.1",
-          "tenThanDb": "8B.1",
-          "tenThanHienThi": "8B.1",
+          "tenThanDb": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+          "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
           "TonDK": 14285.09,
           "NhapTK": 957.0,
           "XuatTK": 0.0,
@@ -1042,26 +779,29 @@
           "TonCuoi_TinhLai": 15242.09,
           "TonKho_App": 15242.09
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "20",
       "khoCode": "20",
+      "kho": "Kho 20",
       "tenKhoApp": "Kho 20",
       "tenKhoDb": "Kho 20",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "9A.1"
           ],
-          "tenThanHienThi": "9A.1",
+          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
           "tonKho": 69615.47
         },
         {
           "maThanList": [
             "9B.1"
           ],
-          "tenThanHienThi": "9B.1",
+          "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
           "tonKho": 66.38
         }
       ],
@@ -1069,8 +809,8 @@
         {
           "maKhoDb": "20",
           "maThan": "9A.1",
-          "tenThanDb": "9A.1",
-          "tenThanHienThi": "9A.1",
+          "tenThanDb": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+          "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
           "TonDK": 72912.93,
           "NhapTK": 0.0,
           "XuatTK": 3364.0,
@@ -1082,8 +822,8 @@
         {
           "maKhoDb": "20",
           "maThan": "9B.1",
-          "tenThanDb": "9B.1",
-          "tenThanHienThi": "9B.1",
+          "tenThanDb": "Cám 4b.1 (Ak 23,01 - 27%)",
+          "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
           "TonDK": 0.0,
           "NhapTK": 1549.0,
           "XuatTK": 1494.0,
@@ -1092,33 +832,36 @@
           "TonCuoi_TinhLai": 55.0,
           "TonKho_App": 66.38
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "21",
       "khoCode": "21",
+      "kho": "Kho 21",
       "tenKhoApp": "Kho 21",
       "tenKhoDb": "Kho 21",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "10A.1"
           ],
-          "tenThanHienThi": "10A.1",
+          "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
           "tonKho": 4138.03
         },
         {
           "maThanList": [
             "10B.1"
           ],
-          "tenThanHienThi": "10B.1",
+          "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
           "tonKho": 262.85
         },
         {
           "maThanList": [
             "11A.1"
           ],
-          "tenThanHienThi": "11A.1",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
           "tonKho": 2708.86
         }
       ],
@@ -1126,8 +869,8 @@
         {
           "maKhoDb": "21",
           "maThan": "10A.1",
-          "tenThanDb": "10A.1",
-          "tenThanHienThi": "10A.1",
+          "tenThanDb": "Cám 5a.1 (Ak27,01 - 31%)",
+          "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
           "TonDK": 11014.32,
           "NhapTK": 4526.0,
           "XuatTK": 12447.0,
@@ -1139,8 +882,8 @@
         {
           "maKhoDb": "21",
           "maThan": "10B.1",
-          "tenThanDb": "10B.1",
-          "tenThanHienThi": "10B.1",
+          "tenThanDb": "Cám 5b.1 (Ak 31,01 - 35%)",
+          "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
           "TonDK": 3451.44,
           "NhapTK": 7390.0,
           "XuatTK": 11122.0,
@@ -1152,8 +895,8 @@
         {
           "maKhoDb": "21",
           "maThan": "11A.1",
-          "tenThanDb": "11A.1",
-          "tenThanHienThi": "11A.1",
+          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
           "TonDK": 7291.49,
           "NhapTK": 8314.0,
           "XuatTK": 12519.0,
@@ -1162,13 +905,26 @@
           "TonCuoi_TinhLai": 3086.49,
           "TonKho_App": 2708.86
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
+    },
+    {
+      "maKhoDb": "",
+      "khoCode": "22",
+      "kho": "Kho 22",
+      "tenKhoApp": "Kho 22",
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "23",
       "khoCode": "23",
+      "kho": "Kho 23",
       "tenKhoApp": "Kho 23",
       "tenKhoDb": "Kho 23",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1192,13 +948,16 @@
           "TonCuoi_TinhLai": 21824.66,
           "TonKho_App": 21824.66
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "24",
       "khoCode": "24",
+      "kho": "Kho 24",
       "tenKhoApp": "Kho 24",
       "tenKhoDb": "Kho 24",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1222,13 +981,16 @@
           "TonCuoi_TinhLai": 4972.0,
           "TonKho_App": 4972.0
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "25",
       "khoCode": "25",
+      "kho": "Kho 25",
       "tenKhoApp": "Kho 25",
       "tenKhoDb": "Kho 25",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1252,19 +1014,22 @@
           "TonCuoi_TinhLai": 17171.72,
           "TonKho_App": 17171.72
         }
-      ]
+      ],
+      "mappingReason": "direct-safe"
     },
     {
       "maKhoDb": "29",
       "khoCode": "26",
+      "kho": "Kho 26",
       "tenKhoApp": "Kho 26",
       "tenKhoDb": "Kho than số 26",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "b32d"
           ],
-          "tenThanHienThi": "b32d",
+          "tenThanHienThi": "Bùn tuyển 3A",
           "tonKho": 18954.98
         }
       ],
@@ -1272,8 +1037,8 @@
         {
           "maKhoDb": "29",
           "maThan": "b32d",
-          "tenThanDb": "b32d",
-          "tenThanHienThi": "b32d",
+          "tenThanDb": "Bùn tuyển 3A",
+          "tenThanHienThi": "Bùn tuyển 3A",
           "TonDK": 17350.98,
           "NhapTK": 1781.0,
           "XuatTK": 177.0,
@@ -1282,30 +1047,46 @@
           "TonCuoi_TinhLai": 18954.98,
           "TonKho_App": 18954.98
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "30b",
       "khoCode": "27",
+      "kho": "Kho 27",
       "tenKhoApp": "Kho 27",
       "tenKhoDb": "Kho than số 27",
+      "hasStock": true,
       "items": [
+        {
+          "maThanList": [
+            "b32d"
+          ],
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "tonKho": 558.09
+        },
         {
           "maThanList": [
             "11b.1"
           ],
           "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
           "tonKho": 707.72
-        },
-        {
-          "maThanList": [
-            "b32d"
-          ],
-          "tenThanHienThi": "b32d",
-          "tonKho": 558.09
         }
       ],
       "traceItems": [
+        {
+          "maKhoDb": "30b",
+          "maThan": "b32d",
+          "tenThanDb": "Bùn tuyển 3A",
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "TonDK": 360.09,
+          "NhapTK": 198.0,
+          "XuatTK": 0.0,
+          "TonCK": 558.09,
+          "TonCK_TToan": 558.09,
+          "TonCuoi_TinhLai": 558.09,
+          "TonKho_App": 558.09
+        },
         {
           "maKhoDb": "30b",
           "maThan": "11b.1",
@@ -1318,27 +1099,17 @@
           "TonCK_TToan": 707.72,
           "TonCuoi_TinhLai": 707.72,
           "TonKho_App": 707.72
-        },
-        {
-          "maKhoDb": "30b",
-          "maThan": "b32d",
-          "tenThanDb": "b32d",
-          "tenThanHienThi": "b32d",
-          "TonDK": 360.09,
-          "NhapTK": 198.0,
-          "XuatTK": 0.0,
-          "TonCK": 558.09,
-          "TonCK_TToan": 558.09,
-          "TonCuoi_TinhLai": 558.09,
-          "TonKho_App": 558.09
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "31c",
       "khoCode": "28",
+      "kho": "Kho 28",
       "tenKhoApp": "Kho 28",
       "tenKhoDb": "Kho số 28 (Tuyển 3)",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1362,13 +1133,16 @@
           "TonCuoi_TinhLai": 19816.24,
           "TonKho_App": 19816.24
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "31D",
       "khoCode": "28-1",
+      "kho": "Kho 28-1",
       "tenKhoApp": "Kho 28-1",
-      "tenKhoDb": "",
+      "tenKhoDb": "Kho than số 28-1 (T3)",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1392,13 +1166,16 @@
           "TonCuoi_TinhLai": 18037.94,
           "TonKho_App": 18037.94
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "26",
       "khoCode": "29",
+      "kho": "Kho 29",
       "tenKhoApp": "Kho 29",
       "tenKhoDb": "Kho than số 29",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1422,13 +1199,16 @@
           "TonCuoi_TinhLai": 18990.4,
           "TonKho_App": 18990.4
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "27",
       "khoCode": "30",
+      "kho": "Kho 30",
       "tenKhoApp": "Kho 30",
       "tenKhoDb": "Kho than số 30",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1452,19 +1232,22 @@
           "TonCuoi_TinhLai": 22274.7,
           "TonKho_App": 22274.7
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "43",
       "khoCode": "31",
+      "kho": "Kho 31",
       "tenKhoApp": "Kho 31",
       "tenKhoDb": "Kho than số 31",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
             "B29A"
           ],
-          "tenThanHienThi": "B29A",
+          "tenThanHienThi": "Cám đá",
           "tonKho": 3712.0
         },
         {
@@ -1479,8 +1262,8 @@
         {
           "maKhoDb": "43",
           "maThan": "B29A",
-          "tenThanDb": "B29A",
-          "tenThanHienThi": "B29A",
+          "tenThanDb": "Cám đá",
+          "tenThanHienThi": "Cám đá",
           "TonDK": 4332.0,
           "NhapTK": 400.0,
           "XuatTK": 1020.0,
@@ -1502,14 +1285,31 @@
           "TonCuoi_TinhLai": 20254.98,
           "TonKho_App": 20254.98
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "31B",
       "khoCode": "32",
+      "kho": "Kho 32",
       "tenKhoApp": "Kho 32",
-      "tenKhoDb": "",
+      "tenKhoDb": "Nhà máy sấy",
+      "hasStock": true,
       "items": [
+        {
+          "maThanList": [
+            "b32d"
+          ],
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "tonKho": 4510.9
+        },
+        {
+          "maThanList": [
+            "b2902"
+          ],
+          "tenThanHienThi": "Cám 6A.1 (sấy)",
+          "tonKho": 732.39
+        },
         {
           "maThanList": [
             "B28C"
@@ -1519,34 +1319,72 @@
         },
         {
           "maThanList": [
-            "00"
-          ],
-          "tenThanHienThi": "Than nguyên khai",
-          "tonKho": 10279.64
-        },
-        {
-          "maThanList": [
-            "b2902"
-          ],
-          "tenThanHienThi": "b2902",
-          "tonKho": 732.39
-        },
-        {
-          "maThanList": [
             "b29a"
           ],
-          "tenThanHienThi": "b29a",
+          "tenThanHienThi": "Cám đá",
           "tonKho": 2625.39
         },
         {
           "maThanList": [
-            "b32d"
+            "00"
           ],
-          "tenThanHienThi": "b32d",
-          "tonKho": 4510.9
+          "tenThanHienThi": "Than nguyên khai",
+          "tonKho": 10279.64
         }
       ],
       "traceItems": [
+        {
+          "maKhoDb": "31B",
+          "maThan": "B32d",
+          "tenThanDb": "Bùn tuyển 3A",
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "TonDK": 0.0,
+          "NhapTK": 2208.0,
+          "XuatTK": 2208.0,
+          "TonCK": 0.0,
+          "TonCK_TToan": 0.0,
+          "TonCuoi_TinhLai": 0.0,
+          "TonKho_App": 0.0
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "b32d",
+          "tenThanDb": "Bùn tuyển 3A",
+          "tenThanHienThi": "Bùn tuyển 3A",
+          "TonDK": 648.9,
+          "NhapTK": 4815.0,
+          "XuatTK": 953.0,
+          "TonCK": 4510.9,
+          "TonCK_TToan": 4510.9,
+          "TonCuoi_TinhLai": 4510.9,
+          "TonKho_App": 4510.9
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "b2902",
+          "tenThanDb": "Cám 6A.1 (sấy)",
+          "tenThanHienThi": "Cám 6A.1 (sấy)",
+          "TonDK": 3440.39,
+          "NhapTK": 2033.0,
+          "XuatTK": 4741.0,
+          "TonCK": 732.39,
+          "TonCK_TToan": 732.39,
+          "TonCuoi_TinhLai": 732.39,
+          "TonKho_App": 732.39
+        },
+        {
+          "maKhoDb": "44",
+          "maThan": "11a.1",
+          "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+          "TonDK": 0.0,
+          "NhapTK": 97.0,
+          "XuatTK": 97.0,
+          "TonCK": 0.0,
+          "TonCK_TToan": 0.0,
+          "TonCuoi_TinhLai": 0.0,
+          "TonKho_App": 0.0
+        },
         {
           "maKhoDb": "31B",
           "maThan": "B28C",
@@ -1562,35 +1400,9 @@
         },
         {
           "maKhoDb": "44",
-          "maThan": "00",
-          "tenThanDb": "Than nguyên khai",
-          "tenThanHienThi": "Than nguyên khai",
-          "TonDK": 17679.25,
-          "NhapTK": 9807.0,
-          "XuatTK": 17206.61,
-          "TonCK": 10279.64,
-          "TonCK_TToan": 10279.64,
-          "TonCuoi_TinhLai": 10279.64,
-          "TonKho_App": 10279.64
-        },
-        {
-          "maKhoDb": "44",
-          "maThan": "b2902",
-          "tenThanDb": "b2902",
-          "tenThanHienThi": "b2902",
-          "TonDK": 3440.39,
-          "NhapTK": 2033.0,
-          "XuatTK": 4741.0,
-          "TonCK": 732.39,
-          "TonCK_TToan": 732.39,
-          "TonCuoi_TinhLai": 732.39,
-          "TonKho_App": 732.39
-        },
-        {
-          "maKhoDb": "44",
           "maThan": "b29a",
-          "tenThanDb": "b29a",
-          "tenThanHienThi": "b29a",
+          "tenThanDb": "Cám đá",
+          "tenThanHienThi": "Cám đá",
           "TonDK": 4229.39,
           "NhapTK": 700.0,
           "XuatTK": 2304.0,
@@ -1601,24 +1413,27 @@
         },
         {
           "maKhoDb": "44",
-          "maThan": "b32d",
-          "tenThanDb": "b32d",
-          "tenThanHienThi": "b32d",
-          "TonDK": 648.9,
-          "NhapTK": 4815.0,
-          "XuatTK": 953.0,
-          "TonCK": 4510.9,
-          "TonCK_TToan": 4510.9,
-          "TonCuoi_TinhLai": 4510.9,
-          "TonKho_App": 4510.9
+          "maThan": "00",
+          "tenThanDb": "Than nguyên khai",
+          "tenThanHienThi": "Than nguyên khai",
+          "TonDK": 17679.25,
+          "NhapTK": 9807.0,
+          "XuatTK": 17206.61,
+          "TonCK": 10279.64,
+          "TonCK_TToan": 10279.64,
+          "TonCuoi_TinhLai": 10279.64,
+          "TonKho_App": 10279.64
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "45",
       "khoCode": "33",
+      "kho": "Kho 33",
       "tenKhoApp": "Kho 33",
       "tenKhoDb": "Kho than số 33",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1642,13 +1457,16 @@
           "TonCuoi_TinhLai": 4220.58,
           "TonKho_App": 4220.58
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "34A",
       "khoCode": "34",
+      "kho": "Kho 34",
       "tenKhoApp": "Kho 34",
-      "tenKhoDb": "",
+      "tenKhoDb": "Kho 34",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1672,13 +1490,36 @@
           "TonCuoi_TinhLai": 43197.29,
           "TonKho_App": 43197.29
         }
-      ]
+      ],
+      "mappingReason": "mapped"
+    },
+    {
+      "maKhoDb": "",
+      "khoCode": "35",
+      "kho": "Kho 35",
+      "tenKhoApp": "Kho 35",
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
+    },
+    {
+      "maKhoDb": "",
+      "khoCode": "36",
+      "kho": "Kho 36",
+      "tenKhoApp": "Kho 36",
+      "tenKhoDb": "",
+      "hasStock": false,
+      "items": [],
+      "traceItems": []
     },
     {
       "maKhoDb": "36",
       "khoCode": "37",
+      "kho": "Kho 37",
       "tenKhoApp": "Kho 37",
       "tenKhoDb": "Kho bùn số 7",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1702,13 +1543,16 @@
           "TonCuoi_TinhLai": 47376.58,
           "TonKho_App": 47376.58
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "46a",
       "khoCode": "38",
+      "kho": "Kho 38",
       "tenKhoApp": "Kho 38",
       "tenKhoDb": "Kho 38",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1732,13 +1576,16 @@
           "TonCuoi_TinhLai": 370565.53,
           "TonKho_App": 370565.53
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "28",
       "khoCode": "39",
+      "kho": "Kho 39",
       "tenKhoApp": "Kho 39",
       "tenKhoDb": "Kho nội địa 3",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1767,13 +1614,6 @@
           ],
           "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
           "tonKho": 3025.0
-        },
-        {
-          "maThanList": [
-            "b32e"
-          ],
-          "tenThanHienThi": "b32e",
-          "tonKho": 21566.8
         }
       ],
       "traceItems": [
@@ -1828,27 +1668,17 @@
           "TonCK_TToan": 3025.0,
           "TonCuoi_TinhLai": 3025.0,
           "TonKho_App": 3025.0
-        },
-        {
-          "maKhoDb": "39",
-          "maThan": "b32e",
-          "tenThanDb": "b32e",
-          "tenThanHienThi": "b32e",
-          "TonDK": 21566.8,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 21566.8,
-          "TonCK_TToan": 21566.8,
-          "TonCuoi_TinhLai": 21566.8,
-          "TonKho_App": 21566.8
         }
-      ]
+      ],
+      "mappingReason": "mapped"
     },
     {
       "maKhoDb": "60",
       "khoCode": "40",
+      "kho": "Kho 40",
       "tenKhoApp": "Kho 40",
       "tenKhoDb": "Kho hồ Gap",
+      "hasStock": true,
       "items": [
         {
           "maThanList": [
@@ -1872,177 +1702,4942 @@
           "TonCuoi_TinhLai": 3993.02,
           "TonKho_App": 3993.02
         }
-      ]
+      ],
+      "mappingReason": "mapped"
+    }
+  ],
+  "rows": [
+    {
+      "kho": "Kho 1",
+      "tenKho": "Kho 1",
+      "tenKhoApp": "Kho 1",
+      "khoCode": "1",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 63831.79,
+      "tonKhoApp": 63831.79,
+      "ton": 63831.79,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+      "maThanList": [
+        "b11c"
+      ],
+      "tonKho": 1209.0,
+      "tonKhoApp": 1209.0,
+      "ton": 1209.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2",
+      "tenKho": "Kho 2",
+      "tenKhoApp": "Kho 2",
+      "khoCode": "2",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Cục don 8C",
+      "tenThan": "Cục don 8C",
+      "tenThanHienThi": "Cục don 8C",
+      "maThanList": [
+        "b16.09"
+      ],
+      "tonKho": 5377.1,
+      "tonKhoApp": 5377.1,
+      "ton": 5377.1,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": -6111.74,
+      "tonKhoApp": -6111.74,
+      "ton": -6111.74,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 5038.39,
+      "tonKhoApp": 5038.39,
+      "ton": 5038.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 3",
+      "tenKho": "Kho 3",
+      "tenKhoApp": "Kho 3",
+      "khoCode": "3",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 3-T4",
+      "tenKho": "Kho 3-T4",
+      "tenKhoApp": "Kho 3-T4",
+      "khoCode": "3-T4",
+      "maKhoDb": "73",
+      "tenKhoDb": "Kho 3-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 6021.16,
+      "tonKhoApp": 6021.16,
+      "ton": 6021.16,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 4",
+      "tenKho": "Kho 4",
+      "tenKhoApp": "Kho 4",
+      "khoCode": "4",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 4-T4",
+      "tenKho": "Kho 4-T4",
+      "tenKhoApp": "Kho 4-T4",
+      "khoCode": "4-T4",
+      "maKhoDb": "74",
+      "tenKhoDb": "Kho 4-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 27914.54,
+      "tonKhoApp": 27914.54,
+      "ton": 27914.54,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 5",
+      "tenKho": "Kho 5",
+      "tenKhoApp": "Kho 5",
+      "khoCode": "5",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 6",
+      "tenKho": "Kho 6",
+      "tenKhoApp": "Kho 6",
+      "khoCode": "6",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 7",
+      "tenKho": "Kho 7",
+      "tenKhoApp": "Kho 7",
+      "khoCode": "7",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 8",
+      "tenKho": "Kho 8",
+      "tenKhoApp": "Kho 8",
+      "khoCode": "8",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 9",
+      "tenKho": "Kho 9",
+      "tenKhoApp": "Kho 9",
+      "khoCode": "9",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.1",
+      "tenThan": "Cám 5a.1",
+      "tenThanHienThi": "Cám 5a.1",
+      "maThanList": [
+        "10a.1"
+      ],
+      "tonKho": 2297.12,
+      "tonKhoApp": 2297.12,
+      "ton": 2297.12,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.14",
+      "tenThan": "Cám 5a.14",
+      "tenThanHienThi": "Cám 5a.14",
+      "maThanList": [
+        "10a.101",
+        "10a.259",
+        "10a.262",
+        "10a.263",
+        "10a.72"
+      ],
+      "tonKho": 390.64,
+      "tonKhoApp": 390.64,
+      "ton": 390.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5b.1",
+      "tenThan": "Cám 5b.1",
+      "tenThanHienThi": "Cám 5b.1",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 499.59,
+      "tonKhoApp": 499.59,
+      "ton": 499.59,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 11",
+      "tenKho": "Kho 11",
+      "tenKhoApp": "Kho 11",
+      "khoCode": "11",
+      "maKhoDb": "11",
+      "tenKhoDb": "Kho 11",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 37723.14,
+      "tonKhoApp": 37723.14,
+      "ton": 37723.14,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 12",
+      "tenKho": "Kho 12",
+      "tenKhoApp": "Kho 12",
+      "khoCode": "12",
+      "maKhoDb": "12",
+      "tenKhoDb": "Kho 12",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 25644.35,
+      "tonKhoApp": 25644.35,
+      "ton": 25644.35,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 13",
+      "tenKho": "Kho 13",
+      "tenKhoApp": "Kho 13",
+      "khoCode": "13",
+      "maKhoDb": "13",
+      "tenKhoDb": "Kho 13",
+      "loaiThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "maThanList": [
+        "8A.1"
+      ],
+      "tonKho": 18297.95,
+      "tonKhoApp": 18297.95,
+      "ton": 18297.95,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 14",
+      "tenKho": "Kho 14",
+      "tenKhoApp": "Kho 14",
+      "khoCode": "14",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 15",
+      "tenKho": "Kho 15",
+      "tenKhoApp": "Kho 15",
+      "khoCode": "15",
+      "maKhoDb": "15",
+      "tenKhoDb": "Kho 15",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 33573.94,
+      "tonKhoApp": 33573.94,
+      "ton": 33573.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 16",
+      "tenKho": "Kho 16",
+      "tenKhoApp": "Kho 16",
+      "khoCode": "16",
+      "maKhoDb": "16",
+      "tenKhoDb": "Kho 16",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 13195.87,
+      "tonKhoApp": 13195.87,
+      "ton": 13195.87,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6A.1"
+      ],
+      "tonKho": 48193.03,
+      "tonKhoApp": 48193.03,
+      "ton": 48193.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "maThanList": [
+        "7a.1"
+      ],
+      "tonKho": 19021.18,
+      "tonKhoApp": 19021.18,
+      "ton": 19021.18,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 18",
+      "tenKho": "Kho 18",
+      "tenKhoApp": "Kho 18",
+      "khoCode": "18",
+      "maKhoDb": "18",
+      "tenKhoDb": "Kho 18",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 14158.06,
+      "tonKhoApp": 14158.06,
+      "ton": 14158.06,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 19",
+      "tenKho": "Kho 19",
+      "tenKhoApp": "Kho 19",
+      "khoCode": "19",
+      "maKhoDb": "19",
+      "tenKhoDb": "Kho 19",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 15242.09,
+      "tonKhoApp": 15242.09,
+      "ton": 15242.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 69615.47,
+      "tonKhoApp": 69615.47,
+      "ton": 69615.47,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "maThanList": [
+        "9B.1"
+      ],
+      "tonKho": 66.38,
+      "tonKhoApp": 66.38,
+      "ton": 66.38,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
+      "maThanList": [
+        "10A.1"
+      ],
+      "tonKho": 4138.03,
+      "tonKhoApp": 4138.03,
+      "ton": 4138.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 262.85,
+      "tonKhoApp": 262.85,
+      "ton": 262.85,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11A.1"
+      ],
+      "tonKho": 2708.86,
+      "tonKhoApp": 2708.86,
+      "ton": 2708.86,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 22",
+      "tenKho": "Kho 22",
+      "tenKhoApp": "Kho 22",
+      "khoCode": "22",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 23",
+      "tenKho": "Kho 23",
+      "tenKhoApp": "Kho 23",
+      "khoCode": "23",
+      "maKhoDb": "23",
+      "tenKhoDb": "Kho 23",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8b.1"
+      ],
+      "tonKho": 21824.66,
+      "tonKhoApp": 21824.66,
+      "ton": 21824.66,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 24",
+      "tenKho": "Kho 24",
+      "tenKhoApp": "Kho 24",
+      "khoCode": "24",
+      "maKhoDb": "24",
+      "tenKhoDb": "Kho 24",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 4972.0,
+      "tonKhoApp": 4972.0,
+      "ton": 4972.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 25",
+      "tenKho": "Kho 25",
+      "tenKhoApp": "Kho 25",
+      "khoCode": "25",
+      "maKhoDb": "25",
+      "tenKhoDb": "Kho 25",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 17171.72,
+      "tonKhoApp": 17171.72,
+      "ton": 17171.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 26",
+      "tenKho": "Kho 26",
+      "tenKhoApp": "Kho 26",
+      "khoCode": "26",
+      "maKhoDb": "29",
+      "tenKhoDb": "Kho than số 26",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 18954.98,
+      "tonKhoApp": 18954.98,
+      "ton": 18954.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 558.09,
+      "tonKhoApp": 558.09,
+      "ton": 558.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 707.72,
+      "tonKhoApp": 707.72,
+      "ton": 707.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28",
+      "tenKho": "Kho 28",
+      "tenKhoApp": "Kho 28",
+      "khoCode": "28",
+      "maKhoDb": "31c",
+      "tenKhoDb": "Kho số 28 (Tuyển 3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 19816.24,
+      "tonKhoApp": 19816.24,
+      "ton": 19816.24,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28-1",
+      "tenKho": "Kho 28-1",
+      "tenKhoApp": "Kho 28-1",
+      "khoCode": "28-1",
+      "maKhoDb": "31D",
+      "tenKhoDb": "Kho than số 28-1 (T3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 18037.94,
+      "tonKhoApp": 18037.94,
+      "ton": 18037.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 29",
+      "tenKho": "Kho 29",
+      "tenKhoApp": "Kho 29",
+      "khoCode": "29",
+      "maKhoDb": "26",
+      "tenKhoDb": "Kho than số 29",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 18990.4,
+      "tonKhoApp": 18990.4,
+      "ton": 18990.4,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 30",
+      "tenKho": "Kho 30",
+      "tenKhoApp": "Kho 30",
+      "khoCode": "30",
+      "maKhoDb": "27",
+      "tenKhoDb": "Kho than số 30",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 22274.7,
+      "tonKhoApp": 22274.7,
+      "ton": 22274.7,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29A"
+      ],
+      "tonKho": 3712.0,
+      "tonKhoApp": 3712.0,
+      "ton": 3712.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 20254.98,
+      "tonKhoApp": 20254.98,
+      "ton": 20254.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 4510.9,
+      "tonKhoApp": 4510.9,
+      "ton": 4510.9,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 6A.1 (sấy)",
+      "tenThan": "Cám 6A.1 (sấy)",
+      "tenThanHienThi": "Cám 6A.1 (sấy)",
+      "maThanList": [
+        "b2902"
+      ],
+      "tonKho": 732.39,
+      "tonKhoApp": 732.39,
+      "ton": 732.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 8C",
+      "tenThan": "Cám 8C",
+      "tenThanHienThi": "Cám 8C",
+      "maThanList": [
+        "B28C"
+      ],
+      "tonKho": 40.0,
+      "tonKhoApp": 40.0,
+      "ton": 40.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "b29a"
+      ],
+      "tonKho": 2625.39,
+      "tonKhoApp": 2625.39,
+      "ton": 2625.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 10279.64,
+      "tonKhoApp": 10279.64,
+      "ton": 10279.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 33",
+      "tenKho": "Kho 33",
+      "tenKhoApp": "Kho 33",
+      "khoCode": "33",
+      "maKhoDb": "45",
+      "tenKhoDb": "Kho than số 33",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29a"
+      ],
+      "tonKho": 4220.58,
+      "tonKhoApp": 4220.58,
+      "ton": 4220.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 34",
+      "tenKho": "Kho 34",
+      "tenKhoApp": "Kho 34",
+      "khoCode": "34",
+      "maKhoDb": "34A",
+      "tenKhoDb": "Kho 34",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 43197.29,
+      "tonKhoApp": 43197.29,
+      "ton": 43197.29,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 35",
+      "tenKho": "Kho 35",
+      "tenKhoApp": "Kho 35",
+      "khoCode": "35",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 36",
+      "tenKho": "Kho 36",
+      "tenKhoApp": "Kho 36",
+      "khoCode": "36",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 37",
+      "tenKho": "Kho 37",
+      "tenKhoApp": "Kho 37",
+      "khoCode": "37",
+      "maKhoDb": "36",
+      "tenKhoDb": "Kho bùn số 7",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "B32d"
+      ],
+      "tonKho": 47376.58,
+      "tonKhoApp": 47376.58,
+      "ton": 47376.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 38",
+      "tenKho": "Kho 38",
+      "tenKhoApp": "Kho 38",
+      "khoCode": "38",
+      "maKhoDb": "46a",
+      "tenKhoDb": "Kho 38",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 370565.53,
+      "tonKhoApp": 370565.53,
+      "ton": 370565.53,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThanHienThi": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "maThanList": [
+        "NHK.295"
+      ],
+      "tonKho": 9.13,
+      "tonKhoApp": 9.13,
+      "ton": 9.13,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThanHienThi": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "maThanList": [
+        "NHK.296"
+      ],
+      "tonKho": -12.88,
+      "tonKhoApp": -12.88,
+      "ton": -12.88,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "maThanList": [
+        "NHK.297"
+      ],
+      "tonKho": 6423.69,
+      "tonKhoApp": 6423.69,
+      "ton": 6423.69,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "maThanList": [
+        "NHK.16"
+      ],
+      "tonKho": 3025.0,
+      "tonKhoApp": 3025.0,
+      "ton": 3025.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 40",
+      "tenKho": "Kho 40",
+      "tenKhoApp": "Kho 40",
+      "khoCode": "40",
+      "maKhoDb": "60",
+      "tenKhoDb": "Kho hồ Gap",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 3993.02,
+      "tonKhoApp": 3993.02,
+      "ton": 3993.02,
+      "isPlaceholder": false,
+      "hasStock": true
+    }
+  ],
+  "data": [
+    {
+      "kho": "Kho 1",
+      "tenKho": "Kho 1",
+      "tenKhoApp": "Kho 1",
+      "khoCode": "1",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 63831.79,
+      "tonKhoApp": 63831.79,
+      "ton": 63831.79,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+      "maThanList": [
+        "b11c"
+      ],
+      "tonKho": 1209.0,
+      "tonKhoApp": 1209.0,
+      "ton": 1209.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2",
+      "tenKho": "Kho 2",
+      "tenKhoApp": "Kho 2",
+      "khoCode": "2",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Cục don 8C",
+      "tenThan": "Cục don 8C",
+      "tenThanHienThi": "Cục don 8C",
+      "maThanList": [
+        "b16.09"
+      ],
+      "tonKho": 5377.1,
+      "tonKhoApp": 5377.1,
+      "ton": 5377.1,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": -6111.74,
+      "tonKhoApp": -6111.74,
+      "ton": -6111.74,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 5038.39,
+      "tonKhoApp": 5038.39,
+      "ton": 5038.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 3",
+      "tenKho": "Kho 3",
+      "tenKhoApp": "Kho 3",
+      "khoCode": "3",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 3-T4",
+      "tenKho": "Kho 3-T4",
+      "tenKhoApp": "Kho 3-T4",
+      "khoCode": "3-T4",
+      "maKhoDb": "73",
+      "tenKhoDb": "Kho 3-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 6021.16,
+      "tonKhoApp": 6021.16,
+      "ton": 6021.16,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 4",
+      "tenKho": "Kho 4",
+      "tenKhoApp": "Kho 4",
+      "khoCode": "4",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 4-T4",
+      "tenKho": "Kho 4-T4",
+      "tenKhoApp": "Kho 4-T4",
+      "khoCode": "4-T4",
+      "maKhoDb": "74",
+      "tenKhoDb": "Kho 4-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 27914.54,
+      "tonKhoApp": 27914.54,
+      "ton": 27914.54,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 5",
+      "tenKho": "Kho 5",
+      "tenKhoApp": "Kho 5",
+      "khoCode": "5",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 6",
+      "tenKho": "Kho 6",
+      "tenKhoApp": "Kho 6",
+      "khoCode": "6",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 7",
+      "tenKho": "Kho 7",
+      "tenKhoApp": "Kho 7",
+      "khoCode": "7",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 8",
+      "tenKho": "Kho 8",
+      "tenKhoApp": "Kho 8",
+      "khoCode": "8",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 9",
+      "tenKho": "Kho 9",
+      "tenKhoApp": "Kho 9",
+      "khoCode": "9",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.1",
+      "tenThan": "Cám 5a.1",
+      "tenThanHienThi": "Cám 5a.1",
+      "maThanList": [
+        "10a.1"
+      ],
+      "tonKho": 2297.12,
+      "tonKhoApp": 2297.12,
+      "ton": 2297.12,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.14",
+      "tenThan": "Cám 5a.14",
+      "tenThanHienThi": "Cám 5a.14",
+      "maThanList": [
+        "10a.101",
+        "10a.259",
+        "10a.262",
+        "10a.263",
+        "10a.72"
+      ],
+      "tonKho": 390.64,
+      "tonKhoApp": 390.64,
+      "ton": 390.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5b.1",
+      "tenThan": "Cám 5b.1",
+      "tenThanHienThi": "Cám 5b.1",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 499.59,
+      "tonKhoApp": 499.59,
+      "ton": 499.59,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 11",
+      "tenKho": "Kho 11",
+      "tenKhoApp": "Kho 11",
+      "khoCode": "11",
+      "maKhoDb": "11",
+      "tenKhoDb": "Kho 11",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 37723.14,
+      "tonKhoApp": 37723.14,
+      "ton": 37723.14,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 12",
+      "tenKho": "Kho 12",
+      "tenKhoApp": "Kho 12",
+      "khoCode": "12",
+      "maKhoDb": "12",
+      "tenKhoDb": "Kho 12",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 25644.35,
+      "tonKhoApp": 25644.35,
+      "ton": 25644.35,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 13",
+      "tenKho": "Kho 13",
+      "tenKhoApp": "Kho 13",
+      "khoCode": "13",
+      "maKhoDb": "13",
+      "tenKhoDb": "Kho 13",
+      "loaiThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "maThanList": [
+        "8A.1"
+      ],
+      "tonKho": 18297.95,
+      "tonKhoApp": 18297.95,
+      "ton": 18297.95,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 14",
+      "tenKho": "Kho 14",
+      "tenKhoApp": "Kho 14",
+      "khoCode": "14",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 15",
+      "tenKho": "Kho 15",
+      "tenKhoApp": "Kho 15",
+      "khoCode": "15",
+      "maKhoDb": "15",
+      "tenKhoDb": "Kho 15",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 33573.94,
+      "tonKhoApp": 33573.94,
+      "ton": 33573.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 16",
+      "tenKho": "Kho 16",
+      "tenKhoApp": "Kho 16",
+      "khoCode": "16",
+      "maKhoDb": "16",
+      "tenKhoDb": "Kho 16",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 13195.87,
+      "tonKhoApp": 13195.87,
+      "ton": 13195.87,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6A.1"
+      ],
+      "tonKho": 48193.03,
+      "tonKhoApp": 48193.03,
+      "ton": 48193.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "maThanList": [
+        "7a.1"
+      ],
+      "tonKho": 19021.18,
+      "tonKhoApp": 19021.18,
+      "ton": 19021.18,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 18",
+      "tenKho": "Kho 18",
+      "tenKhoApp": "Kho 18",
+      "khoCode": "18",
+      "maKhoDb": "18",
+      "tenKhoDb": "Kho 18",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 14158.06,
+      "tonKhoApp": 14158.06,
+      "ton": 14158.06,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 19",
+      "tenKho": "Kho 19",
+      "tenKhoApp": "Kho 19",
+      "khoCode": "19",
+      "maKhoDb": "19",
+      "tenKhoDb": "Kho 19",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 15242.09,
+      "tonKhoApp": 15242.09,
+      "ton": 15242.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 69615.47,
+      "tonKhoApp": 69615.47,
+      "ton": 69615.47,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "maThanList": [
+        "9B.1"
+      ],
+      "tonKho": 66.38,
+      "tonKhoApp": 66.38,
+      "ton": 66.38,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
+      "maThanList": [
+        "10A.1"
+      ],
+      "tonKho": 4138.03,
+      "tonKhoApp": 4138.03,
+      "ton": 4138.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 262.85,
+      "tonKhoApp": 262.85,
+      "ton": 262.85,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11A.1"
+      ],
+      "tonKho": 2708.86,
+      "tonKhoApp": 2708.86,
+      "ton": 2708.86,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 22",
+      "tenKho": "Kho 22",
+      "tenKhoApp": "Kho 22",
+      "khoCode": "22",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 23",
+      "tenKho": "Kho 23",
+      "tenKhoApp": "Kho 23",
+      "khoCode": "23",
+      "maKhoDb": "23",
+      "tenKhoDb": "Kho 23",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8b.1"
+      ],
+      "tonKho": 21824.66,
+      "tonKhoApp": 21824.66,
+      "ton": 21824.66,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 24",
+      "tenKho": "Kho 24",
+      "tenKhoApp": "Kho 24",
+      "khoCode": "24",
+      "maKhoDb": "24",
+      "tenKhoDb": "Kho 24",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 4972.0,
+      "tonKhoApp": 4972.0,
+      "ton": 4972.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 25",
+      "tenKho": "Kho 25",
+      "tenKhoApp": "Kho 25",
+      "khoCode": "25",
+      "maKhoDb": "25",
+      "tenKhoDb": "Kho 25",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 17171.72,
+      "tonKhoApp": 17171.72,
+      "ton": 17171.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 26",
+      "tenKho": "Kho 26",
+      "tenKhoApp": "Kho 26",
+      "khoCode": "26",
+      "maKhoDb": "29",
+      "tenKhoDb": "Kho than số 26",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 18954.98,
+      "tonKhoApp": 18954.98,
+      "ton": 18954.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 558.09,
+      "tonKhoApp": 558.09,
+      "ton": 558.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 707.72,
+      "tonKhoApp": 707.72,
+      "ton": 707.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28",
+      "tenKho": "Kho 28",
+      "tenKhoApp": "Kho 28",
+      "khoCode": "28",
+      "maKhoDb": "31c",
+      "tenKhoDb": "Kho số 28 (Tuyển 3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 19816.24,
+      "tonKhoApp": 19816.24,
+      "ton": 19816.24,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28-1",
+      "tenKho": "Kho 28-1",
+      "tenKhoApp": "Kho 28-1",
+      "khoCode": "28-1",
+      "maKhoDb": "31D",
+      "tenKhoDb": "Kho than số 28-1 (T3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 18037.94,
+      "tonKhoApp": 18037.94,
+      "ton": 18037.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 29",
+      "tenKho": "Kho 29",
+      "tenKhoApp": "Kho 29",
+      "khoCode": "29",
+      "maKhoDb": "26",
+      "tenKhoDb": "Kho than số 29",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 18990.4,
+      "tonKhoApp": 18990.4,
+      "ton": 18990.4,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 30",
+      "tenKho": "Kho 30",
+      "tenKhoApp": "Kho 30",
+      "khoCode": "30",
+      "maKhoDb": "27",
+      "tenKhoDb": "Kho than số 30",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 22274.7,
+      "tonKhoApp": 22274.7,
+      "ton": 22274.7,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29A"
+      ],
+      "tonKho": 3712.0,
+      "tonKhoApp": 3712.0,
+      "ton": 3712.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 20254.98,
+      "tonKhoApp": 20254.98,
+      "ton": 20254.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 4510.9,
+      "tonKhoApp": 4510.9,
+      "ton": 4510.9,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 6A.1 (sấy)",
+      "tenThan": "Cám 6A.1 (sấy)",
+      "tenThanHienThi": "Cám 6A.1 (sấy)",
+      "maThanList": [
+        "b2902"
+      ],
+      "tonKho": 732.39,
+      "tonKhoApp": 732.39,
+      "ton": 732.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 8C",
+      "tenThan": "Cám 8C",
+      "tenThanHienThi": "Cám 8C",
+      "maThanList": [
+        "B28C"
+      ],
+      "tonKho": 40.0,
+      "tonKhoApp": 40.0,
+      "ton": 40.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "b29a"
+      ],
+      "tonKho": 2625.39,
+      "tonKhoApp": 2625.39,
+      "ton": 2625.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 10279.64,
+      "tonKhoApp": 10279.64,
+      "ton": 10279.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 33",
+      "tenKho": "Kho 33",
+      "tenKhoApp": "Kho 33",
+      "khoCode": "33",
+      "maKhoDb": "45",
+      "tenKhoDb": "Kho than số 33",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29a"
+      ],
+      "tonKho": 4220.58,
+      "tonKhoApp": 4220.58,
+      "ton": 4220.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 34",
+      "tenKho": "Kho 34",
+      "tenKhoApp": "Kho 34",
+      "khoCode": "34",
+      "maKhoDb": "34A",
+      "tenKhoDb": "Kho 34",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 43197.29,
+      "tonKhoApp": 43197.29,
+      "ton": 43197.29,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 35",
+      "tenKho": "Kho 35",
+      "tenKhoApp": "Kho 35",
+      "khoCode": "35",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 36",
+      "tenKho": "Kho 36",
+      "tenKhoApp": "Kho 36",
+      "khoCode": "36",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 37",
+      "tenKho": "Kho 37",
+      "tenKhoApp": "Kho 37",
+      "khoCode": "37",
+      "maKhoDb": "36",
+      "tenKhoDb": "Kho bùn số 7",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "B32d"
+      ],
+      "tonKho": 47376.58,
+      "tonKhoApp": 47376.58,
+      "ton": 47376.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 38",
+      "tenKho": "Kho 38",
+      "tenKhoApp": "Kho 38",
+      "khoCode": "38",
+      "maKhoDb": "46a",
+      "tenKhoDb": "Kho 38",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 370565.53,
+      "tonKhoApp": 370565.53,
+      "ton": 370565.53,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThanHienThi": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "maThanList": [
+        "NHK.295"
+      ],
+      "tonKho": 9.13,
+      "tonKhoApp": 9.13,
+      "ton": 9.13,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThanHienThi": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "maThanList": [
+        "NHK.296"
+      ],
+      "tonKho": -12.88,
+      "tonKhoApp": -12.88,
+      "ton": -12.88,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "maThanList": [
+        "NHK.297"
+      ],
+      "tonKho": 6423.69,
+      "tonKhoApp": 6423.69,
+      "ton": 6423.69,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "maThanList": [
+        "NHK.16"
+      ],
+      "tonKho": 3025.0,
+      "tonKhoApp": 3025.0,
+      "ton": 3025.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 40",
+      "tenKho": "Kho 40",
+      "tenKhoApp": "Kho 40",
+      "khoCode": "40",
+      "maKhoDb": "60",
+      "tenKhoDb": "Kho hồ Gap",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 3993.02,
+      "tonKhoApp": 3993.02,
+      "ton": 3993.02,
+      "isPlaceholder": false,
+      "hasStock": true
+    }
+  ],
+  "tonKhoList": [
+    {
+      "kho": "Kho 1",
+      "tenKho": "Kho 1",
+      "tenKhoApp": "Kho 1",
+      "khoCode": "1",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 63831.79,
+      "tonKhoApp": 63831.79,
+      "ton": 63831.79,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+      "maThanList": [
+        "b11c"
+      ],
+      "tonKho": 1209.0,
+      "tonKhoApp": 1209.0,
+      "ton": 1209.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2",
+      "tenKho": "Kho 2",
+      "tenKhoApp": "Kho 2",
+      "khoCode": "2",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Cục don 8C",
+      "tenThan": "Cục don 8C",
+      "tenThanHienThi": "Cục don 8C",
+      "maThanList": [
+        "b16.09"
+      ],
+      "tonKho": 5377.1,
+      "tonKhoApp": 5377.1,
+      "ton": 5377.1,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": -6111.74,
+      "tonKhoApp": -6111.74,
+      "ton": -6111.74,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 5038.39,
+      "tonKhoApp": 5038.39,
+      "ton": 5038.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 3",
+      "tenKho": "Kho 3",
+      "tenKhoApp": "Kho 3",
+      "khoCode": "3",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 3-T4",
+      "tenKho": "Kho 3-T4",
+      "tenKhoApp": "Kho 3-T4",
+      "khoCode": "3-T4",
+      "maKhoDb": "73",
+      "tenKhoDb": "Kho 3-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 6021.16,
+      "tonKhoApp": 6021.16,
+      "ton": 6021.16,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 4",
+      "tenKho": "Kho 4",
+      "tenKhoApp": "Kho 4",
+      "khoCode": "4",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 4-T4",
+      "tenKho": "Kho 4-T4",
+      "tenKhoApp": "Kho 4-T4",
+      "khoCode": "4-T4",
+      "maKhoDb": "74",
+      "tenKhoDb": "Kho 4-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 27914.54,
+      "tonKhoApp": 27914.54,
+      "ton": 27914.54,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 5",
+      "tenKho": "Kho 5",
+      "tenKhoApp": "Kho 5",
+      "khoCode": "5",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 6",
+      "tenKho": "Kho 6",
+      "tenKhoApp": "Kho 6",
+      "khoCode": "6",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 7",
+      "tenKho": "Kho 7",
+      "tenKhoApp": "Kho 7",
+      "khoCode": "7",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 8",
+      "tenKho": "Kho 8",
+      "tenKhoApp": "Kho 8",
+      "khoCode": "8",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 9",
+      "tenKho": "Kho 9",
+      "tenKhoApp": "Kho 9",
+      "khoCode": "9",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.1",
+      "tenThan": "Cám 5a.1",
+      "tenThanHienThi": "Cám 5a.1",
+      "maThanList": [
+        "10a.1"
+      ],
+      "tonKho": 2297.12,
+      "tonKhoApp": 2297.12,
+      "ton": 2297.12,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.14",
+      "tenThan": "Cám 5a.14",
+      "tenThanHienThi": "Cám 5a.14",
+      "maThanList": [
+        "10a.101",
+        "10a.259",
+        "10a.262",
+        "10a.263",
+        "10a.72"
+      ],
+      "tonKho": 390.64,
+      "tonKhoApp": 390.64,
+      "ton": 390.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5b.1",
+      "tenThan": "Cám 5b.1",
+      "tenThanHienThi": "Cám 5b.1",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 499.59,
+      "tonKhoApp": 499.59,
+      "ton": 499.59,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 11",
+      "tenKho": "Kho 11",
+      "tenKhoApp": "Kho 11",
+      "khoCode": "11",
+      "maKhoDb": "11",
+      "tenKhoDb": "Kho 11",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 37723.14,
+      "tonKhoApp": 37723.14,
+      "ton": 37723.14,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 12",
+      "tenKho": "Kho 12",
+      "tenKhoApp": "Kho 12",
+      "khoCode": "12",
+      "maKhoDb": "12",
+      "tenKhoDb": "Kho 12",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 25644.35,
+      "tonKhoApp": 25644.35,
+      "ton": 25644.35,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 13",
+      "tenKho": "Kho 13",
+      "tenKhoApp": "Kho 13",
+      "khoCode": "13",
+      "maKhoDb": "13",
+      "tenKhoDb": "Kho 13",
+      "loaiThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "maThanList": [
+        "8A.1"
+      ],
+      "tonKho": 18297.95,
+      "tonKhoApp": 18297.95,
+      "ton": 18297.95,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 14",
+      "tenKho": "Kho 14",
+      "tenKhoApp": "Kho 14",
+      "khoCode": "14",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 15",
+      "tenKho": "Kho 15",
+      "tenKhoApp": "Kho 15",
+      "khoCode": "15",
+      "maKhoDb": "15",
+      "tenKhoDb": "Kho 15",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 33573.94,
+      "tonKhoApp": 33573.94,
+      "ton": 33573.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 16",
+      "tenKho": "Kho 16",
+      "tenKhoApp": "Kho 16",
+      "khoCode": "16",
+      "maKhoDb": "16",
+      "tenKhoDb": "Kho 16",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 13195.87,
+      "tonKhoApp": 13195.87,
+      "ton": 13195.87,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6A.1"
+      ],
+      "tonKho": 48193.03,
+      "tonKhoApp": 48193.03,
+      "ton": 48193.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "maThanList": [
+        "7a.1"
+      ],
+      "tonKho": 19021.18,
+      "tonKhoApp": 19021.18,
+      "ton": 19021.18,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 18",
+      "tenKho": "Kho 18",
+      "tenKhoApp": "Kho 18",
+      "khoCode": "18",
+      "maKhoDb": "18",
+      "tenKhoDb": "Kho 18",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 14158.06,
+      "tonKhoApp": 14158.06,
+      "ton": 14158.06,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 19",
+      "tenKho": "Kho 19",
+      "tenKhoApp": "Kho 19",
+      "khoCode": "19",
+      "maKhoDb": "19",
+      "tenKhoDb": "Kho 19",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 15242.09,
+      "tonKhoApp": 15242.09,
+      "ton": 15242.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 69615.47,
+      "tonKhoApp": 69615.47,
+      "ton": 69615.47,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "maThanList": [
+        "9B.1"
+      ],
+      "tonKho": 66.38,
+      "tonKhoApp": 66.38,
+      "ton": 66.38,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
+      "maThanList": [
+        "10A.1"
+      ],
+      "tonKho": 4138.03,
+      "tonKhoApp": 4138.03,
+      "ton": 4138.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 262.85,
+      "tonKhoApp": 262.85,
+      "ton": 262.85,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11A.1"
+      ],
+      "tonKho": 2708.86,
+      "tonKhoApp": 2708.86,
+      "ton": 2708.86,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 22",
+      "tenKho": "Kho 22",
+      "tenKhoApp": "Kho 22",
+      "khoCode": "22",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 23",
+      "tenKho": "Kho 23",
+      "tenKhoApp": "Kho 23",
+      "khoCode": "23",
+      "maKhoDb": "23",
+      "tenKhoDb": "Kho 23",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8b.1"
+      ],
+      "tonKho": 21824.66,
+      "tonKhoApp": 21824.66,
+      "ton": 21824.66,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 24",
+      "tenKho": "Kho 24",
+      "tenKhoApp": "Kho 24",
+      "khoCode": "24",
+      "maKhoDb": "24",
+      "tenKhoDb": "Kho 24",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 4972.0,
+      "tonKhoApp": 4972.0,
+      "ton": 4972.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 25",
+      "tenKho": "Kho 25",
+      "tenKhoApp": "Kho 25",
+      "khoCode": "25",
+      "maKhoDb": "25",
+      "tenKhoDb": "Kho 25",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 17171.72,
+      "tonKhoApp": 17171.72,
+      "ton": 17171.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 26",
+      "tenKho": "Kho 26",
+      "tenKhoApp": "Kho 26",
+      "khoCode": "26",
+      "maKhoDb": "29",
+      "tenKhoDb": "Kho than số 26",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 18954.98,
+      "tonKhoApp": 18954.98,
+      "ton": 18954.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 558.09,
+      "tonKhoApp": 558.09,
+      "ton": 558.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 707.72,
+      "tonKhoApp": 707.72,
+      "ton": 707.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28",
+      "tenKho": "Kho 28",
+      "tenKhoApp": "Kho 28",
+      "khoCode": "28",
+      "maKhoDb": "31c",
+      "tenKhoDb": "Kho số 28 (Tuyển 3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 19816.24,
+      "tonKhoApp": 19816.24,
+      "ton": 19816.24,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28-1",
+      "tenKho": "Kho 28-1",
+      "tenKhoApp": "Kho 28-1",
+      "khoCode": "28-1",
+      "maKhoDb": "31D",
+      "tenKhoDb": "Kho than số 28-1 (T3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 18037.94,
+      "tonKhoApp": 18037.94,
+      "ton": 18037.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 29",
+      "tenKho": "Kho 29",
+      "tenKhoApp": "Kho 29",
+      "khoCode": "29",
+      "maKhoDb": "26",
+      "tenKhoDb": "Kho than số 29",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 18990.4,
+      "tonKhoApp": 18990.4,
+      "ton": 18990.4,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 30",
+      "tenKho": "Kho 30",
+      "tenKhoApp": "Kho 30",
+      "khoCode": "30",
+      "maKhoDb": "27",
+      "tenKhoDb": "Kho than số 30",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 22274.7,
+      "tonKhoApp": 22274.7,
+      "ton": 22274.7,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29A"
+      ],
+      "tonKho": 3712.0,
+      "tonKhoApp": 3712.0,
+      "ton": 3712.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 20254.98,
+      "tonKhoApp": 20254.98,
+      "ton": 20254.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 4510.9,
+      "tonKhoApp": 4510.9,
+      "ton": 4510.9,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 6A.1 (sấy)",
+      "tenThan": "Cám 6A.1 (sấy)",
+      "tenThanHienThi": "Cám 6A.1 (sấy)",
+      "maThanList": [
+        "b2902"
+      ],
+      "tonKho": 732.39,
+      "tonKhoApp": 732.39,
+      "ton": 732.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 8C",
+      "tenThan": "Cám 8C",
+      "tenThanHienThi": "Cám 8C",
+      "maThanList": [
+        "B28C"
+      ],
+      "tonKho": 40.0,
+      "tonKhoApp": 40.0,
+      "ton": 40.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "b29a"
+      ],
+      "tonKho": 2625.39,
+      "tonKhoApp": 2625.39,
+      "ton": 2625.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 10279.64,
+      "tonKhoApp": 10279.64,
+      "ton": 10279.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 33",
+      "tenKho": "Kho 33",
+      "tenKhoApp": "Kho 33",
+      "khoCode": "33",
+      "maKhoDb": "45",
+      "tenKhoDb": "Kho than số 33",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29a"
+      ],
+      "tonKho": 4220.58,
+      "tonKhoApp": 4220.58,
+      "ton": 4220.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 34",
+      "tenKho": "Kho 34",
+      "tenKhoApp": "Kho 34",
+      "khoCode": "34",
+      "maKhoDb": "34A",
+      "tenKhoDb": "Kho 34",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 43197.29,
+      "tonKhoApp": 43197.29,
+      "ton": 43197.29,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 35",
+      "tenKho": "Kho 35",
+      "tenKhoApp": "Kho 35",
+      "khoCode": "35",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 36",
+      "tenKho": "Kho 36",
+      "tenKhoApp": "Kho 36",
+      "khoCode": "36",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 37",
+      "tenKho": "Kho 37",
+      "tenKhoApp": "Kho 37",
+      "khoCode": "37",
+      "maKhoDb": "36",
+      "tenKhoDb": "Kho bùn số 7",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "B32d"
+      ],
+      "tonKho": 47376.58,
+      "tonKhoApp": 47376.58,
+      "ton": 47376.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 38",
+      "tenKho": "Kho 38",
+      "tenKhoApp": "Kho 38",
+      "khoCode": "38",
+      "maKhoDb": "46a",
+      "tenKhoDb": "Kho 38",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 370565.53,
+      "tonKhoApp": 370565.53,
+      "ton": 370565.53,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThanHienThi": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "maThanList": [
+        "NHK.295"
+      ],
+      "tonKho": 9.13,
+      "tonKhoApp": 9.13,
+      "ton": 9.13,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThanHienThi": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "maThanList": [
+        "NHK.296"
+      ],
+      "tonKho": -12.88,
+      "tonKhoApp": -12.88,
+      "ton": -12.88,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "maThanList": [
+        "NHK.297"
+      ],
+      "tonKho": 6423.69,
+      "tonKhoApp": 6423.69,
+      "ton": 6423.69,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "maThanList": [
+        "NHK.16"
+      ],
+      "tonKho": 3025.0,
+      "tonKhoApp": 3025.0,
+      "ton": 3025.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 40",
+      "tenKho": "Kho 40",
+      "tenKhoApp": "Kho 40",
+      "khoCode": "40",
+      "maKhoDb": "60",
+      "tenKhoDb": "Kho hồ Gap",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 3993.02,
+      "tonKhoApp": 3993.02,
+      "ton": 3993.02,
+      "isPlaceholder": false,
+      "hasStock": true
+    }
+  ],
+  "items": [
+    {
+      "kho": "Kho 1",
+      "tenKho": "Kho 1",
+      "tenKhoApp": "Kho 1",
+      "khoCode": "1",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 63831.79,
+      "tonKhoApp": 63831.79,
+      "ton": 63831.79,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 1-T4",
+      "tenKho": "Kho 1-T4",
+      "tenKhoApp": "Kho 1-T4",
+      "khoCode": "1-T4",
+      "maKhoDb": "71",
+      "tenKhoDb": "Kho 1-T4",
+      "loaiThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThan": "Cục xô 1c (Ak 17,01 - 22%)",
+      "tenThanHienThi": "Cục xô 1c (Ak 17,01 - 22%)",
+      "maThanList": [
+        "b11c"
+      ],
+      "tonKho": 1209.0,
+      "tonKhoApp": 1209.0,
+      "ton": 1209.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2",
+      "tenKho": "Kho 2",
+      "tenKhoApp": "Kho 2",
+      "khoCode": "2",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Cục don 8C",
+      "tenThan": "Cục don 8C",
+      "tenThanHienThi": "Cục don 8C",
+      "maThanList": [
+        "b16.09"
+      ],
+      "tonKho": 5377.1,
+      "tonKhoApp": 5377.1,
+      "ton": 5377.1,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": -6111.74,
+      "tonKhoApp": -6111.74,
+      "ton": -6111.74,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 2-T4",
+      "tenKho": "Kho 2-T4",
+      "tenKhoApp": "Kho 2-T4",
+      "khoCode": "2-T4",
+      "maKhoDb": "72",
+      "tenKhoDb": "Kho 2-T4",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 5038.39,
+      "tonKhoApp": 5038.39,
+      "ton": 5038.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 3",
+      "tenKho": "Kho 3",
+      "tenKhoApp": "Kho 3",
+      "khoCode": "3",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 3-T4",
+      "tenKho": "Kho 3-T4",
+      "tenKhoApp": "Kho 3-T4",
+      "khoCode": "3-T4",
+      "maKhoDb": "73",
+      "tenKhoDb": "Kho 3-T4",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 6021.16,
+      "tonKhoApp": 6021.16,
+      "ton": 6021.16,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 4",
+      "tenKho": "Kho 4",
+      "tenKhoApp": "Kho 4",
+      "khoCode": "4",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 4-T4",
+      "tenKho": "Kho 4-T4",
+      "tenKhoApp": "Kho 4-T4",
+      "khoCode": "4-T4",
+      "maKhoDb": "74",
+      "tenKhoDb": "Kho 4-T4",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 27914.54,
+      "tonKhoApp": 27914.54,
+      "ton": 27914.54,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 5",
+      "tenKho": "Kho 5",
+      "tenKhoApp": "Kho 5",
+      "khoCode": "5",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 6",
+      "tenKho": "Kho 6",
+      "tenKhoApp": "Kho 6",
+      "khoCode": "6",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 7",
+      "tenKho": "Kho 7",
+      "tenKhoApp": "Kho 7",
+      "khoCode": "7",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 8",
+      "tenKho": "Kho 8",
+      "tenKhoApp": "Kho 8",
+      "khoCode": "8",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 9",
+      "tenKho": "Kho 9",
+      "tenKhoApp": "Kho 9",
+      "khoCode": "9",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.1",
+      "tenThan": "Cám 5a.1",
+      "tenThanHienThi": "Cám 5a.1",
+      "maThanList": [
+        "10a.1"
+      ],
+      "tonKho": 2297.12,
+      "tonKhoApp": 2297.12,
+      "ton": 2297.12,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5a.14",
+      "tenThan": "Cám 5a.14",
+      "tenThanHienThi": "Cám 5a.14",
+      "maThanList": [
+        "10a.101",
+        "10a.259",
+        "10a.262",
+        "10a.263",
+        "10a.72"
+      ],
+      "tonKho": 390.64,
+      "tonKhoApp": 390.64,
+      "ton": 390.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 10",
+      "tenKho": "Kho 10",
+      "tenKhoApp": "Kho 10",
+      "khoCode": "10",
+      "maKhoDb": "10",
+      "tenKhoDb": "Kho 10",
+      "loaiThan": "Cám 5b.1",
+      "tenThan": "Cám 5b.1",
+      "tenThanHienThi": "Cám 5b.1",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 499.59,
+      "tonKhoApp": 499.59,
+      "ton": 499.59,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 11",
+      "tenKho": "Kho 11",
+      "tenKhoApp": "Kho 11",
+      "khoCode": "11",
+      "maKhoDb": "11",
+      "tenKhoDb": "Kho 11",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 37723.14,
+      "tonKhoApp": 37723.14,
+      "ton": 37723.14,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 12",
+      "tenKho": "Kho 12",
+      "tenKhoApp": "Kho 12",
+      "khoCode": "12",
+      "maKhoDb": "12",
+      "tenKhoDb": "Kho 12",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 25644.35,
+      "tonKhoApp": 25644.35,
+      "ton": 25644.35,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 13",
+      "tenKho": "Kho 13",
+      "tenKhoApp": "Kho 13",
+      "khoCode": "13",
+      "maKhoDb": "13",
+      "tenKhoDb": "Kho 13",
+      "loaiThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThan": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "tenThanHienThi": "Cám 3a.1 (Ak 10,01 - 13,00%)",
+      "maThanList": [
+        "8A.1"
+      ],
+      "tonKho": 18297.95,
+      "tonKhoApp": 18297.95,
+      "ton": 18297.95,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 14",
+      "tenKho": "Kho 14",
+      "tenKhoApp": "Kho 14",
+      "khoCode": "14",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 15",
+      "tenKho": "Kho 15",
+      "tenKhoApp": "Kho 15",
+      "khoCode": "15",
+      "maKhoDb": "15",
+      "tenKhoDb": "Kho 15",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 33573.94,
+      "tonKhoApp": 33573.94,
+      "ton": 33573.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 16",
+      "tenKho": "Kho 16",
+      "tenKhoApp": "Kho 16",
+      "khoCode": "16",
+      "maKhoDb": "16",
+      "tenKhoDb": "Kho 16",
+      "loaiThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThan": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "tenThanHienThi": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "maThanList": [
+        "5A.1"
+      ],
+      "tonKho": 13195.87,
+      "tonKhoApp": 13195.87,
+      "ton": 13195.87,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6A.1"
+      ],
+      "tonKho": 48193.03,
+      "tonKhoApp": 48193.03,
+      "ton": 48193.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 17",
+      "tenKho": "Kho 17",
+      "tenKhoApp": "Kho 17",
+      "khoCode": "17",
+      "maKhoDb": "17",
+      "tenKhoDb": "Kho 17",
+      "loaiThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThan": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "tenThanHienThi": "Cám 2a.1 (Ak 8,01 - 10,00%)",
+      "maThanList": [
+        "7a.1"
+      ],
+      "tonKho": 19021.18,
+      "tonKhoApp": 19021.18,
+      "ton": 19021.18,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 18",
+      "tenKho": "Kho 18",
+      "tenKhoApp": "Kho 18",
+      "khoCode": "18",
+      "maKhoDb": "18",
+      "tenKhoDb": "Kho 18",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 14158.06,
+      "tonKhoApp": 14158.06,
+      "ton": 14158.06,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 19",
+      "tenKho": "Kho 19",
+      "tenKhoApp": "Kho 19",
+      "khoCode": "19",
+      "maKhoDb": "19",
+      "tenKhoDb": "Kho 19",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8B.1"
+      ],
+      "tonKho": 15242.09,
+      "tonKhoApp": 15242.09,
+      "ton": 15242.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThan": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "tenThanHienThi": "Cám 4a.1 (Ak 19,01 - 23,00%)",
+      "maThanList": [
+        "9A.1"
+      ],
+      "tonKho": 69615.47,
+      "tonKhoApp": 69615.47,
+      "ton": 69615.47,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 20",
+      "tenKho": "Kho 20",
+      "tenKhoApp": "Kho 20",
+      "khoCode": "20",
+      "maKhoDb": "20",
+      "tenKhoDb": "Kho 20",
+      "loaiThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThan": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "tenThanHienThi": "Cám 4b.1 (Ak 23,01 - 27%)",
+      "maThanList": [
+        "9B.1"
+      ],
+      "tonKho": 66.38,
+      "tonKhoApp": 66.38,
+      "ton": 66.38,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThan": "Cám 5a.1 (Ak27,01 - 31%)",
+      "tenThanHienThi": "Cám 5a.1 (Ak27,01 - 31%)",
+      "maThanList": [
+        "10A.1"
+      ],
+      "tonKho": 4138.03,
+      "tonKhoApp": 4138.03,
+      "ton": 4138.03,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThan": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "tenThanHienThi": "Cám 5b.1 (Ak 31,01 - 35%)",
+      "maThanList": [
+        "10B.1"
+      ],
+      "tonKho": 262.85,
+      "tonKhoApp": 262.85,
+      "ton": 262.85,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 21",
+      "tenKho": "Kho 21",
+      "tenKhoApp": "Kho 21",
+      "khoCode": "21",
+      "maKhoDb": "21",
+      "tenKhoDb": "Kho 21",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11A.1"
+      ],
+      "tonKho": 2708.86,
+      "tonKhoApp": 2708.86,
+      "ton": 2708.86,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 22",
+      "tenKho": "Kho 22",
+      "tenKhoApp": "Kho 22",
+      "khoCode": "22",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 23",
+      "tenKho": "Kho 23",
+      "tenKhoApp": "Kho 23",
+      "khoCode": "23",
+      "maKhoDb": "23",
+      "tenKhoDb": "Kho 23",
+      "loaiThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThan": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "tenThanHienThi": "Cám 3b.1 (Ak 13,01 - 16,00%)",
+      "maThanList": [
+        "8b.1"
+      ],
+      "tonKho": 21824.66,
+      "tonKhoApp": 21824.66,
+      "ton": 21824.66,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 24",
+      "tenKho": "Kho 24",
+      "tenKhoApp": "Kho 24",
+      "khoCode": "24",
+      "maKhoDb": "24",
+      "tenKhoDb": "Kho 24",
+      "loaiThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThan": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "tenThanHienThi": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "maThanList": [
+        "11a.1"
+      ],
+      "tonKho": 4972.0,
+      "tonKhoApp": 4972.0,
+      "ton": 4972.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 25",
+      "tenKho": "Kho 25",
+      "tenKhoApp": "Kho 25",
+      "khoCode": "25",
+      "maKhoDb": "25",
+      "tenKhoDb": "Kho 25",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 17171.72,
+      "tonKhoApp": 17171.72,
+      "ton": 17171.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 26",
+      "tenKho": "Kho 26",
+      "tenKhoApp": "Kho 26",
+      "khoCode": "26",
+      "maKhoDb": "29",
+      "tenKhoDb": "Kho than số 26",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 18954.98,
+      "tonKhoApp": 18954.98,
+      "ton": 18954.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 558.09,
+      "tonKhoApp": 558.09,
+      "ton": 558.09,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 27",
+      "tenKho": "Kho 27",
+      "tenKhoApp": "Kho 27",
+      "khoCode": "27",
+      "maKhoDb": "30b",
+      "tenKhoDb": "Kho than số 27",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 707.72,
+      "tonKhoApp": 707.72,
+      "ton": 707.72,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28",
+      "tenKho": "Kho 28",
+      "tenKhoApp": "Kho 28",
+      "khoCode": "28",
+      "maKhoDb": "31c",
+      "tenKhoDb": "Kho số 28 (Tuyển 3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 19816.24,
+      "tonKhoApp": 19816.24,
+      "ton": 19816.24,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 28-1",
+      "tenKho": "Kho 28-1",
+      "tenKhoApp": "Kho 28-1",
+      "khoCode": "28-1",
+      "maKhoDb": "31D",
+      "tenKhoDb": "Kho than số 28-1 (T3)",
+      "loaiThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThan": "Cám 6b.1 (Ak40,01 - 45%)",
+      "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
+      "maThanList": [
+        "11b.1"
+      ],
+      "tonKho": 18037.94,
+      "tonKhoApp": 18037.94,
+      "ton": 18037.94,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 29",
+      "tenKho": "Kho 29",
+      "tenKhoApp": "Kho 29",
+      "khoCode": "29",
+      "maKhoDb": "26",
+      "tenKhoDb": "Kho than số 29",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 18990.4,
+      "tonKhoApp": 18990.4,
+      "ton": 18990.4,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 30",
+      "tenKho": "Kho 30",
+      "tenKhoApp": "Kho 30",
+      "khoCode": "30",
+      "maKhoDb": "27",
+      "tenKhoDb": "Kho than số 30",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 22274.7,
+      "tonKhoApp": 22274.7,
+      "ton": 22274.7,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29A"
+      ],
+      "tonKho": 3712.0,
+      "tonKhoApp": 3712.0,
+      "ton": 3712.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 31",
+      "tenKho": "Kho 31",
+      "tenKhoApp": "Kho 31",
+      "khoCode": "31",
+      "maKhoDb": "43",
+      "tenKhoDb": "Kho than số 31",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 20254.98,
+      "tonKhoApp": 20254.98,
+      "ton": 20254.98,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "b32d"
+      ],
+      "tonKho": 4510.9,
+      "tonKhoApp": 4510.9,
+      "ton": 4510.9,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 6A.1 (sấy)",
+      "tenThan": "Cám 6A.1 (sấy)",
+      "tenThanHienThi": "Cám 6A.1 (sấy)",
+      "maThanList": [
+        "b2902"
+      ],
+      "tonKho": 732.39,
+      "tonKhoApp": 732.39,
+      "ton": 732.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám 8C",
+      "tenThan": "Cám 8C",
+      "tenThanHienThi": "Cám 8C",
+      "maThanList": [
+        "B28C"
+      ],
+      "tonKho": 40.0,
+      "tonKhoApp": 40.0,
+      "ton": 40.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "b29a"
+      ],
+      "tonKho": 2625.39,
+      "tonKhoApp": 2625.39,
+      "ton": 2625.39,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 32",
+      "tenKho": "Kho 32",
+      "tenKhoApp": "Kho 32",
+      "khoCode": "32",
+      "maKhoDb": "31B",
+      "tenKhoDb": "Nhà máy sấy",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 10279.64,
+      "tonKhoApp": 10279.64,
+      "ton": 10279.64,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 33",
+      "tenKho": "Kho 33",
+      "tenKhoApp": "Kho 33",
+      "khoCode": "33",
+      "maKhoDb": "45",
+      "tenKhoDb": "Kho than số 33",
+      "loaiThan": "Cám đá",
+      "tenThan": "Cám đá",
+      "tenThanHienThi": "Cám đá",
+      "maThanList": [
+        "B29a"
+      ],
+      "tonKho": 4220.58,
+      "tonKhoApp": 4220.58,
+      "ton": 4220.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 34",
+      "tenKho": "Kho 34",
+      "tenKhoApp": "Kho 34",
+      "khoCode": "34",
+      "maKhoDb": "34A",
+      "tenKhoDb": "Kho 34",
+      "loaiThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThan": "Cám 1 (Ak 5,00 - 8,00%)",
+      "tenThanHienThi": "Cám 1 (Ak 5,00 - 8,00%)",
+      "maThanList": [
+        "6a.1"
+      ],
+      "tonKho": 43197.29,
+      "tonKhoApp": 43197.29,
+      "ton": 43197.29,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 35",
+      "tenKho": "Kho 35",
+      "tenKhoApp": "Kho 35",
+      "khoCode": "35",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 36",
+      "tenKho": "Kho 36",
+      "tenKhoApp": "Kho 36",
+      "khoCode": "36",
+      "maKhoDb": "",
+      "tenKhoDb": "",
+      "loaiThan": "Chưa có tồn kho",
+      "tenThan": "Chưa có tồn kho",
+      "tenThanHienThi": "Chưa có tồn kho",
+      "maThanList": [],
+      "tonKho": 0,
+      "tonKhoApp": 0,
+      "ton": 0,
+      "isPlaceholder": true,
+      "hasStock": false
+    },
+    {
+      "kho": "Kho 37",
+      "tenKho": "Kho 37",
+      "tenKhoApp": "Kho 37",
+      "khoCode": "37",
+      "maKhoDb": "36",
+      "tenKhoDb": "Kho bùn số 7",
+      "loaiThan": "Bùn tuyển 3A",
+      "tenThan": "Bùn tuyển 3A",
+      "tenThanHienThi": "Bùn tuyển 3A",
+      "maThanList": [
+        "B32d"
+      ],
+      "tonKho": 47376.58,
+      "tonKhoApp": 47376.58,
+      "ton": 47376.58,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 38",
+      "tenKho": "Kho 38",
+      "tenKhoApp": "Kho 38",
+      "khoCode": "38",
+      "maKhoDb": "46a",
+      "tenKhoDb": "Kho 38",
+      "loaiThan": "Than nguyên khai",
+      "tenThan": "Than nguyên khai",
+      "tenThanHienThi": "Than nguyên khai",
+      "maThanList": [
+        "00"
+      ],
+      "tonKho": 370565.53,
+      "tonKhoApp": 370565.53,
+      "ton": 370565.53,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "tenThanHienThi": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
+      "maThanList": [
+        "NHK.295"
+      ],
+      "tonKho": 9.13,
+      "tonKhoApp": 9.13,
+      "ton": 9.13,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "tenThanHienThi": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "maThanList": [
+        "NHK.296"
+      ],
+      "tonKho": -12.88,
+      "tonKhoApp": -12.88,
+      "ton": -12.88,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "maThanList": [
+        "NHK.297"
+      ],
+      "tonKho": 6423.69,
+      "tonKhoApp": 6423.69,
+      "ton": 6423.69,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 39",
+      "tenKho": "Kho 39",
+      "tenKhoApp": "Kho 39",
+      "khoCode": "39",
+      "maKhoDb": "28",
+      "tenKhoDb": "Kho nội địa 3",
+      "loaiThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "tenThanHienThi": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+      "maThanList": [
+        "NHK.16"
+      ],
+      "tonKho": 3025.0,
+      "tonKhoApp": 3025.0,
+      "ton": 3025.0,
+      "isPlaceholder": false,
+      "hasStock": true
+    },
+    {
+      "kho": "Kho 40",
+      "tenKho": "Kho 40",
+      "tenKhoApp": "Kho 40",
+      "khoCode": "40",
+      "maKhoDb": "60",
+      "tenKhoDb": "Kho hồ Gap",
+      "loaiThan": "Đá thải",
+      "tenThan": "Đá thải",
+      "tenThanHienThi": "Đá thải",
+      "maThanList": [
+        "B5.01"
+      ],
+      "tonKho": 3993.02,
+      "tonKhoApp": 3993.02,
+      "ton": 3993.02,
+      "isPlaceholder": false,
+      "hasStock": true
+    }
+  ],
+  "CAN_XAC_NHAN_NGUOI_DUNG": [
+    {
+      "maKhoDb": "01",
+      "tenKhoDb": "Kho 1",
+      "maThan": "B11C",
+      "tenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
+      "TonKho_App": 576.88,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "02",
+      "tenKhoDb": "Kho 2",
+      "maThan": "5A.1",
+      "tenThanDb": "Cục 5a.1 (Ak5,00 - 8,00%)",
+      "TonKho_App": 7937.86,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "03",
+      "tenKhoDb": "Kho 3",
+      "maThan": "4A.1",
+      "tenThanDb": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+      "TonKho_App": 1350.76,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "04",
+      "tenKhoDb": "Kho 4",
+      "maThan": "4A.1",
+      "tenThanDb": "Cục 4a.1 (Ak 4,00 - 7,00%)",
+      "TonKho_App": 11465.42,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "05",
+      "tenKhoDb": "Kho 5",
+      "maThan": "4a.2",
+      "tenThanDb": "Cục 4a.2 (Ak 7,01 - 12,00%)",
+      "TonKho_App": 8394.56,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "06",
+      "tenKhoDb": "Kho 6",
+      "maThan": "B11C",
+      "tenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
+      "TonKho_App": 1.54,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "07",
+      "tenKhoDb": "Kho 7",
+      "maThan": "11a.1",
+      "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TonKho_App": 7792.84,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "08",
+      "tenKhoDb": "Kho 8",
+      "maThan": "11A.1",
+      "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TonKho_App": 32366.21,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11.250",
+      "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
+      "TonKho_App": 33.82,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11A.1",
+      "tenThanDb": "Cám 6a.1 (Ak 35,01 - 40%)",
+      "TonKho_App": 2405.38,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.241",
+      "tenThanDb": "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
+      "TonKho_App": -0.53,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.243",
+      "tenThanDb": "Cám 6a.14 (Úc - Tàu MV W - Star)",
+      "TonKho_App": -0.37,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.245",
+      "tenThanDb": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu MV W - Star)",
+      "TonKho_App": 0.16,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.246",
+      "tenThanDb": "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
+      "TonKho_App": -0.35,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.247",
+      "tenThanDb": "Cám 6a.10 (Lào - Tàu Golden Star)",
+      "TonKho_App": -0.98,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.248",
+      "tenThanDb": "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
+      "TonKho_App": 0.15,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.249",
+      "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
+      "TonKho_App": -0.16,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.251",
+      "tenThanDb": "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)",
+      "TonKho_App": 4135.0,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.253",
+      "tenThanDb": "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
+      "TonKho_App": 8867.0,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11a.254",
+      "tenThanDb": "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+      "TonKho_App": 7204.0,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "09",
+      "tenKhoDb": "Kho 9",
+      "maThan": "11B.1",
+      "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TonKho_App": 193.48,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "39",
+      "tenKhoDb": "Hồ bùn số 9",
+      "maThan": "b32e",
+      "tenThanDb": "Bùn tuyển 3B",
+      "TonKho_App": 21566.8,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
     },
     {
       "maKhoDb": "K04",
-      "khoCode": "Tuyển 1",
-      "tenKhoApp": "Tuyển 1",
       "tenKhoDb": "Tuyển 1",
-      "items": [
-        {
-          "maThanList": [
-            "NHK.297"
-          ],
-          "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
-          "tonKho": 345.26
-        },
-        {
-          "maThanList": [
-            "00"
-          ],
-          "tenThanHienThi": "Than nguyên khai",
-          "tonKho": 418.62
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "K04",
-          "maThan": "NHK.297",
-          "tenThanDb": "Than NK (Úc - Tầu MV BARDONNEX)",
-          "tenThanHienThi": "Than NK (Úc - Tầu MV BARDONNEX)",
-          "TonDK": 0.0,
-          "NhapTK": 3946.26,
-          "XuatTK": 3601.0,
-          "TonCK": 345.26,
-          "TonCK_TToan": 345.26,
-          "TonCuoi_TinhLai": 345.26,
-          "TonKho_App": 345.26
-        },
-        {
-          "maKhoDb": "K04",
-          "maThan": "00",
-          "tenThanDb": "Than nguyên khai",
-          "tenThanHienThi": "Than nguyên khai",
-          "TonDK": 0.0,
-          "NhapTK": 19940.29,
-          "XuatTK": 19526.69,
-          "TonCK": 413.6,
-          "TonCK_TToan": 418.62,
-          "TonCuoi_TinhLai": 413.6,
-          "TonKho_App": 418.62
-        }
-      ]
+      "maThan": "00",
+      "tenThanDb": "Than nguyên khai",
+      "TonKho_App": 418.62,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
+    },
+    {
+      "maKhoDb": "K04",
+      "tenKhoDb": "Tuyển 1",
+      "maThan": "NHK.297",
+      "tenThanDb": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "TonKho_App": 345.26,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
     },
     {
       "maKhoDb": "K05",
-      "khoCode": "Tuyển 2",
-      "tenKhoApp": "Tuyển 2",
       "tenKhoDb": "Tuyển 2",
-      "items": [
-        {
-          "maThanList": [
-            "00"
-          ],
-          "tenThanHienThi": "Than nguyên khai",
-          "tonKho": -1003.29
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "K05",
-          "maThan": "00",
-          "tenThanDb": "Than nguyên khai",
-          "tenThanHienThi": "Than nguyên khai",
-          "TonDK": 0.0,
-          "NhapTK": 52790.61,
-          "XuatTK": 52790.61,
-          "TonCK": 0.0,
-          "TonCK_TToan": -1003.29,
-          "TonCuoi_TinhLai": 0.0,
-          "TonKho_App": -1003.29
-        }
-      ]
+      "maThan": "00",
+      "tenThanDb": "Than nguyên khai",
+      "TonKho_App": -1003.29,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
     },
     {
       "maKhoDb": "k17",
-      "khoCode": "k17",
-      "tenKhoApp": "k17",
-      "tenKhoDb": "",
-      "items": [
-        {
-          "maThanList": [
-            "00"
-          ],
-          "tenThanHienThi": "Than nguyên khai",
-          "tonKho": -286.54
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "k17",
-          "maThan": "00",
-          "tenThanDb": "Than nguyên khai",
-          "tenThanHienThi": "Than nguyên khai",
-          "TonDK": 0.0,
-          "NhapTK": 73150.2,
-          "XuatTK": 73150.2,
-          "TonCK": 0.0,
-          "TonCK_TToan": -286.54,
-          "TonCuoi_TinhLai": 0.0,
-          "TonKho_App": -286.54
-        }
-      ]
+      "tenKhoDb": "Tuyển 4",
+      "maThan": "00",
+      "tenThanDb": "Than nguyên khai",
+      "TonKho_App": -286.54,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
     },
     {
       "maKhoDb": "k59",
-      "khoCode": "k59",
-      "tenKhoApp": "k59",
-      "tenKhoDb": "",
-      "items": [
-        {
-          "maThanList": [
-            "11b.1"
-          ],
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tonKho": 1467.86
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "k59",
-          "maThan": "11b.1",
-          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
-          "TonDK": 1746.0,
-          "NhapTK": 43506.0,
-          "XuatTK": 40959.0,
-          "TonCK": 4293.0,
-          "TonCK_TToan": 1467.86,
-          "TonCuoi_TinhLai": 4293.0,
-          "TonKho_App": 1467.86
-        }
-      ]
+      "tenKhoDb": "NM Nhiệt điện",
+      "maThan": "11b.1",
+      "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TonKho_App": 1467.86,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
     },
     {
       "maKhoDb": "K60",
-      "khoCode": "Ẩm nhiệt điện",
-      "tenKhoApp": "Ẩm nhiệt điện",
       "tenKhoDb": "Ẩm nhiệt điện",
-      "items": [
-        {
-          "maThanList": [
-            "11b.1"
-          ],
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tonKho": 1079.14
-        }
-      ],
-      "traceItems": [
-        {
-          "maKhoDb": "K60",
-          "maThan": "11b.1",
-          "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-          "tenThanHienThi": "Cám 6b.1 (Ak40,01 - 45%)",
-          "TonDK": 1079.14,
-          "NhapTK": 0.0,
-          "XuatTK": 0.0,
-          "TonCK": 1079.14,
-          "TonCK_TToan": 1079.14,
-          "TonCuoi_TinhLai": 1079.14,
-          "TonKho_App": 1079.14
-        }
-      ]
+      "maThan": "11b.1",
+      "tenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
+      "TonKho_App": 1079.14,
+      "lyDo": "MaKho DB chua co trong mapping chuan, khong tu day vao APP de tranh sai kho."
     }
   ]
 }
