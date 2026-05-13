@@ -1,6 +1,6 @@
 {
-  "version": "direct-db-v5-fix-missing-kho-two-menu",
-  "updatedAt": "2026-05-13 23:49:56",
+  "version": "direct-db-v7-fix-app-dropdown-two-menu",
+  "updatedAt": "2026-05-13 23:57:57",
   "source": "TTCO_DB",
   "server": "tuyenthancuaong.com.vn,52376",
   "stockPeriod": {
@@ -1721,7 +1721,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1741,6 +1742,7 @@
       "tonKhoApp": 63831.79,
       "ton": 63831.79,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1760,6 +1762,7 @@
       "tonKhoApp": 1209.0,
       "ton": 1209.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1776,7 +1779,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1796,6 +1800,7 @@
       "tonKhoApp": 5377.1,
       "ton": 5377.1,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1815,6 +1820,7 @@
       "tonKhoApp": -6111.74,
       "ton": -6111.74,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1834,6 +1840,7 @@
       "tonKhoApp": 5038.39,
       "ton": 5038.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1850,7 +1857,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1870,6 +1878,7 @@
       "tonKhoApp": 6021.16,
       "ton": 6021.16,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1886,7 +1895,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1906,6 +1916,7 @@
       "tonKhoApp": 27914.54,
       "ton": 27914.54,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -1922,7 +1933,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1939,7 +1951,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1956,7 +1969,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1973,7 +1987,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -1990,7 +2005,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2010,6 +2026,7 @@
       "tonKhoApp": 2297.12,
       "ton": 2297.12,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2033,6 +2050,7 @@
       "tonKhoApp": 390.64,
       "ton": 390.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2052,6 +2070,7 @@
       "tonKhoApp": 499.59,
       "ton": 499.59,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2071,6 +2090,7 @@
       "tonKhoApp": 37723.14,
       "ton": 37723.14,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2090,6 +2110,7 @@
       "tonKhoApp": 25644.35,
       "ton": 25644.35,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2109,6 +2130,7 @@
       "tonKhoApp": 18297.95,
       "ton": 18297.95,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2125,7 +2147,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2145,6 +2168,7 @@
       "tonKhoApp": 33573.94,
       "ton": 33573.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2164,6 +2188,7 @@
       "tonKhoApp": 13195.87,
       "ton": 13195.87,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2183,6 +2208,7 @@
       "tonKhoApp": 48193.03,
       "ton": 48193.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2202,6 +2228,7 @@
       "tonKhoApp": 19021.18,
       "ton": 19021.18,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2221,6 +2248,7 @@
       "tonKhoApp": 14158.06,
       "ton": 14158.06,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2240,6 +2268,7 @@
       "tonKhoApp": 15242.09,
       "ton": 15242.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2259,6 +2288,7 @@
       "tonKhoApp": 69615.47,
       "ton": 69615.47,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2278,6 +2308,7 @@
       "tonKhoApp": 66.38,
       "ton": 66.38,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2297,6 +2328,7 @@
       "tonKhoApp": 4138.03,
       "ton": 4138.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2316,6 +2348,7 @@
       "tonKhoApp": 262.85,
       "ton": 262.85,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2335,6 +2368,7 @@
       "tonKhoApp": 2708.86,
       "ton": 2708.86,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2351,7 +2385,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2371,6 +2406,7 @@
       "tonKhoApp": 21824.66,
       "ton": 21824.66,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2390,6 +2426,7 @@
       "tonKhoApp": 4972.0,
       "ton": 4972.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2409,6 +2446,7 @@
       "tonKhoApp": 17171.72,
       "ton": 17171.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2428,6 +2466,7 @@
       "tonKhoApp": 18954.98,
       "ton": 18954.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2447,6 +2486,7 @@
       "tonKhoApp": 558.09,
       "ton": 558.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2466,6 +2506,7 @@
       "tonKhoApp": 707.72,
       "ton": 707.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2485,6 +2526,7 @@
       "tonKhoApp": 19816.24,
       "ton": 19816.24,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2504,6 +2546,7 @@
       "tonKhoApp": 18037.94,
       "ton": 18037.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2523,6 +2566,7 @@
       "tonKhoApp": 18990.4,
       "ton": 18990.4,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2542,6 +2586,7 @@
       "tonKhoApp": 22274.7,
       "ton": 22274.7,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2561,6 +2606,7 @@
       "tonKhoApp": 3712.0,
       "ton": 3712.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2580,6 +2626,7 @@
       "tonKhoApp": 20254.98,
       "ton": 20254.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2599,6 +2646,7 @@
       "tonKhoApp": 4510.9,
       "ton": 4510.9,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2618,6 +2666,7 @@
       "tonKhoApp": 732.39,
       "ton": 732.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2637,6 +2686,7 @@
       "tonKhoApp": 40.0,
       "ton": 40.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2656,6 +2706,7 @@
       "tonKhoApp": 2625.39,
       "ton": 2625.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2675,6 +2726,7 @@
       "tonKhoApp": 10279.64,
       "ton": 10279.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2694,6 +2746,7 @@
       "tonKhoApp": 4220.58,
       "ton": 4220.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2713,6 +2766,7 @@
       "tonKhoApp": 43197.29,
       "ton": 43197.29,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2729,7 +2783,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2746,7 +2801,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2766,6 +2822,7 @@
       "tonKhoApp": 47376.58,
       "ton": 47376.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2785,6 +2842,7 @@
       "tonKhoApp": 370565.53,
       "ton": 370565.53,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2804,6 +2862,7 @@
       "tonKhoApp": 9.13,
       "ton": 9.13,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2823,6 +2882,7 @@
       "tonKhoApp": -12.88,
       "ton": -12.88,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2842,6 +2902,7 @@
       "tonKhoApp": 6423.69,
       "ton": 6423.69,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2861,6 +2922,7 @@
       "tonKhoApp": 3025.0,
       "ton": 3025.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2880,6 +2942,7 @@
       "tonKhoApp": 3993.02,
       "ton": 3993.02,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     }
   ],
@@ -2898,7 +2961,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2918,6 +2982,7 @@
       "tonKhoApp": 63831.79,
       "ton": 63831.79,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2937,6 +3002,7 @@
       "tonKhoApp": 1209.0,
       "ton": 1209.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2953,7 +3019,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -2973,6 +3040,7 @@
       "tonKhoApp": 5377.1,
       "ton": 5377.1,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -2992,6 +3060,7 @@
       "tonKhoApp": -6111.74,
       "ton": -6111.74,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3011,6 +3080,7 @@
       "tonKhoApp": 5038.39,
       "ton": 5038.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3027,7 +3097,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3047,6 +3118,7 @@
       "tonKhoApp": 6021.16,
       "ton": 6021.16,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3063,7 +3135,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3083,6 +3156,7 @@
       "tonKhoApp": 27914.54,
       "ton": 27914.54,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3099,7 +3173,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3116,7 +3191,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3133,7 +3209,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3150,7 +3227,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3167,7 +3245,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3187,6 +3266,7 @@
       "tonKhoApp": 2297.12,
       "ton": 2297.12,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3210,6 +3290,7 @@
       "tonKhoApp": 390.64,
       "ton": 390.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3229,6 +3310,7 @@
       "tonKhoApp": 499.59,
       "ton": 499.59,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3248,6 +3330,7 @@
       "tonKhoApp": 37723.14,
       "ton": 37723.14,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3267,6 +3350,7 @@
       "tonKhoApp": 25644.35,
       "ton": 25644.35,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3286,6 +3370,7 @@
       "tonKhoApp": 18297.95,
       "ton": 18297.95,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3302,7 +3387,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3322,6 +3408,7 @@
       "tonKhoApp": 33573.94,
       "ton": 33573.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3341,6 +3428,7 @@
       "tonKhoApp": 13195.87,
       "ton": 13195.87,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3360,6 +3448,7 @@
       "tonKhoApp": 48193.03,
       "ton": 48193.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3379,6 +3468,7 @@
       "tonKhoApp": 19021.18,
       "ton": 19021.18,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3398,6 +3488,7 @@
       "tonKhoApp": 14158.06,
       "ton": 14158.06,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3417,6 +3508,7 @@
       "tonKhoApp": 15242.09,
       "ton": 15242.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3436,6 +3528,7 @@
       "tonKhoApp": 69615.47,
       "ton": 69615.47,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3455,6 +3548,7 @@
       "tonKhoApp": 66.38,
       "ton": 66.38,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3474,6 +3568,7 @@
       "tonKhoApp": 4138.03,
       "ton": 4138.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3493,6 +3588,7 @@
       "tonKhoApp": 262.85,
       "ton": 262.85,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3512,6 +3608,7 @@
       "tonKhoApp": 2708.86,
       "ton": 2708.86,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3528,7 +3625,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3548,6 +3646,7 @@
       "tonKhoApp": 21824.66,
       "ton": 21824.66,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3567,6 +3666,7 @@
       "tonKhoApp": 4972.0,
       "ton": 4972.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3586,6 +3686,7 @@
       "tonKhoApp": 17171.72,
       "ton": 17171.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3605,6 +3706,7 @@
       "tonKhoApp": 18954.98,
       "ton": 18954.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3624,6 +3726,7 @@
       "tonKhoApp": 558.09,
       "ton": 558.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3643,6 +3746,7 @@
       "tonKhoApp": 707.72,
       "ton": 707.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3662,6 +3766,7 @@
       "tonKhoApp": 19816.24,
       "ton": 19816.24,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3681,6 +3786,7 @@
       "tonKhoApp": 18037.94,
       "ton": 18037.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3700,6 +3806,7 @@
       "tonKhoApp": 18990.4,
       "ton": 18990.4,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3719,6 +3826,7 @@
       "tonKhoApp": 22274.7,
       "ton": 22274.7,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3738,6 +3846,7 @@
       "tonKhoApp": 3712.0,
       "ton": 3712.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3757,6 +3866,7 @@
       "tonKhoApp": 20254.98,
       "ton": 20254.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3776,6 +3886,7 @@
       "tonKhoApp": 4510.9,
       "ton": 4510.9,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3795,6 +3906,7 @@
       "tonKhoApp": 732.39,
       "ton": 732.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3814,6 +3926,7 @@
       "tonKhoApp": 40.0,
       "ton": 40.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3833,6 +3946,7 @@
       "tonKhoApp": 2625.39,
       "ton": 2625.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3852,6 +3966,7 @@
       "tonKhoApp": 10279.64,
       "ton": 10279.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3871,6 +3986,7 @@
       "tonKhoApp": 4220.58,
       "ton": 4220.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3890,6 +4006,7 @@
       "tonKhoApp": 43197.29,
       "ton": 43197.29,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3906,7 +4023,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3923,7 +4041,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -3943,6 +4062,7 @@
       "tonKhoApp": 47376.58,
       "ton": 47376.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3962,6 +4082,7 @@
       "tonKhoApp": 370565.53,
       "ton": 370565.53,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -3981,6 +4102,7 @@
       "tonKhoApp": 9.13,
       "ton": 9.13,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4000,6 +4122,7 @@
       "tonKhoApp": -12.88,
       "ton": -12.88,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4019,6 +4142,7 @@
       "tonKhoApp": 6423.69,
       "ton": 6423.69,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4038,6 +4162,7 @@
       "tonKhoApp": 3025.0,
       "ton": 3025.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4057,6 +4182,7 @@
       "tonKhoApp": 3993.02,
       "ton": 3993.02,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     }
   ],
@@ -4075,7 +4201,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4095,6 +4222,7 @@
       "tonKhoApp": 63831.79,
       "ton": 63831.79,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4114,6 +4242,7 @@
       "tonKhoApp": 1209.0,
       "ton": 1209.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4130,7 +4259,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4150,6 +4280,7 @@
       "tonKhoApp": 5377.1,
       "ton": 5377.1,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4169,6 +4300,7 @@
       "tonKhoApp": -6111.74,
       "ton": -6111.74,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4188,6 +4320,7 @@
       "tonKhoApp": 5038.39,
       "ton": 5038.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4204,7 +4337,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4224,6 +4358,7 @@
       "tonKhoApp": 6021.16,
       "ton": 6021.16,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4240,7 +4375,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4260,6 +4396,7 @@
       "tonKhoApp": 27914.54,
       "ton": 27914.54,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4276,7 +4413,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4293,7 +4431,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4310,7 +4449,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4327,7 +4467,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4344,7 +4485,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4364,6 +4506,7 @@
       "tonKhoApp": 2297.12,
       "ton": 2297.12,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4387,6 +4530,7 @@
       "tonKhoApp": 390.64,
       "ton": 390.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4406,6 +4550,7 @@
       "tonKhoApp": 499.59,
       "ton": 499.59,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4425,6 +4570,7 @@
       "tonKhoApp": 37723.14,
       "ton": 37723.14,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4444,6 +4590,7 @@
       "tonKhoApp": 25644.35,
       "ton": 25644.35,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4463,6 +4610,7 @@
       "tonKhoApp": 18297.95,
       "ton": 18297.95,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4479,7 +4627,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4499,6 +4648,7 @@
       "tonKhoApp": 33573.94,
       "ton": 33573.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4518,6 +4668,7 @@
       "tonKhoApp": 13195.87,
       "ton": 13195.87,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4537,6 +4688,7 @@
       "tonKhoApp": 48193.03,
       "ton": 48193.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4556,6 +4708,7 @@
       "tonKhoApp": 19021.18,
       "ton": 19021.18,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4575,6 +4728,7 @@
       "tonKhoApp": 14158.06,
       "ton": 14158.06,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4594,6 +4748,7 @@
       "tonKhoApp": 15242.09,
       "ton": 15242.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4613,6 +4768,7 @@
       "tonKhoApp": 69615.47,
       "ton": 69615.47,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4632,6 +4788,7 @@
       "tonKhoApp": 66.38,
       "ton": 66.38,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4651,6 +4808,7 @@
       "tonKhoApp": 4138.03,
       "ton": 4138.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4670,6 +4828,7 @@
       "tonKhoApp": 262.85,
       "ton": 262.85,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4689,6 +4848,7 @@
       "tonKhoApp": 2708.86,
       "ton": 2708.86,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4705,7 +4865,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -4725,6 +4886,7 @@
       "tonKhoApp": 21824.66,
       "ton": 21824.66,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4744,6 +4906,7 @@
       "tonKhoApp": 4972.0,
       "ton": 4972.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4763,6 +4926,7 @@
       "tonKhoApp": 17171.72,
       "ton": 17171.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4782,6 +4946,7 @@
       "tonKhoApp": 18954.98,
       "ton": 18954.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4801,6 +4966,7 @@
       "tonKhoApp": 558.09,
       "ton": 558.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4820,6 +4986,7 @@
       "tonKhoApp": 707.72,
       "ton": 707.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4839,6 +5006,7 @@
       "tonKhoApp": 19816.24,
       "ton": 19816.24,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4858,6 +5026,7 @@
       "tonKhoApp": 18037.94,
       "ton": 18037.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4877,6 +5046,7 @@
       "tonKhoApp": 18990.4,
       "ton": 18990.4,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4896,6 +5066,7 @@
       "tonKhoApp": 22274.7,
       "ton": 22274.7,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4915,6 +5086,7 @@
       "tonKhoApp": 3712.0,
       "ton": 3712.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4934,6 +5106,7 @@
       "tonKhoApp": 20254.98,
       "ton": 20254.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4953,6 +5126,7 @@
       "tonKhoApp": 4510.9,
       "ton": 4510.9,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4972,6 +5146,7 @@
       "tonKhoApp": 732.39,
       "ton": 732.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -4991,6 +5166,7 @@
       "tonKhoApp": 40.0,
       "ton": 40.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5010,6 +5186,7 @@
       "tonKhoApp": 2625.39,
       "ton": 2625.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5029,6 +5206,7 @@
       "tonKhoApp": 10279.64,
       "ton": 10279.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5048,6 +5226,7 @@
       "tonKhoApp": 4220.58,
       "ton": 4220.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5067,6 +5246,7 @@
       "tonKhoApp": 43197.29,
       "ton": 43197.29,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5083,7 +5263,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5100,7 +5281,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5120,6 +5302,7 @@
       "tonKhoApp": 47376.58,
       "ton": 47376.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5139,6 +5322,7 @@
       "tonKhoApp": 370565.53,
       "ton": 370565.53,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5158,6 +5342,7 @@
       "tonKhoApp": 9.13,
       "ton": 9.13,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5177,6 +5362,7 @@
       "tonKhoApp": -12.88,
       "ton": -12.88,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5196,6 +5382,7 @@
       "tonKhoApp": 6423.69,
       "ton": 6423.69,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5215,6 +5402,7 @@
       "tonKhoApp": 3025.0,
       "ton": 3025.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5234,6 +5422,7 @@
       "tonKhoApp": 3993.02,
       "ton": 3993.02,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     }
   ],
@@ -5252,7 +5441,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5272,6 +5462,7 @@
       "tonKhoApp": 63831.79,
       "ton": 63831.79,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5291,6 +5482,7 @@
       "tonKhoApp": 1209.0,
       "ton": 1209.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5307,7 +5499,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5327,6 +5520,7 @@
       "tonKhoApp": 5377.1,
       "ton": 5377.1,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5346,6 +5540,7 @@
       "tonKhoApp": -6111.74,
       "ton": -6111.74,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5365,6 +5560,7 @@
       "tonKhoApp": 5038.39,
       "ton": 5038.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5381,7 +5577,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5401,6 +5598,7 @@
       "tonKhoApp": 6021.16,
       "ton": 6021.16,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5417,7 +5615,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5437,6 +5636,7 @@
       "tonKhoApp": 27914.54,
       "ton": 27914.54,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5453,7 +5653,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5470,7 +5671,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5487,7 +5689,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5504,7 +5707,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5521,7 +5725,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5541,6 +5746,7 @@
       "tonKhoApp": 2297.12,
       "ton": 2297.12,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5564,6 +5770,7 @@
       "tonKhoApp": 390.64,
       "ton": 390.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5583,6 +5790,7 @@
       "tonKhoApp": 499.59,
       "ton": 499.59,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5602,6 +5810,7 @@
       "tonKhoApp": 37723.14,
       "ton": 37723.14,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5621,6 +5830,7 @@
       "tonKhoApp": 25644.35,
       "ton": 25644.35,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5640,6 +5850,7 @@
       "tonKhoApp": 18297.95,
       "ton": 18297.95,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5656,7 +5867,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5676,6 +5888,7 @@
       "tonKhoApp": 33573.94,
       "ton": 33573.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5695,6 +5908,7 @@
       "tonKhoApp": 13195.87,
       "ton": 13195.87,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5714,6 +5928,7 @@
       "tonKhoApp": 48193.03,
       "ton": 48193.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5733,6 +5948,7 @@
       "tonKhoApp": 19021.18,
       "ton": 19021.18,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5752,6 +5968,7 @@
       "tonKhoApp": 14158.06,
       "ton": 14158.06,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5771,6 +5988,7 @@
       "tonKhoApp": 15242.09,
       "ton": 15242.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5790,6 +6008,7 @@
       "tonKhoApp": 69615.47,
       "ton": 69615.47,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5809,6 +6028,7 @@
       "tonKhoApp": 66.38,
       "ton": 66.38,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5828,6 +6048,7 @@
       "tonKhoApp": 4138.03,
       "ton": 4138.03,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5847,6 +6068,7 @@
       "tonKhoApp": 262.85,
       "ton": 262.85,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5866,6 +6088,7 @@
       "tonKhoApp": 2708.86,
       "ton": 2708.86,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5882,7 +6105,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -5902,6 +6126,7 @@
       "tonKhoApp": 21824.66,
       "ton": 21824.66,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5921,6 +6146,7 @@
       "tonKhoApp": 4972.0,
       "ton": 4972.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5940,6 +6166,7 @@
       "tonKhoApp": 17171.72,
       "ton": 17171.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5959,6 +6186,7 @@
       "tonKhoApp": 18954.98,
       "ton": 18954.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5978,6 +6206,7 @@
       "tonKhoApp": 558.09,
       "ton": 558.09,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -5997,6 +6226,7 @@
       "tonKhoApp": 707.72,
       "ton": 707.72,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6016,6 +6246,7 @@
       "tonKhoApp": 19816.24,
       "ton": 19816.24,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6035,6 +6266,7 @@
       "tonKhoApp": 18037.94,
       "ton": 18037.94,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6054,6 +6286,7 @@
       "tonKhoApp": 18990.4,
       "ton": 18990.4,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6073,6 +6306,7 @@
       "tonKhoApp": 22274.7,
       "ton": 22274.7,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6092,6 +6326,7 @@
       "tonKhoApp": 3712.0,
       "ton": 3712.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6111,6 +6346,7 @@
       "tonKhoApp": 20254.98,
       "ton": 20254.98,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6130,6 +6366,7 @@
       "tonKhoApp": 4510.9,
       "ton": 4510.9,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6149,6 +6386,7 @@
       "tonKhoApp": 732.39,
       "ton": 732.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6168,6 +6406,7 @@
       "tonKhoApp": 40.0,
       "ton": 40.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6187,6 +6426,7 @@
       "tonKhoApp": 2625.39,
       "ton": 2625.39,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6206,6 +6446,7 @@
       "tonKhoApp": 10279.64,
       "ton": 10279.64,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6225,6 +6466,7 @@
       "tonKhoApp": 4220.58,
       "ton": 4220.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6244,6 +6486,7 @@
       "tonKhoApp": 43197.29,
       "ton": 43197.29,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6260,7 +6503,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -6277,7 +6521,8 @@
       "tonKho": 0,
       "tonKhoApp": 0,
       "ton": 0,
-      "isPlaceholder": true,
+      "isPlaceholder": false,
+      "emptyWarehouse": true,
       "hasStock": false
     },
     {
@@ -6297,6 +6542,7 @@
       "tonKhoApp": 47376.58,
       "ton": 47376.58,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6316,6 +6562,7 @@
       "tonKhoApp": 370565.53,
       "ton": 370565.53,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6335,6 +6582,7 @@
       "tonKhoApp": 9.13,
       "ton": 9.13,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6354,6 +6602,7 @@
       "tonKhoApp": -12.88,
       "ton": -12.88,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6373,6 +6622,7 @@
       "tonKhoApp": 6423.69,
       "ton": 6423.69,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6392,6 +6642,7 @@
       "tonKhoApp": 3025.0,
       "ton": 3025.0,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     },
     {
@@ -6411,6 +6662,7 @@
       "tonKhoApp": 3993.02,
       "ton": 3993.02,
       "isPlaceholder": false,
+      "emptyWarehouse": false,
       "hasStock": true
     }
   ],
