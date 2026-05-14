@@ -1,612 +1,402 @@
 {
   "ok": true,
   "meta": {
-    "source": "TTCO_DIRECT_DB_APP_PERIOD",
-    "database": "TTCO_THONGKE",
-    "masterDatabase": "TTCO_QTHT",
-    "version": "strict-v18-driver-auto-detect",
-    "updatedAt": "2026-05-14 13:44:46",
+    "version": "V22_DB_REBUILD_V21_1",
+    "source": "TTCO_DB_REBUILD_V21_1",
+    "updatedAt": "2026-05-14 15:36:21",
+    "period": {
+      "NamHT": 2026,
+      "ThangTu": 5,
+      "ThangDen": 5
+    },
     "NamHT": 2026,
     "ThangTu": 5,
     "ThangDen": 5,
-    "rowCount": 62,
-    "sourceRawRowCount": 80,
-    "warningCount": 5,
-    "totalTon": 1182941.65,
-    "tonFieldMode": "TTCO_APP_PERIOD",
-    "formula": "TonKho_App = TonDK current month + SUM(NhapTK current month) - SUM(XuatTK current month)",
-    "principleFile": "docs/NGUYEN_TAC_TTCO_APP_PERIOD.md",
-    "appJsonUrl": "https://tuyen1102.github.io/my-ai-site/data/ton_kho_latest.json"
+    "rowCount": 66,
+    "rawRowCount": 105,
+    "auditRowCount": 105,
+    "warningCount": 22,
+    "removedRowCount": 22,
+    "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
+    "filters": [
+      "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
+      "Exclude ZERO_ALL_FIELDS",
+      "Exclude Kho 32 | Cám 8C after manual validation"
+    ],
+    "kho1Validation": {
+      "found": true,
+      "expected": {
+        "MaKho": "01",
+        "MaThan": "B11c",
+        "TenThan": "Cục xô 1c",
+        "TonDK": 509.95,
+        "NhapTK": 7409.0,
+        "XuatTK": 7094.8,
+        "TonCK": 824.15
+      },
+      "actual": {
+        "kho": "Kho 1",
+        "coal": "Cục xô 1c",
+        "TonDK": 509.95,
+        "NhapTK": 7409.0,
+        "XuatTK": 7094.8,
+        "ton": 824.15,
+        "ttcoApp": 824.15,
+        "MaKhoRawList": [
+          "01"
+        ],
+        "MaThanList": [
+          "B11C"
+        ],
+        "TenThanGocList": [
+          "Cục xô 1c (Ak 17,01 - 22%)"
+        ],
+        "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      "diffTonCK": 0.0,
+      "ok": true
+    }
   },
   "data": [
     {
-      "MaKho": "1",
-      "TenKho": "Kho 1",
       "kho": "Kho 1",
-      "MaThan": "B11C",
-      "TenThan": "Cục xô 1c",
       "coal": "Cục xô 1c",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 509.95,
-      "NhapTK": 2146.0,
-      "XuatTK": 1984.2,
-      "TonCK": 671.75,
-      "TonCK_TToan": 576.88,
-      "TonCuoi_TinhLai": 671.75,
-      "ton": 671.75,
-      "ttcoApp": 671.75,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 7409.0,
+      "XuatTK": 7094.8,
+      "ton": 824.15,
+      "ttcoApp": 824.15,
+      "MaKhoRawList": [
         "01"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B11C"
       ],
-      "TenThanGoc": "Cục xô 1c (Ak 17,01 - 22%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục xô 1c (Ak 17,01 - 22%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "1-T4",
-      "TenKho": "Kho 1-T4",
       "kho": "Kho 1-T4",
-      "MaThan": "11a.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 83251.99,
-      "NhapTK": 66728.0,
-      "XuatTK": 76337.0,
-      "TonCK": 73642.99,
-      "TonCK_TToan": 63831.79,
-      "TonCuoi_TinhLai": 73642.99,
-      "ton": 73642.99,
-      "ttcoApp": 73642.99,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 164366.0,
+      "XuatTK": 170867.0,
+      "ton": 76750.99,
+      "ttcoApp": 76750.99,
+      "MaKhoRawList": [
         "71"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11a.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "1-T4",
-      "TenKho": "Kho 1-T4",
       "kho": "Kho 1-T4",
-      "MaThan": "b11c",
-      "TenThan": "Cục xô 1c",
       "coal": "Cục xô 1c",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 1209.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 1209.0,
-      "TonCK_TToan": 1209.0,
-      "TonCuoi_TinhLai": 1209.0,
       "ton": 1209.0,
       "ttcoApp": 1209.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "71"
       ],
-      "maThanList": [
+      "MaThanList": [
         "b11c"
       ],
-      "TenThanGoc": "Cục xô 1c (Ak 17,01 - 22%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục xô 1c (Ak 17,01 - 22%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "2",
-      "TenKho": "Kho 2",
       "kho": "Kho 2",
-      "MaThan": "5A.1",
-      "TenThan": "Cục 5a.1",
       "coal": "Cục 5a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 7937.86,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 7937.86,
-      "TonCK_TToan": 7937.86,
-      "TonCuoi_TinhLai": 7937.86,
-      "ton": 7937.86,
-      "ttcoApp": 7937.86,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 507.9,
+      "ton": 7429.96,
+      "ttcoApp": 7429.96,
+      "MaKhoRawList": [
         "02"
       ],
-      "maThanList": [
+      "MaThanList": [
         "5A.1"
       ],
-      "TenThanGoc": "Cục 5a.1 (Ak5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục 5a.1 (Ak5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "2-T4",
-      "TenKho": "Kho 2-T4",
       "kho": "Kho 2-T4",
-      "MaThan": "b16.09",
-      "TenThan": "Cục don 8C",
       "coal": "Cục don 8C",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 5027.1,
-      "NhapTK": 350.0,
+      "NhapTK": 2160.0,
       "XuatTK": 0.0,
-      "TonCK": 5377.1,
-      "TonCK_TToan": 5377.1,
-      "TonCuoi_TinhLai": 5377.1,
-      "ton": 5377.1,
-      "ttcoApp": 5377.1,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": 7187.1,
+      "ttcoApp": 7187.1,
+      "MaKhoRawList": [
         "72"
       ],
-      "maThanList": [
+      "MaThanList": [
         "b16.09"
       ],
-      "TenThanGoc": "Cục don 8C",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục don 8C"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "2-T4",
-      "TenKho": "Kho 2-T4",
       "kho": "Kho 2-T4",
-      "MaThan": "00",
-      "TenThan": "Than nguyên khai",
       "coal": "Than nguyên khai",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 6241.77,
-      "NhapTK": 12568.2,
-      "XuatTK": 18259.0,
-      "TonCK": 550.97,
-      "TonCK_TToan": -6111.74,
-      "TonCuoi_TinhLai": 550.97,
-      "ton": 550.97,
-      "ttcoApp": 550.97,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 33012.3,
+      "XuatTK": 39151.0,
+      "ton": 103.07,
+      "ttcoApp": 103.07,
+      "MaKhoRawList": [
         "72"
       ],
-      "maThanList": [
+      "MaThanList": [
         "00"
       ],
-      "TenThanGoc": "Than nguyên khai",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than nguyên khai"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "2-T4",
-      "TenKho": "Kho 2-T4",
       "kho": "Kho 2-T4",
-      "MaThan": "B5.01",
-      "TenThan": "Đá thải",
       "coal": "Đá thải",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 4447.39,
-      "NhapTK": 591.0,
-      "XuatTK": 0.0,
-      "TonCK": 5038.39,
-      "TonCK_TToan": 5038.39,
-      "TonCuoi_TinhLai": 5038.39,
-      "ton": 5038.39,
-      "ttcoApp": 5038.39,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 1776.0,
+      "XuatTK": 2132.67,
+      "ton": 4090.72,
+      "ttcoApp": 4090.72,
+      "MaKhoRawList": [
         "72"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B5.01"
       ],
-      "TenThanGoc": "Đá thải",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Đá thải"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "3",
-      "TenKho": "Kho 3",
       "kho": "Kho 3",
-      "MaThan": "4A.1",
-      "TenThan": "Cục 4a.1",
       "coal": "Cục 4a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 1507.63,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 1507.63,
-      "TonCK_TToan": 1350.76,
-      "TonCuoi_TinhLai": 1507.63,
       "ton": 1507.63,
       "ttcoApp": 1507.63,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "03"
       ],
-      "maThanList": [
+      "MaThanList": [
         "4A.1"
       ],
-      "TenThanGoc": "Cục 4a.1 (Ak 4,00 - 7,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục 4a.1 (Ak 4,00 - 7,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "3-T4",
-      "TenKho": "Kho 3-T4",
       "kho": "Kho 3-T4",
-      "MaThan": "00",
-      "TenThan": "Than nguyên khai",
       "coal": "Than nguyên khai",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 11629.16,
       "NhapTK": 0.0,
-      "XuatTK": 5608.0,
-      "TonCK": 6021.16,
-      "TonCK_TToan": 6021.16,
-      "TonCuoi_TinhLai": 6021.16,
-      "ton": 6021.16,
-      "ttcoApp": 6021.16,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 11279.0,
+      "ton": 350.16,
+      "ttcoApp": 350.16,
+      "MaKhoRawList": [
         "73"
       ],
-      "maThanList": [
+      "MaThanList": [
         "00"
       ],
-      "TenThanGoc": "Than nguyên khai",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than nguyên khai"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "4",
-      "TenKho": "Kho 4",
       "kho": "Kho 4",
-      "MaThan": "4A.1",
-      "TenThan": "Cục 4a.1",
       "coal": "Cục 4a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 11505.17,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 11505.17,
-      "TonCK_TToan": 11465.42,
-      "TonCuoi_TinhLai": 11505.17,
-      "ton": 11505.17,
-      "ttcoApp": 11505.17,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 3291.0,
+      "XuatTK": 1427.5,
+      "ton": 13368.67,
+      "ttcoApp": 13368.67,
+      "MaKhoRawList": [
         "04"
       ],
-      "maThanList": [
+      "MaThanList": [
         "4A.1"
       ],
-      "TenThanGoc": "Cục 4a.1 (Ak 4,00 - 7,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục 4a.1 (Ak 4,00 - 7,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "4-T4",
-      "TenKho": "Kho 4-T4",
       "kho": "Kho 4-T4",
-      "MaThan": "11a.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 27914.54,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 27914.54,
-      "TonCK_TToan": 27914.54,
-      "TonCuoi_TinhLai": 27914.54,
       "ton": 27914.54,
       "ttcoApp": 27914.54,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "74"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11a.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "5",
-      "TenKho": "Kho 5",
       "kho": "Kho 5",
-      "MaThan": "4a.2",
-      "TenThan": "Cục 4a.2",
       "coal": "Cục 4a.2",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 12610.42,
-      "NhapTK": 2403.0,
+      "NhapTK": 3877.0,
       "XuatTK": 6553.9,
-      "TonCK": 8459.52,
-      "TonCK_TToan": 8394.56,
-      "TonCuoi_TinhLai": 8459.52,
-      "ton": 8459.52,
-      "ttcoApp": 8459.52,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": 9933.52,
+      "ttcoApp": 9933.52,
+      "MaKhoRawList": [
         "05"
       ],
-      "maThanList": [
+      "MaThanList": [
         "4a.2"
       ],
-      "TenThanGoc": "Cục 4a.2 (Ak 7,01 - 12,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục 4a.2 (Ak 7,01 - 12,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "6",
-      "TenKho": "Kho 6",
       "kho": "Kho 6",
-      "MaThan": "B11C",
-      "TenThan": "Cục xô 1c",
       "coal": "Cục xô 1c",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 3.52,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 3.52,
-      "TonCK_TToan": 1.54,
-      "TonCuoi_TinhLai": 3.52,
       "ton": 3.52,
       "ttcoApp": 3.52,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "06"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B11C"
       ],
-      "TenThanGoc": "Cục xô 1c (Ak 17,01 - 22%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục xô 1c (Ak 17,01 - 22%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "7",
-      "TenKho": "Kho 7",
       "kho": "Kho 7",
-      "MaThan": "11a.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 7792.84,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 7792.84,
-      "TonCK_TToan": 7792.84,
-      "TonCuoi_TinhLai": 7792.84,
-      "ton": 7792.84,
-      "ttcoApp": 7792.84,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 7691.8,
+      "ton": 101.04,
+      "ttcoApp": 101.04,
+      "MaKhoRawList": [
         "07"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11a.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "8",
-      "TenKho": "Kho 8",
       "kho": "Kho 8",
-      "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 37044.41,
       "NhapTK": 0.0,
-      "XuatTK": 4678.2,
-      "TonCK": 32366.21,
-      "TonCK_TToan": 32366.21,
-      "TonCuoi_TinhLai": 32366.21,
-      "ton": 32366.21,
-      "ttcoApp": 32366.21,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 9224.4,
+      "ton": 27820.01,
+      "ttcoApp": 27820.01,
+      "MaKhoRawList": [
         "08"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11A.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "9",
-      "TenKho": "Kho 9",
       "kho": "Kho 9",
-      "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 11423.71,
-      "NhapTK": 5082.0,
-      "XuatTK": 12999.0,
-      "TonCK": 3506.71,
-      "TonCK_TToan": 2405.38,
-      "TonCuoi_TinhLai": 3506.71,
-      "ton": 3506.71,
-      "ttcoApp": 3506.71,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 31723.0,
+      "XuatTK": 29931.0,
+      "ton": 13215.71,
+      "ttcoApp": 13215.71,
+      "MaKhoRawList": [
         "09"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11A.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "9",
-      "TenKho": "Kho 9",
       "kho": "Kho 9",
-      "MaThan": "11a.247",
-      "TenThan": "Cám 6a.10",
       "coal": "Cám 6a.10",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 8358.0,
       "NhapTK": 668.0,
-      "XuatTK": 4835.0,
-      "TonCK": 4191.0,
-      "TonCK_TToan": 4134.17,
-      "TonCuoi_TinhLai": 4191.0,
-      "ton": 4191.0,
-      "ttcoApp": 4191.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 8875.0,
+      "ton": 151.0,
+      "ttcoApp": 151.0,
+      "MaKhoRawList": [
         "09"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11a.247",
         "11a.248",
         "11a.251"
       ],
-      "TenThanGoc": "Cám 6a.10 (Lào - Tàu Golden Star)",
-      "isGroupedCoal": true,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.10 (Lào - Tàu Golden Star)",
         "Cám 6a.10 (Lào - Tàu VTA Poseidon)",
         "Cám 6a.10 (Lào - Tàu Trường Nguyên Star)"
       ],
-      "groupedCoalCount": 3,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "9",
-      "TenKho": "Kho 9",
       "kho": "Kho 9",
-      "MaThan": "11.250",
-      "TenThan": "Cám 6a.14",
       "coal": "Cám 6a.14",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 4039.55,
-      "NhapTK": 32765.0,
-      "XuatTK": 20341.0,
-      "TonCK": 16463.55,
-      "TonCK_TToan": 16103.57,
-      "TonCuoi_TinhLai": 16463.55,
-      "ton": 16463.55,
-      "ttcoApp": 16463.55,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 71027.0,
+      "XuatTK": 66470.0,
+      "ton": 8596.55,
+      "ttcoApp": 8596.55,
+      "MaKhoRawList": [
         "09"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11.250",
         "11a.241",
         "11a.243",
@@ -614,11 +404,11 @@
         "11a.246",
         "11a.249",
         "11a.253",
-        "11a.254"
+        "11a.254",
+        "11a.255",
+        "11a.256"
       ],
-      "TenThanGoc": "Cám 6a.14 (Úc - Tàu MV Golden Future)",
-      "isGroupedCoal": true,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.14 (Úc - Tàu MV Golden Future)",
         "Cám 6a.14 (Mozambique-Tàu MV Sasebo Glory + Lào-Tàu Việt Thuận 26-02)",
         "Cám 6a.14 (Úc - Tàu MV W - Star)",
@@ -626,1567 +416,935 @@
         "Cám 6a.14 (Lào - Tàu Golden Star + Úc - Tàu Marianne Stoeger 2026)",
         "Cám 6a.14 (Úc - Tàu MV Aom Maria Laura)",
         "Cám 6a.14(Mozambique - Tầu MV Gleamstar)",
-        "Cám 6a.14 (Úc - Tàu MV Bardonnex)"
+        "Cám 6a.14 (Úc - Tàu MV Bardonnex)",
+        "Cám 6a.14 (Úc - Tàu MV Geneva Queen)",
+        "Cám 6a.14 (Úc - Tàu MV Lime Mia)"
       ],
-      "groupedCoalCount": 8,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "9",
-      "TenKho": "Kho 9",
       "kho": "Kho 9",
-      "MaThan": "11B.1",
-      "TenThan": "Cám 6b.1",
       "coal": "Cám 6b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 418.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 418.0,
-      "TonCK_TToan": 193.48,
-      "TonCuoi_TinhLai": 418.0,
       "ton": 418.0,
       "ttcoApp": 418.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "09"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11B.1"
       ],
-      "TenThanGoc": "Cám 6b.1 (Ak40,01 - 45%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6b.1 (Ak40,01 - 45%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "10",
-      "TenKho": "Kho 10",
       "kho": "Kho 10",
-      "MaThan": "10a.1",
-      "TenThan": "Cám 5a.1",
-      "coal": "Cám 5a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "TonDK": 12796.21,
-      "NhapTK": 952.0,
-      "XuatTK": 12248.0,
-      "TonCK": 1500.21,
-      "TonCK_TToan": 2297.12,
-      "TonCuoi_TinhLai": 1500.21,
-      "ton": 1500.21,
-      "ttcoApp": 1500.21,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "coal": "Cám 4b.1",
+      "TonDK": 0.0,
+      "NhapTK": 448.0,
+      "XuatTK": 256.0,
+      "ton": 192.0,
+      "ttcoApp": 192.0,
+      "MaKhoRawList": [
         "10"
       ],
-      "maThanList": [
+      "MaThanList": [
+        "9B.1"
+      ],
+      "TenThanGocList": [
+        "Cám 4b.1 (Ak 23,01 - 27%)"
+      ],
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
+      "kho": "Kho 10",
+      "coal": "Cám 5a.1",
+      "TonDK": 12796.21,
+      "NhapTK": 2585.0,
+      "XuatTK": 14012.0,
+      "ton": 1369.21,
+      "ttcoApp": 1369.21,
+      "MaKhoRawList": [
+        "10"
+      ],
+      "MaThanList": [
         "10a.1"
       ],
-      "TenThanGoc": "Cám 5a.1 (Ak27,01 - 31%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 5a.1 (Ak27,01 - 31%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "10",
-      "TenKho": "Kho 10",
       "kho": "Kho 10",
-      "MaThan": "10a.101",
-      "TenThan": "Cám 5a.14",
       "coal": "Cám 5a.14",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 291.0,
-      "NhapTK": 0.0,
+      "NhapTK": 13169.0,
       "XuatTK": 0.0,
-      "TonCK": 291.0,
-      "TonCK_TToan": 390.64,
-      "TonCuoi_TinhLai": 291.0,
-      "ton": 291.0,
-      "ttcoApp": 291.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": 13460.0,
+      "ttcoApp": 13460.0,
+      "MaKhoRawList": [
         "10"
       ],
-      "maThanList": [
+      "MaThanList": [
         "10a.101",
         "10a.259",
         "10a.262",
         "10a.263",
+        "10a.264",
         "10a.72"
       ],
-      "TenThanGoc": "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
-      "isGroupedCoal": true,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 5a.14 (Úc - Tàu MV MARINE HONESTY)",
         "Cám 5a.14 (Úc - Tàu MV Anglo Alexandria)",
         "Cám 5a.14 (Úc - Tàu MV Krenom)",
         "Cám 5a.14 (Úc - Tàu MV Golden Future)",
+        "Cám 5a.14 (Úc - Tàu MV Geneva Queen)",
         "Cám 5a.14 (Úc - Tàu MV Yue Dian 103)"
       ],
-      "groupedCoalCount": 5,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "10",
-      "TenKho": "Kho 10",
       "kho": "Kho 10",
-      "MaThan": "10B.1",
-      "TenThan": "Cám 5b.1",
       "coal": "Cám 5b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 2711.0,
       "NhapTK": 541.0,
       "XuatTK": 2810.0,
-      "TonCK": 442.0,
-      "TonCK_TToan": 499.59,
-      "TonCuoi_TinhLai": 442.0,
       "ton": 442.0,
       "ttcoApp": 442.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "10"
       ],
-      "maThanList": [
+      "MaThanList": [
         "10B.1"
       ],
-      "TenThanGoc": "Cám 5b.1 (Ak 31,01 - 35%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 5b.1 (Ak 31,01 - 35%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "11",
-      "TenKho": "Kho 11",
       "kho": "Kho 11",
-      "MaThan": "9A.1",
-      "TenThan": "Cám 4a.1",
       "coal": "Cám 4a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 38391.49,
       "NhapTK": 0.0,
-      "XuatTK": 720.0,
-      "TonCK": 37671.49,
-      "TonCK_TToan": 37723.14,
-      "TonCuoi_TinhLai": 37671.49,
-      "ton": 37671.49,
-      "ttcoApp": 37671.49,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 1201.0,
+      "ton": 37190.49,
+      "ttcoApp": 37190.49,
+      "MaKhoRawList": [
         "11"
       ],
-      "maThanList": [
+      "MaThanList": [
         "9A.1"
       ],
-      "TenThanGoc": "Cám 4a.1 (Ak 19,01 - 23,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 4a.1 (Ak 19,01 - 23,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "12",
-      "TenKho": "Kho 12",
       "kho": "Kho 12",
-      "MaThan": "8B.1",
-      "TenThan": "Cám 3b.1",
       "coal": "Cám 3b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 25271.64,
-      "NhapTK": 745.0,
-      "XuatTK": 0.0,
-      "TonCK": 26016.64,
-      "TonCK_TToan": 25644.35,
-      "TonCuoi_TinhLai": 26016.64,
-      "ton": 26016.64,
-      "ttcoApp": 26016.64,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 1439.0,
+      "XuatTK": 13894.0,
+      "ton": 12816.64,
+      "ttcoApp": 12816.64,
+      "MaKhoRawList": [
         "12"
       ],
-      "maThanList": [
+      "MaThanList": [
         "8B.1"
       ],
-      "TenThanGoc": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 3b.1 (Ak 13,01 - 16,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "13",
-      "TenKho": "Kho 13",
       "kho": "Kho 13",
-      "MaThan": "8A.1",
-      "TenThan": "Cám 3a.1",
       "coal": "Cám 3a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 18297.95,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 18297.95,
-      "TonCK_TToan": 18297.95,
-      "TonCuoi_TinhLai": 18297.95,
       "ton": 18297.95,
       "ttcoApp": 18297.95,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "13"
       ],
-      "maThanList": [
+      "MaThanList": [
         "8A.1"
       ],
-      "TenThanGoc": "Cám 3a.1 (Ak 10,01 - 13,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 3a.1 (Ak 10,01 - 13,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "15",
-      "TenKho": "Kho 15",
       "kho": "Kho 15",
-      "MaThan": "5A.1",
-      "TenThan": "Cục 5a.1",
       "coal": "Cục 5a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 32500.8,
-      "NhapTK": 1077.0,
+      "NhapTK": 3880.0,
       "XuatTK": 0.0,
-      "TonCK": 33577.8,
-      "TonCK_TToan": 33573.94,
-      "TonCuoi_TinhLai": 33577.8,
-      "ton": 33577.8,
-      "ttcoApp": 33577.8,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": 36380.8,
+      "ttcoApp": 36380.8,
+      "MaKhoRawList": [
         "15"
       ],
-      "maThanList": [
+      "MaThanList": [
         "5A.1"
       ],
-      "TenThanGoc": "Cục 5a.1 (Ak5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục 5a.1 (Ak5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "16",
-      "TenKho": "Kho 16",
       "kho": "Kho 16",
-      "MaThan": "5A.1",
-      "TenThan": "Cục 5a.1",
       "coal": "Cục 5a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 13252.46,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 13252.46,
-      "TonCK_TToan": 13195.87,
-      "TonCuoi_TinhLai": 13252.46,
-      "ton": 13252.46,
-      "ttcoApp": 13252.46,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 686.0,
+      "ton": 12566.46,
+      "ttcoApp": 12566.46,
+      "MaKhoRawList": [
         "16"
       ],
-      "maThanList": [
+      "MaThanList": [
         "5A.1"
       ],
-      "TenThanGoc": "Cục 5a.1 (Ak5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cục 5a.1 (Ak5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "17",
-      "TenKho": "Kho 17",
       "kho": "Kho 17",
-      "MaThan": "6A.1",
-      "TenThan": "Cám 1",
       "coal": "Cám 1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 46220.05,
-      "NhapTK": 2509.0,
+      "NhapTK": 7347.0,
       "XuatTK": 0.0,
-      "TonCK": 48729.05,
-      "TonCK_TToan": 48193.03,
-      "TonCuoi_TinhLai": 48729.05,
-      "ton": 48729.05,
-      "ttcoApp": 48729.05,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": 53567.05,
+      "ttcoApp": 53567.05,
+      "MaKhoRawList": [
         "17"
       ],
-      "maThanList": [
+      "MaThanList": [
         "6A.1"
       ],
-      "TenThanGoc": "Cám 1 (Ak 5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 1 (Ak 5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "17",
-      "TenKho": "Kho 17",
       "kho": "Kho 17",
-      "MaThan": "7a.1",
-      "TenThan": "Cám 2a.1",
       "coal": "Cám 2a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 22078.6,
-      "NhapTK": 0.0,
+      "NhapTK": 438.0,
       "XuatTK": 2868.0,
-      "TonCK": 19210.6,
-      "TonCK_TToan": 19021.18,
-      "TonCuoi_TinhLai": 19210.6,
-      "ton": 19210.6,
-      "ttcoApp": 19210.6,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": 19648.6,
+      "ttcoApp": 19648.6,
+      "MaKhoRawList": [
         "17"
       ],
-      "maThanList": [
+      "MaThanList": [
         "7a.1"
       ],
-      "TenThanGoc": "Cám 2a.1 (Ak 8,01 - 10,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 2a.1 (Ak 8,01 - 10,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "18",
-      "TenKho": "Kho 18",
       "kho": "Kho 18",
-      "MaThan": "8B.1",
-      "TenThan": "Cám 3b.1",
       "coal": "Cám 3b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 13807.58,
-      "NhapTK": 560.0,
-      "XuatTK": 0.0,
-      "TonCK": 14367.58,
-      "TonCK_TToan": 14158.06,
-      "TonCuoi_TinhLai": 14367.58,
-      "ton": 14367.58,
-      "ttcoApp": 14367.58,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 2288.0,
+      "XuatTK": 8413.0,
+      "ton": 7682.58,
+      "ttcoApp": 7682.58,
+      "MaKhoRawList": [
         "18"
       ],
-      "maThanList": [
+      "MaThanList": [
         "8B.1"
       ],
-      "TenThanGoc": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 3b.1 (Ak 13,01 - 16,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "19",
-      "TenKho": "Kho 19",
       "kho": "Kho 19",
-      "MaThan": "8B.1",
-      "TenThan": "Cám 3b.1",
       "coal": "Cám 3b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 14285.09,
       "NhapTK": 957.0,
       "XuatTK": 0.0,
-      "TonCK": 15242.09,
-      "TonCK_TToan": 15242.09,
-      "TonCuoi_TinhLai": 15242.09,
       "ton": 15242.09,
       "ttcoApp": 15242.09,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "19"
       ],
-      "maThanList": [
+      "MaThanList": [
         "8B.1"
       ],
-      "TenThanGoc": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 3b.1 (Ak 13,01 - 16,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "20",
-      "TenKho": "Kho 20",
       "kho": "Kho 20",
-      "MaThan": "9A.1",
-      "TenThan": "Cám 4a.1",
       "coal": "Cám 4a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 72912.93,
       "NhapTK": 0.0,
-      "XuatTK": 3364.0,
-      "TonCK": 69548.93,
-      "TonCK_TToan": 69615.47,
-      "TonCuoi_TinhLai": 69548.93,
-      "ton": 69548.93,
-      "ttcoApp": 69548.93,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 6356.0,
+      "ton": 66556.93,
+      "ttcoApp": 66556.93,
+      "MaKhoRawList": [
         "20"
       ],
-      "maThanList": [
+      "MaThanList": [
         "9A.1"
       ],
-      "TenThanGoc": "Cám 4a.1 (Ak 19,01 - 23,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 4a.1 (Ak 19,01 - 23,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "20",
-      "TenKho": "Kho 20",
       "kho": "Kho 20",
-      "MaThan": "9B.1",
-      "TenThan": "Cám 4b.1",
       "coal": "Cám 4b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 0.0,
-      "NhapTK": 1549.0,
-      "XuatTK": 1494.0,
-      "TonCK": 55.0,
-      "TonCK_TToan": 66.38,
-      "TonCuoi_TinhLai": 55.0,
-      "ton": 55.0,
-      "ttcoApp": 55.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 9358.0,
+      "XuatTK": 6714.0,
+      "ton": 2644.0,
+      "ttcoApp": 2644.0,
+      "MaKhoRawList": [
         "20"
       ],
-      "maThanList": [
+      "MaThanList": [
         "9B.1"
       ],
-      "TenThanGoc": "Cám 4b.1 (Ak 23,01 - 27%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 4b.1 (Ak 23,01 - 27%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "21",
-      "TenKho": "Kho 21",
       "kho": "Kho 21",
-      "MaThan": "10A.1",
-      "TenThan": "Cám 5a.1",
       "coal": "Cám 5a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 11014.32,
-      "NhapTK": 4526.0,
-      "XuatTK": 12447.0,
-      "TonCK": 3093.32,
-      "TonCK_TToan": 4138.03,
-      "TonCuoi_TinhLai": 3093.32,
-      "ton": 3093.32,
-      "ttcoApp": 3093.32,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 25870.0,
+      "XuatTK": 31942.0,
+      "ton": 4942.32,
+      "ttcoApp": 4942.32,
+      "MaKhoRawList": [
         "21"
       ],
-      "maThanList": [
+      "MaThanList": [
         "10A.1"
       ],
-      "TenThanGoc": "Cám 5a.1 (Ak27,01 - 31%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 5a.1 (Ak27,01 - 31%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "21",
-      "TenKho": "Kho 21",
       "kho": "Kho 21",
-      "MaThan": "10B.1",
-      "TenThan": "Cám 5b.1",
       "coal": "Cám 5b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 3451.44,
-      "NhapTK": 7390.0,
+      "NhapTK": 7412.0,
       "XuatTK": 11122.0,
-      "TonCK": -280.56,
-      "TonCK_TToan": 262.85,
-      "TonCuoi_TinhLai": -280.56,
-      "ton": -280.56,
-      "ttcoApp": -280.56,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "ton": -258.56,
+      "ttcoApp": -258.56,
+      "MaKhoRawList": [
         "21"
       ],
-      "maThanList": [
+      "MaThanList": [
         "10B.1"
       ],
-      "TenThanGoc": "Cám 5b.1 (Ak 31,01 - 35%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 5b.1 (Ak 31,01 - 35%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "21",
-      "TenKho": "Kho 21",
       "kho": "Kho 21",
-      "MaThan": "11A.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 7291.49,
-      "NhapTK": 8314.0,
-      "XuatTK": 12519.0,
-      "TonCK": 3086.49,
-      "TonCK_TToan": 2708.86,
-      "TonCuoi_TinhLai": 3086.49,
-      "ton": 3086.49,
-      "ttcoApp": 3086.49,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 25959.0,
+      "XuatTK": 18437.0,
+      "ton": 14813.49,
+      "ttcoApp": 14813.49,
+      "MaKhoRawList": [
         "21"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11A.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "23",
-      "TenKho": "Kho 23",
       "kho": "Kho 23",
-      "MaThan": "8b.1",
-      "TenThan": "Cám 3b.1",
       "coal": "Cám 3b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 21824.66,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 21824.66,
-      "TonCK_TToan": 21824.66,
-      "TonCuoi_TinhLai": 21824.66,
       "ton": 21824.66,
       "ttcoApp": 21824.66,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "23"
       ],
-      "maThanList": [
+      "MaThanList": [
         "8b.1"
       ],
-      "TenThanGoc": "Cám 3b.1 (Ak 13,01 - 16,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 3b.1 (Ak 13,01 - 16,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "24",
-      "TenKho": "Kho 24",
       "kho": "Kho 24",
-      "MaThan": "11a.1",
-      "TenThan": "Cám 6a.1",
       "coal": "Cám 6a.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 8507.0,
       "NhapTK": 0.0,
-      "XuatTK": 3535.0,
-      "TonCK": 4972.0,
-      "TonCK_TToan": 4972.0,
-      "TonCuoi_TinhLai": 4972.0,
-      "ton": 4972.0,
-      "ttcoApp": 4972.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 4310.0,
+      "ton": 4197.0,
+      "ttcoApp": 4197.0,
+      "MaKhoRawList": [
         "24"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11a.1"
       ],
-      "TenThanGoc": "Cám 6a.1 (Ak 35,01 - 40%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6a.1 (Ak 35,01 - 40%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "25",
-      "TenKho": "Kho 25",
       "kho": "Kho 25",
-      "MaThan": "6a.1",
-      "TenThan": "Cám 1",
       "coal": "Cám 1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 17171.72,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 17171.72,
-      "TonCK_TToan": 17171.72,
-      "TonCuoi_TinhLai": 17171.72,
       "ton": 17171.72,
       "ttcoApp": 17171.72,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "25"
       ],
-      "maThanList": [
+      "MaThanList": [
         "6a.1"
       ],
-      "TenThanGoc": "Cám 1 (Ak 5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 1 (Ak 5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "26",
-      "TenKho": "Kho 26",
       "kho": "Kho 26",
-      "MaThan": "b32d",
-      "TenThan": "Bùn tuyển 3A",
       "coal": "Bùn tuyển 3A",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 17350.98,
-      "NhapTK": 1781.0,
-      "XuatTK": 177.0,
-      "TonCK": 18954.98,
-      "TonCK_TToan": 18954.98,
-      "TonCuoi_TinhLai": 18954.98,
-      "ton": 18954.98,
-      "ttcoApp": 18954.98,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 1948.0,
+      "XuatTK": 4401.0,
+      "ton": 14897.98,
+      "ttcoApp": 14897.98,
+      "MaKhoRawList": [
         "29"
       ],
-      "maThanList": [
+      "MaThanList": [
         "b32d"
       ],
-      "TenThanGoc": "Bùn tuyển 3A",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Bùn tuyển 3A"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "27",
-      "TenKho": "Kho 27",
       "kho": "Kho 27",
-      "MaThan": "b32d",
-      "TenThan": "Bùn tuyển 3A",
       "coal": "Bùn tuyển 3A",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 360.09,
-      "NhapTK": 198.0,
-      "XuatTK": 0.0,
-      "TonCK": 558.09,
-      "TonCK_TToan": 558.09,
-      "TonCuoi_TinhLai": 558.09,
-      "ton": 558.09,
-      "ttcoApp": 558.09,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 14262.0,
+      "XuatTK": 150.0,
+      "ton": 14472.09,
+      "ttcoApp": 14472.09,
+      "MaKhoRawList": [
         "30b"
       ],
-      "maThanList": [
+      "MaThanList": [
         "b32d"
       ],
-      "TenThanGoc": "Bùn tuyển 3A",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Bùn tuyển 3A"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "27",
-      "TenKho": "Kho 27",
       "kho": "Kho 27",
-      "MaThan": "11b.1",
-      "TenThan": "Cám 6b.1",
       "coal": "Cám 6b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 707.72,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 707.72,
-      "TonCK_TToan": 707.72,
-      "TonCuoi_TinhLai": 707.72,
-      "ton": 707.72,
-      "ttcoApp": 707.72,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 105.0,
+      "ton": 602.72,
+      "ttcoApp": 602.72,
+      "MaKhoRawList": [
         "30b"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11b.1"
       ],
-      "TenThanGoc": "Cám 6b.1 (Ak40,01 - 45%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6b.1 (Ak40,01 - 45%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "28",
-      "TenKho": "Kho 28",
       "kho": "Kho 28",
-      "MaThan": "11b.1",
-      "TenThan": "Cám 6b.1",
       "coal": "Cám 6b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 26021.24,
-      "NhapTK": 0.0,
-      "XuatTK": 6205.0,
-      "TonCK": 19816.24,
-      "TonCK_TToan": 19816.24,
-      "TonCuoi_TinhLai": 19816.24,
-      "ton": 19816.24,
-      "ttcoApp": 19816.24,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 134.0,
+      "XuatTK": 6802.0,
+      "ton": 19353.24,
+      "ttcoApp": 19353.24,
+      "MaKhoRawList": [
         "31c"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11b.1"
       ],
-      "TenThanGoc": "Cám 6b.1 (Ak40,01 - 45%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6b.1 (Ak40,01 - 45%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "28-1",
-      "TenKho": "Kho 28-1",
       "kho": "Kho 28-1",
-      "MaThan": "11b.1",
-      "TenThan": "Cám 6b.1",
       "coal": "Cám 6b.1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 17959.94,
-      "NhapTK": 1156.0,
-      "XuatTK": 1078.0,
-      "TonCK": 18037.94,
-      "TonCK_TToan": 18037.94,
-      "TonCuoi_TinhLai": 18037.94,
-      "ton": 18037.94,
-      "ttcoApp": 18037.94,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
-        "31D"
+      "NhapTK": 2912.0,
+      "XuatTK": 2009.0,
+      "ton": 18862.94,
+      "ttcoApp": 18862.94,
+      "MaKhoRawList": [
+        "31d"
       ],
-      "maThanList": [
+      "MaThanList": [
         "11b.1"
       ],
-      "TenThanGoc": "Cám 6b.1 (Ak40,01 - 45%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6b.1 (Ak40,01 - 45%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "29",
-      "TenKho": "Kho 29",
       "kho": "Kho 29",
-      "MaThan": "6a.1",
-      "TenThan": "Cám 1",
       "coal": "Cám 1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 18990.4,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 18990.4,
-      "TonCK_TToan": 18990.4,
-      "TonCuoi_TinhLai": 18990.4,
       "ton": 18990.4,
       "ttcoApp": 18990.4,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "26"
       ],
-      "maThanList": [
+      "MaThanList": [
         "6a.1"
       ],
-      "TenThanGoc": "Cám 1 (Ak 5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 1 (Ak 5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "30",
-      "TenKho": "Kho 30",
       "kho": "Kho 30",
-      "MaThan": "6a.1",
-      "TenThan": "Cám 1",
       "coal": "Cám 1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 22274.7,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 22274.7,
-      "TonCK_TToan": 22274.7,
-      "TonCuoi_TinhLai": 22274.7,
       "ton": 22274.7,
       "ttcoApp": 22274.7,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "27"
       ],
-      "maThanList": [
+      "MaThanList": [
         "6a.1"
       ],
-      "TenThanGoc": "Cám 1 (Ak 5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 1 (Ak 5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "31",
-      "TenKho": "Kho 31",
       "kho": "Kho 31",
-      "MaThan": "B29A",
-      "TenThan": "Cám đá",
       "coal": "Cám đá",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 4332.0,
-      "NhapTK": 400.0,
-      "XuatTK": 1020.0,
-      "TonCK": 3712.0,
-      "TonCK_TToan": 3712.0,
-      "TonCuoi_TinhLai": 3712.0,
-      "ton": 3712.0,
-      "ttcoApp": 3712.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 1700.0,
+      "XuatTK": 3880.0,
+      "ton": 2152.0,
+      "ttcoApp": 2152.0,
+      "MaKhoRawList": [
         "43"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B29A"
       ],
-      "TenThanGoc": "Cám đá",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám đá"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "31",
-      "TenKho": "Kho 31",
       "kho": "Kho 31",
-      "MaThan": "00",
-      "TenThan": "Than nguyên khai",
       "coal": "Than nguyên khai",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 25854.98,
       "NhapTK": 0.0,
-      "XuatTK": 5600.0,
-      "TonCK": 20254.98,
-      "TonCK_TToan": 20254.98,
-      "TonCuoi_TinhLai": 20254.98,
-      "ton": 20254.98,
-      "ttcoApp": 20254.98,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 20600.0,
+      "ton": 5254.98,
+      "ttcoApp": 5254.98,
+      "MaKhoRawList": [
         "43"
       ],
-      "maThanList": [
+      "MaThanList": [
         "00"
       ],
-      "TenThanGoc": "Than nguyên khai",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than nguyên khai"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "32",
-      "TenKho": "Kho 32",
       "kho": "Kho 32",
-      "MaThan": "b32d",
-      "TenThan": "Bùn tuyển 3A",
       "coal": "Bùn tuyển 3A",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 648.9,
-      "NhapTK": 4815.0,
-      "XuatTK": 953.0,
-      "TonCK": 4510.9,
-      "TonCK_TToan": 4510.9,
-      "TonCuoi_TinhLai": 4510.9,
-      "ton": 4510.9,
-      "ttcoApp": 4510.9,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 16588.0,
+      "XuatTK": 13087.0,
+      "ton": 4149.9,
+      "ttcoApp": 4149.9,
+      "MaKhoRawList": [
+        "31b",
         "44"
       ],
-      "maThanList": [
+      "MaThanList": [
+        "B32d",
         "b32d"
       ],
-      "TenThanGoc": "Bùn tuyển 3A",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Bùn tuyển 3A"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "32",
-      "TenKho": "Kho 32",
       "kho": "Kho 32",
-      "MaThan": "b2902",
-      "TenThan": "Cám 6A.1 (sấy)",
       "coal": "Cám 6A.1 (sấy)",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 3440.39,
-      "NhapTK": 2033.0,
-      "XuatTK": 4741.0,
-      "TonCK": 732.39,
-      "TonCK_TToan": 732.39,
-      "TonCuoi_TinhLai": 732.39,
-      "ton": 732.39,
-      "ttcoApp": 732.39,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 7355.0,
+      "XuatTK": 10079.33,
+      "ton": 716.06,
+      "ttcoApp": 716.06,
+      "MaKhoRawList": [
         "44"
       ],
-      "maThanList": [
+      "MaThanList": [
         "b2902"
       ],
-      "TenThanGoc": "Cám 6A.1 (sấy)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 6A.1 (sấy)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "32",
-      "TenKho": "Kho 32",
       "kho": "Kho 32",
-      "MaThan": "B28C",
-      "TenThan": "Cám 8C",
-      "coal": "Cám 8C",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "TonDK": 40.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 40.0,
-      "TonCK_TToan": 40.0,
-      "TonCuoi_TinhLai": 40.0,
-      "ton": 40.0,
-      "ttcoApp": 40.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
-        "31B"
-      ],
-      "maThanList": [
-        "B28C"
-      ],
-      "TenThanGoc": "Cám 8C",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
-        "Cám 8C"
-      ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
-    },
-    {
-      "MaKho": "32",
-      "TenKho": "Kho 32",
-      "kho": "Kho 32",
-      "MaThan": "b29a",
-      "TenThan": "Cám đá",
-      "coal": "Cám đá",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "TonDK": 4229.39,
-      "NhapTK": 700.0,
-      "XuatTK": 2304.0,
-      "TonCK": 2625.39,
-      "TonCK_TToan": 2625.39,
-      "TonCuoi_TinhLai": 2625.39,
-      "ton": 2625.39,
-      "ttcoApp": 2625.39,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "coal": "Cám 6a.1",
+      "TonDK": 0.0,
+      "NhapTK": 169.0,
+      "XuatTK": 169.0,
+      "ton": 0.0,
+      "ttcoApp": 0.0,
+      "MaKhoRawList": [
         "44"
       ],
-      "maThanList": [
+      "MaThanList": [
+        "11a.1"
+      ],
+      "TenThanGocList": [
+        "Cám 6a.1 (Ak 35,01 - 40%)"
+      ],
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
+      "kho": "Kho 32",
+      "coal": "Cám đá",
+      "TonDK": 4229.39,
+      "NhapTK": 5062.0,
+      "XuatTK": 5554.0,
+      "ton": 3737.39,
+      "ttcoApp": 3737.39,
+      "MaKhoRawList": [
+        "44"
+      ],
+      "MaThanList": [
         "b29a"
       ],
-      "TenThanGoc": "Cám đá",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám đá"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "32",
-      "TenKho": "Kho 32",
       "kho": "Kho 32",
-      "MaThan": "00",
-      "TenThan": "Than nguyên khai",
       "coal": "Than nguyên khai",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 17679.25,
-      "NhapTK": 9807.0,
-      "XuatTK": 17206.61,
-      "TonCK": 10279.64,
-      "TonCK_TToan": 10279.64,
-      "TonCuoi_TinhLai": 10279.64,
-      "ton": 10279.64,
-      "ttcoApp": 10279.64,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 34521.0,
+      "XuatTK": 43492.33,
+      "ton": 8707.92,
+      "ttcoApp": 8707.92,
+      "MaKhoRawList": [
         "44"
       ],
-      "maThanList": [
+      "MaThanList": [
         "00"
       ],
-      "TenThanGoc": "Than nguyên khai",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than nguyên khai"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "33",
-      "TenKho": "Kho 33",
       "kho": "Kho 33",
-      "MaThan": "B29a",
-      "TenThan": "Cám đá",
       "coal": "Cám đá",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 2381.78,
-      "NhapTK": 4775.0,
-      "XuatTK": 2936.2,
-      "TonCK": 4220.58,
-      "TonCK_TToan": 4220.58,
-      "TonCuoi_TinhLai": 4220.58,
-      "ton": 4220.58,
-      "ttcoApp": 4220.58,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 10402.0,
+      "XuatTK": 11496.3,
+      "ton": 1287.48,
+      "ttcoApp": 1287.48,
+      "MaKhoRawList": [
         "45"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B29a"
       ],
-      "TenThanGoc": "Cám đá",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám đá"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "34",
-      "TenKho": "Kho 34",
       "kho": "Kho 34",
-      "MaThan": "6a.1",
-      "TenThan": "Cám 1",
       "coal": "Cám 1",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 43197.29,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 43197.29,
-      "TonCK_TToan": 43197.29,
-      "TonCuoi_TinhLai": 43197.29,
       "ton": 43197.29,
       "ttcoApp": 43197.29,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "34A"
       ],
-      "maThanList": [
+      "MaThanList": [
         "6a.1"
       ],
-      "TenThanGoc": "Cám 1 (Ak 5,00 - 8,00%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Cám 1 (Ak 5,00 - 8,00%)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "37",
-      "TenKho": "Kho 37",
       "kho": "Kho 37",
-      "MaThan": "B32d",
-      "TenThan": "Bùn tuyển 3A",
       "coal": "Bùn tuyển 3A",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 52191.58,
       "NhapTK": 0.0,
-      "XuatTK": 4815.0,
-      "TonCK": 47376.58,
-      "TonCK_TToan": 47376.58,
-      "TonCuoi_TinhLai": 47376.58,
-      "ton": 47376.58,
-      "ttcoApp": 47376.58,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 15505.0,
+      "ton": 36686.58,
+      "ttcoApp": 36686.58,
+      "MaKhoRawList": [
         "36"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B32d"
       ],
-      "TenThanGoc": "Bùn tuyển 3A",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Bùn tuyển 3A"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "38",
-      "TenKho": "Kho 38",
       "kho": "Kho 38",
-      "MaThan": "00",
-      "TenThan": "Than nguyên khai",
       "coal": "Than nguyên khai",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 386629.53,
       "NhapTK": 0.0,
-      "XuatTK": 16064.0,
-      "TonCK": 370565.53,
-      "TonCK_TToan": 370565.53,
-      "TonCuoi_TinhLai": 370565.53,
-      "ton": 370565.53,
-      "ttcoApp": 370565.53,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 40315.0,
+      "ton": 346314.53,
+      "ttcoApp": 346314.53,
+      "MaKhoRawList": [
         "46a"
       ],
-      "maThanList": [
+      "MaThanList": [
         "00"
       ],
-      "TenThanGoc": "Than nguyên khai",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than nguyên khai"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "39",
-      "TenKho": "Kho 39",
       "kho": "Kho 39",
-      "MaThan": "NHK.295",
-      "TenThan": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
       "coal": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 643.13,
       "NhapTK": 0.0,
       "XuatTK": 634.0,
-      "TonCK": 9.13,
-      "TonCK_TToan": 9.13,
-      "TonCuoi_TinhLai": 9.13,
       "ton": 9.13,
       "ttcoApp": 9.13,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "28"
       ],
-      "maThanList": [
+      "MaThanList": [
         "NHK.295"
       ],
-      "TenThanGoc": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "39",
-      "TenKho": "Kho 39",
       "kho": "Kho 39",
-      "MaThan": "NHK.296",
-      "TenThan": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
+      "coal": "Than Anthracite Lào Tầu VTA OCEANUS",
+      "TonDK": 0.0,
+      "NhapTK": 3855.48,
+      "XuatTK": 0.0,
+      "ton": 3855.48,
+      "ttcoApp": 3855.48,
+      "MaKhoRawList": [
+        "28"
+      ],
+      "MaThanList": [
+        "NHK.301"
+      ],
+      "TenThanGocList": [
+        "Than Anthracite Lào Tầu VTA OCEANUS"
+      ],
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
+      "kho": "Kho 39",
       "coal": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 5243.59,
       "NhapTK": 4975.84,
       "XuatTK": 10232.31,
-      "TonCK": -12.88,
-      "TonCK_TToan": -12.88,
-      "TonCuoi_TinhLai": -12.88,
       "ton": -12.88,
       "ttcoApp": -12.88,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "MaKhoRawList": [
         "28"
       ],
-      "maThanList": [
+      "MaThanList": [
         "NHK.296"
       ],
-      "TenThanGoc": "Than NK (Mozambique - Tàu MV GLEAMSTAR)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than NK (Mozambique - Tàu MV GLEAMSTAR)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "39",
-      "TenKho": "Kho 39",
       "kho": "Kho 39",
-      "MaThan": "NHK.297",
-      "TenThan": "Than NK (Úc - Tầu MV BARDONNEX)",
+      "coal": "Than NK (Mozambique - Tầu MV MSXT HELEN)",
+      "TonDK": 0.0,
+      "NhapTK": 4909.62,
+      "XuatTK": 0.0,
+      "ton": 4909.62,
+      "ttcoApp": 4909.62,
+      "MaKhoRawList": [
+        "28"
+      ],
+      "MaThanList": [
+        "NHK.300"
+      ],
+      "TenThanGocList": [
+        "Than NK (Mozambique - Tầu MV MSXT HELEN)"
+      ],
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
+      "kho": "Kho 39",
       "coal": "Than NK (Úc - Tầu MV BARDONNEX)",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 0.0,
       "NhapTK": 10369.95,
-      "XuatTK": 3946.26,
-      "TonCK": 6423.69,
-      "TonCK_TToan": 6423.69,
-      "TonCuoi_TinhLai": 6423.69,
-      "ton": 6423.69,
-      "ttcoApp": 6423.69,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "XuatTK": 10272.83,
+      "ton": 97.12,
+      "ttcoApp": 97.12,
+      "MaKhoRawList": [
         "28"
       ],
-      "maThanList": [
+      "MaThanList": [
         "NHK.297"
       ],
-      "TenThanGoc": "Than NK (Úc - Tầu MV BARDONNEX)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Than NK (Úc - Tầu MV BARDONNEX)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "39",
-      "TenKho": "Kho 39",
       "kho": "Kho 39",
-      "MaThan": "NHK.16",
-      "TenThan": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
-      "coal": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
+      "coal": "Than NK (Úc - Tầu MV GENERA QUEEN)",
       "TonDK": 0.0,
-      "NhapTK": 3025.0,
-      "XuatTK": 0.0,
-      "TonCK": 3025.0,
-      "TonCK_TToan": 3025.0,
-      "TonCuoi_TinhLai": 3025.0,
-      "ton": 3025.0,
-      "ttcoApp": 3025.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 14158.71,
+      "XuatTK": 14136.16,
+      "ton": 22.55,
+      "ttcoApp": 22.55,
+      "MaKhoRawList": [
         "28"
       ],
-      "maThanList": [
-        "NHK.16"
+      "MaThanList": [
+        "NHK.298"
       ],
-      "TenThanGoc": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
-        "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
+      "TenThanGocList": [
+        "Than NK (Úc - Tầu MV GENERA QUEEN)"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
     {
-      "MaKho": "40",
-      "TenKho": "Kho 40",
+      "kho": "Kho 39",
+      "coal": "Than NK (Úc - Tầu MV LIME MIA)",
+      "TonDK": 0.0,
+      "NhapTK": 2050.34,
+      "XuatTK": 493.1,
+      "ton": 1557.24,
+      "ttcoApp": 1557.24,
+      "MaKhoRawList": [
+        "28"
+      ],
+      "MaThanList": [
+        "NHK.299"
+      ],
+      "TenThanGocList": [
+        "Than NK (Úc - Tầu MV LIME MIA)"
+      ],
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
       "kho": "Kho 40",
-      "MaThan": "B5.01",
-      "TenThan": "Đá thải",
       "coal": "Đá thải",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
       "TonDK": 10273.19,
-      "NhapTK": 9462.0,
-      "XuatTK": 15742.17,
-      "TonCK": 3993.02,
-      "TonCK_TToan": 3993.02,
-      "TonCuoi_TinhLai": 3993.02,
-      "ton": 3993.02,
-      "ttcoApp": 3993.02,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
+      "NhapTK": 28983.0,
+      "XuatTK": 29800.49,
+      "ton": 9455.7,
+      "ttcoApp": 9455.7,
+      "MaKhoRawList": [
         "60"
       ],
-      "maThanList": [
+      "MaThanList": [
         "B5.01"
       ],
-      "TenThanGoc": "Đá thải",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
+      "TenThanGocList": [
         "Đá thải"
       ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
-    }
-  ],
-  "warnings": [
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "39",
-      "TenKhoDb": "Hồ bùn số 9",
-      "MaThan": "b32e",
-      "TenThanDb": "Bùn tuyển 3B",
-      "TonDK": 21566.8,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK_ThangDen": 21566.8,
-      "TonCK_TToan_ThangDen": 21566.8,
-      "TonCuoi_TinhLai": 21566.8,
-      "TonKho_App": 21566.8,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "K04",
-      "TenKhoDb": "Tuyển 1",
-      "MaThan": "00",
-      "TenThanDb": "Than nguyên khai",
-      "TonDK": 0.0,
-      "NhapTK": 19940.29,
-      "XuatTK": 19526.69,
-      "TonCK_ThangDen": 413.6,
-      "TonCK_TToan_ThangDen": 418.62,
-      "TonCuoi_TinhLai": 413.6,
-      "TonKho_App": 413.6,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "K04",
-      "TenKhoDb": "Tuyển 1",
-      "MaThan": "NHK.297",
-      "TenThanDb": "Than NK (Úc - Tầu MV BARDONNEX)",
-      "TonDK": 0.0,
-      "NhapTK": 3946.26,
-      "XuatTK": 3601.0,
-      "TonCK_ThangDen": 345.26,
-      "TonCK_TToan_ThangDen": 345.26,
-      "TonCuoi_TinhLai": 345.26,
-      "TonKho_App": 345.26,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "k59",
-      "TenKhoDb": "NM Nhiệt điện",
-      "MaThan": "11b.1",
-      "TenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-      "TonDK": 1746.0,
-      "NhapTK": 43506.0,
-      "XuatTK": 40959.0,
-      "TonCK_ThangDen": 4293.0,
-      "TonCK_TToan_ThangDen": 1467.86,
-      "TonCuoi_TinhLai": 4293.0,
-      "TonKho_App": 4293.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "K60",
-      "TenKhoDb": "Ẩm nhiệt điện",
-      "MaThan": "11b.1",
-      "TenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-      "TonDK": 1079.14,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK_ThangDen": 1079.14,
-      "TonCK_TToan_ThangDen": 1079.14,
-      "TonCuoi_TinhLai": 1079.14,
-      "TonKho_App": 1079.14,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
+      "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     }
   ]
 }
