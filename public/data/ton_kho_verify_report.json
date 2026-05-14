@@ -1,153 +1,99 @@
 {
-  "checkedAt": "2026-05-14 13:45:55",
-  "repo": "Tuyen1102/my-ai-site",
-  "branch": "main",
-  "server": "172.16.96.3,52376",
-  "period": {
+  "ok": true,
+  "meta": {
+    "version": "V22_DB_REBUILD_V21_1",
+    "source": "TTCO_DB_REBUILD_V21_1",
+    "updatedAt": "2026-05-14 15:36:21",
+    "period": {
+      "NamHT": 2026,
+      "ThangTu": 5,
+      "ThangDen": 5
+    },
     "NamHT": 2026,
     "ThangTu": 5,
-    "ThangDen": 5
+    "ThangDen": 5,
+    "rowCount": 66,
+    "rawRowCount": 105,
+    "auditRowCount": 105,
+    "warningCount": 22,
+    "removedRowCount": 22,
+    "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
+    "filters": [
+      "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
+      "Exclude ZERO_ALL_FIELDS",
+      "Exclude Kho 32 | Cám 8C after manual validation"
+    ],
+    "kho1Validation": {
+      "found": true,
+      "expected": {
+        "MaKho": "01",
+        "MaThan": "B11c",
+        "TenThan": "Cục xô 1c",
+        "TonDK": 509.95,
+        "NhapTK": 7409.0,
+        "XuatTK": 7094.8,
+        "TonCK": 824.15
+      },
+      "actual": {
+        "kho": "Kho 1",
+        "coal": "Cục xô 1c",
+        "TonDK": 509.95,
+        "NhapTK": 7409.0,
+        "XuatTK": 7094.8,
+        "ton": 824.15,
+        "ttcoApp": 824.15,
+        "MaKhoRawList": [
+          "01"
+        ],
+        "MaThanList": [
+          "B11C"
+        ],
+        "TenThanGocList": [
+          "Cục xô 1c (Ak 17,01 - 22%)"
+        ],
+        "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      "diffTonCK": 0.0,
+      "ok": true
+    }
   },
-  "formula": "TTCO_APP_PERIOD = TonDK_current_month + SUM(NhapTK) - SUM(XuatTK)",
-  "localHash": "c2489829311144720e601e135738bb4680fcdc0b64defddb908fd3fd578332f9",
-  "githubRawApiHash": "c2489829311144720e601e135738bb4680fcdc0b64defddb908fd3fd578332f9",
-  "githubRawApiEqualsDbJson": true,
-  "githubPagesHash": "c2489829311144720e601e135738bb4680fcdc0b64defddb908fd3fd578332f9",
-  "githubPagesEqualsDbJson": true,
-  "appJsonUrl": "https://tuyen1102.github.io/my-ai-site/data/ton_kho_latest.json",
-  "appPatched": true,
-  "principleFile": "docs/NGUYEN_TAC_TTCO_APP_PERIOD.md",
-  "kho1Rows": [
-    {
-      "MaKho": "1",
-      "TenKho": "Kho 1",
-      "kho": "Kho 1",
-      "MaThan": "B11C",
-      "TenThan": "Cục xô 1c",
-      "coal": "Cục xô 1c",
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "TonDK": 509.95,
-      "NhapTK": 2146.0,
-      "XuatTK": 1984.2,
-      "TonCK": 671.75,
-      "TonCK_TToan": 576.88,
-      "TonCuoi_TinhLai": 671.75,
-      "ton": 671.75,
-      "ttcoApp": 671.75,
-      "TonFieldUsed": "TTCO_APP_PERIOD",
-      "rawMaKhoList": [
-        "01"
-      ],
-      "maThanList": [
-        "B11C"
-      ],
-      "TenThanGoc": "Cục xô 1c (Ak 17,01 - 22%)",
-      "isGroupedCoal": false,
-      "groupedCoalNames": [
-        "Cục xô 1c (Ak 17,01 - 22%)"
-      ],
-      "groupedCoalCount": 1,
-      "sourceFormula": "STRICT_V18 TTCO_APP_PERIOD = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK); auto current year/month"
-    }
-  ],
-  "warningsCount": 5,
-  "warningsPreview": [
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "39",
-      "TenKhoDb": "Hồ bùn số 9",
-      "MaThan": "b32e",
-      "TenThanDb": "Bùn tuyển 3B",
-      "TonDK": 21566.8,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK_ThangDen": 21566.8,
-      "TonCK_TToan_ThangDen": 21566.8,
-      "TonCuoi_TinhLai": 21566.8,
-      "TonKho_App": 21566.8,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
+  "checks": {
+    "kho1": {
+      "found": true,
+      "expected": {
+        "MaKho": "01",
+        "MaThan": "B11c",
+        "TenThan": "Cục xô 1c",
+        "TonDK": 509.95,
+        "NhapTK": 7409.0,
+        "XuatTK": 7094.8,
+        "TonCK": 824.15
+      },
+      "actual": {
+        "kho": "Kho 1",
+        "coal": "Cục xô 1c",
+        "TonDK": 509.95,
+        "NhapTK": 7409.0,
+        "XuatTK": 7094.8,
+        "ton": 824.15,
+        "ttcoApp": 824.15,
+        "MaKhoRawList": [
+          "01"
+        ],
+        "MaThanList": [
+          "B11C"
+        ],
+        "TenThanGocList": [
+          "Cục xô 1c (Ak 17,01 - 22%)"
+        ],
+        "sourceFormula": "V22_DB_REBUILD_V21_1: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      "diffTonCK": 0.0,
+      "ok": true
     },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "K04",
-      "TenKhoDb": "Tuyển 1",
-      "MaThan": "00",
-      "TenThanDb": "Than nguyên khai",
-      "TonDK": 0.0,
-      "NhapTK": 19940.29,
-      "XuatTK": 19526.69,
-      "TonCK_ThangDen": 413.6,
-      "TonCK_TToan_ThangDen": 418.62,
-      "TonCuoi_TinhLai": 413.6,
-      "TonKho_App": 413.6,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "K04",
-      "TenKhoDb": "Tuyển 1",
-      "MaThan": "NHK.297",
-      "TenThanDb": "Than NK (Úc - Tầu MV BARDONNEX)",
-      "TonDK": 0.0,
-      "NhapTK": 3946.26,
-      "XuatTK": 3601.0,
-      "TonCK_ThangDen": 345.26,
-      "TonCK_TToan_ThangDen": 345.26,
-      "TonCuoi_TinhLai": 345.26,
-      "TonKho_App": 345.26,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "k59",
-      "TenKhoDb": "NM Nhiệt điện",
-      "MaThan": "11b.1",
-      "TenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-      "TonDK": 1746.0,
-      "NhapTK": 43506.0,
-      "XuatTK": 40959.0,
-      "TonCK_ThangDen": 4293.0,
-      "TonCK_TToan_ThangDen": 1467.86,
-      "TonCuoi_TinhLai": 4293.0,
-      "TonKho_App": 4293.0,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    },
-    {
-      "NamHT": 2026,
-      "ThangTu": 5,
-      "ThangDen": 5,
-      "MaKho": "K60",
-      "TenKhoDb": "Ẩm nhiệt điện",
-      "MaThan": "11b.1",
-      "TenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
-      "TonDK": 1079.14,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK_ThangDen": 1079.14,
-      "TonCK_TToan_ThangDen": 1079.14,
-      "TonCuoi_TinhLai": 1079.14,
-      "TonKho_App": 1079.14,
-      "TonFieldUsed": "TTCO_APP_PERIOD=TonDK_ThangHienTai+SUM(NhapTK)-SUM(XuatTK)",
-      "type": "UNMAPPED_OR_BLOCKED_KHO",
-      "reason": "Mã kho chưa mapping hoặc bị chặn để tránh map sai Kho 39."
-    }
-  ]
+    "hasData": true,
+    "noUnmappedInMain": true,
+    "noZeroAllInMain": true,
+    "noKho32Cam8C": true
+  }
 }
