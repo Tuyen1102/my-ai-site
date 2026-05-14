@@ -123,6 +123,19 @@ Kho 32 | Cám 8C
 
 Các dòng có `TonDK = 0`, `Nhập = 0`, `Xuất = 0`, `Tồn cuối = 0` bị loại khỏi bảng tồn kho chính.
 
+### 7.3. Sửa lỗi Kho 39 V23
+
+Đối với Kho 39, các dòng than nhập khẩu có mã `NHK.*` phải được giữ và truyền đủ metadata vào JSON:
+
+```text
+coalCode
+MaThan
+rawKhoCode
+sourceFix = KHO39_NHK_DETAIL
+```
+
+Lý do: app web có logic lọc dòng hiển thị; nếu tên than nhập khẩu không có dấu ngoặc, ví dụ `Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR`, nhưng JSON không có `coalCode = NHK.*`, app có thể không nhận là dòng than nhập khẩu chi tiết.
+
 ---
 
 ## 8. Nguyên tắc mapping kho
