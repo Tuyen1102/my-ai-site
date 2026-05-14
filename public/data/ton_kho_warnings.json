@@ -11,14 +11,14 @@
     "TonCK_TToan": 10002.02,
     "TonCuoi_TinhLai": 10002.02,
     "TonDaChon": 10002.02,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "",
     "TenKhoDb": "",
-    "MaThan": "B29a",
+    "MaThan": "B29A",
     "TenThanDb": "Cám đá",
     "TonDK": 0.0,
     "NhapTK": 315.0,
@@ -27,7 +27,7 @@
     "TonCK_TToan": -20.0,
     "TonCuoi_TinhLai": -20.0,
     "TonDaChon": -20.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -43,7 +43,7 @@
     "TonCK_TToan": -713.0,
     "TonCuoi_TinhLai": -713.0,
     "TonDaChon": -713.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -58,8 +58,8 @@
     "TonCK": -60.1,
     "TonCK_TToan": 369.59,
     "TonCuoi_TinhLai": -60.1,
-    "TonDaChon": 369.59,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -60.1,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -75,14 +75,14 @@
     "TonCK_TToan": 13735.27,
     "TonCuoi_TinhLai": 13735.27,
     "TonDaChon": 13735.27,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "31",
     "TenKhoDb": "Kho số 28",
-    "MaThan": "A31b.1",
+    "MaThan": "A31B.1",
     "TenThanDb": "Than bùn 1b.1 (Ak 31,01 - 35%)",
     "TonDK": 195219.62,
     "NhapTK": 44124.2,
@@ -90,8 +90,8 @@
     "TonCK": 162672.06,
     "TonCK_TToan": 164552.16,
     "TonCuoi_TinhLai": 162672.06,
-    "TonDaChon": 164552.16,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 162672.06,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -107,7 +107,7 @@
     "TonCK_TToan": 300.0,
     "TonCuoi_TinhLai": 300.0,
     "TonDaChon": 300.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -123,7 +123,7 @@
     "TonCK_TToan": 1933.0,
     "TonCuoi_TinhLai": 1933.0,
     "TonDaChon": 1933.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -138,8 +138,8 @@
     "TonCK": 6153.83,
     "TonCK_TToan": 10836.12,
     "TonCuoi_TinhLai": 6153.83,
-    "TonDaChon": 10836.12,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 6153.83,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -154,15 +154,15 @@
     "TonCK": 24462.39,
     "TonCK_TToan": 24512.01,
     "TonCuoi_TinhLai": 24462.39,
-    "TonDaChon": 24512.01,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 24462.39,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "32",
     "TenKhoDb": "Kho than bùn số 1",
-    "MaThan": "A31b.1",
+    "MaThan": "A31B.1",
     "TenThanDb": "Than bùn 1b.1 (Ak 31,01 - 35%)",
     "TonDK": 92.1,
     "NhapTK": 1357.4,
@@ -170,8 +170,8 @@
     "TonCK": 92.1,
     "TonCK_TToan": 272.69,
     "TonCuoi_TinhLai": 92.1,
-    "TonDaChon": 272.69,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 92.1,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -187,7 +187,7 @@
     "TonCK_TToan": 9343.78,
     "TonCuoi_TinhLai": 9343.78,
     "TonDaChon": 9343.78,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -202,8 +202,8 @@
     "TonCK": 22558.78,
     "TonCK_TToan": 46345.25,
     "TonCuoi_TinhLai": 22558.78,
-    "TonDaChon": 46345.25,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 22558.78,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -218,8 +218,8 @@
     "TonCK": 8069.13,
     "TonCK_TToan": 10256.41,
     "TonCuoi_TinhLai": 8069.13,
-    "TonDaChon": 10256.41,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 8069.13,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -235,14 +235,14 @@
     "TonCK_TToan": 5576.41,
     "TonCuoi_TinhLai": 5576.41,
     "TonDaChon": 5576.41,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "33",
     "TenKhoDb": "Kho số 2b (kho tạm)",
-    "MaThan": "A31B.1",
+    "MaThan": "A31b.1",
     "TenThanDb": "Than bùn 1b.1 (Ak 31,01 - 35%)",
     "TonDK": 104.0,
     "NhapTK": 1434.1,
@@ -250,15 +250,15 @@
     "TonCK": 21.0,
     "TonCK_TToan": 187.4,
     "TonCuoi_TinhLai": 21.0,
-    "TonDaChon": 187.4,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 21.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "33",
     "TenKhoDb": "Kho số 2b (kho tạm)",
-    "MaThan": "b32B",
+    "MaThan": "B32B",
     "TenThanDb": "Bùn tuyển 2B (Ak 31,01 - 35%)",
     "TonDK": 28482.6,
     "NhapTK": 10815.8,
@@ -266,15 +266,15 @@
     "TonCK": 27487.9,
     "TonCK_TToan": 28185.16,
     "TonCuoi_TinhLai": 27487.9,
-    "TonDaChon": 28185.16,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 27487.9,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "34",
     "TenKhoDb": "Kho than bùn số 3",
-    "MaThan": "A31b.1",
+    "MaThan": "A31B.1",
     "TenThanDb": "Than bùn 1b.1 (Ak 31,01 - 35%)",
     "TonDK": 4923.0,
     "NhapTK": 135288.41,
@@ -282,8 +282,8 @@
     "TonCK": -1732.19,
     "TonCK_TToan": 11119.2,
     "TonCuoi_TinhLai": -1732.19,
-    "TonDaChon": 11119.2,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -1732.19,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -299,14 +299,14 @@
     "TonCK_TToan": 5040.0,
     "TonCuoi_TinhLai": 5040.0,
     "TonDaChon": 5040.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "34",
     "TenKhoDb": "Kho than bùn số 3",
-    "MaThan": "B32B",
+    "MaThan": "b32b",
     "TenThanDb": "Bùn tuyển 2B (Ak 31,01 - 35%)",
     "TonDK": 242177.6,
     "NhapTK": 171108.68,
@@ -314,15 +314,15 @@
     "TonCK": 197586.53,
     "TonCK_TToan": 207149.83,
     "TonCuoi_TinhLai": 197586.53,
-    "TonDaChon": 207149.83,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 197586.53,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "34",
     "TenKhoDb": "Kho than bùn số 3",
-    "MaThan": "B32d",
+    "MaThan": "b32d",
     "TenThanDb": "Bùn tuyển 3A",
     "TonDK": 554642.54,
     "NhapTK": 1445447.69,
@@ -330,8 +330,8 @@
     "TonCK": 499801.12,
     "TonCK_TToan": 603938.06,
     "TonCuoi_TinhLai": 499801.12,
-    "TonDaChon": 603938.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 499801.12,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -346,8 +346,8 @@
     "TonCK": 94100.48,
     "TonCK_TToan": 92122.23,
     "TonCuoi_TinhLai": 94100.48,
-    "TonDaChon": 92122.23,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 94100.48,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -363,7 +363,7 @@
     "TonCK_TToan": 112524.0,
     "TonCuoi_TinhLai": 112524.0,
     "TonDaChon": 112524.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -379,7 +379,7 @@
     "TonCK_TToan": 23931.74,
     "TonCuoi_TinhLai": 23931.74,
     "TonDaChon": 23931.74,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -395,7 +395,7 @@
     "TonCK_TToan": 16332.02,
     "TonCuoi_TinhLai": 16332.02,
     "TonDaChon": 16332.02,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -411,7 +411,7 @@
     "TonCK_TToan": 14457.06,
     "TonCuoi_TinhLai": 14457.06,
     "TonDaChon": 14457.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -427,7 +427,7 @@
     "TonCK_TToan": 11277.5,
     "TonCuoi_TinhLai": 11277.5,
     "TonDaChon": 11277.5,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -443,7 +443,7 @@
     "TonCK_TToan": 25327.56,
     "TonCuoi_TinhLai": 25327.56,
     "TonDaChon": 25327.56,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -459,7 +459,7 @@
     "TonCK_TToan": 12370.88,
     "TonCuoi_TinhLai": 12370.88,
     "TonDaChon": 12370.88,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -475,7 +475,7 @@
     "TonCK_TToan": 24746.7,
     "TonCuoi_TinhLai": 24746.7,
     "TonDaChon": 24746.7,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -491,7 +491,7 @@
     "TonCK_TToan": 31407.51,
     "TonCuoi_TinhLai": 31407.51,
     "TonDaChon": 31407.51,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -507,7 +507,7 @@
     "TonCK_TToan": 9718.32,
     "TonCuoi_TinhLai": 9718.32,
     "TonDaChon": 9718.32,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -523,7 +523,7 @@
     "TonCK_TToan": 7044.06,
     "TonCuoi_TinhLai": 7044.06,
     "TonDaChon": 7044.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -539,7 +539,7 @@
     "TonCK_TToan": 15224.91,
     "TonCuoi_TinhLai": 15224.91,
     "TonDaChon": 15224.91,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -555,7 +555,7 @@
     "TonCK_TToan": 25031.04,
     "TonCuoi_TinhLai": 25031.04,
     "TonDaChon": 25031.04,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -571,7 +571,7 @@
     "TonCK_TToan": 8651.1,
     "TonCuoi_TinhLai": 8651.1,
     "TonDaChon": 8651.1,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -587,7 +587,7 @@
     "TonCK_TToan": 1078.77,
     "TonCuoi_TinhLai": 1078.77,
     "TonDaChon": 1078.77,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -603,7 +603,7 @@
     "TonCK_TToan": 2656.22,
     "TonCuoi_TinhLai": 2656.22,
     "TonDaChon": 2656.22,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -619,7 +619,7 @@
     "TonCK_TToan": 6131.46,
     "TonCuoi_TinhLai": 6131.46,
     "TonDaChon": 6131.46,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -635,7 +635,7 @@
     "TonCK_TToan": 64242.96,
     "TonCuoi_TinhLai": 64242.96,
     "TonDaChon": 64242.96,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -651,7 +651,7 @@
     "TonCK_TToan": 53735.87,
     "TonCuoi_TinhLai": 53735.87,
     "TonDaChon": 53735.87,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -667,7 +667,7 @@
     "TonCK_TToan": 49654.25,
     "TonCuoi_TinhLai": 49654.25,
     "TonDaChon": 49654.25,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -683,7 +683,7 @@
     "TonCK_TToan": 37306.43,
     "TonCuoi_TinhLai": 37306.43,
     "TonDaChon": 37306.43,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -699,7 +699,7 @@
     "TonCK_TToan": 73411.9,
     "TonCuoi_TinhLai": 73411.9,
     "TonDaChon": 73411.9,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -715,7 +715,7 @@
     "TonCK_TToan": 45989.76,
     "TonCuoi_TinhLai": 45989.76,
     "TonDaChon": 45989.76,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -731,7 +731,7 @@
     "TonCK_TToan": 36544.14,
     "TonCuoi_TinhLai": 36544.14,
     "TonDaChon": 36544.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -747,7 +747,7 @@
     "TonCK_TToan": 55695.82,
     "TonCuoi_TinhLai": 55695.82,
     "TonDaChon": 55695.82,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -763,7 +763,7 @@
     "TonCK_TToan": 73871.28,
     "TonCuoi_TinhLai": 73871.28,
     "TonDaChon": 73871.28,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -779,7 +779,7 @@
     "TonCK_TToan": 57671.34,
     "TonCuoi_TinhLai": 57671.34,
     "TonDaChon": 57671.34,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -795,7 +795,7 @@
     "TonCK_TToan": 61319.16,
     "TonCuoi_TinhLai": 61319.16,
     "TonDaChon": 61319.16,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -811,7 +811,7 @@
     "TonCK_TToan": 53638.45,
     "TonCuoi_TinhLai": 53638.45,
     "TonDaChon": 53638.45,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -827,7 +827,7 @@
     "TonCK_TToan": 51877.45,
     "TonCuoi_TinhLai": 51877.45,
     "TonDaChon": 51877.45,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -843,7 +843,7 @@
     "TonCK_TToan": 38461.92,
     "TonCuoi_TinhLai": 38461.92,
     "TonDaChon": 38461.92,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -859,7 +859,7 @@
     "TonCK_TToan": 48946.35,
     "TonCuoi_TinhLai": 48946.35,
     "TonDaChon": 48946.35,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -875,7 +875,7 @@
     "TonCK_TToan": 58465.74,
     "TonCuoi_TinhLai": 58465.74,
     "TonDaChon": 58465.74,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -891,7 +891,7 @@
     "TonCK_TToan": 44452.56,
     "TonCuoi_TinhLai": 44452.56,
     "TonDaChon": 44452.56,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -907,7 +907,7 @@
     "TonCK_TToan": 2766.48,
     "TonCuoi_TinhLai": 2766.48,
     "TonDaChon": 2766.48,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -923,7 +923,7 @@
     "TonCK_TToan": 4773.26,
     "TonCuoi_TinhLai": 4773.26,
     "TonDaChon": 4773.26,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -939,7 +939,7 @@
     "TonCK_TToan": 4049.46,
     "TonCuoi_TinhLai": 4049.46,
     "TonDaChon": 4049.46,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -954,8 +954,8 @@
     "TonCK": 187384.48,
     "TonCK_TToan": 187285.5,
     "TonCuoi_TinhLai": 187384.48,
-    "TonDaChon": 187285.5,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 187384.48,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -971,7 +971,7 @@
     "TonCK_TToan": 24688.98,
     "TonCuoi_TinhLai": 24688.98,
     "TonDaChon": 24688.98,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -987,7 +987,7 @@
     "TonCK_TToan": 26908.09,
     "TonCuoi_TinhLai": 26908.09,
     "TonDaChon": 26908.09,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1002,8 +1002,8 @@
     "TonCK": 149612.17,
     "TonCK_TToan": 149752.06,
     "TonCuoi_TinhLai": 149612.17,
-    "TonDaChon": 149752.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 149612.17,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1019,7 +1019,7 @@
     "TonCK_TToan": 35762.33,
     "TonCuoi_TinhLai": 35762.33,
     "TonDaChon": 35762.33,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1035,7 +1035,7 @@
     "TonCK_TToan": 89229.7,
     "TonCuoi_TinhLai": 89229.7,
     "TonDaChon": 89229.7,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1050,8 +1050,8 @@
     "TonCK": 199411.74,
     "TonCK_TToan": 199511.72,
     "TonCuoi_TinhLai": 199411.74,
-    "TonDaChon": 199511.72,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 199411.74,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1067,14 +1067,14 @@
     "TonCK_TToan": 58029.95,
     "TonCuoi_TinhLai": 58029.95,
     "TonDaChon": 58029.95,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "37",
     "TenKhoDb": "Kho bùn số 8",
-    "MaThan": "A31b.1",
+    "MaThan": "A31B.1",
     "TenThanDb": "Than bùn 1b.1 (Ak 31,01 - 35%)",
     "TonDK": 10.4,
     "NhapTK": 32326.8,
@@ -1082,8 +1082,8 @@
     "TonCK": -1148.8,
     "TonCK_TToan": 1229.35,
     "TonCuoi_TinhLai": -1148.8,
-    "TonDaChon": 1229.35,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -1148.8,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1098,8 +1098,8 @@
     "TonCK": 107130.8,
     "TonCK_TToan": 109877.8,
     "TonCuoi_TinhLai": 107130.8,
-    "TonDaChon": 109877.8,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 107130.8,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1115,7 +1115,7 @@
     "TonCK_TToan": 182599.8,
     "TonCuoi_TinhLai": 182599.8,
     "TonDaChon": 182599.8,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1131,7 +1131,7 @@
     "TonCK_TToan": 13202.1,
     "TonCuoi_TinhLai": 13202.1,
     "TonDaChon": 13202.1,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1146,8 +1146,8 @@
     "TonCK": 439939.8,
     "TonCK_TToan": 444140.09,
     "TonCuoi_TinhLai": 439939.8,
-    "TonDaChon": 444140.09,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 439939.8,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1162,8 +1162,8 @@
     "TonCK": 1593068.76,
     "TonCK_TToan": 1593104.74,
     "TonCuoi_TinhLai": 1593068.76,
-    "TonDaChon": 1593104.74,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 1593068.76,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1178,8 +1178,8 @@
     "TonCK": 356159.3,
     "TonCK_TToan": 368029.57,
     "TonCuoi_TinhLai": 356159.3,
-    "TonDaChon": 368029.57,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 356159.3,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1194,8 +1194,8 @@
     "TonCK": 909438.34,
     "TonCK_TToan": 918237.94,
     "TonCuoi_TinhLai": 909438.34,
-    "TonDaChon": 918237.94,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 909438.34,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1210,8 +1210,8 @@
     "TonCK": 278289.2,
     "TonCK_TToan": 287822.52,
     "TonCuoi_TinhLai": 278289.2,
-    "TonDaChon": 287822.52,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 278289.2,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1226,8 +1226,8 @@
     "TonCK": 900140.75,
     "TonCK_TToan": 902175.14,
     "TonCuoi_TinhLai": 900140.75,
-    "TonDaChon": 902175.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 900140.75,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1242,8 +1242,8 @@
     "TonCK": 391341.8,
     "TonCK_TToan": 402843.08,
     "TonCuoi_TinhLai": 391341.8,
-    "TonDaChon": 402843.08,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 391341.8,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1259,7 +1259,7 @@
     "TonCK_TToan": 654365.18,
     "TonCuoi_TinhLai": 654365.18,
     "TonDaChon": 654365.18,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1275,7 +1275,7 @@
     "TonCK_TToan": 9785895.65,
     "TonCuoi_TinhLai": 9785895.65,
     "TonDaChon": 9785895.65,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1291,7 +1291,7 @@
     "TonCK_TToan": 871204.13,
     "TonCuoi_TinhLai": 871204.13,
     "TonDaChon": 871204.13,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1307,7 +1307,7 @@
     "TonCK_TToan": 21127739.42,
     "TonCuoi_TinhLai": 21127739.42,
     "TonDaChon": 21127739.42,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1323,7 +1323,7 @@
     "TonCK_TToan": 156208.0,
     "TonCuoi_TinhLai": 156208.0,
     "TonDaChon": 156208.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1339,7 +1339,7 @@
     "TonCK_TToan": 990.0,
     "TonCuoi_TinhLai": 990.0,
     "TonDaChon": 990.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1354,15 +1354,15 @@
     "TonCK": 10144.0,
     "TonCK_TToan": -12854.87,
     "TonCuoi_TinhLai": 10144.0,
-    "TonDaChon": -12854.87,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 10144.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "10A.3",
+    "MaThan": "10a.3",
     "TenThanDb": "Cám 5a.3 (Ak27,01 - 31%)",
     "TonDK": 2147.0,
     "NhapTK": 251759.63,
@@ -1371,12 +1371,12 @@
     "TonCK_TToan": 2147.0,
     "TonCuoi_TinhLai": 2147.0,
     "TonDaChon": 2147.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "K04",
+    "MaKho": "k04",
     "TenKhoDb": "Tuyển 1",
     "MaThan": "11a.4",
     "TenThanDb": "Cám 6a.4 (Ak 35,01 - 40%)",
@@ -1386,8 +1386,8 @@
     "TonCK": 2238.0,
     "TonCK_TToan": 2245.97,
     "TonCuoi_TinhLai": 2238.0,
-    "TonDaChon": 2245.97,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 2238.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1403,7 +1403,7 @@
     "TonCK_TToan": 25922.0,
     "TonCuoi_TinhLai": 25922.0,
     "TonDaChon": 25922.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1418,8 +1418,8 @@
     "TonCK": 0.0,
     "TonCK_TToan": -0.41,
     "TonCuoi_TinhLai": 0.0,
-    "TonDaChon": -0.41,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 0.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1434,8 +1434,8 @@
     "TonCK": 154.71,
     "TonCK_TToan": 133.06,
     "TonCuoi_TinhLai": 154.71,
-    "TonDaChon": 133.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 154.71,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1450,15 +1450,15 @@
     "TonCK": 0.0,
     "TonCK_TToan": -0.24,
     "TonCuoi_TinhLai": 0.0,
-    "TonDaChon": -0.24,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 0.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "B2902",
+    "MaThan": "b2902",
     "TenThanDb": "Cám 6A.1 (sấy)",
     "TonDK": 0.0,
     "NhapTK": 13403.0,
@@ -1466,8 +1466,8 @@
     "TonCK": 0.0,
     "TonCK_TToan": 268.0,
     "TonCuoi_TinhLai": 0.0,
-    "TonDaChon": 268.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 0.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1483,7 +1483,7 @@
     "TonCK_TToan": -218098.52,
     "TonCuoi_TinhLai": -218098.52,
     "TonDaChon": -218098.52,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1499,7 +1499,7 @@
     "TonCK_TToan": 10944.0,
     "TonCuoi_TinhLai": 10944.0,
     "TonDaChon": 10944.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1515,7 +1515,7 @@
     "TonCK_TToan": 91204.0,
     "TonCuoi_TinhLai": 91204.0,
     "TonDaChon": 91204.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1531,7 +1531,7 @@
     "TonCK_TToan": 226.0,
     "TonCuoi_TinhLai": 226.0,
     "TonDaChon": 226.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1547,7 +1547,7 @@
     "TonCK_TToan": 1719.0,
     "TonCuoi_TinhLai": 1719.0,
     "TonDaChon": 1719.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1563,7 +1563,7 @@
     "TonCK_TToan": 563.56,
     "TonCuoi_TinhLai": 563.56,
     "TonDaChon": 563.56,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1579,7 +1579,7 @@
     "TonCK_TToan": 444.56,
     "TonCuoi_TinhLai": 444.56,
     "TonDaChon": 444.56,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1595,7 +1595,7 @@
     "TonCK_TToan": 645.0,
     "TonCuoi_TinhLai": 645.0,
     "TonDaChon": 645.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1611,7 +1611,7 @@
     "TonCK_TToan": 84.0,
     "TonCuoi_TinhLai": 84.0,
     "TonDaChon": 84.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1627,7 +1627,7 @@
     "TonCK_TToan": 300.36,
     "TonCuoi_TinhLai": 300.36,
     "TonDaChon": 300.36,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1643,7 +1643,7 @@
     "TonCK_TToan": 285.81,
     "TonCuoi_TinhLai": 285.81,
     "TonDaChon": 285.81,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1659,7 +1659,7 @@
     "TonCK_TToan": -754.0,
     "TonCuoi_TinhLai": -754.0,
     "TonDaChon": -754.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1675,7 +1675,7 @@
     "TonCK_TToan": 316.91,
     "TonCuoi_TinhLai": 316.91,
     "TonDaChon": 316.91,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1691,7 +1691,7 @@
     "TonCK_TToan": 432.56,
     "TonCuoi_TinhLai": 432.56,
     "TonDaChon": 432.56,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1707,7 +1707,7 @@
     "TonCK_TToan": 383.0,
     "TonCuoi_TinhLai": 383.0,
     "TonDaChon": 383.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1723,14 +1723,14 @@
     "TonCK_TToan": 702.92,
     "TonCuoi_TinhLai": 702.92,
     "TonDaChon": 702.92,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "nhk.15",
+    "MaThan": "NHK.15",
     "TenThanDb": "Than NK (Úc - Tàu AGRI WARRIOR)",
     "TonDK": -320.0,
     "NhapTK": 53389.12,
@@ -1739,7 +1739,7 @@
     "TonCK_TToan": -320.0,
     "TonCuoi_TinhLai": -320.0,
     "TonDaChon": -320.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1755,7 +1755,7 @@
     "TonCK_TToan": 718.61,
     "TonCuoi_TinhLai": 718.61,
     "TonDaChon": 718.61,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1771,7 +1771,7 @@
     "TonCK_TToan": 791.03,
     "TonCuoi_TinhLai": 791.03,
     "TonDaChon": 791.03,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1787,7 +1787,7 @@
     "TonCK_TToan": -146.0,
     "TonCuoi_TinhLai": -146.0,
     "TonDaChon": -146.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1803,7 +1803,7 @@
     "TonCK_TToan": 271.71,
     "TonCuoi_TinhLai": 271.71,
     "TonDaChon": 271.71,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1819,7 +1819,7 @@
     "TonCK_TToan": 595.0,
     "TonCuoi_TinhLai": 595.0,
     "TonDaChon": 595.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1835,7 +1835,7 @@
     "TonCK_TToan": -481.0,
     "TonCuoi_TinhLai": -481.0,
     "TonDaChon": -481.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1851,7 +1851,7 @@
     "TonCK_TToan": 281.0,
     "TonCuoi_TinhLai": 281.0,
     "TonDaChon": 281.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1867,7 +1867,7 @@
     "TonCK_TToan": 298.0,
     "TonCuoi_TinhLai": 298.0,
     "TonDaChon": 298.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1883,7 +1883,7 @@
     "TonCK_TToan": 724.21,
     "TonCuoi_TinhLai": 724.21,
     "TonDaChon": 724.21,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1899,7 +1899,7 @@
     "TonCK_TToan": 292.04,
     "TonCuoi_TinhLai": 292.04,
     "TonDaChon": 292.04,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1915,7 +1915,7 @@
     "TonCK_TToan": -50.0,
     "TonCuoi_TinhLai": -50.0,
     "TonDaChon": -50.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1931,7 +1931,7 @@
     "TonCK_TToan": 266.0,
     "TonCuoi_TinhLai": 266.0,
     "TonDaChon": 266.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1947,7 +1947,7 @@
     "TonCK_TToan": 913.0,
     "TonCuoi_TinhLai": 913.0,
     "TonDaChon": 913.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1963,7 +1963,7 @@
     "TonCK_TToan": -722.48,
     "TonCuoi_TinhLai": -722.48,
     "TonDaChon": -722.48,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1979,7 +1979,7 @@
     "TonCK_TToan": 522.68,
     "TonCuoi_TinhLai": 522.68,
     "TonDaChon": 522.68,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -1995,7 +1995,7 @@
     "TonCK_TToan": 310.29,
     "TonCuoi_TinhLai": 310.29,
     "TonDaChon": 310.29,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2011,7 +2011,7 @@
     "TonCK_TToan": 235.0,
     "TonCuoi_TinhLai": 235.0,
     "TonDaChon": 235.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2027,7 +2027,7 @@
     "TonCK_TToan": 345.26,
     "TonCuoi_TinhLai": 345.26,
     "TonDaChon": 345.26,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2043,14 +2043,14 @@
     "TonCK_TToan": -316.0,
     "TonCuoi_TinhLai": -316.0,
     "TonDaChon": -316.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "nhk.33",
+    "MaThan": "NHK.33",
     "TenThanDb": "Than NK (Nga - Tàu DAIWAN WISDOM)",
     "TonDK": 255.0,
     "NhapTK": 28638.4,
@@ -2059,7 +2059,7 @@
     "TonCK_TToan": 255.0,
     "TonCuoi_TinhLai": 255.0,
     "TonDaChon": 255.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2075,7 +2075,7 @@
     "TonCK_TToan": -1992.0,
     "TonCuoi_TinhLai": -1992.0,
     "TonDaChon": -1992.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2091,7 +2091,7 @@
     "TonCK_TToan": 82.0,
     "TonCuoi_TinhLai": 82.0,
     "TonDaChon": 82.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2107,14 +2107,14 @@
     "TonCK_TToan": 398.3,
     "TonCuoi_TinhLai": 398.3,
     "TonDaChon": 398.3,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "nhk.55",
+    "MaThan": "NHK.55",
     "TenThanDb": "Than NK (Úc - Tàu CL Dayang He)",
     "TonDK": 338.0,
     "NhapTK": 32401.8,
@@ -2123,7 +2123,7 @@
     "TonCK_TToan": 338.0,
     "TonCuoi_TinhLai": 338.0,
     "TonDaChon": 338.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2139,14 +2139,14 @@
     "TonCK_TToan": 531.9,
     "TonCuoi_TinhLai": 531.9,
     "TonDaChon": 531.9,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "nhk.77",
+    "MaThan": "NHK.77",
     "TenThanDb": "Than NK (Úc - Tàu Star Antares)",
     "TonDK": 513.0,
     "NhapTK": 25180.94,
@@ -2155,14 +2155,14 @@
     "TonCK_TToan": 513.0,
     "TonCuoi_TinhLai": 513.0,
     "TonDaChon": 513.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K04",
     "TenKhoDb": "Tuyển 1",
-    "MaThan": "nhk.79",
+    "MaThan": "NHK.79",
     "TenThanDb": "Than NK (Úc - Tàu Federal Takase)",
     "TonDK": 1387.52,
     "NhapTK": 54164.65,
@@ -2171,7 +2171,7 @@
     "TonCK_TToan": 1387.52,
     "TonCuoi_TinhLai": 1387.52,
     "TonDaChon": 1387.52,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2187,7 +2187,7 @@
     "TonCK_TToan": 925.0,
     "TonCuoi_TinhLai": 925.0,
     "TonDaChon": 925.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2203,7 +2203,7 @@
     "TonCK_TToan": 755.0,
     "TonCuoi_TinhLai": 755.0,
     "TonDaChon": 755.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2219,7 +2219,7 @@
     "TonCK_TToan": 648.2,
     "TonCuoi_TinhLai": 648.2,
     "TonDaChon": 648.2,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2235,7 +2235,7 @@
     "TonCK_TToan": 515.6,
     "TonCuoi_TinhLai": 515.6,
     "TonDaChon": 515.6,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2251,7 +2251,7 @@
     "TonCK_TToan": 561.04,
     "TonCuoi_TinhLai": 561.04,
     "TonDaChon": 561.04,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2267,7 +2267,7 @@
     "TonCK_TToan": 185.7,
     "TonCuoi_TinhLai": 185.7,
     "TonDaChon": 185.7,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2283,7 +2283,7 @@
     "TonCK_TToan": 629.21,
     "TonCuoi_TinhLai": 629.21,
     "TonDaChon": 629.21,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2299,7 +2299,7 @@
     "TonCK_TToan": 51.96,
     "TonCuoi_TinhLai": 51.96,
     "TonDaChon": 51.96,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2315,7 +2315,7 @@
     "TonCK_TToan": 749.48,
     "TonCuoi_TinhLai": 749.48,
     "TonDaChon": 749.48,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2331,7 +2331,7 @@
     "TonCK_TToan": 950.03,
     "TonCuoi_TinhLai": 950.03,
     "TonDaChon": 950.03,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2347,7 +2347,7 @@
     "TonCK_TToan": 280.67,
     "TonCuoi_TinhLai": 280.67,
     "TonDaChon": 280.67,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2363,7 +2363,7 @@
     "TonCK_TToan": 320.25,
     "TonCuoi_TinhLai": 320.25,
     "TonDaChon": 320.25,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2379,7 +2379,7 @@
     "TonCK_TToan": 576.36,
     "TonCuoi_TinhLai": 576.36,
     "TonDaChon": 576.36,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2395,7 +2395,7 @@
     "TonCK_TToan": 781.5,
     "TonCuoi_TinhLai": 781.5,
     "TonDaChon": 781.5,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2410,8 +2410,8 @@
     "TonCK": -76.51,
     "TonCK_TToan": -45802.51,
     "TonCuoi_TinhLai": -76.51,
-    "TonDaChon": -45802.51,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -76.51,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2427,14 +2427,14 @@
     "TonCK_TToan": 112678.0,
     "TonCuoi_TinhLai": 112678.0,
     "TonDaChon": 112678.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K05",
     "TenKhoDb": "Tuyển 2",
-    "MaThan": "B29a",
+    "MaThan": "B29A",
     "TenThanDb": "Cám đá",
     "TonDK": 0.0,
     "NhapTK": 2540.0,
@@ -2443,14 +2443,14 @@
     "TonCK_TToan": -1619.0,
     "TonCuoi_TinhLai": -1619.0,
     "TonDaChon": -1619.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K05",
     "TenKhoDb": "Tuyển 2",
-    "MaThan": "b29b",
+    "MaThan": "B29B",
     "TenThanDb": "Bã sàng nguyên khai",
     "TonDK": 24300.0,
     "NhapTK": 258746.44,
@@ -2458,8 +2458,8 @@
     "TonCK": 26730.0,
     "TonCK_TToan": 26830.0,
     "TonCuoi_TinhLai": 26730.0,
-    "TonDaChon": 26830.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 26730.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2475,7 +2475,7 @@
     "TonCK_TToan": -3012.0,
     "TonCuoi_TinhLai": -3012.0,
     "TonDaChon": -3012.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2491,12 +2491,12 @@
     "TonCK_TToan": 5891.0,
     "TonCuoi_TinhLai": 5891.0,
     "TonDaChon": 5891.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k06",
+    "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
     "MaThan": "00",
     "TenThanDb": "Than nguyên khai",
@@ -2506,8 +2506,8 @@
     "TonCK": -3561.11,
     "TonCK_TToan": -10021.76,
     "TonCuoi_TinhLai": -3561.11,
-    "TonDaChon": -10021.76,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -3561.11,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2522,15 +2522,15 @@
     "TonCK": 350.0,
     "TonCK_TToan": 244.54,
     "TonCuoi_TinhLai": 350.0,
-    "TonDaChon": 244.54,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 350.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k06",
+    "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "11a.4",
+    "MaThan": "11A.4",
     "TenThanDb": "Cám 6a.4 (Ak 35,01 - 40%)",
     "TonDK": 85.0,
     "NhapTK": 119132.72,
@@ -2538,15 +2538,15 @@
     "TonCK": 85.0,
     "TonCK_TToan": 510.0,
     "TonCuoi_TinhLai": 85.0,
-    "TonDaChon": 510.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 85.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "11b.1",
+    "MaThan": "11B.1",
     "TenThanDb": "Cám 6b.1 (Ak40,01 - 45%)",
     "TonDK": 317.2,
     "NhapTK": 221358.8,
@@ -2555,7 +2555,7 @@
     "TonCK_TToan": 318.3,
     "TonCuoi_TinhLai": 318.3,
     "TonDaChon": 318.3,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2570,8 +2570,8 @@
     "TonCK": 4915.0,
     "TonCK_TToan": 5509.0,
     "TonCuoi_TinhLai": 4915.0,
-    "TonDaChon": 5509.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 4915.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2586,13 +2586,13 @@
     "TonCK": 746.44,
     "TonCK_TToan": -3140.76,
     "TonCuoi_TinhLai": 746.44,
-    "TonDaChon": -3140.76,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 746.44,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k06",
+    "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
     "MaThan": "B28A",
     "TenThanDb": "Cám 8A (Ak 60,01-65%)",
@@ -2602,8 +2602,8 @@
     "TonCK": 0.0,
     "TonCK_TToan": 11.36,
     "TonCuoi_TinhLai": 0.0,
-    "TonDaChon": 11.36,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 0.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2619,14 +2619,14 @@
     "TonCK_TToan": 1900.0,
     "TonCuoi_TinhLai": 1900.0,
     "TonDaChon": 1900.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "b2901",
+    "MaThan": "B2901",
     "TenThanDb": "Cám 5B.1 (sấy)",
     "TonDK": 0.0,
     "NhapTK": 268747.87,
@@ -2634,15 +2634,15 @@
     "TonCK": 0.0,
     "TonCK_TToan": 3917.0,
     "TonCuoi_TinhLai": 0.0,
-    "TonDaChon": 3917.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 0.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "B2902",
+    "MaThan": "b2902",
     "TenThanDb": "Cám 6A.1 (sấy)",
     "TonDK": 1340.03,
     "NhapTK": 1401180.25,
@@ -2651,7 +2651,7 @@
     "TonCK_TToan": 1340.03,
     "TonCuoi_TinhLai": 1340.03,
     "TonDaChon": 1340.03,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2667,7 +2667,7 @@
     "TonCK_TToan": 8055.0,
     "TonCuoi_TinhLai": 8055.0,
     "TonDaChon": 8055.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2683,7 +2683,7 @@
     "TonCK_TToan": 2127.0,
     "TonCuoi_TinhLai": 2127.0,
     "TonDaChon": 2127.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2699,7 +2699,7 @@
     "TonCK_TToan": 17653.0,
     "TonCuoi_TinhLai": 17653.0,
     "TonDaChon": 17653.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2715,7 +2715,7 @@
     "TonCK_TToan": 31106.0,
     "TonCuoi_TinhLai": 31106.0,
     "TonDaChon": 31106.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2731,7 +2731,7 @@
     "TonCK_TToan": 380.0,
     "TonCuoi_TinhLai": 380.0,
     "TonDaChon": 380.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2747,7 +2747,7 @@
     "TonCK_TToan": 55.0,
     "TonCuoi_TinhLai": 55.0,
     "TonDaChon": 55.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2763,7 +2763,7 @@
     "TonCK_TToan": 1467.0,
     "TonCuoi_TinhLai": 1467.0,
     "TonDaChon": 1467.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2779,7 +2779,7 @@
     "TonCK_TToan": 4176.0,
     "TonCuoi_TinhLai": 4176.0,
     "TonDaChon": 4176.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2795,7 +2795,7 @@
     "TonCK_TToan": 8811.0,
     "TonCuoi_TinhLai": 8811.0,
     "TonDaChon": 8811.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2811,7 +2811,7 @@
     "TonCK_TToan": 4347.0,
     "TonCuoi_TinhLai": 4347.0,
     "TonDaChon": 4347.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2826,15 +2826,15 @@
     "TonCK": 1214.69,
     "TonCK_TToan": -830.31,
     "TonCuoi_TinhLai": 1214.69,
-    "TonDaChon": -830.31,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 1214.69,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "B29c",
+    "MaThan": "b29c",
     "TenThanDb": "Than Ng.khai xúc dọn",
     "TonDK": 97.0,
     "NhapTK": 791.2,
@@ -2843,7 +2843,7 @@
     "TonCK_TToan": 194.0,
     "TonCuoi_TinhLai": 194.0,
     "TonDaChon": 194.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2859,7 +2859,7 @@
     "TonCK_TToan": -199.97,
     "TonCuoi_TinhLai": -199.97,
     "TonDaChon": -199.97,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2875,7 +2875,7 @@
     "TonCK_TToan": 25868.0,
     "TonCuoi_TinhLai": 25868.0,
     "TonDaChon": 25868.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2891,7 +2891,7 @@
     "TonCK_TToan": 2245.0,
     "TonCuoi_TinhLai": 2245.0,
     "TonDaChon": 2245.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2907,7 +2907,7 @@
     "TonCK_TToan": 14238.0,
     "TonCuoi_TinhLai": 14238.0,
     "TonDaChon": 14238.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2923,7 +2923,7 @@
     "TonCK_TToan": 17089.0,
     "TonCuoi_TinhLai": 17089.0,
     "TonDaChon": 17089.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2939,7 +2939,7 @@
     "TonCK_TToan": 9464.0,
     "TonCuoi_TinhLai": 9464.0,
     "TonDaChon": 9464.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2955,14 +2955,14 @@
     "TonCK_TToan": -120.0,
     "TonCuoi_TinhLai": -120.0,
     "TonDaChon": -120.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "nhk.02",
+    "MaThan": "NHK.02",
     "TenThanDb": "Than NK +15 (Nga -Tàu BULKER ARIES)",
     "TonDK": -2461.0,
     "NhapTK": 5683.01,
@@ -2971,7 +2971,7 @@
     "TonCK_TToan": -8144.0,
     "TonCuoi_TinhLai": -8144.0,
     "TonDaChon": -8144.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -2987,12 +2987,12 @@
     "TonCK_TToan": -2575.0,
     "TonCuoi_TinhLai": -2575.0,
     "TonDaChon": -2575.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k06",
+    "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
     "MaThan": "NHK.06",
     "TenThanDb": "Than NK +15 (Úc - Tàu KMARIN OSLO)",
@@ -3003,7 +3003,7 @@
     "TonCK_TToan": -14261.0,
     "TonCuoi_TinhLai": -14261.0,
     "TonDaChon": -14261.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3019,7 +3019,7 @@
     "TonCK_TToan": -10840.0,
     "TonCuoi_TinhLai": -10840.0,
     "TonDaChon": -10840.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3035,7 +3035,7 @@
     "TonCK_TToan": -9464.0,
     "TonCuoi_TinhLai": -9464.0,
     "TonDaChon": -9464.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3051,7 +3051,7 @@
     "TonCK_TToan": 236.98,
     "TonCuoi_TinhLai": 236.98,
     "TonDaChon": 236.98,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3067,14 +3067,14 @@
     "TonCK_TToan": -8055.0,
     "TonCuoi_TinhLai": -8055.0,
     "TonDaChon": -8055.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "nhk.135",
+    "MaThan": "NHK.135",
     "TenThanDb": "Than NK (Mozambique - Tàu MV MARAN INNOVATION)",
     "TonDK": 653.0,
     "NhapTK": 2733.7,
@@ -3083,7 +3083,7 @@
     "TonCK_TToan": 653.0,
     "TonCuoi_TinhLai": 653.0,
     "TonDaChon": 653.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3099,14 +3099,14 @@
     "TonCK_TToan": -2127.0,
     "TonCuoi_TinhLai": -2127.0,
     "TonDaChon": -2127.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "nhk.16",
+    "MaThan": "NHK.16",
     "TenThanDb": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
     "TonDK": -8614.0,
     "NhapTK": 7782.0,
@@ -3115,7 +3115,7 @@
     "TonCK_TToan": -17915.0,
     "TonCuoi_TinhLai": -17915.0,
     "TonDaChon": -17915.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3131,7 +3131,7 @@
     "TonCK_TToan": -31106.0,
     "TonCuoi_TinhLai": -31106.0,
     "TonDaChon": -31106.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3147,7 +3147,7 @@
     "TonCK_TToan": -380.0,
     "TonCuoi_TinhLai": -380.0,
     "TonDaChon": -380.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3163,7 +3163,7 @@
     "TonCK_TToan": -55.0,
     "TonCuoi_TinhLai": -55.0,
     "TonDaChon": -55.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3179,7 +3179,7 @@
     "TonCK_TToan": -1467.0,
     "TonCuoi_TinhLai": -1467.0,
     "TonDaChon": -1467.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3195,7 +3195,7 @@
     "TonCK_TToan": -1240.0,
     "TonCuoi_TinhLai": -1240.0,
     "TonDaChon": -1240.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3211,7 +3211,7 @@
     "TonCK_TToan": -4176.0,
     "TonCuoi_TinhLai": -4176.0,
     "TonDaChon": -4176.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3227,7 +3227,7 @@
     "TonCK_TToan": -8811.0,
     "TonCuoi_TinhLai": -8811.0,
     "TonDaChon": -8811.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3243,14 +3243,14 @@
     "TonCK_TToan": -4347.0,
     "TonCuoi_TinhLai": -4347.0,
     "TonDaChon": -4347.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K06",
     "TenKhoDb": "Tuyển 3",
-    "MaThan": "nhk.98",
+    "MaThan": "NHK.98",
     "TenThanDb": "Than NK (Úc - Tàu MV Cape Miron)",
     "TonDK": 333.87,
     "NhapTK": 19106.79,
@@ -3259,7 +3259,7 @@
     "TonCK_TToan": 333.87,
     "TonCuoi_TinhLai": 333.87,
     "TonDaChon": 333.87,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3275,7 +3275,7 @@
     "TonCK_TToan": 564.93,
     "TonCuoi_TinhLai": 564.93,
     "TonDaChon": 564.93,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3290,8 +3290,8 @@
     "TonCK": -10002.02,
     "TonCK_TToan": -10065.96,
     "TonCuoi_TinhLai": -10002.02,
-    "TonDaChon": -10065.96,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -10002.02,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3306,8 +3306,8 @@
     "TonCK": -2.2,
     "TonCK_TToan": 2.13,
     "TonCuoi_TinhLai": -2.2,
-    "TonDaChon": 2.13,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -2.2,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3323,7 +3323,7 @@
     "TonCK_TToan": 93028.1,
     "TonCuoi_TinhLai": 93028.1,
     "TonDaChon": 93028.1,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3339,7 +3339,7 @@
     "TonCK_TToan": 9238510.0,
     "TonCuoi_TinhLai": 9238510.0,
     "TonDaChon": 9238510.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3355,7 +3355,7 @@
     "TonCK_TToan": 2580.0,
     "TonCuoi_TinhLai": 2580.0,
     "TonDaChon": 2580.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3371,14 +3371,14 @@
     "TonCK_TToan": 22546.0,
     "TonCuoi_TinhLai": 22546.0,
     "TonDaChon": 22546.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K16",
     "TenKhoDb": "Đá thải Cầu 20",
-    "MaThan": "b5.01",
+    "MaThan": "B5.01",
     "TenThanDb": "Đá thải",
     "TonDK": 7211600.0,
     "NhapTK": 546006.0,
@@ -3387,7 +3387,7 @@
     "TonCK_TToan": 7757606.0,
     "TonCuoi_TinhLai": 7757606.0,
     "TonDaChon": 7757606.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3403,7 +3403,7 @@
     "TonCK_TToan": 583.43,
     "TonCuoi_TinhLai": 583.43,
     "TonDaChon": 583.43,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3419,7 +3419,7 @@
     "TonCK_TToan": 153764.01,
     "TonCuoi_TinhLai": 153764.01,
     "TonDaChon": 153764.01,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3435,7 +3435,7 @@
     "TonCK_TToan": 89146.75,
     "TonCuoi_TinhLai": 89146.75,
     "TonDaChon": 89146.75,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3450,13 +3450,13 @@
     "TonCK": 7631.99,
     "TonCK_TToan": -68144.2,
     "TonCuoi_TinhLai": 7631.99,
-    "TonDaChon": -68144.2,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 7631.99,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k171",
+    "MaKho": "K171",
     "TenKhoDb": "Kho than nguyên khai-T4",
     "MaThan": "00",
     "TenThanDb": "Than nguyên khai",
@@ -3466,8 +3466,8 @@
     "TonCK": 189272.06,
     "TonCK_TToan": -49765.06,
     "TonCuoi_TinhLai": 189272.06,
-    "TonDaChon": -49765.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 189272.06,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3482,15 +3482,15 @@
     "TonCK": 761471.31,
     "TonCK_TToan": 748322.25,
     "TonCuoi_TinhLai": 761471.31,
-    "TonDaChon": 748322.25,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 761471.31,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k171",
+    "MaKho": "K171",
     "TenKhoDb": "Kho than nguyên khai-T4",
-    "MaThan": "b5.01",
+    "MaThan": "B5.01",
     "TenThanDb": "Đá thải",
     "TonDK": 34882.61,
     "NhapTK": 147864.86,
@@ -3499,7 +3499,7 @@
     "TonCK_TToan": 35008.6,
     "TonCuoi_TinhLai": 35008.6,
     "TonDaChon": 35008.6,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3514,13 +3514,13 @@
     "TonCK": 3156041.09,
     "TonCK_TToan": 2639368.61,
     "TonCuoi_TinhLai": 3156041.09,
-    "TonDaChon": 2639368.61,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 3156041.09,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k172",
+    "MaKho": "K172",
     "TenKhoDb": "Kho than thương phẩm-T4",
     "MaThan": "B11c",
     "TenThanDb": "Cục xô 1c (Ak 17,01 - 22%)",
@@ -3530,8 +3530,8 @@
     "TonCK": 60620.62,
     "TonCK_TToan": 60598.84,
     "TonCuoi_TinhLai": 60620.62,
-    "TonDaChon": 60598.84,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 60620.62,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3547,7 +3547,7 @@
     "TonCK_TToan": 214304.91,
     "TonCuoi_TinhLai": 214304.91,
     "TonDaChon": 214304.91,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3562,8 +3562,8 @@
     "TonCK": 17459.62,
     "TonCK_TToan": 17362.56,
     "TonCuoi_TinhLai": 17459.62,
-    "TonDaChon": 17362.56,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 17459.62,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3579,14 +3579,14 @@
     "TonCK_TToan": 104861.25,
     "TonCuoi_TinhLai": 104861.25,
     "TonDaChon": 104861.25,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
     "MaKho": "K174",
     "TenKhoDb": "Kho than MB+25-1",
-    "MaThan": "B5.01",
+    "MaThan": "b5.01",
     "TenThanDb": "Đá thải",
     "TonDK": 1196651.72,
     "NhapTK": 98134.58,
@@ -3595,7 +3595,7 @@
     "TonCK_TToan": 1197159.48,
     "TonCuoi_TinhLai": 1197159.48,
     "TonDaChon": 1197159.48,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3611,7 +3611,7 @@
     "TonCK_TToan": 165013.62,
     "TonCuoi_TinhLai": 165013.62,
     "TonDaChon": 165013.62,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3627,7 +3627,7 @@
     "TonCK_TToan": 1815309.0,
     "TonCuoi_TinhLai": 1815309.0,
     "TonDaChon": 1815309.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3643,7 +3643,7 @@
     "TonCK_TToan": 47973.0,
     "TonCuoi_TinhLai": 47973.0,
     "TonDaChon": 47973.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3659,7 +3659,7 @@
     "TonCK_TToan": 34635.0,
     "TonCuoi_TinhLai": 34635.0,
     "TonDaChon": 34635.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3675,7 +3675,7 @@
     "TonCK_TToan": 59561.0,
     "TonCuoi_TinhLai": 59561.0,
     "TonDaChon": 59561.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3691,7 +3691,7 @@
     "TonCK_TToan": 70172.0,
     "TonCuoi_TinhLai": 70172.0,
     "TonDaChon": 70172.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3707,7 +3707,7 @@
     "TonCK_TToan": 15859.0,
     "TonCuoi_TinhLai": 15859.0,
     "TonDaChon": 15859.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3723,7 +3723,7 @@
     "TonCK_TToan": -799.0,
     "TonCuoi_TinhLai": -799.0,
     "TonDaChon": -799.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3738,8 +3738,8 @@
     "TonCK": 18355.0,
     "TonCK_TToan": -1395.26,
     "TonCuoi_TinhLai": 18355.0,
-    "TonDaChon": -1395.26,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 18355.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3754,8 +3754,8 @@
     "TonCK": 171.0,
     "TonCK_TToan": -77.53,
     "TonCuoi_TinhLai": 171.0,
-    "TonDaChon": -77.53,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 171.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3770,8 +3770,8 @@
     "TonCK": 274.0,
     "TonCK_TToan": -152.14,
     "TonCuoi_TinhLai": 274.0,
-    "TonDaChon": -152.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 274.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3786,8 +3786,8 @@
     "TonCK": 51.0,
     "TonCK_TToan": -32.1,
     "TonCuoi_TinhLai": 51.0,
-    "TonDaChon": -32.1,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 51.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3802,13 +3802,13 @@
     "TonCK": 247.0,
     "TonCK_TToan": -315.71,
     "TonCuoi_TinhLai": 247.0,
-    "TonDaChon": -315.71,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 247.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "K59",
+    "MaKho": "k59",
     "TenKhoDb": "NM Nhiệt điện",
     "MaThan": "11a.7",
     "TenThanDb": "Cám 6a.1 (Úc - Tàu KMARIN OSLO)",
@@ -3818,8 +3818,8 @@
     "TonCK": 31.0,
     "TonCK_TToan": -21.84,
     "TonCuoi_TinhLai": 31.0,
-    "TonDaChon": -21.84,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 31.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3834,8 +3834,8 @@
     "TonCK": 118.0,
     "TonCK_TToan": -26.06,
     "TonCuoi_TinhLai": 118.0,
-    "TonDaChon": -26.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 118.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3850,8 +3850,8 @@
     "TonCK": 588.84,
     "TonCK_TToan": 65.79,
     "TonCuoi_TinhLai": 588.84,
-    "TonDaChon": 65.79,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 588.84,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3866,8 +3866,8 @@
     "TonCK": 138.0,
     "TonCK_TToan": 32.28,
     "TonCuoi_TinhLai": 138.0,
-    "TonDaChon": 32.28,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 138.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3882,8 +3882,8 @@
     "TonCK": 66.0,
     "TonCK_TToan": 32.04,
     "TonCuoi_TinhLai": 66.0,
-    "TonDaChon": 32.04,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 66.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3898,8 +3898,8 @@
     "TonCK": 86.0,
     "TonCK_TToan": -133.38,
     "TonCuoi_TinhLai": 86.0,
-    "TonDaChon": -133.38,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 86.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3914,8 +3914,8 @@
     "TonCK": 342.0,
     "TonCK_TToan": 39.96,
     "TonCuoi_TinhLai": 342.0,
-    "TonDaChon": 39.96,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 342.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3930,8 +3930,8 @@
     "TonCK": 94.0,
     "TonCK_TToan": -48.0,
     "TonCuoi_TinhLai": 94.0,
-    "TonDaChon": -48.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 94.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3946,8 +3946,8 @@
     "TonCK": 750.0,
     "TonCK_TToan": -409.79,
     "TonCuoi_TinhLai": 750.0,
-    "TonDaChon": -409.79,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 750.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3962,8 +3962,8 @@
     "TonCK": 214.0,
     "TonCK_TToan": -51.59,
     "TonCuoi_TinhLai": 214.0,
-    "TonDaChon": -51.59,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 214.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3978,8 +3978,8 @@
     "TonCK": 282.0,
     "TonCK_TToan": 204.33,
     "TonCuoi_TinhLai": 282.0,
-    "TonDaChon": 204.33,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 282.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -3994,8 +3994,8 @@
     "TonCK": 96.0,
     "TonCK_TToan": 85.83,
     "TonCuoi_TinhLai": 96.0,
-    "TonDaChon": 85.83,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 96.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4010,8 +4010,8 @@
     "TonCK": 50.0,
     "TonCK_TToan": -23.94,
     "TonCuoi_TinhLai": 50.0,
-    "TonDaChon": -23.94,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 50.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4026,8 +4026,8 @@
     "TonCK": 153.0,
     "TonCK_TToan": 128.07,
     "TonCuoi_TinhLai": 153.0,
-    "TonDaChon": 128.07,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 153.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4042,8 +4042,8 @@
     "TonCK": 108.0,
     "TonCK_TToan": -61.76,
     "TonCuoi_TinhLai": 108.0,
-    "TonDaChon": -61.76,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 108.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4058,8 +4058,8 @@
     "TonCK": 1.0,
     "TonCK_TToan": 0.26,
     "TonCuoi_TinhLai": 1.0,
-    "TonDaChon": 0.26,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 1.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4074,8 +4074,8 @@
     "TonCK": 242.0,
     "TonCK_TToan": -88.82,
     "TonCuoi_TinhLai": 242.0,
-    "TonDaChon": -88.82,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 242.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4090,13 +4090,13 @@
     "TonCK": 134.0,
     "TonCK_TToan": -54.14,
     "TonCuoi_TinhLai": 134.0,
-    "TonDaChon": -54.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 134.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k59",
+    "MaKho": "K59",
     "TenKhoDb": "NM Nhiệt điện",
     "MaThan": "11a.828",
     "TenThanDb": "Cám 6b.10 (Nam Phi -Tàu MV ARWEN GEMINI)",
@@ -4106,8 +4106,8 @@
     "TonCK": 982.0,
     "TonCK_TToan": -137.86,
     "TonCuoi_TinhLai": 982.0,
-    "TonDaChon": -137.86,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 982.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4122,8 +4122,8 @@
     "TonCK": 96.0,
     "TonCK_TToan": -30.14,
     "TonCuoi_TinhLai": 96.0,
-    "TonDaChon": -30.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 96.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4138,8 +4138,8 @@
     "TonCK": 549.0,
     "TonCK_TToan": 30.93,
     "TonCuoi_TinhLai": 549.0,
-    "TonDaChon": 30.93,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 549.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4154,13 +4154,13 @@
     "TonCK": 142.0,
     "TonCK_TToan": -84.78,
     "TonCuoi_TinhLai": 142.0,
-    "TonDaChon": -84.78,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 142.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k59",
+    "MaKho": "K59",
     "TenKhoDb": "NM Nhiệt điện",
     "MaThan": "11a.834",
     "TenThanDb": "Cám 6b.10 (NAM PHI -Tàu MV VAN INFINITY)",
@@ -4170,8 +4170,8 @@
     "TonCK": 106.0,
     "TonCK_TToan": 17.35,
     "TonCuoi_TinhLai": 106.0,
-    "TonDaChon": 17.35,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 106.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4186,8 +4186,8 @@
     "TonCK": 88.0,
     "TonCK_TToan": -47.19,
     "TonCuoi_TinhLai": 88.0,
-    "TonDaChon": -47.19,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 88.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4202,8 +4202,8 @@
     "TonCK": 164.0,
     "TonCK_TToan": -76.9,
     "TonCuoi_TinhLai": 164.0,
-    "TonDaChon": -76.9,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 164.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4218,8 +4218,8 @@
     "TonCK": 180.0,
     "TonCK_TToan": -14.85,
     "TonCuoi_TinhLai": 180.0,
-    "TonDaChon": -14.85,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 180.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4234,8 +4234,8 @@
     "TonCK": 0.0,
     "TonCK_TToan": -2.46,
     "TonCuoi_TinhLai": 0.0,
-    "TonDaChon": -2.46,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 0.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4250,8 +4250,8 @@
     "TonCK": 369.0,
     "TonCK_TToan": -121.77,
     "TonCuoi_TinhLai": 369.0,
-    "TonDaChon": -121.77,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 369.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4266,8 +4266,8 @@
     "TonCK": 33.0,
     "TonCK_TToan": -18.09,
     "TonCuoi_TinhLai": 33.0,
-    "TonDaChon": -18.09,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 33.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4282,8 +4282,8 @@
     "TonCK": 6.0,
     "TonCK_TToan": -0.87,
     "TonCuoi_TinhLai": 6.0,
-    "TonDaChon": -0.87,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 6.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4298,8 +4298,8 @@
     "TonCK": 605.0,
     "TonCK_TToan": -205.33,
     "TonCuoi_TinhLai": 605.0,
-    "TonDaChon": -205.33,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 605.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4314,8 +4314,8 @@
     "TonCK": 104.0,
     "TonCK_TToan": -48.0,
     "TonCuoi_TinhLai": 104.0,
-    "TonDaChon": -48.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 104.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4330,8 +4330,8 @@
     "TonCK": 8.0,
     "TonCK_TToan": -7.9,
     "TonCuoi_TinhLai": 8.0,
-    "TonDaChon": -7.9,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 8.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4346,8 +4346,8 @@
     "TonCK": 177.0,
     "TonCK_TToan": -6.06,
     "TonCuoi_TinhLai": 177.0,
-    "TonDaChon": -6.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 177.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4362,8 +4362,8 @@
     "TonCK": 226607.09,
     "TonCK_TToan": -11925.5,
     "TonCuoi_TinhLai": 226607.09,
-    "TonDaChon": -11925.5,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 226607.09,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4378,13 +4378,13 @@
     "TonCK": -20.0,
     "TonCK_TToan": 179.9,
     "TonCuoi_TinhLai": -20.0,
-    "TonDaChon": 179.9,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": -20.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
   {
-    "MaKho": "k59",
+    "MaKho": "K59",
     "TenKhoDb": "NM Nhiệt điện",
     "MaThan": "B2734",
     "TenThanDb": "Cám 6a.1 (PTNK - Úc - BBG CONFIDENCE)",
@@ -4394,8 +4394,8 @@
     "TonCK": 258.0,
     "TonCK_TToan": -209.1,
     "TonCuoi_TinhLai": 258.0,
-    "TonDaChon": -209.1,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 258.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4410,8 +4410,8 @@
     "TonCK": 42202.0,
     "TonCK_TToan": -16533.67,
     "TonCuoi_TinhLai": 42202.0,
-    "TonDaChon": -16533.67,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonDaChon": 42202.0,
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4427,7 +4427,7 @@
     "TonCK_TToan": 3602.07,
     "TonCuoi_TinhLai": 3602.07,
     "TonDaChon": 3602.07,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4443,7 +4443,7 @@
     "TonCK_TToan": 77.53,
     "TonCuoi_TinhLai": 77.53,
     "TonDaChon": 77.53,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4459,7 +4459,7 @@
     "TonCK_TToan": 152.14,
     "TonCuoi_TinhLai": 152.14,
     "TonDaChon": 152.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4475,7 +4475,7 @@
     "TonCK_TToan": 32.12,
     "TonCuoi_TinhLai": 32.12,
     "TonDaChon": 32.12,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4491,7 +4491,7 @@
     "TonCK_TToan": 581.72,
     "TonCuoi_TinhLai": 581.72,
     "TonDaChon": 581.72,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4507,7 +4507,7 @@
     "TonCK_TToan": 32.08,
     "TonCuoi_TinhLai": 32.08,
     "TonDaChon": 32.08,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4523,7 +4523,7 @@
     "TonCK_TToan": 26.06,
     "TonCuoi_TinhLai": 26.06,
     "TonDaChon": 26.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4539,7 +4539,7 @@
     "TonCK_TToan": -65.79,
     "TonCuoi_TinhLai": -65.79,
     "TonDaChon": -65.79,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4555,7 +4555,7 @@
     "TonCK_TToan": -32.28,
     "TonCuoi_TinhLai": -32.28,
     "TonDaChon": -32.28,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4571,7 +4571,7 @@
     "TonCK_TToan": -32.04,
     "TonCuoi_TinhLai": -32.04,
     "TonDaChon": -32.04,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4587,7 +4587,7 @@
     "TonCK_TToan": 133.38,
     "TonCuoi_TinhLai": 133.38,
     "TonDaChon": 133.38,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4603,7 +4603,7 @@
     "TonCK_TToan": -39.96,
     "TonCuoi_TinhLai": -39.96,
     "TonDaChon": -39.96,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4619,7 +4619,7 @@
     "TonCK_TToan": 48.0,
     "TonCuoi_TinhLai": 48.0,
     "TonDaChon": 48.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4635,7 +4635,7 @@
     "TonCK_TToan": 409.79,
     "TonCuoi_TinhLai": 409.79,
     "TonDaChon": 409.79,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4651,7 +4651,7 @@
     "TonCK_TToan": 51.59,
     "TonCuoi_TinhLai": 51.59,
     "TonDaChon": 51.59,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4667,7 +4667,7 @@
     "TonCK_TToan": -204.33,
     "TonCuoi_TinhLai": -204.33,
     "TonDaChon": -204.33,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4683,7 +4683,7 @@
     "TonCK_TToan": -85.83,
     "TonCuoi_TinhLai": -85.83,
     "TonDaChon": -85.83,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4699,7 +4699,7 @@
     "TonCK_TToan": 23.94,
     "TonCuoi_TinhLai": 23.94,
     "TonDaChon": 23.94,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4715,7 +4715,7 @@
     "TonCK_TToan": -128.07,
     "TonCuoi_TinhLai": -128.07,
     "TonDaChon": -128.07,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4731,7 +4731,7 @@
     "TonCK_TToan": 61.76,
     "TonCuoi_TinhLai": 61.76,
     "TonDaChon": 61.76,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4747,7 +4747,7 @@
     "TonCK_TToan": -0.26,
     "TonCuoi_TinhLai": -0.26,
     "TonDaChon": -0.26,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4763,7 +4763,7 @@
     "TonCK_TToan": 88.82,
     "TonCuoi_TinhLai": 88.82,
     "TonDaChon": 88.82,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4779,7 +4779,7 @@
     "TonCK_TToan": 54.14,
     "TonCuoi_TinhLai": 54.14,
     "TonDaChon": 54.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4795,7 +4795,7 @@
     "TonCK_TToan": 137.86,
     "TonCuoi_TinhLai": 137.86,
     "TonDaChon": 137.86,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4811,7 +4811,7 @@
     "TonCK_TToan": 30.14,
     "TonCuoi_TinhLai": 30.14,
     "TonDaChon": 30.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4827,7 +4827,7 @@
     "TonCK_TToan": -30.93,
     "TonCuoi_TinhLai": -30.93,
     "TonDaChon": -30.93,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4843,7 +4843,7 @@
     "TonCK_TToan": 84.78,
     "TonCuoi_TinhLai": 84.78,
     "TonDaChon": 84.78,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4859,7 +4859,7 @@
     "TonCK_TToan": -17.35,
     "TonCuoi_TinhLai": -17.35,
     "TonDaChon": -17.35,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4875,7 +4875,7 @@
     "TonCK_TToan": 47.19,
     "TonCuoi_TinhLai": 47.19,
     "TonDaChon": 47.19,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4891,7 +4891,7 @@
     "TonCK_TToan": 76.9,
     "TonCuoi_TinhLai": 76.9,
     "TonDaChon": 76.9,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4907,7 +4907,7 @@
     "TonCK_TToan": 14.85,
     "TonCuoi_TinhLai": 14.85,
     "TonDaChon": 14.85,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4923,7 +4923,7 @@
     "TonCK_TToan": 2.46,
     "TonCuoi_TinhLai": 2.46,
     "TonDaChon": 2.46,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4939,7 +4939,7 @@
     "TonCK_TToan": 121.77,
     "TonCuoi_TinhLai": 121.77,
     "TonDaChon": 121.77,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4955,7 +4955,7 @@
     "TonCK_TToan": 18.09,
     "TonCuoi_TinhLai": 18.09,
     "TonDaChon": 18.09,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4971,7 +4971,7 @@
     "TonCK_TToan": 0.87,
     "TonCuoi_TinhLai": 0.87,
     "TonDaChon": 0.87,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -4987,7 +4987,7 @@
     "TonCK_TToan": 205.33,
     "TonCuoi_TinhLai": 205.33,
     "TonDaChon": 205.33,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5003,7 +5003,7 @@
     "TonCK_TToan": 48.0,
     "TonCuoi_TinhLai": 48.0,
     "TonDaChon": 48.0,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5019,7 +5019,7 @@
     "TonCK_TToan": 7.88,
     "TonCuoi_TinhLai": 7.88,
     "TonDaChon": 7.88,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5035,7 +5035,7 @@
     "TonCK_TToan": 6.06,
     "TonCuoi_TinhLai": 6.06,
     "TonDaChon": 6.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5051,7 +5051,7 @@
     "TonCK_TToan": 46432.19,
     "TonCuoi_TinhLai": 46432.19,
     "TonDaChon": 46432.19,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5067,7 +5067,7 @@
     "TonCK_TToan": -155.06,
     "TonCuoi_TinhLai": -155.06,
     "TonDaChon": -155.06,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5083,7 +5083,7 @@
     "TonCK_TToan": 209.1,
     "TonCuoi_TinhLai": 209.1,
     "TonDaChon": 209.1,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   },
@@ -5099,7 +5099,7 @@
     "TonCK_TToan": 24552.14,
     "TonCuoi_TinhLai": 24552.14,
     "TonDaChon": 24552.14,
-    "TonFieldUsed": "AUTO:TonCK_TToan",
+    "TonFieldUsed": "TonCK",
     "type": "UNMAPPED_OR_BLOCKED_KHO",
     "reason": "Mã kho chưa có mapping chuẩn hoặc bị chặn để tránh map sai Kho 39."
   }
