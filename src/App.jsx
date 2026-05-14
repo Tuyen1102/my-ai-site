@@ -1,3 +1,4 @@
+// TTCO_STRICT_V13_NO_REPO: Kho39 chỉ lấy từ JSON chuẩn MaKho DB 28; bỏ mapping sai 46B -> Kho 39.
 
 // TTCO_DEBUG_KHO39_V148: mapping 46B -> Kho 39 da duoc bo sung de lay dung chu loai/ton kho TTCO_APP.
 import React, { useEffect, useMemo, useRef, useState } from "react";
@@ -186,7 +187,7 @@ const getTtcoKhoSourcePriority = (record) => {
   const sourceFix = normalizeText(record?.sourceFix || record?.SourceFix).toUpperCase();
   if (sourceFix.includes("KHO39")) return 2000;
   const raw = normalizeKhoCode(record?.rawKhoCode || record?.sourceKhoCode || record?.maKho || record?.khoCodeRaw || record?.khoCode || record?.kho || "");
-  if (raw === "46B") return 1000;
+  // STRICT_V13: 46B không tự ưu tiên/map vào Kho 39; chỉ JSON chuẩn quyết định dữ liệu hiển thị.
   if (raw === "39") return 10;
   return 100;
 };
@@ -378,7 +379,6 @@ function normalizeKhoCode(value) {
 // Map các mã kho phụ trong DB/JSON về tên kho đúng như báo cáo TTCO_APP G3_BC05.
 // Ví dụ: 71 -> Kho 1-T4, 31D -> Kho 28-1, 44 -> Kho 32.
 const TTCO_KHO_CODE_OVERRIDES = {
-  "46B": { code: "39", number: 39, suffix: "", name: "Kho 39" },
   "30B": { code: "27", number: 27, suffix: "", name: "Kho 27" },
   "31C": { code: "28", number: 28, suffix: "", name: "Kho 28" },
   "31D": { code: "28-1", number: 28, suffix: "1", name: "Kho 28-1" },
