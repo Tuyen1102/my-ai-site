@@ -1,6 +1,5 @@
-// TTCO_STRICT_V13_NO_REPO: Kho39 chỉ lấy từ JSON chuẩn MaKho DB 28; bỏ mapping sai 46B -> Kho 39.
+// TTCO_APP_PERIOD_V18: app đọc public/data/ton_kho_latest.json; ton/ttcoApp = TonDK tháng hiện tại + SUM(NhapTK) - SUM(XuatTK).
 
-// TTCO_DEBUG_KHO39_V148: mapping 46B -> Kho 39 da duoc bo sung de lay dung chu loai/ton kho TTCO_APP.
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
