@@ -8,19 +8,21 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test": "vitest run"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
     "framer-motion": "latest",
     "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
     "xlsx": "latest"
   },
   "devDependencies": {
     "@tailwindcss/vite": "latest",
-    "gh-pages": "latest"
+    "gh-pages": "latest",
+    "vitest": "^4.1.9"
   }
 }

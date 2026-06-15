@@ -23,6 +23,12 @@ import {
   Sheet,
 } from "lucide-react";
 import * as XLSX from "xlsx";
+import {
+  buildSaveMetadata,
+  classifyCalculationValidation,
+  normalizeSavedHistoryRecord,
+  warningReasonsText,
+} from "./stockpileValidation.js";
 
 // ======================================================
 // TTCO - APP TÍNH KHỐI LƯỢNG THAN TỒN KHO
@@ -1411,6 +1417,7 @@ function ResultSummaryPanel({
   warning,
   WarningIcon,
   onSave,
+  nonBlockingWarnings,
 }) {
   return (
     <Panel className="overflow-hidden p-4 sm:p-5">
@@ -1470,6 +1477,16 @@ function ResultSummaryPanel({
           ) : null}
         </div>
       </div>
+      {nonBlockingWarnings.length > 0 ? (
+        <div className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-3 text-sm font-bold text-amber-800">
+          <div>Kết quả này vượt giới hạn cấu hình nhưng vẫn được phép lưu.</div>
+          <div className="mt-2 space-y-1 text-sm font-semibold">
+            {nonBlockingWarnings.map((reason) => (
+              <div key={reason}>{reason}</div>
+            ))}
+          </div>
+        </div>
+      ) : null}
 
       <button
         type="button"
@@ -1484,8 +1501,9 @@ function ResultSummaryPanel({
 }
 
 function SavedResultsTable({ history, onDelete, onExport }) {
-  const totalActualMass = history.reduce((sum, item) => sum + toNumber(item.actualMass), 0);
-  const totalTtcoMass = history.reduce((sum, item) => sum + toNumber(item.ttcoMass), 0);
+  const normalizedHistory = history.map(normalizeSavedHistoryRecord);
+  const totalActualMass = normalizedHistory.reduce((sum, item) => sum + toNumber(item.actualMass), 0);
+  const totalTtcoMass = normalizedHistory.reduce((sum, item) => sum + toNumber(item.ttcoMass), 0);
   const totalDiff = totalActualMass - totalTtcoMass;
 
   return (
@@ -1513,7 +1531,7 @@ function SavedResultsTable({ history, onDelete, onExport }) {
       <div className="mb-5 grid gap-3 sm:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
           <div className="text-xs font-black uppercase tracking-wide text-slate-500">Số lượt lưu</div>
-          <div className="mt-2 text-3xl font-black text-slate-950">{history.length}</div>
+          <div className="mt-2 text-3xl font-black text-slate-950">{normalizedHistory.length}</div>
         </div>
 
         <div className={`rounded-2xl border p-4 ${getDiffClassName(totalDiff)}`}>
@@ -1525,7 +1543,7 @@ function SavedResultsTable({ history, onDelete, onExport }) {
         </div>
       </div>
 
-      {history.length === 0 ? (
+      {normalizedHistory.length === 0 ? (
         <div className="rounded-3xl border border-dashed border-slate-200 bg-slate-50 p-6 text-center">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-slate-400 shadow-sm">
             <ListChecks size={26} />
@@ -1549,15 +1567,20 @@ function SavedResultsTable({ history, onDelete, onExport }) {
                 <th className="px-3 py-3 text-right font-black">Thực tế tấn</th>
                 <th className="px-3 py-3 text-right font-black">TTCO_APP tấn</th>
                 <th className="px-3 py-3 text-right font-black">Chênh lệch tấn</th>
+                <th className="px-3 py-3 text-left font-black">Trạng thái lưu</th>
                 <th className="px-3 py-3 text-left font-black">Cảnh báo</th>
                 <th className="px-3 py-3 text-center font-black">Xóa</th>
               </tr>
             </thead>
 
             <tbody>
-              {history.map((item, index) => {
+              {normalizedHistory.map((item, index) => {
                 const diff = toNumber(item.diff);
                 const warningClass = getDiffClassName(diff);
+                const statusClass = item.saveStatus === "limit_exceeded"
+                  ? "bg-amber-50 text-amber-800 border-amber-200"
+                  : "bg-emerald-50 text-emerald-800 border-emerald-200";
+                const warningText = warningReasonsText(item);
 
                 return (
                   <tr key={item.id} className="border-b border-slate-100 hover:bg-slate-50">
@@ -1582,6 +1605,20 @@ function SavedResultsTable({ history, onDelete, onExport }) {
                         {diff >= 0 ? "+" : ""}
                         {formatNumber(diff)}
                       </span>
+                    </td>
+                    <td className="px-3 py-3">
+                      <div className="space-y-2">
+                        <span className={`inline-flex rounded-xl border px-2 py-1 text-xs font-black ${statusClass}`}>
+                          {item.saveStatusLabel}
+                        </span>
+                        {warningText ? (
+                          <div className="max-w-[240px] text-xs font-semibold leading-5 text-amber-800">
+                            {item.nonBlockingWarnings.map((reason) => (
+                              <div key={reason}>{reason}</div>
+                            ))}
+                          </div>
+                        ) : null}
+                      </div>
                     </td>
                     <td className="px-3 py-3">
                       <span className={`inline-flex rounded-xl border px-2 py-1 text-xs font-black ${warningClass}`}>
@@ -1637,7 +1674,7 @@ export default function TTCOCoalStockpileApp() {
   const [history, setHistory] = useState(() => {
     try {
       const saved = localStorage.getItem(HISTORY_KEY);
-      return saved ? JSON.parse(saved) : [];
+      return saved ? JSON.parse(saved).map(normalizeSavedHistoryRecord) : [];
     } catch {
       return [];
     }
@@ -1827,69 +1864,24 @@ export default function TTCOCoalStockpileApp() {
   const warning = getWarning(diff);
   const WarningIcon = warning.icon;
 
-  const validationErrors = useMemo(() => {
-    const errors = [];
-
-    if (density <= 0) {
-      errors.push(
-        "Tỷ khối phải lớn hơn 0. Kiểm tra danh mục tỷ khối hoặc nhập thủ công."
-      );
-    }
-
-    if (toNumber(sectionSpacing) <= 0) {
-      errors.push("Khoảng cách mặt cắt phải lớn hơn 0.");
-    }
-
-    blocks.forEach((block, index) => {
-      const result = calculateBlock(block);
-      const name = `Khối ${index + 1}`;
-
-      if (result.length <= 0) errors.push(`${name}: chiều dài phải lớn hơn 0.`);
-      if (result.baseWidth <= 0) {
-        errors.push(`${name}: chiều rộng chân phải lớn hơn 0.`);
-      }
-
-      if (
-        maxWidthForSelectedCoal > 0 &&
-        result.baseWidth > maxWidthForSelectedCoal
-      ) {
-        errors.push(
-          `${name}: chiều rộng chân không được lớn hơn ${formatNumber(
-            maxWidthForSelectedCoal
-          )} m.`
-        );
-      }
-
-      if (result.topWidth < 0) {
-        errors.push(`${name}: chiều rộng đỉnh không được âm.`);
-      }
-
-      if (result.topWidth > result.baseWidth) {
-        errors.push(`${name}: chiều rộng đỉnh không được lớn hơn chiều rộng chân.`);
-      }
-
-      if (result.height <= 0) errors.push(`${name}: chiều cao phải lớn hơn 0.`);
-
-      if (
-        maxLengthForSelectedCoal > 0 &&
-        result.length > maxLengthForSelectedCoal
-      ) {
-        errors.push(
-          `${name}: chiều dài không nên lớn hơn chiều dài kho ${formatNumber(
-            maxLengthForSelectedCoal
-          )} m.`
-        );
-      }
-    });
-
-    return errors;
-  }, [
-    blocks,
-    density,
-    sectionSpacing,
-    maxLengthForSelectedCoal,
-    maxWidthForSelectedCoal,
-  ]);
+  const { blockingErrors, nonBlockingWarnings } = useMemo(
+    () =>
+      classifyCalculationValidation({
+        density,
+        sectionSpacing: toNumber(sectionSpacing),
+        maxLengthForSelectedCoal,
+        maxWidthForSelectedCoal,
+        blocks: blockResults,
+        formatNumber,
+      }),
+    [
+      blockResults,
+      density,
+      sectionSpacing,
+      maxLengthForSelectedCoal,
+      maxWidthForSelectedCoal,
+    ]
+  );
 
   const resetSelectionAfterDataChange = (nextWarehouses, nextCoalTypes) => {
     const firstWarehouse = nextWarehouses[0];
@@ -2227,10 +2219,12 @@ export default function TTCOCoalStockpileApp() {
   };
 
   const saveCurrentResult = () => {
-    if (validationErrors.length > 0) {
+    if (blockingErrors.length > 0) {
       alert("Dữ liệu chưa hợp lệ. Vui lòng kiểm tra lại trước khi lưu.");
       return;
     }
+
+    const saveMetadata = buildSaveMetadata(nonBlockingWarnings);
 
     const record = {
       id: Date.now().toString(),
@@ -2272,11 +2266,13 @@ export default function TTCOCoalStockpileApp() {
       diff,
       diffRate,
       warningLabel: warning.label,
+      ...saveMetadata,
+      blockingErrors: [],
       ttcoSourceName,
       catalogSourceName,
     };
 
-    const nextHistory = [record, ...history].slice(0, 300);
+    const nextHistory = [normalizeSavedHistoryRecord(record), ...history].slice(0, 300);
 
     setHistory(nextHistory);
     localStorage.setItem(HISTORY_KEY, JSON.stringify(nextHistory));
@@ -2297,7 +2293,9 @@ export default function TTCOCoalStockpileApp() {
       return;
     }
 
-    const summaryRows = history.map((item, index) => ({
+    const normalizedHistory = history.map(normalizeSavedHistoryRecord);
+
+    const summaryRows = normalizedHistory.map((item, index) => ({
       STT: index + 1,
       "Ngày lưu": new Date(item.savedAt).toLocaleString("vi-VN"),
       "Tên kho": item.warehouseName,
@@ -2314,11 +2312,13 @@ export default function TTCOCoalStockpileApp() {
       "Chênh lệch (tấn)": item.diff,
       "Tỷ lệ chênh lệch (%)": item.diffRate,
       "Mức cảnh báo": item.warningLabel,
+      "Trạng thái lưu": item.saveStatusLabel,
+      "Lý do cảnh báo": warningReasonsText(item),
       "Nguồn TTCO_APP": item.ttcoSourceName || "",
       "Nguồn danh mục": item.catalogSourceName || "",
     }));
 
-    const detailRows = history.flatMap((item, historyIndex) =>
+    const detailRows = normalizedHistory.flatMap((item, historyIndex) =>
       (item.blocks || []).map((block) => ({
         "STT lần tính": historyIndex + 1,
         "Ngày lưu": new Date(item.savedAt).toLocaleString("vi-VN"),
@@ -2336,6 +2336,8 @@ export default function TTCOCoalStockpileApp() {
         "Chiều cao (m)": block.height,
         "Diện tích mặt cắt (m2)": block.sectionArea,
         "Thể tích khối (m3)": block.volume,
+        "Trạng thái lưu": item.saveStatusLabel,
+        "Lý do cảnh báo": warningReasonsText(item),
       }))
     );
 
@@ -2850,6 +2852,7 @@ export default function TTCOCoalStockpileApp() {
             warning={warning}
             WarningIcon={WarningIcon}
             onSave={saveCurrentResult}
+            nonBlockingWarnings={nonBlockingWarnings}
           />
 
           <SavedResultsTable
@@ -2864,13 +2867,9 @@ export default function TTCOCoalStockpileApp() {
                 Kiểm tra dữ liệu
               </h2>
 
-              {validationErrors.length === 0 ? (
-                <div className="rounded-2xl bg-emerald-50 p-3 text-sm font-bold text-emerald-800">
-                  Dữ liệu hợp lệ để tính toán.
-                </div>
-              ) : (
+              {blockingErrors.length > 0 ? (
                 <div className="space-y-2">
-                  {validationErrors.map((error, index) => (
+                  {blockingErrors.map((error, index) => (
                     <div
                       key={index}
                       className="rounded-xl bg-red-50 p-3 text-sm font-bold text-red-700"
@@ -2878,6 +2877,19 @@ export default function TTCOCoalStockpileApp() {
                       {error}
                     </div>
                   ))}
+                </div>
+              ) : nonBlockingWarnings.length > 0 ? (
+                <div className="rounded-2xl border border-amber-200 bg-amber-50 p-3 text-sm font-bold text-amber-800">
+                  <div>Kết quả đang vượt giới hạn cấu hình nhưng vẫn được phép lưu.</div>
+                  <div className="mt-2 space-y-2">
+                    {nonBlockingWarnings.map((warningText, index) => (
+                      <div key={`${warningText}-${index}`}>{warningText}</div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="rounded-2xl bg-emerald-50 p-3 text-sm font-bold text-emerald-800">
+                  Dữ liệu hợp lệ để tính toán.
                 </div>
               )}
             </Panel>
