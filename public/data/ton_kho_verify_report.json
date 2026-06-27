@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-06-26 11:00:09",
+    "updatedAt": "2026-06-27 11:00:10",
     "period": {
       "NamHT": 2026,
       "ThangTu": 6,
@@ -13,10 +13,10 @@
     "ThangTu": 6,
     "ThangDen": 6,
     "rowCount": 79,
-    "rawRowCount": 146,
-    "auditRowCount": 146,
-    "warningCount": 33,
-    "removedRowCount": 33,
+    "rawRowCount": 147,
+    "auditRowCount": 147,
+    "warningCount": 34,
+    "removedRowCount": 34,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -79,10 +79,10 @@
         "ma_than": "NHK.312",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 2027.0,
-        "XuatTK": 0.0,
-        "ton": 2027.0,
-        "ttcoApp": 2027.0,
+        "NhapTK": 3282.61,
+        "XuatTK": 680.92,
+        "ton": 2601.69,
+        "ttcoApp": 2601.69,
         "MaKhoRawList": [
           "28"
         ],
@@ -105,10 +105,10 @@
         "ma_than": "NHK.305",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 5794.38,
+        "NhapTK": 6594.38,
         "XuatTK": 299.9,
-        "ton": 5494.48,
-        "ttcoApp": 5494.48,
+        "ton": 6294.48,
+        "ttcoApp": 6294.48,
         "MaKhoRawList": [
           "28"
         ],
@@ -184,9 +184,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 4238.11,
         "NhapTK": 0.0,
-        "XuatTK": 3172.41,
-        "ton": 1065.7,
-        "ttcoApp": 1065.7,
+        "XuatTK": 3884.58,
+        "ton": 353.53,
+        "ttcoApp": 353.53,
         "MaKhoRawList": [
           "28"
         ],
