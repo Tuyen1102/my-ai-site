@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-02 11:00:09",
+    "updatedAt": "2026-07-03 08:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 7,
     "ThangDen": 7,
-    "rowCount": 25,
-    "rawRowCount": 37,
-    "auditRowCount": 37,
-    "warningCount": 10,
-    "removedRowCount": 10,
+    "rowCount": 30,
+    "rawRowCount": 44,
+    "auditRowCount": 44,
+    "warningCount": 12,
+    "removedRowCount": 12,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -65,9 +65,35 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 1,
+    "kho39RowCount": 2,
     "kho39NhkRowCount": 1,
     "kho39Rows": [
+      {
+        "kho": "Kho 39",
+        "coal": "Cám 5a.1 (Nga - Tàu MV. ISKANDAR)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "10a.11",
+        "MaThan": "10a.11",
+        "ma_than": "10a.11",
+        "sourceFix": "",
+        "TonDK": 0.0,
+        "NhapTK": 0.0,
+        "XuatTK": 611.01,
+        "ton": -611.01,
+        "ttcoApp": -611.01,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "10a.11"
+        ],
+        "TenThanGocList": [
+          "Cám 5a.1 (Nga - Tàu MV. ISKANDAR)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
       {
         "kho": "Kho 39",
         "coal": "Than NK (Úc -Tàu MV SHINE RUBY)",
@@ -80,9 +106,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
         "NhapTK": 0.0,
-        "XuatTK": 2525.26,
-        "ton": -2525.26,
-        "ttcoApp": -2525.26,
+        "XuatTK": 4105.68,
+        "ton": -4105.68,
+        "ttcoApp": -4105.68,
         "MaKhoRawList": [
           "28"
         ],
