@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-04 11:00:08",
+    "updatedAt": "2026-07-06 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 7,
     "ThangDen": 7,
-    "rowCount": 38,
-    "rawRowCount": 58,
-    "auditRowCount": 58,
-    "warningCount": 16,
-    "removedRowCount": 16,
+    "rowCount": 73,
+    "rawRowCount": 160,
+    "auditRowCount": 160,
+    "warningCount": 51,
+    "removedRowCount": 51,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -65,9 +65,165 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 2,
-    "kho39NhkRowCount": 2,
+    "kho39RowCount": 8,
+    "kho39NhkRowCount": 8,
     "kho39Rows": [
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu GOLDEN STAR LẦN 2",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.312",
+        "MaThan": "NHK.312",
+        "ma_than": "NHK.312",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 3108.8,
+        "NhapTK": 0.0,
+        "XuatTK": 0.0,
+        "ton": 3108.8,
+        "ttcoApp": 3108.8,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.312"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu GOLDEN STAR LẦN 2"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN OCEAN",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.305",
+        "MaThan": "NHK.305",
+        "ma_than": "NHK.305",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 5494.48,
+        "NhapTK": 0.0,
+        "XuatTK": 0.0,
+        "ton": 5494.48,
+        "ttcoApp": 5494.48,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.305"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN OCEAN"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN SKY",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.307",
+        "MaThan": "NHK.307",
+        "ma_than": "NHK.307",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 4623.63,
+        "NhapTK": 0.0,
+        "XuatTK": 0.0,
+        "ton": 4623.63,
+        "ttcoApp": 4623.63,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.307"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN SKY"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu VTA NEPTUNE",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.310",
+        "MaThan": "NHK.310",
+        "ma_than": "NHK.310",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 5445.27,
+        "NhapTK": 0.0,
+        "XuatTK": 0.0,
+        "ton": 5445.27,
+        "ttcoApp": 5445.27,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.310"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu VTA NEPTUNE"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu VTA POSEIDON (LẦN 2)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.303",
+        "MaThan": "NHK.303",
+        "ma_than": "NHK.303",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 353.53,
+        "NhapTK": 0.0,
+        "XuatTK": 0.0,
+        "ton": 353.53,
+        "ttcoApp": 353.53,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.303"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu VTA POSEIDON (LẦN 2)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than NK (Mozambique - Tầu MV MADREDEUS)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.308",
+        "MaThan": "NHK.308",
+        "ma_than": "NHK.308",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 7.56,
+        "NhapTK": 0.0,
+        "XuatTK": 0.0,
+        "ton": 7.56,
+        "ttcoApp": 7.56,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.308"
+        ],
+        "TenThanGocList": [
+          "Than NK (Mozambique - Tầu MV MADREDEUS)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
       {
         "kho": "Kho 39",
         "coal": "Than NK (Úc -Tàu MV MICHALIS)",
@@ -80,9 +236,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
         "NhapTK": 3062.0,
-        "XuatTK": 1606.78,
-        "ton": 1455.22,
-        "ttcoApp": 1455.22,
+        "XuatTK": 2172.12,
+        "ton": 889.88,
+        "ttcoApp": 889.88,
         "MaKhoRawList": [
           "28"
         ],
@@ -104,11 +260,11 @@
         "MaThan": "NHK.313",
         "ma_than": "NHK.313",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 0.0,
+        "TonDK": 8017.11,
         "NhapTK": 0.0,
         "XuatTK": 7529.29,
-        "ton": -7529.29,
-        "ttcoApp": -7529.29,
+        "ton": 487.82,
+        "ttcoApp": 487.82,
         "MaKhoRawList": [
           "28"
         ],
