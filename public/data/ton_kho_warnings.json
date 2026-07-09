@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-08 11:00:09",
+    "updatedAt": "2026-07-09 08:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -607,9 +607,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 17163.55,
+      "NhapTK": 17030.13,
       "XuatTK": 1982.25,
-      "TonCK": 15181.3,
+      "TonCK": 15047.88,
       "TonCK_CDOTHAN": -12803.54,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -738,9 +738,9 @@
       "KhoApp": "UNMAPPED_K60",
       "CoalApp": "Cám 6b.1",
       "TonDK": 1221.7,
-      "NhapTK": 0.0,
+      "NhapTK": -162.2,
       "XuatTK": 0.0,
-      "TonCK": 1221.7,
+      "TonCK": 1059.5,
       "TonCK_CDOTHAN": 1221.7,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
