@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-10 11:00:09",
+    "updatedAt": "2026-07-11 11:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 7,
     "ThangDen": 7,
-    "rowCount": 73,
-    "rawRowCount": 161,
-    "auditRowCount": 161,
-    "warningCount": 52,
-    "removedRowCount": 52,
+    "rowCount": 65,
+    "rawRowCount": 162,
+    "auditRowCount": 162,
+    "warningCount": 83,
+    "removedRowCount": 83,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -58,10 +58,430 @@
       ]
     },
     {
+      "MaKho": "06",
+      "MaThan": "B11C",
+      "KhoApp": "Kho 6",
+      "CoalApp": "Cục xô 1c",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
       "MaKho": "07",
       "MaThan": "7A.1",
       "KhoApp": "Kho 7",
       "CoalApp": "Cám 2a.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "07",
+      "MaThan": "9A.1",
+      "KhoApp": "Kho 7",
+      "CoalApp": "Cám 4a.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "07",
+      "MaThan": "11a.1",
+      "KhoApp": "Kho 7",
+      "CoalApp": "Cám 6a.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "08",
+      "MaThan": "11A.1",
+      "KhoApp": "Kho 8",
+      "CoalApp": "Cám 6a.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.247",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.10",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.251",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.10",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.257",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.10",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11.250",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.241",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.243",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.245",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.246",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.249",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.253",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.255",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11a.261",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "09",
+      "MaThan": "11B.1",
+      "KhoApp": "Kho 9",
+      "CoalApp": "Cám 6b.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "9B.1",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 4b.1",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.101",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.259",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.262",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.263",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.264",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.265",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.266",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.267",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.269",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.270",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "10",
+      "MaThan": "10a.72",
+      "KhoApp": "Kho 10",
+      "CoalApp": "Cám 5a.14",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "11",
+      "MaThan": "9B.1",
+      "KhoApp": "Kho 11",
+      "CoalApp": "Cám 4b.1",
       "TonDK": 0.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -104,6 +524,20 @@
       "MaThan": "b28c",
       "KhoApp": "Kho 32",
       "CoalApp": "Cám 8C",
+      "TonDK": 0.0,
+      "NhapTK": 0.0,
+      "XuatTK": 0.0,
+      "TonCK": 0.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "ZERO_ALL_FIELDS_EXCLUDED"
+      ]
+    },
+    {
+      "MaKho": "28",
+      "MaThan": "NHK.308",
+      "KhoApp": "Kho 39",
+      "CoalApp": "Than NK (Mozambique - Tầu MV MADREDEUS)",
       "TonDK": 0.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -216,11 +650,11 @@
       "MaThan": "NHK.309",
       "KhoApp": "UNMAPPED_34",
       "CoalApp": "Than NK (Úc -Tàu MV FORTUNE ATLAS)",
-      "TonDK": 10121.47,
+      "TonDK": 10121.54,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 10121.47,
-      "TonCK_CDOTHAN": 10121.47,
+      "TonCK": 10121.54,
+      "TonCK_CDOTHAN": 10121.54,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
       ]
@@ -272,11 +706,11 @@
       "MaThan": "b32e",
       "KhoApp": "UNMAPPED_39",
       "CoalApp": "Bùn tuyển 3B",
-      "TonDK": 22581.8,
+      "TonDK": 26951.05,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
-      "TonCK": 22581.8,
-      "TonCK_CDOTHAN": 22581.8,
+      "TonCK": 26951.05,
+      "TonCK_CDOTHAN": 26951.05,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
       ]
@@ -287,9 +721,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Cám đá",
       "TonDK": 60.0,
-      "NhapTK": 5075.0,
+      "NhapTK": 5725.0,
       "XuatTK": 0.0,
-      "TonCK": 5135.0,
+      "TonCK": 5785.0,
       "TonCK_CDOTHAN": -3100.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -315,13 +749,12 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN OCEAN",
       "TonDK": 0.0,
-      "NhapTK": 0.0,
+      "NhapTK": 360.0,
       "XuatTK": 0.0,
-      "TonCK": 0.0,
+      "TonCK": 360.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
-        "UNMAPPED_OR_BLOCKED_KHO",
-        "ZERO_ALL_FIELDS_EXCLUDED"
+        "UNMAPPED_OR_BLOCKED_KHO"
       ]
     },
     {
@@ -330,9 +763,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than Anthracite Lào Tầu VTA POSEIDON (LẦN 2)",
       "TonDK": 471.81,
-      "NhapTK": 0.0,
+      "NhapTK": 354.0,
       "XuatTK": 0.0,
-      "TonCK": 471.81,
+      "TonCK": 825.81,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -434,9 +867,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than NK (Úc -Tàu MV MARIANNE STOEGER (LẦN 2)",
       "TonDK": 0.0,
-      "NhapTK": 5224.0,
+      "NhapTK": 6474.0,
       "XuatTK": 0.0,
-      "TonCK": 5224.0,
+      "TonCK": 6474.0,
       "TonCK_CDOTHAN": -628.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -491,9 +924,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Bã sàng nguyên khai",
       "TonDK": 510.0,
-      "NhapTK": 3346.0,
+      "NhapTK": 3644.0,
       "XuatTK": 0.0,
-      "TonCK": 3856.0,
+      "TonCK": 4154.0,
       "TonCK_CDOTHAN": -660.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -520,9 +953,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 12000.0,
+      "NhapTK": 13200.0,
       "XuatTK": 3900.0,
-      "TonCK": 8100.0,
+      "TonCK": 9300.0,
       "TonCK_CDOTHAN": -63429.63,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -549,9 +982,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám 6A.1 (sấy)",
       "TonDK": 0.0,
-      "NhapTK": 7113.0,
+      "NhapTK": 8050.0,
       "XuatTK": 0.0,
-      "TonCK": 7113.0,
+      "TonCK": 8050.0,
       "TonCK_CDOTHAN": -2933.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -593,24 +1026,10 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 1266.0,
+      "NhapTK": 1456.0,
       "XuatTK": 0.0,
-      "TonCK": 1266.0,
+      "TonCK": 1456.0,
       "TonCK_CDOTHAN": -350.0,
-      "Flags": [
-        "UNMAPPED_OR_BLOCKED_KHO"
-      ]
-    },
-    {
-      "MaKho": "K06",
-      "MaThan": "00",
-      "KhoApp": "UNMAPPED_K06",
-      "CoalApp": "Than nguyên khai",
-      "TonDK": 0.0,
-      "NhapTK": 22375.7,
-      "XuatTK": 2182.25,
-      "TonCK": 20193.45,
-      "TonCK_CDOTHAN": -12803.54,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
       ]
@@ -724,9 +1143,9 @@
       "KhoApp": "UNMAPPED_K169",
       "CoalApp": "Cục don 8C",
       "TonDK": 0.0,
-      "NhapTK": 7339.0,
+      "NhapTK": 8045.0,
       "XuatTK": 0.0,
-      "TonCK": 7339.0,
+      "TonCK": 8045.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -761,14 +1180,28 @@
       ]
     },
     {
+      "MaKho": "k06",
+      "MaThan": "00",
+      "KhoApp": "UNMAPPED_k06",
+      "CoalApp": "Than nguyên khai",
+      "TonDK": 0.0,
+      "NhapTK": 25795.7,
+      "XuatTK": 2262.17,
+      "TonCK": 23533.53,
+      "TonCK_CDOTHAN": -12803.54,
+      "Flags": [
+        "UNMAPPED_OR_BLOCKED_KHO"
+      ]
+    },
+    {
       "MaKho": "k17",
       "MaThan": "00",
       "KhoApp": "UNMAPPED_k17",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 23876.0,
-      "XuatTK": 23343.15,
-      "TonCK": 532.85,
+      "NhapTK": 27801.0,
+      "XuatTK": 26936.89,
+      "TonCK": 864.11,
       "TonCK_CDOTHAN": -54843.47,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -780,9 +1213,9 @@
       "KhoApp": "UNMAPPED_k59",
       "CoalApp": "Cám 6b.1",
       "TonDK": 4359.0,
-      "NhapTK": 44161.0,
-      "XuatTK": 44336.0,
-      "TonCK": 4184.0,
+      "NhapTK": 51393.0,
+      "XuatTK": 51596.0,
+      "TonCK": 4156.0,
       "TonCK_CDOTHAN": -11882.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
