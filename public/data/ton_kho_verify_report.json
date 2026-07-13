@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-11 11:00:08",
+    "updatedAt": "2026-07-13 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -13,10 +13,10 @@
     "ThangTu": 7,
     "ThangDen": 7,
     "rowCount": 65,
-    "rawRowCount": 162,
-    "auditRowCount": 162,
-    "warningCount": 83,
-    "removedRowCount": 83,
+    "rawRowCount": 159,
+    "auditRowCount": 159,
+    "warningCount": 79,
+    "removedRowCount": 79,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -78,11 +78,11 @@
         "MaThan": "NHK.312",
         "ma_than": "NHK.312",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 3108.8,
+        "TonDK": 3109.8,
         "NhapTK": 0.0,
         "XuatTK": 0.0,
-        "ton": 3108.8,
-        "ttcoApp": 3108.8,
+        "ton": 3109.8,
+        "ttcoApp": 3109.8,
         "MaKhoRawList": [
           "28"
         ],
@@ -104,11 +104,11 @@
         "MaThan": "NHK.305",
         "ma_than": "NHK.305",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 5493.71,
+        "TonDK": 5496.37,
         "NhapTK": 0.0,
-        "XuatTK": 360.0,
-        "ton": 5133.71,
-        "ttcoApp": 5133.71,
+        "XuatTK": 720.0,
+        "ton": 4776.37,
+        "ttcoApp": 4776.37,
         "MaKhoRawList": [
           "28"
         ],
@@ -130,11 +130,11 @@
         "MaThan": "NHK.307",
         "ma_than": "NHK.307",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 4623.63,
+        "TonDK": 4624.63,
         "NhapTK": 0.0,
         "XuatTK": 0.0,
-        "ton": 4623.63,
-        "ttcoApp": 4623.63,
+        "ton": 4624.63,
+        "ttcoApp": 4624.63,
         "MaKhoRawList": [
           "28"
         ],
@@ -156,11 +156,11 @@
         "MaThan": "NHK.310",
         "ma_than": "NHK.310",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 5445.27,
+        "TonDK": 5447.27,
         "NhapTK": 0.0,
         "XuatTK": 0.0,
-        "ton": 5445.27,
-        "ttcoApp": 5445.27,
+        "ton": 5447.27,
+        "ttcoApp": 5447.27,
         "MaKhoRawList": [
           "28"
         ],
