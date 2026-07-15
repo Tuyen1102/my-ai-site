@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-14 11:00:08",
+    "updatedAt": "2026-07-15 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 7,
     "ThangDen": 7,
-    "rowCount": 65,
-    "rawRowCount": 157,
-    "auditRowCount": 157,
+    "rowCount": 67,
+    "rawRowCount": 161,
+    "auditRowCount": 161,
     "warningCount": 77,
     "removedRowCount": 77,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -89,20 +89,6 @@
       "MaKho": "07",
       "MaThan": "11a.1",
       "KhoApp": "Kho 7",
-      "CoalApp": "Cám 6a.1",
-      "TonDK": 0.0,
-      "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 0.0,
-      "TonCK_CDOTHAN": 0.0,
-      "Flags": [
-        "ZERO_ALL_FIELDS_EXCLUDED"
-      ]
-    },
-    {
-      "MaKho": "08",
-      "MaThan": "11A.1",
-      "KhoApp": "Kho 8",
       "CoalApp": "Cám 6a.1",
       "TonDK": 0.0,
       "NhapTK": 0.0,
@@ -552,11 +538,11 @@
       "MaKho": "34",
       "MaThan": "NHK.309",
       "KhoApp": "UNMAPPED_34",
-      "CoalApp": "Than NK (Úc -Tàu MV FORTUNE ATLAS)",
+      "CoalApp": "Than NK (Úc -Tàu FORTUNE ATLAS)",
       "TonDK": 10121.54,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 10121.54,
+      "XuatTK": 660.0,
+      "TonCK": 9461.54,
       "TonCK_CDOTHAN": 10121.54,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -624,9 +610,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Cám đá",
       "TonDK": 60.0,
-      "NhapTK": 5995.0,
+      "NhapTK": 6555.0,
       "XuatTK": 0.0,
-      "TonCK": 6055.0,
+      "TonCK": 6615.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -751,12 +737,26 @@
       "MaKho": "K04",
       "MaThan": "NHK.309",
       "KhoApp": "UNMAPPED_K04",
-      "CoalApp": "Than NK (Úc -Tàu MV FORTUNE ATLAS)",
+      "CoalApp": "Than NK (Úc -Tàu FORTUNE ATLAS)",
       "TonDK": 0.0,
-      "NhapTK": 2784.0,
+      "NhapTK": 4763.0,
       "XuatTK": 0.0,
-      "TonCK": 2784.0,
+      "TonCK": 4763.0,
       "TonCK_CDOTHAN": 529.39,
+      "Flags": [
+        "UNMAPPED_OR_BLOCKED_KHO"
+      ]
+    },
+    {
+      "MaKho": "K04",
+      "MaThan": "NHK.315",
+      "KhoApp": "UNMAPPED_K04",
+      "CoalApp": "Than NK (Úc -Tàu MV GLORY ALBATROSS)",
+      "TonDK": 0.0,
+      "NhapTK": 1650.0,
+      "XuatTK": 0.0,
+      "TonCK": 1650.0,
+      "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
       ]
@@ -839,9 +839,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Bã sàng nguyên khai",
       "TonDK": 510.0,
-      "NhapTK": 5525.0,
+      "NhapTK": 5939.0,
       "XuatTK": 0.0,
-      "TonCK": 6035.0,
+      "TonCK": 6449.0,
       "TonCK_CDOTHAN": 510.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -868,9 +868,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 18000.0,
+      "NhapTK": 18147.0,
       "XuatTK": 3900.0,
-      "TonCK": 14100.0,
+      "TonCK": 14247.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -897,9 +897,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám 6A.1 (sấy)",
       "TonDK": 0.0,
-      "NhapTK": 11422.0,
+      "NhapTK": 12943.0,
       "XuatTK": 0.0,
-      "TonCK": 11422.0,
+      "TonCK": 12943.0,
       "TonCK_CDOTHAN": 1030.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -941,9 +941,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 2089.0,
+      "NhapTK": 2289.0,
       "XuatTK": 0.0,
-      "TonCK": 2089.0,
+      "TonCK": 2289.0,
       "TonCK_CDOTHAN": 235.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -983,7 +983,7 @@
       "MaKho": "K07",
       "MaThan": "NHK.309",
       "KhoApp": "UNMAPPED_K07",
-      "CoalApp": "Than NK (Úc -Tàu MV FORTUNE ATLAS)",
+      "CoalApp": "Than NK (Úc -Tàu FORTUNE ATLAS)",
       "TonDK": 0.0,
       "NhapTK": 0.0,
       "XuatTK": 0.0,
@@ -1100,9 +1100,9 @@
       "KhoApp": "UNMAPPED_k06",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 32338.0,
+      "NhapTK": 34975.4,
       "XuatTK": 2332.17,
-      "TonCK": 30005.83,
+      "TonCK": 32643.23,
       "TonCK_CDOTHAN": 571.88,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -1128,9 +1128,9 @@
       "KhoApp": "UNMAPPED_k59",
       "CoalApp": "Cám 6b.1",
       "TonDK": 0.0,
-      "NhapTK": 72575.0,
-      "XuatTK": 72794.0,
-      "TonCK": -219.0,
+      "NhapTK": 79552.0,
+      "XuatTK": 79768.0,
+      "TonCK": -216.0,
       "TonCK_CDOTHAN": -219.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
