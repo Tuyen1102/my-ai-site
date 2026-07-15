@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-14 11:00:08",
+    "updatedAt": "2026-07-15 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 7,
     "ThangDen": 7,
-    "rowCount": 65,
-    "rawRowCount": 157,
-    "auditRowCount": 157,
+    "rowCount": 67,
+    "rawRowCount": 161,
+    "auditRowCount": 161,
     "warningCount": 77,
     "removedRowCount": 77,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -65,8 +65,8 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 7,
-    "kho39NhkRowCount": 7,
+    "kho39RowCount": 8,
+    "kho39NhkRowCount": 8,
     "kho39Rows": [
       {
         "kho": "Kho 39",
@@ -195,6 +195,32 @@
         ],
         "TenThanGocList": [
           "Than Anthracite Lào Tầu VTA POSEIDON (LẦN 2)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than NK (Úc -Tàu MV GLORY ALBATROSS)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.315",
+        "MaThan": "NHK.315",
+        "ma_than": "NHK.315",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 0.0,
+        "NhapTK": 4000.0,
+        "XuatTK": 1650.0,
+        "ton": 2350.0,
+        "ttcoApp": 2350.0,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.315"
+        ],
+        "TenThanGocList": [
+          "Than NK (Úc -Tàu MV GLORY ALBATROSS)"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       },
