@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-07-18 11:00:09",
+    "updatedAt": "2026-07-20 11:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 7,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 7,
     "ThangDen": 7,
-    "rowCount": 67,
-    "rawRowCount": 165,
-    "auditRowCount": 165,
-    "warningCount": 78,
-    "removedRowCount": 78,
+    "rowCount": 68,
+    "rawRowCount": 171,
+    "auditRowCount": 171,
+    "warningCount": 79,
+    "removedRowCount": 79,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -65,8 +65,8 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 8,
-    "kho39NhkRowCount": 8,
+    "kho39RowCount": 9,
+    "kho39NhkRowCount": 9,
     "kho39Rows": [
       {
         "kho": "Kho 39",
@@ -80,9 +80,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 3109.8,
         "NhapTK": 0.0,
-        "XuatTK": 3102.72,
-        "ton": 7.08,
-        "ttcoApp": 7.08,
+        "XuatTK": 3102.8,
+        "ton": 7.0,
+        "ttcoApp": 7.0,
         "MaKhoRawList": [
           "28"
         ],
@@ -106,9 +106,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 5496.37,
         "NhapTK": 0.0,
-        "XuatTK": 1427.56,
-        "ton": 4068.81,
-        "ttcoApp": 4068.81,
+        "XuatTK": 1429.15,
+        "ton": 4067.22,
+        "ttcoApp": 4067.22,
         "MaKhoRawList": [
           "28"
         ],
@@ -132,9 +132,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 4624.63,
         "NhapTK": 0.0,
-        "XuatTK": 0.0,
-        "ton": 4624.63,
-        "ttcoApp": 4624.63,
+        "XuatTK": 3847.76,
+        "ton": 776.87,
+        "ttcoApp": 776.87,
         "MaKhoRawList": [
           "28"
         ],
@@ -200,6 +200,32 @@
       },
       {
         "kho": "Kho 39",
+        "coal": "Than NK (Mozambique - Tầu MV GRAND T)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.316",
+        "MaThan": "NHK.316",
+        "ma_than": "NHK.316",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 0.0,
+        "NhapTK": 1800.0,
+        "XuatTK": 0.0,
+        "ton": 1800.0,
+        "ttcoApp": 1800.0,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.316"
+        ],
+        "TenThanGocList": [
+          "Than NK (Mozambique - Tầu MV GRAND T)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
         "coal": "Than NK (Úc -Tàu MV GLORY ALBATROSS)",
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
@@ -209,10 +235,10 @@
         "ma_than": "NHK.315",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 14402.14,
-        "XuatTK": 10240.69,
-        "ton": 4161.45,
-        "ttcoApp": 4161.45,
+        "NhapTK": 18552.93,
+        "XuatTK": 17356.3,
+        "ton": 1196.63,
+        "ttcoApp": 1196.63,
         "MaKhoRawList": [
           "28"
         ],
