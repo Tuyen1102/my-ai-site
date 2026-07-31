@@ -3,6 +3,7 @@ import {
   classifyCalculationValidation,
   buildSaveMetadata,
   normalizeSavedHistoryRecord,
+  saveHistoryRecord,
 } from "../src/stockpileValidation.js";
 
 describe("classifyCalculationValidation", () => {
@@ -91,5 +92,38 @@ describe("normalizeSavedHistoryRecord", () => {
       saveStatusLabel: "Hợp lệ",
       nonBlockingWarnings: [],
     });
+  });
+});
+
+describe("saveHistoryRecord", () => {
+  it("prepends a new record", () => {
+    const history = [{ id: "old", actualMass: 10 }];
+    const result = saveHistoryRecord(history, { id: "new", actualMass: 20 });
+
+    expect(result.map((item) => item.id)).toEqual(["new", "old"]);
+  });
+
+  it("replaces the edited record without changing its position or duplicating it", () => {
+    const history = [
+      { id: "first", actualMass: 10 },
+      { id: "second", actualMass: 20 },
+    ];
+    const result = saveHistoryRecord(
+      history,
+      { id: "second", actualMass: 25 },
+      "second"
+    );
+
+    expect(result).toHaveLength(2);
+    expect(result.map((item) => item.id)).toEqual(["first", "second"]);
+    expect(result[1].actualMass).toBe(25);
+  });
+
+  it("leaves history unchanged when the edited record no longer exists", () => {
+    const history = [{ id: "first", actualMass: 10 }];
+
+    expect(
+      saveHistoryRecord(history, { id: "missing", actualMass: 20 }, "missing")
+    ).toBe(history);
   });
 });

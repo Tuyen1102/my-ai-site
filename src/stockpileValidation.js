@@ -87,6 +87,22 @@ export function normalizeSavedHistoryRecord(item = {}) {
   };
 }
 
+export function saveHistoryRecord(history = [], record, editingId = null, limit = 300) {
+  const normalizedRecord = normalizeSavedHistoryRecord(record);
+
+  if (!editingId) {
+    return [normalizedRecord, ...history].slice(0, limit);
+  }
+
+  if (!history.some((item) => item.id === editingId)) {
+    return history;
+  }
+
+  return history.map((item) =>
+    item.id === editingId ? normalizedRecord : item
+  );
+}
+
 export function warningReasonsText(item = {}) {
   const normalized = normalizeSavedHistoryRecord(item);
   return normalized.nonBlockingWarnings.join("; ");

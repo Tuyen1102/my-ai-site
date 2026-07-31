@@ -21,12 +21,15 @@ import {
   ListChecks,
   CloudUpload,
   Sheet,
+  PencilLine,
+  X,
 } from "lucide-react";
 import * as XLSX from "xlsx";
 import {
   buildSaveMetadata,
   classifyCalculationValidation,
   normalizeSavedHistoryRecord,
+  saveHistoryRecord,
   warningReasonsText,
 } from "./stockpileValidation.js";
 
@@ -1350,7 +1353,7 @@ function Select(props) {
   return (
     <select
       {...props}
-      className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm font-medium text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-100"
+      className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm font-medium text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-100 disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-500"
     />
   );
 }
@@ -1417,6 +1420,8 @@ function ResultSummaryPanel({
   warning,
   WarningIcon,
   onSave,
+  isEditing,
+  onCancelEdit,
   nonBlockingWarnings,
 }) {
   return (
@@ -1488,19 +1493,32 @@ function ResultSummaryPanel({
         </div>
       ) : null}
 
-      <button
-        type="button"
-        onClick={onSave}
-        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-4 py-3.5 text-sm font-black text-white shadow-sm transition hover:bg-slate-800"
-      >
-        <Save size={17} />
-        Lưu kết quả
-      </button>
+      <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+        <button
+          type="button"
+          onClick={onSave}
+          className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-slate-950 px-4 py-3.5 text-sm font-black text-white shadow-sm transition hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-300"
+        >
+          <Save size={17} />
+          {isEditing ? "Cập nhật kết quả" : "Lưu kết quả"}
+        </button>
+
+        {isEditing ? (
+          <button
+            type="button"
+            onClick={onCancelEdit}
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm font-black text-slate-700 transition hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-200"
+          >
+            <X size={17} />
+            Hủy chỉnh sửa
+          </button>
+        ) : null}
+      </div>
     </Panel>
   );
 }
 
-function SavedResultsTable({ history, onDelete, onExport }) {
+function SavedResultsTable({ history, editingId, onEdit, onDelete, onExport }) {
   const normalizedHistory = history.map(normalizeSavedHistoryRecord);
   const totalActualMass = normalizedHistory.reduce((sum, item) => sum + toNumber(item.actualMass), 0);
   const totalTtcoMass = normalizedHistory.reduce((sum, item) => sum + toNumber(item.ttcoMass), 0);
@@ -1554,8 +1572,12 @@ function SavedResultsTable({ history, onDelete, onExport }) {
           </div>
         </div>
       ) : (
-        <div className="overflow-x-auto rounded-2xl border border-slate-200">
-          <table className="min-w-[1100px] w-full border-collapse bg-white text-sm">
+        <div
+          className="overflow-x-auto rounded-2xl border border-slate-200"
+          tabIndex={0}
+          aria-label="Bảng lịch sử tính toán, cuộn ngang để xem thêm cột"
+        >
+          <table className="min-w-[1180px] w-full border-collapse bg-white text-sm">
             <thead className="bg-slate-950 text-white">
               <tr>
                 <th className="px-3 py-3 text-left font-black">STT</th>
@@ -1569,7 +1591,7 @@ function SavedResultsTable({ history, onDelete, onExport }) {
                 <th className="px-3 py-3 text-right font-black">Chênh lệch tấn</th>
                 <th className="px-3 py-3 text-left font-black">Trạng thái lưu</th>
                 <th className="px-3 py-3 text-left font-black">Cảnh báo</th>
-                <th className="px-3 py-3 text-center font-black">Xóa</th>
+                <th className="px-3 py-3 text-center font-black">Thao tác</th>
               </tr>
             </thead>
 
@@ -1583,7 +1605,12 @@ function SavedResultsTable({ history, onDelete, onExport }) {
                 const warningText = warningReasonsText(item);
 
                 return (
-                  <tr key={item.id} className="border-b border-slate-100 hover:bg-slate-50">
+                  <tr
+                    key={item.id}
+                    className={`border-b border-slate-100 ${
+                      editingId === item.id ? "bg-blue-50" : "hover:bg-slate-50"
+                    }`}
+                  >
                     <td className="px-3 py-3 font-bold text-slate-700">{index + 1}</td>
                     <td className="px-3 py-3 text-slate-600">
                       {new Date(item.savedAt).toLocaleString("vi-VN")}
@@ -1625,15 +1652,28 @@ function SavedResultsTable({ history, onDelete, onExport }) {
                         {item.warningLabel}
                       </span>
                     </td>
-                    <td className="px-3 py-3 text-center">
-                      <button
-                        type="button"
-                        onClick={() => onDelete(item.id)}
-                        className="inline-flex items-center justify-center rounded-lg border border-red-200 bg-red-50 p-2 text-red-600 transition hover:bg-red-100"
-                        title="Xóa dòng này"
-                      >
-                        <Trash2 size={16} />
-                      </button>
+                    <td className="px-3 py-3">
+                      <div className="flex items-center justify-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => onEdit(item)}
+                          className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg border border-blue-200 bg-blue-50 px-2.5 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-200"
+                          aria-label={`Sửa kết quả ${item.warehouseName} - ${item.coalName}`}
+                        >
+                          <PencilLine size={15} />
+                          Sửa
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => onDelete(item.id)}
+                          className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg border border-red-200 bg-red-50 px-2.5 py-2 text-xs font-black text-red-700 transition hover:bg-red-100 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200"
+                          aria-label={`Xóa kết quả ${item.warehouseName} - ${item.coalName}`}
+                        >
+                          <Trash2 size={15} />
+                          Xóa
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 );
@@ -1704,6 +1744,15 @@ export default function TTCOCoalStockpileApp() {
   const [sectionSpacing, setSectionSpacing] = useState("2");
   const [warehouseLengthOverride, setWarehouseLengthOverride] = useState("");
   const [blocks, setBlocks] = useState([emptyBlock()]);
+  const [editingHistoryId, setEditingHistoryId] = useState(null);
+  const editFormSnapshotRef = useRef(null);
+  const editStatusRef = useRef(null);
+  const skipNextTtcoAutofillRef = useRef(false);
+
+  const editingHistoryItem = useMemo(
+    () => history.find((item) => item.id === editingHistoryId) || null,
+    [editingHistoryId, history]
+  );
 
   const warehouse = useMemo(
     () => warehouses.find((item) => item.id === warehouseId) || warehouses[0],
@@ -1711,6 +1760,7 @@ export default function TTCOCoalStockpileApp() {
   );
 
   useEffect(() => {
+    if (editingHistoryId) return;
     if (warehouses.length === 0) return;
 
     const currentWarehouseExists = warehouses.some((item) => item.id === warehouseId);
@@ -1722,7 +1772,7 @@ export default function TTCOCoalStockpileApp() {
       setDensityOverride("");
       setWarehouseLengthOverride("");
     }
-  }, [warehouses, warehouseId, coalTypes]);
+  }, [editingHistoryId, warehouses, warehouseId, coalTypes]);
 
   const selectedCoalType = useMemo(() => {
     const exact = coalTypes.find(
@@ -1771,6 +1821,7 @@ export default function TTCOCoalStockpileApp() {
   }, [allowAllCoalTypes, warehouse, coalTypes, ttcoCoalTypesForWarehouse, ttcoRecords.length]);
 
   useEffect(() => {
+    if (editingHistoryId) return;
     if (!warehouse || ttcoCoalTypesForWarehouse.length === 0) return;
 
     const currentStillExists = ttcoCoalTypesForWarehouse.some((item) =>
@@ -1782,7 +1833,13 @@ export default function TTCOCoalStockpileApp() {
       setDensityOverride("");
       setWarehouseLengthOverride("");
     }
-  }, [warehouse, coalName, ttcoCoalTypesForWarehouse, ttcoRecords.length]);
+  }, [
+    editingHistoryId,
+    warehouse,
+    coalName,
+    ttcoCoalTypesForWarehouse,
+    ttcoRecords.length,
+  ]);
 
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
@@ -1803,7 +1860,25 @@ export default function TTCOCoalStockpileApp() {
     return matched.reduce((sum, item) => sum + item.ton, 0);
   }, [warehouse, coalName, ttcoRecords]);
 
-  useEffect(() => { if (matchedTtcoMass !== null) { setTtcoMass(String(Math.round(matchedTtcoMass * 100) / 100)); } else { setTtcoMass(""); } }, [matchedTtcoMass, warehouseId, coalName]);
+  useEffect(() => {
+    if (editingHistoryId) return;
+
+    if (skipNextTtcoAutofillRef.current) {
+      skipNextTtcoAutofillRef.current = false;
+      return;
+    }
+
+    if (matchedTtcoMass !== null) {
+      setTtcoMass(String(Math.round(matchedTtcoMass * 100) / 100));
+    } else {
+      setTtcoMass("");
+    }
+  }, [editingHistoryId, matchedTtcoMass, warehouseId, coalName]);
+
+  useEffect(() => {
+    if (!editingHistoryItem) return;
+    setTtcoMass(String(editingHistoryItem.ttcoMass ?? ""));
+  }, [editingHistoryItem]);
 
   useEffect(() => {
     const loadDefaultCatalog = async () => {
@@ -2218,21 +2293,145 @@ export default function TTCOCoalStockpileApp() {
     setWarehouseLengthOverride("");
   };
 
+  const restoreFormState = (snapshot) => {
+    if (!snapshot) return;
+    setWarehouseId(snapshot.warehouseId);
+    setCoalName(snapshot.coalName);
+    setAllowAllCoalTypes(snapshot.allowAllCoalTypes);
+    setDensityOverride(snapshot.densityOverride);
+    setTtcoMass(snapshot.ttcoMass);
+    setSectionSpacing(snapshot.sectionSpacing);
+    setWarehouseLengthOverride(snapshot.warehouseLengthOverride);
+    setBlocks(snapshot.blocks);
+  };
+
+  const cancelHistoryEdit = () => {
+    skipNextTtcoAutofillRef.current = true;
+    restoreFormState(editFormSnapshotRef.current);
+    editFormSnapshotRef.current = null;
+    setEditingHistoryId(null);
+  };
+
+  const editHistoryItem = (item) => {
+    if (!catalogReady) {
+      alert("Danh mục kho đang tải. Vui lòng thử lại sau khi dữ liệu sẵn sàng.");
+      return;
+    }
+
+    const saved = normalizeSavedHistoryRecord(item);
+    const targetWarehouse =
+      warehouses.find((candidate) => candidate.id === saved.warehouseId) ||
+      warehouses.find(
+        (candidate) =>
+          getKhoCompareCode(candidate.id || candidate.name) ===
+          getKhoCompareCode(saved.warehouseId || saved.warehouseName)
+      );
+
+    if (!targetWarehouse) {
+      alert("Kho của kết quả đã lưu không còn trong danh mục hiện tại.");
+      return;
+    }
+
+    if (!Array.isArray(saved.blocks) || saved.blocks.length === 0) {
+      alert("Kết quả đã lưu không có thông số khối để chỉnh sửa.");
+      return;
+    }
+
+    if (!editingHistoryId) {
+      editFormSnapshotRef.current = {
+        warehouseId,
+        coalName,
+        allowAllCoalTypes,
+        densityOverride,
+        ttcoMass,
+        sectionSpacing,
+        warehouseLengthOverride,
+        blocks: blocks.map((block) => ({ ...block })),
+      };
+    }
+
+    setEditingHistoryId(saved.id);
+    setWarehouseId(targetWarehouse.id);
+    setCoalName(saved.coalName || "");
+    setAllowAllCoalTypes(true);
+    setDensityOverride(String(saved.density ?? ""));
+    setTtcoMass(String(saved.ttcoMass ?? ""));
+    setSectionSpacing(String(saved.sectionSpacing ?? "2"));
+    setWarehouseLengthOverride(String(saved.warehouseLength ?? ""));
+    setBlocks(
+      saved.blocks.map((block) => ({
+        ...emptyBlock(),
+        lengthMode: block.lengthMode === "manual" ? "manual" : "roller",
+        rollerFrom: String(block.rollerFrom ?? ""),
+        rollerTo: String(block.rollerTo ?? ""),
+        manualLength: String(block.manualLength ?? ""),
+        baseWidth: String(block.baseWidth ?? ""),
+        topWidth: String(block.topWidth ?? ""),
+        height: String(block.height ?? ""),
+      }))
+    );
+
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0 });
+      editStatusRef.current?.focus();
+    });
+  };
+
   const saveCurrentResult = () => {
+    const selectedWarehouse = warehouses.find(
+      (item) => item.id === warehouseId
+    );
+
+    if (!selectedWarehouse) {
+      alert("Kho đang chọn không còn trong danh mục hiện tại.");
+      return;
+    }
+
     if (blockingErrors.length > 0) {
       alert("Dữ liệu chưa hợp lệ. Vui lòng kiểm tra lại trước khi lưu.");
       return;
     }
 
+    const previousRecord = editingHistoryId
+      ? history.find((item) => item.id === editingHistoryId)
+      : null;
+
+    if (editingHistoryId && !previousRecord) {
+      alert("Kết quả đang chỉnh sửa không còn trong danh sách đã lưu.");
+      cancelHistoryEdit();
+      return;
+    }
+
+    if (
+      previousRecord &&
+      (getKhoCompareCode(selectedWarehouse.id || selectedWarehouse.name) !==
+        getKhoCompareCode(
+          previousRecord.warehouseId || previousRecord.warehouseName
+        ) ||
+        normalizeKey(coalName) !== normalizeKey(previousRecord.coalName))
+    ) {
+      alert(
+        "Kho hoặc loại than đã thay đổi trong khi chỉnh sửa. Hãy hủy và mở lại kết quả trước khi cập nhật."
+      );
+      return;
+    }
+
     const saveMetadata = buildSaveMetadata(nonBlockingWarnings);
+    const savedAt = new Date().toISOString();
+    const recordId =
+      previousRecord?.id ||
+      (typeof crypto !== "undefined" && crypto.randomUUID
+        ? crypto.randomUUID()
+        : Date.now().toString());
 
     const record = {
-      id: Date.now().toString(),
-      savedAt: new Date().toISOString(),
+      id: recordId,
+      savedAt: previousRecord?.savedAt || savedAt,
+      ...(previousRecord ? { updatedAt: savedAt } : {}),
 
       warehouseId,
-      warehouseName: warehouse?.name || "",
-      unit: warehouse?.unit || "",
+      warehouseName: selectedWarehouse.name || "",
+      unit: selectedWarehouse.unit || "",
 
       coalName,
       density,
@@ -2272,16 +2471,28 @@ export default function TTCOCoalStockpileApp() {
       catalogSourceName,
     };
 
-    const nextHistory = [normalizeSavedHistoryRecord(record), ...history].slice(0, 300);
+    const nextHistory = saveHistoryRecord(
+      history,
+      record,
+      editingHistoryId
+    );
 
     setHistory(nextHistory);
     localStorage.setItem(HISTORY_KEY, JSON.stringify(nextHistory));
+    const wasEditing = Boolean(editingHistoryId);
+    skipNextTtcoAutofillRef.current = wasEditing;
+    setEditingHistoryId(null);
+    editFormSnapshotRef.current = null;
 
-    alert("Đã lưu kết quả tính toán.");
+    alert(wasEditing ? "Đã cập nhật kết quả tính toán." : "Đã lưu kết quả tính toán.");
   };
 
   const deleteHistoryItem = (id) => {
     const nextHistory = history.filter((item) => item.id !== id);
+
+    if (editingHistoryId === id) {
+      cancelHistoryEdit();
+    }
 
     setHistory(nextHistory);
     localStorage.setItem(HISTORY_KEY, JSON.stringify(nextHistory));
@@ -2437,6 +2648,21 @@ export default function TTCOCoalStockpileApp() {
         ) : null}
 
         <main className="space-y-4">
+          {editingHistoryItem ? (
+            <div
+              ref={editStatusRef}
+              role="status"
+              aria-live="polite"
+              tabIndex={-1}
+              className="rounded-2xl border border-blue-200 bg-blue-50 p-4 text-sm font-bold text-blue-900 outline-none focus-visible:ring-4 focus-visible:ring-blue-200"
+            >
+              Đang chỉnh sửa kết quả: {editingHistoryItem.warehouseName} —{" "}
+              {editingHistoryItem.coalName}. Thay đổi thông số đo rồi bấm “Cập
+              nhật kết quả”. Kho, loại than và nguồn dữ liệu được giữ nguyên
+              trong lúc sửa.
+            </div>
+          ) : null}
+
           <section className="space-y-4">
             <Panel className="p-4 sm:p-5">
               <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -2452,24 +2678,38 @@ export default function TTCOCoalStockpileApp() {
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  <label className="inline-flex h-10 cursor-pointer items-center justify-center gap-2 rounded-xl bg-slate-950 px-3 text-sm font-bold text-white shadow-sm transition hover:bg-slate-800">
+                  <label
+                    className={`inline-flex h-10 items-center justify-center gap-2 rounded-xl px-3 text-sm font-bold text-white shadow-sm transition ${
+                      editingHistoryItem
+                        ? "cursor-not-allowed bg-slate-400"
+                        : "cursor-pointer bg-slate-950 hover:bg-slate-800"
+                    }`}
+                  >
                     <Upload size={16} />
                     Tải danh mục
                     <input
                       type="file"
                       accept=".xlsx,.xls"
                       onChange={handleExcelUpload}
+                      disabled={Boolean(editingHistoryItem)}
                       className="hidden"
                     />
                   </label>
 
-                  <label className="inline-flex min-h-10 cursor-pointer items-center justify-center gap-2 rounded-xl bg-blue-700 px-3 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-blue-800">
+                  <label
+                    className={`inline-flex min-h-10 items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-white shadow-sm transition ${
+                      editingHistoryItem
+                        ? "cursor-not-allowed bg-slate-400"
+                        : "cursor-pointer bg-blue-700 hover:bg-blue-800"
+                    }`}
+                  >
                     <FileSpreadsheet size={16} />
                     Tải file Excel tồn kho xuất từ TTCO_APP
                     <input
                       type="file"
                       accept=".xlsx,.xls"
                       onChange={handleTTCOUpload}
+                      disabled={Boolean(editingHistoryItem)}
                       className="hidden"
                     />
                   </label>
@@ -2477,7 +2717,7 @@ export default function TTCOCoalStockpileApp() {
                   <SmallButton
                     onClick={handleLoadTTCOFromGitHub}
                     variant="blue"
-                    disabled={isLoadingGitHub}
+                    disabled={isLoadingGitHub || Boolean(editingHistoryItem)}
                   >
                     <Sheet size={16} />
                     {isLoadingGitHub ? "Đang tải GitHub..." : "Tải dữ liệu từ GitHub"}
@@ -2488,7 +2728,7 @@ export default function TTCOCoalStockpileApp() {
                       <SmallButton
                         onClick={handleAutoLoadTTCOFromDatabase}
                         variant="green"
-                        disabled={isLoadingTTCO}
+                        disabled={isLoadingTTCO || Boolean(editingHistoryItem)}
                       >
                         <Server size={16} />
                         {isLoadingTTCO ? "Đang tải..." : "Tải tự động TTCO_APP"}
@@ -2497,7 +2737,7 @@ export default function TTCOCoalStockpileApp() {
                       <SmallButton
                         onClick={handleExportTTCOToGoogleSheet}
                         variant="dark"
-                        disabled={isExportingSheet}
+                        disabled={isExportingSheet || Boolean(editingHistoryItem)}
                       >
                         <CloudUpload size={16} />
                         {isExportingSheet ? "Đang xuất..." : "Xuất TTCO_APP lên Google Sheet"}
@@ -2505,7 +2745,10 @@ export default function TTCOCoalStockpileApp() {
                     </>
                   ) : null}
 
-                  <SmallButton onClick={restoreDefaultData}>
+                  <SmallButton
+                    onClick={restoreDefaultData}
+                    disabled={Boolean(editingHistoryItem)}
+                  >
                     <RefreshCw size={16} />
                     Mặc định
                   </SmallButton>
@@ -2542,6 +2785,7 @@ export default function TTCOCoalStockpileApp() {
                   <Select
                     value={warehouseId}
                     onChange={(e) => handleWarehouseChange(e.target.value)}
+                    disabled={Boolean(editingHistoryItem)}
                   >
                     {warehouses.map((item) => (
                       <option key={item.id} value={item.id}>
@@ -2583,7 +2827,8 @@ export default function TTCOCoalStockpileApp() {
                     <button
                       type="button"
                       onClick={() => setAllowAllCoalTypes((prev) => !prev)}
-                      className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 shadow-sm transition hover:bg-slate-50"
+                      disabled={Boolean(editingHistoryItem)}
+                      className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 shadow-sm transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
                     >
                       {allowAllCoalTypes ? "Theo kho" : "+ Chủng loại khác"}
                     </button>
@@ -2592,6 +2837,7 @@ export default function TTCOCoalStockpileApp() {
                   <Select
                     value={coalName}
                     onChange={(e) => handleCoalChange(e.target.value)}
+                    disabled={Boolean(editingHistoryItem)}
                   >
                     {availableCoalTypes.map((item) => (
                       <option key={item.name} value={item.name}>
@@ -2852,11 +3098,15 @@ export default function TTCOCoalStockpileApp() {
             warning={warning}
             WarningIcon={WarningIcon}
             onSave={saveCurrentResult}
+            isEditing={Boolean(editingHistoryItem)}
+            onCancelEdit={cancelHistoryEdit}
             nonBlockingWarnings={nonBlockingWarnings}
           />
 
           <SavedResultsTable
             history={history}
+            editingId={editingHistoryId}
+            onEdit={editHistoryItem}
             onDelete={deleteHistoryItem}
             onExport={exportHistoryToExcel}
           />
