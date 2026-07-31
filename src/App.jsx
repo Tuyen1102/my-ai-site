@@ -22,9 +22,11 @@ import {
   CloudUpload,
   Sheet,
   PencilLine,
+  Share2,
   X,
 } from "lucide-react";
 import * as XLSX from "xlsx";
+import { deliverFile, downloadFile } from "./fileDelivery.js";
 import {
   buildSaveMetadata,
   classifyCalculationValidation,
@@ -1518,7 +1520,14 @@ function ResultSummaryPanel({
   );
 }
 
-function SavedResultsTable({ history, editingId, onEdit, onDelete, onExport }) {
+function SavedResultsTable({
+  history,
+  editingId,
+  onEdit,
+  onDelete,
+  onDownload,
+  onShare,
+}) {
   const normalizedHistory = history.map(normalizeSavedHistoryRecord);
   const totalActualMass = normalizedHistory.reduce((sum, item) => sum + toNumber(item.actualMass), 0);
   const totalTtcoMass = normalizedHistory.reduce((sum, item) => sum + toNumber(item.ttcoMass), 0);
@@ -1540,10 +1549,24 @@ function SavedResultsTable({ history, editingId, onEdit, onDelete, onExport }) {
           </p>
         </div>
 
-        <SmallButton onClick={onExport} variant="dark">
-          <Download size={16} />
-          Xuất Excel
-        </SmallButton>
+        <div>
+          <div className="grid gap-2 sm:grid-cols-2">
+            <SmallButton onClick={onDownload} variant="dark">
+              <Download size={16} />
+              Lưu file Excel
+            </SmallButton>
+
+            <SmallButton onClick={onShare} variant="blue">
+              <Share2 size={16} />
+              Chia sẻ
+            </SmallButton>
+          </div>
+
+          <p className="mt-2 max-w-sm text-xs font-medium leading-5 text-slate-500">
+            Trên điện thoại, chọn “Lưu vào Tệp/Files” để lưu file mà không cần
+            cài ứng dụng Excel.
+          </p>
+        </div>
       </div>
 
       <div className="mb-5 grid gap-3 sm:grid-cols-2">
@@ -2498,10 +2521,9 @@ export default function TTCOCoalStockpileApp() {
     localStorage.setItem(HISTORY_KEY, JSON.stringify(nextHistory));
   };
 
-  const exportHistoryToExcel = () => {
+  const createHistoryExcelFile = () => {
     if (history.length === 0) {
-      alert("Chưa có lịch sử tính toán để xuất Excel.");
-      return;
+      throw new Error("Chưa có lịch sử tính toán để xuất Excel.");
     }
 
     const normalizedHistory = history.map(normalizeSavedHistoryRecord);
@@ -2593,7 +2615,49 @@ export default function TTCOCoalStockpileApp() {
     const today = new Date().toISOString().slice(0, 10);
     const fileName = `TTCO_Xuat_khoi_luong_than_ton_kho_${today}.xlsx`;
 
-    XLSX.writeFile(workbook, fileName);
+    const fileData = XLSX.write(workbook, {
+      bookType: "xlsx",
+      type: "array",
+    });
+
+    return new File([fileData], fileName, {
+      type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    });
+  };
+
+  const deliverHistoryExcel = async (intent) => {
+    try {
+      const file = createHistoryExcelFile();
+      const result = await deliverFile({
+        file,
+        intent,
+        navigatorObject: navigator,
+        windowObject: window,
+        download: downloadFile,
+      });
+
+      if (intent === "share" && result === "downloaded") {
+        alert(
+          "Thiết bị không hỗ trợ chia sẻ file. File Excel đã được tải xuống."
+        );
+      }
+
+      if (
+        intent === "save" &&
+        result === "share-aborted" &&
+        confirm(
+          "Không thể xác định thao tác chia sẻ đã bị hủy hay thiết bị không có nơi nhận file. Bạn có muốn thử tải file trực tiếp?"
+        )
+      ) {
+        downloadFile(file);
+      }
+    } catch (error) {
+      alert(
+        error instanceof Error
+          ? error.message
+          : "Không thể tạo file Excel. Vui lòng thử lại."
+      );
+    }
   };
 
   if (!warehouse) {
@@ -3108,7 +3172,8 @@ export default function TTCOCoalStockpileApp() {
             editingId={editingHistoryId}
             onEdit={editHistoryItem}
             onDelete={deleteHistoryItem}
-            onExport={exportHistoryToExcel}
+            onDownload={() => deliverHistoryExcel("save")}
+            onShare={() => deliverHistoryExcel("share")}
           />
 
             <Panel className="p-4 sm:p-5">
