@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-08-04 11:00:08",
+    "updatedAt": "2026-08-05 08:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 8,
@@ -161,9 +161,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than NK (Mozambique - Tầu MV GRAND T)",
       "TonDK": 0.0,
-      "NhapTK": 3521.91,
+      "NhapTK": 4886.56,
       "XuatTK": 0.0,
-      "TonCK": 3521.91,
+      "TonCK": 4886.56,
       "TonCK_CDOTHAN": 682.52,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -189,9 +189,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Bã sàng nguyên khai",
       "TonDK": 370.0,
-      "NhapTK": 830.0,
+      "NhapTK": 1625.0,
       "XuatTK": 0.0,
-      "TonCK": 1200.0,
+      "TonCK": 1995.0,
       "TonCK_CDOTHAN": 370.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -302,9 +302,9 @@
       "KhoApp": "UNMAPPED_k17",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 0.0,
+      "NhapTK": 3295.0,
       "XuatTK": 5137.56,
-      "TonCK": -5137.56,
+      "TonCK": -1842.56,
       "TonCK_CDOTHAN": -3295.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
