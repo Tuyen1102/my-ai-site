@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-08-17 08:00:09",
+    "updatedAt": "2026-08-17 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 8,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 8,
     "ThangDen": 8,
-    "rowCount": 69,
-    "rawRowCount": 137,
-    "auditRowCount": 137,
+    "rowCount": 70,
+    "rawRowCount": 138,
+    "auditRowCount": 138,
     "warningCount": 31,
     "removedRowCount": 31,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -54,10 +54,10 @@
       "ma_than": "B11C",
       "sourceFix": "",
       "TonDK": 537.0,
-      "NhapTK": 6858.0,
-      "XuatTK": 6624.9,
-      "ton": 770.1,
-      "ttcoApp": 770.1,
+      "NhapTK": 6856.0,
+      "XuatTK": 6867.0,
+      "ton": 526.0,
+      "ttcoApp": 526.0,
       "MaKhoRawList": [
         "01"
       ],
@@ -445,9 +445,9 @@
       "sourceFix": "",
       "TonDK": 21998.75,
       "NhapTK": 26120.0,
-      "XuatTK": 34936.0,
-      "ton": 13182.75,
-      "ttcoApp": 13182.75,
+      "XuatTK": 35173.0,
+      "ton": 12945.75,
+      "ttcoApp": 12945.75,
       "MaKhoRawList": [
         "09"
       ],
@@ -470,10 +470,10 @@
       "ma_than": "11a.264",
       "sourceFix": "",
       "TonDK": 10491.8,
-      "NhapTK": 585.0,
+      "NhapTK": 5382.0,
       "XuatTK": 9533.0,
-      "ton": 1543.8,
-      "ttcoApp": 1543.8,
+      "ton": 6340.8,
+      "ttcoApp": 6340.8,
       "MaKhoRawList": [
         "09"
       ],
@@ -483,7 +483,7 @@
         "11a.276",
         "11a.277",
         "11a.279",
-        "11a.602"
+        "11a.287"
       ],
       "TenThanGocList": [
         "Cám 6a.10 (Lào - Tàu Golden Star Lần 2)",
@@ -491,7 +491,7 @@
         "Cám 6a.10 (Úc-Tàu MV Glory Albatross+Lào-Tầu Trường Nguyên Ocean)",
         "Cám 6a.10 (Mozambique-Tàu MV Grand T+Lào-Trường Nguyên Ocean)",
         "Cám 6a.10 (Úc-Tàu MV Lowlands Crimson+Lào-Tàu VTA Neptune)",
-        "Cám 6a.10 (Úc - Tàu .........)"
+        "Cám 6a.10 (Úc - Tầu MV Lowlands Crimson + Lào - Tầu Việt Thuận 26-03)"
       ],
       "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
@@ -909,9 +909,9 @@
       "sourceFix": "",
       "TonDK": 33563.76,
       "NhapTK": 9469.0,
-      "XuatTK": 10898.0,
-      "ton": 32134.76,
-      "ttcoApp": 32134.76,
+      "XuatTK": 12480.0,
+      "ton": 30552.76,
+      "ttcoApp": 30552.76,
       "MaKhoRawList": [
         "20"
       ],
@@ -935,9 +935,9 @@
       "sourceFix": "",
       "TonDK": 2100.23,
       "NhapTK": 1340.0,
-      "XuatTK": 0.0,
-      "ton": 3440.23,
-      "ttcoApp": 3440.23,
+      "XuatTK": 459.0,
+      "ton": 2981.23,
+      "ttcoApp": 2981.23,
       "MaKhoRawList": [
         "20"
       ],
@@ -1065,9 +1065,9 @@
       "sourceFix": "",
       "TonDK": 3016.7,
       "NhapTK": 10031.0,
-      "XuatTK": 8844.0,
-      "ton": 4203.7,
-      "ttcoApp": 4203.7,
+      "XuatTK": 9083.0,
+      "ton": 3964.7,
+      "ttcoApp": 3964.7,
       "MaKhoRawList": [
         "24"
       ],
@@ -1117,9 +1117,9 @@
       "sourceFix": "",
       "TonDK": 10326.71,
       "NhapTK": 18508.0,
-      "XuatTK": 16993.0,
-      "ton": 11841.71,
-      "ttcoApp": 11841.71,
+      "XuatTK": 19027.0,
+      "ton": 9807.71,
+      "ttcoApp": 9807.71,
       "MaKhoRawList": [
         "29"
       ],
@@ -1402,10 +1402,10 @@
       "ma_than": "b2902",
       "sourceFix": "",
       "TonDK": 8184.81,
-      "NhapTK": 22204.0,
+      "NhapTK": 24388.0,
       "XuatTK": 20320.45,
-      "ton": 10068.36,
-      "ttcoApp": 10068.36,
+      "ton": 12252.36,
+      "ttcoApp": 12252.36,
       "MaKhoRawList": [
         "44"
       ],
@@ -1506,10 +1506,10 @@
       "ma_than": "00",
       "sourceFix": "",
       "TonDK": 18637.41,
-      "NhapTK": 16543.28,
+      "NhapTK": 17343.28,
       "XuatTK": 12838.3,
-      "ton": 22342.39,
-      "ttcoApp": 22342.39,
+      "ton": 23142.39,
+      "ttcoApp": 23142.39,
       "MaKhoRawList": [
         "44"
       ],
@@ -1533,9 +1533,9 @@
       "sourceFix": "",
       "TonDK": 4574.85,
       "NhapTK": 13329.0,
-      "XuatTK": 14194.4,
-      "ton": 3709.45,
-      "ttcoApp": 3709.45,
+      "XuatTK": 16177.0,
+      "ton": 1726.85,
+      "ttcoApp": 1726.85,
       "MaKhoRawList": [
         "45"
       ],
@@ -1611,9 +1611,9 @@
       "sourceFix": "",
       "TonDK": 80246.33,
       "NhapTK": 0.0,
-      "XuatTK": 9776.0,
-      "ton": 70470.33,
-      "ttcoApp": 70470.33,
+      "XuatTK": 10576.0,
+      "ton": 69670.33,
+      "ttcoApp": 69670.33,
       "MaKhoRawList": [
         "46a"
       ],
@@ -1766,10 +1766,10 @@
       "ma_than": "NHK.318",
       "sourceFix": "KHO39_NHK_DETAIL",
       "TonDK": 6037.86,
-      "NhapTK": 1700.0,
+      "NhapTK": 0.0,
       "XuatTK": 1920.07,
-      "ton": 5817.79,
-      "ttcoApp": 5817.79,
+      "ton": 4117.79,
+      "ttcoApp": 4117.79,
       "MaKhoRawList": [
         "28"
       ],
@@ -1778,6 +1778,32 @@
       ],
       "TenThanGocList": [
         "Than Anthracite Lào Tầu VIỆT THUẬN 235-06"
+      ],
+      "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
+      "kho": "Kho 39",
+      "coal": "Than Anthracite Lào Tầu VIỆT THUẬN 235-06 (Lần 2)",
+      "khoCode": "Kho 39",
+      "rawKhoCode": "28",
+      "sourceKhoCode": "28",
+      "coalCode": "NHK.322",
+      "MaThan": "NHK.322",
+      "ma_than": "NHK.322",
+      "sourceFix": "KHO39_NHK_DETAIL",
+      "TonDK": 0.0,
+      "NhapTK": 2988.75,
+      "XuatTK": 0.0,
+      "ton": 2988.75,
+      "ttcoApp": 2988.75,
+      "MaKhoRawList": [
+        "28"
+      ],
+      "MaThanList": [
+        "NHK.322"
+      ],
+      "TenThanGocList": [
+        "Than Anthracite Lào Tầu VIỆT THUẬN 235-06 (Lần 2)"
       ],
       "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
     },
@@ -1897,9 +1923,9 @@
       "sourceFix": "",
       "TonDK": 1392.64,
       "NhapTK": 39489.0,
-      "XuatTK": 36650.23,
-      "ton": 4231.41,
-      "ttcoApp": 4231.41,
+      "XuatTK": 39428.76,
+      "ton": 1452.88,
+      "ttcoApp": 1452.88,
       "MaKhoRawList": [
         "60"
       ],
