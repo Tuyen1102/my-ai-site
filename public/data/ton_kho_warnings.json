@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-08-18 08:00:09",
+    "updatedAt": "2026-08-18 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 8,
@@ -50,8 +50,8 @@
       "CoalApp": "Than NK (Mozambique - Tầu MV MADREDEUS)",
       "TonDK": 5752.97,
       "NhapTK": 0.0,
-      "XuatTK": 1252.97,
-      "TonCK": 4500.0,
+      "XuatTK": 1642.97,
+      "TonCK": 4110.0,
       "TonCK_CDOTHAN": 5752.97,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -92,8 +92,8 @@
       "CoalApp": "Than NK (Úc -Tàu MV LOWLANDS CRIMSON)",
       "TonDK": 3251.82,
       "NhapTK": 0.0,
-      "XuatTK": 2285.82,
-      "TonCK": 966.0,
+      "XuatTK": 3128.82,
+      "TonCK": 123.0,
       "TonCK_CDOTHAN": 3251.82,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -161,9 +161,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 5755.0,
+      "NhapTK": 6340.0,
       "XuatTK": 0.0,
-      "TonCK": 5755.0,
+      "TonCK": 6340.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -189,9 +189,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than Anthracite Lào Tầu VIỆT THUẬN 235-06",
       "TonDK": 0.0,
-      "NhapTK": 1920.07,
+      "NhapTK": 2450.07,
       "XuatTK": 0.0,
-      "TonCK": 1920.07,
+      "TonCK": 2450.07,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -203,9 +203,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than Anthracite Lào Tầu VIỆT THUẬN 26-03",
       "TonDK": 0.0,
-      "NhapTK": 2951.37,
+      "NhapTK": 4781.17,
       "XuatTK": 0.0,
-      "TonCK": 2951.37,
+      "TonCK": 4781.17,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -245,9 +245,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than NK (Mozambique - Tầu MV MADREDEUS)",
       "TonDK": 0.0,
-      "NhapTK": 1330.07,
+      "NhapTK": 1720.07,
       "XuatTK": 0.0,
-      "TonCK": 1330.07,
+      "TonCK": 1720.07,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -273,9 +273,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than NK (Úc -Tàu MV LOWLANDS CRIMSON)",
       "TonDK": 0.0,
-      "NhapTK": 5613.87,
+      "NhapTK": 6456.87,
       "XuatTK": 0.0,
-      "TonCK": 5613.87,
+      "TonCK": 6456.87,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -315,9 +315,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Bã sàng nguyên khai",
       "TonDK": 370.0,
-      "NhapTK": 2958.0,
+      "NhapTK": 3186.85,
       "XuatTK": 0.0,
-      "TonCK": 3328.0,
+      "TonCK": 3556.85,
       "TonCK_CDOTHAN": 370.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -343,9 +343,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám 6A.1 (sấy)",
       "TonDK": 0.0,
-      "NhapTK": 20320.45,
+      "NhapTK": 22445.45,
       "XuatTK": 0.0,
-      "TonCK": 20320.45,
+      "TonCK": 22445.45,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -357,9 +357,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám 6a.1",
       "TonDK": 0.0,
-      "NhapTK": 434.0,
+      "NhapTK": 561.0,
       "XuatTK": 0.0,
-      "TonCK": 434.0,
+      "TonCK": 561.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -371,9 +371,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 1682.0,
+      "NhapTK": 1992.0,
       "XuatTK": 0.0,
-      "TonCK": 1682.0,
+      "TonCK": 1992.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -441,9 +441,9 @@
       "KhoApp": "UNMAPPED_k06",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 12838.3,
-      "XuatTK": 6767.28,
-      "TonCK": 6071.02,
+      "NhapTK": 14796.57,
+      "XuatTK": 6952.28,
+      "TonCK": 7844.29,
       "TonCK_CDOTHAN": 205.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -469,8 +469,8 @@
       "KhoApp": "UNMAPPED_k59",
       "CoalApp": "Cám 6b.1",
       "TonDK": -211.0,
-      "NhapTK": 53632.0,
-      "XuatTK": 53739.0,
+      "NhapTK": 61748.0,
+      "XuatTK": 61855.0,
       "TonCK": -318.0,
       "TonCK_CDOTHAN": -238.0,
       "Flags": [
