@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-08-23 11:00:10",
+    "updatedAt": "2026-08-24 08:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 8,
@@ -356,13 +356,13 @@
       },
       {
         "kho": "Kho 39",
-        "coal": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+        "coal": "Than NK (Úc -Tàu MV WOOLLOOMOOLOO)",
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
         "sourceKhoCode": "28",
-        "coalCode": "NHK.16",
-        "MaThan": "NHK.16",
-        "ma_than": "NHK.16",
+        "coalCode": "NHK.323",
+        "MaThan": "NHK.323",
+        "ma_than": "NHK.323",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
         "NhapTK": 3067.0,
@@ -373,10 +373,10 @@
           "28"
         ],
         "MaThanList": [
-          "NHK.16"
+          "NHK.323"
         ],
         "TenThanGocList": [
-          "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
+          "Than NK (Úc -Tàu MV WOOLLOOMOOLOO)"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       }
