@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-03 11:00:10",
+    "updatedAt": "2026-09-04 08:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 9,
     "ThangDen": 9,
-    "rowCount": 63,
-    "rawRowCount": 111,
-    "auditRowCount": 111,
+    "rowCount": 65,
+    "rawRowCount": 120,
+    "auditRowCount": 120,
     "warningCount": 17,
     "removedRowCount": 17,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -65,8 +65,8 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 7,
-    "kho39NhkRowCount": 7,
+    "kho39RowCount": 9,
+    "kho39NhkRowCount": 9,
     "kho39Rows": [
       {
         "kho": "Kho 39",
@@ -148,27 +148,27 @@
       },
       {
         "kho": "Kho 39",
-        "coal": "Than Anthracite Lào Tầu VIỆT THUẬN 235",
+        "coal": "Than Anthracite Lào Tầu VIỆT THUẬN 215-06",
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
         "sourceKhoCode": "28",
-        "coalCode": "NHK.317",
-        "MaThan": "NHK.317",
-        "ma_than": "NHK.317",
+        "coalCode": "NHK.321",
+        "MaThan": "NHK.321",
+        "ma_than": "NHK.321",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 4299.03,
+        "TonDK": 3493.41,
         "NhapTK": 0.0,
         "XuatTK": 0.0,
-        "ton": 4299.03,
-        "ttcoApp": 4299.03,
+        "ton": 3493.41,
+        "ttcoApp": 3493.41,
         "MaKhoRawList": [
           "28"
         ],
         "MaThanList": [
-          "NHK.317"
+          "NHK.321"
         ],
         "TenThanGocList": [
-          "Than Anthracite Lào Tầu VIỆT THUẬN 235"
+          "Than Anthracite Lào Tầu VIỆT THUẬN 215-06"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       },
@@ -182,11 +182,11 @@
         "MaThan": "NHK.318",
         "ma_than": "NHK.318",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 6037.86,
+        "TonDK": 1774.72,
         "NhapTK": 0.0,
         "XuatTK": 0.0,
-        "ton": 6037.86,
-        "ttcoApp": 6037.86,
+        "ton": 1774.72,
+        "ttcoApp": 1774.72,
         "MaKhoRawList": [
           "28"
         ],
@@ -200,6 +200,32 @@
       },
       {
         "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu VIỆT THUẬN 235-06 (Lần 2)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.322",
+        "MaThan": "NHK.322",
+        "ma_than": "NHK.322",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 5142.99,
+        "NhapTK": 0.0,
+        "XuatTK": 330.12,
+        "ton": 4812.87,
+        "ttcoApp": 4812.87,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.322"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu VIỆT THUẬN 235-06 (Lần 2)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
         "coal": "Than Anthracite Lào Tầu VTA NEPTUNE",
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
@@ -208,11 +234,11 @@
         "MaThan": "NHK.310",
         "ma_than": "NHK.310",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 1666.7,
+        "TonDK": 2.0,
         "NhapTK": 0.0,
         "XuatTK": 0.0,
-        "ton": 1666.7,
-        "ttcoApp": 1666.7,
+        "ton": 2.0,
+        "ttcoApp": 2.0,
         "MaKhoRawList": [
           "28"
         ],
@@ -226,27 +252,53 @@
       },
       {
         "kho": "Kho 39",
-        "coal": "Than NK (Mozambique - Tầu MV GRAND T)",
+        "coal": "Than NK (Nam Phi -Tàu MV COMMON SPIRIT)",
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
         "sourceKhoCode": "28",
-        "coalCode": "NHK.316",
-        "MaThan": "NHK.316",
-        "ma_than": "NHK.316",
+        "coalCode": "NHK.324",
+        "MaThan": "NHK.324",
+        "ma_than": "NHK.324",
         "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 3534.1,
-        "NhapTK": 0.0,
+        "TonDK": 5220.07,
+        "NhapTK": 1800.0,
         "XuatTK": 0.0,
-        "ton": 3534.1,
-        "ttcoApp": 3534.1,
+        "ton": 7020.07,
+        "ttcoApp": 7020.07,
         "MaKhoRawList": [
           "28"
         ],
         "MaThanList": [
-          "NHK.316"
+          "NHK.324"
         ],
         "TenThanGocList": [
-          "Than NK (Mozambique - Tầu MV GRAND T)"
+          "Than NK (Nam Phi -Tàu MV COMMON SPIRIT)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than NK (Úc -Tàu MV WOOLLOOMOOLOO)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.323",
+        "MaThan": "NHK.323",
+        "ma_than": "NHK.323",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 14020.44,
+        "NhapTK": 0.0,
+        "XuatTK": 1108.39,
+        "ton": 12912.05,
+        "ttcoApp": 12912.05,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.323"
+        ],
+        "TenThanGocList": [
+          "Than NK (Úc -Tàu MV WOOLLOOMOOLOO)"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       }
