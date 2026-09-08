@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-08 08:00:08",
+    "updatedAt": "2026-09-08 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 9,
     "ThangDen": 9,
-    "rowCount": 68,
-    "rawRowCount": 132,
-    "auditRowCount": 132,
+    "rowCount": 69,
+    "rawRowCount": 133,
+    "auditRowCount": 133,
     "warningCount": 23,
     "removedRowCount": 23,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -161,9 +161,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Cám đá",
       "TonDK": 20.0,
-      "NhapTK": 790.0,
+      "NhapTK": 1060.0,
       "XuatTK": 0.0,
-      "TonCK": 810.0,
+      "TonCK": 1080.0,
       "TonCK_CDOTHAN": 30.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -175,9 +175,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than Anthracite Lào Tầu VIỆT THUẬN 235-06 (Lần 2)",
       "TonDK": 0.0,
-      "NhapTK": 3811.29,
+      "NhapTK": 5135.31,
       "XuatTK": 0.0,
-      "TonCK": 3811.29,
+      "TonCK": 5135.31,
       "TonCK_CDOTHAN": 354.74,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -189,9 +189,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than NK (Úc -Tàu MV WOOLLOOMOOLOO)",
       "TonDK": 0.0,
-      "NhapTK": 10427.6,
+      "NhapTK": 12247.62,
       "XuatTK": 0.0,
-      "TonCK": 10427.6,
+      "TonCK": 12247.62,
       "TonCK_CDOTHAN": 504.56,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -218,9 +218,9 @@
       "KhoApp": "UNMAPPED_K05",
       "CoalApp": "Bã sàng nguyên khai",
       "TonDK": 370.0,
-      "NhapTK": 1464.0,
+      "NhapTK": 1746.0,
       "XuatTK": 0.0,
-      "TonCK": 1834.0,
+      "TonCK": 2116.0,
       "TonCK_CDOTHAN": 370.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -246,9 +246,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám 6A.1 (sấy)",
       "TonDK": 0.0,
-      "NhapTK": 4111.0,
+      "NhapTK": 6162.0,
       "XuatTK": 0.0,
-      "TonCK": 4111.0,
+      "TonCK": 6162.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -274,9 +274,9 @@
       "KhoApp": "UNMAPPED_K06",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 1124.78,
+      "NhapTK": 1604.78,
       "XuatTK": 0.0,
-      "TonCK": 1124.78,
+      "TonCK": 1604.78,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -330,9 +330,9 @@
       "KhoApp": "UNMAPPED_k06",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 3892.18,
-      "XuatTK": 1000.0,
-      "TonCK": 2892.18,
+      "NhapTK": 5889.44,
+      "XuatTK": 1315.0,
+      "TonCK": 4574.44,
       "TonCK_CDOTHAN": 39.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -358,9 +358,9 @@
       "KhoApp": "UNMAPPED_k59",
       "CoalApp": "Cám 6b.1",
       "TonDK": -590.0,
-      "NhapTK": 13116.0,
-      "XuatTK": 13147.0,
-      "TonCK": -621.0,
+      "NhapTK": 19683.0,
+      "XuatTK": 19703.0,
+      "TonCK": -610.0,
       "TonCK_CDOTHAN": -621.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
