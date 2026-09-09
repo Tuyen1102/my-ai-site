@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-08 11:00:09",
+    "updatedAt": "2026-09-09 08:00:11",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -80,10 +80,10 @@
       "ma_than": "11a.1",
       "sourceFix": "",
       "TonDK": 110398.89,
-      "NhapTK": 43822.0,
-      "XuatTK": 69946.0,
-      "ton": 84274.89,
-      "ttcoApp": 84274.89,
+      "NhapTK": 55623.0,
+      "XuatTK": 83688.0,
+      "ton": 82333.89,
+      "ttcoApp": 82333.89,
       "MaKhoRawList": [
         "71"
       ],
@@ -159,9 +159,9 @@
       "sourceFix": "",
       "TonDK": 4695.05,
       "NhapTK": 0.0,
-      "XuatTK": 877.0,
-      "ton": 3818.05,
-      "ttcoApp": 3818.05,
+      "XuatTK": 1179.0,
+      "ton": 3516.05,
+      "ttcoApp": 3516.05,
       "MaKhoRawList": [
         "72"
       ],
@@ -185,9 +185,9 @@
       "sourceFix": "",
       "TonDK": 2083.86,
       "NhapTK": 453.53,
-      "XuatTK": 1219.0,
-      "ton": 1318.39,
-      "ttcoApp": 1318.39,
+      "XuatTK": 1349.0,
+      "ton": 1188.39,
+      "ttcoApp": 1188.39,
       "MaKhoRawList": [
         "72"
       ],
@@ -210,10 +210,10 @@
       "ma_than": "B5.01",
       "sourceFix": "",
       "TonDK": 834.05,
-      "NhapTK": 302.0,
-      "XuatTK": 185.18,
-      "ton": 950.87,
-      "ttcoApp": 950.87,
+      "NhapTK": 387.0,
+      "XuatTK": 401.1,
+      "ton": 819.95,
+      "ttcoApp": 819.95,
       "MaKhoRawList": [
         "72"
       ],
@@ -1099,9 +1099,9 @@
       "sourceFix": "",
       "TonDK": 10797.71,
       "NhapTK": 3722.0,
-      "XuatTK": 4004.0,
-      "ton": 10515.71,
-      "ttcoApp": 10515.71,
+      "XuatTK": 4558.0,
+      "ton": 9961.71,
+      "ttcoApp": 9961.71,
       "MaKhoRawList": [
         "29"
       ],
@@ -1489,9 +1489,9 @@
       "sourceFix": "",
       "TonDK": 18286.7,
       "NhapTK": 5405.0,
-      "XuatTK": 5889.44,
-      "ton": 17802.26,
-      "ttcoApp": 17802.26,
+      "XuatTK": 5741.65,
+      "ton": 17950.05,
+      "ttcoApp": 17950.05,
       "MaKhoRawList": [
         "44"
       ],
