@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Updated the bundled coal warehouse and density catalog from the supplied workbook to include 46 warehouses and 30 density rows.
+
 ### Added
 
 - Added editing for saved calculations so measurement inputs can be loaded back into the calculator, recalculated, and updated without creating a duplicate history row.
