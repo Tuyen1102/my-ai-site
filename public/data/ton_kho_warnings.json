@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO39_NHK_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-21 08:00:09",
+    "updatedAt": "2026-09-21 11:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 9,
     "ThangDen": 9,
-    "rowCount": 73,
-    "rawRowCount": 153,
-    "auditRowCount": 153,
-    "warningCount": 32,
-    "removedRowCount": 32,
+    "rowCount": 72,
+    "rawRowCount": 157,
+    "auditRowCount": 157,
+    "warningCount": 34,
+    "removedRowCount": 34,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -64,8 +64,8 @@
       "CoalApp": "Than NK (Úc - Tầu MV LIME MIA)",
       "TonDK": 6038.84,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 6038.84,
+      "XuatTK": 190.0,
+      "TonCK": 5848.84,
       "TonCK_CDOTHAN": 6038.84,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -106,8 +106,8 @@
       "CoalApp": "Than NK (Úc -Tàu MV SHINE RUBY)",
       "TonDK": 3126.0,
       "NhapTK": 0.0,
-      "XuatTK": 0.0,
-      "TonCK": 3126.0,
+      "XuatTK": 1026.0,
+      "TonCK": 2100.0,
       "TonCK_CDOTHAN": 3126.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -276,6 +276,34 @@
       "NhapTK": 8955.74,
       "XuatTK": 0.0,
       "TonCK": 8955.74,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "UNMAPPED_OR_BLOCKED_KHO"
+      ]
+    },
+    {
+      "MaKho": "K04",
+      "MaThan": "NHK.299",
+      "KhoApp": "UNMAPPED_K04",
+      "CoalApp": "Than NK (Úc - Tầu MV LIME MIA)",
+      "TonDK": 0.0,
+      "NhapTK": 190.0,
+      "XuatTK": 0.0,
+      "TonCK": 190.0,
+      "TonCK_CDOTHAN": 0.0,
+      "Flags": [
+        "UNMAPPED_OR_BLOCKED_KHO"
+      ]
+    },
+    {
+      "MaKho": "K04",
+      "MaThan": "NHK.313",
+      "KhoApp": "UNMAPPED_K04",
+      "CoalApp": "Than NK (Úc -Tàu MV SHINE RUBY)",
+      "TonDK": 0.0,
+      "NhapTK": 1026.0,
+      "XuatTK": 0.0,
+      "TonCK": 1026.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
