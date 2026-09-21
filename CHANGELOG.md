@@ -11,6 +11,7 @@
 
 ### Added
 
+- Added a formatted "Bao cao" worksheet to exported calculation history, matching the supplied ten-column report and showing saved volume, actual mass, TTCO stock, differences, timestamps and warnings.
 - Added editing for saved calculations so measurement inputs can be loaded back into the calculator, recalculated, and updated without creating a duplicate history row.
 - Added mobile Excel file sharing through the device share sheet, including a direct-download fallback.
 

@@ -18,7 +18,8 @@
     "react": "latest",
     "react-dom": "latest",
     "vite": "latest",
-    "xlsx": "latest"
+    "xlsx": "latest",
+    "xlsx-js-style": "^1.2.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "latest",

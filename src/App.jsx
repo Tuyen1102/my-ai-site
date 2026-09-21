@@ -26,6 +26,8 @@ import {
   X,
 } from "lucide-react";
 import * as XLSX from "xlsx";
+import * as StyledXLSX from "xlsx-js-style";
+import { createReportSheet } from "./reportExcel.js";
 import { deliverFile, downloadFile } from "./fileDelivery.js";
 import {
   buildSaveMetadata,
@@ -2630,11 +2632,12 @@ export default function TTCOCoalStockpileApp() {
     XLSX.utils.book_append_sheet(workbook, summarySheet, "Tong_hop");
     XLSX.utils.book_append_sheet(workbook, detailSheet, "Chi_tiet_khoi");
     XLSX.utils.book_append_sheet(workbook, ttcoSheet, "Du_lieu_TTCO_APP");
+    XLSX.utils.book_append_sheet(workbook, createReportSheet(normalizedHistory), "Bao cao");
 
     const today = new Date().toISOString().slice(0, 10);
     const fileName = `TTCO_Xuat_khoi_luong_than_ton_kho_${today}.xlsx`;
 
-    const fileData = XLSX.write(workbook, {
+    const fileData = StyledXLSX.write(workbook, {
       bookType: "xlsx",
       type: "array",
     });
