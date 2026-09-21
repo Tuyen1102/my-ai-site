@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Updated the bundled catalog to use "Than nguyên khai" consistently with TTCO stock data in the density list and descriptions for five warehouses, preserving all 46 warehouses and 30 density values.
 - Updated the bundled coal warehouse and density catalog from the supplied workbook to include 46 warehouses and 30 density rows.
 
 ### Added
