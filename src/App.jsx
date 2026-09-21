@@ -597,6 +597,7 @@ export function parseTTCOGitHubJson(payload, currentKhoRows) {
         updatedAt: normalizeText(payload?.meta?.updatedAt),
         sheetName: "GitHub JSON CDOTHAN",
         rowNumber: "", rawKhoCode: normalizeKhoCode(rawKhoCode), rawKhoName: normalizeText(rawKhoName), isNhomTongHop: Boolean(item.IsNhomTongHop),
+        sourceFix: normalizeText(item.sourceFix ?? item.SourceFix),
         nhomTongHopLoai: normalizeText(item.NhomTongHopLoai),
         danhSachMaThanGoc: Array.isArray(item.DanhSachMaThanGoc)
           ? item.DanhSachMaThanGoc
@@ -863,7 +864,13 @@ const isRecordKhoNameConsistent = (record) => {
   if (rawNameStandard && finalStandard && rawNameStandard.code !== finalStandard.code) return false;
 
   // Nếu cả TenKho và MaKho đều có chuẩn, chúng phải cùng chỉ một kho sau chuẩn hóa.
-  if (rawNameStandard && rawCodeStandard && rawNameStandard.code !== rawCodeStandard.code) return false;
+  // Ngoại lệ đã xác minh từ nguồn: MaKho DB 28 là Kho 39; Kho 28 thực dùng mã 31C.
+  const verifiedKho39Alias =
+    rawNameStandard?.code === "39" &&
+    normalizeKhoCode(rawCode) === "28" &&
+    normalizeText(record?.sourceFix).toUpperCase() === "KHO39_NHK_DETAIL" &&
+    /^NHK\./i.test(normalizeText(record?.coalCode));
+  if (rawNameStandard && rawCodeStandard && rawNameStandard.code !== rawCodeStandard.code && !verifiedKho39Alias) return false;
 
   return true;
 }; const isValidCurrentTtcoStockRecord = (record) => {

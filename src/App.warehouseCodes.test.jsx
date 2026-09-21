@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import stockSnapshot from "../public/data/ton_kho_latest.json";
 import {
   buildWarehouseListFromTTCO,
   getStandardKhoInfo,
@@ -53,5 +54,37 @@ describe("TTCO warehouse aliases", () => {
     expect(getTtcoCoalTypesForWarehouse(warehouse35, records, [])).toEqual([
       { name: "Than NK (Úc - Tầu MV LIME MIA)", density: 0 },
     ]);
+  });
+
+  it("displays verified DB warehouse 28 as Kho 39 without accepting a technical pond or zero stock", () => {
+    const payload = { data: [
+      { kho: "Kho 39", khoCode: "Kho 39", rawKhoCode: "28", sourceFix: "KHO39_NHK_DETAIL", coal: "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN OCEAN", coalCode: "NHK.305", ton: 1.89 },
+      { kho: "Kho 39", khoCode: "Kho 39", rawKhoCode: "28", sourceFix: "KHO39_NHK_DETAIL", coal: "Than Anthracite Lào Tầu SKY", coalCode: "NHK.307", ton: 0 },
+      { kho: "Hồ 1", khoCode: "Kho 39", rawKhoCode: "39", coal: "Than hồ kỹ thuật", coalCode: "NHK.999", ton: 200 },
+      { kho: "Kho 28", khoCode: "Kho 28", rawKhoCode: "31C", coal: "Cám 6a.1", coalCode: "11a.1", ton: 50 },
+    ] };
+
+    const { records } = parseTTCOGitHubJson(payload, []);
+    expect(records).toHaveLength(2);
+    const warehouses = buildWarehouseListFromTTCO(records, []);
+    const kho39 = warehouses.find((warehouse) => warehouse.name === "Kho 39");
+    expect(kho39?.activeCoalNames).toEqual(["Than Anthracite Lào Tầu TRƯỜNG NGUYÊN OCEAN"]);
+    expect(getTtcoCoalTypesForWarehouse(kho39, records, [])).toEqual([
+      { name: "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN OCEAN", density: 0 },
+    ]);
+    expect(records.find((record) => record.kho === "Kho 39")?.ton).toBe(1.89);
+    expect(warehouses.find((warehouse) => warehouse.name === "Kho 28")?.activeCoalNames).toEqual(["Cám 6a.1"]);
+  });
+
+  it("retains all nonzero Kho 39 lines from the published stock snapshot", () => {
+    const expected = stockSnapshot.data.filter((item) => item.kho === "Kho 39" && item.ton !== 0);
+    expect(expected.length).toBeGreaterThan(0);
+
+    const { records } = parseTTCOGitHubJson(stockSnapshot, []);
+    const actual = records.filter((item) => item.kho === "Kho 39");
+    expect(actual).toHaveLength(expected.length);
+    expect(actual.reduce((total, item) => total + item.ton, 0)).toBeCloseTo(
+      expected.reduce((total, item) => total + item.ton, 0), 5
+    );
   });
 });
