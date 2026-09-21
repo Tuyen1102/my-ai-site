@@ -87,4 +87,39 @@ describe("TTCO warehouse aliases", () => {
       expected.reduce((total, item) => total + item.ton, 0), 5
     );
   });
+
+  it("accepts only the verified DB aliases for Kho 26, Kho 29 and Kho 30", () => {
+    const rows = [
+      { kho: "Kho 26", rawKhoCode: "29", coal: "Bùn tuyển 3A", coalCode: "b32d", ton: 14510.71 },
+      { kho: "Kho 29", rawKhoCode: "26", coal: "Cám 1", coalCode: "6a.1", ton: 18990.4 },
+      { kho: "Kho 30", rawKhoCode: "27", coal: "Cám 1", coalCode: "6a.1", ton: 22274.7 },
+      { kho: "Kho 26", rawKhoCode: "27", coal: "Cám sai kho", ton: 400 },
+      { kho: "Kho 29", rawKhoCode: "27", coal: "Cám sai kho", ton: 500 },
+      { kho: "Kho 30", rawKhoCode: "26", coal: "Cám sai kho", ton: 600 },
+      { kho: "Hồ 1", rawKhoCode: "29", coal: "Than hồ kỹ thuật", ton: 700 },
+      { kho: "Kho 30", rawKhoCode: "27", coal: "Cám hết tồn", ton: 0 },
+    ];
+    const { records } = parseTTCOGitHubJson({ data: rows }, []);
+    expect(records.map(({ kho, ton }) => [kho, ton])).toEqual([
+      ["Kho 26", 14510.71], ["Kho 29", 18990.4], ["Kho 30", 22274.7],
+    ]);
+    const warehouses = buildWarehouseListFromTTCO(records, []);
+    for (const row of rows.slice(0, 3)) {
+      const warehouse = warehouses.find((item) => item.name === row.kho);
+      expect(warehouse?.activeCoalNames, row.kho).toEqual([row.coal]);
+      expect(getTtcoCoalTypesForWarehouse(warehouse, records, []).map((item) => item.name)).toEqual([row.coal]);
+    }
+  });
+
+  it("preserves the published stock for Kho 26, 29, 30, and 39 after parsing", () => {
+    const { records } = parseTTCOGitHubJson(stockSnapshot, []);
+    for (const kho of ["Kho 26", "Kho 29", "Kho 30", "Kho 39"]) {
+      const expected = stockSnapshot.data.filter((item) => item.kho === kho && item.ton !== 0);
+      const actual = records.filter((item) => item.kho === kho);
+      expect(actual.length, kho).toBe(expected.length);
+      expect(actual.reduce((total, item) => total + item.ton, 0), kho).toBeCloseTo(
+        expected.reduce((total, item) => total + item.ton, 0), 5
+      );
+    }
+  });
 });

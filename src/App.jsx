@@ -870,7 +870,13 @@ const isRecordKhoNameConsistent = (record) => {
     normalizeKhoCode(rawCode) === "28" &&
     normalizeText(record?.sourceFix).toUpperCase() === "KHO39_NHK_DETAIL" &&
     /^NHK\./i.test(normalizeText(record?.coalCode));
-  if (rawNameStandard && rawCodeStandard && rawNameStandard.code !== rawCodeStandard.code && !verifiedKho39Alias) return false;
+  // DB TTCO_APP dùng mã thô 29/26/27 cho các kho có tên chuẩn 26/29/30.
+  // Chỉ chấp nhận đúng từng cặp đã đối chiếu với audit, không bỏ kiểm tra sai mã nói chung.
+  const verifiedRawCodeByWarehouse = { "26": "29", "29": "26", "30": "27" };
+  const verifiedKho26To30Alias =
+    rawNameStandard &&
+    verifiedRawCodeByWarehouse[rawNameStandard.code] === normalizeKhoCode(rawCode);
+  if (rawNameStandard && rawCodeStandard && rawNameStandard.code !== rawCodeStandard.code && !verifiedKho39Alias && !verifiedKho26To30Alias) return false;
 
   return true;
 }; const isValidCurrentTtcoStockRecord = (record) => {

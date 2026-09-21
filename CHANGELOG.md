@@ -16,6 +16,7 @@
 
 ### Fixed
 
+- Preserved TTCO_APP stock for Kho 26, Kho 29, and Kho 30 by accepting only their audited DB-code pairs (29→26, 26→29, 27→30); kept rejection of mismatched warehouses and technical areas.
 - Kept the verified Kho 39 stock lines visible when source DB code 28 differs from the canonical warehouse number; retained the source marker and continued excluding technical ponds and zero-balance lines.
 - Prevented background data refreshes or source changes from overwriting values while a saved calculation is being edited.
 - Changed mobile Excel saving to offer “Save to Files” instead of requiring an installed spreadsheet application.
