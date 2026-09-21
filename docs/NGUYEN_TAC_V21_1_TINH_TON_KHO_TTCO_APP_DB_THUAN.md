@@ -154,7 +154,8 @@ Chá»‰ Ä‘Æ°a vÃ o app web cÃ¡c mÃ£ kho Ä‘Ã£ mapping chuáº©
 31B/31b/44  -> Kho 32
 45          -> Kho 33
 34A/34a     -> Kho 34
-35          -> Kho 35
+34          -> Kho 35
+35          -> Kho 36
 36          -> Kho 37
 46A/46a     -> Kho 38
 28          -> Kho 39
@@ -163,6 +164,7 @@ Chá»‰ Ä‘Æ°a vÃ o app web cÃ¡c mÃ£ kho Ä‘Ã£ mapping chuáº©
 72          -> Kho 2-T4
 73          -> Kho 3-T4
 74          -> Kho 4-T4
+75          -> Kho 5-T4
 ```
 
 CÃ¡c mÃ£ chÆ°a mapping hoáº·c mÃ£ táº¡m nhÆ°:

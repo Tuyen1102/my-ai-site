@@ -394,6 +394,8 @@ const TTCO_KHO_CODE_OVERRIDES = {
   "31D": { code: "28-1", number: 28, suffix: "1", name: "Kho 28-1" },
   "31B": { code: "32", number: 32, suffix: "", name: "Kho 32" },
   "34A": { code: "34", number: 34, suffix: "", name: "Kho 34" },
+  "34": { code: "35", number: 35, suffix: "", name: "Kho 35" },
+  "35": { code: "36", number: 36, suffix: "", name: "Kho 36" },
 
   "43": { code: "31", number: 31, suffix: "", name: "Kho 31" },
   "44": { code: "32", number: 32, suffix: "", name: "Kho 32" },
@@ -406,20 +408,23 @@ const TTCO_KHO_CODE_OVERRIDES = {
   "72": { code: "02-T4", number: 2, suffix: "T4", name: "Kho 2-T4" },
   "73": { code: "03-T4", number: 3, suffix: "T4", name: "Kho 3-T4" },
   "74": { code: "04-T4", number: 4, suffix: "T4", name: "Kho 4-T4" },
+  "75": { code: "05-T4", number: 5, suffix: "T4", name: "Kho 5-T4" },
 };
 
-function getStandardKhoInfo(value) {
+export function getStandardKhoInfo(value) {
   const original = normalizeText(value);
   if (!original) return null;
 
   // Loại các kho kỹ thuật/ngoài báo cáo tồn kho chuẩn như K04, K60, k59.
-  // Các mã 71-74 được giữ lại qua bảng override vì tương ứng Kho 1-T4...Kho 4-T4.
+  // Mã DB 71-75 được giữ lại qua bảng override vì tương ứng Kho 1-T4...Kho 5-T4.
   if (/^k(?!ho)/i.test(original)) {
     return null;
   }
 
   const normalized = normalizeKhoCode(original);
-  const override = TTCO_KHO_CODE_OVERRIDES[normalized.toUpperCase()];
+  // "Kho 34" và "Kho 35" là tên hiển thị chuẩn; chỉ áp dụng mapping đặc biệt cho mã DB thô.
+  const isCanonicalName = /^kho\s*\d+(?:-\d+|-t\d+)?$/i.test(original);
+  const override = isCanonicalName ? null : TTCO_KHO_CODE_OVERRIDES[normalized.toUpperCase()];
   if (override) {
     return override;
   }
@@ -536,7 +541,7 @@ const compareWarehousesNatural = (a, b) => {
   });
 };
 
-function parseTTCOGitHubJson(payload, currentKhoRows) {
+export function parseTTCOGitHubJson(payload, currentKhoRows) {
   const rows = Array.isArray(payload?.data) ? payload.data : [];
 
   if (rows.length === 0) {
@@ -569,7 +574,7 @@ function parseTTCOGitHubJson(payload, currentKhoRows) {
   const rawRecords = rows
     .map((item) => {
       const rawKhoName = item.TenKho ?? item.ten_kho ?? item.kho ?? item.Kho ?? "";
-      const rawKhoCode = item.MaKho ?? item.ma_kho ?? item.khoCode ?? item.code ?? "";
+      const rawKhoCode = item.MaKho ?? item.ma_kho ?? item.rawKhoCode ?? item.sourceKhoCode ?? item.khoCode ?? item.code ?? "";
       // Ưu tiên TenKho/kho đã xuất ra từ nguồn TTCO_APP/JSON. MaKho chỉ dùng làm dự phòng.
       // Việc ưu tiên MaKho trước có thể làm các kho 26-30 bị map nhầm chủng loại/tồn kho.
       const standardKho = getStandardKhoInfo(rawKhoName) || getStandardKhoInfo(rawKhoCode);
@@ -880,18 +885,19 @@ const isRecordKhoNameConsistent = (record) => {
     return false;
   }
   return true;
-}; const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
+};
+export const getTtcoCoalTypesForWarehouse = (warehouse, ttcoRecords, coalTypes) => {
   if (!warehouse || !Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
     return [];
   }
 
-  const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
+  const warehouseCode = getKhoCompareCode(warehouse.name || warehouse.id);
   const warehouseNameKey = normalizeKey(warehouse.name);
   const map = new Map();
 
   for (const item of ttcoRecords) {
     if (!isValidCurrentTtcoStockRecord(item)) continue;
-    const itemCode = getKhoCompareCode(item.khoCode || item.kho);
+    const itemCode = getKhoCompareCode(item.kho || item.khoCode);
     const sameKho =
       itemCode === warehouseCode ||
       normalizeKey(item.kho) === warehouseNameKey;
@@ -915,7 +921,7 @@ const isRecordKhoNameConsistent = (record) => {
   );
 };
 
-const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
+export const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
   if (!Array.isArray(ttcoRecords) || ttcoRecords.length === 0) {
     return excelWarehouses;
   }
@@ -924,7 +930,7 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
   const excelByName = new Map();
 
   for (const warehouse of excelWarehouses || []) {
-    const code = getKhoCompareCode(warehouse.id || warehouse.name);
+    const code = getKhoCompareCode(warehouse.name || warehouse.id);
     const nameKey = normalizeKey(warehouse.name);
 
     if (code && !excelByCode.has(code)) {
@@ -993,7 +999,7 @@ const buildWarehouseListFromTTCO = (ttcoRecords, excelWarehouses) => {
   // nếu chỉ dựng danh sách từ JSON thì sẽ bị mất khỏi combobox.
   for (const excelWarehouse of excelWarehouses || []) {
     const standardKho =
-      getStandardKhoInfo(excelWarehouse.id) || getStandardKhoInfo(excelWarehouse.name);
+      getStandardKhoInfo(excelWarehouse.name) || getStandardKhoInfo(excelWarehouse.id);
 
     if (!standardKho) continue;
 
@@ -1867,10 +1873,10 @@ export default function TTCOCoalStockpileApp() {
   const matchedTtcoMass = useMemo(() => {
     if (!warehouse || !coalName || ttcoRecords.length === 0) return null;
 
-    const warehouseCode = getKhoCompareCode(warehouse.id || warehouse.name);
+    const warehouseCode = getKhoCompareCode(warehouse.name || warehouse.id);
     const warehouseNameKey = normalizeKey(warehouse.name);
 
-    const matched = ttcoRecords.filter((item) => { if (!isTtcoDisplayStockRecord(item)) return false; const itemCode = getKhoCompareCode(item.khoCode || item.kho);
+    const matched = ttcoRecords.filter((item) => { if (!isTtcoDisplayStockRecord(item)) return false; const itemCode = getKhoCompareCode(item.kho || item.khoCode);
       const sameKho =
         itemCode === warehouseCode ||
         normalizeKey(item.kho) === warehouseNameKey;
@@ -2346,8 +2352,8 @@ export default function TTCOCoalStockpileApp() {
       warehouses.find((candidate) => candidate.id === saved.warehouseId) ||
       warehouses.find(
         (candidate) =>
-          getKhoCompareCode(candidate.id || candidate.name) ===
-          getKhoCompareCode(saved.warehouseId || saved.warehouseName)
+          getKhoCompareCode(candidate.name || candidate.id) ===
+          getKhoCompareCode(saved.warehouseName || saved.warehouseId)
       );
 
     if (!targetWarehouse) {
@@ -2427,9 +2433,9 @@ export default function TTCOCoalStockpileApp() {
 
     if (
       previousRecord &&
-      (getKhoCompareCode(selectedWarehouse.id || selectedWarehouse.name) !==
+      (getKhoCompareCode(selectedWarehouse.name || selectedWarehouse.id) !==
         getKhoCompareCode(
-          previousRecord.warehouseId || previousRecord.warehouseName
+          previousRecord.warehouseName || previousRecord.warehouseId
         ) ||
         normalizeKey(coalName) !== normalizeKey(previousRecord.coalName))
     ) {

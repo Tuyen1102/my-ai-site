@@ -4,6 +4,8 @@
 
 ### Changed
 
+- Corrected TTCO source mappings for DB codes 34 (Kho 35), 35 (Kho 36), and 75 (Kho 5-T4); corrected warehouse-name handling in the website and added stock reconciliation regression tests. The rebuilt stock formula remains unchanged.
+- Documented the TTCO stock reconciliation and correction plan for Kho 35 and Kho 5-T4, including missing warehouse mappings and a 1,216-ton discrepancy in outbound movements.
 - Updated the bundled catalog to use "Than nguyên khai" consistently with TTCO stock data in the density list and descriptions for five warehouses, preserving all 46 warehouses and 30 density values.
 - Updated the bundled coal warehouse and density catalog from the supplied workbook to include 46 warehouses and 30 density rows.
 
