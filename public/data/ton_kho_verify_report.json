@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-24 08:00:12",
+    "updatedAt": "2026-09-24 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 9,
     "ThangDen": 9,
-    "rowCount": 79,
-    "rawRowCount": 160,
-    "auditRowCount": 160,
-    "warningCount": 29,
-    "removedRowCount": 29,
+    "rowCount": 80,
+    "rawRowCount": 163,
+    "auditRowCount": 163,
+    "warningCount": 30,
+    "removedRowCount": 30,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -65,8 +65,8 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 14,
-    "kho39NhkRowCount": 14,
+    "kho39RowCount": 15,
+    "kho39NhkRowCount": 15,
     "kho39Rows": [
       {
         "kho": "Kho 39",
@@ -247,6 +247,32 @@
         ],
         "TenThanGocList": [
           "Than Anthracite Lào Tầu VIỆT THUẬN 235-06 (Lần 3)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu VIỆT THUẬN 26-01",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.330",
+        "MaThan": "NHK.330",
+        "ma_than": "NHK.330",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 0.0,
+        "NhapTK": 2910.0,
+        "XuatTK": 1410.42,
+        "ton": 1499.58,
+        "ttcoApp": 1499.58,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.330"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu VIỆT THUẬN 26-01"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       },
