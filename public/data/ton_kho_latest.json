@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-24 11:00:09",
+    "updatedAt": "2026-09-25 08:00:10",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -80,10 +80,10 @@
       "ma_than": "11a.1",
       "sourceFix": "",
       "TonDK": 110398.89,
-      "NhapTK": 223287.0,
-      "XuatTK": 272953.0,
-      "ton": 60732.89,
-      "ttcoApp": 60732.89,
+      "NhapTK": 240631.0,
+      "XuatTK": 286784.0,
+      "ton": 64245.89,
+      "ttcoApp": 64245.89,
       "MaKhoRawList": [
         "71"
       ],
@@ -159,9 +159,9 @@
       "sourceFix": "",
       "TonDK": 4695.05,
       "NhapTK": 0.0,
-      "XuatTK": 4382.0,
-      "ton": 313.05,
-      "ttcoApp": 313.05,
+      "XuatTK": 4622.0,
+      "ton": 73.05,
+      "ttcoApp": 73.05,
       "MaKhoRawList": [
         "72"
       ],
@@ -184,10 +184,10 @@
       "ma_than": "00",
       "sourceFix": "",
       "TonDK": 2083.86,
-      "NhapTK": 25617.24,
-      "XuatTK": 27521.0,
-      "ton": 180.1,
-      "ttcoApp": 180.1,
+      "NhapTK": 28442.61,
+      "XuatTK": 30271.0,
+      "ton": 255.47,
+      "ttcoApp": 255.47,
       "MaKhoRawList": [
         "72"
       ],
@@ -210,10 +210,10 @@
       "ma_than": "B5.01",
       "sourceFix": "",
       "TonDK": 834.05,
-      "NhapTK": 1534.0,
+      "NhapTK": 1657.0,
       "XuatTK": 2246.61,
-      "ton": 121.44,
-      "ttcoApp": 121.44,
+      "ton": 244.44,
+      "ttcoApp": 244.44,
       "MaKhoRawList": [
         "72"
       ],
@@ -418,10 +418,10 @@
       "ma_than": "11a.1",
       "sourceFix": "",
       "TonDK": 10847.75,
-      "NhapTK": 10933.0,
+      "NhapTK": 11883.0,
       "XuatTK": 3329.0,
-      "ton": 18451.75,
-      "ttcoApp": 18451.75,
+      "ton": 19401.75,
+      "ttcoApp": 19401.75,
       "MaKhoRawList": [
         "09"
       ],
@@ -480,10 +480,10 @@
       "ma_than": "11a.254",
       "sourceFix": "",
       "TonDK": 6028.72,
-      "NhapTK": 47662.0,
+      "NhapTK": 50365.0,
       "XuatTK": 40364.0,
-      "ton": 13326.72,
-      "ttcoApp": 13326.72,
+      "ton": 16029.72,
+      "ttcoApp": 16029.72,
       "MaKhoRawList": [
         "09"
       ],
