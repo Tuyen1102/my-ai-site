@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-09-26 08:00:36",
+    "updatedAt": "2026-09-26 11:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 9,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 9,
     "ThangDen": 9,
-    "rowCount": 80,
-    "rawRowCount": 163,
-    "auditRowCount": 163,
+    "rowCount": 81,
+    "rawRowCount": 164,
+    "auditRowCount": 164,
     "warningCount": 30,
     "removedRowCount": 30,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -65,8 +65,8 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 15,
-    "kho39NhkRowCount": 15,
+    "kho39RowCount": 16,
+    "kho39NhkRowCount": 16,
     "kho39Rows": [
       {
         "kho": "Kho 39",
@@ -262,9 +262,9 @@
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
         "NhapTK": 6044.76,
-        "XuatTK": 2451.22,
-        "ton": 3593.54,
-        "ttcoApp": 3593.54,
+        "XuatTK": 3871.05,
+        "ton": 2173.71,
+        "ttcoApp": 2173.71,
         "MaKhoRawList": [
           "28"
         ],
@@ -417,10 +417,10 @@
         "ma_than": "NHK.329",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 11769.64,
+        "NhapTK": 13694.63,
         "XuatTK": 3673.73,
-        "ton": 8095.91,
-        "ttcoApp": 8095.91,
+        "ton": 10020.9,
+        "ttcoApp": 10020.9,
         "MaKhoRawList": [
           "28"
         ],
@@ -455,6 +455,32 @@
         ],
         "TenThanGocList": [
           "Than NK (Úc -Tàu MV WOOLLOOMOOLOO)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.16",
+        "MaThan": "NHK.16",
+        "ma_than": "NHK.16",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 0.0,
+        "NhapTK": 1300.0,
+        "XuatTK": 0.0,
+        "ton": 1300.0,
+        "ttcoApp": 1300.0,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.16"
+        ],
+        "TenThanGocList": [
+          "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       }
