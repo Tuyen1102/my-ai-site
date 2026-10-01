@@ -104,7 +104,7 @@ const DEFAULT_KHO_ROWS = [
 ];
 
 const DEFAULT_TY_KHOI_ROWS = [
-  { chung_loai: "Cám đá", ty_khoi_tan_m3: 1.3766666667 },
+  { chung_loai: "Cám đá", ty_khoi_tan_m3: 1.46 },
   { chung_loai: "Bùn 3A", ty_khoi_tan_m3: 1.2583689423 },
   { chung_loai: "Bùn 3B", ty_khoi_tan_m3: 0.97825 },
   { chung_loai: "Cám 1", ty_khoi_tan_m3: 0.9084025137 },

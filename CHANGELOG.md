@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Updated the bundled warehouse catalog so Kho 28 and Kho 28-1 are managed by PX Tuyển than 3, and updated the Cám đá density to 1.46 t/m³ from the supplied workbook.
 - Corrected TTCO source mappings for DB codes 34 (Kho 35), 35 (Kho 36), and 75 (Kho 5-T4); corrected warehouse-name handling in the website and added stock reconciliation regression tests. The rebuilt stock formula remains unchanged.
 - Documented the TTCO stock reconciliation and correction plan for Kho 35 and Kho 5-T4, including missing warehouse mappings and a 1,216-ton discrepancy in outbound movements.
 - Updated the bundled catalog to use "Than nguyên khai" consistently with TTCO stock data in the density list and descriptions for five warehouses, preserving all 46 warehouses and 30 density values.
