@@ -1899,7 +1899,7 @@ export default function TTCOCoalStockpileApp() {
       return sameKho && coalMatches(coalName, item.coal);
     });
 
-    if (matched.length === 0) return null;
+    if (matched.length === 0) return 0;
 
     return matched.reduce((sum, item) => sum + item.ton, 0);
   }, [warehouse, coalName, ttcoRecords]);
@@ -2232,6 +2232,8 @@ export default function TTCOCoalStockpileApp() {
         );
       }
     } catch (error) {
+      setTtcoRecords([]);
+      setTtcoSourceName("");
       setTtcoError(
         error instanceof Error ? error.message : "Không tải được dữ liệu tồn kho từ GitHub."
       );
