@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-10-07 11:00:09",
+    "updatedAt": "2026-10-08 08:00:07",
     "period": {
       "NamHT": 2026,
       "ThangTu": 10,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 10,
     "ThangDen": 10,
-    "rowCount": 49,
-    "rawRowCount": 77,
-    "auditRowCount": 77,
+    "rowCount": 48,
+    "rawRowCount": 76,
+    "auditRowCount": 76,
     "warningCount": 15,
     "removedRowCount": 15,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -74,20 +74,20 @@
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
         "sourceKhoCode": "28",
-        "coalCode": "NHK.433",
-        "MaThan": "NHK.433",
-        "ma_than": "NHK.433",
+        "coalCode": "NHK.333",
+        "MaThan": "NHK.333",
+        "ma_than": "NHK.333",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 4938.0,
+        "NhapTK": 4855.38,
         "XuatTK": 2037.66,
-        "ton": 2900.34,
-        "ttcoApp": 2900.34,
+        "ton": 2817.72,
+        "ttcoApp": 2817.72,
         "MaKhoRawList": [
           "28"
         ],
         "MaThanList": [
-          "NHK.433"
+          "NHK.333"
         ],
         "TenThanGocList": [
           "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR LẦN 2"
@@ -157,10 +157,10 @@
         "ma_than": "NHK.334",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 5982.0,
+        "NhapTK": 6273.77,
         "XuatTK": 1287.66,
-        "ton": 4694.34,
-        "ttcoApp": 4694.34,
+        "ton": 4986.11,
+        "ttcoApp": 4986.11,
         "MaKhoRawList": [
           "28"
         ],
