@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-10-11 08:00:08",
+    "updatedAt": "2026-10-11 11:00:10",
     "period": {
       "NamHT": 2026,
       "ThangTu": 10,
@@ -119,9 +119,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Than NK (Úc - Tầu MV CHARIKLIA JUNIOR)",
       "TonDK": 0.0,
-      "NhapTK": 665.37,
+      "NhapTK": 2804.02,
       "XuatTK": 0.0,
-      "TonCK": 665.37,
+      "TonCK": 2804.02,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
