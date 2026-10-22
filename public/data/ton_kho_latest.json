@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-10-22 08:00:10",
+    "updatedAt": "2026-10-22 11:00:11",
     "period": {
       "NamHT": 2026,
       "ThangTu": 10,
@@ -12,9 +12,9 @@
     "NamHT": 2026,
     "ThangTu": 10,
     "ThangDen": 10,
-    "rowCount": 70,
-    "rawRowCount": 188,
-    "auditRowCount": 188,
+    "rowCount": 71,
+    "rawRowCount": 189,
+    "auditRowCount": 189,
     "warningCount": 83,
     "removedRowCount": 83,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -54,10 +54,10 @@
       "ma_than": "B11C",
       "sourceFix": "",
       "TonDK": 323.76,
-      "NhapTK": 9176.0,
-      "XuatTK": 8744.2,
-      "ton": 755.56,
-      "ttcoApp": 755.56,
+      "NhapTK": 9692.0,
+      "XuatTK": 9240.2,
+      "ton": 775.56,
+      "ttcoApp": 775.56,
       "MaKhoRawList": [
         "01"
       ],
@@ -80,10 +80,10 @@
       "ma_than": "11a.1",
       "sourceFix": "",
       "TonDK": 62125.25,
-      "NhapTK": 226085.0,
+      "NhapTK": 226485.0,
       "XuatTK": 257137.0,
-      "ton": 31073.25,
-      "ttcoApp": 31073.25,
+      "ton": 31473.25,
+      "ttcoApp": 31473.25,
       "MaKhoRawList": [
         "71"
       ],
@@ -211,9 +211,9 @@
       "sourceFix": "",
       "TonDK": 12087.92,
       "NhapTK": 0.0,
-      "XuatTK": 1227.0,
-      "ton": 10860.92,
-      "ttcoApp": 10860.92,
+      "XuatTK": 1728.8,
+      "ton": 10359.12,
+      "ttcoApp": 10359.12,
       "MaKhoRawList": [
         "03"
       ],
@@ -237,9 +237,9 @@
       "sourceFix": "",
       "TonDK": 13712.96,
       "NhapTK": 20.0,
-      "XuatTK": 1689.4,
-      "ton": 12043.56,
-      "ttcoApp": 12043.56,
+      "XuatTK": 2320.0,
+      "ton": 11412.96,
+      "ttcoApp": 11412.96,
       "MaKhoRawList": [
         "04"
       ],
@@ -288,10 +288,10 @@
       "ma_than": "4A.2",
       "sourceFix": "",
       "TonDK": 5406.75,
-      "NhapTK": 11160.0,
+      "NhapTK": 11732.0,
       "XuatTK": 5277.7,
-      "ton": 11289.05,
-      "ttcoApp": 11289.05,
+      "ton": 11861.05,
+      "ttcoApp": 11861.05,
       "MaKhoRawList": [
         "05"
       ],
@@ -418,10 +418,10 @@
       "ma_than": "11a.1",
       "sourceFix": "",
       "TonDK": 17830.39,
-      "NhapTK": 20174.0,
-      "XuatTK": 20480.0,
-      "ton": 17524.39,
-      "ttcoApp": 17524.39,
+      "NhapTK": 23054.0,
+      "XuatTK": 30005.0,
+      "ton": 10879.39,
+      "ttcoApp": 10879.39,
       "MaKhoRawList": [
         "09"
       ],
@@ -504,10 +504,10 @@
       "ma_than": "10A.1",
       "sourceFix": "",
       "TonDK": 15564.1,
-      "NhapTK": 15986.0,
+      "NhapTK": 17012.0,
       "XuatTK": 18629.0,
-      "ton": 12921.1,
-      "ttcoApp": 12921.1,
+      "ton": 13947.1,
+      "ttcoApp": 13947.1,
       "MaKhoRawList": [
         "10"
       ],
@@ -619,9 +619,9 @@
       "sourceFix": "",
       "TonDK": 19329.83,
       "NhapTK": 16489.0,
-      "XuatTK": 12534.0,
-      "ton": 23284.83,
-      "ttcoApp": 23284.83,
+      "XuatTK": 14303.0,
+      "ton": 21515.83,
+      "ttcoApp": 21515.83,
       "MaKhoRawList": [
         "11"
       ],
@@ -644,10 +644,10 @@
       "ma_than": "9B.1",
       "sourceFix": "",
       "TonDK": 1023.8,
-      "NhapTK": 547.0,
-      "XuatTK": 1632.0,
-      "ton": -61.2,
-      "ttcoApp": -61.2,
+      "NhapTK": 3218.0,
+      "XuatTK": 3865.0,
+      "ton": 376.8,
+      "ttcoApp": 376.8,
       "MaKhoRawList": [
         "11"
       ],
@@ -930,10 +930,10 @@
       "ma_than": "9B.1",
       "sourceFix": "",
       "TonDK": 92.23,
-      "NhapTK": 25783.0,
+      "NhapTK": 25165.0,
       "XuatTK": 23196.0,
-      "ton": 2679.23,
-      "ttcoApp": 2679.23,
+      "ton": 2061.23,
+      "ttcoApp": 2061.23,
       "MaKhoRawList": [
         "20"
       ],
@@ -956,10 +956,10 @@
       "ma_than": "10a.1",
       "sourceFix": "",
       "TonDK": 20259.95,
-      "NhapTK": 35119.0,
+      "NhapTK": 36183.0,
       "XuatTK": 32040.0,
-      "ton": 23338.95,
-      "ttcoApp": 23338.95,
+      "ton": 24402.95,
+      "ttcoApp": 24402.95,
       "MaKhoRawList": [
         "21"
       ],
@@ -1008,10 +1008,10 @@
       "ma_than": "11a.1",
       "sourceFix": "",
       "TonDK": 12842.75,
-      "NhapTK": 28691.0,
-      "XuatTK": 26621.0,
-      "ton": 14912.75,
-      "ttcoApp": 14912.75,
+      "NhapTK": 29955.0,
+      "XuatTK": 37345.0,
+      "ton": 5452.75,
+      "ttcoApp": 5452.75,
       "MaKhoRawList": [
         "21"
       ],
@@ -1034,10 +1034,10 @@
       "ma_than": "6a.1",
       "sourceFix": "",
       "TonDK": 0.0,
-      "NhapTK": 7800.0,
+      "NhapTK": 7907.06,
       "XuatTK": 0.0,
-      "ton": 7800.0,
-      "ttcoApp": 7800.0,
+      "ton": 7907.06,
+      "ttcoApp": 7907.06,
       "MaKhoRawList": [
         "23"
       ],
@@ -1087,9 +1087,9 @@
       "sourceFix": "",
       "TonDK": 8886.37,
       "NhapTK": 0.0,
-      "XuatTK": 3149.0,
-      "ton": 5737.37,
-      "ttcoApp": 5737.37,
+      "XuatTK": 3694.0,
+      "ton": 5192.37,
+      "ttcoApp": 5192.37,
       "MaKhoRawList": [
         "24"
       ],
@@ -1138,10 +1138,10 @@
       "ma_than": "b32d",
       "sourceFix": "",
       "TonDK": 10116.16,
-      "NhapTK": 24178.0,
-      "XuatTK": 25686.0,
-      "ton": 8608.16,
-      "ttcoApp": 8608.16,
+      "NhapTK": 25247.0,
+      "XuatTK": 26907.0,
+      "ton": 8456.16,
+      "ttcoApp": 8456.16,
       "MaKhoRawList": [
         "29"
       ],
@@ -1295,9 +1295,9 @@
       "sourceFix": "",
       "TonDK": 19703.4,
       "NhapTK": 0.0,
-      "XuatTK": 19534.0,
-      "ton": 169.4,
-      "ttcoApp": 169.4,
+      "XuatTK": 19641.06,
+      "ton": 62.34,
+      "ttcoApp": 62.34,
       "MaKhoRawList": [
         "27"
       ],
@@ -1346,8 +1346,8 @@
       "ma_than": "00",
       "sourceFix": "",
       "TonDK": 23560.51,
-      "NhapTK": 12739.74,
-      "XuatTK": 14600.0,
+      "NhapTK": 14639.74,
+      "XuatTK": 16500.0,
       "ton": 21700.25,
       "ttcoApp": 21700.25,
       "MaKhoRawList": [
@@ -1372,8 +1372,8 @@
       "ma_than": "b32d",
       "sourceFix": "",
       "TonDK": 0.0,
-      "NhapTK": 15985.0,
-      "XuatTK": 15985.0,
+      "NhapTK": 16850.0,
+      "XuatTK": 16850.0,
       "ton": 0.0,
       "ttcoApp": 0.0,
       "MaKhoRawList": [
@@ -1398,10 +1398,10 @@
       "ma_than": "b2902",
       "sourceFix": "",
       "TonDK": 8514.82,
-      "NhapTK": 36290.0,
-      "XuatTK": 38424.28,
-      "ton": 6380.54,
-      "ttcoApp": 6380.54,
+      "NhapTK": 38336.0,
+      "XuatTK": 39894.28,
+      "ton": 6956.54,
+      "ttcoApp": 6956.54,
       "MaKhoRawList": [
         "44"
       ],
@@ -1476,10 +1476,10 @@
       "ma_than": "b29a",
       "sourceFix": "",
       "TonDK": 2147.83,
-      "NhapTK": 12515.0,
-      "XuatTK": 11583.0,
-      "ton": 3079.83,
-      "ttcoApp": 3079.83,
+      "NhapTK": 13560.0,
+      "XuatTK": 11993.0,
+      "ton": 3714.83,
+      "ttcoApp": 3714.83,
       "MaKhoRawList": [
         "44"
       ],
@@ -1502,10 +1502,10 @@
       "ma_than": "00",
       "sourceFix": "",
       "TonDK": 20518.8,
-      "NhapTK": 23604.0,
-      "XuatTK": 30477.81,
-      "ton": 13644.99,
-      "ttcoApp": 13644.99,
+      "NhapTK": 24074.0,
+      "XuatTK": 31237.66,
+      "ton": 13355.14,
+      "ttcoApp": 13355.14,
       "MaKhoRawList": [
         "44"
       ],
@@ -1528,10 +1528,10 @@
       "ma_than": "B29a",
       "sourceFix": "",
       "TonDK": 9002.14,
-      "NhapTK": 30746.0,
-      "XuatTK": 30040.2,
-      "ton": 9707.94,
-      "ttcoApp": 9707.94,
+      "NhapTK": 32710.0,
+      "XuatTK": 32845.7,
+      "ton": 8866.44,
+      "ttcoApp": 8866.44,
       "MaKhoRawList": [
         "45"
       ],
@@ -1581,9 +1581,9 @@
       "sourceFix": "",
       "TonDK": 5846.9,
       "NhapTK": 0.0,
-      "XuatTK": 2404.0,
-      "ton": 3442.9,
-      "ttcoApp": 3442.9,
+      "XuatTK": 4175.9,
+      "ton": 1671.0,
+      "ttcoApp": 1671.0,
       "MaKhoRawList": [
         "34"
       ],
@@ -1805,6 +1805,32 @@
     },
     {
       "kho": "Kho 39",
+      "coal": "Than Anthracite Lào Tầu VTA NEPTUNE LẦN 2",
+      "khoCode": "Kho 39",
+      "rawKhoCode": "28",
+      "sourceKhoCode": "28",
+      "coalCode": "NHK.337",
+      "MaThan": "NHK.337",
+      "ma_than": "NHK.337",
+      "sourceFix": "KHO39_NHK_DETAIL",
+      "TonDK": 0.0,
+      "NhapTK": 2500.0,
+      "XuatTK": 0.0,
+      "ton": 2500.0,
+      "ttcoApp": 2500.0,
+      "MaKhoRawList": [
+        "28"
+      ],
+      "MaThanList": [
+        "NHK.337"
+      ],
+      "TenThanGocList": [
+        "Than Anthracite Lào Tầu VTA NEPTUNE LẦN 2"
+      ],
+      "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+    },
+    {
+      "kho": "Kho 39",
       "coal": "Than NK (Mozambique - Tầu MV  UNITY SAKURA)",
       "khoCode": "Kho 39",
       "rawKhoCode": "28",
@@ -1918,10 +1944,10 @@
       "ma_than": "B5.01",
       "sourceFix": "",
       "TonDK": 3219.8,
-      "NhapTK": 54142.0,
-      "XuatTK": 52333.12,
-      "ton": 5028.68,
-      "ttcoApp": 5028.68,
+      "NhapTK": 56641.0,
+      "XuatTK": 56071.18,
+      "ton": 3789.62,
+      "ttcoApp": 3789.62,
       "MaKhoRawList": [
         "60"
       ],
