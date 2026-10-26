@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-10-26 08:00:10",
+    "updatedAt": "2026-10-26 11:00:17",
     "period": {
       "NamHT": 2026,
       "ThangTu": 10,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 10,
     "ThangDen": 10,
-    "rowCount": 72,
-    "rawRowCount": 190,
-    "auditRowCount": 190,
-    "warningCount": 83,
-    "removedRowCount": 83,
+    "rowCount": 73,
+    "rawRowCount": 172,
+    "auditRowCount": 172,
+    "warningCount": 64,
+    "removedRowCount": 64,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
@@ -65,8 +65,8 @@
     "noUnmappedInMain": true,
     "noZeroAllInMain": true,
     "noKho32Cam8C": true,
-    "kho39RowCount": 9,
-    "kho39NhkRowCount": 9,
+    "kho39RowCount": 10,
+    "kho39NhkRowCount": 10,
     "kho39Rows": [
       {
         "kho": "Kho 39",
@@ -91,6 +91,32 @@
         ],
         "TenThanGocList": [
           "Than Anthracite Lào Tầu TRƯỜNG NGUYÊN STAR LẦN 2"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
+        "coal": "Than Anthracite Lào Tầu VIỆT THUẬN 215-06 LẦN 2",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.338",
+        "MaThan": "NHK.338",
+        "ma_than": "NHK.338",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 0.0,
+        "NhapTK": 2400.0,
+        "XuatTK": 0.0,
+        "ton": 2400.0,
+        "ttcoApp": 2400.0,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.338"
+        ],
+        "TenThanGocList": [
+          "Than Anthracite Lào Tầu VIỆT THUẬN 215-06 LẦN 2"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       },
@@ -226,6 +252,32 @@
       },
       {
         "kho": "Kho 39",
+        "coal": "Than NK (Mozambique - Tầu MV METEOR)",
+        "khoCode": "Kho 39",
+        "rawKhoCode": "28",
+        "sourceKhoCode": "28",
+        "coalCode": "NHK.339",
+        "MaThan": "NHK.339",
+        "ma_than": "NHK.339",
+        "sourceFix": "KHO39_NHK_DETAIL",
+        "TonDK": 0.0,
+        "NhapTK": 4805.85,
+        "XuatTK": 311.74,
+        "ton": 4494.11,
+        "ttcoApp": 4494.11,
+        "MaKhoRawList": [
+          "28"
+        ],
+        "MaThanList": [
+          "NHK.339"
+        ],
+        "TenThanGocList": [
+          "Than NK (Mozambique - Tầu MV METEOR)"
+        ],
+        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
+      },
+      {
+        "kho": "Kho 39",
         "coal": "Than NK (Úc - Tầu MV CHARIKLIA JUNIOR)",
         "khoCode": "Kho 39",
         "rawKhoCode": "28",
@@ -273,32 +325,6 @@
         ],
         "TenThanGocList": [
           "Than NK (Úc -Tàu MV THEMIS PETRAKIS)"
-        ],
-        "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
-      },
-      {
-        "kho": "Kho 39",
-        "coal": "Than NK +15 (Úc - Tàu AGRI WARRIOR)",
-        "khoCode": "Kho 39",
-        "rawKhoCode": "28",
-        "sourceKhoCode": "28",
-        "coalCode": "NHK.16",
-        "MaThan": "NHK.16",
-        "ma_than": "NHK.16",
-        "sourceFix": "KHO39_NHK_DETAIL",
-        "TonDK": 0.0,
-        "NhapTK": 4805.85,
-        "XuatTK": 0.0,
-        "ton": 4805.85,
-        "ttcoApp": 4805.85,
-        "MaKhoRawList": [
-          "28"
-        ],
-        "MaThanList": [
-          "NHK.16"
-        ],
-        "TenThanGocList": [
-          "Than NK +15 (Úc - Tàu AGRI WARRIOR)"
         ],
         "sourceFormula": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX: TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat"
       }
