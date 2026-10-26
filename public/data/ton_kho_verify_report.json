@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-10-25 11:00:10",
+    "updatedAt": "2026-10-26 08:00:10",
     "period": {
       "NamHT": 2026,
       "ThangTu": 10,
@@ -287,10 +287,10 @@
         "ma_than": "NHK.16",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 2400.0,
+        "NhapTK": 4805.85,
         "XuatTK": 0.0,
-        "ton": 2400.0,
-        "ttcoApp": 2400.0,
+        "ton": 4805.85,
+        "ttcoApp": 4805.85,
         "MaKhoRawList": [
           "28"
         ],
