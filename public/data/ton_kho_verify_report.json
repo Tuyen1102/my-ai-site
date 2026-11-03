@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-11-02 11:00:12",
+    "updatedAt": "2026-11-03 08:24:43",
     "period": {
       "NamHT": 2026,
       "ThangTu": 11,
@@ -12,11 +12,11 @@
     "NamHT": 2026,
     "ThangTu": 11,
     "ThangDen": 11,
-    "rowCount": 22,
-    "rawRowCount": 27,
-    "auditRowCount": 27,
-    "warningCount": 5,
-    "removedRowCount": 5,
+    "rowCount": 25,
+    "rawRowCount": 36,
+    "auditRowCount": 36,
+    "warningCount": 9,
+    "removedRowCount": 9,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
     "filters": [
       "Exclude UNMAPPED_OR_BLOCKED_KHO from main JSON",
