@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-11-03 11:24:29",
+    "updatedAt": "2026-11-04 08:00:11",
     "period": {
       "NamHT": 2026,
       "ThangTu": 11,
@@ -49,9 +49,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 300.0,
+      "NhapTK": 400.0,
       "XuatTK": 0.0,
-      "TonCK": 300.0,
+      "TonCK": 400.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
@@ -175,9 +175,9 @@
       "KhoApp": "UNMAPPED_k17",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 2511.0,
-      "XuatTK": 2408.5,
-      "TonCK": 102.5,
+      "NhapTK": 5502.0,
+      "XuatTK": 5399.63,
+      "TonCK": 102.37,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
