@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-11-11 08:00:09",
+    "updatedAt": "2026-11-11 11:00:09",
     "period": {
       "NamHT": 2026,
       "ThangTu": 11,
@@ -131,10 +131,10 @@
         "ma_than": "NHK.342",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 4071.81,
-        "XuatTK": 2113.65,
-        "ton": 1958.16,
-        "ttcoApp": 1958.16,
+        "NhapTK": 6071.81,
+        "XuatTK": 2770.2,
+        "ton": 3301.61,
+        "ttcoApp": 3301.61,
         "MaKhoRawList": [
           "28"
         ],
@@ -157,10 +157,10 @@
         "ma_than": "NHK.341",
         "sourceFix": "KHO39_NHK_DETAIL",
         "TonDK": 0.0,
-        "NhapTK": 14674.06,
-        "XuatTK": 5303.71,
-        "ton": 9370.35,
-        "ttcoApp": 9370.35,
+        "NhapTK": 14755.05,
+        "XuatTK": 7436.46,
+        "ton": 7318.59,
+        "ttcoApp": 7318.59,
         "MaKhoRawList": [
           "28"
         ],
