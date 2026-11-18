@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-11-17 11:00:08",
+    "updatedAt": "2026-11-18 08:00:08",
     "period": {
       "NamHT": 2026,
       "ThangTu": 11,
@@ -13,8 +13,8 @@
     "ThangTu": 11,
     "ThangDen": 11,
     "rowCount": 64,
-    "rawRowCount": 125,
-    "auditRowCount": 125,
+    "rawRowCount": 126,
+    "auditRowCount": 126,
     "warningCount": 22,
     "removedRowCount": 22,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
