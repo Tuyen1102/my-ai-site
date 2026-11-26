@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-11-25 11:00:09",
+    "updatedAt": "2026-11-26 08:00:10",
     "period": {
       "NamHT": 2026,
       "ThangTu": 11,
@@ -159,7 +159,7 @@
       "MaKho": "K04",
       "MaThan": "NHK.343",
       "KhoApp": "UNMAPPED_K04",
-      "CoalApp": "Than NK (Nga - Tầu MV BROAD RICK)",
+      "CoalApp": "Than NK (Nga - Tầu MV BROAD RICH)",
       "TonDK": 0.0,
       "NhapTK": 5051.63,
       "XuatTK": 0.0,
@@ -272,7 +272,7 @@
       "MaKho": "K07",
       "MaThan": "NHK.343",
       "KhoApp": "UNMAPPED_K07",
-      "CoalApp": "Than NK (Nga - Tầu MV BROAD RICK)",
+      "CoalApp": "Than NK (Nga - Tầu MV BROAD RICH)",
       "TonDK": 0.0,
       "NhapTK": 5051.63,
       "XuatTK": 5051.63,
@@ -344,9 +344,9 @@
       "KhoApp": "UNMAPPED_k17",
       "CoalApp": "Than nguyên khai",
       "TonDK": 0.0,
-      "NhapTK": 47979.0,
-      "XuatTK": 47680.69,
-      "TonCK": 298.31,
+      "NhapTK": 52434.0,
+      "XuatTK": 52135.73,
+      "TonCK": 298.27,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
