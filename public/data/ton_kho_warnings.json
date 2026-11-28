@@ -3,7 +3,7 @@
   "meta": {
     "version": "V23_DB_REBUILD_V21_1_KHO35_5T4_FIX",
     "source": "TTCO_DB_REBUILD_V21_1",
-    "updatedAt": "2026-11-27 11:00:10",
+    "updatedAt": "2026-11-28 08:00:16",
     "period": {
       "NamHT": 2026,
       "ThangTu": 11,
@@ -13,8 +13,8 @@
     "ThangTu": 11,
     "ThangDen": 11,
     "rowCount": 69,
-    "rawRowCount": 142,
-    "auditRowCount": 142,
+    "rawRowCount": 143,
+    "auditRowCount": 143,
     "warningCount": 26,
     "removedRowCount": 26,
     "formula": "TonDK=CDOTHAN; Nhap=ThanNhap+ThanVaoSang(2011,2021); Xuat=ThanXuatCT; TonCK=TonDK+Nhap-Xuat",
@@ -77,9 +77,9 @@
       "KhoApp": "UNMAPPED_K04",
       "CoalApp": "Cám đá",
       "TonDK": 0.0,
-      "NhapTK": 4505.0,
+      "NhapTK": 5165.0,
       "XuatTK": 0.0,
-      "TonCK": 4505.0,
+      "TonCK": 5165.0,
       "TonCK_CDOTHAN": 0.0,
       "Flags": [
         "UNMAPPED_OR_BLOCKED_KHO"
